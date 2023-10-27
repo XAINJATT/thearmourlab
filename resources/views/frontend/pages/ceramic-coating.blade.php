@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-lg-4 col-md-5">
                         <aside class="sticky-top pb-1">
-                            <div class="widget">
+                            <!-- <div class="widget">
                                 <ul class="service-menu">
                                     <li><a href="{{ url('automotive') }}"><span>Automotive</span><i
                                                 class="fa fa-angle-right"></i> </a></li>
@@ -43,7 +43,7 @@
                                     <li><a href="{{ url('/break-repair') }}"><span>Industrial</span><i
                                                 class="fa fa-angle-right"></i></a></li>
                                 </ul>
-                            </div>
+                            </div> -->
                             <div class="widget">
                                 <div class="brochure-bx">
                                     <h5 class="title-head">Download</h5>
@@ -79,7 +79,7 @@
                                         </svg>
                                         <h5 class="title mt-20">How Can We Help</h5>
                                         <p>If you need any helps, please free to contact us.</p>
-                                        <a href="contact-1.html" class="btn btn-primary">Contact Us</a>
+                                        <a href="{{ route('frontend.contact') }}" class="btn btn-primary">Contact Us</a>
                                     </div>
                                 </div>
                             </div>
@@ -113,7 +113,7 @@
                                     <div class="tabs-wrapper">
                                         <span class="left scroller-btn">
                                             <ul id="scroller" class="nav nav-tabs">
-                                                <li class="active" data-id="regular-size-car"
+                                                <li class="active mb-3" data-id="regular-size-car"
                                                     class="template-state-selected">
                                                     <a data-toggle="tab" href="#menu1">
                                                         <div>
@@ -138,7 +138,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li class=" mb-3">
                                                     <a data-toggle="tab" href="#menu2">
                                                         <div>
                                                             <div class="car-icon"><img style="width: 80px;"
@@ -162,7 +162,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li class=" mb-3">
                                                     <a data-toggle="tab" href="#menu3">
                                                         <div>
                                                             <div class="car-icon"><img style="width: 80px;"
@@ -184,7 +184,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li class=" mb-3">
                                                     <a data-toggle="tab" href="#menu4">
                                                         <div>
                                                             <div class="car-icon"><img style="width: 80px;"
@@ -206,7 +206,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li class=" mb-3">
                                                     <a data-toggle="tab" href="#menu5">
                                                         <div>
                                                             <div class="car-icon"><img style="width: 80px;"
@@ -228,7 +228,7 @@
                                                         </div>
                                                     </a>
                                                 </li>
-                                                <li>
+                                                <li class=" mb-3">
                                                     <a data-toggle="tab" href="#menu6">
                                                         <div>
                                                             <div class="car-icon"><img style="width: 80px;"

@@ -28,66 +28,85 @@
     <?php
 
     //     <!-- 
-        // @if(Auth::user()->role == 1)
-        // <li class="menu-item {{ request()->is('admin.invoice') ? 'active' : '' }}">
-        //   <a href="{{route('admin.invoice')}}" class="menu-link">
-        //     <i class="menu-icon tf-icons bx bx-food-menu"></i>
-        //     <div>Work Order</div>
-        //   </a>
-        // </li>
-        // <li class="menu-item {{ request()->is('admin.warranty') ? 'active' : '' }}">
-        //   <a href="{{route('admin.warranty')}}" class="menu-link">
-        //     <i class="menu-icon tf-icons bx bx-food-menu"></i>
-        //     <div>Warranty</div>
-        //   </a>
-        // </li>
-        // @elseif(Auth::user()->role == 0)
-        // <li class="menu-item {{ request()->is('user.invoice') ? 'active' : '' }}">
-        //   <a href="{{route('user.invoice')}}" class="menu-link">
-        //     <i class="menu-icon tf-icons bx bx-food-menu"></i>
-        //     <div>Work Order</div>
-        //   </a>
-        // </li>
-        // <li class="menu-item {{ request()->is('user.warranty') ? 'active' : '' }}">
-        //   <a href="{{route('user.warranty')}}" class="menu-link">
-        //     <i class="menu-icon tf-icons bx bx-food-menu"></i>
-        //     <div>Warranty</div>
-        //   </a>
-        // </li>
-        // @endif
+    // @if(Auth::user()->role == 1)
+    // <li class="menu-item {{ request()->is('admin.invoice') ? 'active' : '' }}">
+    //   <a href="{{route('admin.invoice')}}" class="menu-link">
+    //     <i class="menu-icon tf-icons bx bx-food-menu"></i>
+    //     <div>Work Order</div>
+    //   </a>
+    // </li>
+    // <li class="menu-item {{ request()->is('admin.warranty') ? 'active' : '' }}">
+    //   <a href="{{route('admin.warranty')}}" class="menu-link">
+    //     <i class="menu-icon tf-icons bx bx-food-menu"></i>
+    //     <div>Warranty</div>
+    //   </a>
+    // </li>
+    // @elseif(Auth::user()->role == 0)
+    // <li class="menu-item {{ request()->is('user.invoice') ? 'active' : '' }}">
+    //   <a href="{{route('user.invoice')}}" class="menu-link">
+    //     <i class="menu-icon tf-icons bx bx-food-menu"></i>
+    //     <div>Work Order</div>
+    //   </a>
+    // </li>
+    // <li class="menu-item {{ request()->is('user.warranty') ? 'active' : '' }}">
+    //   <a href="{{route('user.warranty')}}" class="menu-link">
+    //     <i class="menu-icon tf-icons bx bx-food-menu"></i>
+    //     <div>Warranty</div>
+    //   </a>
+    // </li>
+    // @endif
     //  -->
 
     ?>
 
-@if (auth()->check()) <!-- Check if a user is logged in -->
+    @if (auth()->check()) <!-- Check if a user is logged in -->
     @if (auth()->user()->role == 0) <!-- Check if the user is an admin -->
-        <li class="menu-item {{ request()->is('admin.invoice') ? 'active' : '' }}">
-            <a href="{{ route('admin.invoice') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-food-menu"></i>
-                <div>Work Order</div>
-            </a>
-        </li>
-        <li class="menu-item {{ request()->is('admin.warranty') ? 'active' : '' }}">
-            <a href="{{ route('admin.warranty') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-food-menu"></i>
-                <div>Warranty</div>
-            </a>
-        </li>
+    <li class="menu-item {{ request()->is('invoice') ? 'active' : '' }}">
+      <a href="{{ route('admin.invoice') }}" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-food-menu"></i>
+        <div>Work Order</div>
+      </a>
+    </li>
+    <li class="menu-item {{ request()->is('warranty') ? 'active' : '' }}">
+      <a href="{{ route('admin.warranty') }}" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-food-menu"></i>
+        <div>Warranty</div>
+      </a>
+    </li>
     @else
-        <li class="menu-item {{ request()->is('user.invoice') ? 'active' : '' }}">
-            <a href="{{ route('user.invoice') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-food-menu"></i>
-                <div>Work Order</div>
-            </a>
+    <li class="menu-item {{ request()->is('invoice') ? 'active' : '' }}">
+      <a href="{{ route('user.invoice') }}" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-food-menu"></i>
+        <div>Work Order</div>
+      </a>
+    </li>
+    <li class="menu-item {{ request()->is('warranty') ? 'active' : '' }}">
+      <a href="{{ route('user.warranty') }}" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-food-menu"></i>
+        <div>Warranty</div>
+      </a>
+    </li>
+
+    <li class="menu-item {{ request()->is('order-status*') ? 'active open' : '' }}">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="User interface">Order</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {{ request()->is('order-status') ? 'active' : '' }}">
+          <a href="{{route('user.orderStatus')}}" class="menu-link">
+            <div data-i18n="Alerts">Order Status</div>
+          </a>
         </li>
-        <li class="menu-item {{ request()->is('user.warranty') ? 'active' : '' }}">
-            <a href="{{ route('user.warranty') }}" class="menu-link">
-                <i class="menu-icon tf-icons bx bx-food-menu"></i>
-                <div>Warranty</div>
-            </a>
-        </li>
+        <!-- <li class="menu-item {{ request()->is('order-status/order-details') ? 'active' : '' }}">
+          <a href="{{route('user.orderDetails')}}" class="menu-link">
+            <div data-i18n="Accordion">Order Details</div>
+          </a>
+        </li> -->
+      </ul>
+    </li>
     @endif
-@endif
+    @endif
 
   </ul>
 </aside>

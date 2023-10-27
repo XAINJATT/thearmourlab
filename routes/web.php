@@ -8,6 +8,7 @@ use App\Http\Controllers\frontend\BlogController;
 use App\Http\Controllers\frontend\BlogDetailsController;
 use App\Http\Controllers\frontend\CartController;
 use App\Http\Controllers\frontend\CeramicCoatingController;
+use App\Http\Controllers\frontend\WindowTintSimulatorController;
 use App\Http\Controllers\frontend\CheckoutController;
 use App\Http\Controllers\frontend\ContactController;
 use App\Http\Controllers\frontend\HomeController;
@@ -51,6 +52,7 @@ Route::get('/shop', [ShopController::class, 'index'])->name('frontend.shop');
 Route::get('/cart', [CartController::class, 'index'])->name('frontend.cart');
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('frontend.checkout');
 Route::get('/automotive', [AutomotiveController::class, 'index'])->name('frontend.automotive');
+Route::get('/WindowTintSimulator', [WindowTintSimulatorController::class, 'index'])->name('frontend.WindowTintSimulator');
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
@@ -66,5 +68,6 @@ Route::middleware(['auth'])->group(function () {
     // USER ROUTE
     Route::get('invoice', 'App\Http\Controllers\User\InvoiceController@index')->name('user.invoice');
     Route::get('warranty', 'App\Http\Controllers\User\WarrantyController@index')->name('user.warranty');
-
+    Route::get('order-status', 'App\Http\Controllers\User\OrderStatusController@index')->name('user.orderStatus');
+    Route::get('order-status/order-details', 'App\Http\Controllers\User\OrderStatusController@orderDetails')->name('user.orderDetails');
 });

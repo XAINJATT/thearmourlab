@@ -30,7 +30,7 @@
             <div class="row">
                 <div class="col-lg-4 col-md-5">
                     <aside class="sticky-top pb-1">
-                        <div class="widget">
+                        <!-- <div class="widget">
                             <ul class="service-menu">
                                 <li><a href="{{url('automotive')}}"><span>Automotive</span><i class="fa fa-angle-right"></i> </a></li>
                                 <li><a href="{{url('/lube_oil')}}"><span>Marine</span><i class="fa fa-angle-right"></i></a></li>
@@ -38,7 +38,7 @@
                                 <li><a href="{{url('/air-bag')}}"><span>Residential</span><i class="fa fa-angle-right"></i></a></li>
                                 <li><a href="{{url('/break-repair')}}"><span>Industrial</span><i class="fa fa-angle-right"></i></a></li>
                             </ul>
-                        </div>
+                        </div> -->
                         <div class="widget">
                             <div class="brochure-bx">
                                 <h5 class="title-head">Download</h5>
@@ -72,7 +72,7 @@
                                     </svg>
                                     <h5 class="title mt-20">How Can We Help</h5>
                                     <p>If you need any helps, please free to contact us.</p>
-                                    <a href="contact-1.html" class="btn btn-primary">Contact Us</a>
+                                    <a href="{{ route('frontend.contact') }}" class="btn btn-primary">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -95,177 +95,239 @@
                             </ul>
                         </div>
                         <div class="mb-10">
-                        <div class="row mb-10">
-                            <div class="wrapper">
+                            <div class="row mb-10">
+                                <div class="wrapper">
+                                    <div class="car-section-heading">
+                                        <h1><span>Car Detailing Pricing</span></h1>
+                                    </div>
+                                    <div class="tabs-wrapper">
+                                        <span class="left scroller-btn">
+                                            <ul id="scroller" class="nav nav-tabs" style="margin-left: 90px;">
+                                                <li class="active mb-3" data-id="regular-size-car" class="template-state-selected">
+                                                    <a data-toggle="tab" href="#menu1">
+                                                        <div>
+                                                            <!-- Icon -->
+                                                            <div class="car-icon"><img style="width: 80px;" src="images/service-section/small-car-icon.png" alt="car icon" /></div>
+                                                            <!-- Name -->
+                                                            <div class="car-label" data-price1="$160" data-price2="&lt;span&gt;28% OFF&lt;/span&gt;&lt;s&gt;$319&lt;/s&gt; $230" data-price3="$220" data-price4="&lt;span&gt;30% OFF&lt;/span&gt;&lt;s&gt;$414&lt;/s&gt; $290" data-price5="$260" data-price6="&lt;span&gt;32% OFF&lt;/span&gt;&lt;s&gt;$588&lt;/s&gt; $400" data-price7="$350" data-price8="&lt;span&gt;35% OFF&lt;/span&gt;&lt;s&gt;$877&lt;/s&gt; $570" data-time1="1 - 1.5 Hours" data-time2="1.15 - 1.45 Hours" data-time3="1.5 - 2 Hours" data-time4="1.45 - 2.15 Hours" data-time5="1.5 - 2 hours" data-time6="2.5 - 3 Hours" data-time7="2.5 - 3 Hours" data-time8="2.45 - 3.45 Hours">Poly Coating</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class=" mb-3">
+                                                    <a data-toggle="tab" href="#menu2">
+                                                        <div>
+                                                            <div class="car-icon"><img style="width: 80px;" src="images/service-section/small-car-icon.png" alt="car icon" /></div>
+                                                            <div class="car-label" data-price1="$180" data-price2="&lt;span&gt;28% OFF&lt;/span&gt;&lt;s&gt;$347&lt;/s&gt; $250" data-price3="$240" data-price4="&lt;span&gt;30% OFF&lt;/span&gt;&lt;s&gt;$450&lt;/s&gt; $315" data-price5="$280" data-price6="&lt;span&gt;32% OFF&lt;/span&gt;&lt;s&gt;$610&lt;/s&gt; $415" data-price7="$375" data-price8="&lt;span&gt;35% OFF&lt;/span&gt;&lt;s&gt;$900&lt;/s&gt; $585" data-time1="1.15 - 2 Hours" data-time2="1.5 - 2 Hours" data-time3="1.45 - 2.15 Hours" data-time4="1.45 - 2.5 Hours" data-time5="1.45 - 2.15 Hours" data-time6="2.5 - 3 Hours" data-time7="2.45 - 3.15 Hours" data-time8="2.45 - 3.45 Hours">Quartz Coating</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class=" mb-3">
+                                                    <a data-toggle="tab" href="#menu3">
+                                                        <div>
+                                                            <div class="car-icon"><img style="width: 80px;" src="images/service-section/small-car-icon.png" alt="car icon" /></div>
+                                                            <div class="car-label" data-price1="$220" data-price2="&lt;span&gt;28% OFF&lt;/span&gt;&lt;s&gt;$377&lt;/s&gt; $275" data-price3="$280" data-price4="&lt;span&gt;30% OFF&lt;/span&gt;&lt;s&gt;$493&lt;/s&gt; $345" data-price5="$300" data-price6="&lt;span&gt;32% OFF&lt;/span&gt;&lt;s&gt;$632&lt;/s&gt; $430" data-price7="$390" data-price8="&lt;span&gt;35% OFF&lt;/span&gt;&lt;s&gt;$923&lt;/s&gt; $600" data-time1="1.5 - 2 Hours" data-time2="1.45 - 2.15 Hours" data-time3="2.20 - 2.45 Hours" data-time4="2 - 3 Hours" data-time5="2 - 2.5 Hours" data-time6="2.5 - 3 Hours" data-time7="2.45 - 3.5 Hours" data-time8="3 - 4.15 Hours">Quartz ​Plus Coating</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li class=" mb-3">
+                                                    <a data-toggle="tab" href="#menu4">
+                                                        <div>
+                                                            <div class="car-icon"><img style="width: 80px;" src="images/service-section/small-car-icon.png" alt="car icon" /></div>
+                                                            <div class="car-label" data-price1="$220" data-price2="&lt;span&gt;28% OFF&lt;/span&gt;&lt;s&gt;$377&lt;/s&gt; $275" data-price3="$280" data-price4="&lt;span&gt;30% OFF&lt;/span&gt;&lt;s&gt;$493&lt;/s&gt; $345" data-price5="$300" data-price6="&lt;span&gt;32% OFF&lt;/span&gt;&lt;s&gt;$632&lt;/s&gt; $430" data-price7="$390" data-price8="&lt;span&gt;35% OFF&lt;/span&gt;&lt;s&gt;$923&lt;/s&gt; $600" data-time1="1.5 - 2. Hours" data-time2="1.45 - 2.15 Hours" data-time3="2 - 2.5 Hours" data-time4="2 - 3 Hours" data-time5="2 - 2.5 Hours" data-time6="2.45 - 3.15 Hours" data-time7="2.45 - 3.5 Hours" data-time8="3 - 4.15 Hours">Kenzo Coating</div>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </span>
+                                    </div>
+                                    <div class="tab-content">
+                                        <div id="menu1" class="tab-pane fade in active show">
+                                            <div class="card mb-4">
+                                                <div class="card-body">
+                                                    <!-- Grid row -->
+                                                    <div class="row">
+                                                        <!-- Grid column -->
+                                                        <div class="col-md-12">
+                                                            <h4 class="title mb-10">1 Year Coating</h4>
+                                                        </div>
+                                                        <ul class="list-check-squer mb-30">
+                                                            <li>1 Layer Of 8H</li>
+                                                            <li>1 Layer On Plastic & Wheels & Exhaust</li>
+                                                            <li>1 Layers On Windows</li>
+                                                        </ul>
+                                                        <div class="secondary-menu" style="margin: 0; padding: 0;">
+                                                            <a href="#" class="btn btn-primary ms-3">Free Quote</a>
+                                                        </div>
+                                                        <p style="margin-top: 10px;">Inquire About Other Packages</p>
+                                                        <!-- Grid column -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="menu2" class="tab-pane fade">
+                                            <div class="card mb-4">
+                                                <div class="card-body">
+                                                    <!-- Grid row -->
+                                                    <div class="row">
+                                                        <!-- Grid column -->
+                                                        <div class="col-md-12">
+                                                            <h4 class="title mb-10">2 Year Coating</h4>
+                                                        </div>
+                                                        <ul class="list-check-squer mb-30">
+                                                            <li>1 Layer Of 9H</li>
+                                                            <li>1 Layer Of Window coating</li>
+                                                            <li>1 Layer On All Plastic & Wheels & Exhaust Tips</li>
+                                                        </ul>
+                                                        <div class="secondary-menu" style="margin: 0; padding: 0;">
+                                                            <a href="#" class="btn btn-primary ms-3">Free Quote</a>
+                                                        </div>
+                                                        <p style="margin-top: 10px;">Inquire About Other Packages</p>
+                                                        <!-- Grid column -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="menu3" class="tab-pane fade">
+                                            <div class="card mb-4">
+                                                <div class="card-body">
+                                                    <!-- Grid row -->
+                                                    <div class="row">
+                                                        <!-- Grid column -->
+                                                        <div class="col-md-12">
+                                                            <h4 class="title mb-10">4 Year Coating</h4>
+                                                        </div>
+                                                        <ul class="list-check-squer mb-30">
+                                                            <li>1 Layer Of 9H Graphene</li>
+                                                            <li>1 Layer of Top Coat</li>
+                                                            <li>1 Layer On Plastic & Wheels & Exhaust</li>
+                                                            <li>1 Layer On Windows</li>
+                                                        </ul>
+                                                        <div class="secondary-menu" style="margin: 0; padding: 0;">
+                                                            <a href="#" class="btn btn-primary ms-3">Free Quote</a>
+                                                        </div>
+                                                        <p style="margin-top: 10px;">Inquire About Other Packages</p>
+                                                        <!-- Grid column -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="menu4" class="tab-pane fade">
+                                            <div class="card mb-4">
+                                                <div class="card-body">
+                                                    <!-- Grid row -->
+                                                    <div class="row">
+                                                        <!-- Grid column -->
+                                                        <div class="col-md-12">
+                                                            <h4 class="title mb-10">5 Year Coating</h4>
+                                                        </div>
+                                                        <ul class="list-check-squer mb-30">
+                                                            <li>1 Layers Of 10H Graphene</li>
+                                                            <li>1 Layer of Top Coat</li>
+                                                            <li>1 Layer On Plastic & Wheels & Exhuast</li>
+                                                            <li>2 Layers On Windows</li>
+                                                        </ul>
+                                                        <div class="secondary-menu" style="margin: 0; padding: 0;">
+                                                            <a href="#" class="btn btn-primary ms-3">Free Quote</a>
+                                                        </div>
+                                                        <p style="margin-top: 10px;">Inquire About Other Packages</p>
+                                                        <!-- Grid column -->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- jQuery library -->
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+                            <!-- Latest compiled JavaScript -->
+                            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+                            <div class="head-text mb-30">
+                                <h4 class="title mb-10">COMPLETED WORKS</h4>
+                                <p class="mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                            </div>
+                            <div class="row mb-30">
+                                <div class="col-lg-6">
+                                    <ul class="list-check-squer mb-0">
+                                        <li>Then along come two they</li>
+                                        <li>Lorem Ipsum is simply dummy</li>
+                                        <li>That’s just a little bit than</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6">
+                                    <ul class="list-check-squer mb-0">
+                                        <li>Standard dummy text ever since</li>
+                                        <li>Simply dummy text of the printing</li>
+                                        <li>Make a type specimen book</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 mt-3">
                                 <div class="car-section-heading">
-                                    <h1><span>Car Detailing Pricing</span></h1>
+                                    <h1><span>FAQ's</span></h1>
                                 </div>
-                                <div class="tabs-wrapper">
-                                    <span class="left scroller-btn">
-                                        <ul id="scroller" class="nav nav-tabs" style="margin-left: 90px;">
-                                            <li class="active" data-id="regular-size-car" class="template-state-selected">
-                                                <a data-toggle="tab" href="#menu1">
-                                                    <div>
-                                                        <!-- Icon -->
-                                                        <div class="car-icon"><img style="width: 80px;" src="images/service-section/small-car-icon.png" alt="car icon" /></div>
-                                                        <!-- Name -->
-                                                        <div class="car-label" data-price1="$160" data-price2="&lt;span&gt;28% OFF&lt;/span&gt;&lt;s&gt;$319&lt;/s&gt; $230" data-price3="$220" data-price4="&lt;span&gt;30% OFF&lt;/span&gt;&lt;s&gt;$414&lt;/s&gt; $290" data-price5="$260" data-price6="&lt;span&gt;32% OFF&lt;/span&gt;&lt;s&gt;$588&lt;/s&gt; $400" data-price7="$350" data-price8="&lt;span&gt;35% OFF&lt;/span&gt;&lt;s&gt;$877&lt;/s&gt; $570" data-time1="1 - 1.5 Hours" data-time2="1.15 - 1.45 Hours" data-time3="1.5 - 2 Hours" data-time4="1.45 - 2.15 Hours" data-time5="1.5 - 2 hours" data-time6="2.5 - 3 Hours" data-time7="2.5 - 3 Hours" data-time8="2.45 - 3.45 Hours">Poly Coating</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a data-toggle="tab" href="#menu2">
-                                                    <div>
-                                                        <div class="car-icon"><img style="width: 80px;" src="images/service-section/small-car-icon.png" alt="car icon" /></div>
-                                                        <div class="car-label" data-price1="$180" data-price2="&lt;span&gt;28% OFF&lt;/span&gt;&lt;s&gt;$347&lt;/s&gt; $250" data-price3="$240" data-price4="&lt;span&gt;30% OFF&lt;/span&gt;&lt;s&gt;$450&lt;/s&gt; $315" data-price5="$280" data-price6="&lt;span&gt;32% OFF&lt;/span&gt;&lt;s&gt;$610&lt;/s&gt; $415" data-price7="$375" data-price8="&lt;span&gt;35% OFF&lt;/span&gt;&lt;s&gt;$900&lt;/s&gt; $585" data-time1="1.15 - 2 Hours" data-time2="1.5 - 2 Hours" data-time3="1.45 - 2.15 Hours" data-time4="1.45 - 2.5 Hours" data-time5="1.45 - 2.15 Hours" data-time6="2.5 - 3 Hours" data-time7="2.45 - 3.15 Hours" data-time8="2.45 - 3.45 Hours">Quartz Coating</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a data-toggle="tab" href="#menu3">
-                                                    <div>
-                                                        <div class="car-icon"><img style="width: 80px;" src="images/service-section/small-car-icon.png" alt="car icon" /></div>
-                                                        <div class="car-label" data-price1="$220" data-price2="&lt;span&gt;28% OFF&lt;/span&gt;&lt;s&gt;$377&lt;/s&gt; $275" data-price3="$280" data-price4="&lt;span&gt;30% OFF&lt;/span&gt;&lt;s&gt;$493&lt;/s&gt; $345" data-price5="$300" data-price6="&lt;span&gt;32% OFF&lt;/span&gt;&lt;s&gt;$632&lt;/s&gt; $430" data-price7="$390" data-price8="&lt;span&gt;35% OFF&lt;/span&gt;&lt;s&gt;$923&lt;/s&gt; $600" data-time1="1.5 - 2 Hours" data-time2="1.45 - 2.15 Hours" data-time3="2.20 - 2.45 Hours" data-time4="2 - 3 Hours" data-time5="2 - 2.5 Hours" data-time6="2.5 - 3 Hours" data-time7="2.45 - 3.5 Hours" data-time8="3 - 4.15 Hours">Quartz ​Plus Coating</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a data-toggle="tab" href="#menu4">
-                                                    <div>
-                                                        <div class="car-icon"><img style="width: 80px;" src="images/service-section/small-car-icon.png" alt="car icon" /></div>
-                                                        <div class="car-label" data-price1="$220" data-price2="&lt;span&gt;28% OFF&lt;/span&gt;&lt;s&gt;$377&lt;/s&gt; $275" data-price3="$280" data-price4="&lt;span&gt;30% OFF&lt;/span&gt;&lt;s&gt;$493&lt;/s&gt; $345" data-price5="$300" data-price6="&lt;span&gt;32% OFF&lt;/span&gt;&lt;s&gt;$632&lt;/s&gt; $430" data-price7="$390" data-price8="&lt;span&gt;35% OFF&lt;/span&gt;&lt;s&gt;$923&lt;/s&gt; $600" data-time1="1.5 - 2. Hours" data-time2="1.45 - 2.15 Hours" data-time3="2 - 2.5 Hours" data-time4="2 - 3 Hours" data-time5="2 - 2.5 Hours" data-time6="2.45 - 3.15 Hours" data-time7="2.45 - 3.5 Hours" data-time8="3 - 4.15 Hours">Kenzo Coating</div>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </span>
-                                </div>
-                                <div class="tab-content">
-                                    <div id="menu1" class="tab-pane fade in active">
-                                        <div class="card mb-4">
+                                <div class="ttr-accordion style1" id="themeAccordion1">
+                                    <div class="card">
+                                        <div class="card-header" id="headingOne" data-bs-toggle="collapse" role="button" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            <i class="fa fa-question-circle"></i>
+                                            Should I consider using synthetic motor oil?
+                                        </div>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#themeAccordion1">
                                             <div class="card-body">
-                                                <!-- Grid row -->
-                                                <div class="row">
-                                                    <!-- Grid column -->
-                                                    <div class="col-md-12">
-                                                        <h4 class="title mb-10">1 Year Coating</h4>
-                                                    </div>
-                                                    <ul class="list-check-squer mb-30">
-                                                        <li>1 Layer Of 8H</li>
-                                                        <li>1 Layer On Plastic & Wheels & Exhaust</li>
-                                                        <li>1 Layers On Windows</li>
-                                                    </ul>
-                                                    <div class="secondary-menu" style="margin: 0; padding: 0;">
-                                                        <a href="#" class="btn btn-primary ms-3">Free Quote</a>
-                                                    </div>
-                                                    <p style="margin-top: 10px;">Inquire About Other Packages</p>
-                                                    <!-- Grid column -->
-                                                </div>
+                                                Synthetic engine oils are produced through a synthesis process that takes very small molecules and assembles them into larger designer molecules with premium lubricating properties.
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="menu2" class="tab-pane fade">
-                                        <div class="card mb-4">
-                                        <div class="card-body">
-                                                <!-- Grid row -->
-                                                <div class="row">
-                                                    <!-- Grid column -->
-                                                    <div class="col-md-12">
-                                                        <h4 class="title mb-10">2 Year Coating</h4>
-                                                    </div>
-                                                    <ul class="list-check-squer mb-30">
-                                                        <li>1 Layer Of 9H</li>
-                                                        <li>1 Layer Of Window coating</li>
-                                                        <li>1 Layer On All Plastic & Wheels & Exhaust Tips</li>
-                                                    </ul>
-                                                    <div class="secondary-menu" style="margin: 0; padding: 0;">
-                                                        <a href="#" class="btn btn-primary ms-3">Free Quote</a>
-                                                    </div>
-                                                    <p style="margin-top: 10px;">Inquire About Other Packages</p>
-                                                    <!-- Grid column -->
-                                                </div>
+                                    <div class="card">
+                                        <div class="card-header collapsed" id="headingTwo" role="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="fa fa-question-circle"></i>
+                                            What parts should be replaced at what intervals?
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#themeAccordion1">
+                                            <div class="card-body">
+                                                Synthetic engine oils are produced through a synthesis process that takes very small molecules and assembles them into larger designer molecules with premium lubricating properties.
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="menu3" class="tab-pane fade">
-                                        <div class="card mb-4">
-                                        <div class="card-body">
-                                                <!-- Grid row -->
-                                                <div class="row">
-                                                    <!-- Grid column -->
-                                                    <div class="col-md-12">
-                                                        <h4 class="title mb-10">4 Year Coating</h4>
-                                                    </div>
-                                                    <ul class="list-check-squer mb-30">
-                                                        <li>1 Layer Of 9H Graphene</li>
-                                                        <li>1 Layer of Top Coat</li>
-                                                        <li>1 Layer On Plastic & Wheels & Exhaust</li>
-                                                        <li>1 Layer On Windows</li>
-                                                    </ul>
-                                                    <div class="secondary-menu" style="margin: 0; padding: 0;">
-                                                        <a href="#" class="btn btn-primary ms-3">Free Quote</a>
-                                                    </div>
-                                                    <p style="margin-top: 10px;">Inquire About Other Packages</p>
-                                                    <!-- Grid column -->
-                                                </div>
+                                    <div class="card">
+                                        <div class="card-header collapsed" id="headingThree" role="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="fa fa-question-circle"></i>
+                                            How do I keep track of routine maintenance?
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#themeAccordion1">
+                                            <div class="card-body">
+                                                Synthetic engine oils are produced through a synthesis process that takes very small molecules and assembles them into larger designer molecules with premium lubricating properties.
                                             </div>
                                         </div>
                                     </div>
-                                    <div id="menu4" class="tab-pane fade">
-                                        <div class="card mb-4">
-                                        <div class="card-body">
-                                                <!-- Grid row -->
-                                                <div class="row">
-                                                    <!-- Grid column -->
-                                                    <div class="col-md-12">
-                                                        <h4 class="title mb-10">5 Year Coating</h4>
-                                                    </div>
-                                                    <ul class="list-check-squer mb-30">
-                                                        <li>1 Layers Of 10H Graphene</li>
-                                                        <li>1 Layer of Top Coat</li>
-                                                        <li>1 Layer On Plastic & Wheels & Exhuast</li>
-                                                        <li>2 Layers On Windows</li>
-                                                    </ul>
-                                                    <div class="secondary-menu" style="margin: 0; padding: 0;">
-                                                        <a href="#" class="btn btn-primary ms-3">Free Quote</a>
-                                                    </div>
-                                                    <p style="margin-top: 10px;">Inquire About Other Packages</p>
-                                                    <!-- Grid column -->
-                                                </div>
+                                    <div class="card">
+                                        <div class="card-header collapsed" id="headingFour" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            <i class="fa fa-question-circle"></i>
+                                            Should I consider using synthetic motor oil?
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#themeAccordion1">
+                                            <div class="card-body">
+                                                Synthetic engine oils are produced through a synthesis process that takes very small molecules and assembles them into larger designer molecules with premium lubricating properties.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header collapsed" id="headingFive" role="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                            <i class="fa fa-question-circle"></i>
+                                            What parts should be replaced at what intervals?
+                                        </div>
+                                        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-bs-parent="#themeAccordion1">
+                                            <div class="card-body">
+                                                Synthetic engine oils are produced through a synthesis process that takes very small molecules and assembles them into larger designer molecules with premium lubricating properties.
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- jQuery library -->
-                        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-                        <!-- Latest compiled JavaScript -->
-                        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
-                        <div class="head-text mb-30">
-                            <h4 class="title mb-10">COMPLETED WORKS</h4>
-                            <p class="mb-15">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                            <p class="mb-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
-                        </div>
-                        <div class="row mb-30">
-                            <div class="col-lg-6">
-                                <ul class="list-check-squer mb-0">
-                                    <li>Then along come two they</li>
-                                    <li>Lorem Ipsum is simply dummy</li>
-                                    <li>That’s just a little bit than</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-6">
-                                <ul class="list-check-squer mb-0">
-                                    <li>Standard dummy text ever since</li>
-                                    <li>Simply dummy text of the printing</li>
-                                    <li>Make a type specimen book</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
                     </div>
                 </div>
             </div>

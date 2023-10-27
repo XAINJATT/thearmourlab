@@ -1,0 +1,372 @@
+/*
+	CSS file for landing page customizations
+*/
+
+
+
+/*fusion*/
+.home-fusion-logo  {
+    max-width: 100%;
+    font-size: 1rem;
+
+    height: 2.75em;
+    width: 16.125em;
+    background: url(/web-assets/images/logos/fusion-plus-logo-reverse.svg) 0 0 no-repeat;
+    /* background-size: 3.2125em 8.3125em; */
+    background-size: contain;
+}
+
+@media (min-width: 992px) {
+    .home-fusion-logo {
+        font-size: 1.25rem;
+    }
+}
+
+.no-svg .home-fusion-logo {
+    height: 97px;
+    width: 452px;
+    background: url(/web-assets/images/logos/fusion-plus-logo-reverse.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+/*rx*/
+.home-rx-logo  {
+    max-width: 100%;
+    font-size: 1rem;
+
+    height: 3.2125em;
+    width: 8.3125em;
+    background: url(/web-assets/images/logos/XPEL-RX-antimicrobial.svg) 0 0 no-repeat;
+    /* background-size: 3.2125em 8.3125em; */
+    background-size: contain;
+}
+
+@media (min-width: 992px) {
+    .home-rx-logo {
+        font-size: 1.25rem;
+    }
+}
+
+.no-svg .home-rx-logo {
+    height: 58px;
+    width: 100px;
+    background: url(/web-assets/images/logos/XPEL-RX-antimicrobial.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+/*interior protection*/
+.home-interior-protection-logo {
+	max-width: 100%;
+	font-size: 1rem;
+	height: 2.75em;
+	width:  9.5em;
+	background: url(/web-assets/images/logos/XPEL-interior-protection-reverse.svg) 0 0 no-repeat;
+	background-size: 9.5em 2.75em;
+}
+
+
+.no-svg .home-interior-protection-logo {
+	height: 44px;
+	width: 152px;
+	background: url(/web-assets/images/logos/XPEL-Interior-Protection-reverse.png) 0 0 no-repeat;
+	background-size: contain;
+}
+
+@media (min-width: 768px) {
+	.home-interior-protection-logo {
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.home-interior-protection-logo {
+		font-size: 1rem;
+		margin-top: 11px;
+		margin-bottom: 11px;
+	}
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+	.no-svg .home-interior-protection-logo {
+		background-image: url(/web-assets/images/logos/XPEL-Interior-Protection-reverse@2x.png);
+		background-size: 152px 44px;
+		background-size: contain;
+	}
+}
+
+/*raceday giveaway*/
+.home-raceday-logo {
+    background: url(/web-assets/images/logos/Raceday-giveaway-logo.svg) 0 0 no-repeat;
+    margin: auto;
+
+    /*330x72*/
+    height: 4.5em;
+    width: 20.625em;
+    background-size: 20.625em 4.5em;
+}
+
+.no-svg .home-raceday-logo {
+    height: 72px;
+    width: 330px;
+    background: url(/web-assets/images/logos/Raceday-giveaway-logo.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+.raceday-content .home-section-content-links a {
+	font-size: 1rem;
+}
+
+.raceday-content .emoji-flag {
+    font-size: 24px;
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+}
+
+.home-flag {
+    margin-right: 5px;
+    position: relative;
+    top: 4px;
+    width: 25px;
+}
+
+.raceday-content .home-section-content-text {
+	font-size: 1rem;
+    margin-right: 20px;
+}
+
+.raceday-content .home-section-content-links .secondary-link-pipe {
+	color: #f5af05;
+	margin: 0 10px;
+	position: relative;
+	top: -2px;
+}
+
+.raceday-content .home-section-content-links li.first {}
+
+.raceday-content .home-section-content-links a.link-primary {
+    color: #f5af05;
+}
+
+.raceday-content .home-section-content-links span.link-primary {
+    color: #f5af05;
+}
+
+.raceday-content .home-section-content-links a.link-primary:hover,
+.raceday-content .home-section-content-links a.link-primary:focus,
+.raceday-content .home-section-content-links a.link-primary:active,
+.raceday-content .home-section-content-links a:hover span.link-primary,
+.raceday-content .home-section-content-links a:focus span.link-primary,
+.raceday-content .home-section-content-links a:active span.link-primary{
+	color: #fff;
+}
+
+@media (min-width: 768px) {
+    .raceday-content .home-section-content-container .home-section-content-logo {
+        margin-top: 10px;
+        padding-right: 0;
+    }
+
+    .home-raceday-logo {
+        /*230x50*/
+        height: 3.125em;
+        width: 14.375em;
+        background-size: 14.375em 3.125em;
+    }
+
+    .no-svg .home-raceday-logo {
+        height: 50px;
+        width: 230px;
+    }
+
+    .raceday-content .home-section-content-links ul {
+        text-align: left;
+        line-height: 30px;
+        margin-left: 60px;
+    }
+
+	.raceday-content .home-section-content-text {
+        font-size: .875rem;
+        margin-right: 15px;
+	}
+
+    .raceday-content .home-section-content-links a {
+    	font-size: .875rem;
+    }
+
+    .raceday-content .home-section-content-links .link-pipe {
+        display: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .raceday-content .home-section-content-container .home-section-content-logo {
+        margin-top: 0;
+    }
+
+    .home-raceday-logo {
+        /*275x60*/
+        height: 3.75em;
+        width: 17.1875em;
+        background-size: 17.1875em 3.75em;
+    }
+
+    .no-svg .home-raceday-logo {
+        height: 60px;
+        width: 275px;
+    }
+
+    .raceday-content .home-section-content-links ul {
+        line-height: 54px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+	.raceday-content .home-section-content-text {
+		margin-right: 10px;
+	}
+
+    .raceday-content .home-section-content-links .secondary-link-pipe {
+    	margin: 0 5px;
+    }
+
+    .raceday-content .home-section-content-links .link-pipe {
+        display: inline-block;
+        margin: 0 10px;
+    }
+}
+@media (min-width: 1200px) {
+    .home-raceday-logo {
+        /*330x72*/
+        height: 4.5em;
+        width: 20.625em;
+        background-size: 20.625em 4.5em;
+    }
+
+    .no-svg .home-raceday-logo {
+        height: 72px;
+        width: 330px;
+    }
+
+    .raceday-content .home-section-content-links ul {
+        line-height: 67px;
+    }
+
+    .raceday-content .home-section-content-links a {
+    	font-size: 1rem;
+    }
+
+	.raceday-content .home-section-content-text {
+        font-size: 1rem;
+		margin-right: 20px;
+	}
+
+    .raceday-content .home-section-content-links .secondary-link-pipe {
+    	margin: 0 10px;
+    }
+
+    .raceday-content .home-section-content-links .link-pipe {
+        margin: 0 25px;
+    }
+}
+
+/*faceshield*/
+.home-faceshield-logo  {
+    max-width: 100%;
+    font-size: 1rem;
+
+    height: 3.2125em;
+    width: 8.3125em;
+    background: url(/web-assets/images/logos/faceshield-logo.svg) 0 0 no-repeat;
+    /* background-size: 3.2125em 8.3125em; */
+    background-size: contain;
+}
+
+@media (min-width: 992px) {
+    .home-faceshield-logo {
+        font-size: 1.25rem;
+    }
+}
+
+.no-svg .home-faceshield-logo {
+    height: 53px;
+    width: 133px;
+    background: url(/web-assets/images/logos/faceshield-logo.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+/*indycar*/
+.home-indy-logo  {
+    max-width: 100%;
+    font-size: 1rem;
+
+    height: 3.2125em;
+    width: 8.3125em;
+    background: url(/web-assets/images/logos/indy-logo.svg) 0 0 no-repeat;
+    /* background-size: 3.2125em 8.3125em; */
+    background-size: contain;
+}
+
+@media (min-width: 992px) {
+    .home-indy-logo {
+        font-size: 1.25rem;
+    }
+}
+
+.no-svg .home-indy-logo {
+    height: 186px;
+    width: 636px;
+    background: url(/web-assets/images/logos/indy-logo.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+/*xdc-21*/
+.home-xdc-21-logo  {
+    max-width: 100%;
+    font-size: 1rem;
+
+    height: 2.75em;
+    width: 16.125em;
+    background: url(/web-assets/images/logos/XDC-21.svg) 0 0 no-repeat;
+    /* background-size: 3.2125em 8.3125em; */
+    background-size: contain;
+}
+
+@media (min-width: 992px) {
+    .home-xdc-21-logo {
+        font-size: 1.25rem;
+    }
+}
+
+.no-svg .home-xdc-21-logo {
+    height: 53px;
+    width: 133px;
+    background: url(/web-assets/images/logos/XDC-21.png) 0 0 no-repeat;
+    background-size: contain;
+}
+
+/*black-friday*/
+.home-black-friday-logo  {
+    max-width: 100%;
+    font-size: 1rem;
+
+    height: 2.75em;
+    width: 16.125em;
+    background: url(/web-assets/images/logos/black-friday.svg) 0 0 no-repeat;
+    /* background-size: 3.2125em 8.3125em; */
+    background-size: contain;
+}
+
+@media (min-width: 992px) {
+    .home-black-friday-logo {
+        font-size: 1.25rem;
+    }
+}
+
+.no-svg .home-black-friday-logo {
+    height: 180px;
+    width: 452px;
+    background: url(/web-assets/images/logos/black-friday.png) 0 0 no-repeat;
+    background-size: contain;
+}
