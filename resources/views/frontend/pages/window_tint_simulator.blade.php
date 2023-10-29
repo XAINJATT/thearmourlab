@@ -15,12 +15,12 @@
     <div class="page-banner ovbl-dark" style="background-image:url(images/banner/bnr1.jpg);">
         <div class="container">
             <div class="page-banner-entry text-center">
-                <h1><span>Automotive</span></h1>
+                <h1><span>Window Tint Simulator</span></h1>
                 <!-- Breadcrumb row -->
                 <nav aria-label="breadcrumb" class="breadcrumb-row">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/"><i class="las la-home"></i>Home > </a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Automotive</li>
+                        <li class="breadcrumb-item active" aria-current="page">Window Tint Simulator</li>
                     </ul>
                 </nav>
                 <!-- Breadcrumb row END -->
