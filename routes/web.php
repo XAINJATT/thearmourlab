@@ -12,6 +12,7 @@ use App\Http\Controllers\frontend\WindowTintSimulatorController;
 use App\Http\Controllers\frontend\CheckoutController;
 use App\Http\Controllers\frontend\ContactController;
 use App\Http\Controllers\frontend\HomeController;
+use App\Http\Controllers\frontend\PaintProtectionFilmController;
 use App\Http\Controllers\frontend\ShopController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
@@ -52,7 +53,8 @@ Route::get('/shop', [ShopController::class, 'index'])->name('frontend.shop');
 Route::get('/cart', [CartController::class, 'index'])->name('frontend.cart');
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('frontend.checkout');
 Route::get('/automotive', [AutomotiveController::class, 'index'])->name('frontend.automotive');
-Route::get('/WindowTintSimulator', [WindowTintSimulatorController::class, 'index'])->name('frontend.WindowTintSimulator');
+Route::get('/window-tint-simulator', [WindowTintSimulatorController::class, 'index'])->name('frontend.WindowTintSimulator');
+Route::get('/paint-protection-film', [PaintProtectionFilmController::class, 'index'])->name('frontend.PaintProtectionFilm');
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
