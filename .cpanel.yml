@@ -1,1 +1,5 @@
-
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH= /home2/gwneverl/thearmourlab.gw2neverland.com/
+    - /bin/cp -R images $DEPLOYPATH
