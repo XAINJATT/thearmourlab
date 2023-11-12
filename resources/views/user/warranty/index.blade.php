@@ -20,7 +20,46 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .card hr {
+    color: #adb35b !important;
+    height: 2px !important;
+    width: 100% !important;
+  }
+
+  .signature-line {
+    border-bottom: 1px solid #000;
+    /* Adjust the border properties as needed */
+    margin-top: 30px;
+    /* You can adjust the spacing above the signature line */
+  }
+
+  .kbw-signature {
+    width: 400px;
+    height: 200px;
+  }
 </style>
+
+<script>
+  $(function() {
+    var sig = $('#sig').signature();
+    $('#disable').click(function() {
+      var disable = $(this).text() === 'Disable';
+      $(this).text(disable ? 'Enable' : 'Disable');
+      sig.signature(disable ? 'disable' : 'enable');
+    });
+    $('#clear').click(function() {
+      sig.signature('clear');
+    });
+    $('#json').click(function() {
+      alert(sig.signature('toJSON'));
+    });
+    $('#svg').click(function() {
+      alert(sig.signature('toSVG'));
+    });
+  });
+</script>
+
+
 <div class="content container-fluid">
   {{--Section 1--}}
   <!-- Content -->
@@ -214,10 +253,14 @@
                   </div>
                 </div>
                 <div class="col-md-6 col-12 mt-2">
-                  <div class="">
-                    <label for="installer_signature" class="form-label me-2 fw-medium mt-2">Installer Signature:</label>
-                    <input type="file" class="form-control" id="vin" name="installer_signature" placeholder="installer-signature" />
-                  </div>
+                    <label for="authorized_signature" class="form-label fw-medium" style="color: #040404 !important; font-weight: bolder;">Installer Signature:</label>
+                    <div id="sign"></div>
+                    <p style="clear: both;">
+                      <button id="sign_disable">Disable</button>
+                      <button id="sign_clear">Clear</button>
+                      <!-- <button id="json">To JSON</button>
+                      <button id="svg">To SVG</button> -->
+                    </p>
                 </div>
               </div>
               <!-- Form End -->

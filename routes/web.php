@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\InvoiceController;
+use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\WarrantyController;
 use App\Http\Controllers\frontend\AutomotiveController;
 use App\Http\Controllers\frontend\BlogController;
@@ -64,8 +65,25 @@ Route::middleware(['auth'])->group(function () {
     Route::get('profile', [DashboardController::class, 'profile'])->name('profile');
     
     // ADMIN ROUTE
+
+    // InvoiceController 
     Route::get('admin/invoice', [InvoiceController::class, 'index'])->name('admin.invoice');
+    Route::get('admin/invoice/create', [InvoiceController::class, 'create'])->name('admin.invoice.create');
+    Route::post('admin/invoice/store', [InvoiceController::class, 'store'])->name('admin.invoice.store');
+    Route::post('admin/invoice/delete/{id}', [InvoiceController::class, 'delete'])->name('admin.invoice.delete');
+
+    // WarrantyController
     Route::get('admin/warranty', [WarrantyController::class, 'index'])->name('admin.warranty');
+    Route::get('admin/warranty/create', [WarrantyController::class, 'create'])->name('admin.warranty.create');
+    Route::post('admin/warranty/store', [WarrantyController::class, 'store'])->name('admin.warranty.store');
+    Route::post('admin/warranty/delete/{id}', [WarrantyController::class, 'delete'])->name('admin.warranty.delete');
+
+    // UserController
+    Route::get('admin/user', [UserController::class, 'index'])->name('admin.user');
+    Route::get('admin/user/create', [UserController::class, 'create'])->name('admin.user.create');
+    Route::post('admin/user/store', [UserController::class, 'store'])->name('admin.user.store');
+    Route::post('admin/user/delete/{id}', [UserController::class, 'delete'])->name('admin.user.delete');
+    Route::post('admin/user/statusUpdate/{id}', [UserController::class, 'statusUpdate'])->name('admin.user.statusUpdate');
 
     // USER ROUTE
     Route::get('invoice', 'App\Http\Controllers\User\InvoiceController@index')->name('user.invoice');

@@ -33,7 +33,7 @@
                                 <li class="add-menu-left">
                                     <ul>
                                         <li><a href="{{ route('frontend.CeramicCoating') }}"><span>Ceramic coating</span> </a></li>
-                                        <li><a href="#"><span>Paint protection film</span></a></li>
+                                        <li><a href="{{ route('frontend.PaintProtectionFilm') }}"><span>Paint protection film</span></a></li>
                                         <li><a href="{{ route('frontend.WindowTintSimulator') }}"><span>Window tints</span></a></li>
                                         <li><a href="#"><span>Wraps</span></a></li>
                                         <li><a href="#"><span>Industrial</span></a></li>

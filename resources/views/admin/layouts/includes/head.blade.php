@@ -9,6 +9,12 @@
 
 <meta name="description" content="{{\App\Helpers\SiteHelper::settings()['PageTitle']}}" />
 
+<!-- DataTables -->
+<link href="{{ asset('backend/plugins/datatable/datatables.min.css') }}" rel="stylesheet" type="text/css" />
+
+<!-- SweetAlert CSS -->
+<link rel="stylesheet" href="{{asset('backend/plugins/sweetalert2/sweetalert2.min.css')}}">
+
 <!-- Favicon -->
 <link rel="icon" type="image/x-icon" href="{{asset('images/favicon.ico')}}" />
 

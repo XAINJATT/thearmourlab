@@ -61,17 +61,48 @@
 
     @if (auth()->check()) <!-- Check if a user is logged in -->
     @if (auth()->user()->role == 0) <!-- Check if the user is an admin -->
-    <li class="menu-item {{ request()->is('invoice') ? 'active' : '' }}">
-      <a href="{{ route('admin.invoice') }}" class="menu-link">
+    <li class="menu-item {{ request()->is('admin/user') ? 'active' : '' }}">
+      <a href="{{ route('admin.user') }}" class="menu-link">
         <i class="menu-icon tf-icons bx bx-food-menu"></i>
-        <div>Work Order</div>
+        <div>User Management</div>
       </a>
     </li>
-    <li class="menu-item {{ request()->is('warranty') ? 'active' : '' }}">
-      <a href="{{ route('admin.warranty') }}" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-food-menu"></i>
-        <div>Warranty</div>
+    <li class="menu-item {{ request()->is('admin/invoice*') ? 'active open' : '' }}">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="User interface">Work Order</div>
       </a>
+      <ul class="menu-sub">
+        <li class="menu-item {{ request()->is('admin/invoice') ? 'active' : '' }}">
+          <a href="{{route('admin.invoice')}}" class="menu-link">
+            <div data-i18n="Alerts">List</div>
+          </a>
+        </li>
+        <li class="menu-item {{ request()->is('admin/invoice/create') ? 'active' : '' }}">
+          <a href="{{route('admin.invoice.create')}}" class="menu-link">
+            <div data-i18n="Alerts">Add</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-item {{ request()->is('admin/warranty*') ? 'active open' : '' }}">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="User interface">Warranty</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {{ request()->is('admin/warranty') ? 'active' : '' }}">
+          <a href="{{route('admin.warranty')}}" class="menu-link">
+            <div data-i18n="Alerts">List</div>
+          </a>
+        </li>
+        <li class="menu-item {{ request()->is('admin/warranty/create') ? 'active' : '' }}">
+          <a href="{{route('admin.warranty.create')}}" class="menu-link">
+            <div data-i18n="Alerts">Add</div>
+          </a>
+        </li>
+      </ul>
     </li>
     @else
     <li class="menu-item {{ request()->is('invoice') ? 'active' : '' }}">

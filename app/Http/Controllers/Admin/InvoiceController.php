@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Order;
 use Illuminate\Http\Request;
 
 class InvoiceController extends Controller
@@ -12,7 +13,8 @@ class InvoiceController extends Controller
      */
     public function index()
     {
-        return view('admin.invoice.index');
+        $orders = Order::all();
+        return view('admin.invoice.index', compact('orders'));
     }
 
     /**
@@ -20,7 +22,7 @@ class InvoiceController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.invoice.add');
     }
 
     /**
@@ -28,8 +30,44 @@ class InvoiceController extends Controller
      */
     public function store(Request $request)
     {
-        //
-    }
+        $data = [
+            'name' => $request->input('name'),
+            'make' => $request->input('make'),
+            'colour' => $request->input('colour'),
+            'phone' => $request->input('phone'),
+            'model' => $request->input('model'),
+            'year' => $request->input('year'),
+            'email' => $request->input('email'),
+            'v_i_n' => $request->input('v_i_n'),
+            'plate' => $request->input('plate'),
+    
+            // Ceramic Coating
+            'ceramic_coating_kenzo_coating' => $request->has('ceramic_coating_kenzo_coating'),
+            'ceramic_coating_quartz_plus_coating' => $request->has('ceramic_coating_quartz_plus_coating'),
+            'ceramic_coating_quartz_coating' => $request->has('ceramic_coating_quartz_coating'),
+            'ceramic_coating_premier_coating' => $request->has('ceramic_coating_premier_coating'),
+            'ceramic_coating_interior_pkg' => $request->has('ceramic_coating_interior?_pkg'),
+            'ceramic_coating_wheels_of_pkg' => $request->has('ceramic_coating_wheels_of_pkg'),
+            'ceramic_coating_price' => $request->input('ceramic_coating_price'),
+    
+            // PPF
+            'ppf_full_car' => $request->has('ppf_full_car'),
+            'ppf_client_notes' => $request->has('ppf_client_notes'),
+            'ppf_payment_stub' => $request->has('ppf_payment_stub'),
+            'ppf_payment_terms' => $request->has('ppf_payment_terms'),
+            'ppf_price' => $request->input('ppf_price'),
+    
+            // Additional Ceramic Coating
+            'cc_payment_terms' => $request->has('cc_payment_terms'),
+            'cc_client_notes' => $request->has('cc_client_notes'),
+            'cc_payment_stub' => $request->has('cc_payment_stub'),
+            'cc_price' => $request->input('cc_price'),
+        ];
+    
+        $order = Order::create($data);
+    
+        return redirect()->route('admin.invoice')->with('success-message', 'Order created successfully!');
+    }    
 
     /**
      * Display the specified resource.
@@ -58,8 +96,15 @@ class InvoiceController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function delete($id)
     {
-        //
+        // Get the existing product details
+        $userDetails = Order::where('id', $id)->delete();
+
+        if ($userDetails) {
+            return response()->json(['success' => true]);
+        } else {
+            return response()->json(['success' => true]);
+        }
     }
 }
