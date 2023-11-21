@@ -82,8 +82,11 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/user', [UserController::class, 'index'])->name('admin.user');
     Route::get('admin/user/create', [UserController::class, 'create'])->name('admin.user.create');
     Route::post('admin/user/store', [UserController::class, 'store'])->name('admin.user.store');
+    Route::get('admin/user/edit/{id}', [UserController::class, 'edit'])->name('admin.user.edit');
+    Route::post('admin/user/update', [UserController::class, 'update'])->name('admin.user.update');
     Route::post('admin/user/delete/{id}', [UserController::class, 'delete'])->name('admin.user.delete');
     Route::post('admin/user/statusUpdate/{id}', [UserController::class, 'statusUpdate'])->name('admin.user.statusUpdate');
+    Route::post('admin/user/CheckForDuplicateEmail', [UserController::class, 'CheckForDuplicateEmail'])->name('admin.user.CheckForDuplicateEmail');
 
     // USER ROUTE
     Route::get('invoice', 'App\Http\Controllers\User\InvoiceController@index')->name('user.invoice');

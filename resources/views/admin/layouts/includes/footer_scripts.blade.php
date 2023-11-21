@@ -48,3 +48,11 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 <script src="{{asset('assets/js/jquery.signature.js')}}"></script>
 <!-- <script src="{{asset('assets/js/jquery.signature.min.js')}}"></script> -->
+
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<!-- SweetAlert JS -->
+<script src="{{asset('backend/plugins/sweetalert2/sweetalert2.all.min.js')}}"></script>
+
+<!-- DataTables JS -->
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>

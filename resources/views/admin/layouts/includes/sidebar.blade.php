@@ -61,11 +61,23 @@
 
     @if (auth()->check()) <!-- Check if a user is logged in -->
     @if (auth()->user()->role == 0) <!-- Check if the user is an admin -->
-    <li class="menu-item {{ request()->is('admin/user') ? 'active' : '' }}">
-      <a href="{{ route('admin.user') }}" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-food-menu"></i>
-        <div>User Management</div>
+    <li class="menu-item {{ request()->is('admin/user*') ? 'active open' : '' }}">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="User interface">User Management</div>
       </a>
+      <ul class="menu-sub">
+        <li class="menu-item {{ request()->is('admin/user') ? 'active' : '' }}">
+          <a href="{{ route('admin.user') }}" class="menu-link">
+            <div data-i18n="Alerts">List</div>
+          </a>
+        </li>
+        <li class="menu-item {{ request()->is('admin/user/create') ? 'active' : '' }}">
+          <a href="{{route('admin.user.create')}}" class="menu-link">
+            <div data-i18n="Alerts">Add</div>
+          </a>
+        </li>
+      </ul>
     </li>
     <li class="menu-item {{ request()->is('admin/invoice*') ? 'active open' : '' }}">
       <a href="javascript:void(0)" class="menu-link menu-toggle">

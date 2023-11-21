@@ -1,64 +1,5 @@
 @extends('admin.layouts.app')
 @section('content')
-<style>
-  .card hr {
-    color: #adb35b !important;
-    height: 2px !important;
-    width: 100% !important;
-  }
-
-  .signature-line {
-    border-bottom: 1px solid #000;
-    /* Adjust the border properties as needed */
-    margin-top: 30px;
-    /* You can adjust the spacing above the signature line */
-  }
-
-  .warranty-heading {
-    color: #43491a !important;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
-
-  .card hr {
-    color: #adb35b !important;
-    height: 2px !important;
-    width: 100% !important;
-  }
-
-  .signature-line {
-    border-bottom: 1px solid #000;
-    /* Adjust the border properties as needed */
-    margin-top: 30px;
-    /* You can adjust the spacing above the signature line */
-  }
-
-  .kbw-signature {
-    width: 400px;
-    height: 200px;
-  }
-</style>
-<script>
-  $(function() {
-    var sig = $('#sig').signature();
-    $('#disable').click(function() {
-      var disable = $(this).text() === 'Disable';
-      $(this).text(disable ? 'Enable' : 'Disable');
-      sig.signature(disable ? 'disable' : 'enable');
-    });
-    $('#clear').click(function() {
-      sig.signature('clear');
-    });
-    $('#json').click(function() {
-      alert(sig.signature('toJSON'));
-    });
-    $('#svg').click(function() {
-      alert(sig.signature('toSVG'));
-    });
-  });
-</script>
-
 <!-- Contact Start -->
 <div class="page-holder w-100 d-flex flex-wrap">
   <div class="container-fluid px-xl-5">
@@ -79,15 +20,16 @@
           <div class="card">
             <div class="card-header row">
               <h6 class="text-uppercase mb-0 col-10">HERE ARE ALL USERS </h6>
-              <!-- <a href="{{ route('admin.invoice.create') }}" class="btn btn-primary col-2 float-right">Add New Order</a> -->
+              <a href="{{ route('admin.user.create') }}" class="btn btn-primary col-2 float-right">Add New Order</a>
             </div>
             <div class="card-body" style="overflow: scroll">
-              <table id="example" class="table table-striped table-hover card-text">
+              <table id="user_table" class="table table-striped table-hover card-text">
                 <thead>
                   <tr>
                     <th>#</th>
-                    <th>Name</th>
-                    <th>email</th>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
                     <th>status</th>
                     <th>Action</th>
                   </tr>
@@ -98,6 +40,7 @@
                     <th scope="row">{{ $loop->iteration }}</th>
                     <td>{{ $user->name }}</td>
                     <td>{{ $user->email }}</td>
+                    <td>{{ $user->phone }}</td>
                     <td>
                       @if($user->status == 1)
                       <a onclick="userStatus({{ $user->id }})">
@@ -106,10 +49,13 @@
                       @elseif($user->status == 0)
                       <bu onclick="userStatus({{ $user->id }})">
                         <span class="badge bg-danger cursor-pointer">Ban</span>
-                      </a>
-                      @endif
+                        </a>
+                        @endif
                     </td>
                     <td>
+                      <a href="{{ route('admin.user.edit', $user->id) }}" class="text-primary fs-6 mr-1" data-toggle="tooltip" title="Edit">
+                          <i class="fas fa-edit"></i>
+                      </a>
                       <a onclick="DeleteUser({{ $user->id }})" class="cursor-pointer"><i class="fa fa-trash" aria-hidden="true"></i></a>
                     </td>
                   </tr>
@@ -124,11 +70,10 @@
   </div>
 </div>
 <!-- Contact End -->
+@endsection
 
-<!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<!-- SweetAlert JS -->
-<script src="{{asset('backend/plugins/sweetalert2/sweetalert2.all.min.js')}}"></script>
+@section('scripts')
+
 <script>
   function DeleteUser(userId) {
     Swal.fire({

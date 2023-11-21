@@ -60,6 +60,9 @@
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/fontawesome/css/all.min.css')}}">
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/fontawesome/css/fontawesome.min.css')}}">
 
+<!-- DataTables CSS -->
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
     <!-- Signature -->
     <link rel="stylesheet" href="{{asset('assets/css/jquery.signature.css')}}">
     <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.css" rel="stylesheet">
