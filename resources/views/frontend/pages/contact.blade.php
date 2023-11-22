@@ -29,8 +29,20 @@
 	<section class="section-area section-sp1">
 		<div class="container">
 			<div class="row align-items-center">
+				<div class="col-md-12">
+					@if(session()->has('success-message'))
+					<div class="alert alert-success">
+						{{ session('success-message') }}
+					</div>
+					@elseif(session()->has('error-message'))
+					<div class="alert alert-danger">
+						{{ session('error-message') }}
+					</div>
+					@endif
+				</div>
 				<div class="col-lg-5 mb-50">
-					<form class="contact-form style1 ajax-form" action="">
+					<form action="{{route('frontend.contact.store')}}" id="addDriverForm" class="contact-form style1" method="post" enctype="multipart/form-data">
+						@csrf
 						<div class="heading-bx mb-4 text-white">
 							<h6 class="title-ext text-white">Contact Form</h6>
 							<h3 class="title mb-0">DO YOU HAVE ANY<br /> QUESTIONS</h3>
@@ -66,15 +78,9 @@
 								</div>
 							</div>
 							<div class="col-lg-12">
-								<div class="form-group mb-3">
-									<div class="input-group">
-										<div class="g-recaptcha" data-sitekey="6Lf2gYwUAAAAAJLxwnZTvpJqbYFWqVyzE-8BWhVe" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-										<input class="form-control d-none" style="display:none;" data-recaptcha="true" required data-error="Please complete the Captcha">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<button name="submit" type="submit" value="Submit" class="btn btn-secondary btn-lg"> Send Message</button>
+								<button type="submit" name="submit"  class="btn btn-secondary btn-lg">
+									Send Message
+								</button>
 							</div>
 						</div>
 					</form>

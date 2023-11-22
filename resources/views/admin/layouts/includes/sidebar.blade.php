@@ -122,6 +122,13 @@
             </li>
           </ul>
         </li>
+
+        <li class="menu-item {{ request()->is('admin/contact') ? 'active' : '' }}">
+          <a href="{{ route('admin.contact') }}" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-food-menu"></i>
+            <div>Contact Us</div>
+          </a>
+        </li>
       @else
         <!-- Dashboard -->
         <li class="menu-item {{ request()->is('dashboard*') ? 'active' : '' }}">

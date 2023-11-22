@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\BlogController as AdminBlogController;
+use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\InvoiceController;
 use App\Http\Controllers\Admin\ProductController;
@@ -55,6 +56,7 @@ Route::get('/ceramic-coating', [CeramicCoatingController::class, 'index'])->name
 Route::get('/blog', [BlogController::class, 'index'])->name('frontend.blog');
 Route::get('/blog-details', [BlogDetailsController::class, 'index'])->name('frontend.blogDetails');
 Route::get('/contact', [ContactController::class, 'index'])->name('frontend.contact');
+Route::post('/contact/store', [ContactController::class, 'store'])->name('frontend.contact.store');
 Route::get('/shop', [ShopController::class, 'index'])->name('frontend.shop');
 Route::get('/cart', [CartController::class, 'index'])->name('frontend.cart');
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('frontend.checkout');
@@ -116,6 +118,10 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/product/update', [ProductController::class, 'update'])->name('admin.product.update');
     Route::post('admin/product/delete/{id}', [ProductController::class, 'delete'])->name('admin.product.delete');
     Route::post('admin/product/statusUpdate/{id}', [ProductController::class, 'statusUpdate'])->name('admin.product.statusUpdate');
+
+    // ContactUsController
+    Route::get('admin/contact', [ContactUsController::class, 'index'])->name('admin.contact');
+    Route::post('admin/contact/delete/{id}', [ContactUsController::class, 'delete'])->name('admin.contact.delete');
 
     /* ADMIN ROUTE - END */
     

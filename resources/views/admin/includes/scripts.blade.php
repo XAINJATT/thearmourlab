@@ -25,6 +25,7 @@
         $('#invoice_table').DataTable();
         $('#user_invoice_table').DataTable();
         $('#user_warranty_table').DataTable();
+        $('#contactUs_table').DataTable();
 
         
     });
