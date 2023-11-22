@@ -3,7 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
-use App\Models\Order;
+use App\Models\User;
+use App\Models\WorkOrder;
 use Illuminate\Http\Request;
 
 class InvoiceController extends Controller
@@ -13,7 +14,7 @@ class InvoiceController extends Controller
      */
     public function index()
     {
-        $orders = Order::all();
+        $orders = WorkOrder::all();
         return view('admin.invoice.index', compact('orders'));
     }
 
@@ -22,7 +23,8 @@ class InvoiceController extends Controller
      */
     public function create()
     {
-        return view('admin.invoice.add');
+        $users = User::where('role', 1)->get();
+        return view('admin.invoice.add', compact('users'));
     }
 
     /**
@@ -31,7 +33,9 @@ class InvoiceController extends Controller
     public function store(Request $request)
     {
         $data = [
-            'name' => $request->input('name'),
+            'user_id' => $request->input('id'),
+            'first_name' => $request->input('first_name'),
+            'last_name' => $request->input('last_name'),
             'make' => $request->input('make'),
             'colour' => $request->input('colour'),
             'phone' => $request->input('phone'),
@@ -40,7 +44,7 @@ class InvoiceController extends Controller
             'email' => $request->input('email'),
             'v_i_n' => $request->input('v_i_n'),
             'plate' => $request->input('plate'),
-    
+
             // Ceramic Coating
             'ceramic_coating_kenzo_coating' => $request->has('ceramic_coating_kenzo_coating'),
             'ceramic_coating_quartz_plus_coating' => $request->has('ceramic_coating_quartz_plus_coating'),
@@ -64,7 +68,7 @@ class InvoiceController extends Controller
             'cc_price' => $request->input('cc_price'),
         ];
     
-        $order = Order::create($data);
+        $order = WorkOrder::create($data);
     
         return redirect()->route('admin.invoice')->with('success-message', 'Order created successfully!');
     }    
@@ -99,7 +103,7 @@ class InvoiceController extends Controller
     public function delete($id)
     {
         // Get the existing product details
-        $userDetails = Order::where('id', $id)->delete();
+        $userDetails = WorkOrder::where('id', $id)->delete();
 
         if ($userDetails) {
             return response()->json(['success' => true]);

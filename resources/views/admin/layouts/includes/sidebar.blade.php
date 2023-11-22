@@ -64,7 +64,7 @@
     <li class="menu-item {{ request()->is('admin/user*') ? 'active open' : '' }}">
       <a href="javascript:void(0)" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-user"></i>
-        <div data-i18n="User interface">User Management</div>
+        <div data-i18n="User interface">Users Management</div>
       </a>
       <ul class="menu-sub">
         <li class="menu-item {{ request()->is('admin/user') ? 'active' : '' }}">
@@ -79,6 +79,45 @@
         </li>
       </ul>
     </li>
+
+    <li class="menu-item {{ request()->is('admin/blog*') ? 'active open' : '' }}">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="User interface">Blogs Management</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {{ request()->is('admin/blog') ? 'active' : '' }}">
+          <a href="{{ route('admin.blog') }}" class="menu-link">
+            <div data-i18n="Alerts">List</div>
+          </a>
+        </li>
+        <li class="menu-item {{ request()->is('admin/blog/create') ? 'active' : '' }}">
+          <a href="{{route('admin.blog.create')}}" class="menu-link">
+            <div data-i18n="Alerts">Add</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
+    <li class="menu-item {{ request()->is('admin/product*') ? 'active open' : '' }}">
+      <a href="javascript:void(0)" class="menu-link menu-toggle">
+        <i class="menu-icon tf-icons bx bx-user"></i>
+        <div data-i18n="User interface">Products Management</div>
+      </a>
+      <ul class="menu-sub">
+        <li class="menu-item {{ request()->is('admin/product') ? 'active' : '' }}">
+          <a href="{{ route('admin.product') }}" class="menu-link">
+            <div data-i18n="Alerts">List</div>
+          </a>
+        </li>
+        <li class="menu-item {{ request()->is('admin/product/create') ? 'active' : '' }}">
+          <a href="{{route('admin.product.create')}}" class="menu-link">
+            <div data-i18n="Alerts">Add</div>
+          </a>
+        </li>
+      </ul>
+    </li>
+
     <li class="menu-item {{ request()->is('admin/invoice*') ? 'active open' : '' }}">
       <a href="javascript:void(0)" class="menu-link menu-toggle">
         <i class="menu-icon tf-icons bx bx-user"></i>

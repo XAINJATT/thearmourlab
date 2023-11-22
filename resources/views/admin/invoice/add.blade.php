@@ -13,6 +13,7 @@
     margin-top: 30px;
     /* You can adjust the spacing above the signature line */
   }
+
   .signature-line {
     border-bottom: 1px solid #000;
     /* Adjust the border properties as needed */
@@ -78,272 +79,282 @@
             <hr class="my-4 mx-n4" />
             <!-- Form Start -->
             <form method="post" action="{{ route('admin.invoice.store') }}" enctype="multipart/form-data">
-                @csrf
-                <div class="row py-sm-3">
+              @csrf
+              <div class="row py-sm-3">
                 <div class="col-md-4 col-12">
-                    <label for="name" class="form-label me-5 fw-medium">Name:</label>
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" />
+                  <label for="email" class="form-label me-5 fw-medium">Email:</label>
+                  <select class="form-control" id="email" name="email">
+                    <option value="">Select Email</option>
+                    @foreach($users as $user)
+                    <option value="{{ $user->email }}" data-first-name="{{ $user->first_name }}" data-last-name="{{ $user->last_name }}" data-phone="{{ $user->phone }}" data-id="{{ $user->id }}">{{ $user->email }}</option>
+                    @endforeach
+                  </select>
+                </div>
+                <input type="hidden" class="form-control" id="id" name="id" />
+                <div class="col-md-4 col-12">
+                  <label for="first_name" class="form-label me-5 fw-medium">First Name:</label>
+                  <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" />
                 </div>
                 <div class="col-md-4 col-12">
-                    <label for="make" class="form-label me-5 fw-medium">Make:</label>
-                    <input type="text" class="form-control" id="make" name="make"placeholder="Make" />
+                  <label for="last_name" class="form-label me-5 fw-medium">Last Name:</label>
+                  <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" />
+                </div>
+                <div class="col-md-4 col-12 mt-2">
+                  <label for="phone" class="form-label me-5 fw-medium">Phone:</label>
+                  <input type="text" class="form-control" id="phone" name="phone" placeholder="Phone" />
                 </div>
                 <div class="col-md-4 col-12">
-                    <label for="colour" class="form-label me-5 fw-medium">Colour:</label>
-                    <input type="text" class="form-control" id="colour" name="colour"placeholder="Colour" />
+                  <label for="make" class="form-label me-5 fw-medium">Make:</label>
+                  <input type="text" class="form-control" id="make" name="make" placeholder="Make" />
+                </div>
+                <div class="col-md-4 col-12">
+                  <label for="colour" class="form-label me-5 fw-medium">Colour:</label>
+                  <input type="text" class="form-control" id="colour" name="colour" placeholder="Colour" />
                 </div>
                 <div class="col-md-4 col-12 mt-2">
-                    <label for="phone" class="form-label me-5 fw-medium">Phone:</label>
-                    <input type="text" class="form-control" id="phone" name="phone"placeholder="Phone" />
+                  <label for="model" class="form-label me-5 fw-medium">Model:</label>
+                  <input type="text" class="form-control" id="model" name="model" placeholder="Model" />
                 </div>
                 <div class="col-md-4 col-12 mt-2">
-                    <label for="model" class="form-label me-5 fw-medium">Model:</label>
-                    <input type="text" class="form-control" id="model" name="model"placeholder="Model" />
+                  <label for="year" class="form-label me-5 fw-medium">Year:</label>
+                  <input type="text" class="form-control" id="year" name="year" placeholder="Year" />
                 </div>
                 <div class="col-md-4 col-12 mt-2">
-                    <label for="year" class="form-label me-5 fw-medium">Year:</label>
-                    <input type="text" class="form-control" id="year" name="year"placeholder="Year" />
+                  <label for="v_i_n" class="form-label me-5 fw-medium">V.I.N#:</label>
+                  <input type="text" class="form-control" id="v_i_n" name="v_i_n" placeholder="V.I.N#" />
                 </div>
                 <div class="col-md-4 col-12 mt-2">
-                    <label for="email" class="form-label me-5 fw-medium">Email:</label>
-                    <input type="text" class="form-control" id="email" name="email"placeholder="Email" />
+                  <label for="plate" class="form-label me-5 fw-medium">Plate#:</label>
+                  <input type="text" class="form-control" id="plate" name="plate" placeholder="Plate#" />
                 </div>
-                <div class="col-md-4 col-12 mt-2">
-                    <label for="v_i_n" class="form-label me-5 fw-medium">V.I.N#:</label>
-                    <input type="text" class="form-control" id="v_i_n" name="v_i_n"placeholder="V.I.N#" />
-                </div>
-                <div class="col-md-4 col-12 mt-2">
-                    <label for="plate" class="form-label me-5 fw-medium">Plate#:</label>
-                    <input type="text" class="form-control" id="plate" name="plate"placeholder="Plate#" />
-                </div>
-                </div>
-                <hr class="mx-n4" />
-                <!-- Check Box Start -->
-                <div class="row p-sm-3 p-0">
+              </div>
+              <hr class="mx-n4" />
+              <!-- Check Box Start -->
+              <div class="row p-sm-3 p-0">
                 <div class="col-lg-4 col-12 invoice-actions">
-                    <h6 class="pb-2">Ceramic Coating</h6>
-                    <div class="card mb-4">
+                  <h6 class="pb-2">Ceramic Coating</h6>
+                  <div class="card mb-4">
                     <div class="card-body">
-                        <div class="d-flex justify-content-between mb-2">
+                      <div class="d-flex justify-content-between mb-2">
                         <label for="kenzo_coating" class="mb-0">Kenzo Coating</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" id="kenzo_coating" name="ceramic_coating_kenzo_coating">
+                          <input type="checkbox" class="switch-input" id="kenzo_coating" name="ceramic_coating_kenzo_coating">
                         </label>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
                         <label for="quartz_plus_coating" class="mb-0">Quartz Plus Coating</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" id="quartz_plus_coating" name="ceramic_coating_quartz_plus_coating">>
+                          <input type="checkbox" class="switch-input" id="quartz_plus_coating" name="ceramic_coating_quartz_plus_coating">>
                         </label>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
                         <label for="quartz_coating" class="mb-0">Quartz Coating</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" id="quartz_coating" name="ceramic_coating_quartz_coating">
+                          <input type="checkbox" class="switch-input" id="quartz_coating" name="ceramic_coating_quartz_coating">
                         </label>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
                         <label for="premier_coating" class="mb-0">Premier Coating</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" id="premier_coating" name="ceramic_coating_premier_coating">
+                          <input type="checkbox" class="switch-input" id="premier_coating" name="ceramic_coating_premier_coating">
                         </label>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
                         <label for="interior_pkg" class="mb-0">Interior PKG</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" id="interior?_pkg" name="ceramic_coating_interior_pkg">
+                          <input type="checkbox" class="switch-input" id="interior?_pkg" name="ceramic_coating_interior_pkg">
                         </label>
-                        </div>
-                        <div class="d-flex justify-content-between">
+                      </div>
+                      <div class="d-flex justify-content-between">
                         <label for="wheels_of_pkg" class="mb-0">Wheels of PKG</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" id="wheels_of_pkg" name="ceramic_coating_wheels_of_pkg">
+                          <input type="checkbox" class="switch-input" id="wheels_of_pkg" name="ceramic_coating_wheels_of_pkg">
                         </label>
-                        </div>
+                      </div>
                     </div>
-                    </div>
-                    <div class="">
+                  </div>
+                  <div class="">
                     <label for="price" class="mb-0">Price :</label>
                     <div class="">
-                        <input type="number" class="form-control" name="ceramic_coating_price">
+                      <input type="number" class="form-control" name="ceramic_coating_price">
                     </div>
-                    </div>
+                  </div>
                 </div>
                 <div class="col-lg-4 col-12 invoice-actions">
-                    <h6 class="pb-2">PPF</h6>
-                    <div class="card mb-4">
+                  <h6 class="pb-2">PPF</h6>
+                  <div class="card mb-4">
                     <div class="card-body">
-                        <div class="d-flex justify-content-between mb-2">
+                      <div class="d-flex justify-content-between mb-2">
                         <label for="full_car" class="mb-0">Full Car</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" id="full_car" name="ppf_full_car">
+                          <input type="checkbox" class="switch-input" id="full_car" name="ppf_full_car">
                         </label>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
                         <label for="client-notes" class="mb-0">Client Notes</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" id="client-notes" name="ppf_client_notes">
+                          <input type="checkbox" class="switch-input" id="client-notes" name="ppf_client_notes">
                         </label>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
                         <label for="payment-stub" class="mb-0">Payment Stub</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" id="payment-stub" name="ppf_payment_stub">
+                          <input type="checkbox" class="switch-input" id="payment-stub" name="ppf_payment_stub">
                         </label>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
                         <label for="payment-terms" class="mb-0">Payment Terms</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" id="payment-terms" name="ppf_payment_terms">
+                          <input type="checkbox" class="switch-input" id="payment-terms" name="ppf_payment_terms">
                         </label>
-                        </div>
+                      </div>
                     </div>
-                    </div>
-                    <div class="">
+                  </div>
+                  <div class="">
                     <label for="price" class="mb-0">Price :</label>
                     <div class="">
-                        <input type="number" class="form-control" name="ppf_price">
+                      <input type="number" class="form-control" name="ppf_price">
                     </div>
-                    </div>
+                  </div>
                 </div>
                 <div class="col-lg-4 col-12 invoice-actions">
-                    <h6 class="pb-2">Ceramic Coating</h6>
-                    <div class="card mb-4">
+                  <h6 class="pb-2">Ceramic Coating</h6>
+                  <div class="card mb-4">
                     <div class="card-body">
-                        <div class="d-flex justify-content-between mb-2">
+                      <div class="d-flex justify-content-between mb-2">
                         <label for="payment-terms" class="mb-0">Payment Terms</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" name="cc_payment_terms">
+                          <input type="checkbox" class="switch-input" name="cc_payment_terms">
                         </label>
-                        </div>
-                        <div class="d-flex justify-content-between mb-2">
+                      </div>
+                      <div class="d-flex justify-content-between mb-2">
                         <label for="client-notes" class="mb-0">Client Notes</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" name="cc_client_notes">
+                          <input type="checkbox" class="switch-input" name="cc_client_notes">
                         </label>
-                        </div>
-                        <div class="d-flex justify-content-between">
+                      </div>
+                      <div class="d-flex justify-content-between">
                         <label for="payment-stub" class="mb-0">Payment Stub</label>
                         <label class="switch switch-primary me-0">
-                            <input type="checkbox" class="switch-input" name="cc_payment_stub">
+                          <input type="checkbox" class="switch-input" name="cc_payment_stub">
                         </label>
-                        </div>
+                      </div>
                     </div>
-                    </div>
-                    <div class="">
+                  </div>
+                  <div class="">
                     <label for="price" class="mb-0">Price :</label>
                     <div class="">
-                        <input type="number" class="form-control" name="cc_price">
+                      <input type="number" class="form-control" name="cc_price">
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </div>
-                <!-- Check Box End -->
-                <!-- Form End -->
-                <hr class="my-4 mx-n4" />
-                <!-- Additional Requests Start -->
-                <div class="row">
+              </div>
+              <!-- Check Box End -->
+              <!-- Form End -->
+              <hr class="my-4 mx-n4" />
+              <!-- Additional Requests Start -->
+              <div class="row">
                 <div class="col-12">
-                    <div class="mb-3">
+                  <div class="mb-3">
                     <label for="additional_requests" class="form-label fw-medium">Additional Requests:</label>
                     <textarea class="form-control" rows="2" id="additional_requests" name="additional_requests" placeholder="Additional Requests"></textarea>
-                    </div>
+                  </div>
                 </div>
                 <div class="col-6 mb-3">
-                    <label for="total_price" class="mb-0">Total Price :</label>
-                    <div class="">
+                  <label for="total_price" class="mb-0">Total Price :</label>
+                  <div class="">
                     <input type="number" class="form-control" id="total_price" name="total_price">
-                    </div>
+                  </div>
                 </div>
-                </div>
-                <!-- Additional Requests End -->
-                <hr class="my-4 mx-n4" />
-                <div class="row p-sm-3 p-0">
+              </div>
+              <!-- Additional Requests End -->
+              <hr class="my-4 mx-n4" />
+              <div class="row p-sm-3 p-0">
                 <div class="col-md-4 col-sm-5 col-12 mb-sm-0 mb-4">
-                    <h2 class="mb-1" style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: bolder;">INSPECTION REPORT</h2>
-                    <h6 class="pb-2">Defects:</h6>
-                    <table class="table table-bordered border-primary">
+                  <h2 class="mb-1" style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: bolder;">INSPECTION REPORT</h2>
+                  <h6 class="pb-2">Defects:</h6>
+                  <table class="table table-bordered border-primary">
                     <tbody>
-                        <tr>
+                      <tr>
                         <th scope="row">SH</th>
                         <td>Swirls/Hologram</td>
-                        </tr>
-                        <tr>
+                      </tr>
+                      <tr>
                         <th scope="row">WS</th>
                         <td>Water Spots</td>
-                        </tr>
-                        <tr>
+                      </tr>
+                      <tr>
                         <th scope="row">OX</th>
                         <td>Oxidation</td>
-                        </tr>
-                        <tr>
+                      </tr>
+                      <tr>
                         <th scope="row">CF</th>
                         <td>Clear Coat Failure</td>
-                        </tr>
-                        <tr>
+                      </tr>
+                      <tr>
                         <th scope="row">DS</th>
                         <td>Deep Scratch</td>
-                        </tr>
-                        <tr>
+                      </tr>
+                      <tr>
                         <th scope="row">BD</th>
                         <td>Bird Droppings</td>
-                        </tr>
+                      </tr>
                     </tbody>
-                    </table>
+                  </table>
                 </div>
                 <div class="col-md-8 col-sm-7">
-                    <div class="row">
+                  <div class="row">
                     <div class="col-7">
-                        <h4 class="mb-1" style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: 500; display: inline;">PART A:</h4>
-                        <span> Upon Acceptance</span>
+                      <h4 class="mb-1" style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: 500; display: inline;">PART A:</h4>
+                      <span> Upon Acceptance</span>
                     </div>
                     <div class="col-5">
-                        <label for="price" class="mb-0">Mileage In :</label>
-                        <div class="">
+                      <label for="price" class="mb-0">Mileage In :</label>
+                      <div class="">
                         <input type="number" class="form-control" id="mileage_in_price">
-                        </div>
+                      </div>
                     </div>
-                    </div>
-                    <img src="{{ asset('storage/images/images.png') }}">
+                  </div>
+                  <img src="{{ asset('storage/images/images.png') }}">
                 </div>
-                </div>
-                <hr class="my-4" />
-                <!-- Note Start -->
-                <div class="row">
+              </div>
+              <hr class="my-4" />
+              <!-- Note Start -->
+              <div class="row">
                 <div class="col-12">
-                    <div class="mb-3">
+                  <div class="mb-3">
                     <label for="note" class="form-label fw-medium">Note:</label>
                     <textarea class="form-control" rows="2" id="note" name="note" placeholder="Note"></textarea>
-                    </div>
+                  </div>
                 </div>
                 <div class="col-6 mb-3">
-                    <label for="int" class="mb-0">Int :</label>
-                    <div class="">
+                  <label for="int" class="mb-0">Int :</label>
+                  <div class="">
                     <input type="number" class="form-control" id="int" name="int">
-                    </div>
+                  </div>
                 </div>
-                </div>
-                <!-- Note End -->
-                <hr class="my-4 mx-n4" />
-                <div class="row">
+              </div>
+              <!-- Note End -->
+              <hr class="my-4 mx-n4" />
+              <div class="row">
                 <div class="col-6 mt-4">
-                    <h4 class="mb-1" style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: 500; display: inline;">PART B:</h4>
-                    <span> Upon Delivery</span>
+                  <h4 class="mb-1" style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: 500; display: inline;">PART B:</h4>
+                  <span> Upon Delivery</span>
                 </div>
                 <div class="col-6">
-                    <p class="mb-2">Payment</p>
-                    <select class="form-select mb-4" name="payment_type">
+                  <p class="mb-2">Payment</p>
+                  <select class="form-select mb-4" name="payment_type">
                     <option value="Cash">Cash</option>
                     <option value="Credit">Credit</option>
                     <option value="Debit">Debit</option>
                     <option value="E-Transfer">E-Transfer</option>
-                    </select>
+                  </select>
                 </div>
-                </div>
-                <hr class="my-4" />
-                <div class="row">
+              </div>
+              <hr class="my-4" />
+              <div class="row">
                 <div class="col-12">
-                    <div class="border p-3">
+                  <div class="border p-3">
                     <b>TERMS</b><br>
 
                     This is an estimation of work to be completed by walk-around evaluation and is not binding if vehicle condition changes prior to scheduled appointment, or if more
@@ -366,7 +377,7 @@
 
                     <span style="font-size: large;"> paid with AMEX will be charged a convenience fee of 3% no matter what. Any Invoice over $1000 and paid with
 
-                        Visa or Master card will be charge a convenience fee of 1.75%</span><br><br>
+                      Visa or Master card will be charge a convenience fee of 1.75%</span><br><br>
 
                     I am the owner of the vehicle described on this document (the "Vehicle") or have been authorized by the owner to make the representations, promises and
 
@@ -381,28 +392,28 @@
                     agreement, and I am satisfied as to condition of the Vehicle.
 
                     <div class="row mt-3">
-                        <div class="col-7">
-                            <label for="customer_signature" class="form-label mb-0">Customer Signature:</label>
-                            <label for="authorized_signature" class="form-label fw-medium" style="visibility: hidden">Customer Signature:</label>
-                            <div id="sign"></div>
-                            <p style="clear: both;">
-                            <a id="sign_disable" class="btn btn-primary" style="color: #fff !important;">Disable</a>
-                            <a id="sign_clear" class="btn btn-primary" style="color: #fff !important;">Clear</a>
-                            </p>
-                        </div>
-                        <div class="col-5">
+                      <div class="col-7">
+                        <label for="customer_signature" class="form-label mb-0">Customer Signature:</label>
+                        <label for="authorized_signature" class="form-label fw-medium" style="visibility: hidden">Customer Signature:</label>
+                        <div id="sign"></div>
+                        <p style="clear: both;">
+                          <a id="sign_disable" class="btn btn-primary" style="color: #fff !important;">Disable</a>
+                          <a id="sign_clear" class="btn btn-primary" style="color: #fff !important;">Clear</a>
+                        </p>
+                      </div>
+                      <div class="col-5">
                         <label for="date" class="mb-0">Date:</label>
                         <div class="">
-                            <input type="date" class="form-control" id="date" name="date">
+                          <input type="date" class="form-control" id="date" name="date">
                         </div>
-                        </div>
+                      </div>
                     </div>
                     <div id="" class="float-right" style="display: flex; justify-content:end;">
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                      <button type="submit" class="btn btn-primary">Submit</button>
                     </div>
-                    </div>
+                  </div>
                 </div>
-                </div>
+              </div>
             </form>
           </div>
         </div>
@@ -469,4 +480,24 @@
   <!-- / Content -->
 
 </div>
+@endsection
+
+@section('scripts')
+
+<script>
+
+    $(document).ready(function() {
+        $('#email').change(function() {
+            var selectedEmail = $(this).val();
+            var selectedOption = $('option:selected', this);
+
+            $('#first_name').val(selectedOption.data('first-name'));
+            $('#last_name').val(selectedOption.data('last-name'));
+            $('#phone').val(selectedOption.data('phone'));
+            $('#id').val(selectedOption.data('id'));
+        });
+    });
+
+</script>
+
 @endsection

@@ -42,7 +42,8 @@ class UserController extends Controller
         $Affected = null;
         $Affected = User::create([
             'email' => $validatedData['email'],
-            'name' => $request['name'],
+            'first_name' => $request['first_name'],
+            'last_name' => $request['last_name'],
             'phone' => $request['phone'],
             'address' => $request['address'],
             'password' => Hash::make($request['password']),
@@ -74,7 +75,9 @@ class UserController extends Controller
         $FileProfile = "";
         if (!empty($request->has('profile_image'))) {
             if ($request['old_profile_image'] != "") {
-                $Path = public_path('storage/users') . '/' . $request['old_profile_image'];
+                $temp = explode("/", $request['old_profile_image']);
+                $fileName = end($temp);
+                $Path = public_path('storage/users/') . $fileName;
                 if (file_exists($Path)) {
                     unlink($Path);
                 }
@@ -82,13 +85,16 @@ class UserController extends Controller
             $FileProfile = 'ProfileImage-' . Carbon::now()->format('Ymd-His') . '.' . $request->file('profile_image')->extension();
             $request->file('profile_image')->storeAs('public/users/', $FileProfile);
         } else {
-            $FileProfile = $request['old_profile_image'];
+            $temp = explode("/", $request['old_profile_image']);
+            $fileName = end($temp);
+            $FileProfile = $fileName;
         }
         
         DB::beginTransaction();
         $Affected = null;
         $Affected = User::where('id', $request->user_id)->update([
-            'name' => $request['name'],
+            'first_name' => $request['first_name'],
+            'last_name' => $request['last_name'],
             'phone' => $request['phone'],
             'address' => $request['address'],
             'role' => '1',

@@ -1,7 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin\BlogController as AdminBlogController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\InvoiceController;
+use App\Http\Controllers\Admin\ProductController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\WarrantyController;
 use App\Http\Controllers\frontend\AutomotiveController;
@@ -70,12 +72,14 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/invoice', [InvoiceController::class, 'index'])->name('admin.invoice');
     Route::get('admin/invoice/create', [InvoiceController::class, 'create'])->name('admin.invoice.create');
     Route::post('admin/invoice/store', [InvoiceController::class, 'store'])->name('admin.invoice.store');
+    Route::post('admin/invoice/view/{id}', [InvoiceController::class, 'view'])->name('admin.invoice.view');
     Route::post('admin/invoice/delete/{id}', [InvoiceController::class, 'delete'])->name('admin.invoice.delete');
 
     // WarrantyController
     Route::get('admin/warranty', [WarrantyController::class, 'index'])->name('admin.warranty');
     Route::get('admin/warranty/create', [WarrantyController::class, 'create'])->name('admin.warranty.create');
     Route::post('admin/warranty/store', [WarrantyController::class, 'store'])->name('admin.warranty.store');
+    Route::post('admin/warranty/view/{id}', [WarrantyController::class, 'view'])->name('admin.warranty.view');
     Route::post('admin/warranty/delete/{id}', [WarrantyController::class, 'delete'])->name('admin.warranty.delete');
 
     // UserController
@@ -87,6 +91,24 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/user/delete/{id}', [UserController::class, 'delete'])->name('admin.user.delete');
     Route::post('admin/user/statusUpdate/{id}', [UserController::class, 'statusUpdate'])->name('admin.user.statusUpdate');
     Route::post('admin/user/CheckForDuplicateEmail', [UserController::class, 'CheckForDuplicateEmail'])->name('admin.user.CheckForDuplicateEmail');
+    
+    // AdminBlogController
+    Route::get('admin/blog', [AdminBlogController::class, 'index'])->name('admin.blog');
+    Route::get('admin/blog/create', [AdminBlogController::class, 'create'])->name('admin.blog.create');
+    Route::post('admin/blog/store', [AdminBlogController::class, 'store'])->name('admin.blog.store');
+    Route::get('admin/blog/edit/{id}', [AdminBlogController::class, 'edit'])->name('admin.blog.edit');
+    Route::post('admin/blog/update', [AdminBlogController::class, 'update'])->name('admin.blog.update');
+    Route::post('admin/blog/delete/{id}', [AdminBlogController::class, 'delete'])->name('admin.blog.delete');
+    Route::post('admin/blog/statusUpdate/{id}', [AdminBlogController::class, 'statusUpdate'])->name('admin.blog.statusUpdate');
+
+    // AdminProductController
+    Route::get('admin/product', [ProductController::class, 'index'])->name('admin.product');
+    Route::get('admin/product/create', [ProductController::class, 'create'])->name('admin.product.create');
+    Route::post('admin/product/store', [ProductController::class, 'store'])->name('admin.product.store');
+    Route::get('admin/product/edit/{id}', [ProductController::class, 'edit'])->name('admin.product.edit');
+    Route::post('admin/product/update', [ProductController::class, 'update'])->name('admin.product.update');
+    Route::post('admin/product/delete/{id}', [ProductController::class, 'delete'])->name('admin.product.delete');
+    Route::post('admin/product/statusUpdate/{id}', [ProductController::class, 'statusUpdate'])->name('admin.product.statusUpdate');
 
     // USER ROUTE
     Route::get('invoice', 'App\Http\Controllers\User\InvoiceController@index')->name('user.invoice');

@@ -46,8 +46,13 @@
                             <div class="card-body pb-2">
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label class="font-weight-bold text-black">Full Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" name="name" placeholder="Enter Full Name" value="{{ $users->name }}" required>
+                                        <label class="font-weight-bold text-black">First Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="first_name" placeholder="Enter First Name" value="{{ $users->first_name }}" required>
+                                    </div>
+                                    
+                                    <div class="col-md-6 mb-3">
+                                        <label class="font-weight-bold text-black">Last Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="last_name" placeholder="Enter Last Name" value="{{ $users->last_name }}" required>
                                     </div>
 
                                     <div class="col-md-6 mb-3">
@@ -72,7 +77,7 @@
 
                                     <div class="col-12 col-md-6 mb-3">
                                         <label for="profile_image" class="font-weight-bold">Profile Picture <span class="text-danger">*</span>&nbsp;&nbsp;
-                                            <a href="{{asset('storage/users' . '/' . $users->profile_image)}}" download="{{$users->profile_image}}">
+                                            <a href="{{ $users->profile_image }}" download="{{$users->profile_image}}">
                                                 <i class="fas fa-download"></i>
                                             </a>
                                         </label>

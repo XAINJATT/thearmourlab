@@ -71,6 +71,18 @@
                                 <h3 class="mb-1 warranty-heading">Customer Info:</h3>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
+                                        <label for="email" class="form-label me-2 fw-medium mt-2">Email:</label>
+                                        <select class="form-select" id="email" name="email">
+                                            <option value="">Select Email</option>
+                                            @foreach($users as $user)
+                                            <option value="{{ $user->email }}" data-first-name="{{ $user->first_name }}" data-last-name="{{ $user->last_name }}" data-tel="{{ $user->phone }}" data-id="{{ $user->id }}">{{ $user->email }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                                <input type="hidden" class="form-control" id="id" name="id" />
+                                <div class="col-md-6 col-12 mt-2">
+                                    <div class="">
                                         <label for="first_name" class="form-label me-2 fw-medium mt-2">First Name:</label>
                                         <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" />
                                     </div>
@@ -79,12 +91,6 @@
                                     <div class="">
                                         <label for="last_name" class="form-label me-2 fw-medium mt-2">Last Name:</label>
                                         <input type="text" class="form-control" id="last_name" name="last_name" placeholder="Last Name" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-12 mt-2">
-                                    <div class="">
-                                        <label for="email" class="form-label me-2 fw-medium mt-2">Email:</label>
-                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
@@ -298,9 +304,25 @@
     </div>
 
 </div>
-    
+
+@endsection
+
+@section('scripts')
 
 <script>
+
+    $(document).ready(function() {
+        $('#email').change(function() {
+            var selectedEmail = $(this).val();
+            var selectedOption = $('option:selected', this);
+
+            $('#first_name').val(selectedOption.data('first-name'));
+            $('#last_name').val(selectedOption.data('last-name'));
+            $('#tel').val(selectedOption.data('tel'));
+            $('#id').val(selectedOption.data('id'));
+        });
+    });
+
     $(function() {
         var sig = $('#sign').signature();
         $('#sign_disable').click(function() {
@@ -323,4 +345,5 @@
         });
     });
 </script>
+
 @endsection

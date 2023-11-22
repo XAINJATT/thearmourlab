@@ -82,7 +82,7 @@
               <a href="{{ route('admin.warranty.create') }}" class="btn btn-primary col-2 float-right">Add New Warranty</a>
             </div>
             <div class="card-body" style="overflow: scroll">
-              <table id="example" class="table table-striped table-hover card-text">
+              <table id="warranty_table" class="table table-striped table-hover card-text">
                 <thead>
                   <tr>
                     <th>#</th>
@@ -102,7 +102,9 @@
                     <td>{{ $warranty->email }}</td>
                     <td>{{ $warranty->tel }}</td>
                     <td>
-                      <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                      <a href="{{ route('admin.warranty.view', $warranty->id) }}" class="text-primary fs-6 mr-1" data-toggle="tooltip" title="View">
+                          <i class="fas fa-eye"></i>
+                      </a>
                       <a onclick="DeleteWarranty({{ $warranty->id }})" class="cursor-pointer"><i class="fa fa-trash" aria-hidden="true"></i></a>
                     </td>
                   </tr>

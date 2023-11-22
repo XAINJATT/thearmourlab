@@ -11,9 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('orders', function (Blueprint $table) {
+        Schema::create('work_orders', function (Blueprint $table) {
             $table->id();
-            $table->string('name')->nullable();
+            $table->bigInteger('user_id')->nullable();
+            $table->string('first_name')->nullable();
+            $table->string('last_name')->nullable();
             $table->string('make')->nullable();
             $table->string('colour')->nullable();
             $table->string('phone')->nullable();
@@ -62,6 +64,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('orders');
+        Schema::dropIfExists('work_orders');
     }
 };

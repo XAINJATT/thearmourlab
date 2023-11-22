@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use App\Models\Warranty;
 use Illuminate\Http\Request;
 
@@ -22,7 +23,8 @@ class WarrantyController extends Controller
      */
     public function create()
     {
-        return view('admin.warranty.add');
+        $users = User::where('role', 1)->get();
+        return view('admin.warranty.add', compact('users'));
     }
 
     /**
@@ -88,6 +90,7 @@ class WarrantyController extends Controller
 
         // Create a new warranty record without validation
         Warranty::create([
+            'user_id' => $request->input('id'),
             'first_name' => $request->input('first_name'),
             'last_name' => $request->input('last_name'),
             'email' => $request->input('email'),

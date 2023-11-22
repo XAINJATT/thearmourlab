@@ -14,6 +14,11 @@ class User extends Authenticatable
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
     protected $guarded = [];
 
+    public function getProfileImageAttribute($value)
+    {
+        return !empty($value) ? asset('storage/users/' . $value) : "";
+    }
+
     /**
      * The attributes that are mass assignable.
      *

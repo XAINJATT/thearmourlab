@@ -78,18 +78,18 @@
         <div class="col-lg-12 mb-12">
           <div class="card">
             <div class="card-header row">
-              <h6 class="text-uppercase mb-0 col-10">HERE ARE ALL ACTIVE ORDER </h6>
-              <a href="{{ route('admin.invoice.create') }}" class="btn btn-primary col-2 float-right">Add New Order</a>
+              <h6 class="text-uppercase mb-0 col-9">HERE ARE ALL WORK ORDER </h6>
+              <a href="{{ route('admin.invoice.create') }}" class="btn btn-primary col-3 float-right">Add New Work Order</a>
             </div>
             <div class="card-body" style="overflow: scroll">
-              <table id="example" class="table table-striped table-hover card-text">
+              <table id="invoice_table" class="table table-striped table-hover card-text">
                 <thead>
                   <tr>
                     <th>#</th>
                     <th>First Name</th>
                     <th>Last Name</th>
-                    <th>email</th>
-                    <th>tel</th>
+                    <th>Email</th>
+                    <th>Tel</th>
                     <th>Action</th>
                   </tr>
                 </thead>
@@ -97,12 +97,14 @@
                   @foreach ($orders as $order)
                   <tr>
                     <th scope="row">{{ $loop->iteration }}</th>
-                    <td>{{ $order->name }}</td>
-                    <td>{{ $order->make }}</td>
-                    <td>{{ $order->colour }}</td>
+                    <td>{{ $order->first_name }}</td>
+                    <td>{{ $order->last_name }}</td>
+                    <td>{{ $order->email }}</td>
                     <td>{{ $order->phone }}</td>
                     <td>
-                      <a href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                      <a href="{{ route('admin.invoice.view', $order->id) }}" class="text-primary fs-6 mr-1" data-toggle="tooltip" title="View">
+                          <i class="fas fa-eye"></i>
+                      </a>
                       <a onclick="DeleteOrder({{ $order->id }})" class="cursor-pointer"><i class="fa fa-trash" aria-hidden="true"></i></a>
                     </td>
                   </tr>

@@ -6,8 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Order extends Model
+class Product extends Model
 {
     use HasFactory, SoftDeletes;
     public $guarded = [];
+
+    public function getProductImageAttribute($value)
+    {
+        return !empty($value) ? asset('storage/products/' . $value) : "";
+    }
 }

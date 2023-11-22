@@ -15,10 +15,16 @@
             });
 
         });
+        $('[data-toggle="tooltip"]').tooltip();
         
         /*Table*/
         $('#user_table').DataTable();
-        $('[data-toggle="tooltip"]').tooltip();
+        $('#blog_table').DataTable();
+        $('#product_table').DataTable();
+        $('#warranty_table').DataTable();
+        $('#invoice_table').DataTable();
+
+        
     });
 
     function ReadUrl(input, Preview, Browse) {
