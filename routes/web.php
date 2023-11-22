@@ -54,7 +54,7 @@ Route::get('/single-product', function () {
 Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
 Route::get('/ceramic-coating', [CeramicCoatingController::class, 'index'])->name('frontend.CeramicCoating');
 Route::get('/blog', [BlogController::class, 'index'])->name('frontend.blog');
-Route::get('/blog-details', [BlogDetailsController::class, 'index'])->name('frontend.blogDetails');
+Route::get('/blog-details/{id}', [BlogDetailsController::class, 'index'])->name('frontend.blogDetails');
 Route::get('/contact', [ContactController::class, 'index'])->name('frontend.contact');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('frontend.contact.store');
 Route::get('/shop', [ShopController::class, 'index'])->name('frontend.shop');

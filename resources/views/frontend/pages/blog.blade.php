@@ -29,7 +29,7 @@
 		<section class="section-area section-sp2">
 		   <div class="container">
 				<div class="row">
-					<div class="col-xl-4 col-md-6">
+					<!-- <div class="col-xl-4 col-md-6">
 						<div class="blog-card style-1 bg-white shadow">
 							<div class="post-media">
 								<a href="/blog-details"><img src="images/blog/grid/pic1.jpg" style="filter: grayscale(1);" alt=""></a>
@@ -130,11 +130,31 @@
 								</ul>
 							</div>
 						</div>
-					</div>
+					</div> -->
+					@foreach($blogDetails as $blog)
+						<div class="col-xl-4 col-md-6">
+							<div class="blog-card style-1 bg-white shadow">
+								<div class="post-media">
+									<a href="{{ route('frontend.blogDetails', $blog->id) }}"><img src="{{ asset($blog->image) }}" style="filter: grayscale(1);" alt=""></a>
+								</div>
+								<div class="post-info">
+									<h4 class="post-title"><a href="{{ route('frontend.blogDetails', $blog->id) }}">{{ $blog->title }}</a></h4>
+									<div class="post-content">
+										<p class="mb-0">{{ $blog->description }}</p>
+									</div>
+									<ul class="post-meta">
+										<li class="author"><img src="{{ asset($blog->blog_writer_picture) }}" alt="">By <a href="javascript:;">{{ $blog->blog_writer_name }}</a></li>
+										<li class="date"><a href="javascript:;">{{ $blog->created_at->format('d M Y') }}</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					@endforeach
 				</div>
 				<div class="row">
 					<div class="col-lg-12">
-						<div class="pagination-bx text-center clearfix">
+						{{ $blogDetails->links() }}
+						<!-- <div class="pagination-bx text-center clearfix">
 							<ul class="pagination">
 								<li class="previous"><a href="javascript:void(0);">Prev</a></li>
 								<li class="active"><a href="javascript:void(0);">1</a></li>
@@ -142,7 +162,7 @@
 								<li><a href="javascript:void(0);">3</a></li>
 								<li class="next"><a href="javascript:void(0);">Next</a></li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
