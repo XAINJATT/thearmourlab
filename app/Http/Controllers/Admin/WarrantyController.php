@@ -23,7 +23,7 @@ class WarrantyController extends Controller
      */
     public function create()
     {
-        $users = User::where('role', 1)->get();
+        $users = User::where('role', 1)->where('status', 1)->get();
         return view('admin.warranty.add', compact('users'));
     }
 
@@ -126,9 +126,10 @@ class WarrantyController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $warranty = Warranty::with('user')->where('id', $id)->first();
+        return view('admin.warranty.view', compact('warranty'));
     }
 
     /**

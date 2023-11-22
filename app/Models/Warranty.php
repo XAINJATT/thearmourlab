@@ -16,4 +16,9 @@ class Warranty extends Model
         return !empty($value) ? asset('storage/' . $value) : "";
     }
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }

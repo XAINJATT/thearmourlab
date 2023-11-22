@@ -120,10 +120,11 @@
 </div>
 <!-- Contact End -->
 
-<!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-<!-- SweetAlert JS -->
-<script src="{{asset('backend/plugins/sweetalert2/sweetalert2.all.min.js')}}"></script>
+@endsection
+
+
+@section('scripts')
+
 <script>
   function DeleteWarranty(userId) {
     Swal.fire({
@@ -174,4 +175,5 @@
     });
   }
 </script>
+
 @endsection

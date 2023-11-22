@@ -23,7 +23,7 @@ class InvoiceController extends Controller
      */
     public function create()
     {
-        $users = User::where('role', 1)->get();
+        $users = User::where('role', 1)->where('status', 1)->get();
         return view('admin.invoice.add', compact('users'));
     }
 
@@ -76,9 +76,10 @@ class InvoiceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $order = WorkOrder::with('user')->where('id', $id)->first();
+        return view('admin.invoice.view', compact('order'));
     }
 
     /**

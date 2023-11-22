@@ -23,6 +23,8 @@
         $('#product_table').DataTable();
         $('#warranty_table').DataTable();
         $('#invoice_table').DataTable();
+        $('#user_invoice_table').DataTable();
+        $('#user_warranty_table').DataTable();
 
         
     });
@@ -57,5 +59,6 @@
     }
 
 </script>
+
 
 @yield('scripts')

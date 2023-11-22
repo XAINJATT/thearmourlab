@@ -17,6 +17,8 @@ use App\Http\Controllers\frontend\ContactController;
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\PaintProtectionFilmController;
 use App\Http\Controllers\frontend\ShopController;
+use App\Http\Controllers\User\InvoiceController as UserInvoiceController;
+use App\Http\Controllers\User\WarrantyController as UserWarrantyController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -72,14 +74,14 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/invoice', [InvoiceController::class, 'index'])->name('admin.invoice');
     Route::get('admin/invoice/create', [InvoiceController::class, 'create'])->name('admin.invoice.create');
     Route::post('admin/invoice/store', [InvoiceController::class, 'store'])->name('admin.invoice.store');
-    Route::post('admin/invoice/view/{id}', [InvoiceController::class, 'view'])->name('admin.invoice.view');
+    Route::get('admin/invoice/view/{id}', [InvoiceController::class, 'show'])->name('admin.invoice.view');
     Route::post('admin/invoice/delete/{id}', [InvoiceController::class, 'delete'])->name('admin.invoice.delete');
 
     // WarrantyController
     Route::get('admin/warranty', [WarrantyController::class, 'index'])->name('admin.warranty');
     Route::get('admin/warranty/create', [WarrantyController::class, 'create'])->name('admin.warranty.create');
     Route::post('admin/warranty/store', [WarrantyController::class, 'store'])->name('admin.warranty.store');
-    Route::post('admin/warranty/view/{id}', [WarrantyController::class, 'view'])->name('admin.warranty.view');
+    Route::get('admin/warranty/view/{id}', [WarrantyController::class, 'show'])->name('admin.warranty.view');
     Route::post('admin/warranty/delete/{id}', [WarrantyController::class, 'delete'])->name('admin.warranty.delete');
 
     // UserController
@@ -111,8 +113,10 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/product/statusUpdate/{id}', [ProductController::class, 'statusUpdate'])->name('admin.product.statusUpdate');
 
     // USER ROUTE
-    Route::get('invoice', 'App\Http\Controllers\User\InvoiceController@index')->name('user.invoice');
-    Route::get('warranty', 'App\Http\Controllers\User\WarrantyController@index')->name('user.warranty');
+    Route::get('invoice', [UserInvoiceController::class, 'index'])->name('user.invoice');
+    Route::get('invoice/view/{id}', [UserInvoiceController::class, 'show'])->name('user.invoice.view');
+    Route::get('warranty', [UserWarrantyController::class, 'index'])->name('user.warranty');
+    Route::get('warranty/view/{id}', [UserWarrantyController::class, 'show'])->name('user.warranty.view');
     Route::get('order-status', 'App\Http\Controllers\User\OrderStatusController@index')->name('user.orderStatus');
     Route::get('order-status/order-details', 'App\Http\Controllers\User\OrderStatusController@orderDetails')->name('user.orderDetails');
 });

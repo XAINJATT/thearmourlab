@@ -82,7 +82,7 @@
 
     <li class="menu-item {{ request()->is('admin/blog*') ? 'active open' : '' }}">
       <a href="javascript:void(0)" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-user"></i>
+        <i class="menu-icon tf-icons bx bx-conversation"></i>
         <div data-i18n="User interface">Blogs Management</div>
       </a>
       <ul class="menu-sub">
@@ -101,7 +101,7 @@
 
     <li class="menu-item {{ request()->is('admin/product*') ? 'active open' : '' }}">
       <a href="javascript:void(0)" class="menu-link menu-toggle">
-        <i class="menu-icon tf-icons bx bx-user"></i>
+        <i class="menu-icon tf-icons bx bx-spreadsheet"></i>
         <div data-i18n="User interface">Products Management</div>
       </a>
       <ul class="menu-sub">

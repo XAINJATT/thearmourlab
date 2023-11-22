@@ -10,4 +10,9 @@ class WorkOrder extends Model
 {
     use HasFactory, SoftDeletes;
     public $guarded = [];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }
