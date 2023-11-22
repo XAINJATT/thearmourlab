@@ -9,6 +9,7 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
@@ -71,6 +72,15 @@ class UserController extends Controller
 
     public function update(Request $request)
     {
+        // Validate the form data
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email|unique:users,email,' . $request->user()->id,
+        ]);
+
+        if ($validator->fails()) {
+            return redirect()->route('admin.profile')->with('error-message', 'Email Address already exist');
+        }
+
         /* 1 - Profile Picture */
         $FileProfile = "";
         if (!empty($request->has('profile_image'))) {
@@ -95,6 +105,7 @@ class UserController extends Controller
         $Affected = User::where('id', $request->user_id)->update([
             'first_name' => $request['first_name'],
             'last_name' => $request['last_name'],
+            'email' => $request['email'],
             'phone' => $request['phone'],
             'address' => $request['address'],
             'role' => '1',

@@ -1,18 +1,15 @@
 <?php
 
-namespace App\Http\Controllers\Admin;
+namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use App\Models\User;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Response;
-use Maatwebsite\Excel\Facades\Excel;
-use Symfony\Component\HttpFoundation\StreamedResponse;
 use Carbon\Carbon;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {
@@ -20,14 +17,14 @@ class DashboardController extends Controller
     {
         $page = 'dashboard';
         
-        return view('admin.index', compact('page'));
+        return view('user.index', compact('page'));
     }
 
     function profile()
     {
         $page = 'profile';
-        $users = User::where('id', Auth::user()->id)->where('role', 0)->first(); // Fetch the user from the database
-        return view('admin.profile', compact('page', 'users'));
+        $users = User::where('id', Auth::user()->id)->where('role', 1)->first(); // Fetch the user from the database
+        return view('user.profile', compact('page', 'users'));
     }  
     
     public function update(Request $request)
@@ -76,10 +73,9 @@ class DashboardController extends Controller
         
         DB::commit();
         if ($Affected) {
-            return redirect()->route('admin.profile')->with('success-message', 'Profile updated successfully');
+            return redirect()->route('profile')->with('success-message', 'Profile updated successfully');
         } else {
-            return redirect()->route('admin.profile')->with('error-message', 'An unhandled error occurred');
+            return redirect()->route('profile')->with('error-message', 'An unhandled error occurred');
         }
     }
-
 }

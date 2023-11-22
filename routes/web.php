@@ -17,6 +17,7 @@ use App\Http\Controllers\frontend\ContactController;
 use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\PaintProtectionFilmController;
 use App\Http\Controllers\frontend\ShopController;
+use App\Http\Controllers\User\DashboardController as UserDashboardController;
 use App\Http\Controllers\User\InvoiceController as UserInvoiceController;
 use App\Http\Controllers\User\WarrantyController as UserWarrantyController;
 use Illuminate\Support\Facades\Artisan;
@@ -65,25 +66,29 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
 Route::middleware(['auth'])->group(function () {
     /* Common Routes for both Admin and User */
-    Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');
-    Route::get('profile', [DashboardController::class, 'profile'])->name('profile');
-    
-    // ADMIN ROUTE
 
+    
+    /* ADMIN ROUTE - START */
+    
+    // DashboardController
+    Route::get('admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+    Route::get('admin/profile', [DashboardController::class, 'profile'])->name('admin.profile');
+    Route::post('admin/profile/update', [DashboardController::class, 'update'])->name('admin.profile.update');
+    
     // InvoiceController 
     Route::get('admin/invoice', [InvoiceController::class, 'index'])->name('admin.invoice');
     Route::get('admin/invoice/create', [InvoiceController::class, 'create'])->name('admin.invoice.create');
     Route::post('admin/invoice/store', [InvoiceController::class, 'store'])->name('admin.invoice.store');
     Route::get('admin/invoice/view/{id}', [InvoiceController::class, 'show'])->name('admin.invoice.view');
     Route::post('admin/invoice/delete/{id}', [InvoiceController::class, 'delete'])->name('admin.invoice.delete');
-
+    
     // WarrantyController
     Route::get('admin/warranty', [WarrantyController::class, 'index'])->name('admin.warranty');
     Route::get('admin/warranty/create', [WarrantyController::class, 'create'])->name('admin.warranty.create');
     Route::post('admin/warranty/store', [WarrantyController::class, 'store'])->name('admin.warranty.store');
     Route::get('admin/warranty/view/{id}', [WarrantyController::class, 'show'])->name('admin.warranty.view');
     Route::post('admin/warranty/delete/{id}', [WarrantyController::class, 'delete'])->name('admin.warranty.delete');
-
+    
     // UserController
     Route::get('admin/user', [UserController::class, 'index'])->name('admin.user');
     Route::get('admin/user/create', [UserController::class, 'create'])->name('admin.user.create');
@@ -112,11 +117,26 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/product/delete/{id}', [ProductController::class, 'delete'])->name('admin.product.delete');
     Route::post('admin/product/statusUpdate/{id}', [ProductController::class, 'statusUpdate'])->name('admin.product.statusUpdate');
 
-    // USER ROUTE
+    /* ADMIN ROUTE - END */
+    
+
+    /* USER ROUTE - START */
+    
+    // UserDashboardController
+    Route::get('dashboard', [UserDashboardController::class, 'index'])->name('dashboard');
+    Route::get('profile', [UserDashboardController::class, 'profile'])->name('profile');
+    Route::post('profile/update', [UserDashboardController::class, 'update'])->name('profile.update');
+
+    // UserInvoiceController
     Route::get('invoice', [UserInvoiceController::class, 'index'])->name('user.invoice');
     Route::get('invoice/view/{id}', [UserInvoiceController::class, 'show'])->name('user.invoice.view');
+
+    // UserWarrantyController
     Route::get('warranty', [UserWarrantyController::class, 'index'])->name('user.warranty');
     Route::get('warranty/view/{id}', [UserWarrantyController::class, 'show'])->name('user.warranty.view');
+
     Route::get('order-status', 'App\Http\Controllers\User\OrderStatusController@index')->name('user.orderStatus');
     Route::get('order-status/order-details', 'App\Http\Controllers\User\OrderStatusController@orderDetails')->name('user.orderDetails');
+
+    /* USER ROUTE - END */
 });

@@ -57,7 +57,7 @@
 
                                     <div class="col-md-6 mb-3">
                                         <label for="-email-" class="font-weight-bold">Email Address <span class="text-danger">*</span></label>
-                                        <input type="email" class="form-control" name="email" id="-email-" placeholder="Enter Email" value="{{ $users->email }}" disabled>
+                                        <input type="email" class="form-control" name="email" id="-email-" placeholder="Enter Email" value="{{ $users->email }}" required>
                                     </div>
 
                                     <div class="col-md-6 mb-3">

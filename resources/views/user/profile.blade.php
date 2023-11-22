@@ -52,7 +52,7 @@
                 </div>
                 <div class="col-lg-8">
 
-                    <form action="{{route('admin.profile.update')}}" id="addDriverForm" method="post" enctype="multipart/form-data">
+                    <form action="{{route('profile.update')}}" id="addDriverForm" method="post" enctype="multipart/form-data">
                         @csrf
                         <input type="hidden" name="user_id" value="{{$users->id}}" />
                         <input type="hidden" name="old_profile_image" value="{{$users->profile_image}}" />
