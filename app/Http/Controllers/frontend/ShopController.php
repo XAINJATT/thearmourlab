@@ -16,7 +16,7 @@ class ShopController extends Controller
 
     public function productDetails($slug)
     {
-        $productDetails = Product::where('status', 1)->where('slug', $slug)->first();
+        $productDetails = Product::with('ProductImages')->where('status', 1)->where('slug', $slug)->first();
         return view('frontend.pages.product-details', compact('productDetails'));
     }
     

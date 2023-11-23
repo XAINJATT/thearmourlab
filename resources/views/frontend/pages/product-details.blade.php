@@ -677,7 +677,12 @@
 
                                 <div class="sliderBlock">
                                     <ul class="sliderBlock_items">
-                                        <li class="sliderBlock_items__itemPhoto sliderBlock_items__showing">
+                                        @foreach ($productDetails->ProductImages as $image)
+                                            <li class="sliderBlock_items__itemPhoto">
+                                                <img src="{{ $image->image }}" alt="product-image">
+                                            </li>
+                                        @endforeach
+                                        <!-- <li class="sliderBlock_items__itemPhoto sliderBlock_items__showing">
                                             <img src="{{asset('storage/cart/polish.jpg')}}" alt="headphones">
                                         </li>
                                         <li class="sliderBlock_items__itemPhoto">
@@ -691,7 +696,7 @@
                                         </li>
                                         <li class="sliderBlock_items__itemPhoto">
                                             <img src="{{asset('storage/cart/polish.jpg')}}" alt="headphones">
-                                        </li>
+                                        </li> -->
                                     </ul>
 
 
