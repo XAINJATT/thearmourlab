@@ -48,7 +48,7 @@
                                         <i class="fas fa-minus"></i>
                                     </button>
 
-                                    <input id="form1" min="0" name="quantity" value="2" type="number" class="form-control form-control-sm" />
+                                    <input id="form1" min="0" name="quantity" value="2" type="number" class="form-control form-control-sm m-0 p-0" />
 
                                     <button class="btn btn-link px-2" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
                                         <i class="fas fa-plus"></i>

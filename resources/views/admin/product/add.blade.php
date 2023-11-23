@@ -62,7 +62,12 @@
                                         <input type="number" class="form-control" id="soh" name="soh" required>
                                     </div>
 
-                                    <div class="col-12 col-md-6 mb-3">
+                                    <div class="col-md-12 mt-2">
+                                        <label for="description" class="font-weight-bold">Description <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" name="description" rows="3" required></textarea>
+                                    </div>
+
+                                    <div class="col-12 col-md-6 mt-2">
                                         <label for="product_image" class="font-weight-bold">Product Image <span class="text-danger">*</span></label>
                                         <img src="" alt="" class="picture-src" id="product_image_preview" onclick="$(this).next().trigger('click')" style="width: 60%; display: none;">
                                         <label class="form-control label-style" id="product_image_browse">
@@ -72,6 +77,12 @@
                                             </span>
                                             <input type="file" class="input-style" name="product_image" onchange="ReadUrl(this, 'product_image_preview', 'product_image_browse');" required>
                                         </label>
+                                    </div>
+
+                                    <div class="col-md-6 mt-2">
+                                        <label for="other_images-" class="font-weight-bold">Product Images <span
+                                                    class="text-danger">*</span></label>
+                                        <input type="file" class="form-control" name="other_images[]" id="other_images-" multiple/>
                                     </div>
 
                                 </div>

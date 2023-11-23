@@ -47,22 +47,31 @@ Route::get('/password', function () {
     return view('auth.forget_password');
 })->name('auth.forget_password');
 
-Route::get('/single-product', function () {
-    return view('frontend.pages.single-product');
-});
+
+/* FRONTEND ROUTE - START */
 
 Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
 Route::get('/ceramic-coating', [CeramicCoatingController::class, 'index'])->name('frontend.CeramicCoating');
+
+// BlogController
 Route::get('/blog', [BlogController::class, 'index'])->name('frontend.blog');
 Route::get('/blog-details/{id}', [BlogDetailsController::class, 'index'])->name('frontend.blogDetails');
+
+// ContactController
 Route::get('/contact', [ContactController::class, 'index'])->name('frontend.contact');
 Route::post('/contact/store', [ContactController::class, 'store'])->name('frontend.contact.store');
+
+// ShopController
 Route::get('/shop', [ShopController::class, 'index'])->name('frontend.shop');
+Route::get('/shop/product-detail/{slug}', [ShopController::class, 'productDetails'])->name('frontend.shop.productDetails');
 Route::get('/cart', [CartController::class, 'index'])->name('frontend.cart');
 Route::get('/checkout', [CheckoutController::class, 'index'])->name('frontend.checkout');
+
 Route::get('/automotive', [AutomotiveController::class, 'index'])->name('frontend.automotive');
 Route::get('/window-tint-simulator', [WindowTintSimulatorController::class, 'index'])->name('frontend.WindowTintSimulator');
 Route::get('/paint-protection-film', [PaintProtectionFilmController::class, 'index'])->name('frontend.PaintProtectionFilm');
+
+/* FRONTEND ROUTE - END */
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 

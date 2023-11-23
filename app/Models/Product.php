@@ -15,4 +15,8 @@ class Product extends Model
     {
         return !empty($value) ? asset('storage/products/' . $value) : "";
     }
+
+    public function ProductImages(){
+        return $this->hasMany(ProductImage::class,'product_id','id');
+    }
 }

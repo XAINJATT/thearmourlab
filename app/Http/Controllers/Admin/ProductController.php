@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use App\Models\Product;
+use App\Models\ProductImage;
 use App\Models\Stock;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
@@ -51,11 +52,21 @@ class ProductController extends Controller
             'slug' => $slug,
             'price' => $request['price'],
             'discounted_price' => $request['discounted_price'],
+            'description' => $request['description'],
             'product_image' => $FileImage,
             'status' => 1,
             'soh' => $request['soh'],
             'created_at' => carbon::now()
         ]);
+
+        foreach ($request->other_images as $image) {
+            $imageName = time() . rand(10, 999) . '.' . $image->getClientOriginalExtension();
+            $image->storeAs('public/products/', $imageName);
+            ProductImage::create([
+                'product_id' => $Affected->id,
+                'image' => $imageName
+            ]);
+        }
 
         $stock = new Stock();
         $stock->product_id = $Affected->id;
@@ -74,7 +85,7 @@ class ProductController extends Controller
 
     public function edit($id)
     {
-        $products = Product::where('id', $id)->first();
+        $products = Product::with('ProductImages')->where('id', $id)->first();
         return view('admin.product.edit', compact('products'));
     }
 
@@ -109,12 +120,37 @@ class ProductController extends Controller
             'slug' => $slug,
             'price' => $request['price'],
             'discounted_price' => $request['discounted_price'],
+            'description' => $request['description'],
             'product_image' => $FileImage,
             'status' => 1,
             'soh' => $request['soh'],
             'created_at' => carbon::now(),
             'updated_at' => carbon::now()
         ]);
+
+        $productsDetails = Product::with('ProductImages')->where('id', $request->product_id)->first();
+
+        // Update other images
+        if ($request['other_images']) {
+            // Delete existing other images
+            foreach ($productsDetails->ProductImages as $image) {
+                $temp = explode("/", $image->image);
+                $fileName = end($temp);
+                $imagePath = public_path('storage/products/') . $fileName;
+                if (file_exists($imagePath)) {
+                    unlink($imagePath);
+                }
+                $image->delete();
+            }
+            foreach ($request->other_images as $image) {
+                $imageName = time() . rand(10, 999) . '.' . $image->getClientOriginalExtension();
+                $image->storeAs('public/products/', $imageName);
+                ProductImage::create([
+                    'product_id' => $productsDetails->id,
+                    'image' => $imageName
+                ]);
+            }
+        }
 
         $stock = Stock::where('product_id', $request->product_id)->delete();
 

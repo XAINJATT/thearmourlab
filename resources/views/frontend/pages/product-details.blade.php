@@ -721,75 +721,16 @@
                         <div class="col-6">
                             <div class="productCard_rightSide">
 
-                                <p class="block_model">
-                                    <span class="block_model__text">Model: </span>
-                                    <span class="block_model__number">505795</span>
-                                </p>
-
                                 <div class="block_product">
-                                    <h2 class="block_name block_name__mainName">MOMENTUM<sup>&reg; </sup></h2>
-                                    <h2 class="block_name block_name__addName">Wireless Black</h2>
+                                    <h2 class="block_name block_name__addName">{{ $productDetails->name }}</h2>
 
                                     <p class="block_product__advantagesProduct">
-                                        Wireless headphones with integrated microphone
+                                        {{ $productDetails->description }}
                                     </p>
 
                                     <div class="block_informationAboutDevice">
 
-                                        <div class="block_descriptionCharacteristic block_descriptionCharacteristic__disActive">
-                                            <table class="block_specificationInformation_table">
-                                                <tr>
-                                                    <th>Characteristic</th>
-                                                    <th>Value</th>
-                                                </tr>
-                                                <tr>
-                                                    <td>Ear Coupling</td>
-                                                    <td>Around Ear</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Transducer Principle</td>
-                                                    <td>Dynamic, Closed-back</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Frequency Response</td>
-                                                    <td>16Hz – 22kHz</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Sound Pressure Level (SPL)</td>
-                                                    <td>113 dB (Passive: 1 kHz/1 Vrms)</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Total Harmonic Distortion (THD)</td>
-                                                    <td>&lt;0.5% (1 kHz, 100 dB SPL)</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Volume Control</td>
-                                                    <td>Earcup control when Bluetooth connected</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Microphone Type</td>
-                                                    <td>Dual omni-directional microphone <br>(2 mic beam forming
-                                                        array)
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Cable / Connector</td>
-                                                    <td>1.4m (Detachable) / 3.5mm Angled</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Weight</td>
-                                                    <td>260g (9.17 oz)</td>
-                                                </tr>
-                                            </table>
-                                        </div>
-
-                                        <div class="block_descriptionInformation">
-                                            <span>Peak performance with active noise cancelation. Sennheiser's new MOMENTUM Wireless
-                                                - Closed circumauralheadphone featuring <a class="block_product__link" href="#">Bluetooth<sup>&reg;</sup></a> wireless technology and NoiseGard Hybrid active noise cancelation
-                                            </span>
-                                        </div>
-
-                                        <div class="block_rating clearfix">
+                                        <!-- <div class="block_rating clearfix">
                                             <fieldset class="block_rating__stars">
                                                 <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
                                                 <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
@@ -802,21 +743,28 @@
                                                 <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
                                                 <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
                                             </fieldset>
-
                                             <span class="block_rating__avarage">4.25</span>
                                             <span class="block_rating__reviews">(153 reviews)</span>
-
-                                        </div>
+                                        </div> -->
                                         <div class="row ">
                                             <div class="large-6 small-12 column left-align">
-                                                <div class="block_price">
-                                                    <p class="block_price__currency">$499.95</p>
-                                                    <p class="block_price__shipping">Shipping and taxes extra</p>
+                                                <div class="block_informationAboutDevice">
+                                                    <div class="row">
+                                                        <div class="large-6 small-12 column left-align">
+                                                            <div class="block_price">
+                                                                @if($productDetails->discounted_price)
+                                                                    <p class="block_price__currency" style="display: inline;">${{ $productDetails->discounted_price }}</p>
+                                                                    <del>${{ $productDetails->price }}</del>
+                                                                @else
+                                                                    <p class="block_price__currency">${{ $productDetails->price }}</p>
+                                                                @endif
+                                                            </div>
+                                                            <button class="button button_addToCard">
+                                                                <a href="{{ route('frontend.cart') }}">Add to Cart</a>
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                
-                                                <button class="button button_addToCard">
-                                                    Add to Cart
-                                                </button>
                                                 <!-- <div class="block_quantity clearfix">
                                                     <span class="text_specification">Quantity</span>
                                                     <div class="block_quantity__chooseBlock">

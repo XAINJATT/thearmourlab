@@ -65,6 +65,21 @@
                                         <input type="number" class="form-control" id="soh" name="soh" value="{{ $products->soh }}" required>
                                     </div>
 
+                                    <div class="col-md-6 mt-3">
+                                        <label for="description" class="font-weight-bold">Description <span class="text-danger">*</span></label>
+                                        <textarea class="form-control" name="description" rows="3" required>{{$products->description}}</textarea>
+                                    </div>
+
+                                    <div class="col-md-6 mt-3">
+                                        <label for="other_images">Other Images <span class="text-danger">(If you want to change please upload all image again)</span></label>
+                                        <input type="file" class="form-control" name="other_images[]" id="other_images" multiple />
+                                        @if(count($products->ProductImages) > 0)
+                                        @foreach($products->ProductImages as $pImage)
+                                            <img src="{{ $pImage->image }}" class="mt-2" alt="" width="100px" height="50px">
+                                        @endforeach
+                                            @endif
+                                    </div>
+
                                     <div class="col-12 col-md-6 mb-3">
                                         <label for="product_image" class="font-weight-bold">Product Image <span class="text-danger">*</span>&nbsp;&nbsp;
                                             <a href="{{ $products->product_image }}" download="{{$products->product_image}}">
