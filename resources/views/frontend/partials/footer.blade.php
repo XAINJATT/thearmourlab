@@ -56,60 +56,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-md-6">
+                <div class="col-xl-4 col-md-6">
                     <div class="widget widget-link-2">
                         <h5 class="footer-title">Our Solutions</h5>
                         <ul>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Ceramic coating</a></li>
-                            <li><a href="#">Booking</a></li>
+                            <li><a href="{{ route('frontend.CeramicCoating') }}">Ceramic coating</a></li>
                             <li><a href="{{ route('frontend.PaintProtectionFilmSimulator') }}">Paint protection film</a></li>
-                            <li><a href="#">Our Services</a></li>
                             <li><a href="{{ route('frontend.WindowTintSimulator') }}">Window tints</a></li>
-                            <li><a href="#">Job Career</a></li>
-                            <li><a href="#">Wraps</a></li>
-                            <li><a href="#">Out Team</a></li>
-                            <li><a href="#">Residential</a></li>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Tire And Wheel</a></li>
+                            <li><a href="{{ route('frontend.contact') }}">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
+                
                 <div class="col-xl-3 col-md-6">
                     <div class="widget recent-posts-entry">
                         <h5 class="footer-title">Latest news</h5>
                         <div class="widget-post-bx">
+                            @foreach(\App\Helpers\SiteHelper::get_blogs() as $blog)
                             <div class="widget-post clearfix">
                                 <div class="ttr-post-media">
-                                    <img src="images/blog/recent-blog/pic1.jpg" alt="">
+                                    <img src="{{ asset($blog->image) }}" alt="">
                                 </div>
                                 <div class="ttr-post-info">
-                                    <h6 class="post-title"><a href="#">Precious Tips To Help You Get
-                                            Better.</a></h6>
+                                    <h6 class="post-title"><a href="{{ route('frontend.blogDetails', $blog->id) }}">{{@$blog->title}}</a></h6>
                                     <ul class="post-meta">
-                                        <li class="date"><a href="#"><i class="fa fa-calendar"></i> 15
-                                                Aug 2021</a></li>
+                                        <li class="date"><a href="{{ route('frontend.blogDetails', $blog->id) }}"><i class="fa fa-calendar"></i>{{ $blog->created_at->format('d M Y') }}</a></li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="widget-post clearfix">
-                                <div class="ttr-post-media">
-                                    <img src="images/blog/recent-blog/pic2.jpg" style="filter: grayscale(1);" alt="">
-                                </div>
-                                <div class="ttr-post-info">
-                                    <h6 class="post-title"><a href="">Ten Doubts You Should Clarify
-                                            About.</a></h6>
-                                    <ul class="post-meta">
-                                        <li class="date"><a href=""><i class="fa fa-calendar"></i> 15
-                                                Aug 2021</a></li>
-                                    </ul>
-                                </div>
-                            </div>
+                            @endforeach
+                           
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
-                    <div class="widget widget_info">
+                    {{-- <div class="widget widget_info">
                         <h5 class="footer-title">Subscribe Now</h5>
                         <p class="mb-20">Weekly Breaking News Analysis And Cutting Edge Advices On Job Searching.</p>
                         <form class="subscribe-form subscription-form mb-30"
@@ -134,7 +115,7 @@
                             <li><a href="javascript:void(0);" class="btn button-sm"><i
                                         class="fa fa-google-plus"></i></a></li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>
@@ -147,11 +128,11 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-12 text-center text-md-end">
                     <ul class="widget-link">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">FAQs</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="{{ route('frontend.home') }}">Home</a></li>
+                        {{-- <li><a href="#">About</a></li> --}}
+                        <li><a href="{{ route('cart.list') }}">Cart</a></li>
+                        <li><a href="{{ route('frontend.shop') }}">Shop</a></li>
+                        <li><a href="{{ route('frontend.contact') }}">Contact</a></li>
                     </ul>
                 </div>
             </div>

@@ -29,7 +29,7 @@
 
                         <input type="hidden" name="blog_id" value="{{$blogs->id}}" />
                         <input type="hidden" name="old_image" value="{{$blogs->image}}" />
-                        <input type="hidden" name="old_blog_writer_picture" value="{{$blogs->blog_writer_picture}}" />
+                        {{-- <input type="hidden" name="old_blog_writer_picture" value="{{$blogs->blog_writer_picture}}" /> --}}
 
                         <div class="card mb-3">
                             <div class="card-header" style="padding: 0.5rem 1.5rem">
@@ -77,7 +77,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="col-12 col-md-6 mb-3">
+                                    {{-- <div class="col-12 col-md-6 mb-3">
                                         <label for="blog_writer_picture" class="font-weight-bold">Blog Writer Picture <span class="text-danger">*</span>&nbsp;&nbsp;
                                             <a href="{{ $blogs->blog_writer_picture }}" download="{{$blogs->blog_writer_picture}}">
                                                 <i class="fas fa-download"></i>
@@ -91,7 +91,7 @@
                                             </span>
                                             <input type="file" class="input-style" name="blog_writer_picture" onchange="ReadUrl(this, 'blog_writer_picture_preview', 'blog_writer_picture_browse');">
                                         </label>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                             <hr>

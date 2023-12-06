@@ -14,7 +14,7 @@
         <div class="ttr-slider style-2">
             <div class="swiper-container ttr-swiper01">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
+                    {{-- <div class="swiper-slide">
                         <div class="slider-img slide-move" style="background-image:url(images/slider/slide1.jpg);">
                             <img src="images/slider/slide1.jpg" alt=""/>
                         </div>
@@ -29,7 +29,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="swiper-slide">
                         <div class="slider-img">
                             <img src="images/slider/slide3.jpg" alt=""/>
@@ -379,7 +379,7 @@
         </section>
 
         <!-- Team -->
-        <section class="section-area section-sp1">
+        {{-- <section class="section-area section-sp1">
             <div class="container">
                 <div class="heading-bx text-center">
                     <h6 class="title-ext text-primary">Team Member</h6>
@@ -473,7 +473,7 @@
                     </div>
                 </div>
             </diV>
-        </section>
+        </section> --}}
 
         <!-- Testimonial -->
         <section class="section-area section-sp2 bg-gray ovbl-dark testimonial-area" style="background-image:url(images/background/bg1.jpg); background-repeat:no-repeat; background-attachment:fixed; background-size:cover;">
@@ -483,9 +483,9 @@
                         <h6 class="title-ext text-primary">TESTIMONIAL</h6>
                         <h2 class="title mb-0">WHAT CLIENTS SAY</h2>
                     </div>
-                    <div class="clearfix mt-md-20">
+                    {{-- <div class="clearfix mt-md-20">
                         <a href="javascript:void(0);" class="btn btn-outline-primary">View All Client</a>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="testimonial-carousel-1 owl-carousel owl-btn-1 owl-btn-center-lr dots-style-1 owl-none wow fadeIn" data-wow-delay="0.9s">
                     <div class="item">
@@ -600,10 +600,10 @@
                                 <div class="post-info">
                                     <h5 class="post-title"><a href="{{ route('frontend.blogDetails', $blog->id) }}">{{ $blog->title }}</a></h5>
                                     <div class="post-content">
-                                        <p class="mb-0">{{ $blog->description }}</p>
+                                        <p class="mb-0">{{ \Str::limit(html_entity_decode(strip_tags($blog->description)), 150) }}</p>
                                     </div>
                                     <ul class="post-meta">
-                                        <li class="author"><img src="{{ $blog->blog_writer_picture }}" alt="">By <a href="#">{{ $blog->blog_writer_name }}</a></li>
+                                        <li class="author">By <a href="#">{{ $blog->blog_writer_name }}</a></li>
                                         <li class="date"><a href="#">{{ \Carbon\Carbon::parse($blog->created_at)->format('d M Y') }}</a></li>
                                     </ul>
                                 </div>

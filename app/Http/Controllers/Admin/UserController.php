@@ -73,13 +73,13 @@ class UserController extends Controller
     public function update(Request $request)
     {
         // Validate the form data
-        $validator = Validator::make($request->all(), [
-            'email' => 'required|email|unique:users,email,' . $request->user()->id,
-        ]);
+        // $validator = Validator::make($request->all(), [
+        //     'email' => 'required|email|unique:users,email,' . $request->user()->id,
+        // ]);
 
-        if ($validator->fails()) {
-            return redirect()->route('admin.profile')->with('error-message', 'Email Address already exist');
-        }
+        // if ($validator->fails()) {
+        //     return redirect()->route('admin.profile')->with('error-message', 'Email Address already exist');
+        // }
 
         /* 1 - Profile Picture */
         $FileProfile = "";

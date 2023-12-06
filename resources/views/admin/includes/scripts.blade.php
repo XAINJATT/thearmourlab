@@ -18,19 +18,19 @@
         $('[data-toggle="tooltip"]').tooltip();
 
         // INITIALIZE SELECT 2
-        $(".select2").select2();
+        // $(".select2").select2();
 
         /*Table*/
-        $('#user_table').DataTable();
-        $('#blog_table').DataTable();
-        $('#product_table').DataTable();
-        $('#warranty_table').DataTable();
-        $('#invoice_table').DataTable();
-        $('#user_invoice_table').DataTable();
-        $('#user_warranty_table').DataTable();
-        $('#contactUs_table').DataTable();
-        $('#shop_order_table').DataTable();
-        $('#work_order_status_table').DataTable();
+        // $('#user_table').DataTable();
+        // $('#blog_table').DataTable();
+        // $('#product_table').DataTable();
+        // $('#warranty_table').DataTable();
+        // $('#invoice_table').DataTable();
+        // $('#user_invoice_table').DataTable();
+        // $('#user_warranty_table').DataTable();
+        // $('#contactUs_table').DataTable();
+        // $('#shop_order_table').DataTable();
+        // $('#work_order_status_table').DataTable();
 
 
     });

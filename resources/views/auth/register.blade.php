@@ -8,7 +8,17 @@
 @endsection
 
 @section('content')
-<div class="page-wraper account-wraper bg-gray">
+<style>
+	.wrapper {
+		min-height: 100vh;
+		background: linear-gradient(25deg, #171a1e 50%, #43491a 50%) !important;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column
+	}
+</style>
+<div class="page-wraper wrapper account-wraper bg-gray">
     <div class="my-account">
         <div class="logo">
             <img src="images/logo.webp" alt="">

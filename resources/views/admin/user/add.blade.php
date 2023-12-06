@@ -71,12 +71,12 @@
                                         <input type="password" class="form-control" id="password" name="password" required>
                                     </div>
 
-                                    <div class="col-12 mb-3">
+                                    {{-- <div class="col-12 mb-3">
                                         <label for="-address-" class="font-weight-bold">Home Address <span class="text-danger">*</span></label>
                                         <input class="form-control addressField" name="address" id="-address-" required>
-                                    </div>
+                                    </div> --}}
 
-                                    <div class="col-12 col-md-6 mb-3">
+                                    {{-- <div class="col-12 col-md-6 mb-3">
                                         <label for="profile_image" class="font-weight-bold">Profile Picture <span class="text-danger">*</span></label>
                                         <img src="" alt="" class="picture-src" id="profile_image_preview" onclick="$(this).next().trigger('click')" style="width: 60%; display: none;">
                                         <label class="form-control label-style" id="profile_image_browse">
@@ -86,7 +86,7 @@
                                             </span>
                                             <input type="file" class="input-style" name="profile_image" onchange="ReadUrl(this, 'profile_image_preview', 'profile_image_browse');" required>
                                         </label>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                             <hr>

@@ -42,10 +42,12 @@ class InvoiceController extends Controller
         return view('user.invoice.view', compact('order'));
     }
 
-    public function orderStatusShow($id)
+    public function orderStatusShow()
     {
+        $id = request("id");
         $workOrderStatus = WorkOrder::find($id);
-        return view('user.invoice.orderStatusDetails', compact('workOrderStatus'));
+        return view('frontend.pages.live-status', compact('workOrderStatus'));
+        // return view('user.invoice.orderStatusDetails', compact('workOrderStatus'));
     }
 
     /**

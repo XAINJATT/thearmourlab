@@ -12,12 +12,13 @@
 	<div class="page-banner ovbl-dark" style="background-image:url(images/banner/bnr1.jpg);">
 		<div class="container">
 			<div class="page-banner-entry text-center">
-				<h1><span>BLOG DETAILS</span></h1>
+				<h1><span>{{ $blogDetails->title }}</span></h1>
 				<!-- Breadcrumb row -->
 				<nav aria-label="breadcrumb" class="breadcrumb-row">
 					<ul class="breadcrumb">
 						<li class="breadcrumb-item"><a href="/"><i class="las la-home"></i>Home > </a></li>
-						<li class="breadcrumb-item active" aria-current="page">BLOG DETAILS</li>
+						<li class="breadcrumb-item"><a href="/blog"><i class="las la-list"></i>Blog > </a></li>
+						<li class="breadcrumb-item active" aria-current="page">{{ $blogDetails->title }}</li>
 					</ul>
 				</nav>
 				<!-- Breadcrumb row END -->
@@ -58,14 +59,14 @@
 								<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
 							</div> -->
 							<ul class="post-meta">
-								<li class="author"><img src="{{ $blogDetails->blog_writer_picture }}" alt="{{ $blogDetails->blog_writer_name }}">By <a href="javascript:;">{{ $blogDetails->blog_writer_name }}</a></li>
+								{{-- <li class="author"><img src="{{ $blogDetails->blog_writer_picture }}" alt="{{ $blogDetails->blog_writer_name }}">By <a href="javascript:;">{{ $blogDetails->blog_writer_name }}</a></li> --}}
 								<li class="date"><a href="javascript:;">{{ \Carbon\Carbon::parse($blogDetails->created_at)->format('d M Y') }}</a></li>
 							</ul>
 							<div class="ttr-post-title">
 								<h3 class="post-title">{{ $blogDetails->title }}</h3>
 							</div>
 							<div class="ttr-post-text">
-								<p>{{ $blogDetails->description }}</p>
+								<p>{!! $blogDetails->description !!}</p>
 							</div>
 							<!-- <div class="ttr-post-footer">
 								<div class="post-tags">

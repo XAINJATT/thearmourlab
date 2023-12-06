@@ -140,10 +140,10 @@
 								<div class="post-info">
 									<h4 class="post-title"><a href="{{ route('frontend.blogDetails', $blog->id) }}">{{ $blog->title }}</a></h4>
 									<div class="post-content">
-										<p class="mb-0">{{ $blog->description }}</p>
+										<p class="mb-0">{{ \Str::limit(html_entity_decode(strip_tags($blog->description)), 150) }}</p>
 									</div>
 									<ul class="post-meta">
-										<li class="author"><img src="{{ asset($blog->blog_writer_picture) }}" alt="">By <a href="javascript:;">{{ $blog->blog_writer_name }}</a></li>
+										{{-- <li class="author"><img src="{{ asset($blog->blog_writer_picture) }}" alt="">By <a href="javascript:;">{{ $blog->blog_writer_name }}</a></li> --}}
 										<li class="date"><a href="javascript:;">{{ $blog->created_at->format('d M Y') }}</a></li>
 									</ul>
 								</div>

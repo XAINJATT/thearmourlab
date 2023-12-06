@@ -59,7 +59,9 @@ Route::get('/password', function () {
 
 Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
 Route::get('/ceramic-coating', [CeramicCoatingController::class, 'index'])->name('frontend.CeramicCoating');
-
+Route::get('/faq', [CeramicCoatingController::class, 'faq'])->name('frontend.faq');
+Route::get('live-status', [UserInvoiceController::class, 'orderStatusShow'])->name('frontend.live');
+// Route::get('invoice/order-status/{id}', [UserInvoiceController::class, 'orderStatusShow'])->name('user.invoice.orderStatusShow');
 // BlogController
 Route::get('/blog', [BlogController::class, 'index'])->name('frontend.blog');
 Route::get('/blog-details/{id}', [BlogDetailsController::class, 'index'])->name('frontend.blogDetails');
@@ -90,11 +92,11 @@ Route::controller(StripePaymentController::class)->group(function(){
 
 Route::get('/automotive', [AutomotiveController::class, 'index'])->name('frontend.automotive');
 Route::get('/window-tint', [WindowTintSimulatorController::class, 'index'])->name('frontend.WindowTint');
-Route::get('/paint-protection-film', [PaintProtectionFilmController::class, 'index'])->name('frontend.PaintProtectionFilm');
+// Route::get('/paint-protection-film', [PaintProtectionFilmController::class, 'index'])->name('frontend.PaintProtectionFilm');
 Route::get('/wraps', [WrapsController::class, 'index'])->name('frontend.wraps');
 // Simulator
-Route::get('/window-tint-simulator', [WindowTintSimulatorController::class, 'indexSimulator'])->name('frontend.WindowTintSimulator');
-Route::get('/paint-protection-film-simulator', [PaintProtectionFilmController::class, 'indexSimulator'])->name('frontend.PaintProtectionFilmSimulator');
+Route::get('/window-tint', [WindowTintSimulatorController::class, 'indexSimulator'])->name('frontend.WindowTintSimulator');
+Route::get('/paint-protection-film', [PaintProtectionFilmController::class, 'indexSimulator'])->name('frontend.PaintProtectionFilmSimulator');
 
 /* FRONTEND ROUTE - END */
 

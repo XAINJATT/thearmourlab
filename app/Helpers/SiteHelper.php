@@ -2,6 +2,8 @@
 
 namespace App\Helpers;
 
+use App\Models\blog;
+
 class SiteHelper
 {
     public static function settings()
@@ -15,5 +17,8 @@ class SiteHelper
         $Settings['Currency'] = 'SAR';
         $Settings['PageTitle'] = 'The Armour Lab - Data Analytics';
         return $Settings;
+    }
+    public static function get_blogs(){
+        return blog::latest("created_at")->get();
     }
 }

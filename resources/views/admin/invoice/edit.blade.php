@@ -385,12 +385,12 @@
                     <textarea class="form-control" rows="2" id="note" name="note" placeholder="Note" required>{{ @$order->note }}</textarea>
                   </div>
                 </div>
-                <div class="col-6 mb-3">
+                {{-- <div class="col-6 mb-3">
                   <label for="int" class="mb-0">Int :</label>
                   <div class="">
                     <input type="number" class="form-control" id="int" name="int" value="{{ @$order->int }}" required>
                   </div>
-                </div>
+                </div> --}}
               </div>
               <!-- Note End -->
               <hr class="my-4 mx-n4" />
@@ -697,7 +697,7 @@
       canvas.height = img.height;
       ctx.drawImage(img, 0, 0);
     };
-    img.src = "{{ asset('storage/images/images.png') }}"; // Set source at the end
+    img.src = "{{ asset('/images/images.png') }}"; // Set source at the end
 
     $("#image-container").click(function(e) {
       var posX = $(this).offset().left,

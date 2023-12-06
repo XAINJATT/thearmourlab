@@ -54,7 +54,7 @@
 
                                     <div class="col-md-12 mb-3">
                                         <label for="-text-" class="font-weight-bold">Description <span class="text-danger">*</span></label>
-                                        <textarea class="form-control" id="description" name="description" required></textarea>
+                                        <textarea  class="form-control" id="description" name="description" required></textarea>
                                     </div>
 
                                     <div class="col-12 col-md-6 mb-3">
@@ -69,7 +69,7 @@
                                         </label>
                                     </div>
 
-                                    <div class="col-12 col-md-6 mb-3">
+                                    {{-- <div class="col-12 col-md-6 mb-3">
                                         <label for="blog_writer_picture" class="font-weight-bold">Blog Writer Picture <span class="text-danger">*</span></label>
                                         <img src="" alt="" class="picture-src" id="blog_writer_picture_preview" onclick="$(this).next().trigger('click')" style="width: 60%; display: none;">
                                         <label class="form-control label-style" id="blog_writer_picture_browse">
@@ -79,7 +79,7 @@
                                             </span>
                                             <input type="file" class="input-style" name="blog_writer_picture" onchange="ReadUrl(this, 'blog_writer_picture_preview', 'blog_writer_picture_browse');" required>
                                         </label>
-                                    </div>
+                                    </div> --}}
                                 </div>
                             </div>
                             <hr>

@@ -11,4 +11,12 @@ class CeramicCoatingController extends Controller
     {
         return view('frontend.pages.ceramic-coating');
     }
+    public function faq()
+    {
+        return view('frontend.pages.faq');
+    }
+    public function liveStatus()
+    {
+        return view('frontend.pages.live-status');
+    }
 }

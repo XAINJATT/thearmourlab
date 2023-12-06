@@ -31,7 +31,7 @@ class DashboardController extends Controller
     {
         // Validate the form data
         $validator = Validator::make($request->all(), [
-            'email' => 'required|email|unique:users,email,' . $request->user()->id,
+            'email' => 'required|email',
         ]);
 
         if ($validator->fails()) {

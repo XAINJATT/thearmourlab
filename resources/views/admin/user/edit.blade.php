@@ -70,7 +70,7 @@
                                         <input type="password" class="form-control" id="password" name="password" required>
                                     </div> -->
 
-                                    <div class="col-12 mb-3">
+                                    {{-- <div class="col-12 mb-3">
                                         <label for="-address-" class="font-weight-bold">Home Address <span class="text-danger">*</span></label>
                                         <input class="form-control addressField" name="address" id="-address-" value="{{ $users->address }}" required>
                                     </div>
@@ -89,7 +89,7 @@
                                             </span>
                                             <input type="file" class="input-style" name="profile_image" onchange="ReadUrl(this, 'profile_image_preview', 'profile_image_browse');">
                                         </label>
-                                    </div>
+                                    </div> --}}
 
 
                                 </div>

@@ -14,12 +14,12 @@
     <div class="page-banner ovbl-dark" style="background-image:url(images/banner/bnr1.jpg);">
         <div class="container">
             <div class="page-banner-entry text-center">
-                <h1><span>Window Tint Simulator</span></h1>
+                <h1><span>Window Tint</span></h1>
                 <!-- Breadcrumb row -->
                 <nav aria-label="breadcrumb" class="breadcrumb-row">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/"><i class="las la-home"></i>Home > </a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Window Tint Simulator</li>
+                        <li class="breadcrumb-item active" aria-current="page">Window Tint</li>
                     </ul>
                 </nav>
                 <!-- Breadcrumb row END -->
@@ -40,7 +40,7 @@
                                         <div>
                                             <div data-view="CCT-View" data-cms-cct-instanceid="CMS_HTML-388" class="cms-content cms-content-CMS_HTML cms-content-selector-CMS_HTML-388">
                                                 <div>
-                                                    <h1 class="simulator-title">Window Tint Simulator</h1>
+                                                    <h1 class="simulator-title">Window Tints</h1>
                                                     <p class="simulator-description">Select a vehicle type and color.
                                                         Then see how the different tint percentages, or as we call it
                                                         Variable Light Transfers (VLT’s), could look on the front,
