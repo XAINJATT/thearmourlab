@@ -123,8 +123,10 @@
         <div class="h-100 py-5">
             <!-- Checkout Start -->
             <div class="container-fluid">
-                <form action="" method="POST">
+                <form action="{{route('frontend.order.Userstore')}}" id="addDriverForm" method="post" enctype="multipart/form-data">
                     @csrf
+
+                    <input type="hidden" value="{{ $orderDetails->id }}" name="order_id">
                     <div class="row px-xl-5">
                         <div class="col-lg-8">
                             <div class="bg-light p-30 mb-5">
@@ -171,30 +173,29 @@
                         <div class="col-lg-4">
                             <div class="bg-light p-30 mb-5" style="padding: 20px;">
                                 <div class="border-bottom">
-                                    <h6 class="mb-3">Product</h6>
+                                    <h6 class="mb-3">Products</h6>
+                                    @foreach ($cartItems as $item)
                                     <div class="d-flex justify-content-between">
-                                        <p>Polish</p>
-                                        <p>$100</p>
+                                        <p>{{ $item->name }}</p>
+                                        <p>{{ $item->quantity }}</p>
+                                        <p>${{ $item->price }}</p>
                                     </div>
+                                    @endforeach
                                 </div>
                                 <div class="border-bottom pt-3 pb-2">
                                     <div class="d-flex justify-content-between mb-2">
                                         <h6>Subtotal</h6>
-                                        <h6>$200</h6>
+                                        <h6 id="subtotal">${{ $orderDetails->subtotal }}</h6>
                                     </div>
                                     <div class="d-flex justify-content-between mb-2">
-                                        <h6 class="font-weight-medium">Shipping</h6>
-                                        <h6 class="font-weight-medium">$100</h6>
-                                    </div>
-                                    <div class="d-flex justify-content-between">
-                                        <h6 class="font-weight-medium">Discount</h6>
-                                        <h6 class="font-weight-medium">-$100</h6>
+                                        <h6 class="font-weight-medium">Tax (5%)</h6>
+                                        <h6 id="tax">${{ $orderDetails->tax }}</h6>
                                     </div>
                                 </div>
                                 <div class="pt-2">
                                     <div class="d-flex justify-content-between mt-2">
                                         <h5>Total</h5>
-                                        <h5>$100</h5>
+                                        <h5 id="total">${{ $orderDetails->total }}</h5>
                                     </div>
                                 </div>
                             </div>
@@ -218,4 +219,8 @@
 @endsection
 
 @section('scripts')
+<script>
+
+</script>
+
 @endsection

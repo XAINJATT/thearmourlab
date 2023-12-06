@@ -462,12 +462,12 @@
     <div class="page-banner ovbl-dark" style="background-image:url(images/banner/bnr1.jpg);">
         <div class="container">
             <div class="page-banner-entry text-center">
-                <h1><span>PAINT PROTECTION FILM</span></h1>
+                <h1><span>PAINT PROTECTION FILM SIMULATOR</span></h1>
                 <!-- Breadcrumb row -->
                 <nav aria-label="breadcrumb" class="breadcrumb-row">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/"><i class="las la-home"></i>Home > </a></li>
-                        <li class="breadcrumb-item active" aria-current="page">PAINT PROTECTION FILM</li>
+                        <li class="breadcrumb-item active" aria-current="page">PAINT PROTECTION FILM SIMULATOR</li>
                     </ul>
                 </nav>
                 <!-- Breadcrumb row END -->

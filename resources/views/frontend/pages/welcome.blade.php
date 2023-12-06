@@ -591,57 +591,25 @@
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or slightly believable.</p>
                 </div>
                 <div class="blog-carousel owl-carousel owl-loaded owl-none owl-drag">
-                    <div class="item">
-                        <div class="blog-card style-1 bg-white shadow">
-                            <div class="post-media">
-                                <a href="#"><img src="images/blog/grid/pic1.jpg" style="filter: grayscale(1);" alt=""></a>
-                            </div>
-                            <div class="post-info">
-                                <h5 class="post-title"><a href="#">The Number Of Electric Vehicles Doubled</a></h5>
-                                <div class="post-content">
-                                    <p class="mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                    @foreach($blogDetails as $blog)
+                        <div class="item">
+                            <div class="blog-card style-1 bg-white shadow">
+                                <div class="post-media">
+                                    <a href="{{ route('frontend.blogDetails', $blog->id) }}"><img src="{{ $blog->image }}" style="filter: grayscale(1);" alt=""></a>
                                 </div>
-                                <ul class="post-meta">
-                                    <li class="author"><img src="images/testimonials/pic1.jpg" alt="">By <a href="#">Isabella Evans</a></li>
-                                    <li class="date"><a href="#">9 May 2021</a></li>
-                                </ul>
+                                <div class="post-info">
+                                    <h5 class="post-title"><a href="{{ route('frontend.blogDetails', $blog->id) }}">{{ $blog->title }}</a></h5>
+                                    <div class="post-content">
+                                        <p class="mb-0">{{ $blog->description }}</p>
+                                    </div>
+                                    <ul class="post-meta">
+                                        <li class="author"><img src="{{ $blog->blog_writer_picture }}" alt="">By <a href="#">{{ $blog->blog_writer_name }}</a></li>
+                                        <li class="date"><a href="#">{{ \Carbon\Carbon::parse($blog->created_at)->format('d M Y') }}</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="item">
-                        <div class="blog-card style-1 bg-white shadow">
-                            <div class="post-media">
-                                <a href="#"><img src="images/blog/grid/pic2.jpg" alt=""></a>
-                            </div>
-                            <div class="post-info">
-                                <h5 class="post-title"><a href="#">Make Your Auto Clean As Before Like New</a></h5>
-                                <div class="post-content">
-                                    <p class="mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                </div>
-                                <ul class="post-meta">
-                                    <li class="author"><img src="images/testimonials/pic2.jpg" alt="">By <a href="#">George Brown</a></li>
-                                    <li class="date"><a href="#">9 May 2021</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="blog-card style-1 bg-white shadow">
-                            <div class="post-media">
-                                <a href="#"><img src="images/blog/grid/pic3.jpg" alt=""></a>
-                            </div>
-                            <div class="post-info">
-                                <h5 class="post-title"><a href="#">Interior Cleaning with a Steam Generator</a></h5>
-                                <div class="post-content">
-                                    <p class="mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-                                </div>
-                                <ul class="post-meta">
-                                    <li class="author"><img src="images/testimonials/pic3.jpg" alt="">By <a href="#">Thomas deo</a></li>
-                                    <li class="date"><a href="#">9 May 2021</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>

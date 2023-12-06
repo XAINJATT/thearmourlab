@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\Warranty;
 use Illuminate\Http\Request;
 
 class WarrantyController extends Controller
@@ -12,7 +13,8 @@ class WarrantyController extends Controller
      */
     public function index()
     {
-        return view('user.warranty.index');
+        $warranties = Warranty::where('user_id', Auth()->user()->id)->get();
+        return view('user.warranty.index', compact('warranties'));
     }
 
     /**
@@ -34,9 +36,10 @@ class WarrantyController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $warranty = Warranty::with('user')->where('id', $id)->first();
+        return view('user.warranty.view', compact('warranty'));
     }
 
     /**

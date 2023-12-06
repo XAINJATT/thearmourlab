@@ -3,8 +3,11 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\User;
 use App\Models\Warranty;
+use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class WarrantyController extends Controller
 {
@@ -22,7 +25,8 @@ class WarrantyController extends Controller
      */
     public function create()
     {
-        return view('admin.warranty.add');
+        $users = User::where('role', 1)->where('status', 1)->get();
+        return view('admin.warranty.add', compact('users'));
     }
 
     /**
@@ -79,15 +83,20 @@ class WarrantyController extends Controller
 
     public function store(Request $request)
     {
-        // Handle the uploaded video
-        if ($request->hasFile('installer_signature')) {
-            $signaturePath = $request->file('installer_signature')->store('signatures', 'public');
-        } else {
-            $signaturePath = null;
-        }
+        $image_parts = explode(";base64,", $request->signature);
+        $image_type_aux = explode("image/", $image_parts[0]);
+        $image_type = $image_type_aux[1];
+        $image_base64 = base64_decode($image_parts[1]);
+    
+        $signatureFileName = 'signature-' . Carbon::now()->format('Ymd-His') . '.' . $image_type;
+        $signatureFilePath = 'public/signatures/' . $signatureFileName;
+    
+        // Save the signature image
+        Storage::put($signatureFilePath, $image_base64);
 
         // Create a new warranty record without validation
         Warranty::create([
+            'user_id' => $request->input('id'),
             'first_name' => $request->input('first_name'),
             'last_name' => $request->input('last_name'),
             'email' => $request->input('email'),
@@ -114,7 +123,7 @@ class WarrantyController extends Controller
             'warranty_duration' => $request->input('warranty_duration'),
             'installer' => $request->input('installer'),
             'date_of_installation' => $request->input('date_of_installation'),
-            'installer_signature' => $signaturePath,
+            'installer_signature' => $signatureFileName,
         ]);
 
         return redirect()->route('admin.warranty')->with('success-message', 'Warranty created Successfully!');
@@ -123,9 +132,10 @@ class WarrantyController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $warranty = Warranty::with('user')->where('id', $id)->first();
+        return view('admin.warranty.view', compact('warranty'));
     }
 
     /**

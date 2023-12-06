@@ -18,7 +18,10 @@
                 <form id="formAuthentication" action="{{ route('register') }}" method="POST">
                     @csrf
                     <div class="form-group">
-                        <input type="text" class="form-control" id="username" name="username" value="{{old('username')}}" placeholder="Enter your username" required autofocus/>
+                        <input type="text" class="form-control" id="first_name" name="first_name" value="{{old('first_name')}}" placeholder="Enter your First Name" required autofocus/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="last_name" name="last_name" value="{{old('last_name')}}" placeholder="Enter your Last Name" required autofocus/>
                     </div>
                     <div class="form-group">
                         <input type="text" class="form-control" id="email" name="email" value="{{old('email')}}" placeholder="Enter your email" required/>

@@ -34,9 +34,9 @@
                                     <ul>
                                         <li><a href="{{ route('frontend.CeramicCoating') }}"><span>Ceramic coating</span> </a></li>
                                         <li><a href="{{ route('frontend.PaintProtectionFilm') }}"><span>Paint protection film</span></a></li>
-                                        <li><a href="{{ route('frontend.WindowTintSimulator') }}"><span>Window tints</span></a></li>
-                                        <li><a href="#"><span>Wraps</span></a></li>
-                                        <li><a href="#"><span>Industrial</span></a></li>
+                                        <li><a href="{{ route('frontend.WindowTint') }}"><span>Window tints</span></a></li>
+                                        <li><a href="{{ route('frontend.wraps') }}"><span>Wraps</span></a></li>
+                                        <!-- <li><a href="#"><span>Industrial</span></a></li> -->
                                     </ul>
                                 </li>
                             </ul>
@@ -44,9 +44,15 @@
                         <li class="active"> <a href="{{ route('frontend.blog') }}"> Blog </a> </li>
                         <li class="active"> <a href="{{ route('frontend.contact') }}"> contact us </a> </li>
                         <li class="active"> <a href="{{ route('frontend.shop') }}"> Shop </a> </li>
-                        <li class="active"> <a href="{{ route('frontend.cart') }}"> Cart </a> </li>
+                        <!-- <li class="active"> <a href="{{ route('cart.list') }}"> Cart </a> </li> -->
+                        <!-- Add this in your HTML or Blade file -->
                         <li class="active"> <a href="#"> FAQ </a> </li>
-
+                        <li>
+                            <a href="{{ route('cart.list') }}" class="flex items-center text-white">
+                                <i class="fas fa-shopping-cart text-primary" style="font-size: 1.5em;"></i>
+                                <span class="badge text-primary border border-primary rounded-circle" style="padding-bottom: 2px">{{ Cart::getTotalQuantity() }}</span>
+                            </a>
+                        </li>
                     </ul>
                     <ul class="social-media">
                         <li><a href="javascript:void(0);" class="btn btn-primary"><i class="fa fa-facebook"></i></a>

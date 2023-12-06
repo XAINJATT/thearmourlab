@@ -12,6 +12,8 @@
 <!-- DataTables -->
 <link href="{{ asset('backend/plugins/datatable/datatables.min.css') }}" rel="stylesheet" type="text/css" />
 
+<meta name="apple-mobile-web-app-capable" content="yes">
+
 <!-- SweetAlert CSS -->
 <link rel="stylesheet" href="{{asset('backend/plugins/sweetalert2/sweetalert2.min.css')}}">
 
@@ -42,8 +44,6 @@
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css')}}" />
 <link rel="stylesheet" href="{{asset('assets/vendor/libs/apex-charts/apex-charts.css')}}" />
 
-<!-- Page CSS -->
-<link rel="stylesheet" href="{{asset('assets/vendor/css/select2/select2.min.css')}}" />
 <!-- Helpers -->
 <script src="{{asset('assets/vendor/js/helpers.js')}}"></script>
 <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
@@ -62,49 +62,3 @@
 
 <!-- DataTables CSS -->
 <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-
-    <!-- Signature -->
-    <link rel="stylesheet" href="{{asset('assets/css/jquery.signature.css')}}">
-    <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/south-street/jquery-ui.css" rel="stylesheet">
-    <!-- Signature -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="{{asset('assets/js/jquery.signature.js')}}"></script>
-    <!-- <script src="{{asset('assets/js/jquery.signature.min.js')}}"></script> -->
-    <script>
-      $(function() {
-        var sig = $('#sig').signature();
-        $('#disable').click(function() {
-          var disable = $(this).text() === 'Disable';
-          $(this).text(disable ? 'Enable' : 'Disable');
-          sig.signature(disable ? 'disable' : 'enable');
-        });
-        $('#clear').click(function() {
-          sig.signature('clear');
-        });
-        $('#json').click(function() {
-          alert(sig.signature('toJSON'));
-        });
-        $('#svg').click(function() {
-          alert(sig.signature('toSVG'));
-        });
-      });
-
-      $(function() {
-        var sign = $('#sign').signature();
-        $('#sign_disable').click(function() {
-          var disable = $(this).text() === 'Disable';
-          $(this).text(disable ? 'Enable' : 'Disable');
-          sign.signature(disable ? 'disable' : 'enable');
-        });
-        $('#sign_clear').click(function() {
-          sign.signature('clear');
-        });
-        $('#json').click(function() {
-          alert(sign.signature('toJSON'));
-        });
-        $('#svg').click(function() {
-          alert(sign.signature('toSVG'));
-        });
-      });
-    </script>

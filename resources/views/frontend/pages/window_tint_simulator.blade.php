@@ -14,12 +14,12 @@
     <div class="page-banner ovbl-dark" style="background-image:url(images/banner/bnr1.jpg);">
         <div class="container">
             <div class="page-banner-entry text-center">
-                <h1><span>Automotive</span></h1>
+                <h1><span>Window Tint Simulator</span></h1>
                 <!-- Breadcrumb row -->
                 <nav aria-label="breadcrumb" class="breadcrumb-row">
                     <ul class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/"><i class="las la-home"></i>Home > </a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Automotive</li>
+                        <li class="breadcrumb-item active" aria-current="page">Window Tint Simulator</li>
                     </ul>
                 </nav>
                 <!-- Breadcrumb row END -->
@@ -95,9 +95,11 @@
                                                 </tr>
                                                 <tr>
                                                     <td valign="windshield">Windshield <sup>*</sup></td>
-                                                    <td><input type="radio" class="tints" name="windshield" id="windshield80" value="80"><label for="windshield80" class="tintLabel">80</label></td>
-                                                    <td><input type="radio" class="tints" name="windshield" id="windshield70" value="70"><label for="windshield70" class="tintLabel">70</label></td>
-                                                    <td colspan="3"><input type="radio" class="tints" name="windshield" id="windshield50" value="50"><label for="windshield50" class="tintLabel">50</label></td>
+                                                    <td><input type="radio" class="tints" name="windshield" id="windshield80" value="80"><label for="windshield80" class="tintLabel">70</label></td>
+                                                    <td><input type="radio" class="tints" name="windshield" id="windshield70" value="70"><label for="windshield70" class="tintLabel">50</label></td>
+                                                    <td><input type="radio" class="tints" name="windshield" id="windshield50" value="50"><label for="windshield50" class="tintLabel">35</label></td>
+                                                    <td><input type="radio" class="tints" name="windshield" id="windshield50" value="50"><label for="windshield50" class="tintLabel">20</label></td>
+                                                    <td><input type="radio" class="tints" name="windshield" id="windshield50" value="50"><label for="windshield50" class="tintLabel">05</label></td>
                                                 </tr>
                                                 <tr>
                                                     <td colspan="5"><sup>*</sup><small>Check local tint laws in your area</small></td>

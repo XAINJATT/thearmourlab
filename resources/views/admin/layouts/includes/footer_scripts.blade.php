@@ -18,9 +18,6 @@
 <!-- Main JS -->
 <script src="{{asset('assets/js/main.js')}}"></script>
 
-<!-- Page JS -->
-<script src="{{asset('assets/vendor/js/select2/select2.min.js')}}"></script>
-
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 {{-- Form Repeater --}}
@@ -41,16 +38,15 @@
 
 <!-- Select2 -->
 <script src="{{asset('assets/vendor/libs/select2/js/select2.min.js')}}"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <script src="{{asset('assets/vendor/libs/datatables/js/dataTables.min.js')}}"></script>
-
-<!-- Signature --> 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-<script src="{{asset('assets/js/jquery.signature.js')}}"></script>
+<!-- <script src="{{asset('assets/js/jquery.signature.js')}}"></script> -->
+
 <!-- <script src="{{asset('assets/js/jquery.signature.min.js')}}"></script> -->
 
 <!-- Include jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 <!-- SweetAlert JS -->
 <script src="{{asset('backend/plugins/sweetalert2/sweetalert2.all.min.js')}}"></script>
 

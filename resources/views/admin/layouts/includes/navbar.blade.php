@@ -59,32 +59,33 @@
                     <li>
                         <div class="dropdown-divider"></div>
                     </li>
-                    <!-- @if(Auth::user()->role == 1)
-                    <li>
-                        <a class="dropdown-item" href="#">
-                            <i class="bx bx-user me-2"></i>
-                            <span class="align-middle">My Profile</span>
-                        </a>
-                    </li>
-                    @endif -->
                     <li>
                         <a class="dropdown-item" href="{{ route('frontend.home') }}" target="_blank">
                             <i class="bx bx-user me-2"></i>
                             <span class="align-middle">Website</span>
                         </a>
                     </li>
-                    <li>
-                        <a class="dropdown-item" href="{{ route('profile') }}">
-                            <i class="bx bx-user me-2"></i>
-                            <span class="align-middle">My Profile</span>
-                        </a>
-                    </li>
-                    <li>
+                    @if(Auth::user()->role == 1)
+                        <li>
+                            <a class="dropdown-item" href="{{ route('profile') }}">
+                                <i class="bx bx-user me-2"></i>
+                                <span class="align-middle">My Profile</span>
+                            </a>
+                        </li>
+                    @else
+                        <li>
+                            <a class="dropdown-item" href="{{ route('admin.profile') }}">
+                                <i class="bx bx-user me-2"></i>
+                                <span class="align-middle">My Profile</span>
+                            </a>
+                        </li>
+                    @endif
+                    <!-- <li>
                         <a class="dropdown-item" href="#">
                             <i class="bx bx-cog me-2"></i>
                             <span class="align-middle">Settings</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <div class="dropdown-divider"></div>
                     </li>

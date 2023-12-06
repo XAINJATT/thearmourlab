@@ -9,6 +9,11 @@ class WindowTintSimulatorController extends Controller
 {
     public function index()
     {
+        return view('frontend.pages.window_tint');
+    }
+
+    public function indexSimulator()
+    {
         return view('frontend.pages.window_tint_simulator');
     }
 }

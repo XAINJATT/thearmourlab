@@ -209,25 +209,6 @@
         min-height: 35px;
     }
 </style>
-<script>
-    $(function() {
-        var sig = $('#sig').signature();
-        $('#disable').click(function() {
-            var disable = $(this).text() === 'Disable';
-            $(this).text(disable ? 'Enable' : 'Disable');
-            sig.signature(disable ? 'disable' : 'enable');
-        });
-        $('#clear').click(function() {
-            sig.signature('clear');
-        });
-        $('#json').click(function() {
-            alert(sig.signature('toJSON'));
-        });
-        $('#svg').click(function() {
-            alert(sig.signature('toSVG'));
-        });
-    });
-</script>
 <div class="content container-fluid">
     {{--Section 1--}}
     <!-- Content -->
@@ -250,119 +231,79 @@
                                             <th>Stages</th>
                                             <th>Stages Details</th>
                                         </tr>
-                                        <tr>
-                                            <td class="p-0 text-center">
-                                                <div class="custom-checkbox custom-control">
-                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-1" checked>
-                                                    <label for="checkbox-1" class="custom-control-label">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td>General</td>
-                                            <td>
-                                                <ul class="list-unstyled ps-0 mb-0">
-                                                    <li>
-                                                        <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Vehicle has arrived and is logged into our system. </p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Evaluating the vehicle's condition before any work begins.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Ensuring the car's surface is clean and free of contaminants.</p>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-0 text-center">
-                                                <div class="custom-checkbox custom-control">
-                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-4" checked>
-                                                    <label for="checkbox-4" class="custom-control-label">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td>Paint Protection Film</td>
-                                            <td>
-                                                <ul class="list-unstyled ps-0 mb-0">
-                                                    <li>
-                                                        <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Cutting the PPF to the vehicle's specific measurements and aligning it for application. </p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Polishing the vehicle's surface to ensure an immaculate finish beneath the PPF.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Applying the PPF to the vehicle's body.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Allowing time for the glue under the Ppf to solidify and dry enough to go home.</p>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-0 text-center">
-                                                <div class="custom-checkbox custom-control">
-                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-5" checked>
-                                                    <label for="checkbox-5" class="custom-control-label">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td>Ceramic Coating</td>
-                                            <td>
-                                                <ul class="list-unstyled ps-0 mb-0">
-                                                    <li>
-                                                        <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Preparing the vehicle's surface for ceramic coating. </p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Correcting any imperfections in the paint before the ceramic coating application.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Applying the ceramic coating to protect the vehicle's paint.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Allowing time for the ceramic coating to bond with the vehicle's surface or PPF.</p>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-0 text-center">
-                                                <div class="custom-checkbox custom-control">
-                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-6">
-                                                    <label for="checkbox-6" class="custom-control-label">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td>Window Tint</td>
-                                            <td>
-                                                <ul class="list-unstyled ps-0 mb-0">
-                                                    <li>
-                                                        <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Measuring windows and cutting tint film accordingly. </p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Applying the tint to the vehicle's windows.</p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> 5G and Gigabit LTE</p>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="p-0 text-center">
-                                                <div class="custom-checkbox custom-control">
-                                                    <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-6">
-                                                    <label for="checkbox-6" class="custom-control-label">&nbsp;</label>
-                                                </div>
-                                            </td>
-                                            <td>Final</td>
-                                            <td>
-                                                <ul class="list-unstyled ps-0 mb-0">
-                                                    <li>
-                                                        <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Checking the quality of the work, ensuring no imperfections. </p>
-                                                    </li>
-                                                    <li>
-                                                        <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Vehicle is ready and waiting for the customer.</p>
-                                                    </li>
-                                                </ul>
-                                            </td>
-                                        </tr>
+                                        @php
+                                            $statuses = ['General', 'Paint Protection Film', 'Ceramic Coating', 'Window Tint', 'Final'];
+                                            $currentStatusIndex = array_search($workOrderStatus->status, $statuses);
+                                        @endphp
+                                        @foreach($statuses as $index => $status)
+                                            <tr>
+                                                <td class="p-0 text-center">
+                                                    <div class="custom-checkbox custom-control">
+                                                        <input type="checkbox" data-checkboxes="mygroup" class="custom-control-input" id="checkbox-{{ $index + 1 }}" {{ $index <= $currentStatusIndex ? 'checked' : '' }}>
+                                                        <label for="checkbox-{{ $index + 1 }}" class="custom-control-label">&nbsp;</label>
+                                                    </div>
+                                                </td>
+                                                <td>{{ $status }}</td>
+                                                <td>
+                                                    <ul class="list-unstyled ps-0 mb-0">
+                                                        @if($status == 'General')
+                                                            <li>
+                                                                <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Vehicle has arrived and is logged into our system. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Evaluating the vehicle's condition before any work begins.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Ensuring the car's surface is clean and free of contaminants.</p>
+                                                            </li>
+                                                        @elseif($status == 'Paint Protection Film')
+                                                            <li>
+                                                                <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Cutting the PPF to the vehicle's specific measurements and aligning it for application. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Polishing the vehicle's surface to ensure an immaculate finish beneath the PPF.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Applying the PPF to the vehicle's body.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Allowing time for the glue under the Ppf to solidify and dry enough to go home.</p>
+                                                            </li>
+                                                        @elseif($status == 'Ceramic Coating')
+                                                            <li>
+                                                                <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Preparing the vehicle's surface for ceramic coating. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Correcting any imperfections in the paint before the ceramic coating application.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Applying the ceramic coating to protect the vehicle's paint.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Allowing time for the ceramic coating to bond with the vehicle's surface or PPF.</p>
+                                                            </li>
+                                                        @elseif($status == 'Window Tint')
+                                                            <li>
+                                                                <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Measuring windows and cutting tint film accordingly. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Applying the tint to the vehicle's windows.</p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted mb-0 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> 5G and Gigabit LTE</p>
+                                                            </li>
+                                                        @elseif($status == 'Final')
+                                                            <li>
+                                                                <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Checking the quality of the work, ensuring no imperfections. </p>
+                                                            </li>
+                                                            <li>
+                                                                <p class="text-muted mb-1 text-truncate"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i> Vehicle is ready and waiting for the customer.</p>
+                                                            </li>
+                                                        @endif
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        @endforeach
                                     </tbody>
                                 </table>
                             </div>

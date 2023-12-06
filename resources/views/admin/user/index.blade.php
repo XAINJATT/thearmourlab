@@ -20,14 +20,16 @@
           <div class="card">
             <div class="card-header row">
               <h6 class="text-uppercase mb-0 col-10">HERE ARE ALL USERS </h6>
-              <a href="{{ route('admin.user.create') }}" class="btn btn-primary col-2 float-right">Add New Order</a>
+              <a href="{{ route('admin.user.create') }}" class="btn btn-primary col-2 float-right">Add New User</a>
             </div>
             <div class="card-body" style="overflow: scroll">
               <table id="user_table" class="table table-striped table-hover card-text">
                 <thead>
                   <tr>
                     <th>#</th>
-                    <th>Full Name</th>
+                    <th>Profile Image</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
                     <th>Email</th>
                     <th>Phone</th>
                     <th>status</th>
@@ -38,7 +40,9 @@
                   @foreach ($users as $user)
                   <tr>
                     <th scope="row">{{ $loop->iteration }}</th>
-                    <td>{{ $user->name }}</td>
+                    <td><img src="{{ $user->profile_image }}" alt="" width="100" height="50"></td>
+                    <td>{{ $user->first_name }}</td>
+                    <td>{{ $user->last_name }}</td>
                     <td>{{ $user->email }}</td>
                     <td>{{ $user->phone }}</td>
                     <td>

@@ -4,9 +4,9 @@
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     });
-    $(document).ready(function () {
+    $(document).ready(function() {
         /* For Error Messages Without ajax */
-        $(function () {
+        $(function() {
             $("#datefilter").daterangepicker({
                 autoUpdateInput: false,
                 locale: {
@@ -15,10 +15,24 @@
             });
 
         });
-        
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // INITIALIZE SELECT 2
+        $(".select2").select2();
+
         /*Table*/
         $('#user_table').DataTable();
-        $('[data-toggle="tooltip"]').tooltip();
+        $('#blog_table').DataTable();
+        $('#product_table').DataTable();
+        $('#warranty_table').DataTable();
+        $('#invoice_table').DataTable();
+        $('#user_invoice_table').DataTable();
+        $('#user_warranty_table').DataTable();
+        $('#contactUs_table').DataTable();
+        $('#shop_order_table').DataTable();
+        $('#work_order_status_table').DataTable();
+
+
     });
 
     function ReadUrl(input, Preview, Browse) {
@@ -36,8 +50,11 @@
         $.ajax({
             type: "post",
             url: "{{route('admin.user.CheckForDuplicateEmail')}}",
-            data: { Id: id, Value: value},
-            success: function (data) {
+            data: {
+                Id: id,
+                Value: value
+            },
+            success: function(data) {
                 if (data === 'Failed') {
                     $("#duplicateEmailError").removeClass('d-none');
                     $("#email").focus();
@@ -49,7 +66,6 @@
             }
         });
     }
-
 </script>
 
 @yield('scripts')

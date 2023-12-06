@@ -71,6 +71,18 @@
                                 <h3 class="mb-1 warranty-heading">Customer Info:</h3>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
+                                        <label for="email" class="form-label me-2 fw-medium mt-2">Email:</label>
+                                        <select class="form-select" id="email" name="email" required>
+                                            <option value="">Select Email</option>
+                                            @foreach($users as $user)
+                                            <option value="{{ $user->email }}" data-first-name="{{ $user->first_name }}" data-last-name="{{ $user->last_name }}" data-tel="{{ $user->phone }}" data-id="{{ $user->id }}">{{ $user->email }}</option>
+                                            @endforeach
+                                        </select>
+                                    </div>
+                                </div>
+                                <input type="hidden" class="form-control" id="id" name="id" />
+                                <div class="col-md-6 col-12 mt-2">
+                                    <div class="">
                                         <label for="first_name" class="form-label me-2 fw-medium mt-2">First Name:</label>
                                         <input type="text" class="form-control" id="first_name" name="first_name" placeholder="First Name" />
                                     </div>
@@ -83,12 +95,6 @@
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
-                                        <label for="email" class="form-label me-2 fw-medium mt-2">Email:</label>
-                                        <input type="text" class="form-control" id="email" name="email" placeholder="Email" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-12 mt-2">
-                                    <div class="">
                                         <label for="tel" class="form-label me-2 fw-medium mt-2">Tel:</label>
                                         <input type="text" class="form-control" id="tel" name="tel" placeholder="Tel" />
                                     </div>
@@ -97,80 +103,80 @@
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="make" class="form-label me-2 fw-medium mt-2">Make:</label>
-                                        <input type="text" class="form-control" id="make" name="make" placeholder="Make" />
+                                        <input required type="text" class="form-control" id="make" name="make" placeholder="Make" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="model" class="form-label me-2 fw-Medium mt-2">Model</label>
-                                        <input type="text" class="form-control" id="model" name="model" placeholder="Model" />
+                                        <input required type="text" class="form-control" id="model" name="model" placeholder="Model" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="year" class="form-label me-2 fw-medium mt-2">Year:</label>
-                                        <input type="text" class="form-control" id="year" name="year" placeholder="Year" />
+                                        <input required type="text" class="form-control" id="year" name="year" placeholder="Year" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="colour" class="form-label me-2 fw-medium mt-2">Colour:</label>
-                                        <input type="text" class="form-control" id="colour" name="colour" placeholder="Colour" />
+                                        <input required type="text" class="form-control" id="colour" name="colour" placeholder="Colour" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="vin" class="form-label me-2 fw-medium mt-2">Vin:</label>
-                                        <input type="text" class="form-control" id="vin" name="vin" placeholder="Vin" />
+                                        <input required type="text" class="form-control" id="vin" name="vin" placeholder="Vin" />
                                     </div>
                                 </div>
                                 <h3 class="mb-1 warranty-heading">Ceramic Coating Warranty Info:</h3>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="exterior_package" class="form-label me-2 fw-medium mt-2">Exterior Package:</label>
-                                        <input type="text" class="form-control" id="exterior_package" name="exterior_package" placeholder="Exterior Package" />
+                                        <input required type="text" class="form-control" id="exterior_package" name="exterior_package" placeholder="Exterior Package" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="interior" class="form-label me-2 fw-medium mt-2">Interior:</label>
-                                        <input type="text" class="form-control" id="interior" name="interior" placeholder="Interior" />
+                                        <input required type="text" class="form-control" id="interior" name="interior" placeholder="Interior" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="windows" class="form-label me-2 fw-medium mt-2">Windows:</label>
-                                        <input type="text" class="form-control" id="windows" name="windows" placeholder="Windows" />
+                                        <input required type="text" class="form-control" id="windows" name="windows" placeholder="Windows" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="wheels" class="form-label me-2 fw-medium mt-2">Wheels:</label>
-                                        <input type="text" class="form-control" id="wheels" name="wheels" placeholder="Wheels" />
+                                        <input required type="text" class="form-control" id="wheels" name="wheels" placeholder="Wheels" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="trim" class="form-label me-2 fw-medium mt-2">Trim:</label>
-                                        <input type="text" class="form-control" id="trim" name="trim" placeholder="Trim" />
+                                        <input required type="text" class="form-control" id="trim" name="trim" placeholder="Trim" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="paint_correction" class="form-label me-2 fw-medium mt-2">Pant Correction:</label>
-                                        <input type="text" class="form-control" id="paint_correction" name="paint_correction" placeholder="Paint Correction" />
+                                        <input required type="text" class="form-control" id="paint_correction" name="paint_correction" placeholder="Paint Correction" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="body" class="form-label me-2 fw-medium mt-2">Body:</label>
-                                        <input type="text" class="form-control" id="body" name="body" placeholder="Body" />
+                                        <input required type="text" class="form-control" id="body" name="body" placeholder="Body" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="coating_duration" class="form-label me-2 fw-medium mt-2">Coating Duration:</label>
-                                        <input type="text" class="form-control" id="coating_duration" name="coating_duration" placeholder="Coating Duration" />
+                                        <input required type="text" class="form-control" id="coating_duration" name="coating_duration" placeholder="Coating Duration" />
                                     </div>
                                 </div>
                                 <h3 class="mb-1 warranty-heading">Paint Protection Film Warranty:</h3>
@@ -197,46 +203,56 @@
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="attitionl_panels" class="form-label me-2 fw-medium mt-2">Attitionl Panels:</label>
-                                        <input type="text" class="form-control" id="attitionl_panels" name="attitionl_panels" placeholder="Attitionl Panels" />
+                                        <input required type="text" class="form-control" id="attitionl_panels" name="attitionl_panels" placeholder="Attitionl Panels" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="ppf_brand" class="form-label me-2 fw-Medium mt-2">Ppf Brand</label>
-                                        <input type="text" class="form-control" id="ppf_brand" name="ppf_brand" placeholder="Ppf Brand" />
+                                        <input required type="text" class="form-control" id="ppf_brand" name="ppf_brand" placeholder="Ppf Brand" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="roll_serial_number" class="form-label me-2 fw-medium mt-2">Roll Serial Number:</label>
-                                        <input type="text" class="form-control" id="roll_serial_number" name="roll_serial_number" placeholder="Roll Serial Number" />
+                                        <input required type="text" class="form-control" id="roll_serial_number" name="roll_serial_number" placeholder="Roll Serial Number" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="warranty_duration" class="form-label me-2 fw-medium mt-2">Warranty Duration:</label>
-                                        <input type="text" class="form-control" id="warranty_duration" name="warranty_duration" placeholder="Warranty Duration" />
+                                        <input required type="text" class="form-control" id="warranty_duration" name="warranty_duration" placeholder="Warranty Duration" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="installer" class="form-label me-2 fw-medium mt-2">Installer:</label>
-                                        <input type="text" class="form-control" id="installer" name="installer" placeholder="Installer" />
+                                        <input required type="text" class="form-control" id="installer" name="installer" placeholder="Installer" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <div class="">
                                         <label for="date-of_installaction" class="form-label me-2 fw-medium mt-2">Date Of Installaction:</label>
-                                        <input type="date" class="form-control" id="date_of_installaction" name="date_of_installation" placeholder="Date Of Installaction" />
+                                        <input required type="date" class="form-control" id="date_of_installaction" name="date_of_installation" placeholder="Date Of Installaction" />
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-12 mt-2">
                                     <label for="authorized_signature" class="form-label fw-medium" style="color: #040404 !important; font-weight: bolder;">Installer Signature:</label>
-                                    <div id="sign"></div>
-                                    <p style="clear: both;">
-                                        <a id="sign_disable" class="btn btn-primary" style="color: #fff !important;">Disable</a>
-                                        <a id="sign_clear" class="btn btn-primary" style="color: #fff !important;">Clear</a>
-                                    </p>
+                                    <div style="padding: 30px" class="row p-3">
+                                        <div style="width: 100%">
+                                            <canvas style="background: #dedede" id="signature-pad" width="400" height="200"></canvas>
+                                        </div>
+
+                                        <input hidden="" name="signature" value="" id="signature_value" />
+
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-danger btn-sm" id="clear">
+                                                    Clear Signature
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div id="" class="float-right" style="display: flex; justify-content:end;">
                                     <button type="submit" name="submit_form" id="submit_form" class="submit_form btn btn-primary">Submit</button>
@@ -298,29 +314,139 @@
     </div>
 
 </div>
-    
+
+@endsection
+
+@section('scripts')
 
 <script>
-    $(function() {
-        var sig = $('#sign').signature();
-        $('#sign_disable').click(function() {
-            var disable = $(this).text() === 'Disable';
-            $(this).text(disable ? 'Enable' : 'Disable');
-            sig.signature(disable ? 'disable' : 'enable');
-        });
-        $('#sign_clear').click(function() {
-            sig.signature('clear');
-        });
-        $('#submit_form').click(function() {
-            // Convert the signature to an image
-            var signatureImage = sig.signature('toDataURL');
+    $(document).ready(function() {
+        $('#email').change(function() {
+            var selectedEmail = $(this).val();
+            var selectedOption = $('option:selected', this);
 
-            // Create a hidden input field and set the value to the image data
-            $('form').append('<input type="hidden" name="installer_signature" value="' + signatureImage + '">');
-
-            // Submit the form
-            $('form').submit();
+            $('#first_name').val(selectedOption.data('first-name'));
+            $('#last_name').val(selectedOption.data('last-name'));
+            $('#tel').val(selectedOption.data('tel'));
+            $('#id').val(selectedOption.data('id'));
         });
     });
+
+    var clearBtn = "#clear";
+  var saveBtn = "#submit_form";
+  var canvasArea = "#signature-pad";
+  var returnUrlSave = "#signature_value";
+  var ajaxUrl = "#";
+
+  $(document).ready(function() {
+    initSignaturePad();
+  });
+
+  function initSignaturePad() {
+    console.log("working");
+    var canvas = document.getElementById(canvasArea.replace("#", ""));
+    console.log(canvas)
+    if (!canvas) {
+      console.error("Canvas not found: signature-pad");
+      return;
+    }
+    var context = canvas.getContext("2d");
+
+    var drawing = false;
+    var lastPos = null;
+
+    // Remove existing event handlers to avoid duplicates
+    $(document).off(
+      "mousemove touchmove mousedown touchstart touchend touchmove",
+      canvasArea
+    );
+    $(document).off("click", saveBtn);
+    $(clearBtn).off("click");
+
+    // Mouse and touch events for drawing
+    $(document).on("mousedown", canvasArea, function(e) {
+      if (e.which === 1) {
+        drawing = true;
+        lastPos = getMousePos(canvas, e);
+      }
+    });
+
+    $(document).on("mousemove", canvasArea, function(e) {
+      if (drawing) {
+        var mousePos = getMousePos(canvas, e);
+        draw(canvas, context, lastPos, mousePos);
+        lastPos = mousePos;
+      }
+    });
+
+    $(document).on("mouseup", canvasArea, function() {
+      drawing = false;
+    });
+
+    $(document).on("touchstart", canvasArea, function(e) {
+      e.preventDefault();
+      drawing = true;
+      lastPos = getTouchPos(canvas, e);
+    });
+
+    $(document).on("touchmove", canvasArea, function(e) {
+      e.preventDefault();
+      if (drawing) {
+        var touchPos = getTouchPos(canvas, e);
+        draw(canvas, context, lastPos, touchPos);
+        lastPos = touchPos;
+      }
+    });
+
+    $(document).on("touchend", canvasArea, function() {
+      drawing = false;
+    });
+
+    // Save button event handler
+    $(saveBtn).click(function () {
+        var canvas = document.getElementById(canvasArea.replace("#", ""));
+        var signatureData = canvas.toDataURL();
+
+        // Set the signature value in a hidden input field
+        $("#signature_value").val(signatureData);
+
+        // Now submit the form
+        $("form").submit();
+    });
+
+    // Clear canvas function and event handler
+    function clearCanvas() {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    $(clearBtn).click(function() {
+      clearCanvas();
+    });
+  }
+
+  function getMousePos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    return {
+      x: evt.clientX - rect.left,
+      y: evt.clientY - rect.top,
+    };
+  }
+
+  function getTouchPos(canvas, evt) {
+    var rect = canvas.getBoundingClientRect();
+    var touch = evt.touches[0] || evt.changedTouches[0];
+    return {
+      x: touch.clientX - rect.left,
+      y: touch.clientY - rect.top,
+    };
+  }
+
+  function draw(canvas, context, startPos, endPos) {
+    context.beginPath();
+    context.moveTo(startPos.x, startPos.y);
+    context.lineTo(endPos.x, endPos.y);
+    context.stroke();
+  }
 </script>
+
 @endsection

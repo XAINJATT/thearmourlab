@@ -43,8 +43,13 @@
                             <div class="card-body pb-2">
                                 <div class="row">
                                     <div class="col-md-6 mb-3">
-                                        <label class="font-weight-bold text-black">Full Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" name="name" placeholder="Enter Full Name" required>
+                                        <label class="font-weight-bold text-black">First Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="first_name" placeholder="Enter First Name" required>
+                                    </div>
+                                    
+                                    <div class="col-md-6 mb-3">
+                                        <label class="font-weight-bold text-black">Last Name <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" name="last_name" placeholder="Enter Last Name" required>
                                     </div>
 
                                     <div class="col-md-6 mb-3">

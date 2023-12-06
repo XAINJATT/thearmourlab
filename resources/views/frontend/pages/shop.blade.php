@@ -32,83 +32,36 @@
             <div class="container">
                 <div class="row">
                     <!-- Shop Product Start -->
-                            <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                                <div class="product-item bg-light mb-4">
-                                    <div class="product-img position-relative overflow-hidden">
-                                        <img class="img-fluid w-100" src="{{asset('storage/cart/polish.jpg')}}" alt="">
-                                        <div class="product-action">
-                                        </div>
+                    @foreach($products as $product)
+                        <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
+                            <div class="product-item bg-light mb-4">
+                                <div class="product-img position-relative overflow-hidden">
+                                    <img class="img-fluid w-100" src="{{ $product->product_image }}" alt="">
+                                    <div class="product-action">
+                                        <!-- Add any product action buttons or links here -->
                                     </div>
-                                    <div class="text-center py-4">
-                                        <a class="h6 text-decoration-none text-truncate" href="{{ route('frontend.cart') }}">Car Polish</a>
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <h5>$11850 </h5>
-                                            <h6 class="text-muted ml-2"><del>$11850</del></h6>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center mb-1">
-                                            <!-- Average star rating -->
-                                        </div>
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate" href="{{ route('frontend.shop.productDetails', $product->slug) }}">{{ $product->name }}</a>
+                                    <div class="d-flex align-items-center justify-content-center mt-2">
+                                        @if($product->discounted_price)
+                                            <h5>${{ $product->discounted_price }}</h5>
+                                        @endif
+                                        @if($product->price)
+                                            <h6 class="text-muted ml-2"><del>${{ $product->price }}</del></h6>
+                                        @endif
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center mb-1">
+                                        <!-- Average star rating -->
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                                <div class="product-item bg-light mb-4">
-                                    <div class="product-img position-relative overflow-hidden">
-                                        <img class="img-fluid w-100" src="{{asset('storage/cart/polish.jpg')}}" alt="">
-                                        <div class="product-action">
-                                        </div>
-                                    </div>
-                                    <div class="text-center py-4">
-                                        <a class="h6 text-decoration-none text-truncate" href="{{ route('frontend.cart') }}">Car Polish</a>
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <h5>$11850 </h5>
-                                            <h6 class="text-muted ml-2"><del>$11850</del></h6>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center mb-1">
-                                            <!-- Average star rating -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                                <div class="product-item bg-light mb-4">
-                                    <div class="product-img position-relative overflow-hidden">
-                                        <img class="img-fluid w-100" src="{{asset('storage/cart/polish.jpg')}}" alt="">
-                                        <div class="product-action">
-                                        </div>
-                                    </div>
-                                    <div class="text-center py-4">
-                                        <a class="h6 text-decoration-none text-truncate" href="{{ route('frontend.cart') }}">Car Polish</a>
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <h5>$11850 </h5>
-                                            <h6 class="text-muted ml-2"><del>$11850</del></h6>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center mb-1">
-                                            <!-- Average star rating -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6 pb-1">
-                                <div class="product-item bg-light mb-4">
-                                    <div class="product-img position-relative overflow-hidden">
-                                        <img class="img-fluid w-100" src="{{asset('storage/cart/polish.jpg')}}" alt="">
-                                        <div class="product-action">
-                                        </div>
-                                    </div>
-                                    <div class="text-center py-4">
-                                        <a class="h6 text-decoration-none text-truncate" href="{{ route('frontend.cart') }}">Car Polish</a>
-                                        <div class="d-flex align-items-center justify-content-center mt-2">
-                                            <h5>$11850 </h5>
-                                            <h6 class="text-muted ml-2"><del>$11850</del></h6>
-                                        </div>
-                                        <div class="d-flex align-items-center justify-content-center mb-1">
-                                            <!-- Average star rating -->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
+                    @endforeach
                     <!-- Shop Product End -->
+                </div>
+                <div class="col-lg-12">
+                    {{ $products->links() }}
                 </div>
             </div>
             </form>

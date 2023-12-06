@@ -9,6 +9,11 @@ class PaintProtectionFilmController extends Controller
 {
     public function index()
     {
-        return view('frontend.pages.paint-protection-film');
+        return view('frontend.pages.paint_protection_film');
+    }
+
+    public function indexSimulator()
+    {
+        return view('frontend.pages.paint_protection_film_simulator');
     }
 }

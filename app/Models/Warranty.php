@@ -13,7 +13,12 @@ class Warranty extends Model
 
     public function getInstallerSignatureAttribute($value)
     {
-        return !empty($value) ? asset('storage/' . $value) : "";
+        return !empty($value) ? asset('storage/signatures/' . $value) : "";
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 
 }

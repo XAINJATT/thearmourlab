@@ -63,9 +63,9 @@
                             <li><a href="#">About Us</a></li>
                             <li><a href="#">Ceramic coating</a></li>
                             <li><a href="#">Booking</a></li>
-                            <li><a href="#">Paint protection film</a></li>
+                            <li><a href="{{ route('frontend.PaintProtectionFilmSimulator') }}">Paint protection film</a></li>
                             <li><a href="#">Our Services</a></li>
-                            <li><a href="#">Window tints</a></li>
+                            <li><a href="{{ route('frontend.WindowTintSimulator') }}">Window tints</a></li>
                             <li><a href="#">Job Career</a></li>
                             <li><a href="#">Wraps</a></li>
                             <li><a href="#">Out Team</a></li>

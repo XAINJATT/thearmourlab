@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
+use App\Models\WorkOrder;
 use Illuminate\Http\Request;
 
 class InvoiceController extends Controller
@@ -12,7 +13,8 @@ class InvoiceController extends Controller
      */
     public function index()
     {
-        return view('user.invoice.index');
+        $orders = WorkOrder::where('user_id', Auth()->user()->id)->get();
+        return view('user.invoice.index', compact('orders'));
     }
 
     /**
@@ -34,9 +36,16 @@ class InvoiceController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show($id)
     {
-        //
+        $order = WorkOrder::with('user')->where('id', $id)->first();
+        return view('user.invoice.view', compact('order'));
+    }
+
+    public function orderStatusShow($id)
+    {
+        $workOrderStatus = WorkOrder::find($id);
+        return view('user.invoice.orderStatusDetails', compact('workOrderStatus'));
     }
 
     /**
