@@ -41,9 +41,10 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="active"> <a href="{{ route('frontend.blog') }}"> Blog </a> </li>
-                        <li class="active"> <a href="{{ route('frontend.contact') }}"> Contact us </a> </li>
-                        <li class="active"> <a href="{{ route('frontend.shop') }}"> Shop </a> </li>
+                        <li class=""> <a href="{{ route('frontend.blog') }}"> Blog </a> </li>
+                        <li class=""> <a href="{{ route('frontend.contact') }}"> Contact us </a> </li>
+                        <li class=""> <a href="{{ route('frontend.shop') }}"> Shop </a> </li>
+                        <li class=""> <a href="{{ route('frontend.financing') }}"> Financing </a> </li>
                         <!-- <li class="active"> <a href="{{ route('cart.list') }}"> Cart </a> </li> -->
                         <!-- Add this in your HTML or Blade file -->
                         {{-- <li class="active"> <a href="#"> FAQ </a> </li> --}}

@@ -60,6 +60,7 @@ Route::get('/password', function () {
 Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
 Route::get('/ceramic-coating', [CeramicCoatingController::class, 'index'])->name('frontend.CeramicCoating');
 Route::get('/faq', [CeramicCoatingController::class, 'faq'])->name('frontend.faq');
+Route::get('/financing', [CeramicCoatingController::class, 'financing'])->name('frontend.financing');
 Route::get('live-status', [UserInvoiceController::class, 'orderStatusShow'])->name('frontend.live');
 // Route::get('invoice/order-status/{id}', [UserInvoiceController::class, 'orderStatusShow'])->name('user.invoice.orderStatusShow');
 // BlogController

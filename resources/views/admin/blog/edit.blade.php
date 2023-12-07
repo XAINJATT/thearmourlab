@@ -58,7 +58,7 @@
 
                                     <div class="col-md-12 mb-3">
                                         <label for="-text-" class="font-weight-bold">Description <span class="text-danger">*</span></label>
-                                        <textarea class="form-control" id="description" name="description" required>{{ $blogs->description }}</textarea>
+                                        <textarea class="form-control" id="description" name="description">{{ $blogs->description }}</textarea>
                                     </div>
 
                                     <div class="col-12 col-md-6 mb-3">

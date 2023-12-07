@@ -108,16 +108,7 @@
 				</div>
 				<div class="col-md-12 col-lg-4 col-xl-4 mb-30">
 					<aside class="side-bar sticky-top aside-bx">
-						<div class="widget widget_search">
-							<form role="search" method="post" class="searchform">
-								<div class="input-group">
-									<input name="text" class="form-control" placeholder="Enter your keywords..." type="text">
-									<span class="input-group-btn">
-										<button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
-									</span>
-								</div>
-							</form>
-						</div>
+						@include("frontend.partials.search")
 						<div class="widget recent-posts-entry">
 							<h5 class="widget-title">Recent Posts</h5>
 							<!-- <div class="widget-post-bx">

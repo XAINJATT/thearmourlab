@@ -28,6 +28,7 @@
 		<!-- Blog -->
 		<section class="section-area section-sp2">
 		   <div class="container">
+			@include("frontend.partials.search")
 				<div class="row">
 					<!-- <div class="col-xl-4 col-md-6">
 						<div class="blog-card style-1 bg-white shadow">
@@ -153,7 +154,7 @@
 				</div>
 				<div class="row">
 					<div class="col-lg-12">
-						{{ $blogDetails->links() }}
+						{{ $blogDetails->links('pagination::bootstrap-4') }}
 						<!-- <div class="pagination-bx text-center clearfix">
 							<ul class="pagination">
 								<li class="previous"><a href="javascript:void(0);">Prev</a></li>
