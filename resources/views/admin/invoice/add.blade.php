@@ -306,34 +306,7 @@
                 <div class="col-md-4 col-sm-5 col-12 mb-sm-0 mb-4">
                   <h2 class="mb-1" style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: bolder;">INSPECTION REPORT</h2>
                   <h6 class="pb-2">Defects:</h6>
-                  <table class="table table-bordered border-primary">
-                    <tbody>
-                      <tr>
-                        <th scope="row">SH</th>
-                        <td>Swirls/Hologram</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">WS</th>
-                        <td>Water Spots</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">OX</th>
-                        <td>Oxidation</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">CF</th>
-                        <td>Clear Coat Failure</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">DS</th>
-                        <td>Deep Scratch</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">BD</th>
-                        <td>Bird Droppings</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  @include("admin.partials.defect-table")
                 </div>
                 <div class="col-md-8 col-sm-7">
                   <div class="row">
@@ -394,41 +367,7 @@
                 <div class="col-12">
                   <div class="border p-3">
                     <b>TERMS</b><br>
-
-                    This is an estimation of work to be completed by walk-around evaluation and is not binding if vehicle condition changes prior to scheduled appointment, or if more
-
-                    than 15 days has lapsed from date of estimate. This estimate may also change based on a more detailed examination immediately prior to start of repairs and will be
-
-                    discussed with customer prior to beginning of work.<br><br>
-
-                    Please remove all personal items prior to your appointment. Although we will take the utmost care with anything left inside your vehicle, we cannot be held
-
-                    responsible for any personal items left behind.<br><br>
-
-                    This estimate
-
-                    deemed completed and invoiced when signed below by customer and actual final price has been completed in the total below. Customer's signature
-
-                    below acknowledges the damage identified above as pre-existing and will not hold The Armour Lab liable.<br><br>
-
-                    <b>PAYMENT:</b> Payment is expected upon completion of work unless other arrangements are agreed to in writing ahead of time.<br><br>
-
-                    <span style="font-size: large;"> paid with AMEX will be charged a convenience fee of 3% no matter what. Any Invoice over $1000 and paid with
-
-                      Visa or Master card will be charge a convenience fee of 1.75%</span><br><br>
-
-                    I am the owner of the vehicle described on this document (the "Vehicle") or have been authorized by the owner to make the representations, promises and
-
-                    covenants provided herein; I have removed all valuable articles from the vehicle, and The Armour Lab shall bear no responsibility for loss due to theft, fire, or any
-
-                    other cause beyond The Armour Lab's control; In the event of any damage done to the vehicle while in possession of The Armour Lab; The Armour lab cannot be
-
-                    held responsible; The Armour Lab can't be held responsible for electrical or mechanical issues. Every precaution will be taken to prevent such malfunction. Upon
-
-                    delivery of the Vehicle and rendering the service(s) complete, I am accepting the work performed by The Armour Lab as complete and in timely compliance of our
-
-                    agreement, and I am satisfied as to condition of the Vehicle.
-
+                    @include("admin.partials.terms-and-conditions-work-order")
                     <div class="row mt-3">
                       <div class="col-7">
                         <label for="customer_signature" class="form-label mb-0">Customer Signature:</label>

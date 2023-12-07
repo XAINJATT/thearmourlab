@@ -87,10 +87,28 @@ class WarrantyController extends Controller
         $image_type_aux = explode("image/", $image_parts[0]);
         $image_type = $image_type_aux[1];
         $image_base64 = base64_decode($image_parts[1]);
-    
+
         $signatureFileName = 'signature-' . Carbon::now()->format('Ymd-His') . '.' . $image_type;
         $signatureFilePath = 'public/signatures/' . $signatureFileName;
-    
+
+
+        $logData = $request->only(['date', 'annualInspection', 'productUsed', 'performedBy', 'notes']);
+
+        // Combine the log data into associative arrays for each entry
+        $logs = [];
+        foreach ($logData['date'] as $index => $date) {
+            $logs[] = [
+                'date' => $date,
+                'annualInspection' => $logData['annualInspection'][$index],
+                'productUsed' => $logData['productUsed'][$index],
+                'performedBy' => $logData['performedBy'][$index],
+                'notes' => $logData['notes'][$index],
+            ];
+        }
+
+        $jsonLogs = json_encode($logs);
+
+
         // Save the signature image
         Storage::put($signatureFilePath, $image_base64);
 
@@ -124,6 +142,7 @@ class WarrantyController extends Controller
             'installer' => $request->input('installer'),
             'date_of_installation' => $request->input('date_of_installation'),
             'installer_signature' => $signatureFileName,
+            'log_data' => $jsonLogs
         ]);
 
         return redirect()->route('admin.warranty')->with('success-message', 'Warranty created Successfully!');

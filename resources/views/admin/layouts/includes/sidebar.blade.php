@@ -1,8 +1,14 @@
+<style>
+  .menu .app-brand.demo{
+    height: auto !important;
+    margin-bottom: 30px;
+  }
+</style>
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
   <div class="app-brand demo">
     <a href="dashboard" class="app-brand-link">
       <span class="app-brand-logo demo">
-        <img src="{{ asset('storage/logo/logo.webp') }}" alt="" height="60px" width="100%">
+        <img height="100" src="{{ asset('logo.webp') }}">
       </span>
     </a>
 

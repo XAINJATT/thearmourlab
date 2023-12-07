@@ -267,34 +267,7 @@
                 <div class="col-md-4 col-sm-5 col-12 mb-sm-0 mb-4">
                   <h2 class="mb-1" style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: bolder;">INSPECTION REPORT</h2>
                   <h6 class="pb-2">Defects:</h6>
-                  <table class="table table-bordered border-primary">
-                    <tbody>
-                      <tr>
-                        <th scope="row">SH</th>
-                        <td>Swirls/Hologram</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">WS</th>
-                        <td>Water Spots</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">OX</th>
-                        <td>Oxidation</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">CF</th>
-                        <td>Clear Coat Failure</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">DS</th>
-                        <td>Deep Scratch</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">BD</th>
-                        <td>Bird Droppings</td>
-                      </tr>
-                    </tbody>
-                  </table>
+                  @include("admin.partials.defect-table")
                 </div>
                 <div class="col-md-8 col-sm-7">
                   <div class="row">
