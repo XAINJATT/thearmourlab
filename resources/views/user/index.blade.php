@@ -1,5 +1,10 @@
 @extends('admin.layouts.app')
 @section('content')
+    @if (auth()->user()->isAdmin())
+        <script>
+           window.location.href = "{{url('admin/dashboard')}}"
+        </script>
+    @endif
     <style>
         .card hr {
             color: #adb35b !important;
@@ -45,7 +50,8 @@
                         <div class="d-flex justify-content-between align-items-center">
                             <div class="me-3">
                                 <div class="text-white-75 small">Warranty</div>
-                                <div class="text-lg fw-bold">{{ \App\Models\Warranty::where('user_id', auth()->user()->id)->count() }}</div>
+                                <div class="text-lg fw-bold">
+                                    {{ \App\Models\Warranty::where('user_id', auth()->user()->id)->count() }}</div>
                             </div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
