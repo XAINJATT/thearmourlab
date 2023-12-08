@@ -42,7 +42,7 @@
                 <div class="col-lg-4">
                     <div class="card mb-4">
                         <div class="card-body text-center">
-                            <img src="{{ isset($users->profile_image) ? asset(@$users->profile_image) : asset('assets/img/avatars/1.png') }}" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;">
+                            {{-- <img src="{{ isset($users->profile_image) ? asset(@$users->profile_image) : asset('assets/img/avatars/1.png') }}" alt="avatar" class="rounded-circle img-fluid" style="width: 150px;"> --}}
                             <h5 class="my-3">{{ @$users->first_name }} {{ @$users->last_name }}</h5>
                             <p class="text-muted mb-1">
                             </p>
@@ -86,7 +86,7 @@
 
                                     <div class="col-md-6 mb-3">
                                         <label class="font-weight-bold">Phone Number <span class="text-danger">*</span></label>
-                                        <input type="number" class="form-control" name="phone" placeholder="Enter Phone Number" value="{{ @$users->phone }}" required>
+                                        <input type="tel" class="form-control" name="phone" placeholder="Enter Phone Number" value="{{ @$users->phone }}" required>
                                     </div>
 
                                     <div class="col-md-6 mb-3">
@@ -94,7 +94,7 @@
                                         <input type="password" class="form-control" id="password" name="password" placeholder="Enter New Password">
                                     </div>
 
-                                    <div class="col-12 mb-3">
+                                    {{-- <div class="col-12 mb-3">
                                         <label for="-address-" class="font-weight-bold">Home Address <span class="text-danger">*</span></label>
                                         <input class="form-control addressField" name="address" id="-address-" value="{{ @$users->address }}" required>
                                     </div>
@@ -113,7 +113,7 @@
                                             </span>
                                             <input type="file" class="input-style" name="profile_image" onchange="ReadUrl(this, 'profile_image_preview', 'profile_image_browse');">
                                         </label>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <hr>
                                 <div class="card-header" style="padding: 0.5rem 1.5rem">
