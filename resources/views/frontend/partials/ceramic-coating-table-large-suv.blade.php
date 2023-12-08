@@ -56,7 +56,7 @@
         <td> ✔<br /></td>
         <td> ✔<br /></td>
         <td> ✔<br /></td>
-        <td>$59.99</td>
+        <td>✔</td>
         <td> ✔<br /></td>
         <td> ✔<br /></td>
     </tr>
@@ -98,7 +98,7 @@
         <td>
             $599.99<br />
         </td>
-        <td> ✖<br /></td>
+        <td> $599.99<br /></td>
         <td> ✖<br /></td>
         <td> ✖<br /></td>
     </tr>
