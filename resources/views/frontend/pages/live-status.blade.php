@@ -211,7 +211,7 @@
         <form action="{{ route('frontend.live') }}">
             <div class="box">
                 <i class="fa-brands fa-searching"></i>
-                <input type="text" placeholder="Enter Tracking ID" name="id">
+                <input type="text" value="{{request("id")}}" placeholder="Enter Tracking ID" name="id">
                 <button type="submit" class="btn">Track</button>
             </div>
         </form>
