@@ -60,7 +60,7 @@
                             enctype="multipart/form-data">
                             @csrf
                             <input type="hidden" name="user_id" value="{{ @$users->id }}" />
-                            <input type="hidden" name="old_profile_image" value="{{ @$users->profile_image }}" />
+                            {{-- <input type="hidden" name="old_profile_image" value="{{ @$users->profile_image }}" /> --}}
                             <div class="card mb-4">
                                 <div class="card-body pb-2">
                                     <div class="card-header" style="padding: 0.5rem 1.5rem">
@@ -110,7 +110,7 @@
                                                 placeholder="Enter New Password">
                                         </div>
 
-                                        <div class="col-12 mb-3">
+                                        {{-- <div class="col-12 mb-3">
                                             <label for="-address-" class="font-weight-bold">Home Address <span
                                                     class="text-danger">*</span></label>
                                             <input class="form-control addressField" name="address" id="-address-"
@@ -136,7 +136,7 @@
                                                 <input type="file" class="input-style" name="profile_image"
                                                     onchange="ReadUrl(this, 'profile_image_preview', 'profile_image_browse');">
                                             </label>
-                                        </div>
+                                        </div> --}}
                                     </div>
                                     <hr>
                                     <div class="card-header" style="padding: 0.5rem 1.5rem">
