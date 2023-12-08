@@ -15,7 +15,7 @@
         <td>9H GRAPHENE INFUSED</td>
         <td>10H GRAPHENE INFUSED</td>
         <td>X</td>
-        <td></td>
+        <td>X</td>
     </tr>
     <tr>
         <td>PRICE</td>

@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="{{url('vendor/owl-carousel/owl.carousel.css')}}">
 <link rel="stylesheet" href="{{url('vendor/magnific-popup/magnific-popup.min.css')}}">
 <link rel="stylesheet" href="{{url('vendor/bootstrap-select/bootstrap-select.min.css')}}">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+{{-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> --}}
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"/>
 <!-- Bootstrap 5 CSS -->

@@ -56,7 +56,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-md-6">
+                <div class="col-xl-3 col-md-6">
                     <div class="widget widget-link-2">
                         <h5 class="footer-title">Our Solutions</h5>
                         <ul>
@@ -90,32 +90,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
-                    {{-- <div class="widget widget_info">
-                        <h5 class="footer-title">Subscribe Now</h5>
-                        <p class="mb-20">Weekly Breaking News Analysis And Cutting Edge Advices On Job Searching.</p>
-                        <form class="subscribe-form subscription-form mb-30"
-                            action="#" method="post">
-                            <div class="ajax-message"></div>
-                            <div class="input-group">
-                                <input name="email" required="required" class="form-control"
-                                    placeholder="Email Address" type="email">
-                                <div class="input-group-append">
-                                    <button name="submit" value="Submit" type="submit"
-                                        class="btn w-100 btn-primary radius-sm">Send</button>
-                                </div>
-                            </div>
-                        </form>
-                        <ul class="list-inline ft-social-bx">
-                            <li><a href="javascript:void(0);" class="btn button-sm"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="javascript:void(0);" class="btn button-sm"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="javascript:void(0);" class="btn button-sm"><i
-                                        class="fa fa-linkedin"></i></a></li>
-                            <li><a href="javascript:void(0);" class="btn button-sm"><i
-                                        class="fa fa-google-plus"></i></a></li>
-                        </ul>
-                    </div> --}}
+                    <img class="img-fluid text-right" height="200" style="height:200px !important" src="{{asset("images/SCF-SEAL_NonSunscreens-2-color-516x600.jpg")}}" alt="">
                 </div>
             </div>
         </div>
