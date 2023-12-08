@@ -12,8 +12,13 @@ class ShopOrdersController extends Controller
 {
     public function index()
     {
-        $orders = Order::where('payment_status', 'Paid')->get();
-        return view('admin.shopOrder.index', compact('orders'));
+        if (auth()->user()->isAdmin()) {
+            $orders = Order::where('payment_status', 'Paid')->get();
+            return view('admin.shopOrder.index', compact('orders'));
+        } else {
+            $orders = Order::where('payment_status', 'Paid')->where("user_id", auth()->user()->id)->get();
+            return view('user.shopOrder.index', compact('orders'));
+        }
     }
 
     public function show($id)
@@ -21,7 +26,7 @@ class ShopOrdersController extends Controller
         $order = Order::with('ProductsOrder', 'UserOrder')->where('payment_status', 'Paid')->where('id', $id)->first();
         $userOrder = UserOrder::where('order_id', $order->id)->first();
         $ProductsOrder = ProductsOrder::where('products_orders.order_id', $order->id)
-                    ->get();
+            ->get();
         return view('admin.shopOrder.view', compact('order', 'userOrder', 'ProductsOrder'));
     }
 

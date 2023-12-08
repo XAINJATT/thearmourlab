@@ -1,6 +1,9 @@
 @extends('admin.layouts.app')
 @section('content')
     <!-- Contact Start -->
+    @if (!auth()->user()->isAdmin())
+        @php(abort(403))
+    @endif
     <div class="page-holder w-100 d-flex flex-wrap">
         <div class="container-fluid px-xl-5">
             <section class="py-5">
@@ -43,7 +46,8 @@
                                                 <td><img src="{{ $value->image }}" alt="" width="100"
                                                         height="50"></td>
                                                 <td>{{ $value->title }}</td>
-                                                <td>{{ \Str::limit(html_entity_decode(strip_tags($value->description)), 150) }}</td>
+                                                <td>{{ \Str::limit(html_entity_decode(strip_tags($value->description)), 150) }}
+                                                </td>
                                                 <td>{{ $value->blog_writer_name }}</td>
                                                 <td>
                                                     @if ($value->status == 1)

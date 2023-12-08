@@ -1,76 +1,89 @@
 @extends('admin.layouts.app')
 @section('content')
-<style>
-    .label-style {
-        border: 1px solid grey;
-        border-radius: 7px;
-        padding: 42px 33px;
-    }
+    @if (!auth()->user()->isAdmin())
+        @php(abort(403))
+    @endif
+    <style>
+        .label-style {
+            border: 1px solid grey;
+            border-radius: 7px;
+            padding: 42px 33px;
+        }
 
-    .input-style {
-        border: 1px grey !important;
-        padding: 35px 10px 29px 0;
-        display: none;
-    }
+        .input-style {
+            border: 1px grey !important;
+            padding: 35px 10px 29px 0;
+            display: none;
+        }
 
-    form div {
-        margin-bottom: 0;
-    }
-</style>
-<div class="page-content">
+        form div {
+            margin-bottom: 0;
+        }
+    </style>
+    <div class="page-content">
 
-    <section class="contact-area pb-5">
-        <div class="container">
-            <div class="row justify-content-center">
+        <section class="contact-area pb-5">
+            <div class="container">
+                <div class="row justify-content-center">
 
-                <div class="col-12 col-md-8 mt-3">
-                    <form action="{{route('admin.user.update')}}" id="addDriverForm" method="post" enctype="multipart/form-data">
-                        @csrf
+                    <div class="col-12 col-md-8 mt-3">
+                        <form action="{{ route('admin.user.update') }}" id="addDriverForm" method="post"
+                            enctype="multipart/form-data">
+                            @csrf
 
-                        <input type="hidden" name="user_id" value="{{$users->id}}" />
-                        <input type="hidden" name="old_profile_image" value="{{$users->profile_image}}" />
-                        
-                        <div class="card mb-3">
-                            <div class="card-header" style="padding: 0.5rem 1.5rem">
-                                <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
-                                    <div>
-                                        <h4 class="mb-3 mb-md-0">Users > <span class="text-secondary">
-                                                Edit User</span>
-                                        </h4>
+                            <input type="hidden" name="user_id" value="{{ $users->id }}" />
+                            <input type="hidden" name="old_profile_image" value="{{ $users->profile_image }}" />
+
+                            <div class="card mb-3">
+                                <div class="card-header" style="padding: 0.5rem 1.5rem">
+                                    <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
+                                        <div>
+                                            <h4 class="mb-3 mb-md-0">Users > <span class="text-secondary">
+                                                    Edit User</span>
+                                            </h4>
+                                        </div>
+                                        <button type="button" class="btn btn-secondary ml-auto"
+                                            onclick="window.location.replace('{{ route('admin.user') }}');">Back
+                                        </button>
                                     </div>
-                                    <button type="button" class="btn btn-secondary ml-auto" onclick="window.location.replace('{{ route('admin.user')  }}');">Back
-                                    </button>
                                 </div>
-                            </div>
-                            <hr>
-                            <div class="card-body pb-2">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label class="font-weight-bold text-black">First Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" name="first_name" placeholder="Enter First Name" value="{{ $users->first_name }}" required>
-                                    </div>
-                                    
-                                    <div class="col-md-6 mb-3">
-                                        <label class="font-weight-bold text-black">Last Name <span class="text-danger">*</span></label>
-                                        <input type="text" class="form-control" name="last_name" placeholder="Enter Last Name" value="{{ $users->last_name }}" required>
-                                    </div>
+                                <hr>
+                                <div class="card-body pb-2">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="font-weight-bold text-black">First Name <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" name="first_name"
+                                                placeholder="Enter First Name" value="{{ $users->first_name }}" required>
+                                        </div>
 
-                                    <div class="col-md-6 mb-3">
-                                        <label for="-email-" class="font-weight-bold">Email Address <span class="text-danger">*</span></label>
-                                        <input type="email" class="form-control" name="email" id="-email-" placeholder="Enter Email" value="{{ $users->email }}" required>
-                                    </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="font-weight-bold text-black">Last Name <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" name="last_name"
+                                                placeholder="Enter Last Name" value="{{ $users->last_name }}" required>
+                                        </div>
 
-                                    <div class="col-md-6 mb-3">
-                                        <label class="font-weight-bold">Phone Number <span class="text-danger">*</span></label>
-                                        <input type="number" class="form-control" name="phone" placeholder="Enter Phone Number" value="{{ $users->phone }}" required>
-                                    </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label for="-email-" class="font-weight-bold">Email Address <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="email" class="form-control" name="email" id="-email-"
+                                                placeholder="Enter Email" value="{{ $users->email }}" required>
+                                        </div>
 
-                                    <!-- <div class="col-md-6 mb-3">
-                                        <label for="password" class="font-weight-bold">Password <span class="text-danger">*</span></label>
-                                        <input type="password" class="form-control" id="password" name="password" required>
-                                    </div> -->
+                                        <div class="col-md-6 mb-3">
+                                            <label class="font-weight-bold">Phone Number <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="number" class="form-control" name="phone"
+                                                placeholder="Enter Phone Number" value="{{ $users->phone }}" required>
+                                        </div>
 
-                                    {{-- <div class="col-12 mb-3">
+                                        <!-- <div class="col-md-6 mb-3">
+                                            <label for="password" class="font-weight-bold">Password <span class="text-danger">*</span></label>
+                                            <input type="password" class="form-control" id="password" name="password" required>
+                                        </div> -->
+
+                                        {{-- <div class="col-12 mb-3">
                                         <label for="-address-" class="font-weight-bold">Home Address <span class="text-danger">*</span></label>
                                         <input class="form-control addressField" name="address" id="-address-" value="{{ $users->address }}" required>
                                     </div>
@@ -92,26 +105,27 @@
                                     </div> --}}
 
 
+                                    </div>
                                 </div>
-                            </div>
-                            <hr>
-                            <div class="card-header" style="padding: 0.5rem 1.5rem">
-                                <div class="row">
-                                    <div class="col-12 text-end">
-                                        <button type="button" class="btn btn-light px-4 py-2" onclick="window.location.href='{{route('admin.user')}}'">
-                                            Cancel
-                                        </button>
-                                        <button type="submit" name="submit" class="btn btn-primary submitBtn">
-                                            <i class="fa-solid fa-floppy-disk"></i> Save User
-                                        </button>
+                                <hr>
+                                <div class="card-header" style="padding: 0.5rem 1.5rem">
+                                    <div class="row">
+                                        <div class="col-12 text-end">
+                                            <button type="button" class="btn btn-light px-4 py-2"
+                                                onclick="window.location.href='{{ route('admin.user') }}'">
+                                                Cancel
+                                            </button>
+                                            <button type="submit" name="submit" class="btn btn-primary submitBtn">
+                                                <i class="fa-solid fa-floppy-disk"></i> Save User
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-</div>
+        </section>
+    </div>
 @endsection

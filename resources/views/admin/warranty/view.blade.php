@@ -1,5 +1,8 @@
 @extends('admin.layouts.app')
 @section('content')
+    @if (!auth()->user()->isAdmin())
+        @php(abort(403))
+    @endif
     <style>
         .card hr {
             color: #adb35b !important;

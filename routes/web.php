@@ -86,7 +86,7 @@ Route::get('/checkout/{id}', [CheckoutController::class, 'index'])->name('fronte
 Route::post('/order/store', [OrderController::class, 'store'])->name('frontend.order.store');
 Route::post('/order/Userstore', [OrderController::class, 'Userstore'])->name('frontend.order.Userstore');
 
-Route::controller(StripePaymentController::class)->group(function(){
+Route::controller(StripePaymentController::class)->group(function () {
     Route::get('stripe/{id}', 'stripe')->name('stripe');
     Route::post('stripe', 'stripePost')->name('stripe.post');
 });
@@ -106,14 +106,14 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 Route::middleware(['auth'])->group(function () {
     /* Common Routes for both Admin and User */
 
-    
+
     /* ADMIN ROUTE - START */
-    
+
     // DashboardController
     Route::get('admin/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
     Route::get('admin/profile', [DashboardController::class, 'profile'])->name('admin.profile');
     Route::post('admin/profile/update', [DashboardController::class, 'update'])->name('admin.profile.update');
-    
+
     // InvoiceController 
     Route::get('admin/invoice', [InvoiceController::class, 'index'])->name('admin.invoice');
     Route::get('admin/invoice/create', [InvoiceController::class, 'create'])->name('admin.invoice.create');
@@ -122,14 +122,14 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/invoice/edit/{id}', [InvoiceController::class, 'edit'])->name('admin.invoice.edit');
     Route::post('admin/invoice/update', [InvoiceController::class, 'update'])->name('admin.invoice.update');
     Route::post('admin/invoice/delete/{id}', [InvoiceController::class, 'delete'])->name('admin.invoice.delete');
-    
+
     // WarrantyController
     Route::get('admin/warranty', [WarrantyController::class, 'index'])->name('admin.warranty');
     Route::get('admin/warranty/create', [WarrantyController::class, 'create'])->name('admin.warranty.create');
     Route::post('admin/warranty/store', [WarrantyController::class, 'store'])->name('admin.warranty.store');
     Route::get('admin/warranty/view/{id}', [WarrantyController::class, 'show'])->name('admin.warranty.view');
     Route::post('admin/warranty/delete/{id}', [WarrantyController::class, 'delete'])->name('admin.warranty.delete');
-    
+
     // UserController
     Route::get('admin/user', [UserController::class, 'index'])->name('admin.user');
     Route::get('admin/user/create', [UserController::class, 'create'])->name('admin.user.create');
@@ -139,7 +139,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/user/delete/{id}', [UserController::class, 'delete'])->name('admin.user.delete');
     Route::post('admin/user/statusUpdate/{id}', [UserController::class, 'statusUpdate'])->name('admin.user.statusUpdate');
     Route::post('admin/user/CheckForDuplicateEmail', [UserController::class, 'CheckForDuplicateEmail'])->name('admin.user.CheckForDuplicateEmail');
-    
+
     // AdminBlogController
     Route::get('admin/blog', [AdminBlogController::class, 'index'])->name('admin.blog');
     Route::get('admin/blog/create', [AdminBlogController::class, 'create'])->name('admin.blog.create');
@@ -166,7 +166,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/shop/order', [ShopOrdersController::class, 'index'])->name('admin.shopOrder');
     Route::get('admin/shop/order/view/{id}', [ShopOrdersController::class, 'show'])->name('admin.shopOrder.view');
     Route::post('admin/shop/order/delete/{id}', [ShopOrdersController::class, 'delete'])->name('admin.shopOrder.delete');
-
+    
     // AdminWorkOrderStatusController
     Route::get('admin/WorkOrderStatus', [AdminWorkOrderStatusController::class, 'index'])->name('admin.WorkOrderStatus');
     Route::get('admin/WorkOrderStatus/create', [AdminWorkOrderStatusController::class, 'create'])->name('admin.WorkOrderStatus.create');
@@ -177,10 +177,10 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/WorkOrderStatus/statusUpdate/{id}', [AdminWorkOrderStatusController::class, 'statusUpdate'])->name('admin.WorkOrderStatus.statusUpdate');
     
     /* ADMIN ROUTE - END */
-    
+
 
     /* USER ROUTE - START */
-    
+
     // UserDashboardController
     Route::get('dashboard', [UserDashboardController::class, 'index'])->name('dashboard');
     Route::get('profile', [UserDashboardController::class, 'profile'])->name('profile');
@@ -194,6 +194,11 @@ Route::middleware(['auth'])->group(function () {
     // UserWarrantyController
     Route::get('warranty', [UserWarrantyController::class, 'index'])->name('user.warranty');
     Route::get('warranty/view/{id}', [UserWarrantyController::class, 'show'])->name('user.warranty.view');
+
+    Route::get('/shop/order', [ShopOrdersController::class, 'index'])->name('user.shopOrder');
+    Route::get('/shop/order/view/{id}', [ShopOrdersController::class, 'show'])->name('user.shopOrder.view');
+    Route::post('/shop/order/delete/{id}', [ShopOrdersController::class, 'delete'])->name('admin.shopOrder.delete');
+
 
     // UserOrderStatusController
     Route::get('order-status', [UserOrderStatusController::class, 'index'])->name('user.orderStatus');

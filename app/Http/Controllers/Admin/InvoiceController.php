@@ -7,6 +7,7 @@ use App\Models\User;
 use App\Models\WorkOrder;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class InvoiceController extends Controller
@@ -42,7 +43,7 @@ class InvoiceController extends Controller
         }
 
         // signature Image Start //
-        if (!empty($request->signature)) {
+        if (!empty($request->signature &&  request("is_drawn") === true)) {
             $image_parts = explode(";base64,", $request->signature);
             $image_type_aux = explode("image/", $image_parts[0]);
             $image_type = $image_type_aux[1];
@@ -54,14 +55,16 @@ class InvoiceController extends Controller
         // signature Image End //
 
         // defects Image Start //
-        $base64_image = $request->input('imgBase64');
-        $image_data = explode(';base64,', $base64_image);
-        $image_type_aux_defects = explode("image/", $image_data[0]);
-        $image_type_defects = $image_type_aux_defects[1];
-        $image_base64_defects = base64_decode($image_data[1]);
-        $signatureFileNameDefects = 'defects-' . Carbon::now()->format('Ymd-His') . '.' . $image_type_defects;
-        $signatureFilePathDefects = 'public/defects/' . $signatureFileNameDefects;
-        Storage::put($signatureFilePathDefects, $image_base64_defects);
+        if (request()->has("imgBase64")) {
+            $base64_image = $request->input('imgBase64');
+            $image_data = explode(';base64,', $base64_image);
+            $image_type_aux_defects = explode("image/", $image_data[0]);
+            $image_type_defects = $image_type_aux_defects[1];
+            $image_base64_defects = base64_decode($image_data[1]);
+            $signatureFileNameDefects = 'defects-' . Carbon::now()->format('Ymd-His') . '.' . $image_type_defects;
+            $signatureFilePathDefects = 'public/defects/' . $signatureFileNameDefects;
+            Storage::put($signatureFilePathDefects, $image_base64_defects);
+        }
         // defects Image End //
 
         $data = [
@@ -113,7 +116,7 @@ class InvoiceController extends Controller
 
         $order = WorkOrder::create($data);
 
-        return redirect()->route('admin.invoice')->with('success-message', 'Order created successfully!');
+        return redirect()->back()->with('success-message', 'Order created successfully!');
     }
 
     /**
@@ -142,7 +145,7 @@ class InvoiceController extends Controller
     {
         // dd($request->all());
         if (empty($request->work_order_id)) {
-            return redirect()->route('admin.invoice')->with('error-message', 'Invalid request');
+            return redirect()->back()->with('error-message', 'Invalid request');
         }
 
         $order = WorkOrder::findOrFail($request->work_order_id);
@@ -165,6 +168,9 @@ class InvoiceController extends Controller
             $fileName = end($temp);
             $FileImage = $fileName;
         }
+
+
+
 
         // signature Image Start //
         $signatureFileName = "";
@@ -189,6 +195,19 @@ class InvoiceController extends Controller
             $fileName = end($temp);
             $signatureFileName = $fileName;
         }
+
+        // dd(auth()->user()->isAdmin());
+
+        if (!Auth::user()->isAdmin()) {
+            $order->update([
+                'customer_signature' => @$signatureFileName,
+                'date' => $request->input('date'),
+            ]);
+
+
+            return redirect()->back()->with('success-message', 'Order updated successfully!');
+        }
+
         // signature Image End //
 
         // defects Image Start //
@@ -229,7 +248,7 @@ class InvoiceController extends Controller
             'email' => $request->input('email'),
             'v_i_n' => $request->input('v_i_n'),
             'plate' => $request->input('plate'),
-            'status' => $request->input('status'),
+            'status' => $request->input('status') ?? "General",
             'customer_signature' => @$signatureFileName,
             'defects' => @$signatureFileNameDefects,
             'drivers_license' => $FileImage,
@@ -268,7 +287,7 @@ class InvoiceController extends Controller
         // dd($order);
         // Rest of your code...
 
-        return redirect()->route('admin.invoice')->with('success-message', 'Order updated successfully!');
+        return redirect()->back()->with('success-message', 'Order updated successfully!');
     }
 
 

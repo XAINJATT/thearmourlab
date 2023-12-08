@@ -1,5 +1,8 @@
 @extends('admin.layouts.app')
 @section('content')
+    @if (!auth()->user()->isAdmin())
+        @php(abort(403))
+    @endif
     <!-- Contact Start -->
     <div class="page-holder w-100 d-flex flex-wrap">
         <div class="container-fluid px-xl-5">

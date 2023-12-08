@@ -1,6 +1,5 @@
 @extends('admin.layouts.app')
 @section('content')
-{{-- @dd(auth()->user()->isAdmin()) --}}
 <style>
   .card hr {
     color: #adb35b !important;
@@ -82,14 +81,15 @@
               <h6 class="text-uppercase mb-0 col-12">HERE ARE ALL WORK ORDER </h6>
             </div>
             <div class="card-body" style="overflow: scroll">
-              <table id="user_invoice_table" class="table table-striped table-hover card-text">
+              <table id="shop_order_table" class="table table-striped table-hover card-text">
                 <thead>
                   <tr>
                     <th>#</th>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                    <th>Tel</th>
+                    <th>Order Id</th>
+                    <th>Sub Total</th>
+                    <th>Tax</th>
+                    <th>Total</th>
+                    <th>Payment Status</th>
                     <th>Action</th>
                   </tr>
                 </thead>
@@ -97,17 +97,16 @@
                   @foreach ($orders as $order)
                   <tr>
                     <th scope="row">{{ $loop->iteration }}</th>
-                    <td>{{ $order->first_name }}</td>
-                    <td>{{ $order->last_name }}</td>
-                    <td>{{ $order->email }}</td>
-                    <td>{{ $order->phone }}</td>
+                    <td>{{ $order->id }}</td>
+                    <td>{{ $order->subtotal }}</td>
+                    <td>{{ $order->tax }}</td>
+                    <td>{{ $order->total }}</td>
+                    <td><span class="badge bg-success">{{ $order->payment_status }}</span></td>
                     <td>
-                      <a href="{{ route('user.invoice.view', $order->id) }}" class="text-primary fs-6 mr-1" data-toggle="tooltip" title="View">
+                      <a href="{{ route('user.shopOrder.view', $order->id) }}" class="text-primary fs-6 mr-1" data-toggle="tooltip" title="View">
                           <i class="fas fa-eye"></i>
                       </a>
-                      <a href="{{ route('user.invoice.orderStatusShow', $order->id) }}" class="text-primary fs-6 mr-1" data-toggle="tooltip" title="Status">
-                          <i class="fas fa-check"></i>
-                      </a>
+                      <a onclick="DeleteShopOrder({{ $order->id }})" class="cursor-pointer"><i class="fa fa-trash" aria-hidden="true"></i></a>
                     </td>
                   </tr>
                   @endforeach
@@ -121,4 +120,59 @@
   </div>
 </div>
 <!-- Contact End -->
+
+@endsection
+
+@section('scripts')
+<script>
+  function DeleteShopOrder(id) {
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#ef3737',
+      cancelButtonColor: '#6c757d',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((result) => {
+      if (result.isConfirmed) {
+        $.ajax({
+          type: "POST",
+          url: "{{ url('user/shop/order/delete') }}" + '/' + id, // Pass the product parameter
+          data: {
+            _token: "{{ csrf_token() }}"
+          },
+          success: function(response) {
+            if (response.success) {
+              Swal.fire(
+                'Deleted!',
+                'Your shop order has been deleted.',
+                'success'
+              ).then(() => {
+                // Reload the page after a short delay (e.g., 0 seconds)
+                setTimeout(() => {
+                  location.reload();
+                }, 0);
+              });
+            } else {
+              Swal.fire(
+                'Error!',
+                'An error occurred while deleting the item.',
+                'error'
+              );
+            }
+          },
+          error: function() {
+            Swal.fire(
+              'Error!',
+              'An error occurred while deleting the item.',
+              'error'
+            );
+          }
+        });
+      }
+    });
+  }
+</script>
+
 @endsection

@@ -35,6 +35,7 @@ class OrderController extends Controller
         $order->tax = $request->input('tax');
         $order->total = $request->input('total');
         $order->payment_status = 'Pending';
+        $order->user_id = auth()->user()->id ?? NULL;
         $order->save();
     
         $cartItemIds = explode(',', $request->input('cart_item_ids'));
@@ -54,6 +55,7 @@ class OrderController extends Controller
         $userOrder = new UserOrder();
         $userOrder->order_id = $request->order_id;
         $userOrder->first_name = $request->input('first_name');
+        // $userOrder->user_id = auth()->user()->id ?? NULL;
         $userOrder->last_name = $request->input('last_name');
         $userOrder->email = $request->input('email');
         $userOrder->phone = $request->input('phone');

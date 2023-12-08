@@ -60,7 +60,7 @@
                                 <div class="col-md-4 mb-md-0 mb-4">
                                     <div class="d-flex svg-illustration mb-4 gap-2">
                                         <span class="app-brand-logo demo">
-                                          <img src="{{ asset('logo.webp') }}">
+                                            <img src="{{ asset('logo.webp') }}">
                                         </span>
                                     </div>
                                 </div>
@@ -78,8 +78,9 @@
                             </div>
                             <hr class="my-4 mx-n4" />
                             <!-- Form Start -->
-                            <form method="post" action="{{ route('admin.invoice.store') }}" enctype="multipart/form-data">
+                            <form method="post" action="{{ route('admin.invoice.update') }}" enctype="multipart/form-data">
                                 @csrf
+                                <input type="hidden" class="form-control" id="id" value="{{ request("id")}}" name="work_order_id" />
                                 <div class="row py-sm-3">
                                     <div class="col-md-4 col-12">
                                         <label for="email" class="form-label me-5 fw-medium">Email:</label>
@@ -395,6 +396,8 @@
                                     <div class="col-12">
                                         <div class="border p-3">
 
+                                          
+
                                             @include('admin.partials.terms-and-conditions-work-order')
 
                                             <div class="row mt-3">
@@ -411,6 +414,47 @@
                                                             <input type="date" class="form-control" id="date"
                                                                 name="date" value="{{ @$order->date }}" disabled>
                                                         </div>
+                                                    </div>
+                                                @else
+                                                    <div class="row mt-3">
+                                                        <div class="col-7">
+                                                            <label for="customer_signature"
+                                                                class="form-label mb-0">Customer Signature:</label>
+                                                            <div style="padding: 30px" class="row p-3">
+                                                                <div style="width: 100%">
+                                                                    <canvas style="background: #dedede" id="signature-pad"
+                                                                        width="400" height="200"></canvas>
+                                                                </div>
+
+                                                                <input hidden="" name="signature" value=""
+                                                                    id="signature_value" />
+                                                                
+                                                                <input type="hidden" id="old_signature"
+                                                                    name="old_signature"
+                                                                    value="{{ @$order->customer_signature }}">
+
+                                                                <div class="row">
+                                                                    <div class="col-3">
+                                                                        <button type="button"
+                                                                            class="btn btn-danger btn-sm" id="clear">
+                                                                            Clear Signature
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <label for="date" class="mb-0">Date:</label>
+                                                            <div class="">
+                                                                <input type="date" class="form-control" id="date"
+                                                                    name="date" value="{{ @$order->date }}" required>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div id="" class="float-right"
+                                                        style="display: flex; justify-content:end;">
+                                                        <button type="submit" class="btn btn-primary" id="save"
+                                                            data-action="save-jpg">Submit</button>
                                                     </div>
                                                 @endif
                                             </div>
@@ -487,5 +531,120 @@
 @endsection
 
 @section('scripts')
-    <script></script>
+    <script>
+        var clearBtn = "#clear";
+        var saveBtn = "#save";
+        var canvasArea = "#signature-pad";
+        var returnUrlSave = "#signature_value";
+        var ajaxUrl = "{{ route('admin.invoice.store') }}";
+
+        $(document).ready(function() {
+            initSignaturePad();
+        });
+
+        function initSignaturePad() {
+            var canvas = document.getElementById(canvasArea.replace("#", ""));
+            console.log(canvas)
+            if (!canvas) {
+                console.error("Canvas not found: signature-pad");
+                return;
+            }
+            var context = canvas.getContext("2d");
+
+            var drawing = false;
+            var lastPos = null;
+
+            // Remove existing event handlers to avoid duplicates
+            $(document).off(
+                "mousemove touchmove mousedown touchstart touchend touchmove",
+                canvasArea
+            );
+            $(document).off("click", saveBtn);
+            $(clearBtn).off("click");
+
+            // Mouse and touch events for drawing
+            $(document).on("mousedown", canvasArea, function(e) {
+                if (e.which === 1) {
+                    drawing = true;
+                    lastPos = getMousePos(canvas, e);
+                }
+            });
+
+            $(document).on("mousemove", canvasArea, function(e) {
+                if (drawing) {
+                    var mousePos = getMousePos(canvas, e);
+                    draw(canvas, context, lastPos, mousePos);
+                    lastPos = mousePos;
+                }
+            });
+
+            $(document).on("mouseup", canvasArea, function() {
+                drawing = false;
+            });
+
+            $(document).on("touchstart", canvasArea, function(e) {
+                e.preventDefault();
+                drawing = true;
+                lastPos = getTouchPos(canvas, e);
+            });
+
+            $(document).on("touchmove", canvasArea, function(e) {
+                e.preventDefault();
+                if (drawing) {
+                    var touchPos = getTouchPos(canvas, e);
+                    draw(canvas, context, lastPos, touchPos);
+                    lastPos = touchPos;
+                }
+            });
+
+            $(document).on("touchend", canvasArea, function() {
+                drawing = false;
+            });
+
+            // Save button event handler
+            $(saveBtn).click(function() {
+                var canvas = document.getElementById(canvasArea.replace("#", ""));
+                var signatureData = canvas.toDataURL();
+
+                // Set the signature value in a hidden input field
+                $("#signature_value").val(signatureData);
+
+                // Now submit the form
+                $("form").submit();
+            });
+
+            // Clear canvas function and event handler
+            function clearCanvas() {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+            }
+
+            $(clearBtn).click(function() {
+                clearCanvas();
+            });
+        }
+
+        function getMousePos(canvas, evt) {
+            var rect = canvas.getBoundingClientRect();
+            return {
+                x: evt.clientX - rect.left,
+                y: evt.clientY - rect.top,
+            };
+        }
+
+        function getTouchPos(canvas, evt) {
+            var rect = canvas.getBoundingClientRect();
+            var touch = evt.touches[0] || evt.changedTouches[0];
+            return {
+                x: touch.clientX - rect.left,
+                y: touch.clientY - rect.top,
+            };
+        }
+
+        function draw(canvas, context, startPos, endPos) {
+            context.beginPath();
+            context.moveTo(startPos.x, startPos.y);
+            context.lineTo(endPos.x, endPos.y);
+            context.stroke();
+        }
+    </script>
 @endsection

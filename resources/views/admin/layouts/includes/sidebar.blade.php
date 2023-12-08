@@ -6,7 +6,7 @@
 </style>
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
   <div class="app-brand demo">
-    <a href="dashboard" class="app-brand-link">
+    <a href="/dashboard" class="app-brand-link">
       <span class="app-brand-logo demo">
         <img height="100" src="{{ asset('logo.webp') }}">
       </span>
@@ -23,6 +23,7 @@
     @if (auth()->check()) <!-- Check if a user is logged in -->
       @if (auth()->user()->role == 0) <!-- Check if the user is an admin -->
         <!--Admin Dashboard -->
+
         <li class="menu-item {{ request()->is('admin/dashboard*') ? 'active' : '' }}">
           <a href="{{route('admin.dashboard')}}" class="menu-link">
             <i class="menu-icon tf-icons bx bx-home-circle"></i>
@@ -185,6 +186,13 @@
           <a href="{{ route('user.warranty') }}" class="menu-link">
             <i class="menu-icon tf-icons bx bx-food-menu"></i>
             <div>Warranty</div>
+          </a>
+        </li>
+
+        <li class="menu-item {{ request()->is('shop/order*') ? 'active' : '' }}">
+          <a href="{{ route('user.shopOrder') }}" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-food-menu"></i>
+            <div>Shop Orders Management</div>
           </a>
         </li>
 
