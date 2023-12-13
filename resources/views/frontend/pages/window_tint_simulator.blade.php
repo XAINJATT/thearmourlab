@@ -421,11 +421,11 @@
                                         <td><input type="radio" class="tints" name="windshield" id="windshield50"
                                                 value="50"><label for="windshield50" class="tintLabel">35</label>
                                         </td>
-                                        <td><input type="radio" class="tints" name="windshield" id="windshield50"
-                                                value="50"><label for="windshield50" class="tintLabel">20</label>
+                                        <td><input type="radio" class="tints" name="windshield" id="windshield20"
+                                                value="20"><label for="windshield20" class="tintLabel">20</label>
                                         </td>
-                                        <td><input type="radio" class="tints" name="windshield" id="windshield50"
-                                                value="50"><label for="windshield50" class="tintLabel">05</label>
+                                        <td><input type="radio" class="tints" name="windshield" id="windshield05"
+                                                value="05"><label for="windshield05" class="tintLabel">05</label>
                                         </td>
                                     </tr>
                                     <tr>
