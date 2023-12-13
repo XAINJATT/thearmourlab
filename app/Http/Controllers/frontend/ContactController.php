@@ -28,6 +28,7 @@ class ContactController extends Controller
             'email' => $request['email'],
             'phone' => $request['phone'],
             'message' => $request['message'],
+            'type_of_service' => $request['type_of_service'],
             'created_at' => carbon::now()
         ]);
         

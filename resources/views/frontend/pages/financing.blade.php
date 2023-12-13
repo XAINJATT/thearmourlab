@@ -65,7 +65,7 @@
                                     <h5 class="counter-text">SATISFIED CLIENTS</h5>
                                 </div>
                             </div>
-                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-6">
+                            {{-- <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-6">
                                 <div class="counter-style-1">
                                     <div class="text-secondry">
                                         <h2 class="text-primary"><span class="counter">35</span><span>+</span></h2>
@@ -80,16 +80,23 @@
                                     </div>
                                     <h5 class="counter-text">COMPLETED WORKS</h5>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                         <div class="mt-15 mt-md-0">
-                            <a href="/contact" class="btn btn-primary me-3">Contact Us</a>
+                            <a href="https://www.financeit.ca/s/vSeB6A" target="_blank" class="btn btn-primary me-3">
+                            Apply Now
+                            </a>
+                                <br>
+                                
+                            <span>Pre-qualification won't affect your credit score</span>
                             {{-- <a href="booking.html" class="btn btn-outline-secondary">Book Now</a> --}}
                         </div>
                     </div>
                     <div class="col-lg-6 mb-30">
                         <div class="about-imgbox">
-                            <img src="{{ asset('images/f109259399cc4040a3b1aca1830b8041.webp') }}" alt="" />
+                            <video autoplay style="height:70vh" loop muted class="mb-10" width="100%"
+                            src="{{ asset('images/fp/phone-animation-en.mp4') }}"></video>
+                            {{-- <img src="{{ asset('images/f109259399cc4040a3b1aca1830b8041.webp') }}" alt="" /> --}}
                             <div class="about-year">
                                 <h2 class="count"><span class="counter">20</span>+</h2>
                                 <h6 class="text">Year In industry</h6>
@@ -124,18 +131,18 @@
                             <img height="250" style="height:250px"
                                 src="{{ asset('images/png-transparent-interest-rate-offer-text-trademark-payment-removebg-preview.webp') }}"
                                 class="img-fluid pb-5" alt="">
-                            <div class="text-white px-3">
-                                <p class="fs-4 fw-bold">
-                                    Interest <br> Financing
-                                </p>
-                                <hr>
-                                <p class="fs-4 fw-bold">
-                                    Pay Over Time Or <br> Pay In 6 Months!
-                                </p>
-                            </div>
+                                <div class="text-white px-3">
+                                    <p class="fs-4 fw-bold">
+                                        NO INTEREST
+                                    </p>
+                                    <hr>
+                                    <p class="fs-4 fw-bold">
+                                        12 EQUAL MONTHLY PAYMENTS!
+                                    </p>
+                                </div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    {{-- <div class="col-lg-6">
                         <div class="text-white"
                             style=" background: linear-gradient(25deg, #171a1e 50%, #43491a 50%); padding:40px">
                             <p class="fs-2 fw-bold">
@@ -143,6 +150,18 @@
                                 Services
                             </p>
                         </div>
+                    </div> --}}
+
+                    <div class="col-lg-6">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <a target="_blank" href="https://www.financeit.ca/s/vSeB6A">
+                                <img height="250" style="height:200px;"
+                                    src="{{ asset('images/250x250-0%-financing-available-A.webp') }}" class="img-fluid"
+                                    alt="">
+                            </a>
+
+                        </div>
+
                     </div>
                 </div>
 
@@ -185,17 +204,31 @@
         <section style="margin-bottom:100px" class="">
 
             <div class="container">
-                <div style="max-width:770px; margin:auto">
-                    <div class="heading-bx text-center ">
+
+
+
+
+                <div>
+                    <div style="max-width:770px; margin:auto" class="heading-bx text-center ">
                         {{-- <h6 class="title-ext text-primary"></h6> --}}
                         <h2 class="title">Discover Your Vehicle Protection Options</h2>
                         <p>Our expert team is ready to discuss your specific needs and explain the costs associated with our
                             PPF and ceramic coating services, helping you make an informed decision.</p>
                     </div>
+
+
                     <div class="table-image" style="margin-bottom:100px">
-                        <img src="{{asset("images/financing_options_chart_army_green.png")}}" class="img-fluid" alt="">
+                        <img src="{{ asset('images/financing_options_chart_army_green.png') }}" class="img-fluid"
+                            alt="">
+                        <p class="text-center">Purchase amount is approximate and may vary based on service selection and vehicle specifics. The
+                            examples shown in the table are for illustrative purposes only. The maximum amount available for
+                            financing is $10,000. 0% interest plans are offered exclusively on select PPF and ceramic
+                            coating
+                            services and cannot be combined with other offers or discounts. Financing is subject to credit
+                            approval by our financing partners</p>
                     </div>
-                    <div class="mt-15 mt-md-0">
+
+                    <div style="max-width:770px; margin:auto" class="mt-15 mt-md-0">
                         <div class="widget">
                             <div class="help-bx">
                                 <div class="media">
@@ -205,13 +238,13 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
                                         viewBox="0 0 476 476">
                                         <path d="M400.85,181v-18.3c0-43.8-15.5-84.5-43.6-114.7c-28.8-31-68.4-48-111.6-48h-15.1c-43.2,0-82.8,17-111.6,48 c-28.1,30.2-43.6,70.9-43.6,114.7V181c-34.1,2.3-61.2,30.7-61.2,65.4V275c0,36.1,29.4,65.5,65.5,65.5h36.9c6.6,0,12-5.4,12-12
-                       V192.8c0-6.6-5.4-12-12-12h-17.2v-18.1c0-79.1,56.4-138.7,131.1-138.7h15.1c74.8,0,131.1,59.6,131.1,138.7v18.1h-17.2
-                       c-6.6,0-12,5.4-12,12v135.6c0,6.6,5.4,12,12,12h16.8c-4.9,62.6-48,77.1-68,80.4c-5.5-16.9-21.4-29.1-40.1-29.1h-30
-                       c-23.2,0-42.1,18.9-42.1,42.1s18.9,42.2,42.1,42.2h30.1c19.4,0,35.7-13.2,40.6-31c9.8-1.4,25.3-4.9,40.7-13.9
-                       c21.7-12.7,47.4-38.6,50.8-90.8c34.3-2.1,61.5-30.6,61.5-65.4v-28.6C461.95,211.7,434.95,183.2,400.85,181z M104.75,316.4h-24.9
-                       c-22.9,0-41.5-18.6-41.5-41.5v-28.6c0-22.9,18.6-41.5,41.5-41.5h24.9V316.4z M268.25,452h-30.1c-10,0-18.1-8.1-18.1-18.1
-                       s8.1-18.1,18.1-18.1h30.1c10,0,18.1,8.1,18.1,18.1S278.25,452,268.25,452z M437.95,274.9c0,22.9-18.6,41.5-41.5,41.5h-24.9V204.8
-                       h24.9c22.9,0,41.5,18.6,41.5,41.5V274.9z" />
+                                   V192.8c0-6.6-5.4-12-12-12h-17.2v-18.1c0-79.1,56.4-138.7,131.1-138.7h15.1c74.8,0,131.1,59.6,131.1,138.7v18.1h-17.2
+                                   c-6.6,0-12,5.4-12,12v135.6c0,6.6,5.4,12,12,12h16.8c-4.9,62.6-48,77.1-68,80.4c-5.5-16.9-21.4-29.1-40.1-29.1h-30
+                                   c-23.2,0-42.1,18.9-42.1,42.1s18.9,42.2,42.1,42.2h30.1c19.4,0,35.7-13.2,40.6-31c9.8-1.4,25.3-4.9,40.7-13.9
+                                   c21.7-12.7,47.4-38.6,50.8-90.8c34.3-2.1,61.5-30.6,61.5-65.4v-28.6C461.95,211.7,434.95,183.2,400.85,181z M104.75,316.4h-24.9
+                                   c-22.9,0-41.5-18.6-41.5-41.5v-28.6c0-22.9,18.6-41.5,41.5-41.5h24.9V316.4z M268.25,452h-30.1c-10,0-18.1-8.1-18.1-18.1
+                                   s8.1-18.1,18.1-18.1h30.1c10,0,18.1,8.1,18.1,18.1S278.25,452,268.25,452z M437.95,274.9c0,22.9-18.6,41.5-41.5,41.5h-24.9V204.8
+                                   h24.9c22.9,0,41.5,18.6,41.5,41.5V274.9z" />
                                     </svg>
                                     <h5 class="title mt-20">How Can We Help</h5>
                                     <p>If you need any helps, please free to contact us.</p>

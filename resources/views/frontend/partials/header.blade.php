@@ -6,10 +6,10 @@
             <div class="container clearfix">
                 <!-- Website Logo -->
                 <div class="menu-logo">
-                    <a href="/" class="main-logo"><img src="images/white logo.png" alt=""
+                    <a href="/" class="main-logo"><img src="{{ asset('images/white logo.png') }}" alt=""
                             style="width: 100px; padding: 10px;"></a>
                     <a href="/" class="sticky-logo"><img style="width: 100px; padding: 10px;"
-                            src="images/logo.webp" alt=""></a>
+                            src="{{ asset('images/logo.webp') }}" alt=""></a>
                 </div>
                 <!-- Nav Toggle -->
                 <button class="navbar-toggler collapsed menuicon justify-content-end" type="button"
@@ -30,7 +30,7 @@
                 <!-- Menu Links -->
                 <div class="menu-links navbar-collapse collapse justify-content-center" id="menuDropdown">
                     <div class="menu-logo">
-                        <a href="/"><img src="images/logo.webp" alt=""></a>
+                        <a href="/"><img src="{{ asset('images/logo.webp') }}" alt=""></a>
                     </div>
                     <ul class="nav navbar-nav" style="justify-content: center; margin-top:15px">
                         <li class="active"> <a href="{{ route('frontend.home') }}"> Home </a> </li>
@@ -57,6 +57,7 @@
                         <li class=""> <a href="{{ route('frontend.shop') }}"> Shop </a> </li>
                         <li class=""> <a href="{{ route('frontend.financing') }}"> Financing </a> </li>
                         <li class=""> <a href="{{ route('frontend.faq') }}"> FAQs </a> </li>
+                        <li class=""> <a href="{{ route('frontend.about') }}"> About </a> </li>
                         <!-- <li class="active"> <a href="{{ route('cart.list') }}"> Cart </a> </li> -->
                         <!-- Add this in your HTML or Blade file -->
                         {{-- <li class="active"> <a href="#"> FAQ </a> </li> --}}

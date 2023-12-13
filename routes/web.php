@@ -62,6 +62,7 @@ Route::get('/ceramic-coating', [CeramicCoatingController::class, 'index'])->name
 Route::get('/faq', [CeramicCoatingController::class, 'faq'])->name('frontend.faq');
 Route::get('/financing', [CeramicCoatingController::class, 'financing'])->name('frontend.financing');
 Route::get('live-status', [UserInvoiceController::class, 'orderStatusShow'])->name('frontend.live');
+Route::get('about-us', [CeramicCoatingController::class, 'about'])->name('frontend.about');
 // Route::get('invoice/order-status/{id}', [UserInvoiceController::class, 'orderStatusShow'])->name('user.invoice.orderStatusShow');
 // BlogController
 Route::get('/blog', [BlogController::class, 'index'])->name('frontend.blog');

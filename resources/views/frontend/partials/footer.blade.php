@@ -5,7 +5,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
                     <div class="footer-logo">
-                        <img src="images/logo.webp" alt="" style="filter: invert(1);"/>
+                        <img src="{{ asset('images/white logo.png') }}" alt="" />
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
@@ -24,7 +24,7 @@
                             <span class="icon-cell"><img src="images/icon/contact/icon1.png" alt="" /></span>
                         </div>
                         <div class="icon-content">
-                            <p>(416) 675 6853</p>
+                            <p><a class="text-white"  href="tel:(416) 675 6853">(416) 675 6853</a></p>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                             <span class="icon-cell"><img src="images/icon/contact/icon2.png" alt="" /></span>
                         </div>
                         <div class="icon-content">
-                            <p>info@thearmourlab.com </p>
+                            <p><a class="text-white" href="mailto:info@thearmourlab.com">info@thearmourlab.com</a> </p>
                         </div>
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         <div class="ft-content">
                             <i class="fa fa-phone"></i>
                             <span>Talk To Our Support</span>
-                            <h4>(416) 675 6853</h4>
+                            <h4><a href="tel:(416) 675 6853">(416) 675 6853</a></h4>
                         </div>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
-                    <img class="img-fluid text-right" height="200" style="height:200px !important" src="{{asset("images/SCF-SEAL_NonSunscreens-2-color-516x600.jpg")}}" alt="">
+                   
                 </div>
             </div>
         </div>

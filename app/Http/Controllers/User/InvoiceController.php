@@ -50,6 +50,8 @@ class InvoiceController extends Controller
         // return view('user.invoice.orderStatusDetails', compact('workOrderStatus'));
     }
 
+    
+
     /**
      * Show the form for editing the specified resource.
      */
