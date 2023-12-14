@@ -9,6 +9,7 @@ use App\Models\ContactUs;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Carbon\Carbon;
+use Exception;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 
@@ -31,20 +32,35 @@ class ContactController extends Controller
             'type_of_service' => $request['type_of_service'],
             'created_at' => carbon::now()
         ]);
-        
-        if ($Affected) {
-            DB::commit();
+
+        try {
+
 
             $adminDetails = User::where('id', 1)->where('role', 0)->first();
             $userDetails = ContactUs::where('id', $Affected->id)->first();
 
-            Mail::to($adminDetails['email'])->send(new ContactUsInformAdmin($userDetails));
+
+            $adminDetails['email'] = "xainjatt@gmail.com";
+
+
+            try {
+                Mail::send('email.ContactUsInformAdminMail', $userDetails->toArray(), function ($m) use ($userDetails) {
+                    $m->from("info@thearmourlab-latest.gw2neverland.com", "The Armour Lab");
+                    $m->to("xainjatt@gmail.com", $userDetails->name)->subject('Email Subject!');
+                    DB::commit();
+                });
+            } catch (Exception $e) {
+                DB::rollBack();
+                return redirect()->route('frontend.contact')->with('error', $e->getMessage());
+            }
+
+            // Mail::to($adminDetails['email'])->send(new ContactUsInformAdmin($userDetails));
             // Mail::to($Affected['email'])->send(new ContactUsInformUser());
 
             return redirect()->route('frontend.contact')->with('success-message', "Thank you for reaching out to us! Your contact details have been successfully received. We'll be in touch within 24 hours.");
-        } else {
+        } catch (Exception $e) {
             DB::rollBack();
-            return redirect()->route('frontend.contact')->with('error', 'An unhandled error occurred');
+            return redirect()->route('frontend.contact')->with('error', $e->getMessage());
         }
     }
 }
