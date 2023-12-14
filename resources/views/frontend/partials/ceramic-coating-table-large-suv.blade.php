@@ -21,7 +21,7 @@
         <td>PRICE</td>
         <td>
             $449.99
-        </td>
+        </td>php 
         <td>
             $699.99
         </td>
@@ -56,7 +56,7 @@
         <td> ✔<br /></td>
         <td> ✔<br /></td>
         <td> ✔<br /></td>
-        <td>✔</td>
+        <td> ✖</td>
         <td> ✖<br /></td>
         <td> ✔<br /></td>
     </tr>

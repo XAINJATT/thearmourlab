@@ -61,7 +61,7 @@
                     <div class="col-lg-5 mb-40">
                         <div class="heading-bx mb-4">
                             <h6 class="title-ext text-primary">about Us</h6>
-                            <h2 class="title">WE'RE A COMPANY OF TALENTED ENGINEERS &amp; MECHANICS</h2>
+                            <h2 class="title">EXPERTS IN AUTOMOTIVE PAINT PROTECTION & CERAMIC COATINGS</h2>
                             <p>At The Armour Lab, we're not just about detailing cars; we're about preserving perfection.
                                 With over a decade in the automotive protection industry, we've mastered the art of
                                 shielding your vehicle from the elements. Our highly skilled technicians use cutting-edge

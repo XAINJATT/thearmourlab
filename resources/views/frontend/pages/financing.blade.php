@@ -155,7 +155,7 @@
                     <div class="col-lg-6">
                         <div class="d-flex align-items-center justify-content-center">
                             <a target="_blank" href="https://www.financeit.ca/s/vSeB6A">
-                                <img height="250" style="height:200px;"
+                                <img height="250" style="height:300px;"
                                     src="{{ asset('images/250x250-financing-available-A.webp') }}" class="img-fluid"
                                     alt="">
                             </a>
@@ -189,7 +189,7 @@
                     <div class="col-lg-6">
                         <div class="d-flex align-items-center justify-content-center">
                             <a target="_blank" href="https://www.financeit.ca/s/vSeB6A">
-                                <img height="250" style="height:200px;"
+                                <img height="250" style="height:300px;"
                                     src="{{ asset('images/250x250-financing-available-A.webp') }}" class="img-fluid"
                                     alt="">
                             </a>

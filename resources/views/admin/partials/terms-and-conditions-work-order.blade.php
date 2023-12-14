@@ -1,4 +1,4 @@
-<h2>Terms And Conditions</h2>
+{{-- <h2>Terms And Conditions</h2>
 
 <h4>Personal Items:</h4>
 <ul>
@@ -94,4 +94,53 @@
     <li><strong>Liability:</strong> The customer recognizes that ceramic
         coatings are damage-resistant, not damage-proof. Acceptance of the
         vehicle post-service confirms agreement to these terms.</li>
+</ul> --}}
+
+
+
+<h1>Terms and Conditions</h1>
+<h2>Personal Items</h2>
+<p>Customers must remove all personal items prior to their appointment. While we take every care with items left in the
+    vehicle, The Armour Lab cannot be held responsible for any personal items left behind. By signing...</p>
+
+<h2>Damage Acknowledgment</h2>
+<ul>
+    <li>Not all below, customers confirm the listed damages as pre-existing and free The Armour Lab from any related
+        liability.</li>
+    <li>Damages may be evident during initial assessment; any new damages discovered post-cleaning will be promptly
+        communicated to the customer. The Armour Lab cannot be held responsible!</li>
+    <li>Note: Even new vehicles can have hidden blemishes upon delivery. Every vehicle has its unique imperfections. The
+        Armour Lab cannot be held responsible!</li>
+</ul>
+
+<h2>Paint Correction</h2>
+<p>It's important to understand that each vehicle's clear coat and paint job are distinct. While we strive for the best
+    results in paint correction, it doesn't guarantee complete removal of all scratches and swirl marks...</p>
+
+<h2>Paint Protection Film (PPF)</h2>
+<ul>
+    <li>The Armour Lab utilizes plotting software for film cuts. Though we strive for maximum coverage, minor gaps may
+        emerge due to the design's intricacy...</li>
+    <li>Imperfections like glue lines may appear, especially within complex designs...</li>
+    <li>Pre-existing damages, like rock chips, will be visible under the film...</li>
+    <li>Temporary water bubbles are standard and will disappear over days...</li>
+</ul>
+
+<h2>Payment Policies</h2>
+<p>Payment is due post-service unless prior arrangements exist. Payments attract a 3% convenience fee. Invoices
+    exceeding $1000, paid via other credit cards, incur a 1.75% fee.</p>
+
+<h2>Liability, Acceptance, & Refund Policy</h2>
+<p>The signee asserts ownership or rightful authorization for the vehicle and its decisions. Armour Lab is not
+    responsible for damages during service or any potential oversights that might arise...</p>
+
+<h2>Ceramic Coating Terms & Conditions</h2>
+<ul>
+    <li>Maintenance: Adequate maintenance per our guide is crucial for the coating's efficacy and warranty validity.
+    </li>
+    <li>Warranty: Coverage is conditional on proper maintenance...</li>
+    <li>Inspection & Claim: Issues must be reported immediately...</li>
+    <li>Warranty Service: We may refuse warranty claims if damage is due to neglect or failure to follow care
+        instructions...</li>
+    <li>Liability: The customer recognizes that ceramic coatings are damage-resistant, not damage-proof...</li>
 </ul>
