@@ -35,7 +35,7 @@
                     <div class="col-lg-12 col-sm-12 col-12 text-center">
                         <div class="heading-bx text-center">
                             <h6 class="title-ext text-primary">About Us</h6>
-                            <h2 class="title mb-0">WE'RE A COMPANY OF TALENTED ENGINEERS & MECHANICS</h2>
+                            <h2 class="title mb-0">About The Armour Lab</h2>
                         </div>
                         <div class="about-content text-center">
                             <div class="ttr-media">

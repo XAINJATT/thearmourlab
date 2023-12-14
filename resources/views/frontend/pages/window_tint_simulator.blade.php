@@ -50,6 +50,9 @@
                     <div id="main-container">
 
 
+                     
+
+
                         <div class="container mt-5">
                             <div class="header row my-5 py-5">
                                 <h2 class="col-md-6">Signature Features</h2>
@@ -162,8 +165,12 @@
                         </div>
                         <section class="section-area bg-white section-sp1">
                             <div class="container">
+
+                                <h2 class="text-center fs-2">Window Tints Packages</h2>
+
                                 <div class="pricingtable-row my-5">
                                     <div class="row">
+                                        <div class="col-xl-1"></div>
                                         <div class="col-xl-5 col-sm-6 mb-30">
                                             <div class="pricingtable-wrapper style1 pricingtable-highlight">
                                                 <div class="pricingtable-tag">
@@ -185,7 +192,7 @@
                                                             <!-- <p><i class="la la-clock"></i> </p> -->
                                                         </div>
                                                     </div>
-                                                    <ul class="pricingtable-features">
+                                                    <ul class="pricingtable-features fs-4">
                                                         <li><i class="fa fa-check"></i> Comprehensive Lifetime Warranty
                                                             (Parts & Labour).</li>
                                                         <li><i class="fa fa-check"></i> Advanced Nano-Hybrid Technology.
@@ -202,36 +209,43 @@
                                                             Cellular, and Bluetooth Devices</li>
                                                     </ul>
 
-                                                    <div class="mt-5 pt-3">
-                                                        <span class="px-4">Ceramic</span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>Warranty</span>
+                                                    <div class="">
+                                                        {{-- <span class="px-4">Ceramic</span> --}}
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>Warranty</strong>
                                                             <span class="text-warning fw-bold">Life Time</span>
                                                         </span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>UV Rejection</span>
+                                                        <hr>
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>UV Rejection</strong>
                                                             <span>99%</span>
                                                         </span>
-                                                        <span class="d-flex text-white px-4 bg-danger p-3 align-items-center justify-content-between">
-                                                            <span>IR HEAT Rejection</span>
-                                                            <span>92% - 98%</span>
+                                                        <hr>
+                                                        <span class="d-flex text-white px-4 bg-danger p-3 align-items-center my-2 justify-content-between">
+                                                            <strong>IR HEAT Rejection</strong>
+                                                            <span>78% - 88%</span>
                                                         </span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>2 Front Windows</span>
+                                                        <hr>
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>2 Front Windows</strong>
                                                             <span>$199.99</span>
                                                         </span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>COUPE/SEDAN/CROSSOVER</span>
+                                                        <hr>
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>COUPE/SEDAN/CROSSOVER</strong>
                                                             <span>$349</span>
                                                         </span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>SUV/MINIVAN</span>
+                                                        <hr>
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>SUV/MINIVAN</strong>
                                                             <span>$379</span>
                                                         </span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>FULL WINDSHIELD</span>
+                                                        <hr>
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>FULL WINDSHIELD</strong>
                                                             <span>$220+</span>
                                                         </span>
+                                                        <hr>
                                                     </div>
 
                                                     <div class="pricingtable-footer">
@@ -273,8 +287,6 @@
                                                             Harmful UV Rays.</li>
                                                         <li><i class="fa fa-check"></i> Infrared Heat Rejection up to 98%.
                                                         </li>
-                                                        <li><i class="fa fa-check"></i> Entire Passenger's Side (includes
-                                                            doors, fenders, quarter panels)</li>
                                                         <li><i class="fa fa-check"></i> Designed to Preserve Signal
                                                             Integrity for All Devices.</li>
 
@@ -283,35 +295,42 @@
                                                     <hr>
 
                                                     <div>
-                                                        <span class="px-4">Nano Ceramic</span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>Warranty</span>
+                                                        {{-- <span class="px-4">Nano Ceramic</span> --}}
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>Warranty</strong>
                                                             <span class="text-warning fw-bold">Life Time</span>
                                                         </span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>UV Rejection</span>
+                                                        <hr>
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>UV Rejection</strong>
                                                             <span>99%</span>
                                                         </span>
-                                                        <span class="d-flex text-white px-4 bg-danger p-3 align-items-center justify-content-between">
-                                                            <span>IR HEAT Rejection</span>
+                                                        <hr>
+                                                        <span class="d-flex text-white px-4 bg-danger p-3 align-items-center my-2 justify-content-between">
+                                                            <strong>IR HEAT Rejection</strong>
                                                             <span>92% - 98%</span>
                                                         </span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>2 Front Windows</span>
+                                                        <hr>
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>2 Front Windows</strong>
                                                             <span>$229</span>
                                                         </span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>COUPE/SEDAN/CROSSOVER</span>
+                                                        <hr>
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>COUPE/SEDAN/CROSSOVER</strong>
                                                             <span>$550</span>
                                                         </span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>SUV/MINIVAN</span>
+                                                        <hr>
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>SUV/MINIVAN</strong>
                                                             <span>$600</span>
                                                         </span>
-                                                        <span class="d-flex px-4 align-items-center justify-content-between">
-                                                            <span>FULL WINDSHIELD</span>
+                                                        <hr>
+                                                        <span class="d-flex px-4 align-items-center my-2 justify-content-between">
+                                                            <strong>FULL WINDSHIELD</strong>
                                                             <span>$300+</span>
                                                         </span>
+                                                        <hr>
                                                     </div>
 
                                                     <div class="pricingtable-footer">

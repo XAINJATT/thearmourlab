@@ -11,7 +11,10 @@
 
 <script>
     $(document).ready(function() {
-        $("#email").select2();
+        setTimeout(() => {
+            $("#email").select2();
+
+        }, 3000);
         // $("#data_table").DataTable()
     });
 

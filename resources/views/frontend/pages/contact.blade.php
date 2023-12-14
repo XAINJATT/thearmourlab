@@ -101,7 +101,8 @@
 							<div class="col-md-6 col-sm-6 mb-15">
 								<div class="icon-box">
 									<h6 class="title"><i class="ti-id-badge"></i>Email & Phone</h6>
-									<a href="javascript:void(0);">info@thearmourlab.com</a>
+									<a href="mailto:info@thearmourlab.com">info@thearmourlab.com</a> <br>
+									<a class="text-white"  href="tel:(416) 675 6853">(416) 675 6853</a>
 									<!-- <p>+&nbsp;416 675 6853</p> -->
 								</div>
 							</div>

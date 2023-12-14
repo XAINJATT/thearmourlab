@@ -85,7 +85,7 @@
                                 <div class="col-md-4 mb-md-0 mb-4">
                                     <div class="d-flex svg-illustration mb-4 gap-2">
                                         <span class="app-brand-logo demo">
-                                            <img src="{{ asset('storage/logo/logo.webp') }}">
+                                            <img src="{{ asset('logo/logo.webp') }}">
                                         </span>
                                     </div>
                                 </div>
@@ -371,10 +371,12 @@
                                     <div class="col-12 col-md-6 col-6 mb-3">
                                         <label for="drivers_license" class="font-weight-bold">Drivers License <span
                                                 class="text-danger">*</span>&nbsp;&nbsp;
-                                            <a href="{{ $order->drivers_license }}"
-                                                download="{{ $order->drivers_license }}">
-                                                <i class="fas fa-download"></i>
-                                            </a>
+                                            @if (!empty($order->drivers_license))
+                                                <a href="{{ $order->drivers_license }}"
+                                                    download="{{ $order->drivers_license }}">
+                                                    <i class="fas fa-download"></i>
+                                                </a>
+                                            @endif
                                         </label>
                                         <img src="" alt="" class="picture-src"
                                             id="drivers_license_preview" onclick="$(this).next().trigger('click')"
@@ -387,8 +389,11 @@
                                             <input type="file" class="input-style" name="drivers_license"
                                                 onchange="ReadUrl(this, 'drivers_license_preview', 'drivers_license_browse');">
                                         </label>
-                                        <img src="{{ @$order->drivers_license }}" id="drivers_license"
-                                            alt="drivers_license" width="50%" height="30%" />
+
+                                        @if (!empty($order->drivers_license))
+                                            <img src="{{ @$order->drivers_license }}" id="drivers_license"
+                                                alt="drivers_license" width="50%" height="30%" />
+                                        @endif
                                     </div>
                                 </div>
                                 <!-- Additional Requests End -->
@@ -426,8 +431,10 @@
                                         </div>
                                         <button class="btn btn-primary" id="submit-image">Save Image</button>
                                         <!-- <img src="" id="image-preview" alt="Preview" width="50%" height="30%" /> -->
-                                        <img src="{{ @$order->defects }}" id="defects" alt="defects" width="50%"
-                                            height="30%" />
+                                        @if (!empty($order->defects))
+                                            <img src="{{ @$order->defects }}" id="defects" alt="defects"
+                                                width="50%" height="30%" />
+                                        @endif
                                         <input type="hidden" id="old_defects" name="old_defects"
                                             value="{{ @$order->defects }}">
                                     </div>
@@ -492,8 +499,11 @@
 
                                                         <input hidden="" name="signature" value=""
                                                             id="signature_value" />
-                                                        <img src="{{ @$order->customer_signature }}" id="old_signature"
-                                                            alt="Old Signature" width="40%" height="20%" />
+                                                        @if (!empty($order->customer_signature))
+                                                            <img src="{{ @$order->customer_signature }}"
+                                                                id="old_signature" alt="Old Signature" width="40%"
+                                                                height="20%" />
+                                                        @endif
                                                         <input type="hidden" id="old_signature" name="old_signature"
                                                             value="{{ @$order->customer_signature }}">
 

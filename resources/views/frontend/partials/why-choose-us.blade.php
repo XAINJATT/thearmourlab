@@ -2,8 +2,8 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-lg-6 mb-30">
-                <div class="choose-media">
-                    <img src="images/about/pic6.jpg" style="filter: hue-rotate(45deg);" alt="" />
+                <div class="choose-media text-right" style="text-align:center;">
+                    <img class="img-fluid text-right" style="max-width:250px" src="{{ asset('images/logo.webp') }}" alt="" />
                 </div>
             </div>
             <div class="col-lg-6 mb-30">

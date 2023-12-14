@@ -57,14 +57,14 @@
                                 manageable to invest in the best care for your vehicle</p>
                         </div>
                         <div class="row">
-                            <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-6">
+                            {{-- <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-6">
                                 <div class="counter-style-1">
                                     <div class="text-secondry">
                                         <h2 class="text-primary"><span class="counter">25</span><span>K</span></h2>
                                     </div>
                                     <h5 class="counter-text">SATISFIED CLIENTS</h5>
                                 </div>
-                            </div>
+                            </div> --}}
                             {{-- <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-6">
                                 <div class="counter-style-1">
                                     <div class="text-secondry">
@@ -82,13 +82,13 @@
                                 </div>
                             </div> --}}
                         </div>
-                        <div class="mt-15 mt-md-0">
+                        <div class="mt-10 mt-md-0">
                             <a href="https://www.financeit.ca/s/vSeB6A" target="_blank" class="btn btn-primary me-3">
                             Apply Now
                             </a>
                                 <br>
                                 
-                            <span>Pre-qualification won't affect your credit score</span>
+                            <span class="mt-10 mt-md-0 d-block">Pre-qualification won't affect your credit score</span>
                             {{-- <a href="booking.html" class="btn btn-outline-secondary">Book Now</a> --}}
                         </div>
                     </div>
@@ -97,12 +97,12 @@
                             <video autoplay style="height:70vh" loop muted class="mb-10" width="100%"
                             src="{{ asset('images/fp/phone-animation-en.mp4') }}"></video>
                             {{-- <img src="{{ asset('images/f109259399cc4040a3b1aca1830b8041.webp') }}" alt="" /> --}}
-                            <div class="about-year">
+                            {{-- <div class="about-year">
                                 <h2 class="count"><span class="counter">20</span>+</h2>
                                 <h6 class="text">Year In industry</h6>
-                                {{-- <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="popup-youtube videoplay-bx"><i
-                                        class="fa fa-play"></i> <span>Play Video</span></a> --}}
-                            </div>
+                                <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="popup-youtube videoplay-bx"><i
+                                        class="fa fa-play"></i> <span>Play Video</span></a>
+                            </div> --}}
                         </div>
                     </div>
                 </div>
@@ -156,7 +156,7 @@
                         <div class="d-flex align-items-center justify-content-center">
                             <a target="_blank" href="https://www.financeit.ca/s/vSeB6A">
                                 <img height="250" style="height:200px;"
-                                    src="{{ asset('images/250x250-0%-financing-available-A.webp') }}" class="img-fluid"
+                                    src="{{ asset('images/250x250-financing-available-A.webp') }}" class="img-fluid"
                                     alt="">
                             </a>
 
@@ -190,7 +190,7 @@
                         <div class="d-flex align-items-center justify-content-center">
                             <a target="_blank" href="https://www.financeit.ca/s/vSeB6A">
                                 <img height="250" style="height:200px;"
-                                    src="{{ asset('images/250x250-0%-financing-available-A.webp') }}" class="img-fluid"
+                                    src="{{ asset('images/250x250-financing-available-A.webp') }}" class="img-fluid"
                                     alt="">
                             </a>
 
