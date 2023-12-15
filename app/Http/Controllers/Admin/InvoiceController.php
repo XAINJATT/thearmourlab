@@ -36,7 +36,6 @@ class InvoiceController extends Controller
      */
     public function store(Request $request)
     {
-
         $validator = Validator::make($request->all(), [
             'email' => 'required|email',
             'id' => 'required', // Assuming 'id' is a required field
@@ -105,27 +104,60 @@ class InvoiceController extends Controller
             'defects' => @$signatureFileNameDefects,
             'drivers_license' => $FileImage,
 
-            // Ceramic Coating
-            'ceramic_coating_kenzo_coating' => $request->has('ceramic_coating_kenzo_coating'),
-            'ceramic_coating_quartz_plus_coating' => $request->has('ceramic_coating_quartz_plus_coating'),
-            'ceramic_coating_quartz_coating' => $request->has('ceramic_coating_quartz_coating'),
-            'ceramic_coating_premier_coating' => $request->has('ceramic_coating_premier_coating'),
-            'ceramic_coating_interior_pkg' => $request->has('ceramic_coating_interior_pkg'),
-            'ceramic_coating_wheels_of_pkg' => $request->has('ceramic_coating_wheels_of_pkg'),
-            'ceramic_coating_price' => $request->input('ceramic_coating_price'),
+            // General Stages
+            'general_stages' => $request->has('general_stages'),
+            'check_in' => $request->has('check_in'),
+            'initial_inspection' => $request->has('initial_inspection'),
+            'Wash_and_decontamination' => $request->has('Wash_and_decontamination'),
+            // General Stages Status
+            'general_stages_status' => $request->input('general_stages_status'),
+            'check_in_status' => $request->input('check_in_status'),
+            'initial_inspection_status' => $request->input('initial_inspection_status'),
+            'Wash_and_decontamination_status' => $request->input('Wash_and_decontamination_status'),
 
-            // PPF
-            'ppf_full_car' => $request->has('ppf_full_car'),
-            'ppf_client_notes' => $request->has('ppf_client_notes'),
-            'ppf_payment_stub' => $request->has('ppf_payment_stub'),
-            'ppf_payment_terms' => $request->has('ppf_payment_terms'),
-            'ppf_price' => $request->input('ppf_price'),
+            // Paint Protection Film Stages
+            'paint_protection_film_stages' => $request->has('paint_protection_film_stages'),
+            'PPF_cutting_alignment' => $request->has('PPF_cutting_alignment'),
+            'PPF_polish' => $request->has('PPF_polish'),
+            'PPF_installation' => $request->has('PPF_installation'),
+            'PPF_curing_phase' => $request->has('PPF_curing_phase'),
+            // Paint Protection Film Stages Status
+            'paint_protection_film_stages_status' => $request->input('paint_protection_film_stages_status'),
+            'PPF_cutting_alignment_status' => $request->input('PPF_cutting_alignment_status'),
+            'PPF_polish_status' => $request->input('PPF_polish_status'),
+            'PPF_installation_status' => $request->input('PPF_installation_status'),
+            'PPF_curing_phase_status' => $request->input('PPF_curing_phase_status'),
 
-            // Additional Ceramic Coating
-            'cc_payment_terms' => $request->has('cc_payment_terms'),
-            'cc_client_notes' => $request->has('cc_client_notes'),
-            'cc_payment_stub' => $request->has('cc_payment_stub'),
-            'cc_price' => $request->input('cc_price'),
+            // Ceramic Coating Stages
+            'ceramic_coating_stages' => $request->has('ceramic_coating_stages'),
+            'cc_ceramic_coating_rep' => $request->has('cc_ceramic_coating_rep'),
+            'cc_paint_correction' => $request->has('cc_paint_correction'),
+            'cc_ceramic_coating_application' => $request->has('cc_ceramic_coating_application'),
+            'cc_curing_phase' => $request->has('cc_curing_phase'),
+            // Ceramic Coating Stages Status
+            'ceramic_coating_stages_status' => $request->input('ceramic_coating_stages_status'),
+            'cc_ceramic_coating_rep_status' => $request->input('cc_ceramic_coating_rep_status'),
+            'cc_paint_correction_status' => $request->input('cc_paint_correction_status'),
+            'cc_ceramic_coating_application_status' => $request->input('cc_ceramic_coating_application_status'),
+            'cc_curing_phase_status' => $request->input('cc_curing_phase_status'),
+
+            // Window Tint Stages
+            'window_tint_stages' => $request->has('window_tint_stages'),
+            'window_tint_measurement_cut' => $request->has('window_tint_measurement_cut'),
+            'window_tint_application' => $request->has('window_tint_application'),
+            // Window Tint Stages Status
+            'window_tint_stages_status' => $request->input('window_tint_stages_status'),
+            'window_tint_measurement_cut_status' => $request->input('window_tint_measurement_cut_status'),
+            'window_tint_application_status' => $request->input('window_tint_application_status'),
+
+            // Final Stages
+            'final_stages' => $request->has('final_stages'),
+            'final_inspection' => $request->has('final_inspection'),
+            'completion_pickup' => $request->has('completion_pickup'),
+            // Final Stages Status
+            'final_stages_status' => $request->input('final_stages_status'),
+            'final_inspection_status' => $request->input('final_inspection_status'),
+            'completion_pickup_status' => $request->input('completion_pickup_status'),
 
             'additional_requests' => $request->input('additional_requests'),
             'total_price' => $request->input('total_price'),
@@ -276,27 +308,60 @@ class InvoiceController extends Controller
             'defects' => @$signatureFileNameDefects,
             'drivers_license' => $FileImage,
 
-            // Ceramic Coating
-            'ceramic_coating_kenzo_coating' => $request->has('ceramic_coating_kenzo_coating'),
-            'ceramic_coating_quartz_plus_coating' => $request->has('ceramic_coating_quartz_plus_coating'),
-            'ceramic_coating_quartz_coating' => $request->has('ceramic_coating_quartz_coating'),
-            'ceramic_coating_premier_coating' => $request->has('ceramic_coating_premier_coating'),
-            'ceramic_coating_interior_pkg' => $request->has('ceramic_coating_interior_pkg'),
-            'ceramic_coating_wheels_of_pkg' => $request->has('ceramic_coating_wheels_of_pkg'),
-            'ceramic_coating_price' => $request->input('ceramic_coating_price'),
+            // General Stages
+            'general_stages' => $request->has('general_stages'),
+            'check_in' => $request->has('check_in'),
+            'initial_inspection' => $request->has('initial_inspection'),
+            'Wash_and_decontamination' => $request->has('Wash_and_decontamination'),
+            // General Stages Status
+            'general_stages_status' => $request->input('general_stages_status'),
+            'check_in_status' => $request->input('check_in_status'),
+            'initial_inspection_status' => $request->input('initial_inspection_status'),
+            'Wash_and_decontamination_status' => $request->input('Wash_and_decontamination_status'),
 
-            // PPF
-            'ppf_full_car' => $request->has('ppf_full_car'),
-            'ppf_client_notes' => $request->has('ppf_client_notes'),
-            'ppf_payment_stub' => $request->has('ppf_payment_stub'),
-            'ppf_payment_terms' => $request->has('ppf_payment_terms'),
-            'ppf_price' => $request->input('ppf_price'),
+            // Paint Protection Film Stages
+            'paint_protection_film_stages' => $request->has('paint_protection_film_stages'),
+            'PPF_cutting_alignment' => $request->has('PPF_cutting_alignment'),
+            'PPF_polish' => $request->has('PPF_polish'),
+            'PPF_installation' => $request->has('PPF_installation'),
+            'PPF_curing_phase' => $request->has('PPF_curing_phase'),
+            // Paint Protection Film Stages Status
+            'paint_protection_film_stages_status' => $request->input('paint_protection_film_stages_status'),
+            'PPF_cutting_alignment_status' => $request->input('PPF_cutting_alignment_status'),
+            'PPF_polish_status' => $request->input('PPF_polish_status'),
+            'PPF_installation_status' => $request->input('PPF_installation_status'),
+            'PPF_curing_phase_status' => $request->input('PPF_curing_phase_status'),
 
-            // Additional Ceramic Coating
-            'cc_payment_terms' => $request->has('cc_payment_terms'),
-            'cc_client_notes' => $request->has('cc_client_notes'),
-            'cc_payment_stub' => $request->has('cc_payment_stub'),
-            'cc_price' => $request->input('cc_price'),
+            // Ceramic Coating Stages
+            'ceramic_coating_stages' => $request->has('ceramic_coating_stages'),
+            'cc_ceramic_coating_rep' => $request->has('cc_ceramic_coating_rep'),
+            'cc_paint_correction' => $request->has('cc_paint_correction'),
+            'cc_ceramic_coating_application' => $request->has('cc_ceramic_coating_application'),
+            'cc_curing_phase' => $request->has('cc_curing_phase'),
+            // Ceramic Coating Stages Status
+            'ceramic_coating_stages_status' => $request->input('ceramic_coating_stages_status'),
+            'cc_ceramic_coating_rep_status' => $request->input('cc_ceramic_coating_rep_status'),
+            'cc_paint_correction_status' => $request->input('cc_paint_correction_status'),
+            'cc_ceramic_coating_application_status' => $request->input('cc_ceramic_coating_application_status'),
+            'cc_curing_phase_status' => $request->input('cc_curing_phase_status'),
+
+            // Window Tint Stages
+            'window_tint_stages' => $request->has('window_tint_stages'),
+            'window_tint_measurement_cut' => $request->has('window_tint_measurement_cut'),
+            'window_tint_application' => $request->has('window_tint_application'),
+            // Window Tint Stages Status
+            'window_tint_stages_status' => $request->input('window_tint_stages_status'),
+            'window_tint_measurement_cut_status' => $request->input('window_tint_measurement_cut_status'),
+            'window_tint_application_status' => $request->input('window_tint_application_status'),
+
+            // Final Stages
+            'final_stages' => $request->has('final_stages'),
+            'final_inspection' => $request->has('final_inspection'),
+            'completion_pickup' => $request->has('completion_pickup'),
+            // Final Stages Status
+            'final_stages_status' => $request->input('final_stages_status'),
+            'final_inspection_status' => $request->input('final_inspection_status'),
+            'completion_pickup_status' => $request->input('completion_pickup_status'),
 
             'additional_requests' => $request->input('additional_requests'),
             'total_price' => $request->input('total_price'),

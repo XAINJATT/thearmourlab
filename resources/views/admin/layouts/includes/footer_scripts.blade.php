@@ -10,6 +10,20 @@
 <!-- endbuild -->
 
 <script>
+    function copy(elm) {
+        var copyText = document.getElementById(elm.getAttribute("data-value"));
+        var btnText = elm.innerText
+        console.log(elm.getAttribute("data-value"))
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        navigator.clipboard.writeText(copyText.value);
+        elm.innerText = elm.getAttribute("data-text")
+        setTimeout(() => {
+            elm.innerText = btnText
+        }, 4000);
+    }
+
+
     $(document).ready(function() {
         setTimeout(() => {
             $("#email").select2();

@@ -122,7 +122,19 @@
                                             @endforeach
                                         </select>
                                     </div>
-                                    <input type="hidden" class="form-control" id="id" name="id" />
+                                    <div class="col-md-4 col-12">
+                                        <label for="OrderId" class="form-label me-5 fw-medium">Order Id:</label>
+                                        <div class="input-group">
+                                            <input type="text" class="form-control" value="{{ $id }}"
+                                                id="myInput">
+
+                                            <!-- The button used to copy the text -->
+                                            <button type="button" class="btn btn-info" data-value="myInput"
+                                                data-text="Copied!" onclick="copy(this)">Copy
+                                                Id</button>
+                                        </div>
+                                    </div>
+                                    {{-- <input type="hidden" class="form-control" id="id" name="id" /> --}}
                                     <input type="hidden" class="form-control" id="id" value="{{ $id }}"
                                         name="work_order_id" />
                                     <div class="col-md-4 col-12">
@@ -192,161 +204,589 @@
                                 </div>
                                 <hr class="mx-n4" />
                                 <!-- Check Box Start -->
+
                                 <div class="row p-sm-3 p-0">
-                                    <div class="col-lg-4 col-12 invoice-actions">
-                                        <h6 class="pb-2">Ceramic Coating</h6>
+                                    <div class="col-lg-6 col-12 invoice-actions">
+                                        <h6 class="pb-2">General Stages (applicable to all services)</h6>
                                         <div class="card mb-4">
                                             <div class="card-body">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="kenzo_coating" class="mb-0">Kenzo Coating</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="kenzo_coating"
-                                                            name="ceramic_coating_kenzo_coating"
-                                                            {{ @$order->ceramic_coating_kenzo_coating ? 'checked' : '' }}
-                                                            required>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="quartz_plus_coating" class="mb-0">Quartz Plus
-                                                        Coating</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input"
-                                                            id="quartz_plus_coating"
-                                                            name="ceramic_coating_quartz_plus_coating"
-                                                            {{ @$order->ceramic_coating_quartz_plus_coating ? 'checked' : '' }}
-                                                            required>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="quartz_coating" class="mb-0">Quartz Coating</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="quartz_coating"
-                                                            name="ceramic_coating_quartz_coating"
-                                                            {{ @$order->ceramic_coating_quartz_coating ? 'checked' : '' }}
-                                                            required>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="premier_coating" class="mb-0">Premier Coating</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="premier_coating"
-                                                            name="ceramic_coating_premier_coating"
-                                                            {{ @$order->ceramic_coating_premier_coating ? 'checked' : '' }}
-                                                            required>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="interior_pkg" class="mb-0">Interior PKG</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="interior_pkg"
-                                                            name="ceramic_coating_interior_pkg"
-                                                            {{ @$order->ceramic_coating_interior_pkg ? 'checked' : '' }}
-                                                            required>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between">
-                                                    <label for="wheels_of_pkg" class="mb-0">Wheels of PKG</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="wheels_of_pkg"
-                                                            name="ceramic_coating_wheels_of_pkg"
-                                                            {{ @$order->ceramic_coating_wheels_of_pkg ? 'checked' : '' }}
-                                                            required>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <label for="price" class="mb-0">Price :</label>
-                                            <div class="">
-                                                <input type="number" class="form-control" name="ceramic_coating_price"
-                                                    value="{{ @$order->ceramic_coating_price }}" required>
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="col-4 col-lg-5">
+                                                                <h5 class="mb-0">General Stages</h5>
+                                                            </td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="general_stages" name="general_stages"
+                                                                        {{ @$order->general_stages ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select" name="general_stages_status"
+                                                                    id="general_stages_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->general_stages_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->general_stages_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr class="additional-row-gs" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label
+                                                                    class="mb-0">Check-In</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="check_in" name="check_in"
+                                                                        {{ @$order->check_in ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select" name="check_in_status"
+                                                                    id="check_in_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->check_in_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->check_in_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr class="additional-row-gs" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Initial
+                                                                    Inspection</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="initial_inspection" name="initial_inspection"
+                                                                        {{ @$order->initial_inspection ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="initial_inspection_status"
+                                                                    id="initial_inspection_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->initial_inspection_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->initial_inspection_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+
+                                                        <tr class="additional-row-gs" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Wash and
+                                                                    Decontamination</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="Wash_and_decontamination"
+                                                                        name="Wash_and_decontamination"
+                                                                        {{ @$order->Wash_and_decontamination ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="Wash_and_decontamination_status"
+                                                                    id="Wash_and_decontamination_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->Wash_and_decontamination_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->Wash_and_decontamination_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+                                                <!-- <div class="">
+                                                                                <label for="price" class="mb-0">Price :</label>
+                                                                                <div class="">
+                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                </div>
+                                                                            </div> -->
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-12 invoice-actions">
-                                        <h6 class="pb-2">PPF</h6>
+
+                                    <div class="col-lg-6 col-12 invoice-actions">
+                                        <h6 class="pb-2">Paint Protection Film Stages</h6>
                                         <div class="card mb-4">
                                             <div class="card-body">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="full_car" class="mb-0">Full Car</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="full_car"
-                                                            name="ppf_full_car"
-                                                            {{ @$order->ppf_full_car ? 'checked' : '' }} required>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="client-notes" class="mb-0">Client Notes</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="client-notes"
-                                                            name="ppf_client_notes"
-                                                            {{ @$order->ppf_client_notes ? 'checked' : '' }} required>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="payment-stub" class="mb-0">Payment Stub</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="payment-stub"
-                                                            name="ppf_payment_stub"
-                                                            {{ @$order->ppf_payment_stub ? 'checked' : '' }} required>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="payment-terms" class="mb-0">Payment Terms</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="payment-terms"
-                                                            name="ppf_payment_terms"
-                                                            {{ @$order->ppf_payment_terms ? 'checked' : '' }} required>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <label for="price" class="mb-0">Price :</label>
-                                            <div class="">
-                                                <input type="number" class="form-control" name="ppf_price"
-                                                    value="{{ @$order->ppf_price }}" required>
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="col-4 col-lg-5">
+                                                                <h5 class="mb-0">Paint Protection Film Stages</h5>
+                                                            </td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="paint_protection_film_stages"
+                                                                        name="paint_protection_film_stages"
+                                                                        {{ @$order->paint_protection_film_stages ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="paint_protection_film_stages_status"
+                                                                    id="paint_protection_film_stages_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->paint_protection_film_stages_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->paint_protection_film_stages_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-ppf" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">PPF Cutting &
+                                                                    Alignment</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="PPF_cutting_alignment"
+                                                                        name="PPF_cutting_alignment"
+                                                                        {{ @$order->PPF_cutting_alignment ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="PPF_cutting_alignment_status"
+                                                                    id="PPF_cutting_alignment_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->PPF_cutting_alignment_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->PPF_cutting_alignment_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-ppf" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Polish
+                                                                    (PPF)</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="PPF_polish" name="PPF_polish"
+                                                                        {{ @$order->PPF_polish ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select" name="PPF_polish_status"
+                                                                    id="PPF_polish_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->PPF_polish_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->PPF_polish_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-ppf" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">PPF
+                                                                    Installation</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="PPF_installation" name="PPF_installation"
+                                                                        {{ @$order->PPF_installation ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select" name="PPF_installation_status"
+                                                                    id="PPF_installation_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->PPF_installation_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->PPF_installation_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-ppf" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Curing Phase
+                                                                    (PPF)</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="PPF_curing_phase" name="PPF_curing_phase"
+                                                                        {{ @$order->PPF_curing_phase ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select" name="PPF_curing_phase_status"
+                                                                    id="PPF_curing_phase_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->PPF_curing_phase_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->PPF_curing_phase_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- <div class="">
+                                                                                <label for="price" class="mb-0">Price :</label>
+                                                                                <div class="">
+                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                </div>
+                                                                            </div> -->
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-12 invoice-actions">
-                                        <h6 class="pb-2">Ceramic Coating</h6>
+
+                                    <div class="col-lg-6 col-12 invoice-actions">
+                                        <h6 class="pb-2">Ceramic Coating Stages</h6>
                                         <div class="card mb-4">
                                             <div class="card-body">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="payment-terms" class="mb-0">Payment Terms</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input"
-                                                            name="cc_payment_terms"
-                                                            {{ @$order->cc_payment_terms ? 'checked' : '' }} required>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="client-notes" class="mb-0">Client Notes</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input"
-                                                            name="cc_client_notes"
-                                                            {{ @$order->cc_client_notes ? 'checked' : '' }} required>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between">
-                                                    <label for="payment-stub" class="mb-0">Payment Stub</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input"
-                                                            name="cc_payment_stub"
-                                                            {{ @$order->cc_payment_stub ? 'checked' : '' }} required>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <label for="price" class="mb-0">Price :</label>
-                                            <div class="">
-                                                <input type="number" class="form-control" name="cc_price"
-                                                    value="{{ @$order->cc_price }}" required>
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="col-4 col-lg-5">
+                                                                <h5 class="mb-0">Ceramic Coating Stages</h5>
+                                                            </td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="ceramic_coating_stages"
+                                                                        name="ceramic_coating_stages"
+                                                                        {{ @$order->ceramic_coating_stages ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="ceramic_coating_stages_status"
+                                                                    id="ceramic_coating_stages_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->ceramic_coating_stages_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->ceramic_coating_stages_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-ccs" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Ceramic
+                                                                    Coating Prep</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="cc_ceramic_coating_rep"
+                                                                        name="cc_ceramic_coating_rep"
+                                                                        {{ @$order->cc_ceramic_coating_rep ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="cc_ceramic_coating_rep_status"
+                                                                    id="cc_ceramic_coating_rep_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->cc_ceramic_coating_rep_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->cc_ceramic_coating_rep_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-ccs" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Paint
+                                                                    Correction</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="cc_paint_correction"
+                                                                        name="cc_paint_correction"
+                                                                        {{ @$order->cc_paint_correction ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="cc_paint_correction_status"
+                                                                    id="cc_paint_correction_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->cc_paint_correction_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->cc_paint_correction_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-ccs" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Ceramic
+                                                                    Coating Application</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="cc_ceramic_coating_application"
+                                                                        name="cc_ceramic_coating_application"
+                                                                        {{ @$order->cc_ceramic_coating_application ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="cc_ceramic_coating_application_status"
+                                                                    id="cc_ceramic_coating_application_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->cc_ceramic_coating_application_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->cc_ceramic_coating_application_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-ccs" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Curing
+                                                                    Phase</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="cc_curing_phase" name="cc_curing_phase"
+                                                                        {{ @$order->cc_curing_phase ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select" name="cc_curing_phase_status"
+                                                                    id="cc_curing_phase_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->cc_curing_phase_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->cc_curing_phase_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- <div class="">
+                                                                                <label for="price" class="mb-0">Price :</label>
+                                                                                <div class="">
+                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                </div>
+                                                                            </div> -->
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="col-lg-6 col-12 invoice-actions">
+                                        <h6 class="pb-2">Window Tint Stages</h6>
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="col-4 col-lg-5">
+                                                                <h5 class="mb-0">Window Tint Stages</h5>
+                                                            </td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="window_tint_stages" name="window_tint_stages"
+                                                                        {{ @$order->window_tint_stages ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="window_tint_stages_status"
+                                                                    id="window_tint_stages_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->window_tint_stages_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->window_tint_stages_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-wts" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Window Tint
+                                                                    Measurement & Cut</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="window_tint_measurement_cut"
+                                                                        name="window_tint_measurement_cut"
+                                                                        {{ @$order->window_tint_measurement_cut ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="window_tint_measurement_cut_status"
+                                                                    id="window_tint_measurement_cut_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->window_tint_measurement_cut_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->window_tint_measurement_cut_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-wts" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Window Tint
+                                                                    Application</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="window_tint_application"
+                                                                        name="window_tint_application"
+                                                                        {{ @$order->window_tint_application ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="window_tint_application_status"
+                                                                    id="window_tint_application_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->window_tint_application_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->window_tint_application_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- <div class="">
+                                                                                <label for="price" class="mb-0">Price :</label>
+                                                                                <div class="">
+                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                </div>
+                                                                            </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-6 col-12 invoice-actions">
+                                        <h6 class="pb-2">Final Stages (applicable to all services)</h6>
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <table class="table">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td class="col-4 col-lg-5">
+                                                                <h5 class="mb-0">Final Stages (applicable to all
+                                                                    services)</h5>
+                                                            </td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="final_stages" name="final_stages"
+                                                                        {{ @$order->final_stages ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select" name="final_stages_status"
+                                                                    id="final_stages_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->final_stages_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->final_stages_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-fs" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Final
+                                                                    Inspection</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="final_inspection" name="final_inspection"
+                                                                        {{ @$order->final_inspection ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select" name="final_inspection_status"
+                                                                    id="final_inspection_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->final_inspection_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->final_inspection_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                        <tr class="additional-row-fs" style="display: none;">
+                                                            <td class="col-4 col-lg-5"><label
+                                                                    class="mb-0">Completion/Pickup</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="completion_pickup" name="completion_pickup"
+                                                                        {{ @$order->completion_pickup ? 'checked' : '' }}>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <select class="form-select"
+                                                                    name="completion_pickup_status"
+                                                                    id="completion_pickup_status">
+                                                                    <option value="Pending"
+                                                                        {{ $order->completion_pickup_status == 'Pending' ? 'selected' : '' }}>
+                                                                        Pending</option>
+                                                                    <option value="Completed"
+                                                                        {{ $order->completion_pickup_status == 'Completed' ? 'selected' : '' }}>
+                                                                        Complete</option>
+                                                                </select>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <!-- <div class="">
+                                                                                <label for="price" class="mb-0">Price :</label>
+                                                                                <div class="">
+                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                </div>
+                                                                            </div> -->
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                                 <!-- Check Box End -->
                                 <!-- Form End -->
@@ -499,6 +939,9 @@
 
                                                         <input hidden="" name="signature" value=""
                                                             id="signature_value" />
+                                                        <input hidden="" name="is_drawn" value="false"
+                                                            id="is_drawn" />
+
                                                         @if (!empty($order->customer_signature))
                                                             <img src="{{ @$order->customer_signature }}"
                                                                 id="old_signature" alt="Old Signature" width="40%"
@@ -621,6 +1064,41 @@
             $('#email').trigger('change');
         });
 
+        function toggleAdditionalRows(elementId, className) {
+            var additionalRows = document.getElementsByClassName(className);
+            for (var i = 0; i < additionalRows.length; i++) {
+                additionalRows[i].style.display = elementId.checked ? 'table-row' : 'none';
+            }
+        }
+
+        document.getElementById('general_stages').addEventListener('change', function() {
+            toggleAdditionalRows(this, 'additional-row-gs');
+        });
+
+        document.getElementById('paint_protection_film_stages').addEventListener('change', function() {
+            toggleAdditionalRows(this, 'additional-row-ppf');
+        });
+
+        document.getElementById('ceramic_coating_stages').addEventListener('change', function() {
+            toggleAdditionalRows(this, 'additional-row-ccs');
+        });
+
+        document.getElementById('window_tint_stages').addEventListener('change', function() {
+            toggleAdditionalRows(this, 'additional-row-wts');
+        });
+
+        document.getElementById('final_stages').addEventListener('change', function() {
+            toggleAdditionalRows(this, 'additional-row-fs');
+        });
+
+        // Initial check and display
+        toggleAdditionalRows(document.getElementById('general_stages'), 'additional-row-gs');
+        toggleAdditionalRows(document.getElementById('paint_protection_film_stages'), 'additional-row-ppf');
+        toggleAdditionalRows(document.getElementById('ceramic_coating_stages'), 'additional-row-ccs');
+        toggleAdditionalRows(document.getElementById('window_tint_stages'), 'additional-row-wts');
+        toggleAdditionalRows(document.getElementById('final_stages'), 'additional-row-fs');
+
+
         var clearBtn = "#clear";
         var saveBtn = "#save";
         var canvasArea = "#signature-pad";
@@ -704,6 +1182,7 @@
 
             // Clear canvas function and event handler
             function clearCanvas() {
+                document.getElementById("is_drawn").value = false;
                 context.clearRect(0, 0, canvas.width, canvas.height);
             }
 
@@ -730,6 +1209,7 @@
         }
 
         function draw(canvas, context, startPos, endPos) {
+            document.getElementById("is_drawn").value = true;
             context.beginPath();
             context.moveTo(startPos.x, startPos.y);
             context.lineTo(endPos.x, endPos.y);
