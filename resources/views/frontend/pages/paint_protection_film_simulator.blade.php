@@ -498,25 +498,20 @@
             <!-- Portfolio -->
 
 
-            @php
-
-                $cermaic_coating_images = [asset('images/ppf/AdobeStock_565702687.jpeg'), asset('images/ppf/AdobeStock_620866541.jpeg'), asset('images/ppf/AdobeStock_662153010.jpeg'), asset('images/ppf/AdobeStock_680417592.jpeg')];
-
-            @endphp
 
             <section class="section-area">
                 <div class="portfolio-carousel owl-none owl-carousel magnific-image">
-                    @foreach ($cermaic_coating_images as $image)
+                    @foreach (get_ppf_media() as $image)
                         <div class="item">
                             <div class="portfolio-box style-1">
                                 <div class="media">
                                     <img style="height: 300px; object-fit: cover;" lazyloading="true"
-                                        src="{{ $image }}" alt="">
+                                        src="{{ Storage::url($image->path) }}" alt="">
                                     <div class="portfolio-overlay">
                                         <ul>
                                             {{-- <li><a href="#" class="ttr-icon"><i class="la la-link"></i></a> --}}
                                             </li>
-                                            <li><a href="{{ $image }}" class="magnific-anchor ttr-icon"><i
+                                            <li><a href="{{ Storage::url($image->path) }}" class="magnific-anchor ttr-icon"><i
                                                         class="la la-plus"></i></a></li>
                                         </ul>
                                     </div>

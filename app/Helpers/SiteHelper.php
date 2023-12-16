@@ -3,6 +3,7 @@
 namespace App\Helpers;
 
 use App\Models\blog;
+use App\Models\Media;
 
 class SiteHelper
 {
@@ -18,7 +19,24 @@ class SiteHelper
         $Settings['PageTitle'] = 'The Armour Lab - Data Analytics';
         return $Settings;
     }
-    public static function get_blogs(){
+    public static function get_blogs()
+    {
         return blog::latest("created_at")->get();
+    }
+    public static function get_media()
+    {
+        return Media::latest("created_at");
+    }
+    public static function  get_ppf_media()
+    {
+        return Media::where("category", "ppf")->latest("created_at")->get();
+    }
+    public static function  get_cc_media()
+    {
+        return Media::where("category", "cc")->latest("created_at")->get();
+    }
+    public static function  get_wt_media()
+    {
+        return Media::where("category", "wt")->latest("created_at")->get();
     }
 }

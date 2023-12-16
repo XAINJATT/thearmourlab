@@ -162,6 +162,12 @@
             <div>Contact Us</div>
           </a>
         </li>
+        <li class="menu-item {{ request()->is('admin/media') ? 'active' : '' }}">
+          <a href="{{ route('admin.media') }}" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-food-menu"></i>
+            <div>Media</div>
+          </a>
+        </li>
       @else
         <!-- Dashboard -->
         <li class="menu-item {{ request()->is('dashboard*') ? 'active' : '' }}">

@@ -101,7 +101,7 @@
                     <td>{{ $warranty->email }}</td>
                     <td>{{ $warranty->tel }}</td>
                     <td>
-                      <a href="{{ route('user.warranty.view', $warranty->id) }}" class="text-primary fs-6 mr-1" data-toggle="tooltip" title="View">
+                      <a href="{{ route('user.warranty.view', $warranty->id) }}" class="btn btn-dark fs-6 mr-1" data-toggle="tooltip" title="View">
                           <i class="fas fa-eye"></i>
                       </a>
                     </td>

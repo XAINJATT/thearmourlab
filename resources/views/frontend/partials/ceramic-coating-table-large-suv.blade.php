@@ -85,7 +85,7 @@
         <td> ✔<br /></td>
         <td> ✖<br /></td>
         <td> ✖<br /></td>
-        <td> ✔<br /></td>
+        <td> ✖<br /></td>
     </tr>
     <tr>
         <td>Paint Correction (PER STAGE)</td>

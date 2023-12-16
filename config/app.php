@@ -187,4 +187,10 @@ return [
         'Cart' => Darryldecode\Cart\Facades\CartFacade::class,
     ])->toArray(),
 
+    'services' => [
+        'cc' => 'Ceramic Coating',
+        'ppf' => 'Paint Protection Film',
+        'wt' => 'Window Tints',
+    ],
+
 ];

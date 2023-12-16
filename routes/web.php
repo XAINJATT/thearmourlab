@@ -22,6 +22,7 @@ use App\Http\Controllers\frontend\HomeController;
 use App\Http\Controllers\frontend\PaintProtectionFilmController;
 use App\Http\Controllers\frontend\ShopController;
 use App\Http\Controllers\frontend\WrapsController;
+use App\Http\Controllers\MediaController;
 use App\Http\Controllers\OrderController;
 use App\Http\Controllers\StripePaymentController;
 use App\Http\Controllers\User\DashboardController as UserDashboardController;
@@ -63,6 +64,7 @@ Route::get('/faq', [CeramicCoatingController::class, 'faq'])->name('frontend.faq
 Route::get('/financing', [CeramicCoatingController::class, 'financing'])->name('frontend.financing');
 Route::get('live-status', [UserInvoiceController::class, 'orderStatusShow'])->name('frontend.live');
 Route::get('about-us', [CeramicCoatingController::class, 'about'])->name('frontend.about');
+Route::get('/load-more-gallery', [MediaController::class, 'loadMoreGallery']);
 // Route::get('invoice/order-status/{id}', [UserInvoiceController::class, 'orderStatusShow'])->name('user.invoice.orderStatusShow');
 // BlogController
 Route::get('/blog', [BlogController::class, 'index'])->name('frontend.blog');
@@ -163,11 +165,19 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/contact', [ContactUsController::class, 'index'])->name('admin.contact');
     Route::post('admin/contact/delete/{id}', [ContactUsController::class, 'delete'])->name('admin.contact.delete');
 
+    // MediaController
+    Route::get('admin/media', [MediaController::class, 'index'])->name('admin.media');
+    Route::get('admin/media/create', [MediaController::class, 'create'])->name('admin.media.create');
+    Route::post('admin/media/store', [MediaController::class, 'store'])->name('admin.media.store');
+    Route::post('admin/media/delete/{id}', [MediaController::class, 'destroy'])->name('admin.media.delete');
+    Route::post('admin/media/status/{id}', [MediaController::class, 'status'])->name('admin.media.status');
+
+    
     // ShopOrdersController
     Route::get('admin/shop/order', [ShopOrdersController::class, 'index'])->name('admin.shopOrder');
     Route::get('admin/shop/order/view/{id}', [ShopOrdersController::class, 'show'])->name('admin.shopOrder.view');
     Route::post('admin/shop/order/delete/{id}', [ShopOrdersController::class, 'delete'])->name('admin.shopOrder.delete');
-    
+
     // AdminWorkOrderStatusController
     Route::get('admin/WorkOrderStatus', [AdminWorkOrderStatusController::class, 'index'])->name('admin.WorkOrderStatus');
     Route::get('admin/WorkOrderStatus/create', [AdminWorkOrderStatusController::class, 'create'])->name('admin.WorkOrderStatus.create');
@@ -176,7 +186,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/WorkOrderStatus/update', [AdminWorkOrderStatusController::class, 'update'])->name('admin.WorkOrderStatus.update');
     Route::post('admin/WorkOrderStatus/delete/{id}', [AdminWorkOrderStatusController::class, 'delete'])->name('admin.WorkOrderStatus.delete');
     Route::post('admin/WorkOrderStatus/statusUpdate/{id}', [AdminWorkOrderStatusController::class, 'statusUpdate'])->name('admin.WorkOrderStatus.statusUpdate');
-    
+
     /* ADMIN ROUTE - END */
 
 

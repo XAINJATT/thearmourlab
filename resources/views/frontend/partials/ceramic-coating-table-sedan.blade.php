@@ -74,7 +74,7 @@
         <td>✔</td>
         <!-- <td>✖</td> -->
         <td>✖</td>
-        <td>✔</td>
+        <td>✖</td>
     </tr>
     <tr>
         <td>Paint Correction (PER STAGE)</td>

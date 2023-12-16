@@ -85,7 +85,7 @@
                                 <div class="col-md-4 mb-md-0 mb-4">
                                     <div class="d-flex svg-illustration mb-4 gap-2">
                                         <span class="app-brand-logo demo">
-                                            <img src="{{ asset('logo/logo.webp') }}">
+                                            <img src="{{ asset('logo.webp') }}">
                                         </span>
                                     </div>
                                 </div>
@@ -134,7 +134,7 @@
                                                 Id</button>
                                         </div>
                                     </div>
-                                    {{-- <input type="hidden" class="form-control" id="id" name="id" /> --}}
+                                    <input type="hidden" class="form-control" id="id" name="id" />
                                     <input type="hidden" class="form-control" id="id" value="{{ $id }}"
                                         name="work_order_id" />
                                     <div class="col-md-4 col-12">
@@ -315,11 +315,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                                <label for="price" class="mb-0">Price :</label>
-                                                                                <div class="">
-                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
-                                                                                </div>
-                                                                            </div> -->
+                                                                                    <label for="price" class="mb-0">Price :</label>
+                                                                                    <div class="">
+                                                                                        <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                    </div>
+                                                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -453,11 +453,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                                <label for="price" class="mb-0">Price :</label>
-                                                                                <div class="">
-                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
-                                                                                </div>
-                                                                            </div> -->
+                                                                                    <label for="price" class="mb-0">Price :</label>
+                                                                                    <div class="">
+                                                                                        <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                    </div>
+                                                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -595,11 +595,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                                <label for="price" class="mb-0">Price :</label>
-                                                                                <div class="">
-                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
-                                                                                </div>
-                                                                            </div> -->
+                                                                                    <label for="price" class="mb-0">Price :</label>
+                                                                                    <div class="">
+                                                                                        <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                    </div>
+                                                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -688,11 +688,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                                <label for="price" class="mb-0">Price :</label>
-                                                                                <div class="">
-                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
-                                                                                </div>
-                                                                            </div> -->
+                                                                                    <label for="price" class="mb-0">Price :</label>
+                                                                                    <div class="">
+                                                                                        <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                    </div>
+                                                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -778,11 +778,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                                <label for="price" class="mb-0">Price :</label>
-                                                                                <div class="">
-                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
-                                                                                </div>
-                                                                            </div> -->
+                                                                                    <label for="price" class="mb-0">Price :</label>
+                                                                                    <div class="">
+                                                                                        <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                    </div>
+                                                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -1046,8 +1046,8 @@
 @endsection
 
 @section('scripts')
-    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {{-- <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> --}}
 
     <script>
         $(document).ready(function() {
@@ -1146,6 +1146,11 @@
             });
 
             $(document).on("mouseup", canvasArea, function() {
+                var canvas = document.getElementById(canvasArea.replace("#", ""));
+                var signatureData = canvas.toDataURL();
+
+                // Set the signature value in a hidden input field
+                $("#signature_value").val(signatureData);
                 drawing = false;
             });
 
@@ -1165,20 +1170,25 @@
             });
 
             $(document).on("touchend", canvasArea, function() {
-                drawing = false;
-            });
-
-            // Save button event handler
-            $(saveBtn).click(function() {
                 var canvas = document.getElementById(canvasArea.replace("#", ""));
                 var signatureData = canvas.toDataURL();
 
                 // Set the signature value in a hidden input field
                 $("#signature_value").val(signatureData);
-
-                // Now submit the form
-                $("form").submit();
+                drawing = false;
             });
+
+            // Save button event handler
+            // $(saveBtn).click(function() {
+            //     var canvas = document.getElementById(canvasArea.replace("#", ""));
+            //     var signatureData = canvas.toDataURL();
+
+            //     // Set the signature value in a hidden input field
+            //     $("#signature_value").val(signatureData);
+
+            //     // Now submit the form
+            //     $("form").submit();
+            // });
 
             // Clear canvas function and event handler
             function clearCanvas() {
@@ -1272,7 +1282,8 @@
                 $input.focus();
             });
 
-            $("#submit-image").click(function() {
+            $("#submit-image").click(function(e) {
+                e.preventDefault();
                 // Convert the canvas to a data URL
                 var dataURL = canvas.toDataURL("image/png");
                 $('#image-preview').attr('src', dataURL);

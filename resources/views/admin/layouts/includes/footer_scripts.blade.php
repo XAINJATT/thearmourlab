@@ -25,11 +25,7 @@
 
 
     $(document).ready(function() {
-        setTimeout(() => {
-            $("#email").select2();
-
-        }, 3000);
-        // $("#data_table").DataTable()
+        $("#email").select2();
     });
 
     var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -122,3 +118,5 @@
 
 <!-- DataTables JS -->
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+
+@yield('script')

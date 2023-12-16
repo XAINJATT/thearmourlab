@@ -82,7 +82,8 @@
                         <div class="card">
                             <div class="card-header row">
                                 <h6 class="text-uppercase mb-0 col-9">HERE ARE ALL WORK ORDER </h6>
-                                <a style="min-width:250px" href="{{ route('admin.invoice.create') }}" class="btn btn-primary col-3 float-right">Add
+                                <a style="min-width:250px" href="{{ route('admin.invoice.create') }}"
+                                    class="btn btn-primary col-3 float-right">Add
                                     New Work Order</a>
                             </div>
                             <div class="card-body" style="overflow: scroll">
@@ -107,14 +108,24 @@
                                                 <td>{{ $order->phone }}</td>
                                                 <td>
                                                     <!-- <a href="{{ route('admin.invoice.view', $order->id) }}" class="text-primary fs-6 mr-1" data-toggle="tooltip" title="View">
-                              <i class="fas fa-eye"></i>
-                          </a> -->
-                                                    <a href="{{ route('admin.invoice.edit', $order->id) }}"
-                                                        class="text-primary fs-6 mr-1" data-toggle="tooltip" title="Edit">
-                                                        <i class="fas fa-edit"></i>
-                                                    </a>
-                                                    <a onclick="DeleteOrder({{ $order->id }})" class="cursor-pointer"><i
-                                                            class="fa fa-trash" aria-hidden="true"></i></a>
+                                  <i class="fas fa-eye"></i>
+                              </a> -->
+                                                    <div class="btn-group">
+                                                        <a href="{{ route('admin.invoice.edit', $order->id) }}"
+                                                            class="fs-6 mr-1 btn btn-warning" data-toggle="tooltip"
+                                                            title="Edit">
+                                                            <i class="fas fa-edit"></i>
+                                                        </a>
+                                                        <a href="{{ route('admin.invoice.view', $order->id) }}"
+                                                            class="fs-6 mr-1 btn btn-dark" data-toggle="tooltip"
+                                                            title="View">
+                                                            <i class="fas fa-eye"></i>
+                                                        </a>
+                                                        <a data-toggle="tooltip"
+                                                        title="Delete" onclick="DeleteOrder({{ $order->id }})"
+                                                            class="cursor-pointer text-white btn btn-danger"><i class="fa fa-trash"
+                                                                aria-hidden="true"></i></a>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -146,7 +157,7 @@
                     $.ajax({
                         type: "POST",
                         url: "{{ url('admin/invoice/delete') }}" + '/' +
-                        userId, // Pass the product parameter
+                            userId, // Pass the product parameter
                         data: {
                             _token: "{{ csrf_token() }}"
                         },

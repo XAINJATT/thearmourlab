@@ -4,7 +4,7 @@
         <div class="heading-bx text-white d-lg-flex d-md-block align-items-end justify-content-between">
             <div class="clearfix">
                 <h6 class="title-ext">OUR SERVICES</h6>
-                <h2 class="title mb-0">WE PROVIDE BEST SERVICES</h2>
+                {{-- <h2 class="title mb-0">WE PROVIDE BEST SERVICES</h2> --}}
             </div>
             {{-- <div class="clearfix mt-md-20">
                         <a href="#" class="btn btn-outline-light">View All Service</a>

@@ -49,12 +49,12 @@ class InvoiceController extends Controller
             'v_i_n' => 'required|string|max:255',
             'plate' => 'required|string|max:255',
         ]);
-    
+
         if ($validator->fails()) {
             // Handle your validation failure
             return redirect()->back()->withErrors($validator)->withInput();
         }
-    
+
 
         /* - upload a document ( drivers license) */
         $FileImage = "";
@@ -179,6 +179,7 @@ class InvoiceController extends Controller
     public function show($id)
     {
         $order = WorkOrder::with('user')->where('id', $id)->first();
+        $users = User::where('role', 1)->where('status', 1)->get();
         return view('admin.invoice.view', compact('order', 'users'));
     }
 
@@ -197,7 +198,6 @@ class InvoiceController extends Controller
      */
     public function update(Request $request)
     {
-        // dd($request->all());
         if (empty($request->work_order_id)) {
             return redirect()->back()->with('error-message', 'Invalid request');
         }
@@ -237,13 +237,15 @@ class InvoiceController extends Controller
                     unlink($Path);
                 }
             }
-            $image_parts = explode(";base64,", $request->signature);
-            $image_type_aux = explode("image/", $image_parts[0]);
-            $image_type = $image_type_aux[1];
-            $image_base64 = base64_decode($image_parts[1]);
-            $signatureFileName = 'signature-' . Carbon::now()->format('Ymd-His') . '.' . $image_type;
-            $signatureFilePath = 'public/signatures/' . $signatureFileName;
-            Storage::put($signatureFilePath, $image_base64);
+            if ($request->is_drawn) {
+                $image_parts = explode(";base64,", $request->signature);
+                $image_type_aux = explode("image/", $image_parts[0]);
+                $image_type = $image_type_aux[1];
+                $image_base64 = base64_decode($image_parts[1]);
+                $signatureFileName = 'signature-' . Carbon::now()->format('Ymd-His') . '.' . $image_type;
+                $signatureFilePath = 'public/signatures/' . $signatureFileName;
+                Storage::put($signatureFilePath, $image_base64);
+            }
         } else {
             $temp = explode("/", $request['old_signature']);
             $fileName = end($temp);
