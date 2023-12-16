@@ -57,7 +57,7 @@
                                                         </video>
                                                     @endif
                                                 </td>
-                                                <td>{{ config('app.services')[$value->category] }}</td>
+                                                <td>{{ config('app.services')[$value->category] ?? "No Category" }}</td>
                                                 <td>{{ $value->is_gallery }}</td>
                                                 <td>
                                                     @if ($value->status == 1)

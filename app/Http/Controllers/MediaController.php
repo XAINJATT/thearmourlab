@@ -49,7 +49,7 @@ class MediaController extends Controller
             $media->status = 1;
             $media->type = $file->getClientMimeType();
             $media->is_gallery = $isGallery;
-            $media->category = $category;
+            $media->category = $category ?? NULL;
             $media->save();
 
             return response()->json(['success' => 'Media uploaded successfully.']);
