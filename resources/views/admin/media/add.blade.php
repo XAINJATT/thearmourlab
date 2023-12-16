@@ -52,25 +52,28 @@
                                             onclick="window.location.replace('{{ route('admin.media') }}');">Back
                                         </button>
                                     </div>
-                                    
+
                                 </div>
                                 <hr>
                                 <div class="card-body pb-2">
                                     <div class="row gap-3">
 
                                         <div class="col-12 col-md-12 mt-2">
-                                            <input name="files[]" class="form-control" type="file" id="file-upload" multiple>
-                                            <div class="row" id="preview-container"></div>
+                                            <input name="files[]" class="form-control" type="file" id="file-upload"
+                                                multiple>
+                                                <div class="row" id="preview-container"></div>
+                                                <div id="upload-status"></div>
                                         </div>
 
                                         <div class="col-md-6">
                                             <div class="form-group d-flex">
-                                                <input value="true" type="checkbox" name="is_gallery" class="form-check" id="is_gallery">
-                                            <label for="is_gallery">Show in Gallery?</label>
+                                                <input value="true" type="checkbox" name="is_gallery" class="form-check"
+                                                    id="is_gallery">
+                                                <label for="is_gallery">Show in Gallery?</label>
                                             </div>
                                         </div>
                                         <?php
-                                        $services = config("app.services")
+                                        $services = config('app.services');
                                         ?>
                                         <div class="col-md-6">
                                             <label for="category">Category</label>
@@ -110,6 +113,65 @@
 
 @section('script')
     <script>
+        $(document).ready(function() {
+            $('.submitBtn').on('click', function(e) {
+                e.preventDefault();
+                var files = $('#file-upload')[0].files;
+                var isGallery = $('#is_gallery').is(':checked');
+                var category = $('#category').val();
+
+                // Disable the submit button
+                $('.submitBtn').prop('disabled', true);
+
+                uploadFiles(files, 0, isGallery, category); // Start uploading files one by one
+            });
+
+            function uploadFiles(files, index, isGallery, category) {
+                if (index < files.length) {
+                    var file = files[index];
+                    var formData = new FormData();
+                    formData.append('file', file);
+                    formData.append('is_gallery', isGallery);
+                    formData.append('category', category);
+                    formData.append('_token', '{{ csrf_token() }}'); // Add CSRF token
+
+                    // Update upload status
+                    $('#upload-status').append('<div id="status-' + index + '">Uploading ' + file.name +
+                        '...</div>');
+
+                    $.ajax({
+                        url: '{{ route('admin.media.store') }}',
+                        type: 'POST',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function(response) {
+                            // Update status to complete
+                            $('#status-' + index).text(file.name + ' uploaded successfully.');
+
+                            // Upload next file
+                            uploadFiles(files, index + 1, isGallery, category);
+                        },
+                        error: function(xhr, status, error) {
+                            // Update status to error
+                            $('#status-' + index).text('Error uploading ' + file.name);
+                        },
+                        complete: function() {
+                            // Re-enable the submit button after the last file is processed
+                            if (index === files.length - 1) {
+                                $('.submitBtn').prop('disabled', false);
+                            }
+                        }
+                    });
+                } else {
+                    // All files are processed
+                    $('#upload-status').append('<div>All files processed.</div>');
+                }
+            }
+        });
+
+
+
         $(document).ready(function() {
             $('#file-upload').on('change', function() {
                 var files = $(this)[0].files;

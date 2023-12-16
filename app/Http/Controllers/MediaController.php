@@ -13,7 +13,7 @@ class MediaController extends Controller
      */
     public function index()
     {
-        $medias = Media::all();
+        $medias = Media::latest("created_at")->get();
         return view("admin.media.index", compact("medias"));
     }
 
@@ -30,36 +30,34 @@ class MediaController extends Controller
      */
     public function store(Request $request)
     {
-
         try {
             // Validate the request...
             $request->validate([
-                'files' => 'required',
-                'files.*' => 'mimes:jpg,jpeg,png,bmp,gif,svg,mp4,mov,ogg,qt|max:20000', // adjust validation as needed
+                'file' => 'required|mimes:jpg,jpeg,png,bmp,gif,svg,mp4,mov,ogg,qt|max:20000', // Single file
                 'category' => 'string'
             ]);
 
-            $mediaFiles = $request->file('files');
+            $file = $request->file('file');
             $isGallery = $request->input('is_gallery');
             $category = $request->input('category');
 
-            foreach ($mediaFiles as $file) {
-                $path = $file->store('public/media'); // Stores in Storage/app/public/media
+            $path = $file->store('public/media'); // Stores in Storage/app/public/media
 
-                // Create a new media instance and save it to the database
-                $media = new Media();
-                $media->path = $path;
-                $media->status = 1;
-                $media->type = $file->getClientMimeType(); // or use custom logic to determine type
-                $media->is_gallery = $isGallery;
-                $media->category = $category;
-                $media->save();
-            }
-            return back()->with('success', 'Media uploaded successfully.');
+            // Create a new media instance and save it to the database
+            $media = new Media();
+            $media->path = $path;
+            $media->status = 1;
+            $media->type = $file->getClientMimeType();
+            $media->is_gallery = $isGallery;
+            $media->category = $category;
+            $media->save();
+
+            return response()->json(['success' => 'Media uploaded successfully.']);
         } catch (Exception $e) {
-            return back()->with('error', 'Error: ' . $e->getMessage());
+            return response()->json(['error' => 'Error: ' . $e->getMessage()], 500);
         }
     }
+
 
     public function loadMoreGallery(Request $request)
     {

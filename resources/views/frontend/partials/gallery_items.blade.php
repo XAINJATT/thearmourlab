@@ -6,7 +6,8 @@
                 <img style="height: 300px; object-fit: cover;" src="{{ Storage::url($image->path) }}" alt="">
             </div>
             <div class="portfolio-info">
-                <h4 class="title"><a href="{{ 'Asfd' }}">{{ config('app.services')[$image->category] }}</a>
+                <h4 class="title"><a
+                        href="{{ route(config('app.services_url')[$image->category]) }}">{{ config('app.services')[$image->category] }}</a>
                 </h4>
                 <span class="exe-title">SERVICES</span>
             </div>

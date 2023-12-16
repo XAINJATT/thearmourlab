@@ -193,4 +193,10 @@ return [
         'wt' => 'Window Tints',
     ],
 
+    'services_url' => [
+        'cc' => 'frontend.CeramicCoating',
+        'ppf' => 'frontend.PaintProtectionFilmSimulator',
+        'wt' => 'frontend.WindowTintSimulator',
+    ]
+
 ];
