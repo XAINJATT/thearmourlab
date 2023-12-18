@@ -52,26 +52,26 @@
         }
     }
 
-    function CheckForAdvanceDuplicateEmail(id, value) {
-        $.ajax({
-            type: "post",
-            url: "{{ route('admin.user.CheckForDuplicateEmail') }}",
-            data: {
-                Id: id,
-                Value: value
-            },
-            success: function(data) {
-                if (data === 'Failed') {
-                    $("#duplicateEmailError").removeClass('d-none');
-                    $("#email").focus();
-                    $(".submitBtn").prop('disabled', true);
-                } else {
-                    $("#duplicateEmailError").addClass('d-none');
-                    $(".submitBtn").prop('disabled', false);
-                }
-            }
-        });
-    }
+    // function CheckForAdvanceDuplicateEmail(id, value) {
+    //     $.ajax({
+    //         type: "post",
+    //         url: "{{ route('admin.user.CheckForDuplicateEmail') }}",
+    //         data: {
+    //             Id: id,
+    //             Value: value
+    //         },
+    //         success: function(data) {
+    //             if (data === 'Failed') {
+    //                 $("#duplicateEmailError").removeClass('d-none');
+    //                 $("#email").focus();
+    //                 $(".submitBtn").prop('disabled', true);
+    //             } else {
+    //                 $("#duplicateEmailError").addClass('d-none');
+    //                 $(".submitBtn").prop('disabled', false);
+    //             }
+    //         }
+    //     });
+    // }
 </script>
 
 @yield('scripts')

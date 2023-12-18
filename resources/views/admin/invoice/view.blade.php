@@ -140,163 +140,6 @@
                                 </div>
                                 <hr class="mx-n4" />
                                 <!-- Check Box Start -->
-                                <!-- <div class="row p-sm-3 p-0">
-                                    <div class="col-lg-4 col-12 invoice-actions">
-                                        <h6 class="pb-2">Ceramic Coating</h6>
-                                        <div class="card mb-4">
-                                            <div class="card-body">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="kenzo_coating" class="mb-0">Kenzo Coating</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="kenzo_coating"
-                                                            name="ceramic_coating_kenzo_coating" value="1"
-                                                            {{ @$order->ceramic_coating_kenzo_coating ? 'checked' : '' }} disabled
-                                                            disabled>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="quartz_plus_coating" class="mb-0">Quartz Plus
-                                                        Coating</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input"
-                                                            id="quartz_plus_coating"
-                                                            name="ceramic_coating_quartz_plus_coating" value="1"
-                                                            {{ @$order->ceramic_coating_quartz_plus_coating ? 'checked' : '' }} disabled
-                                                            disabled>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="quartz_coating" class="mb-0">Quartz Coating</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="quartz_coating"
-                                                            name="ceramic_coating_quartz_coating" value="1"
-                                                            {{ @$order->ceramic_coating_quartz_coating ? 'checked' : '' }}
-                                                            disabled>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="premier_coating" class="mb-0">Premier Coating</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="premier_coating"
-                                                            name="ceramic_coating_premier_coating" value="1"
-                                                            {{ @$order->ceramic_coating_premier_coating ? 'checked' : '' }}
-                                                            disabled>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="interior_pkg" class="mb-0">Interior PKG</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="interior_pkg"
-                                                            name="ceramic_coating_interior_pkg" value="1"
-                                                            {{ @$order->ceramic_coating_interior_pkg ? 'checked' : '' }}
-                                                            disabled>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between">
-                                                    <label for="wheels_of_pkg" class="mb-0">Wheels of PKG</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="wheels_of_pkg"
-                                                            name="ceramic_coating_wheels_of_pkg" value="1"
-                                                            {{ @$order->ceramic_coating_wheels_of_pkg ? 'checked' : '' }}
-                                                            disabled>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <label for="price" class="mb-0">Price :</label>
-                                            <div class="">
-                                                <input type="number" class="form-control" name="ceramic_coating_price"
-                                                    value="{{ @$order->ceramic_coating_price }}" disabled>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-12 invoice-actions">
-                                        <h6 class="pb-2">PPF</h6>
-                                        <div class="card mb-4">
-                                            <div class="card-body">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="full_car" class="mb-0">Full Car</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="full_car"
-                                                            name="ppf_full_car" value="1"
-                                                            {{ @$order->ppf_full_car ? 'checked' : '' }} disabled>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="client-notes" class="mb-0">Client Notes</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="client-notes"
-                                                            name="ppf_client_notes" value="1"
-                                                            {{ @$order->ppf_client_notes ? 'checked' : '' }} disabled>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="payment-stub" class="mb-0">Payment Stub</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="payment-stub"
-                                                            name="ppf_payment_stub" value="1"
-                                                            {{ @$order->ppf_payment_stub ? 'checked' : '' }} disabled>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="payment-terms" class="mb-0">Payment Terms</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="payment-terms"
-                                                            name="ppf_payment_terms" value="1"
-                                                            {{ @$order->ppf_payment_terms ? 'checked' : '' }} disabled>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <label for="price" class="mb-0">Price :</label>
-                                            <div class="">
-                                                <input type="number" class="form-control" name="ppf_price"
-                                                    value="{{ @$order->ppf_price }}" disabled>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-12 invoice-actions">
-                                        <h6 class="pb-2">Ceramic Coating</h6>
-                                        <div class="card mb-4">
-                                            <div class="card-body">
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="payment-terms" class="mb-0">Payment Terms</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input"
-                                                            name="cc_payment_terms"
-                                                            {{ @$order->cc_payment_terms ? 'checked' : '' }} disabled>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between mb-2">
-                                                    <label for="client-notes" class="mb-0">Client Notes</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input"
-                                                            name="cc_client_notes"
-                                                            {{ @$order->cc_client_notes ? 'checked' : '' }} disabled>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex justify-content-between">
-                                                    <label for="payment-stub" class="mb-0">Payment Stub</label>
-                                                    <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input"
-                                                            name="cc_payment_stub"
-                                                            {{ @$order->cc_payment_stub ? 'checked' : '' }} disabled>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="">
-                                            <label for="price" class="mb-0">Price :</label>
-                                            <div class="">
-                                                <input type="number" class="form-control" name="cc_price"
-                                                    value="{{ @$order->cc_price }}" disabled>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> -->
-
                                 <div class="row p-sm-3 p-0">
                                     <div class="col-lg-6 col-12 invoice-actions">
                                         <h6 class="pb-2">General Stages (applicable to all services)</h6>
@@ -644,7 +487,282 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
+                                <hr class="mx-n4" />
+                                <div class="row p-sm-3 p-0">
+                                    <div class="col-lg-4 col-12 invoice-actions">
+                                        <h6 class="pb-2">Ceramic Coating</h6>
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="kenzo_coating" class="mb-0">Kenzo Coating</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="kenzo_coating"
+                                                            name="ceramic_coating_kenzo_coating"
+                                                            {{ @$order->ceramic_coating_kenzo_coating ? 'checked' : '' }}
+                                                            disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="quartz_plus_coating" class="mb-0">Quartz Plus
+                                                        Coating</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input"
+                                                            id="quartz_plus_coating"
+                                                            name="ceramic_coating_quartz_plus_coating"
+                                                            {{ @$order->ceramic_coating_quartz_plus_coating ? 'checked' : '' }}
+                                                             disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="quartz_coating" class="mb-0">Quartz Coating</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="quartz_coating"
+                                                            name="ceramic_coating_quartz_coating"
+                                                            {{ @$order->ceramic_coating_quartz_coating ? 'checked' : '' }}
+                                                             disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="premier_coating" class="mb-0">Premier Coating</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="premier_coating"
+                                                            name="ceramic_coating_premier_coating"
+                                                            {{ @$order->ceramic_coating_premier_coating ? 'checked' : '' }}
+                                                             disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="interior_pkg" class="mb-0">Interior PKG</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="interior_pkg"
+                                                            name="ceramic_coating_interior_pkg"
+                                                            {{ @$order->ceramic_coating_interior_pkg ? 'checked' : '' }}
+                                                             disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between">
+                                                    <label for="wheels_of_pkg" class="mb-0">Wheels of PKG</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="wheels_of_pkg"
+                                                            name="ceramic_coating_wheels_of_pkg"
+                                                            {{ @$order->ceramic_coating_wheels_of_pkg ? 'checked' : '' }}
+                                                            disabled>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <label for="price" class="mb-0">Price :</label>
+                                            <div class="">
+                                                <input type="number" class="form-control" name="ceramic_coating_price"
+                                                    value="{{ @$order->ceramic_coating_price }}" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12 invoice-actions">
+                                        <h6 class="pb-2">PPF</h6>
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="full_car" class="mb-0">Full Car</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="full_car" name="ppf_full_car" {{ @$order->ppf_full_car ? 'checked' : '' }}  disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="full_front_end" class="mb-0">Full Front End</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="full_front_end" name="ppf_full_front_end" {{ @$order->ppf_full_front_end ? 'checked' : '' }}  disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="partial_front_end" class="mb-0">Partial Front End</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="partial_front_end" name="ppf_partial_front_end" {{ @$order->ppf_partial_front_end ? 'checked' : '' }}  disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="partial_kit" class="mb-0">18" Partial Kit</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="partial_kit" name="ppf_partial_kit" {{ @$order->ppf_partial_kit ? 'checked' : '' }}  disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="rockers" class="mb-0">Rockers</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="rockers" name="ppf_rockers" {{ @$order->ppf_rockers ? 'checked' : '' }}  disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="headlights" class="mb-0">Headlights</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="headlights" name="ppf_headlights" {{ @$order->ppf_headlights ? 'checked' : '' }}  disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="luggage_strip" class="mb-0">Luggage Strip</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" id="luggage_strip" name="ppf_luggage_strip" {{ @$order->ppf_luggage_strip ? 'checked' : '' }}  disabled>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <label for="price" class="mb-0">Price :</label>
+                                            <div class="">
+                                                <input type="number" class="form-control" name="ppf_price" value="{{ @$order->ppf_price }}" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12 invoice-actions">
+                                        <h6 class="pb-2">Window Tinting</h6>
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="front_windows" class="mb-0">2 Front windows</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="wt_front_windows" {{ @$order->wt_front_windows ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="full_vehicle" class="mb-0">Full Vehicle</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="wt_full_vehicle" {{ @$order->wt_full_vehicle ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="windshield" class="mb-0">Windshield</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="wt_windshield" {{ @$order->wt_windshield ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="5" class="mb-0">5%</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="wt_5" {{ @$order->wt_5 ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="20" class="mb-0">20%</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="wt_20" {{ @$order->wt_20 ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="35" class="mb-0">35%</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="wt_35" {{ @$order->wt_35 ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="50" class="mb-0">50%</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="wt_50" {{ @$order->wt_50 ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="70" class="mb-0">70%</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="wt_70" {{ @$order->wt_70 ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <label for="price" class="mb-0">Price :</label>
+                                            <div class="">
+                                                <input type="number" class="form-control" name="wt_price" value="{{ @$order->wt_price }}" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12 invoice-actions">
+                                        <h6 class="pb-2">Paint Correction</h6>
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="one_stage" class="mb-0">One Stage</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="pc_one_stage" {{ @$order->pc_one_stage ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="two_stage" class="mb-0">Two Stage</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="pc_two_stage" {{ @$order->pc_two_stage ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="three_stage" class="mb-0">Three Stage</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="pc_three_stage" {{ @$order->pc_three_stage ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="wet_sand" class="mb-0">Wet Sand</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="pc_wet_sand" {{ @$order->pc_wet_sand ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <label for="price" class="mb-0">Price :</label>
+                                            <div class="">
+                                                <input type="number" class="form-control" name="pc_price" value="{{ @$order->pc_price }}" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-12 invoice-actions">
+                                        <h6 class="pb-2">Other Services</h6>
+                                        <div class="card mb-4">
+                                            <div class="card-body">
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="interior_detailing" class="mb-0">Interior Detailing</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="os_interior_detailing" {{ @$order->os_interior_detailing ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="car_wrap" class="mb-0">Car Wrap</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="os_car_wrap" {{ @$order->os_car_wrap ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="rim_powder_coating" class="mb-0">Rim Powder Coating</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="os_rim_powder_coating" {{ @$order->os_rim_powder_coating ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="rim_repair" class="mb-0">Rim Repair</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="os_rim_repair" {{ @$order->os_rim_repair ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="dent_repair" class="mb-0">Dent Repair</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="os_dent_repair" {{ @$order->os_dent_repair ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                                <div class="d-flex justify-content-between mb-2">
+                                                    <label for="caliper_painting" class="mb-0">Caliper Painting</label>
+                                                    <label class="switch switch-primary me-0">
+                                                        <input type="checkbox" class="switch-input" name="os_caliper_painting" {{ @$order->os_caliper_painting ? 'checked' : '' }} disabled>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <label for="price" class="mb-0">Price :</label>
+                                            <div class="">
+                                                <input type="number" class="form-control" name="os_price" value="{{ @$order->os_price }}" disabled>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
                                 <!-- Check Box End -->
@@ -824,12 +942,15 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    @endif
+                                                    @if (auth()->user()->isAdmin() || !empty($order->customer_signature || $order->drivers_license === ''))
                                                     <div id="" class="float-right"
                                                         style="display: flex; justify-content:end;">
                                                         <button type="submit" class="btn btn-primary" id="save"
                                                             data-action="save-jpg">Submit</button>
                                                     </div>
-                                                @endif
+                                                    @endif
+    
                                             </div>
                                         </div>
                                     </div>

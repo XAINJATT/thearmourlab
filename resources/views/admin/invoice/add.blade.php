@@ -86,7 +86,7 @@
                             <div class="col-md-4 mb-md-0 mb-4">
                                 <div class="d-flex svg-illustration mb-4 gap-2">
                                     <span class="app-brand-logo demo">
-                                        <img src="{{ asset('storage/logo/logo.webp') }}">
+                                        <img src="{{ asset('logo.webp') }}">
                                     </span>
                                 </div>
                             </div>
@@ -817,7 +817,7 @@
                                             <span><i class="fa fa-2x fa-camera"></i></span>
                                             <span>&nbsp;Browse</span>
                                         </span>
-                                        <input type="file" class="input-style" name="drivers_license" onchange="ReadUrl(this, 'drivers_license_preview', 'drivers_license_browse');" required>
+                                        <input type="file" class="input-style" name="drivers_license" onchange="ReadUrl(this, 'drivers_license_preview', 'drivers_license_browse');">
                                     </label>
                                 </div>
                             </div>
@@ -1138,6 +1138,7 @@
         }
 
         $(clearBtn).click(function() {
+            $("#signature_value").val("");
             clearCanvas();
         });
     }
