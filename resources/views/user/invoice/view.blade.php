@@ -942,12 +942,15 @@
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    @endif
+                                                    @if (auth()->user()->isAdmin() || !empty($order->customer_signature || $order->drivers_license === ''))
                                                     <div id="" class="float-right"
                                                         style="display: flex; justify-content:end;">
                                                         <button type="submit" class="btn btn-primary" id="save"
                                                             data-action="save-jpg">Submit</button>
                                                     </div>
-                                                @endif
+                                                    @endif
+    
                                             </div>
                                         </div>
                                     </div>

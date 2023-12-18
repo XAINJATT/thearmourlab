@@ -996,8 +996,6 @@
 @endsection
 
 @section('scripts')
-<script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <script>
     $(document).ready(function() {
@@ -1122,16 +1120,16 @@
 
 
         // Save button event handler
-        $(saveBtn).click(function() {
-            var canvas = document.getElementById(canvasArea.replace("#", ""));
-            var signatureData = canvas.toDataURL();
+        // $(saveBtn).click(function() {
+        //     var canvas = document.getElementById(canvasArea.replace("#", ""));
+        //     var signatureData = canvas.toDataURL();
 
-            // Set the signature value in a hidden input field
-            $("#signature_value").val(signatureData);
+        //     // Set the signature value in a hidden input field
+        //     $("#signature_value").val(signatureData);
 
-            // Now submit the form
-            $("form").submit();
-        });
+        //     // Now submit the form
+        //     // $("form").submit();
+        // });
 
         // Clear canvas function and event handler
         function clearCanvas() {
@@ -1241,16 +1239,16 @@
             $input.focus();
         });
 
-        $("#save").click(function() {
-            // Convert the canvas to a data URL
-            var dataURL = canvas.toDataURL("image/png");
-            $('#image-preview').attr('src', dataURL);
+        // $("#save").click(function() {
+        //     // Convert the canvas to a data URL
+        //     var dataURL = canvas.toDataURL("image/png");
+        //     $('#image-preview').attr('src', dataURL);
 
-            // Append the canvas image data to the form data
-            $('#imgBase64').attr("value", dataURL);
+        //     // Append the canvas image data to the form data
+        //     $('#imgBase64').attr("value", dataURL);
 
-            // Rest of your AJAX code...
-        });
+        //     // Rest of your AJAX code...
+        // });
     });
 </script>
 @endsection

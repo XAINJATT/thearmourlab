@@ -36,6 +36,27 @@ class InvoiceController extends Controller
      */
     public function store(Request $request)
     {
+
+
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email',
+            'id' => 'required', // Assuming 'id' is a required field
+            'first_name' => 'required|string|max:255',
+            'last_name' => 'required|string|max:255',
+            'phone' => 'required|numeric',
+            'make' => 'required|string|max:255',
+            'colour' => 'required|string|max:255',
+            'model' => 'required|string|max:255',
+            'year' => 'required|numeric',
+            'v_i_n' => 'required|string|max:255',
+            'plate' => 'required|string|max:255',
+        ]);
+
+        if ($validator->fails()) {
+            // Handle your validation failure
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
         /* - upload a document ( drivers license) */
         $FileImage = "";
         if ($request->has('drivers_license')) {
@@ -43,9 +64,9 @@ class InvoiceController extends Controller
             $request->file('drivers_license')->storeAs('public/drivers_license/', $FileImage);
         }
 
-        
+
         // signature Image Start //
-        if (!empty($request->signature)) {
+        if (!empty($request->signature &&  request("is_drawn") === true)) {
             $image_parts = explode(";base64,", $request->signature);
             $image_type_aux = explode("image/", $image_parts[0]);
             $image_type = $image_type_aux[1];
@@ -196,9 +217,10 @@ class InvoiceController extends Controller
         ];
 
         $order = WorkOrder::create($data);
+
         // dd($order);
 
-        return redirect()->route('admin.invoice')->with('success-message', 'Order created successfully!');
+        return redirect()->route('admin.invoice.edit', ['id' => $order->id])->with('success-message', 'Order created successfully!');
     }
 
     /**
@@ -207,6 +229,7 @@ class InvoiceController extends Controller
     public function show($id)
     {
         $order = WorkOrder::with('user')->where('id', $id)->first();
+        $users = User::where('role', 1)->where('status', 1)->get();
         return view('admin.invoice.view', compact('order', 'users'));
     }
 
@@ -265,13 +288,15 @@ class InvoiceController extends Controller
                     unlink($Path);
                 }
             }
-            $image_parts = explode(";base64,", $request->signature);
-            $image_type_aux = explode("image/", $image_parts[0]);
-            $image_type = $image_type_aux[1];
-            $image_base64 = base64_decode($image_parts[1]);
-            $signatureFileName = 'signature-' . Carbon::now()->format('Ymd-His') . '.' . $image_type;
-            $signatureFilePath = 'public/signatures/' . $signatureFileName;
-            Storage::put($signatureFilePath, $image_base64);
+            if ($request->is_drawn) {
+                $image_parts = explode(";base64,", $request->signature);
+                $image_type_aux = explode("image/", $image_parts[0]);
+                $image_type = $image_type_aux[1];
+                $image_base64 = base64_decode($image_parts[1]);
+                $signatureFileName = 'signature-' . Carbon::now()->format('Ymd-His') . '.' . $image_type;
+                $signatureFilePath = 'public/signatures/' . $signatureFileName;
+                Storage::put($signatureFilePath, $image_base64);
+            }
         } else {
             $temp = explode("/", $request['old_signature']);
             $fileName = end($temp);
@@ -449,7 +474,7 @@ class InvoiceController extends Controller
         // dd($order);
         // Rest of your code...
 
-        return redirect()->route('admin.invoice')->with('success-message', 'Order updated successfully!');
+        return redirect()->back()->with('success-message', 'Order updated successfully!');
     }
 
 
