@@ -36,26 +36,6 @@ class InvoiceController extends Controller
      */
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(), [
-            'email' => 'required|email',
-            'id' => 'required', // Assuming 'id' is a required field
-            'first_name' => 'required|string|max:255',
-            'last_name' => 'required|string|max:255',
-            'phone' => 'required|numeric',
-            'make' => 'required|string|max:255',
-            'colour' => 'required|string|max:255',
-            'model' => 'required|string|max:255',
-            'year' => 'required|numeric',
-            'v_i_n' => 'required|string|max:255',
-            'plate' => 'required|string|max:255',
-        ]);
-
-        if ($validator->fails()) {
-            // Handle your validation failure
-            return redirect()->back()->withErrors($validator)->withInput();
-        }
-
-
         /* - upload a document ( drivers license) */
         $FileImage = "";
         if ($request->has('drivers_license')) {
@@ -63,8 +43,9 @@ class InvoiceController extends Controller
             $request->file('drivers_license')->storeAs('public/drivers_license/', $FileImage);
         }
 
+        
         // signature Image Start //
-        if (!empty($request->signature &&  request("is_drawn") === true)) {
+        if (!empty($request->signature)) {
             $image_parts = explode(";base64,", $request->signature);
             $image_type_aux = explode("image/", $image_parts[0]);
             $image_type = $image_type_aux[1];
@@ -159,6 +140,52 @@ class InvoiceController extends Controller
             'final_inspection_status' => $request->input('final_inspection_status'),
             'completion_pickup_status' => $request->input('completion_pickup_status'),
 
+            // Ceramic Coating
+            'ceramic_coating_kenzo_coating' => $request->has('ceramic_coating_kenzo_coating'),
+            'ceramic_coating_quartz_plus_coating' => $request->has('ceramic_coating_quartz_plus_coating'),
+            'ceramic_coating_quartz_coating' => $request->has('ceramic_coating_quartz_coating'),
+            'ceramic_coating_premier_coating' => $request->has('ceramic_coating_premier_coating'),
+            'ceramic_coating_interior_pkg' => $request->has('ceramic_coating_interior_pkg'),
+            'ceramic_coating_wheels_of_pkg' => $request->has('ceramic_coating_wheels_of_pkg'),
+            'ceramic_coating_price' => $request->input('ceramic_coating_price'),
+
+            // PPF
+            'ppf_full_car' => $request->has('ppf_full_car'),
+            'ppf_full_front_end' => $request->has('ppf_full_front_end'),
+            'ppf_partial_front_end' => $request->has('ppf_partial_front_end'),
+            'ppf_partial_kit' => $request->has('ppf_partial_kit'),
+            'ppf_rockers' => $request->has('ppf_rockers'),
+            'ppf_headlights' => $request->has('ppf_headlights'),
+            'ppf_luggage_strip' => $request->has('ppf_luggage_strip'),
+            'ppf_price' => $request->input('ppf_price'),
+
+            // Window Tinting
+            'wt_front_windows' => $request->has('wt_front_windows'),
+            'wt_full_vehicle' => $request->has('wt_full_vehicle'),
+            'wt_windshield' => $request->has('wt_windshield'),
+            'wt_5' => $request->has('wt_5'),
+            'wt_20' => $request->has('wt_20'),
+            'wt_35' => $request->has('wt_35'),
+            'wt_50' => $request->has('wt_50'),
+            'wt_70' => $request->has('wt_70'),
+            'wt_price' => $request->input('wt_price'),
+
+            // Paint Correction
+            'pc_one_stage' => $request->has('pc_one_stage'),
+            'pc_two_stage' => $request->has('pc_two_stage'),
+            'pc_three_stage' => $request->has('pc_three_stage'),
+            'pc_wet_sand' => $request->has('pc_wet_sand'),
+            'pc_price' => $request->input('pc_price'),
+
+            // Other Services
+            'os_interior_detailing' => $request->has('os_interior_detailing'),
+            'os_car_wrap' => $request->has('os_car_wrap'),
+            'os_rim_powder_coating' => $request->has('os_rim_powder_coating'),
+            'os_rim_repair' => $request->has('os_rim_repair'),
+            'os_dent_repair' => $request->has('os_dent_repair'),
+            'os_caliper_painting' => $request->has('os_caliper_painting'),
+            'os_price' => $request->input('os_price'),
+
             'additional_requests' => $request->input('additional_requests'),
             'total_price' => $request->input('total_price'),
             'mileage_in_price' => $request->input('mileage_in_price'),
@@ -169,8 +196,9 @@ class InvoiceController extends Controller
         ];
 
         $order = WorkOrder::create($data);
+        // dd($order);
 
-        return redirect()->back()->with('success-message', 'Order created successfully!');
+        return redirect()->route('admin.invoice')->with('success-message', 'Order created successfully!');
     }
 
     /**
@@ -179,7 +207,6 @@ class InvoiceController extends Controller
     public function show($id)
     {
         $order = WorkOrder::with('user')->where('id', $id)->first();
-        $users = User::where('role', 1)->where('status', 1)->get();
         return view('admin.invoice.view', compact('order', 'users'));
     }
 
@@ -198,6 +225,7 @@ class InvoiceController extends Controller
      */
     public function update(Request $request)
     {
+        // dd($request->all());
         if (empty($request->work_order_id)) {
             return redirect()->back()->with('error-message', 'Invalid request');
         }
@@ -237,15 +265,13 @@ class InvoiceController extends Controller
                     unlink($Path);
                 }
             }
-            if ($request->is_drawn) {
-                $image_parts = explode(";base64,", $request->signature);
-                $image_type_aux = explode("image/", $image_parts[0]);
-                $image_type = $image_type_aux[1];
-                $image_base64 = base64_decode($image_parts[1]);
-                $signatureFileName = 'signature-' . Carbon::now()->format('Ymd-His') . '.' . $image_type;
-                $signatureFilePath = 'public/signatures/' . $signatureFileName;
-                Storage::put($signatureFilePath, $image_base64);
-            }
+            $image_parts = explode(";base64,", $request->signature);
+            $image_type_aux = explode("image/", $image_parts[0]);
+            $image_type = $image_type_aux[1];
+            $image_base64 = base64_decode($image_parts[1]);
+            $signatureFileName = 'signature-' . Carbon::now()->format('Ymd-His') . '.' . $image_type;
+            $signatureFilePath = 'public/signatures/' . $signatureFileName;
+            Storage::put($signatureFilePath, $image_base64);
         } else {
             $temp = explode("/", $request['old_signature']);
             $fileName = end($temp);
@@ -365,6 +391,52 @@ class InvoiceController extends Controller
             'final_inspection_status' => $request->input('final_inspection_status'),
             'completion_pickup_status' => $request->input('completion_pickup_status'),
 
+            // Ceramic Coating
+            'ceramic_coating_kenzo_coating' => $request->has('ceramic_coating_kenzo_coating'),
+            'ceramic_coating_quartz_plus_coating' => $request->has('ceramic_coating_quartz_plus_coating'),
+            'ceramic_coating_quartz_coating' => $request->has('ceramic_coating_quartz_coating'),
+            'ceramic_coating_premier_coating' => $request->has('ceramic_coating_premier_coating'),
+            'ceramic_coating_interior_pkg' => $request->has('ceramic_coating_interior_pkg'),
+            'ceramic_coating_wheels_of_pkg' => $request->has('ceramic_coating_wheels_of_pkg'),
+            'ceramic_coating_price' => $request->input('ceramic_coating_price'),
+
+            // PPF
+            'ppf_full_car' => $request->has('ppf_full_car'),
+            'ppf_full_front_end' => $request->has('ppf_full_front_end'),
+            'ppf_partial_front_end' => $request->has('ppf_partial_front_end'),
+            'ppf_partial_kit' => $request->has('ppf_partial_kit'),
+            'ppf_rockers' => $request->has('ppf_rockers'),
+            'ppf_headlights' => $request->has('ppf_headlights'),
+            'ppf_luggage_strip' => $request->has('ppf_luggage_strip'),
+            'ppf_price' => $request->input('ppf_price'),
+
+            // Window Tinting
+            'wt_front_windows' => $request->has('wt_front_windows'),
+            'wt_full_vehicle' => $request->has('wt_full_vehicle'),
+            'wt_windshield' => $request->has('wt_windshield'),
+            'wt_5' => $request->has('wt_5'),
+            'wt_20' => $request->has('wt_20'),
+            'wt_35' => $request->has('wt_35'),
+            'wt_50' => $request->has('wt_50'),
+            'wt_70' => $request->has('wt_70'),
+            'wt_price' => $request->input('wt_price'),
+
+            // Paint Correction
+            'pc_one_stage' => $request->has('pc_one_stage'),
+            'pc_two_stage' => $request->has('pc_two_stage'),
+            'pc_three_stage' => $request->has('pc_three_stage'),
+            'pc_wet_sand' => $request->has('pc_wet_sand'),
+            'pc_price' => $request->input('pc_price'),
+
+            // Additional Ceramic Coating
+            'os_interior_detailing' => $request->has('os_interior_detailing'),
+            'os_car_wrap' => $request->has('os_car_wrap'),
+            'os_rim_powder_coating' => $request->has('os_rim_powder_coating'),
+            'os_rim_repair' => $request->has('os_rim_repair'),
+            'os_dent_repair' => $request->has('os_dent_repair'),
+            'os_caliper_painting' => $request->has('os_caliper_painting'),
+            'os_price' => $request->input('os_price'),
+
             'additional_requests' => $request->input('additional_requests'),
             'total_price' => $request->input('total_price'),
             'mileage_in_price' => $request->input('mileage_in_price'),
@@ -377,7 +449,7 @@ class InvoiceController extends Controller
         // dd($order);
         // Rest of your code...
 
-        return redirect()->back()->with('success-message', 'Order updated successfully!');
+        return redirect()->route('admin.invoice')->with('success-message', 'Order updated successfully!');
     }
 
 
