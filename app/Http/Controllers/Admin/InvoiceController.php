@@ -66,7 +66,7 @@ class InvoiceController extends Controller
 
 
         // signature Image Start //
-        if (!empty($request->signature &&  request("is_drawn") === true)) {
+        if (!empty($request->signature &&  request("is_drawn") == true)) {
             $image_parts = explode(";base64,", $request->signature);
             $image_type_aux = explode("image/", $image_parts[0]);
             $image_type = $image_type_aux[1];
@@ -288,7 +288,7 @@ class InvoiceController extends Controller
                     unlink($Path);
                 }
             }
-            if ($request->is_drawn) {
+            if ($request->is_drawn == true) {
                 $image_parts = explode(";base64,", $request->signature);
                 $image_type_aux = explode("image/", $image_parts[0]);
                 $image_type = $image_type_aux[1];
