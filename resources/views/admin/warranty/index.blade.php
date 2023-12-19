@@ -105,13 +105,13 @@
                                                 <td>{{ $warranty->last_name }}</td>
                                                 <td>{{ $warranty->email }}</td>
                                                 <td>{{ $warranty->tel }}</td>
-                                                <td>
+                                                <td class="btn-group">
                                                     <a href="{{ route('admin.warranty.view', $warranty->id) }}"
-                                                        class="text-primary fs-6 mr-1" data-toggle="tooltip" title="View">
+                                                        class="btn btn-primary mr-1" data-toggle="tooltip" title="View">
                                                         <i class="fas fa-eye"></i>
                                                     </a>
                                                     <a onclick="DeleteWarranty({{ $warranty->id }})"
-                                                        class="cursor-pointer"><i class="fa fa-trash"
+                                                        class="cursor-pointer btn btn-danger text-white"><i class="fa fa-trash"
                                                             aria-hidden="true"></i></a>
                                                 </td>
                                             </tr>

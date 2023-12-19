@@ -26,25 +26,6 @@
             height: 200px;
         }
     </style>
-    <script>
-        $(function() {
-            var sig = $('#sig').signature();
-            $('#disable').click(function() {
-                var disable = $(this).text() === 'Disable';
-                $(this).text(disable ? 'Enable' : 'Disable');
-                sig.signature(disable ? 'disable' : 'enable');
-            });
-            $('#clear').click(function() {
-                sig.signature('clear');
-            });
-            $('#json').click(function() {
-                alert(sig.signature('toJSON'));
-            });
-            $('#svg').click(function() {
-                alert(sig.signature('toSVG'));
-            });
-        });
-    </script>
     <div class="content container-fluid">
         {{-- Section 1 --}}
         <!-- Content -->
@@ -56,31 +37,14 @@
                 <div class="col-lg-12 col-12 mb-lg-0 mb-4">
                     <div class="card invoice-preview-card">
                         <div class="card-body">
-                            <div class="row p-sm-3 p-0">
-                                <div class="col-md-4 mb-md-0 mb-4">
-                                    <div class="d-flex svg-illustration mb-4 gap-2">
-                                        <span class="app-brand-logo demo">
-                                            <img src="{{ asset('logo.webp') }}">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4" style="text-align: center;">
-                                    <h2 class="mb-1" style=" color: #040404 !important;">THE ARMOUR LAB</h2>
-                                    <p class="mb-1">701 MILLWAY AVENUE, UNIT 6, VAUGHAN, ON L4K 3S7</p>
-                                    <p class="mb-1">T: 416-675-6853</p>
-                                    <p class="mb-1">E: INFO@THEARMOURLAB.COM</p>
-                                    <p class="mb-1">WWW.THEARMOURLAB.COM</p>
-                                </div>
-                                <div class="col-md-4" style="text-align: end;">
-                                    <h1 style=" color: #040404 !important;">WORK</h1>
-                                    <h1 style=" color: #040404 !important;">ORDER</h1>
-                                </div>
-                            </div>
+                            @include('admin.invoice.partials.header')
                             <hr class="my-4 mx-n4" />
                             <!-- Form Start -->
                             <form method="post" action="{{ route('admin.invoice.update') }}" enctype="multipart/form-data">
                                 @csrf
-                                <input type="hidden" class="form-control" id="id" value="{{ request("id")}}" name="work_order_id" />
+                                <input type="hidden" class="form-control" id="id" value="{{ request('id') }}"
+                                    name="work_order_id" />
+                                <input type="hidden" name="request_from" value="view">
                                 <div class="row py-sm-3">
                                     <div class="col-md-4 col-12">
                                         <label for="email" class="form-label me-5 fw-medium">Email:</label>
@@ -147,66 +111,91 @@
                                             <div class="card-body">
                                                 <table class="table">
                                                     <tbody>
-                                                    <tr>
-                                                        <td class="col-4 col-lg-5"><h5 class="mb-0">General Stages</h5></td>
-                                                        <td class="col-lg-2 col-2">
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input" id="general_stages" name="general_stages" {{ @$order->general_stages ? 'checked' : '' }} disabled>
-                                                                <span class="switch-slider"></span>
-                                                            </label>
-                                                        </td>
-                                                        <td class="col-lg-5 col-5">
-                                                            <input name="general_stages_status" value="{{$order->general_stages_status}}" type="text" disabled>
-                                                        </td>
-                                                    </tr>
+                                                        <tr>
+                                                            <td class="col-4 col-lg-5">
+                                                                <h5 class="mb-0">General Stages</h5>
+                                                            </td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input type="checkbox" class="switch-input"
+                                                                        id="general_stages" name="general_stages"
+                                                                        {{ @$order->general_stages ? 'checked' : '' }}
+                                                                        disabled>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <input name="general_stages_status"
+                                                                    value="{{ $order->general_stages_status }}"
+                                                                    type="text" disabled>
+                                                            </td>
+                                                        </tr>
 
-                                                    <tr class="additional-row-gs">
-                                                        <td class="col-4 col-lg-5"><label class="mb-0">Check-In</label></td>
-                                                        <td class="col-lg-2 col-2">
-                                                            <label class="switch switch-primary me-0">
-                                                                <input disablad type="checkbox" class="switch-input" id="check_in" name="check_in" {{ @$order->check_in ? 'checked' : '' }} disabled>
-                                                                <span class="switch-slider"></span>
-                                                            </label>
-                                                        </td>
-                                                        <td class="col-lg-5 col-5">
-                                                            <input name="check_in_status" value="{{$order->check_in_status}}" type="text" disabled>
-                                                        </td>
-                                                    </tr>
+                                                        <tr class="additional-row-gs">
+                                                            <td class="col-4 col-lg-5"><label
+                                                                    class="mb-0">Check-In</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="check_in" name="check_in"
+                                                                        {{ @$order->check_in ? 'checked' : '' }} disabled>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <input name="check_in_status"
+                                                                    value="{{ $order->check_in_status }}" type="text"
+                                                                    disabled>
+                                                            </td>
+                                                        </tr>
 
-                                                    <tr class="additional-row-gs">
-                                                        <td class="col-4 col-lg-5"><label class="mb-0">Initial Inspection</label></td>
-                                                        <td class="col-lg-2 col-2">
-                                                            <label class="switch switch-primary me-0">
-                                                                <input disablad type="checkbox" class="switch-input" id="initial_inspection" name="initial_inspection" {{ @$order->initial_inspection ? 'checked' : '' }} disabled>
-                                                                <span class="switch-slider"></span>
-                                                            </label>
-                                                        </td>
-                                                        <td class="col-lg-5 col-5">
-                                                            <input name="initial_inspection_status" value="{{$order->initial_inspection_status}}" type="text" disabled>
-                                                        </td>
-                                                    </tr>
+                                                        <tr class="additional-row-gs">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Initial
+                                                                    Inspection</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="initial_inspection" name="initial_inspection"
+                                                                        {{ @$order->initial_inspection ? 'checked' : '' }}
+                                                                        disabled>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <input name="initial_inspection_status"
+                                                                    value="{{ $order->initial_inspection_status }}"
+                                                                    type="text" disabled>
+                                                            </td>
+                                                        </tr>
 
-                                                    <tr class="additional-row-gs">
-                                                        <td class="col-4 col-lg-5"><label class="mb-0">Wash and Decontamination</label></td>
-                                                        <td class="col-lg-2 col-2">
-                                                            <label class="switch switch-primary me-0">
-                                                                <input disablad type="checkbox" class="switch-input" id="Wash_and_decontamination" name="Wash_and_decontamination" {{ @$order->Wash_and_decontamination ? 'checked' : '' }} disabled>
-                                                                <span class="switch-slider"></span>
-                                                            </label>
-                                                        </td>
-                                                        <td class="col-lg-5 col-5">
-                                                            <input name="Wash_and_decontamination_status" value="{{$order->Wash_and_decontamination_status}}" type="text" disabled>
-                                                        </td>
-                                                    </tr>
+                                                        <tr class="additional-row-gs">
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Wash and
+                                                                    Decontamination</label></td>
+                                                            <td class="col-lg-2 col-2">
+                                                                <label class="switch switch-primary me-0">
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="Wash_and_decontamination"
+                                                                        name="Wash_and_decontamination"
+                                                                        {{ @$order->Wash_and_decontamination ? 'checked' : '' }}
+                                                                        disabled>
+                                                                    <span class="switch-slider"></span>
+                                                                </label>
+                                                            </td>
+                                                            <td class="col-lg-5 col-5">
+                                                                <input name="Wash_and_decontamination_status"
+                                                                    value="{{ $order->Wash_and_decontamination_status }}"
+                                                                    type="text" disabled>
+                                                            </td>
+                                                        </tr>
 
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                    <label for="price" class="mb-0">Price :</label>
-                                                    <div class="">
-                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                    </div>
-                                                </div> -->
+                                                                                        <label for="price" class="mb-0">Price :</label>
+                                                                                        <div class="">
+                                                                                            <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                        </div>
+                                                                                    </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -218,75 +207,106 @@
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
-                                                            <td class="col-4 col-lg-5"><h5 class="mb-0">Paint Protection Film Stages</h5></td>
+                                                            <td class="col-4 col-lg-5">
+                                                                <h5 class="mb-0">Paint Protection Film Stages</h5>
+                                                            </td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="paint_protection_film_stages"
-                                                                        name="paint_protection_film_stages" {{ @$order->paint_protection_film_stages ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="paint_protection_film_stages"
+                                                                        name="paint_protection_film_stages"
+                                                                        {{ @$order->paint_protection_film_stages ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="paint_protection_film_stages_status" value="{{$order->paint_protection_film_stages_status}}" type="text" disabled>
+                                                                <input name="paint_protection_film_stages_status"
+                                                                    value="{{ $order->paint_protection_film_stages_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-ppf">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">PPF Cutting & Alignment</label></td>
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">PPF Cutting &
+                                                                    Alignment</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="PPF_cutting_alignment"
-                                                                        name="PPF_cutting_alignment" {{ @$order->PPF_cutting_alignment ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="PPF_cutting_alignment"
+                                                                        name="PPF_cutting_alignment"
+                                                                        {{ @$order->PPF_cutting_alignment ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="PPF_cutting_alignment_status" value="{{$order->PPF_cutting_alignment_status}}" type="text" disabled>
+                                                                <input name="PPF_cutting_alignment_status"
+                                                                    value="{{ $order->PPF_cutting_alignment_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-ppf">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">Polish (PPF)</label></td>
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Polish
+                                                                    (PPF)</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="PPF_polish" name="PPF_polish" {{ @$order->PPF_polish ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="PPF_polish" name="PPF_polish"
+                                                                        {{ @$order->PPF_polish ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="PPF_polish_status" value="{{$order->PPF_polish_status}}" type="text" disabled>
+                                                                <input name="PPF_polish_status"
+                                                                    value="{{ $order->PPF_polish_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-ppf">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">PPF Installation</label></td>
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">PPF
+                                                                    Installation</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="PPF_installation" name="PPF_installation" {{ @$order->PPF_installation ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="PPF_installation" name="PPF_installation"
+                                                                        {{ @$order->PPF_installation ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="PPF_installation_status" value="{{$order->PPF_installation_status}}" type="text" disabled>
+                                                                <input name="PPF_installation_status"
+                                                                    value="{{ $order->PPF_installation_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-ppf">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">Curing Phase (PPF)</label></td>
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Curing Phase
+                                                                    (PPF)</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="PPF_curing_phase" name="PPF_curing_phase" {{ @$order->PPF_curing_phase ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="PPF_curing_phase" name="PPF_curing_phase"
+                                                                        {{ @$order->PPF_curing_phase ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="PPF_curing_phase_status" value="{{$order->PPF_curing_phase_status}}" type="text" disabled>
+                                                                <input name="PPF_curing_phase_status"
+                                                                    value="{{ $order->PPF_curing_phase_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                    <label for="price" class="mb-0">Price :</label>
-                                                    <div class="">
-                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                    </div>
-                                                </div> -->
+                                                                                        <label for="price" class="mb-0">Price :</label>
+                                                                                        <div class="">
+                                                                                            <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                        </div>
+                                                                                    </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -298,78 +318,108 @@
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
-                                                            <td class="col-4 col-lg-5"><h5 class="mb-0">Ceramic Coating Stages</h5></td>
+                                                            <td class="col-4 col-lg-5">
+                                                                <h5 class="mb-0">Ceramic Coating Stages</h5>
+                                                            </td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="ceramic_coating_stages"
-                                                                        name="ceramic_coating_stages" {{ @$order->ceramic_coating_stages ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="ceramic_coating_stages"
+                                                                        name="ceramic_coating_stages"
+                                                                        {{ @$order->ceramic_coating_stages ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="ceramic_coating_stages_status" value="{{$order->ceramic_coating_stages_status}}" type="text" disabled>
+                                                                <input name="ceramic_coating_stages_status"
+                                                                    value="{{ $order->ceramic_coating_stages_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-ccs">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">Ceramic Coating Prep</label></td>
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Ceramic
+                                                                    Coating Prep</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="cc_ceramic_coating_rep"
-                                                                        name="cc_ceramic_coating_rep" {{ @$order->cc_ceramic_coating_rep ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="cc_ceramic_coating_rep"
+                                                                        name="cc_ceramic_coating_rep"
+                                                                        {{ @$order->cc_ceramic_coating_rep ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="cc_ceramic_coating_rep_status" value="{{$order->cc_ceramic_coating_rep_status}}" type="text" disabled>
+                                                                <input name="cc_ceramic_coating_rep_status"
+                                                                    value="{{ $order->cc_ceramic_coating_rep_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-ccs">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">Paint Correction</label></td>
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Paint
+                                                                    Correction</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="cc_paint_correction"
-                                                                        name="cc_paint_correction" {{ @$order->cc_paint_correction ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="cc_paint_correction"
+                                                                        name="cc_paint_correction"
+                                                                        {{ @$order->cc_paint_correction ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="cc_paint_correction_status" value="{{$order->cc_paint_correction_status}}" type="text" disabled>
+                                                                <input name="cc_paint_correction_status"
+                                                                    value="{{ $order->cc_paint_correction_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-ccs">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">Ceramic Coating Application</label></td>
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Ceramic
+                                                                    Coating Application</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="cc_ceramic_coating_application"
-                                                                        name="cc_ceramic_coating_application" {{ @$order->cc_ceramic_coating_application ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="cc_ceramic_coating_application"
+                                                                        name="cc_ceramic_coating_application"
+                                                                        {{ @$order->cc_ceramic_coating_application ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="cc_ceramic_coating_application_status" value="{{$order->cc_ceramic_coating_application_status}}" type="text" disabled>
+                                                                <input name="cc_ceramic_coating_application_status"
+                                                                    value="{{ $order->cc_ceramic_coating_application_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-ccs">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">Curing Phase</label></td>
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Curing
+                                                                    Phase</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="cc_curing_phase"
-                                                                        name="cc_curing_phase" {{ @$order->cc_curing_phase ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="cc_curing_phase" name="cc_curing_phase"
+                                                                        {{ @$order->cc_curing_phase ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="cc_curing_phase_status" value="{{$order->cc_curing_phase_status}}" type="text" disabled>
+                                                                <input name="cc_curing_phase_status"
+                                                                    value="{{ $order->cc_curing_phase_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                    <label for="price" class="mb-0">Price :</label>
-                                                    <div class="">
-                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                    </div>
-                                                </div> -->
+                                                                                        <label for="price" class="mb-0">Price :</label>
+                                                                                        <div class="">
+                                                                                            <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                        </div>
+                                                                                    </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -381,52 +431,70 @@
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
-                                                            <td class="col-4 col-lg-5"><h5 class="mb-0">Window Tint Stages</h5></td>
+                                                            <td class="col-4 col-lg-5">
+                                                                <h5 class="mb-0">Window Tint Stages</h5>
+                                                            </td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="window_tint_stages"
-                                                                        name="window_tint_stages" {{ @$order->window_tint_stages ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="window_tint_stages" name="window_tint_stages"
+                                                                        {{ @$order->window_tint_stages ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="window_tint_stages_status" value="{{$order->window_tint_stages_status}}" type="text" disabled>
+                                                                <input name="window_tint_stages_status"
+                                                                    value="{{ $order->window_tint_stages_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-wts">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">Window Tint Measurement & Cut</label></td>
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Window Tint
+                                                                    Measurement & Cut</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="window_tint_measurement_cut"
-                                                                        name="window_tint_measurement_cut" {{ @$order->window_tint_measurement_cut ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="window_tint_measurement_cut"
+                                                                        name="window_tint_measurement_cut"
+                                                                        {{ @$order->window_tint_measurement_cut ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="window_tint_measurement_cut_status" value="{{$order->window_tint_measurement_cut_status}}" type="text" disabled>
+                                                                <input name="window_tint_measurement_cut_status"
+                                                                    value="{{ $order->window_tint_measurement_cut_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-wts">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">Window Tint Application</label></td>
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Window Tint
+                                                                    Application</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="window_tint_application"
-                                                                        name="window_tint_application" {{ @$order->window_tint_application ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="window_tint_application"
+                                                                        name="window_tint_application"
+                                                                        {{ @$order->window_tint_application ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="window_tint_application_status" value="{{$order->window_tint_application_status}}" type="text" disabled>
+                                                                <input name="window_tint_application_status"
+                                                                    value="{{ $order->window_tint_application_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                    <label for="price" class="mb-0">Price :</label>
-                                                    <div class="">
-                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                    </div>
-                                                </div> -->
+                                                                                        <label for="price" class="mb-0">Price :</label>
+                                                                                        <div class="">
+                                                                                            <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                        </div>
+                                                                                    </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -438,52 +506,69 @@
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
-                                                            <td class="col-4 col-lg-5"><h5 class="mb-0">Final Stages (applicable to all services)</h5></td>
+                                                            <td class="col-4 col-lg-5">
+                                                                <h5 class="mb-0">Final Stages (applicable to all
+                                                                    services)</h5>
+                                                            </td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="final_stages"
-                                                                        name="final_stages" {{ @$order->final_stages ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="final_stages" name="final_stages"
+                                                                        {{ @$order->final_stages ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="final_stages_status" value="{{$order->final_stages_status}}" type="text" disabled>
+                                                                <input name="final_stages_status"
+                                                                    value="{{ $order->final_stages_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-fs">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">Final Inspection</label></td>
+                                                            <td class="col-4 col-lg-5"><label class="mb-0">Final
+                                                                    Inspection</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="final_inspection"
-                                                                        name="final_inspection" {{ @$order->final_inspection ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="final_inspection" name="final_inspection"
+                                                                        {{ @$order->final_inspection ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="final_inspection_status" value="{{$order->final_inspection_status}}" type="text" disabled>
+                                                                <input name="final_inspection_status"
+                                                                    value="{{ $order->final_inspection_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                         <tr class="additional-row-fs">
-                                                            <td class="col-4 col-lg-5"><label class="mb-0">Completion/Pickup</label></td>
+                                                            <td class="col-4 col-lg-5"><label
+                                                                    class="mb-0">Completion/Pickup</label></td>
                                                             <td class="col-lg-2 col-2">
                                                                 <label class="switch switch-primary me-0">
-                                                                    <input disablad type="checkbox" class="switch-input" id="completion_pickup"
-                                                                        name="completion_pickup" {{ @$order->completion_pickup ? 'checked' : '' }} disabled>
+                                                                    <input disablad type="checkbox" class="switch-input"
+                                                                        id="completion_pickup" name="completion_pickup"
+                                                                        {{ @$order->completion_pickup ? 'checked' : '' }}
+                                                                        disabled>
                                                                     <span class="switch-slider"></span>
                                                                 </label>
                                                             </td>
                                                             <td class="col-lg-5 col-5">
-                                                                <input name="completion_pickup_status" value="{{$order->completion_pickup_status}}" type="text" disabled>
+                                                                <input name="completion_pickup_status"
+                                                                    value="{{ $order->completion_pickup_status }}"
+                                                                    type="text" disabled>
                                                             </td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                    <label for="price" class="mb-0">Price :</label>
-                                                    <div class="">
-                                                        <input type="number" class="form-control" name="ceramic_coating_price">
-                                                    </div>
-                                                </div> -->
+                                                                                        <label for="price" class="mb-0">Price :</label>
+                                                                                        <div class="">
+                                                                                            <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                        </div>
+                                                                                    </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -512,7 +597,7 @@
                                                             id="quartz_plus_coating"
                                                             name="ceramic_coating_quartz_plus_coating"
                                                             {{ @$order->ceramic_coating_quartz_plus_coating ? 'checked' : '' }}
-                                                             disabled>
+                                                            disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
@@ -521,7 +606,7 @@
                                                         <input type="checkbox" class="switch-input" id="quartz_coating"
                                                             name="ceramic_coating_quartz_coating"
                                                             {{ @$order->ceramic_coating_quartz_coating ? 'checked' : '' }}
-                                                             disabled>
+                                                            disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
@@ -530,7 +615,7 @@
                                                         <input type="checkbox" class="switch-input" id="premier_coating"
                                                             name="ceramic_coating_premier_coating"
                                                             {{ @$order->ceramic_coating_premier_coating ? 'checked' : '' }}
-                                                             disabled>
+                                                            disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
@@ -539,7 +624,7 @@
                                                         <input type="checkbox" class="switch-input" id="interior_pkg"
                                                             name="ceramic_coating_interior_pkg"
                                                             {{ @$order->ceramic_coating_interior_pkg ? 'checked' : '' }}
-                                                             disabled>
+                                                            disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
@@ -568,43 +653,58 @@
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="full_car" class="mb-0">Full Car</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="full_car" name="ppf_full_car" {{ @$order->ppf_full_car ? 'checked' : '' }}  disabled>
+                                                        <input type="checkbox" class="switch-input" id="full_car"
+                                                            name="ppf_full_car"
+                                                            {{ @$order->ppf_full_car ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="full_front_end" class="mb-0">Full Front End</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="full_front_end" name="ppf_full_front_end" {{ @$order->ppf_full_front_end ? 'checked' : '' }}  disabled>
+                                                        <input type="checkbox" class="switch-input" id="full_front_end"
+                                                            name="ppf_full_front_end"
+                                                            {{ @$order->ppf_full_front_end ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
-                                                    <label for="partial_front_end" class="mb-0">Partial Front End</label>
+                                                    <label for="partial_front_end" class="mb-0">Partial Front
+                                                        End</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="partial_front_end" name="ppf_partial_front_end" {{ @$order->ppf_partial_front_end ? 'checked' : '' }}  disabled>
+                                                        <input type="checkbox" class="switch-input"
+                                                            id="partial_front_end" name="ppf_partial_front_end"
+                                                            {{ @$order->ppf_partial_front_end ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="partial_kit" class="mb-0">18" Partial Kit</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="partial_kit" name="ppf_partial_kit" {{ @$order->ppf_partial_kit ? 'checked' : '' }}  disabled>
+                                                        <input type="checkbox" class="switch-input" id="partial_kit"
+                                                            name="ppf_partial_kit"
+                                                            {{ @$order->ppf_partial_kit ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="rockers" class="mb-0">Rockers</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="rockers" name="ppf_rockers" {{ @$order->ppf_rockers ? 'checked' : '' }}  disabled>
+                                                        <input type="checkbox" class="switch-input" id="rockers"
+                                                            name="ppf_rockers" {{ @$order->ppf_rockers ? 'checked' : '' }}
+                                                            disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="headlights" class="mb-0">Headlights</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="headlights" name="ppf_headlights" {{ @$order->ppf_headlights ? 'checked' : '' }}  disabled>
+                                                        <input type="checkbox" class="switch-input" id="headlights"
+                                                            name="ppf_headlights"
+                                                            {{ @$order->ppf_headlights ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="luggage_strip" class="mb-0">Luggage Strip</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" id="luggage_strip" name="ppf_luggage_strip" {{ @$order->ppf_luggage_strip ? 'checked' : '' }}  disabled>
+                                                        <input type="checkbox" class="switch-input" id="luggage_strip"
+                                                            name="ppf_luggage_strip"
+                                                            {{ @$order->ppf_luggage_strip ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                             </div>
@@ -612,7 +712,8 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="ppf_price" value="{{ @$order->ppf_price }}" disabled>
+                                                <input type="number" class="form-control" name="ppf_price"
+                                                    value="{{ @$order->ppf_price }}" disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -623,49 +724,59 @@
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="front_windows" class="mb-0">2 Front windows</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="wt_front_windows" {{ @$order->wt_front_windows ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input"
+                                                            name="wt_front_windows"
+                                                            {{ @$order->wt_front_windows ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="full_vehicle" class="mb-0">Full Vehicle</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="wt_full_vehicle" {{ @$order->wt_full_vehicle ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input"
+                                                            name="wt_full_vehicle"
+                                                            {{ @$order->wt_full_vehicle ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="windshield" class="mb-0">Windshield</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="wt_windshield" {{ @$order->wt_windshield ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="wt_windshield"
+                                                            {{ @$order->wt_windshield ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="5" class="mb-0">5%</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="wt_5" {{ @$order->wt_5 ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="wt_5"
+                                                            {{ @$order->wt_5 ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="20" class="mb-0">20%</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="wt_20" {{ @$order->wt_20 ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="wt_20"
+                                                            {{ @$order->wt_20 ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="35" class="mb-0">35%</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="wt_35" {{ @$order->wt_35 ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="wt_35"
+                                                            {{ @$order->wt_35 ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="50" class="mb-0">50%</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="wt_50" {{ @$order->wt_50 ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="wt_50"
+                                                            {{ @$order->wt_50 ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="70" class="mb-0">70%</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="wt_70" {{ @$order->wt_70 ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="wt_70"
+                                                            {{ @$order->wt_70 ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                             </div>
@@ -673,7 +784,8 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="wt_price" value="{{ @$order->wt_price }}" disabled>
+                                                <input type="number" class="form-control" name="wt_price"
+                                                    value="{{ @$order->wt_price }}" disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -684,25 +796,29 @@
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="one_stage" class="mb-0">One Stage</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="pc_one_stage" {{ @$order->pc_one_stage ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="pc_one_stage"
+                                                            {{ @$order->pc_one_stage ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="two_stage" class="mb-0">Two Stage</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="pc_two_stage" {{ @$order->pc_two_stage ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="pc_two_stage"
+                                                            {{ @$order->pc_two_stage ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="three_stage" class="mb-0">Three Stage</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="pc_three_stage" {{ @$order->pc_three_stage ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="pc_three_stage"
+                                                            {{ @$order->pc_three_stage ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="wet_sand" class="mb-0">Wet Sand</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="pc_wet_sand" {{ @$order->pc_wet_sand ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="pc_wet_sand"
+                                                            {{ @$order->pc_wet_sand ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                             </div>
@@ -710,7 +826,8 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="pc_price" value="{{ @$order->pc_price }}" disabled>
+                                                <input type="number" class="form-control" name="pc_price"
+                                                    value="{{ @$order->pc_price }}" disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -719,39 +836,50 @@
                                         <div class="card mb-4">
                                             <div class="card-body">
                                                 <div class="d-flex justify-content-between mb-2">
-                                                    <label for="interior_detailing" class="mb-0">Interior Detailing</label>
+                                                    <label for="interior_detailing" class="mb-0">Interior
+                                                        Detailing</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="os_interior_detailing" {{ @$order->os_interior_detailing ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input"
+                                                            name="os_interior_detailing"
+                                                            {{ @$order->os_interior_detailing ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="car_wrap" class="mb-0">Car Wrap</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="os_car_wrap" {{ @$order->os_car_wrap ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="os_car_wrap"
+                                                            {{ @$order->os_car_wrap ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
-                                                    <label for="rim_powder_coating" class="mb-0">Rim Powder Coating</label>
+                                                    <label for="rim_powder_coating" class="mb-0">Rim Powder
+                                                        Coating</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="os_rim_powder_coating" {{ @$order->os_rim_powder_coating ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input"
+                                                            name="os_rim_powder_coating"
+                                                            {{ @$order->os_rim_powder_coating ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="rim_repair" class="mb-0">Rim Repair</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="os_rim_repair" {{ @$order->os_rim_repair ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="os_rim_repair"
+                                                            {{ @$order->os_rim_repair ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="dent_repair" class="mb-0">Dent Repair</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="os_dent_repair" {{ @$order->os_dent_repair ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input" name="os_dent_repair"
+                                                            {{ @$order->os_dent_repair ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
                                                     <label for="caliper_painting" class="mb-0">Caliper Painting</label>
                                                     <label class="switch switch-primary me-0">
-                                                        <input type="checkbox" class="switch-input" name="os_caliper_painting" {{ @$order->os_caliper_painting ? 'checked' : '' }} disabled>
+                                                        <input type="checkbox" class="switch-input"
+                                                            name="os_caliper_painting"
+                                                            {{ @$order->os_caliper_painting ? 'checked' : '' }} disabled>
                                                     </label>
                                                 </div>
                                             </div>
@@ -759,7 +887,8 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="os_price" value="{{ @$order->os_price }}" disabled>
+                                                <input type="number" class="form-control" name="os_price"
+                                                    value="{{ @$order->os_price }}" disabled>
                                             </div>
                                         </div>
                                     </div>
@@ -786,70 +915,58 @@
                                         </div>
                                     </div>
 
-                                    @if($order->drivers_license !== "")
-                                    <div class="col-12 col-md-6 col-6 mb-3">
-                                        <label for="drivers_license" class="font-weight-bold">Drivers License <span
-                                                class="text-danger">*</span>&nbsp;&nbsp;
-                                            <a href="{{ $order->drivers_license }}"
-                                                download="{{ $order->drivers_license }}">
-                                                <i class="fas fa-download"></i>
-                                            </a>
-                                        </label>
-                                        <img src="{{ $order->drivers_license }}" alt="drivers_license"
-                                            class="picture-src" id="drivers_license_preview" width="80%"
-                                            height="60%">
-                                    </div>
+                                    @if (!empty($order->drivers_license))
+                                        <input type="hidden" name="old_drivers_license"
+                                            value="{{ @$order->drivers_license }}" />
+                                        <div class="col-12 col-md-6 col-6 mb-3">
+                                            <label for="drivers_license" class="font-weight-bold">Drivers License <span
+                                                    class="text-danger">*</span>&nbsp;&nbsp;
+                                                <a href="{{ $order->drivers_license }}"
+                                                    download="{{ $order->drivers_license }}">
+                                                    <i class="fas fa-download"></i>
+                                                </a>
+                                            </label>
+                                            <img src="{{ $order->drivers_license }}" alt="drivers_license"
+                                                class="picture-src" id="drivers_license_preview" width="80%"
+                                                height="60%">
+                                        </div>
                                     @else
-
-                                    <div class="col-12 col-md-6 mt-2">
-                                        <label for="drivers_license" class="font-weight-bold">Drivers License :<span
-                                                class="text-danger">*</span></label>
-                                        <img src="" alt="" class="picture-src"
-                                            id="drivers_license_preview" onclick="$(this).next().trigger('click')"
-                                            style="width: 60%; display: none;">
-                                        <label class="form-control label-style" id="drivers_license_browse">
-                                            <span class="d-flex justify-content-center align-items-center">
-                                                <span><i class="fa fa-2x fa-camera"></i></span>
-                                                <span>&nbsp;Browse</span>
-                                            </span>
-                                            <input type="file" class="input-style" name="drivers_license"
-                                                onchange="ReadUrl(this, 'drivers_license_preview', 'drivers_license_browse');"
-                                                required>
-                                        </label>
-                                    </div>
-
+                                        <div class="col-12 col-md-6 mt-2">
+                                            <label for="drivers_license" class="font-weight-bold">Drivers License :<span
+                                                    class="text-danger">*</span></label>
+                                            <img src="" alt="" class="picture-src"
+                                                id="drivers_license_preview" onclick="$(this).next().trigger('click')"
+                                                style="width: 60%; display: none;">
+                                            <label class="form-control label-style" id="drivers_license_browse">
+                                                <span class="d-flex justify-content-center align-items-center">
+                                                    <span><i class="fa fa-2x fa-camera"></i></span>
+                                                    <span>&nbsp;Browse</span>
+                                                </span>
+                                                <input type="file" class="input-style" name="drivers_license"
+                                                    onchange="ReadUrl(this, 'drivers_license_preview', 'drivers_license_browse');"
+                                                    required>
+                                            </label>
+                                        </div>
                                     @endif
                                 </div>
                                 <!-- Additional Requests End -->
-                                <hr class="my-4 mx-n4" />
-                                <div class="row p-sm-3 p-0">
-                                    <div class="col-md-4 col-sm-5 col-12 mb-sm-0 mb-4">
-                                        <h2 class="mb-1"
-                                            style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: bolder;">
-                                            INSPECTION REPORT</h2>
-                                        <h6 class="pb-2">Defects:</h6>
-                                        @include('admin.partials.defect-table')
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h4 class="mb-1"
+                                            style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: 500; display: inline;">
+                                            PART A:</h4>
+                                        <span> Upon Acceptance</span>
                                     </div>
-                                    <div class="col-md-8 col-sm-7">
-                                        <div class="row">
-                                            <div class="col-7">
-                                                <h4 class="mb-1"
-                                                    style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: 500; display: inline;">
-                                                    PART A:</h4>
-                                                <span> Upon Acceptance</span>
-                                            </div>
-                                            <div class="col-5">
-                                                <label for="price" class="mb-0">Mileage In :</label>
-                                                <div class="">
-                                                    <input type="number" class="form-control" id="mileage_in_price"
-                                                        value="{{ @$order->mileage_in_price }}" disabled>
-                                                </div>
-                                            </div>
+                                    <div class="col-5">
+                                        <label for="price" class="mb-0">Mileage In :</label>
+                                        <div class="">
+                                            <input type="number" class="form-control" id="mileage_in_price"
+                                                value="{{ @$order->mileage_in_price }}" disabled>
                                         </div>
-                                        <img src="{{ @$order->defects }}" id="defects" alt="Preview" width="80%"
-                                            height="60%" />
                                     </div>
                                 </div>
+                                <hr class="my-4 mx-n4" />
+                                @include('admin.invoice.partials.defects', ['order' => $order])
                                 <hr class="my-4" />
                                 <!-- Note Start -->
                                 <div class="row">
@@ -859,13 +976,13 @@
                                             <textarea class="form-control" rows="2" id="note" name="note" placeholder="Note" disabled>{{ @$order->note }}</textarea>
                                         </div>
                                     </div>
-                                    <div class="col-6 mb-3">
+                                    {{-- <div class="col-6 mb-3">
                                         <label for="int" class="mb-0">Int :</label>
                                         <div class="">
                                             <input type="number" class="form-control" id="int" name="int"
                                                 value="{{ @$order->int }}" disabled>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <!-- Note End -->
                                 <hr class="my-4 mx-n4" />
@@ -887,71 +1004,21 @@
                                     <div class="col-12">
                                         <div class="border p-3">
 
-                                          
-
                                             @include('admin.partials.terms-and-conditions-work-order')
 
-                                            <div class="row mt-3">
-                                                @if (auth()->user()->isAdmin() || !empty($order->customer_signature))
-                                                    <div class="col-7">
-                                                        <label for="customer_signature" class="form-label mb-0">Customer
-                                                            Signature:</label>
-                                                        <img src="{{ @$order->customer_signature }}"
-                                                            alt="Customer Signature">
-                                                    </div>
-                                                    <div class="col-5">
-                                                        <label for="date" class="mb-0">Date:</label>
-                                                        <div class="">
-                                                            <input type="date" class="form-control" id="date"
-                                                                name="date" value="{{ @$order->date }}" disabled>
-                                                        </div>
-                                                    </div>
-                                                @else
-                                                    <div class="row mt-3">
-                                                        <div class="col-7">
-                                                            <label for="customer_signature"
-                                                                class="form-label mb-0">Customer Signature:</label>
-                                                            <div style="padding: 30px" class="row p-3">
-                                                                <div style="width: 100%">
-                                                                    <canvas style="background: #dedede" id="signature-pad"
-                                                                        width="400" height="200"></canvas>
-                                                                </div>
+                                            @include('admin.invoice.partials.signature', [
+                                                'order' => $order,
+                                            ])
 
-                                                                <input hidden="" name="signature" value=""
-                                                                    id="signature_value" />
-                                                                
-                                                                <input type="hidden" id="old_signature"
-                                                                    name="old_signature"
-                                                                    value="{{ @$order->customer_signature }}">
-
-                                                                <div class="row">
-                                                                    <div class="col-3">
-                                                                        <button type="button"
-                                                                            class="btn btn-danger btn-sm" id="clear">
-                                                                            Clear Signature
-                                                                        </button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-5">
-                                                            <label for="date" class="mb-0">Date:</label>
-                                                            <div class="">
-                                                                <input type="date" class="form-control" id="date"
-                                                                    name="date" value="{{ @$order->date }}" required>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    @endif
-                                                    @if (auth()->user()->isAdmin() || !empty($order->customer_signature || $order->drivers_license === ''))
-                                                    <div id="" class="float-right"
-                                                        style="display: flex; justify-content:end;">
-                                                        <button type="submit" class="btn btn-primary" id="save"
-                                                            data-action="save-jpg">Submit</button>
-                                                    </div>
-                                                    @endif
-    
-                                            </div>
+                                            @if (empty(@$order->customer_signature) ||
+                                                    @$order->drivers_license === '' ||
+                                                    auth()->user()->isAdmin())
+                                                <div id="" class="float-right"
+                                                    style="display: flex; justify-content:end;">
+                                                    <button type="submit" class="btn btn-primary" id="save"
+                                                        data-action="save-jpg">Submit</button>
+                                                </div>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
@@ -1025,120 +1092,5 @@
 @endsection
 
 @section('scripts')
-    <script>
-        var clearBtn = "#clear";
-        var saveBtn = "#save";
-        var canvasArea = "#signature-pad";
-        var returnUrlSave = "#signature_value";
-        var ajaxUrl = "{{ route('admin.invoice.store') }}";
-
-        $(document).ready(function() {
-            initSignaturePad();
-        });
-
-        function initSignaturePad() {
-            var canvas = document.getElementById(canvasArea.replace("#", ""));
-            console.log(canvas)
-            if (!canvas) {
-                console.error("Canvas not found: signature-pad");
-                return;
-            }
-            var context = canvas.getContext("2d");
-
-            var drawing = false;
-            var lastPos = null;
-
-            // Remove existing event handlers to avoid duplicates
-            $(document).off(
-                "mousemove touchmove mousedown touchstart touchend touchmove",
-                canvasArea
-            );
-            $(document).off("click", saveBtn);
-            $(clearBtn).off("click");
-
-            // Mouse and touch events for drawing
-            $(document).on("mousedown", canvasArea, function(e) {
-                if (e.which === 1) {
-                    drawing = true;
-                    lastPos = getMousePos(canvas, e);
-                }
-            });
-
-            $(document).on("mousemove", canvasArea, function(e) {
-                if (drawing) {
-                    var mousePos = getMousePos(canvas, e);
-                    draw(canvas, context, lastPos, mousePos);
-                    lastPos = mousePos;
-                }
-            });
-
-            $(document).on("mouseup", canvasArea, function() {
-                drawing = false;
-            });
-
-            $(document).on("touchstart", canvasArea, function(e) {
-                e.preventDefault();
-                drawing = true;
-                lastPos = getTouchPos(canvas, e);
-            });
-
-            $(document).on("touchmove", canvasArea, function(e) {
-                e.preventDefault();
-                if (drawing) {
-                    var touchPos = getTouchPos(canvas, e);
-                    draw(canvas, context, lastPos, touchPos);
-                    lastPos = touchPos;
-                }
-            });
-
-            $(document).on("touchend", canvasArea, function() {
-                drawing = false;
-            });
-
-            // Save button event handler
-            $(saveBtn).click(function() {
-                var canvas = document.getElementById(canvasArea.replace("#", ""));
-                var signatureData = canvas.toDataURL();
-
-                // Set the signature value in a hidden input field
-                $("#signature_value").val(signatureData);
-
-                // Now submit the form
-                $("form").submit();
-            });
-
-            // Clear canvas function and event handler
-            function clearCanvas() {
-                context.clearRect(0, 0, canvas.width, canvas.height);
-            }
-
-            $(clearBtn).click(function() {
-                clearCanvas();
-            });
-        }
-
-        function getMousePos(canvas, evt) {
-            var rect = canvas.getBoundingClientRect();
-            return {
-                x: evt.clientX - rect.left,
-                y: evt.clientY - rect.top,
-            };
-        }
-
-        function getTouchPos(canvas, evt) {
-            var rect = canvas.getBoundingClientRect();
-            var touch = evt.touches[0] || evt.changedTouches[0];
-            return {
-                x: touch.clientX - rect.left,
-                y: touch.clientY - rect.top,
-            };
-        }
-
-        function draw(canvas, context, startPos, endPos) {
-            context.beginPath();
-            context.moveTo(startPos.x, startPos.y);
-            context.lineTo(endPos.x, endPos.y);
-            context.stroke();
-        }
-    </script>
+    @include('admin.invoice.partials.script')
 @endsection

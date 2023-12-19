@@ -257,7 +257,7 @@ class InvoiceController extends Controller
 
         /* Profile Picture */
         $FileImage = "";
-        if (!empty($request->has('drivers_license'))) {
+        if ($request->has('drivers_license')) {
             if ($request['old_drivers_license'] != "") {
                 $temp = explode("/", $request['old_drivers_license']);
                 $fileName = end($temp);
@@ -273,21 +273,10 @@ class InvoiceController extends Controller
             $fileName = end($temp);
             $FileImage = $fileName;
         }
-
-
-
-
         // signature Image Start //
         $signatureFileName = "";
         if (!empty($request->signature)) {
-            if ($request['old_signature'] != "") {
-                $temp = explode("/", $request['old_signature']);
-                $fileName = end($temp);
-                $Path = public_path('storage/signatures/') . $fileName;
-                if (file_exists($Path)) {
-                    unlink($Path);
-                }
-            }
+
             if ($request->is_drawn == true) {
                 $image_parts = explode(";base64,", $request->signature);
                 $image_type_aux = explode("image/", $image_parts[0]);
@@ -297,6 +286,14 @@ class InvoiceController extends Controller
                 $signatureFilePath = 'public/signatures/' . $signatureFileName;
                 Storage::put($signatureFilePath, $image_base64);
             }
+            if ($request['old_signature'] != "") {
+                $temp = explode("/", $request['old_signature']);
+                $fileName = end($temp);
+                $Path = public_path('storage/signatures/') . $fileName;
+                if (file_exists($Path)) {
+                    unlink($Path);
+                }
+            }
         } else {
             $temp = explode("/", $request['old_signature']);
             $fileName = end($temp);
@@ -305,7 +302,7 @@ class InvoiceController extends Controller
 
         // dd(auth()->user()->isAdmin());
 
-        if (!Auth::user()->isAdmin()) {
+        if (!Auth::user()->isAdmin() || $request->request_from == "view") {
             $order->update([
                 'customer_signature' => @$signatureFileName,
                 'drivers_license' => $FileImage,

@@ -70,37 +70,18 @@
             height: 200px;
         }
     </style>
-    <div class="content container-fluid">
+    <div class="content">
         {{-- Section 1 --}}
         <!-- Content -->
 
-        <div class="container-xxl flex-grow-1 container-p-y">
+        <div class="flex-grow-1">
 
             <div class="row invoice-add">
                 <!-- Invoice Add-->
                 <div class="col-lg-12 col-12 mb-lg-0 mb-4">
                     <div class="card invoice-preview-card">
                         <div class="card-body">
-                            <div class="row p-sm-3 p-0">
-                                <div class="col-md-4 mb-md-0 mb-4">
-                                    <div class="d-flex svg-illustration mb-4 gap-2">
-                                        <span class="app-brand-logo demo">
-                                            <img src="{{ asset('logo.webp') }}">
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="col-md-4" style="text-align: center;">
-                                    <h2 class="mb-1" style=" color: #040404 !important;">THE ARMOUR LAB</h2>
-                                    <p class="mb-1">701 MILLWAY AVENUE, UNIT 6, VAUGHAN, ON L4K 3S7</p>
-                                    <p class="mb-1">T: 416-675-6853</p>
-                                    <p class="mb-1">E: INFO@THEARMOURLAB.COM</p>
-                                    <p class="mb-1">WWW.THEARMOURLAB.COM</p>
-                                </div>
-                                <div class="col-md-4" style="text-align: end;">
-                                    <h1 style=" color: #040404 !important;">WORK</h1>
-                                    <h1 style=" color: #040404 !important;">ORDER</h1>
-                                </div>
-                            </div>
+                            @include("admin.invoice.partials.header")
                             <hr class="my-4 mx-n4" />
                             <!-- Form Start -->
                             <form method="post" action="{{ route('admin.invoice.update') }}" enctype="multipart/form-data">
@@ -194,167 +175,167 @@
                                 <hr class="mx-n4" />
                                 <!-- Check Box Start -->
                                 <!-- <div class="row p-sm-3 p-0">
-                                        <div class="col-lg-4 col-12 invoice-actions">
-                                            <h6 class="pb-2">Ceramic Coating</h6>
-                                            <div class="card mb-4">
-                                                <div class="card-body">
-                                                    <div class="d-flex justify-content-between mb-2">
-                                                        <label for="kenzo_coating" class="mb-0">Kenzo Coating</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input" id="kenzo_coating"
-                                                                name="ceramic_coating_kenzo_coating"
-                                                                {{ @$order->ceramic_coating_kenzo_coating ? 'checked' : '' }}
-                                                                required>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between mb-2">
-                                                        <label for="quartz_plus_coating" class="mb-0">Quartz Plus
-                                                            Coating</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input"
-                                                                id="quartz_plus_coating"
-                                                                name="ceramic_coating_quartz_plus_coating"
-                                                                {{ @$order->ceramic_coating_quartz_plus_coating ? 'checked' : '' }}
-                                                                required>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between mb-2">
-                                                        <label for="quartz_coating" class="mb-0">Quartz Coating</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input" id="quartz_coating"
-                                                                name="ceramic_coating_quartz_coating"
-                                                                {{ @$order->ceramic_coating_quartz_coating ? 'checked' : '' }}
-                                                                required>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between mb-2">
-                                                        <label for="premier_coating" class="mb-0">Premier Coating</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input" id="premier_coating"
-                                                                name="ceramic_coating_premier_coating"
-                                                                {{ @$order->ceramic_coating_premier_coating ? 'checked' : '' }}
-                                                                required>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between mb-2">
-                                                        <label for="interior_pkg" class="mb-0">Interior PKG</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input" id="interior_pkg"
-                                                                name="ceramic_coating_interior_pkg"
-                                                                {{ @$order->ceramic_coating_interior_pkg ? 'checked' : '' }}
-                                                                required>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <label for="wheels_of_pkg" class="mb-0">Wheels of PKG</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input" id="wheels_of_pkg"
-                                                                name="ceramic_coating_wheels_of_pkg"
-                                                                {{ @$order->ceramic_coating_wheels_of_pkg ? 'checked' : '' }}
-                                                                required>
-                                                        </label>
+                                            <div class="col-lg-4 col-12 invoice-actions">
+                                                <h6 class="pb-2">Ceramic Coating</h6>
+                                                <div class="card mb-4">
+                                                    <div class="card-body">
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <label for="kenzo_coating" class="mb-0">Kenzo Coating</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input" id="kenzo_coating"
+                                                                    name="ceramic_coating_kenzo_coating"
+                                                                    {{ @$order->ceramic_coating_kenzo_coating ? 'checked' : '' }}
+                                                                    required>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <label for="quartz_plus_coating" class="mb-0">Quartz Plus
+                                                                Coating</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input"
+                                                                    id="quartz_plus_coating"
+                                                                    name="ceramic_coating_quartz_plus_coating"
+                                                                    {{ @$order->ceramic_coating_quartz_plus_coating ? 'checked' : '' }}
+                                                                    required>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <label for="quartz_coating" class="mb-0">Quartz Coating</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input" id="quartz_coating"
+                                                                    name="ceramic_coating_quartz_coating"
+                                                                    {{ @$order->ceramic_coating_quartz_coating ? 'checked' : '' }}
+                                                                    required>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <label for="premier_coating" class="mb-0">Premier Coating</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input" id="premier_coating"
+                                                                    name="ceramic_coating_premier_coating"
+                                                                    {{ @$order->ceramic_coating_premier_coating ? 'checked' : '' }}
+                                                                    required>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <label for="interior_pkg" class="mb-0">Interior PKG</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input" id="interior_pkg"
+                                                                    name="ceramic_coating_interior_pkg"
+                                                                    {{ @$order->ceramic_coating_interior_pkg ? 'checked' : '' }}
+                                                                    required>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <label for="wheels_of_pkg" class="mb-0">Wheels of PKG</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input" id="wheels_of_pkg"
+                                                                    name="ceramic_coating_wheels_of_pkg"
+                                                                    {{ @$order->ceramic_coating_wheels_of_pkg ? 'checked' : '' }}
+                                                                    required>
+                                                            </label>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="">
-                                                <label for="price" class="mb-0">Price :</label>
                                                 <div class="">
-                                                    <input type="number" class="form-control" name="ceramic_coating_price"
-                                                        value="{{ @$order->ceramic_coating_price }}" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-12 invoice-actions">
-                                            <h6 class="pb-2">PPF</h6>
-                                            <div class="card mb-4">
-                                                <div class="card-body">
-                                                    <div class="d-flex justify-content-between mb-2">
-                                                        <label for="full_car" class="mb-0">Full Car</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input" id="full_car"
-                                                                name="ppf_full_car"
-                                                                {{ @$order->ppf_full_car ? 'checked' : '' }} required>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between mb-2">
-                                                        <label for="client-notes" class="mb-0">Client Notes</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input" id="client-notes"
-                                                                name="ppf_client_notes"
-                                                                {{ @$order->ppf_client_notes ? 'checked' : '' }} required>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between mb-2">
-                                                        <label for="payment-stub" class="mb-0">Payment Stub</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input" id="payment-stub"
-                                                                name="ppf_payment_stub"
-                                                                {{ @$order->ppf_payment_stub ? 'checked' : '' }} required>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between mb-2">
-                                                        <label for="payment-terms" class="mb-0">Payment Terms</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input" id="payment-terms"
-                                                                name="ppf_payment_terms"
-                                                                {{ @$order->ppf_payment_terms ? 'checked' : '' }} required>
-                                                        </label>
+                                                    <label for="price" class="mb-0">Price :</label>
+                                                    <div class="">
+                                                        <input type="number" class="form-control" name="ceramic_coating_price"
+                                                            value="{{ @$order->ceramic_coating_price }}" required>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="">
-                                                <label for="price" class="mb-0">Price :</label>
+                                            <div class="col-lg-4 col-12 invoice-actions">
+                                                <h6 class="pb-2">PPF</h6>
+                                                <div class="card mb-4">
+                                                    <div class="card-body">
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <label for="full_car" class="mb-0">Full Car</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input" id="full_car"
+                                                                    name="ppf_full_car"
+                                                                    {{ @$order->ppf_full_car ? 'checked' : '' }} required>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <label for="client-notes" class="mb-0">Client Notes</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input" id="client-notes"
+                                                                    name="ppf_client_notes"
+                                                                    {{ @$order->ppf_client_notes ? 'checked' : '' }} required>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <label for="payment-stub" class="mb-0">Payment Stub</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input" id="payment-stub"
+                                                                    name="ppf_payment_stub"
+                                                                    {{ @$order->ppf_payment_stub ? 'checked' : '' }} required>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <label for="payment-terms" class="mb-0">Payment Terms</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input" id="payment-terms"
+                                                                    name="ppf_payment_terms"
+                                                                    {{ @$order->ppf_payment_terms ? 'checked' : '' }} required>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="">
-                                                    <input type="number" class="form-control" name="ppf_price"
-                                                        value="{{ @$order->ppf_price }}" required>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4 col-12 invoice-actions">
-                                            <h6 class="pb-2">Ceramic Coating</h6>
-                                            <div class="card mb-4">
-                                                <div class="card-body">
-                                                    <div class="d-flex justify-content-between mb-2">
-                                                        <label for="payment-terms" class="mb-0">Payment Terms</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input"
-                                                                name="cc_payment_terms"
-                                                                {{ @$order->cc_payment_terms ? 'checked' : '' }} required>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between mb-2">
-                                                        <label for="client-notes" class="mb-0">Client Notes</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input"
-                                                                name="cc_client_notes"
-                                                                {{ @$order->cc_client_notes ? 'checked' : '' }} required>
-                                                        </label>
-                                                    </div>
-                                                    <div class="d-flex justify-content-between">
-                                                        <label for="payment-stub" class="mb-0">Payment Stub</label>
-                                                        <label class="switch switch-primary me-0">
-                                                            <input type="checkbox" class="switch-input"
-                                                                name="cc_payment_stub"
-                                                                {{ @$order->cc_payment_stub ? 'checked' : '' }} required>
-                                                        </label>
+                                                    <label for="price" class="mb-0">Price :</label>
+                                                    <div class="">
+                                                        <input type="number" class="form-control" name="ppf_price"
+                                                            value="{{ @$order->ppf_price }}" required>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="">
-                                                <label for="price" class="mb-0">Price :</label>
+                                            <div class="col-lg-4 col-12 invoice-actions">
+                                                <h6 class="pb-2">Ceramic Coating</h6>
+                                                <div class="card mb-4">
+                                                    <div class="card-body">
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <label for="payment-terms" class="mb-0">Payment Terms</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input"
+                                                                    name="cc_payment_terms"
+                                                                    {{ @$order->cc_payment_terms ? 'checked' : '' }} required>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between mb-2">
+                                                            <label for="client-notes" class="mb-0">Client Notes</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input"
+                                                                    name="cc_client_notes"
+                                                                    {{ @$order->cc_client_notes ? 'checked' : '' }} required>
+                                                            </label>
+                                                        </div>
+                                                        <div class="d-flex justify-content-between">
+                                                            <label for="payment-stub" class="mb-0">Payment Stub</label>
+                                                            <label class="switch switch-primary me-0">
+                                                                <input type="checkbox" class="switch-input"
+                                                                    name="cc_payment_stub"
+                                                                    {{ @$order->cc_payment_stub ? 'checked' : '' }} required>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="">
-                                                    <input type="number" class="form-control" name="cc_price"
-                                                        value="{{ @$order->cc_price }}" required>
+                                                    <label for="price" class="mb-0">Price :</label>
+                                                    <div class="">
+                                                        <input type="number" class="form-control" name="cc_price"
+                                                            value="{{ @$order->cc_price }}" required>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div> -->
+                                        </div> -->
 
                                 <div class="row p-sm-3 p-0">
                                     <div class="col-lg-6 col-12 invoice-actions">
                                         <h6 class="pb-2">General Stages (applicable to all services)</h6>
                                         <div class="card mb-4">
-                                            <div class="card-body">
+                                            <div class="card-body table-responsive">
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
@@ -466,7 +447,7 @@
                                     <div class="col-lg-6 col-12 invoice-actions">
                                         <h6 class="pb-2">Paint Protection Film Stages</h6>
                                         <div class="card mb-4">
-                                            <div class="card-body">
+                                            <div class="card-body table-responsive">
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
@@ -598,7 +579,7 @@
                                     <div class="col-lg-6 col-12 invoice-actions">
                                         <h6 class="pb-2">Ceramic Coating Stages</h6>
                                         <div class="card mb-4">
-                                            <div class="card-body">
+                                            <div class="card-body table-responsive">
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
@@ -734,7 +715,7 @@
                                     <div class="col-lg-6 col-12 invoice-actions">
                                         <h6 class="pb-2">Window Tint Stages</h6>
                                         <div class="card mb-4">
-                                            <div class="card-body">
+                                            <div class="card-body table-responsive">
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
@@ -821,7 +802,7 @@
                                     <div class="col-lg-6 col-12 invoice-actions">
                                         <h6 class="pb-2">Final Stages (applicable to all services)</h6>
                                         <div class="card mb-4">
-                                            <div class="card-body">
+                                            <div class="card-body table-responsive">
                                                 <table class="table">
                                                     <tbody>
                                                         <tr>
@@ -914,8 +895,7 @@
                                                     <label class="switch switch-primary me-0">
                                                         <input type="checkbox" class="switch-input" id="kenzo_coating"
                                                             name="ceramic_coating_kenzo_coating"
-                                                            {{ @$order->ceramic_coating_kenzo_coating ? 'checked' : '' }}
-                                                            >
+                                                            {{ @$order->ceramic_coating_kenzo_coating ? 'checked' : '' }}>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
@@ -925,8 +905,7 @@
                                                         <input type="checkbox" class="switch-input"
                                                             id="quartz_plus_coating"
                                                             name="ceramic_coating_quartz_plus_coating"
-                                                            {{ @$order->ceramic_coating_quartz_plus_coating ? 'checked' : '' }}
-                                                            >
+                                                            {{ @$order->ceramic_coating_quartz_plus_coating ? 'checked' : '' }}>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
@@ -934,8 +913,7 @@
                                                     <label class="switch switch-primary me-0">
                                                         <input type="checkbox" class="switch-input" id="quartz_coating"
                                                             name="ceramic_coating_quartz_coating"
-                                                            {{ @$order->ceramic_coating_quartz_coating ? 'checked' : '' }}
-                                                            >
+                                                            {{ @$order->ceramic_coating_quartz_coating ? 'checked' : '' }}>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
@@ -943,8 +921,7 @@
                                                     <label class="switch switch-primary me-0">
                                                         <input type="checkbox" class="switch-input" id="premier_coating"
                                                             name="ceramic_coating_premier_coating"
-                                                            {{ @$order->ceramic_coating_premier_coating ? 'checked' : '' }}
-                                                            >
+                                                            {{ @$order->ceramic_coating_premier_coating ? 'checked' : '' }}>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between mb-2">
@@ -952,8 +929,7 @@
                                                     <label class="switch switch-primary me-0">
                                                         <input type="checkbox" class="switch-input" id="interior_pkg"
                                                             name="ceramic_coating_interior_pkg"
-                                                            {{ @$order->ceramic_coating_interior_pkg ? 'checked' : '' }}
-                                                            >
+                                                            {{ @$order->ceramic_coating_interior_pkg ? 'checked' : '' }}>
                                                     </label>
                                                 </div>
                                                 <div class="d-flex justify-content-between">
@@ -961,8 +937,7 @@
                                                     <label class="switch switch-primary me-0">
                                                         <input type="checkbox" class="switch-input" id="wheels_of_pkg"
                                                             name="ceramic_coating_wheels_of_pkg"
-                                                            {{ @$order->ceramic_coating_wheels_of_pkg ? 'checked' : '' }}
-                                                            >
+                                                            {{ @$order->ceramic_coating_wheels_of_pkg ? 'checked' : '' }}>
                                                     </label>
                                                 </div>
                                             </div>
@@ -971,7 +946,7 @@
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
                                                 <input type="number" class="form-control" name="ceramic_coating_price"
-                                                    value="{{ @$order->ceramic_coating_price }}" >
+                                                    value="{{ @$order->ceramic_coating_price }}">
                                             </div>
                                         </div>
                                     </div>
@@ -1269,15 +1244,7 @@
                                 <!-- Additional Requests End -->
                                 <hr class="my-4 mx-n4" />
                                 <div class="row p-sm-3 p-0">
-                                    <div class="col-md-4 col-sm-5 col-12 mb-sm-0 mb-4">
-                                        <h2 class="mb-1"
-                                            style=" color: #040404 !important; margin-bottom: 17px !important; font-size:x-large; font-weight: bolder;">
-                                            INSPECTION REPORT</h2>
-                                        <h6 class="pb-2">Defects:</h6>
-
-                                        @include('admin.partials.defect-table')
-
-                                    </div>
+                                  
                                     <div class="col-md-8 col-sm-7">
                                         <div class="row">
                                             <div class="col-7">
@@ -1295,22 +1262,11 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- <img src="{{ asset('storage/images/images.png') }}"> -->
-                                        <div id="image-container">
-                                            <canvas id="image-canvas"></canvas>
-                                        </div>
-                                        {{-- <button class="btn btn-primary" id="submit-image">Save Image</button> --}}
-                                        <!-- <img src="" id="image-preview" alt="Preview" width="50%" height="30%" /> -->
-                                        @if(!empty($order->defects))
-                                        <img src="{{ @$order->defects }}" id="defects" alt="defects"
-                                            width="50%" height="30%" />
-                                        <input type="hidden" id="old_defects" name="old_defects"
-                                            value="{{ @$order->defects }}">
-                                            @endif
 
-                                            <input type="hidden" name="imgBase64" id="imgBase64">
+                                        
                                     </div>
                                 </div>
+                                @include('admin.invoice.partials.defects', ['order' => $order])
                                 <hr class="my-4" />
                                 <!-- Note Start -->
                                 <div class="row">
@@ -1360,51 +1316,19 @@
 
                                             @include('admin.partials.terms-and-conditions-work-order')
 
-                                            <div class="row mt-3">
-                                                <div class="col-7">
-                                                    <label for="customer_signature" class="form-label mb-0">Customer
-                                                        Signature:</label>
-                                                    <div style="padding: 30px" class="row p-3">
-                                                        <div style="width: 100%">
-                                                            <canvas style="background: #dedede" id="signature-pad"
-                                                                width="400" height="200"></canvas>
-                                                        </div>
-
-                                                        <input hidden="" name="signature" value=""
-                                                            id="signature_value" />
-                                                        <input hidden="" name="is_drawn" value="false"
-                                                            id="is_drawn" />
-                                                        @if (!empty($order->customer_signature))
-                                                            <img src="{{ @$order->customer_signature }}"
-                                                                id="old_signature" alt="Old Signature" width="40%"
-                                                                height="20%" />
-                                                            <input type="hidden" id="old_signature"
-                                                                name="old_signature"
-                                                                value="{{ @$order->customer_signature }}">
-                                                        @endif
-                                                        <div class="row">
-                                                            <div class="col-3">
-                                                                <button type="button" class="btn btn-danger btn-sm"
-                                                                    id="clear">
-                                                                    Clear Signature
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                            @include('admin.invoice.partials.signature', [
+                                                'order' => $order,
+                                            ])
+                                            @if (
+                                                !empty(@$order->customer_signature) ||
+                                                    @$order->drivers_license === '' ||
+                                                    auth()->user()->isAdmin())
+                                                <div id="" class="float-right"
+                                                    style="display: flex; justify-content:end;">
+                                                    <button type="submit" class="btn btn-primary" id="save"
+                                                        data-action="save-jpg">Submit</button>
                                                 </div>
-                                                <div class="col-5">
-                                                    <label for="date" class="mb-0">Date:</label>
-                                                    <div class="">
-                                                        <input type="date" class="form-control" id="date"
-                                                            name="date" value="{{ @$order->date }}" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div id="" class="float-right"
-                                                style="display: flex; justify-content:end;">
-                                                <button type="submit" class="btn btn-primary" id="save"
-                                                    data-action="save-jpg">Submit</button>
-                                            </div>
+                                            @endif
                                         </div>
                                     </div>
                                 </div>
@@ -1478,252 +1402,5 @@
 @endsection
 
 @section('scripts')
-    <script>
-        $(document).ready(function() {
-            $('#email').change(function() {
-                var selectedOption = $('option:selected', this);
-
-                $('#first_name').val(selectedOption.data('first-name'));
-                $('#last_name').val(selectedOption.data('last-name'));
-                $('#phone').val(selectedOption.data('phone'));
-                $('#id').val(selectedOption.data('id'));
-            });
-
-            // Trigger change event initially to populate fields based on the selected email
-            $('#email').trigger('change');
-        });
-
-        function toggleAdditionalRows(elementId, className) {
-            var additionalRows = document.getElementsByClassName(className);
-            for (var i = 0; i < additionalRows.length; i++) {
-                additionalRows[i].style.display = elementId.checked ? 'table-row' : 'none';
-            }
-        }
-
-        document.getElementById('general_stages').addEventListener('change', function() {
-            toggleAdditionalRows(this, 'additional-row-gs');
-        });
-
-        document.getElementById('paint_protection_film_stages').addEventListener('change', function() {
-            toggleAdditionalRows(this, 'additional-row-ppf');
-        });
-
-        document.getElementById('ceramic_coating_stages').addEventListener('change', function() {
-            toggleAdditionalRows(this, 'additional-row-ccs');
-        });
-
-        document.getElementById('window_tint_stages').addEventListener('change', function() {
-            toggleAdditionalRows(this, 'additional-row-wts');
-        });
-
-        document.getElementById('final_stages').addEventListener('change', function() {
-            toggleAdditionalRows(this, 'additional-row-fs');
-        });
-
-        // Initial check and display
-        toggleAdditionalRows(document.getElementById('general_stages'), 'additional-row-gs');
-        toggleAdditionalRows(document.getElementById('paint_protection_film_stages'), 'additional-row-ppf');
-        toggleAdditionalRows(document.getElementById('ceramic_coating_stages'), 'additional-row-ccs');
-        toggleAdditionalRows(document.getElementById('window_tint_stages'), 'additional-row-wts');
-        toggleAdditionalRows(document.getElementById('final_stages'), 'additional-row-fs');
-
-        var clearBtn = "#clear";
-        var saveBtn = "#save";
-        var canvasArea = "#signature-pad";
-        var returnUrlSave = "#signature_value";
-        var ajaxUrl = "{{ route('admin.invoice.store') }}";
-
-        $(document).ready(function() {
-            initSignaturePad();
-        });
-
-        function initSignaturePad() {
-            var canvas = document.getElementById(canvasArea.replace("#", ""));
-            console.log(canvas)
-            if (!canvas) {
-                console.error("Canvas not found: signature-pad");
-                return;
-            }
-            var context = canvas.getContext("2d");
-
-            var drawing = false;
-            var lastPos = null;
-
-            // Remove existing event handlers to avoid duplicates
-            $(document).off(
-                "mousemove touchmove mousedown touchstart touchend touchmove",
-                canvasArea
-            );
-            $(document).off("click", saveBtn);
-            $(clearBtn).off("click");
-
-            // Mouse and touch events for drawing
-            $(document).on("mousedown", canvasArea, function(e) {
-                if (e.which === 1) {
-                    drawing = true;
-                    lastPos = getMousePos(canvas, e);
-                }
-            });
-
-            $(document).on("mousemove", canvasArea, function(e) {
-                if (drawing) {
-                    var mousePos = getMousePos(canvas, e);
-                    draw(canvas, context, lastPos, mousePos);
-
-                    lastPos = mousePos;
-                }
-            });
-
-            $(document).on("mouseup", canvasArea, function() {
-                var canvas = document.getElementById(canvasArea.replace("#", ""));
-                var signatureData = canvas.toDataURL();
-                $("#signature_value").val(signatureData);
-                drawing = false;
-            });
-
-            $(document).on("touchstart", canvasArea, function(e) {
-                e.preventDefault();
-                drawing = true;
-                lastPos = getTouchPos(canvas, e);
-            });
-
-            $(document).on("touchmove", canvasArea, function(e) {
-                e.preventDefault();
-                if (drawing) {
-                    var touchPos = getTouchPos(canvas, e);
-                    draw(canvas, context, lastPos, touchPos);
-                    lastPos = touchPos;
-                }
-            });
-
-            $(document).on("touchend", canvasArea, function() {
-                drawing = false;
-            });
-
-            // Save button event handler
-            // $(saveBtn).click(function() {
-            //     var canvas = document.getElementById(canvasArea.replace("#", ""));
-            //     var signatureData = canvas.toDataURL();
-
-            //     // Set the signature value in a hidden input field
-            //     $("#signature_value").val(signatureData);
-
-            //     // Now submit the form
-            //     $("form").submit();
-            // });
-
-            // Clear canvas function and event handler
-            function clearCanvas() {
-                document.getElementById("is_drawn").value = false;
-                context.clearRect(0, 0, canvas.width, canvas.height);
-            }
-
-            $(clearBtn).click(function() {
-                $("#signature_value").val("");
-                clearCanvas();
-            });
-        }
-
-        function getMousePos(canvas, evt) {
-            var rect = canvas.getBoundingClientRect();
-            return {
-                x: evt.clientX - rect.left,
-                y: evt.clientY - rect.top,
-            };
-        }
-
-        function getTouchPos(canvas, evt) {
-            var rect = canvas.getBoundingClientRect();
-            var touch = evt.touches[0] || evt.changedTouches[0];
-            return {
-                x: touch.clientX - rect.left,
-                y: touch.clientY - rect.top,
-            };
-        }
-
-        function draw(canvas, context, startPos, endPos) {
-            document.getElementById("is_drawn").value = true;
-            context.beginPath();
-            context.moveTo(startPos.x, startPos.y);
-            context.lineTo(endPos.x, endPos.y);
-            context.stroke();
-        }
-
-        $(document).ready(function() {
-            var canvas = document.getElementById("image-canvas");
-            var ctx = canvas.getContext("2d");
-            var img = new Image();
-
-            img.onload = function() {
-                canvas.width = img.width;
-                canvas.height = img.height;
-                ctx.drawImage(img, 0, 0);
-            };
-            img.src = "{{ asset('/images/images.png') }}"; // Set source at the end
-
-            $("#image-container").click(function(e) {
-                var posX = $(this).offset().left,
-                    posY = $(this).offset().top,
-                    x = e.pageX - posX,
-                    y = e.pageY - posY;
-
-                var $inputWrapper = $("<div>", {
-                    class: "input-wrapper",
-                    css: {
-                        left: x + "px",
-                        top: y + "px",
-                    },
-                }).appendTo("#image-container");
-
-                var $input = $("<input class='mb-2'>", {
-                    type: "text",
-                    class: "defect-input",
-                }).appendTo($inputWrapper);
-
-                var $addButton = $("<button>", {
-                    text: "Add",
-                    click: function(event) {
-                        event.stopPropagation();
-                        var defectDescription = $input.val();
-                        if (defectDescription.trim() !== "") {
-                            ctx.font = "16px Arial";
-                            ctx.fillStyle = "red";
-                            ctx.fillText(defectDescription, x, y);
-                        }
-                        var dataURL = canvas.toDataURL("image/png");
-                       $("#imgBase64").attr("value", dataURL);
-                        console.log(dataURL);
-                        $('#image-preview').attr('src', dataURL);
-                        $inputWrapper.remove();
-                    },
-                }).appendTo($inputWrapper);
-
-                var $removeButton = $("<button>", {
-                    text: "Remove",
-                    click: function(event) {
-                        event.stopPropagation();
-                        $inputWrapper.remove();
-                    },
-                }).appendTo($inputWrapper);
-
-                $input.focus();
-            });
-
-            // $("#submit-image").click(function() {
-            //     // Convert the canvas to a data URL
-            //     var dataURL = canvas.toDataURL("image/png");
-            //     $('#image-preview').attr('src', dataURL);
-            //     $('#defects').addClass('d-none');
-
-            //     // Append the canvas image data to the form data
-            //     $('<input>').attr({
-            //         type: 'hidden',
-            //         id: 'imgBase64',
-            //         name: 'imgBase64'
-            //     }).val(dataURL).appendTo('form');
-
-            //     // Rest of your AJAX code...
-            // });
-        });
-    </script>
+    @include('admin.invoice.partials.script')
 @endsection
