@@ -48,8 +48,8 @@
                                 <input type="hidden" name="request_from" value="view">
                                 <div class="row py-sm-3">
                                     <div class="col-md-4 col-12">
-                                        <label for="email" class="form-label me-5 fw-medium">Email:</label>
-                                        <input type="text" class="form-control" name="email"
+                                        <label for="" class="form-label me-5 fw-medium">Email:</label>
+                                        <input type="text" class="form-control" name=""
                                             value="{{ @$order->user->email }}" disabled />
                                     </div>
                                     <div class="col-md-4 col-12">
@@ -192,11 +192,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                            <label for="price" class="mb-0">Price :</label>
-                                                                            <div class="">
-                                                                                <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                                            </div>
-                                                                        </div> -->
+                                                                                <label for="price" class="mb-0">Price :</label>
+                                                                                <div class="">
+                                                                                    <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                </div>
+                                                                            </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -303,11 +303,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                            <label for="price" class="mb-0">Price :</label>
-                                                                            <div class="">
-                                                                                <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                                            </div>
-                                                                        </div> -->
+                                                                                <label for="price" class="mb-0">Price :</label>
+                                                                                <div class="">
+                                                                                    <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                </div>
+                                                                            </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -416,11 +416,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                            <label for="price" class="mb-0">Price :</label>
-                                                                            <div class="">
-                                                                                <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                                            </div>
-                                                                        </div> -->
+                                                                                <label for="price" class="mb-0">Price :</label>
+                                                                                <div class="">
+                                                                                    <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                </div>
+                                                                            </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -491,11 +491,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                            <label for="price" class="mb-0">Price :</label>
-                                                                            <div class="">
-                                                                                <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                                            </div>
-                                                                        </div> -->
+                                                                                <label for="price" class="mb-0">Price :</label>
+                                                                                <div class="">
+                                                                                    <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                </div>
+                                                                            </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -565,11 +565,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                            <label for="price" class="mb-0">Price :</label>
-                                                                            <div class="">
-                                                                                <input type="number" class="form-control" name="ceramic_coating_price">
-                                                                            </div>
-                                                                        </div> -->
+                                                                                <label for="price" class="mb-0">Price :</label>
+                                                                                <div class="">
+                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                </div>
+                                                                            </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -943,8 +943,7 @@
                                                     <span>&nbsp;Browse</span>
                                                 </span>
                                                 <input type="file" class="input-style" name="drivers_license"
-                                                    onchange="ReadUrl(this, 'drivers_license_preview', 'drivers_license_browse');"
-                                                    required>
+                                                    onchange="ReadUrl(this, 'drivers_license_preview', 'drivers_license_browse');">
                                             </label>
                                         </div>
                                     @endif
@@ -1011,8 +1010,7 @@
                                             @include('admin.invoice.partials.signature', [
                                                 'order' => $order,
                                             ])
-                                            @if (
-                                                !empty(@$order->customer_signature) ||
+                                            @if (empty(@$order->customer_signature) ||
                                                     @$order->drivers_license === '' ||
                                                     auth()->user()->isAdmin())
                                                 <div id="" class="float-right"

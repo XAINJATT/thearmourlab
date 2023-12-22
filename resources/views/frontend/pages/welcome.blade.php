@@ -73,7 +73,7 @@
                     <div class="col-lg-7 mb-30">
                         <div class="about-media">
                             <div class="media">
-                                <img src="images/about/pic1.jpg" style="filter: sepia(1);" alt="">
+                                <img src="images/male-worker-wrapping-car-with-ptotective-foil.jpg" alt="">
                             </div>
                             <div class="about-contact bg-primary text-white">
                                 <span>Ready to elevate your vehicle's resilience and radiance?</span>
@@ -81,7 +81,7 @@
                                 <h3 class="number mb-15 text-white"><a class="text-white" href="tel:(416) 675 6853">(416)
                                         675 6853</a> </h3>
                                 <p class="mb-20"> Connect with our specialists or Book An Appointment for
-                                    a consultation. Trust in The Armour Lab to add an invisible armor to your prized
+                                    a consultation. Trust in The Armour Lab to add an invisible armour to your prized
                                     possession.</p>
                                 <a href="{{ route('frontend.contact') }}" class="btn btn-light">BOOK AN APPOINTMENT</a>
                             </div>

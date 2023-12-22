@@ -1010,8 +1010,9 @@
                                                 'order' => $order,
                                             ])
 
-                                            @if (empty(@$order->customer_signature) ||
-                                                    @$order->drivers_license === '' ||
+                                        
+                                            @if (empty($order->customer_signature) ||
+                                                   empty(@$order->drivers_license ) ||
                                                     auth()->user()->isAdmin())
                                                 <div id="" class="float-right"
                                                     style="display: flex; justify-content:end;">

@@ -110,17 +110,17 @@
                                     <div class="col-md-4 col-12">
                                         <label for="first_name" class="form-label me-5 fw-medium">First Name:</label>
                                         <input type="text" class="form-control" id="first_name" name="first_name"
-                                            placeholder="First Name" />
+                                            placeholder="First Name" required/>
                                     </div>
                                     <div class="col-md-4 col-12">
                                         <label for="last_name" class="form-label me-5 fw-medium">Last Name:</label>
                                         <input type="text" class="form-control" id="last_name" name="last_name"
-                                            placeholder="Last Name" />
+                                            placeholder="Last Name" required/>
                                     </div>
                                     <div class="col-md-4 col-12 mt-2">
                                         <label for="phone" class="form-label me-5 fw-medium">Phone:</label>
                                         <input type="text" class="form-control" id="phone" name="phone"
-                                            placeholder="Phone" />
+                                            placeholder="Phone" required/>
                                     </div>
                                     <div class="col-md-4 col-12">
                                         <label for="make" class="form-label me-5 fw-medium">Make:</label>
@@ -240,7 +240,7 @@
                                                 <div class="">
                                                     <label for="price" class="mb-0">Price :</label>
                                                     <div class="">
-                                                        <input type="number" class="form-control" name="ceramic_coating_price"
+                                                        <input type="text" class="form-control" name="ceramic_coating_price"
                                                             value="{{ @$order->ceramic_coating_price }}" required>
                                                     </div>
                                                 </div>
@@ -286,7 +286,7 @@
                                                 <div class="">
                                                     <label for="price" class="mb-0">Price :</label>
                                                     <div class="">
-                                                        <input type="number" class="form-control" name="ppf_price"
+                                                        <input type="text" class="form-control" name="ppf_price"
                                                             value="{{ @$order->ppf_price }}" required>
                                                     </div>
                                                 </div>
@@ -324,7 +324,7 @@
                                                 <div class="">
                                                     <label for="price" class="mb-0">Price :</label>
                                                     <div class="">
-                                                        <input type="number" class="form-control" name="cc_price"
+                                                        <input type="text" class="form-control" name="cc_price"
                                                             value="{{ @$order->cc_price }}" required>
                                                     </div>
                                                 </div>
@@ -945,7 +945,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="ceramic_coating_price"
+                                                <input type="text" class="form-control" name="ceramic_coating_price"
                                                     value="{{ @$order->ceramic_coating_price }}">
                                             </div>
                                         </div>
@@ -1016,7 +1016,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="ppf_price"
+                                                <input type="text" class="form-control" name="ppf_price"
                                                     value="{{ @$order->ppf_price }}">
                                             </div>
                                         </div>
@@ -1088,8 +1088,8 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="wt_price"
-                                                    value="{{ @$order->wt_price }}" required>
+                                                <input type="text" class="form-control" name="wt_price"
+                                                    value="{{ @$order->wt_price }}" >
                                             </div>
                                         </div>
                                     </div>
@@ -1130,8 +1130,8 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="pc_price"
-                                                    value="{{ @$order->pc_price }}" required>
+                                                <input type="text" class="form-control" name="pc_price"
+                                                    value="{{ @$order->pc_price }}" >
                                             </div>
                                         </div>
                                     </div>
@@ -1191,8 +1191,8 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="os_price"
-                                                    value="{{ @$order->os_price }}" required>
+                                                <input type="text" class="form-control" name="os_price"
+                                                    value="{{ @$order->os_price }}" >
                                             </div>
                                         </div>
                                     </div>
@@ -1208,13 +1208,13 @@
                                             <label for="additional_requests" class="form-label fw-medium">Additional
                                                 Requests:</label>
                                             <textarea class="form-control" rows="2" id="additional_requests" name="additional_requests"
-                                                placeholder="Additional Requests" required>{{ @$order->additional_requests }}</textarea>
+                                                placeholder="Additional Requests" >{{ @$order->additional_requests }}</textarea>
                                         </div>
                                     </div>
                                     <div class="col-6 mb-3">
                                         <label for="total_price" class="mb-0">Total Price :</label>
                                         <div class="">
-                                            <input type="number" class="form-control" id="total_price"
+                                            <input type="text" class="form-control" id="total_price"
                                                 name="total_price" value="{{ @$order->total_price }}" required>
                                         </div>
                                     </div>
@@ -1256,9 +1256,9 @@
                                             <div class="col-5">
                                                 <label for="price" class="mb-0">Mileage In :</label>
                                                 <div class="">
-                                                    <input type="number" class="form-control" id="mileage_in_price"
+                                                    <input type="text" class="form-control" id="mileage_in_price"
                                                         name="mileage_in_price" value="{{ @$order->mileage_in_price }}"
-                                                        required>
+                                                        >
                                                 </div>
                                             </div>
                                         </div>
@@ -1273,13 +1273,13 @@
                                     <div class="col-12">
                                         <div class="mb-3">
                                             <label for="note" class="form-label fw-medium">Note:</label>
-                                            <textarea class="form-control" rows="2" id="note" name="note" placeholder="Note" required>{{ @$order->note }}</textarea>
+                                            <textarea class="form-control" rows="2" id="note" name="note" placeholder="Note" >{{ @$order->note }}</textarea>
                                         </div>
                                     </div>
                                     {{-- <div class="col-6 mb-3">
                   <label for="int" class="mb-0">Int :</label>
                   <div class="">
-                    <input type="number" class="form-control" id="int" name="int" value="{{ @$order->int }}" required>
+                    <input type="text" class="form-control" id="int" name="int" value="{{ @$order->int }}" required>
                             </div>
                     </div> --}}
                                 </div>
@@ -1294,7 +1294,7 @@
                                     </div>
                                     <div class="col-6">
                                         <p class="mb-2">Payment</p>
-                                        <!-- <input type="number" class="form-control" id="payment_type" name="payment_type" value="{{ @$order->payment_type }}" required> -->
+                                        <!-- <input type="text" class="form-control" id="payment_type" name="payment_type" value="{{ @$order->payment_type }}" required> -->
                                         <select class="form-select mb-4" name="payment_type">
                                             <option value="Cash"
                                                 {{ $order->payment_type == 'Cash' ? 'selected' : '' }}>

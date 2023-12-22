@@ -78,10 +78,10 @@
                                                 placeholder="Enter Phone Number" value="{{ $users->phone }}" required>
                                         </div>
 
-                                        <!-- <div class="col-md-6 mb-3">
+                                         <div class="col-md-6 mb-3">
                                             <label for="password" class="font-weight-bold">Password <span class="text-danger">*</span></label>
-                                            <input type="password" class="form-control" id="password" name="password" required>
-                                        </div> -->
+                                            <input type="password" class="form-control" id="password" name="password">
+                                        </div> 
 
                                         {{-- <div class="col-12 mb-3">
                                         <label for="-address-" class="font-weight-bold">Home Address <span class="text-danger">*</span></label>

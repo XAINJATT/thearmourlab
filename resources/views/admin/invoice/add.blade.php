@@ -673,7 +673,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="ceramic_coating_price">
+                                                <input type="text" class="form-control" name="ceramic_coating_price">
                                             </div>
                                         </div>
                                     </div>
@@ -736,7 +736,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="ppf_price">
+                                                <input type="text" class="form-control" name="ppf_price">
                                             </div>
                                         </div>
                                     </div>
@@ -799,7 +799,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="wt_price">
+                                                <input type="text" class="form-control" name="wt_price">
                                             </div>
                                         </div>
                                     </div>
@@ -837,7 +837,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="pc_price">
+                                                <input type="text" class="form-control" name="pc_price">
                                             </div>
                                         </div>
                                     </div>
@@ -892,7 +892,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="os_price">
+                                                <input type="text" class="form-control" name="os_price">
                                             </div>
                                         </div>
                                     </div>
@@ -913,7 +913,7 @@
                                     <div class="col-6 mb-3">
                                         <label for="total_price" class="mb-0">Total Price : *</label>
                                         <div class="">
-                                            <input type="number" class="form-control" id="total_price"
+                                            <input type="text" class="form-control" id="total_price"
                                                 name="total_price" required>
                                         </div>
                                     </div>
@@ -945,7 +945,7 @@
                                     <div class="col-5">
                                         <label for="price" class="mb-0">Mileage In :</label>
                                         <div class="">
-                                            <input type="number" class="form-control" id="mileage_in_price"
+                                            <input type="text" class="form-control" id="mileage_in_price"
                                                 name="mileage_in_price">
                                         </div>
                                     </div>
@@ -966,7 +966,7 @@
                                     {{-- <div class="col-6 mb-3">
                   <label for="int" class="mb-0">Int :</label>
                   <div class="">
-                    <input type="number" class="form-control" id="int" name="int">
+                    <input type="text" class="form-control" id="int" name="int">
                   </div>
                 </div> --}}
                                 </div>

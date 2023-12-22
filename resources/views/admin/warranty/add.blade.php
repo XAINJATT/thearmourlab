@@ -151,35 +151,35 @@
                                         <div class="">
                                             <label for="exterior_package" class="form-label me-2 fw-medium mt-2">Exterior
                                                 Package:</label>
-                                            <input required type="text" class="form-control" id="exterior_package"
+                                            <input  type="text" class="form-control" id="exterior_package"
                                                 name="exterior_package" placeholder="Exterior Package" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="interior" class="form-label me-2 fw-medium mt-2">Interior:</label>
-                                            <input required type="text" class="form-control" id="interior"
+                                            <input  type="text" class="form-control" id="interior"
                                                 name="interior" placeholder="Interior" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="windows" class="form-label me-2 fw-medium mt-2">Windows:</label>
-                                            <input required type="text" class="form-control" id="windows"
+                                            <input  type="text" class="form-control" id="windows"
                                                 name="windows" placeholder="Windows" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="wheels" class="form-label me-2 fw-medium mt-2">Wheels:</label>
-                                            <input required type="text" class="form-control" id="wheels"
+                                            <input  type="text" class="form-control" id="wheels"
                                                 name="wheels" placeholder="Wheels" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="trim" class="form-label me-2 fw-medium mt-2">Trim:</label>
-                                            <input required type="text" class="form-control" id="trim"
+                                            <input  type="text" class="form-control" id="trim"
                                                 name="trim" placeholder="Trim" />
                                         </div>
                                     </div>
@@ -187,14 +187,14 @@
                                         <div class="">
                                             <label for="paint_correction" class="form-label me-2 fw-medium mt-2">Paint
                                                 Correction:</label>
-                                            <input required type="text" class="form-control" id="paint_correction"
+                                            <input  type="text" class="form-control" id="paint_correction"
                                                 name="paint_correction" placeholder="Paint Correction" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="body" class="form-label me-2 fw-medium mt-2">Body:</label>
-                                            <input required type="text" class="form-control" id="body"
+                                            <input  type="text" class="form-control" id="body"
                                                 name="body" placeholder="Body" />
                                         </div>
                                     </div>
@@ -202,7 +202,7 @@
                                         <div class="">
                                             <label for="coating_duration" class="form-label me-2 fw-medium mt-2">Coating
                                                 Duration:</label>
-                                            <input required type="text" class="form-control" id="coating_duration"
+                                            <input  type="text" class="form-control" id="coating_duration"
                                                 name="coating_duration" placeholder="Coating Duration" />
                                         </div>
                                     </div>
@@ -234,7 +234,7 @@
                                         <div class="">
                                             <label for="attitionl_panels"
                                                 class="form-label me-2 fw-medium mt-2">Additional Panels:</label>
-                                            <input required type="text" class="form-control" id="attitionl_panels"
+                                            <input  type="text" class="form-control" id="attitionl_panels"
                                                 name="attitionl_panels" placeholder="Additional Panels" />
                                         </div>
                                     </div>
@@ -242,7 +242,7 @@
                                         <div class="">
                                             <label for="ppf_brand" class="form-label me-2 fw-Medium mt-2">Ppf
                                                 Brand</label>
-                                            <input required type="text" class="form-control" id="ppf_brand"
+                                            <input  type="text" class="form-control" id="ppf_brand"
                                                 name="ppf_brand" placeholder="Ppf Brand" />
                                         </div>
                                     </div>
@@ -250,7 +250,7 @@
                                         <div class="">
                                             <label for="roll_serial_number" class="form-label me-2 fw-medium mt-2">Roll
                                                 Serial Number:</label>
-                                            <input required type="text" class="form-control" id="roll_serial_number"
+                                            <input  type="text" class="form-control" id="roll_serial_number"
                                                 name="roll_serial_number" placeholder="Roll Serial Number" />
                                         </div>
                                     </div>
@@ -258,7 +258,7 @@
                                         <div class="">
                                             <label for="warranty_duration" class="form-label me-2 fw-medium mt-2">Warranty
                                                 Duration:</label>
-                                            <input required type="text" class="form-control" id="warranty_duration"
+                                            <input  type="text" class="form-control" id="warranty_duration"
                                                 name="warranty_duration" placeholder="Warranty Duration" />
                                         </div>
                                     </div>
@@ -266,7 +266,7 @@
                                         <div class="">
                                             <label for="installer"
                                                 class="form-label me-2 fw-medium mt-2">Installer:</label>
-                                            <input required type="text" class="form-control" id="installer"
+                                            <input  type="text" class="form-control" id="installer"
                                                 name="installer" placeholder="Installer" />
                                         </div>
                                     </div>
@@ -274,7 +274,7 @@
                                         <div class="">
                                             <label for="date-of_installaction" class="form-label me-2 fw-medium mt-2">Date
                                                 Of Installaction:</label>
-                                            <input required type="date" class="form-control"
+                                            <input  type="date" class="form-control"
                                                 id="date_of_installaction" name="date_of_installation"
                                                 placeholder="Date Of Installaction" />
                                         </div>
@@ -411,188 +411,5 @@
 @endsection
 
 @section('scripts')
-    <script>
-        function addRow() {
-            // Get the table element
-            var table = document.getElementById("maintenanceLog");
-
-            // Insert a new row at the end of the table
-            var newRow = table.insertRow(-1);
-
-            // Insert new cells (<td> elements) and add the input fields
-            var cell1 = newRow.insertCell(0);
-            var cell2 = newRow.insertCell(1);
-            var cell3 = newRow.insertCell(2);
-            var cell4 = newRow.insertCell(3);
-            var cell5 = newRow.insertCell(4);
-            var cell6 = newRow.insertCell(5);
-
-            // Add the input fields
-            cell1.innerHTML = '<input class="form-control" type="date" name="date[]">';
-            cell2.innerHTML = '<input class="form-control" type="text" name="annualInspection[]">';
-            cell3.innerHTML = '<input class="form-control" type="text" name="productUsed[]">';
-            cell4.innerHTML = '<input class="form-control" type="text" name="performedBy[]">';
-            cell5.innerHTML = '<input class="form-control" type="text" name="notes[]">';
-            cell6.innerHTML = '<button class="btn btn-danger" type="button" onclick="removeRow(this)">Remove</button>';
-        }
-
-        function removeRow(btn) {
-            var row = btn.parentNode.parentNode;
-            row.parentNode.removeChild(row);
-        }
-
-        $(document).ready(function() {
-            $('#email').change(function() {
-                var selectedEmail = $(this).val();
-                var selectedOption = $('option:selected', this);
-
-                $('#first_name').val(selectedOption.data('first-name'));
-                $('#last_name').val(selectedOption.data('last-name'));
-                $('#tel').val(selectedOption.data('tel'));
-                $('#id').val(selectedOption.data('id'));
-            });
-        });
-
-        var clearBtn = "#clear";
-        var saveBtn = "#save";
-        var canvasArea = "#signature-pad";
-        var returnUrlSave = "#signature_value";
-        var ajaxUrl = "{{ route('admin.invoice.store') }}";
-
-        $(document).ready(function() {
-            initSignaturePad();
-        });
-
-        function initSignaturePad() {
-            var canvas = document.getElementById(canvasArea.replace("#", ""));
-            console.log(canvas)
-            if (!canvas) {
-                console.error("Canvas not found: signature-pad");
-                return;
-            }
-            var context = canvas.getContext("2d");
-
-            var drawing = false;
-            var lastPos = null;
-
-            // Remove existing event handlers to avoid duplicates
-            $(document).off(
-                "mousemove touchmove mousedown touchstart touchend touchmove",
-                canvasArea
-            );
-            $(document).off("click", saveBtn);
-            $(clearBtn).off("click");
-
-            // Mouse and touch events for drawing
-            $(document).on("mousedown", canvasArea, function(e) {
-                if (e.which === 1) {
-                    drawing = true;
-                    lastPos = getMousePos(canvas, e);
-                }
-            });
-
-            $(document).on("mouseup", canvasArea, function() {
-                drawing = false;
-            });
-
-            canvas.addEventListener('touchstart', function(e) {
-                e.preventDefault();
-                drawing = true;
-                lastPos = getTouchPos(canvas, e);
-            }, false);
-
-            canvas.addEventListener('touchmove', function(e) {
-                e.preventDefault();
-                if (drawing) {
-                    var touchPos = getTouchPos(canvas, e);
-                    if (touchPos) {
-                        draw(canvas, context, lastPos, touchPos);
-                        lastPos = touchPos;
-                    }
-                }
-            }, false);
-
-            canvas.addEventListener('touchend', function(e) {
-                e.preventDefault();
-                drawing = false;
-            }, false);
-
-
-
-            $(document).on("mousemove", canvasArea, function(e) {
-                if (drawing) {
-                    var mousePos = getMousePos(canvas, e);
-                    if (lastPos && mousePos) {
-                        draw(canvas, context, lastPos, mousePos);
-                        lastPos = mousePos;
-                    }
-                }
-            });
-
-
-
-            // Save button event handler
-            $(saveBtn).click(function() {
-                var canvas = document.getElementById(canvasArea.replace("#", ""));
-                var signatureData = canvas.toDataURL();
-
-                // Set the signature value in a hidden input field
-                $("#signature_value").attr("value", signatureData);
-
-                // Now submit the form
-                $("form").submit();
-            });
-
-            // Clear canvas function and event handler
-            function clearCanvas() {
-                document.getElementById("is_drawn").value = false;
-                context.clearRect(0, 0, canvas.width, canvas.height);
-            }
-
-            $(clearBtn).click(function() {
-                clearCanvas();
-            });
-        }
-
-        function getMousePos(canvas, evt) {
-            var rect = canvas.getBoundingClientRect();
-            return {
-                x: evt.clientX - rect.left,
-                y: evt.clientY - rect.top,
-            };
-        }
-
-        function getTouchPos(canvas, evt) {
-            var rect = canvas.getBoundingClientRect();
-
-            // Check if evt.touches and evt.changedTouches are defined
-            if (evt.touches && evt.touches.length > 0) {
-                var touch = evt.touches[0];
-                return {
-                    x: touch.clientX - rect.left,
-                    y: touch.clientY - rect.top,
-                };
-            } else if (evt.changedTouches && evt.changedTouches.length > 0) {
-                var touch = evt.changedTouches[0];
-                return {
-                    x: touch.clientX - rect.left,
-                    y: touch.clientY - rect.top,
-                };
-            }
-
-            return null; // Return null if there are no touch points
-        }
-
-
-        function draw(canvas, context, startPos, endPos) {
-            var canvas = document.getElementById(canvasArea.replace("#", ""));
-            var signatureData = canvas.toDataURL();
-            document.getElementById("is_drawn").value = true;
-            $("#signature_value").attr("value", signatureData);
-            context.beginPath();
-            context.moveTo(startPos.x, startPos.y);
-            context.lineTo(endPos.x, endPos.y);
-            context.stroke();
-        }
-    </script>
+   @include("admin.warranty.partials.scripts")
 @endsection

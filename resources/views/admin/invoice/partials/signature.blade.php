@@ -1,15 +1,23 @@
 <div class="row mt-3">
     @if (!empty($order->customer_signature))
+        @php
+            if (str_contains(url()->current(), 'warranty')) {
+                $path = asset('storage/signatures/' . $order->customer_signature);
+            } else {
+                $path = asset($order->customer_signature);
+            }
+        @endphp
+
         <div class="col-md-7">
             <label for="customer_signature" class="form-label mb-0">Customer
                 Signature:</label>
-            <img src="{{ @$order->customer_signature }}" alt="Customer Signature">
+            <img src="{{ $path }}" alt="Customer Signature">
         </div>
         <div class="col-md-5">
             <label for="date" class="mb-0">Date:</label>
             <div class="">
-                <input type="date" class="form-control" id="date" name="date" value="{{ @$order->date }}"
-                    disabled>
+                <input type="datetime-local" class="form-control" id="date" name="date"
+                    value="{{ @$order->date }}" disabled>
             </div>
         </div>
     @endif
@@ -40,12 +48,12 @@
             <div class="col-md-5">
                 <label for="date" class="mb-0">Date:</label>
                 <div class="">
-                    <input type="date" class="form-control" id="date" name="date" value="{{ @$order->date }}"
-                        required>
+                    <input type="datetime-local" class="form-control" id="date" name="date"
+                        value="{{ @$order->date }}" required>
                 </div>
             </div>
         </div>
     @endif
-   
+
 
 </div>

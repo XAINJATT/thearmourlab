@@ -43,9 +43,10 @@ return new class extends Migration
             $table->string('warranty_duration')->nullable();
             $table->string('installer')->nullable();
             $table->string('date_of_installation')->nullable();
+            $table->string('date')->nullable();
 
             
-            $table->string('installer_signature')->nullable();
+            $table->string('customer_signature')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });

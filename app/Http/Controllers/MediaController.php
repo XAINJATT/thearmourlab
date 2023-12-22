@@ -69,9 +69,9 @@ class MediaController extends Controller
         if ($category) {
             $query = $query->where('category', $category);
         }
+        $hasMore = ($query->count() > $page * $itemsPerPage);
 
         $images = $query->skip(($page - 1) * $itemsPerPage)->take($itemsPerPage)->get();
-        $hasMore = ($query->count() > $page * $itemsPerPage);
 
         $html = view('frontend.partials.gallery_items', compact('images'))->render();
 

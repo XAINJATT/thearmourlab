@@ -99,10 +99,8 @@ class UserController extends Controller
             $fileName = end($temp);
             $FileProfile = $fileName;
         }
-        
-        DB::beginTransaction();
-        $Affected = null;
-        $Affected = User::where('id', $request->user_id)->update([
+
+        $data = [
             'first_name' => $request['first_name'],
             'last_name' => $request['last_name'],
             'email' => $request['email'],
@@ -112,8 +110,16 @@ class UserController extends Controller
             'profile_image' => $FileProfile,
             'created_at' => carbon::now(),
             'updated_at' => carbon::now()
-        ]);
-        
+        ];
+
+        if ($request->has("password") && !empty($request->password)) {
+            $data['password'] = Hash::make($request->password);
+        }
+
+        DB::beginTransaction();
+        $Affected = null;
+        $Affected = User::where('id', $request->user_id)->update($data);
+
         DB::commit();
         if ($Affected) {
             return redirect()->route('admin.user')->with('success-message', 'User updated successfully');
@@ -151,7 +157,7 @@ class UserController extends Controller
             $user = User::findOrFail($id);
             if ($user->status == 1) {
                 $user->status = 0;
-            }elseif($user->status == 0){
+            } elseif ($user->status == 0) {
                 $user->status = 1;
             }
             $user->save();

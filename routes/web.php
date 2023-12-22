@@ -130,6 +130,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/warranty', [WarrantyController::class, 'index'])->name('admin.warranty');
     Route::get('admin/warranty/create', [WarrantyController::class, 'create'])->name('admin.warranty.create');
     Route::post('admin/warranty/store', [WarrantyController::class, 'store'])->name('admin.warranty.store');
+    Route::post('admin/warranty/update/{id}', [WarrantyController::class, 'update'])->name('admin.warranty.update');
     Route::get('admin/warranty/view/{id}', [WarrantyController::class, 'show'])->name('admin.warranty.view');
     Route::post('admin/warranty/delete/{id}', [WarrantyController::class, 'delete'])->name('admin.warranty.delete');
 

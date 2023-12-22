@@ -1,8 +1,6 @@
 @extends('admin.layouts.app')
 @section('content')
-    @if (!auth()->user()->isAdmin())
-        @php(abort(403))
-    @endif
+
     <style>
         .card hr {
             color: #adb35b !important;
@@ -68,14 +66,15 @@
                             </div>
                             <hr class="my-4 mx-n4" style="margin-left: 4px !important;" />
                             <!-- Form Start -->
-                            <form method="post" action="{{ route('admin.warranty.store') }}" enctype="multipart/form-data">
+                            <form method="post" action="{{ route('admin.warranty.update', ['id' => request('id')]) }}"
+                                enctype="multipart/form-data">
                                 @csrf
                                 <div class="row py-sm-3">
                                     <h3 class="mb-1 warranty-heading">Customer Info:</h3>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="email" class="form-label me-2 fw-medium mt-2">Email:</label>
-                                            <input type="text" class="form-control" id="email" name="email"
+                                            <input type="text" class="form-control" id="" name=""
                                                 value="{{ @$warranty->user->email }}" disabled />
                                         </div>
                                     </div>
@@ -300,11 +299,11 @@
                                                     @endif
                                                     @forelse ($logs as $log)
                                                         <tr>
-                                                            <td>{{ $log['date'] }}</td>
-                                                            <td>{{ $log['annualInspection'] }}</td>
-                                                            <td>{{ $log['productUsed'] }}</td>
-                                                            <td>{{ $log['performedBy'] }}</td>
-                                                            <td>{{ $log['notes'] }}</td>
+                                                            <td>{{ @$log['log_date'] }}</td>
+                                                            <td>{{ @$log['annualInspection'] }}</td>
+                                                            <td>{{ @$log['productUsed'] }}</td>
+                                                            <td>{{ @$log['performedBy'] }}</td>
+                                                            <td>{{ @$log['notes'] }}</td>
                                                         </tr>
                                                     @empty
                                                         <tr>
@@ -315,13 +314,62 @@
                                             </table>
                                         </div>
 
+                                        @if (auth()->user()->isAdmin())
+                                            <div class="table-responsive">
+                                                <table class="table" id="maintenanceLog">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>DATE</th>
+                                                            <th>ANNUAL INSPECTION</th>
+                                                            <th>PRODUCT USED</th>
+                                                            <th>PERFORMED BY</th>
+                                                            <th>NOTES</th>
+                                                            <th>ACTION</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @foreach ($logs as $log)
+                                                            <tr>
+                                                                <td><input class="form-control" type="date"
+                                                                        name="log_date[]"
+                                                                        value="{{ @$log['log_date'] }}"></td>
+                                                                <td><input class="form-control" type="text"
+                                                                        name="annualInspection[]"
+                                                                        value="{{ @$log['annualInspection'] }}"></td>
+                                                                <td><input class="form-control" type="text"
+                                                                        name="productUsed[]"
+                                                                        value="{{ @$log['productUsed'] }}"></td>
+                                                                <td><input class="form-control" type="text"
+                                                                        name="performedBy[]"
+                                                                        value="{{ @$log['performedBy'] }}"></td>
+                                                                <td><input class="form-control" type="text"
+                                                                        name="notes[]" value="{{ @$log['notes'] }}"></td>
+                                                                <td><button class="btn btn-danger" type="button"
+                                                                        onclick="removeRow(this)">Remove</button></td>
+                                                            </tr>
+                                                        @endforeach
+                                                    </tbody>
+                                                </table>
+                                                <button type="button" class="btn btn-success" onclick="addRow()">Add
+                                                    Row</button>
+                                            </div>
+                                        @endif
+
+
                                     </div>
-                                    <div class="col-md-6 col-12 mt-2">
-                                        <label for="authorized_signature" class="form-label fw-medium"
-                                            style="color: #040404 !important; font-weight: bolder;">Installer
-                                            Signature:</label>
-                                        <img src="{{ @$warranty->installer_signature }}" alt="Installer Signature">
-                                    </div>
+                                    @include('admin.invoice.partials.signature', [
+                                        'order' => $warranty,
+                                    ])
+
+
+                                    @if (auth()->user()->isAdmin() || empty(@$warranty->customer_signature))
+                                        <div id="" class="float-right"
+                                            style="display: flex; justify-content:end;">
+                                            <button type="submit" name="submit_form" id="submit_form"
+                                                class="submit_form btn btn-primary">Submit</button>
+                                        </div>
+                                    @endif
+
                                     <hr class="my-4 mx-n4" style="margin-left: 4px !important;" />
                                 </div>
                             </form>
@@ -386,4 +434,5 @@
 @endsection
 
 @section('scripts')
+    @include('admin.warranty.partials.scripts')
 @endsection

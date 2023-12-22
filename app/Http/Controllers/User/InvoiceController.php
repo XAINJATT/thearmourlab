@@ -39,7 +39,7 @@ class InvoiceController extends Controller
     public function show($id)
     {
         $order = WorkOrder::with('user')->where('id', $id)->first();
-        return view('user.invoice.view', compact('order'));
+        return view('admin.invoice.view', compact('order'));
     }
 
     public function orderStatusShow()

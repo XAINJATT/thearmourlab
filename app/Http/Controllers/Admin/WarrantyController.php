@@ -66,14 +66,14 @@ class WarrantyController extends Controller
     //     ]);
 
     //     // Handle the uploaded video
-    //     if ($request->hasFile('installer_signature')) {
-    //         $signaturePath = $request->file('installer_signature')->store('signatures', 'public');
+    //     if ($request->hasFile('customer_signature')) {
+    //         $signaturePath = $request->file('customer_signature')->store('signatures', 'public');
     //     } else {
     //         $signaturePath = null;
     //     }
 
     //     // Add the signature path to the validated data
-    //     $validatedData['installer_signature'] = $signaturePath;
+    //     $validatedData['customer_signature'] = $signaturePath;
 
     //     // Create a new warranty record
     //     Warranty::create($validatedData);
@@ -86,24 +86,23 @@ class WarrantyController extends Controller
 
         $signatureFileName = NULL;
 
-        if ($request->is_drawn) {
+        if (!empty($request->signature &&  request("is_drawn") == true)) {
             $image_parts = explode(";base64,", $request->signature);
             $image_type_aux = explode("image/", $image_parts[0]);
             $image_type = $image_type_aux[1];
             $image_base64 = base64_decode($image_parts[1]);
-
             $signatureFileName = 'signature-' . Carbon::now()->format('Ymd-His') . '.' . $image_type;
             $signatureFilePath = 'public/signatures/' . $signatureFileName;
-            // Save the signature image
             Storage::put($signatureFilePath, $image_base64);
         }
-        $logData = $request->only(['date', 'annualInspection', 'productUsed', 'performedBy', 'notes']);
+
+        $logData = $request->only(['log_date', 'annualInspection', 'productUsed', 'performedBy', 'notes']);
 
         // Combine the log data into associative arrays for each entry
         $logs = [];
-        foreach ($logData['date'] as $index => $date) {
+        foreach ($logData['log_date'] as $index => $date) {
             $logs[] = [
-                'date' => $date,
+                'log_date' => $date,
                 'annualInspection' => $logData['annualInspection'][$index],
                 'productUsed' => $logData['productUsed'][$index],
                 'performedBy' => $logData['performedBy'][$index],
@@ -145,7 +144,7 @@ class WarrantyController extends Controller
             'warranty_duration' => $request->input('warranty_duration'),
             'installer' => $request->input('installer'),
             'date_of_installation' => $request->input('date_of_installation'),
-            'installer_signature' => $signatureFileName,
+            'customer_signature' => $signatureFileName,
             'log_data' => $jsonLogs
         ]);
 
@@ -172,9 +171,59 @@ class WarrantyController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
-        //
+
+        $signatureFileName = NULL;
+
+        if (!empty($request->signature &&  request("is_drawn") == true)) {
+            $image_parts = explode(";base64,", $request->signature);
+            $image_type_aux = explode("image/", $image_parts[0]);
+            $image_type = $image_type_aux[1];
+            $image_base64 = base64_decode($image_parts[1]);
+            $signatureFileName = 'signature-' . Carbon::now()->format('Ymd-His') . '.' . $image_type;
+            $signatureFilePath = 'public/signatures/' . $signatureFileName;
+            Storage::put($signatureFilePath, $image_base64);
+        } else {
+            $signatureFileName = $request->old_signature ?? NULL;
+        }
+
+        $logData = $request->only(['log_date', 'annualInspection', 'productUsed', 'performedBy', 'notes']);
+
+        // Combine the log data into associative arrays for each entry
+        $logs = [];
+        if ($logData) {
+            foreach ($logData['log_date'] as $index => $date) {
+                $logs[] = [
+                    'log_date' => $date,
+                    'annualInspection' => $logData['annualInspection'][$index],
+                    'productUsed' => $logData['productUsed'][$index],
+                    'performedBy' => $logData['performedBy'][$index],
+                    'notes' => $logData['notes'][$index],
+                ];
+            }
+        }
+        $jsonLogs = json_encode($logs);
+
+        // dd($jsonLogs);
+
+        // Create a new warranty record without validation
+        if (auth()->user()->isAdmin()) {
+            $data = [
+                'customer_signature' => $signatureFileName,
+                'date' => $request->date,
+                'log_data' => $jsonLogs
+            ];
+        } else {
+            $data = [
+                'customer_signature' => $signatureFileName,
+                'date' => $request->date
+            ];
+        }
+
+        Warranty::find($id)->update($data);
+
+        return redirect()->back()->with('success-message', 'Warranty update Successfully!');
     }
 
     /**
