@@ -34,7 +34,7 @@
 
 
 
-                <div class="row">
+                <div style="flex-wrap: wrap-reverse;" class="row">
                     <div class="col-lg-4 col-md-5">
                         <aside class="sticky-top pb-1">
                             <!-- <div class="widget">
