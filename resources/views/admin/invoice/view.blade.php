@@ -53,6 +53,19 @@
                                             value="{{ @$order->user->email }}" disabled />
                                     </div>
                                     <div class="col-md-4 col-12">
+                                        <label for="email" class="form-label me-5 fw-medium">Tracking ID:</label>
+                                        <div class="row">
+                                            <div class="col-8">
+                                                <input type="text" id="tracking_id" class="form-control"
+                                                    value="{{ request('id') }}" />
+                                            </div>
+                                            <div class="col-4">
+                                                <button type="button" class="btn btn-info" data-value="tracking_id" data-text="Copied"
+                                                    onclick="copy(this)">Copy</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-12">
                                         <label for="first_name" class="form-label me-5 fw-medium">First Name:</label>
                                         <input type="text" class="form-control" id="first_name" name="first_name"
                                             value="{{ @$order->user->first_name }}" disabled />
@@ -192,11 +205,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                                <label for="price" class="mb-0">Price :</label>
-                                                                                <div class="">
-                                                                                    <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                                                </div>
-                                                                            </div> -->
+                                                                                    <label for="price" class="mb-0">Price :</label>
+                                                                                    <div class="">
+                                                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                    </div>
+                                                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -303,11 +316,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                                <label for="price" class="mb-0">Price :</label>
-                                                                                <div class="">
-                                                                                    <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                                                </div>
-                                                                            </div> -->
+                                                                                    <label for="price" class="mb-0">Price :</label>
+                                                                                    <div class="">
+                                                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                    </div>
+                                                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -416,11 +429,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                                <label for="price" class="mb-0">Price :</label>
-                                                                                <div class="">
-                                                                                    <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                                                </div>
-                                                                            </div> -->
+                                                                                    <label for="price" class="mb-0">Price :</label>
+                                                                                    <div class="">
+                                                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                    </div>
+                                                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -491,11 +504,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                                <label for="price" class="mb-0">Price :</label>
-                                                                                <div class="">
-                                                                                    <input disablad type="number" class="form-control" name="ceramic_coating_price">
-                                                                                </div>
-                                                                            </div> -->
+                                                                                    <label for="price" class="mb-0">Price :</label>
+                                                                                    <div class="">
+                                                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                    </div>
+                                                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -565,11 +578,11 @@
                                                     </tbody>
                                                 </table>
                                                 <!-- <div class="">
-                                                                                <label for="price" class="mb-0">Price :</label>
-                                                                                <div class="">
-                                                                                    <input type="number" class="form-control" name="ceramic_coating_price">
-                                                                                </div>
-                                                                            </div> -->
+                                                                                    <label for="price" class="mb-0">Price :</label>
+                                                                                    <div class="">
+                                                                                        <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                    </div>
+                                                                                </div> -->
                                             </div>
                                         </div>
                                     </div>

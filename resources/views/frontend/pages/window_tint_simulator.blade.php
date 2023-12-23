@@ -499,13 +499,13 @@
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 476 476">
                             <path
                                 d="M400.85,181v-18.3c0-43.8-15.5-84.5-43.6-114.7c-28.8-31-68.4-48-111.6-48h-15.1c-43.2,0-82.8,17-111.6,48 c-28.1,30.2-43.6,70.9-43.6,114.7V181c-34.1,2.3-61.2,30.7-61.2,65.4V275c0,36.1,29.4,65.5,65.5,65.5h36.9c6.6,0,12-5.4,12-12
-                                                                                       V192.8c0-6.6-5.4-12-12-12h-17.2v-18.1c0-79.1,56.4-138.7,131.1-138.7h15.1c74.8,0,131.1,59.6,131.1,138.7v18.1h-17.2
-                                                                                       c-6.6,0-12,5.4-12,12v135.6c0,6.6,5.4,12,12,12h16.8c-4.9,62.6-48,77.1-68,80.4c-5.5-16.9-21.4-29.1-40.1-29.1h-30
-                                                                                       c-23.2,0-42.1,18.9-42.1,42.1s18.9,42.2,42.1,42.2h30.1c19.4,0,35.7-13.2,40.6-31c9.8-1.4,25.3-4.9,40.7-13.9
-                                                                                       c21.7-12.7,47.4-38.6,50.8-90.8c34.3-2.1,61.5-30.6,61.5-65.4v-28.6C461.95,211.7,434.95,183.2,400.85,181z M104.75,316.4h-24.9
-                                                                                       c-22.9,0-41.5-18.6-41.5-41.5v-28.6c0-22.9,18.6-41.5,41.5-41.5h24.9V316.4z M268.25,452h-30.1c-10,0-18.1-8.1-18.1-18.1
-                                                                                       s8.1-18.1,18.1-18.1h30.1c10,0,18.1,8.1,18.1,18.1S278.25,452,268.25,452z M437.95,274.9c0,22.9-18.6,41.5-41.5,41.5h-24.9V204.8
-                                                                                       h24.9c22.9,0,41.5,18.6,41.5,41.5V274.9z" />
+                                                                                                       V192.8c0-6.6-5.4-12-12-12h-17.2v-18.1c0-79.1,56.4-138.7,131.1-138.7h15.1c74.8,0,131.1,59.6,131.1,138.7v18.1h-17.2
+                                                                                                       c-6.6,0-12,5.4-12,12v135.6c0,6.6,5.4,12,12,12h16.8c-4.9,62.6-48,77.1-68,80.4c-5.5-16.9-21.4-29.1-40.1-29.1h-30
+                                                                                                       c-23.2,0-42.1,18.9-42.1,42.1s18.9,42.2,42.1,42.2h30.1c19.4,0,35.7-13.2,40.6-31c9.8-1.4,25.3-4.9,40.7-13.9
+                                                                                                       c21.7-12.7,47.4-38.6,50.8-90.8c34.3-2.1,61.5-30.6,61.5-65.4v-28.6C461.95,211.7,434.95,183.2,400.85,181z M104.75,316.4h-24.9
+                                                                                                       c-22.9,0-41.5-18.6-41.5-41.5v-28.6c0-22.9,18.6-41.5,41.5-41.5h24.9V316.4z M268.25,452h-30.1c-10,0-18.1-8.1-18.1-18.1
+                                                                                                       s8.1-18.1,18.1-18.1h30.1c10,0,18.1,8.1,18.1,18.1S278.25,452,268.25,452z M437.95,274.9c0,22.9-18.6,41.5-41.5,41.5h-24.9V204.8
+                                                                                                       h24.9c22.9,0,41.5,18.6,41.5,41.5V274.9z" />
                         </svg>
                         <h5 class="title mt-20">How Can We Help</h5>
                         <p>If you need any helps, please free to contact us.</p>
@@ -613,67 +613,8 @@
 
 @section('scripts')
     <script>
-        var SC = window.SC = {
-            ENVIRONMENT: {
-                jsEnvironment: typeof nsglobal === 'undefined' ? 'browser' : 'server'
-            },
-            isCrossOrigin: function() {
-                return 'www.xpel.com' !== document.location.hostname
-            },
-            isPageGenerator: function() {
-                return typeof nsglobal !== 'undefined'
-            },
-            getSessionInfo: function(key) {
-                var session = SC.SESSION || SC.DEFAULT_SESSION || {};
-                return key ? session[key] : session
-            },
-            getPublishedObject: function(key) {
-                return SC.ENVIRONMENT && SC.ENVIRONMENT.published && SC.ENVIRONMENT.published[key] ? SC.ENVIRONMENT
-                    .published[key] : null
-            },
-            Translations: {}
-        };
-        if (!history.pushState && SC.ENVIRONMENT.jsEnvironment === 'browser' && (location.pathname !== '/' || location
-                .search !== '') && location.hash === '') {
-            if (location.pathname === 'index.html') {
-                var hash = (RegExp('fragment=' + '(.+?)(&|$)').exec(location.search) || [, ''])[1];
-                location.replace(location.pathname + location.search + '/#' + unescape(hash))
-            } else {
-                location.replace('/#' + location.pathname + location.search)
-            }
-            document.write('')
-        }
-        if (SC.isPageGenerator()) {
-            var metas = document.head.getElementsByTagName('meta');
-            for (var i = 0; i < metas.length; i++) {
-                if (metas[i].getAttribute('content') === 'nofollow,noindex') {
-                    document.head.removeChild(metas[i])
-                }
-            }
-        }
-        if (!SC.isCrossOrigin()) {
-            document.getElementById('main').innerHTML = '';
-            if (SC.isPageGenerator()) {
-                document.body.className = document.body.className + ' seo-support'
-            }
-            SC.ENVIRONMENT.seoSupport = !!~document.body.className.indexOf('seo-support');
-            if (SC.isPageGenerator()) {
-                SC.ENVIRONMENT.PROFILE = {}
-            }
-            if (SC.ENVIRONMENT.jsEnvironment === 'browser' && !SC.isCrossOrigin()) {
-                var datetime = new Date().getTime();
-                var reference_tag = document.getElementsByTagName('script')[0];
-                var new_script_tag = document.createElement('script');
-                new_script_tag.src = '' + datetime + '';
-                new_script_tag.type = 'text/javascript';
-                new_script_tag.async = false;
-                reference_tag.parentNode.insertBefore(new_script_tag, reference_tag)
-            }
-        }
-
-
         $(document).ready(function() {
-            // Get references to the relevant elements
+            // References to DOM elements
             var base = $("#base");
             var radioButtons = $("[name='baseType']");
             var colorRadios = $(".colorRadio");
@@ -683,245 +624,49 @@
             var productBack = $("#back");
             var productWindshield = $("#windshield");
 
-            // Initialize the default color, vehicle type, and tint
+            // Default values
             var currentColor = "black";
-            var currentType = "car";
-            var currentTint = ""; // Default tint value
-            var currentFrontPosition = "front";
-            var currentSidesPosition = "sides";
-            var currentBackPosition = "back";
-            var currentWindshieldPosition = "windshield";
+            var currentTint = "";
 
-            // Event listener for tint radios
-            $(".tints").on("click", function() {
-                var position = $(this).attr("name");
-                var value = $(this).attr("value");
-                updateProductPosition(position, value);
-            });
-
-            // Function to update the product position
-            function updateProductPosition(position, value) {
-                if (position === "front") {
-                    updateProductImages("front", value);
-                } else if (position === "sides") {
-                    updateProductImages("sides", value);
-                } else if (position === "back") {
-                    updateProductImages("back", value);
-                } else if (position === "windshield") {
-                    updateProductImages("windshield", value);
-                }
-
-            }
-            // function updateProductPosition(position) {
-            //     if (position === "front") {
-            //         currentFrontPositionChange = "front";
-            //     } else if (position === "sides") {
-            //         currentSidesPositionChange = "sides";
-            //     } else if (position === "back") {
-            //         currentBackPositionChange = "back";
-            //     } else if (position === "windshield") {
-            //         currentWindshieldPositionChange = "windshield";
-            //     }
-            //     updateProductImages();
-            // }
-
-            // Event listener for product position radio buttons
-            var productPositionRadios = $("[name='productPosition']");
-            productPositionRadios.on("change", function() {
-                var selectedPosition = $(this).val();
-                updateProductPosition(selectedPosition);
-            });
-
-            // Initialize the base image and product images
-            updateBaseImage();
-
-            // Function to update the base image
             function updateBaseImage() {
                 var selectedType = radioButtons.filter(":checked").val();
-                currentType = selectedType;
-                base.css("background-image", "url(web-assets/simulators/images/" + currentType + "-" +
+                base.css("background-image", "url(web-assets/simulators/images/" + selectedType + "-" +
                     currentColor + ".jpg)");
             }
 
-            // Function to update the product images based on the selected vehicle type, tint, and position
-            function updateProductImages(currentPositionChange, currentTint) {
-                var selectedType = currentType.toLowerCase();
-                var productImageFrontURL = "web-assets/simulators/images/tints/" + selectedType + "-" +
-                    currentFrontPosition + "-" + currentTint + ".png";
-                var productImageSidesURL = "web-assets/simulators/images/tints/" + selectedType + "-" +
-                    currentSidesPosition + "-" + currentTint + ".png";
-                var productImageBackURL = "web-assets/simulators/images/tints/" + selectedType + "-" +
-                    currentBackPosition + "-" + currentTint + ".png";
-                var productImageWindshieldURL = "web-assets/simulators/images/tints/" + selectedType + "-" +
-                    currentWindshieldPosition + "-" + currentTint + ".png";
+            function updateProductImages() {
+                var selectedType = radioButtons.filter(":checked").val().toLowerCase();
 
-                if (currentPositionChange === "front") {
-                    productFront.css("background-image", "url(" + productImageFrontURL + ")");
-                }
-                if (currentPositionChange === "sides") {
-                    productSides.css("background-image", "url(" + productImageSidesURL + ")");
-                }
-                if (currentPositionChange === "back") {
-                    productBack.css("background-image", "url(" + productImageBackURL + ")");
-                }
-                if (currentPositionChange === "windshield") {
-                    productWindshield.css("background-image", "url(" + productImageWindshieldURL + ")");
-                }
+                tintRadios.each(function() {
+                    var position = $(this).attr("name");
+                    var isActive = $(this).is(":checked");
+                    var tintValue = $(this).val();
+
+                    if (isActive) {
+                        var imageURL = "web-assets/simulators/images/tints/" + selectedType + "-" +
+                            position + "-" + tintValue + ".png";
+                        $("#" + position).css("background-image", "url(" + imageURL + ")");
+                    }
+                });
             }
-            // function updateProductImages() {
-            //     var selectedType = currentType.toLowerCase();
-            //     var productImageFrontURL = "web-assets/simulators/images/tints/" + selectedType + "-" + currentFrontPosition + "-" + currentTint + ".png";
-            //     var productImageSidesURL = "web-assets/simulators/images/tints/" + selectedType + "-" + currentSidesPosition + "-" + currentTint + ".png";
-            //     var productImageBackURL = "web-assets/simulators/images/tints/" + selectedType + "-" + currentBackPosition + "-" + currentTint + ".png";
-            //     var productImageWindshieldURL = "web-assets/simulators/images/tints/" + selectedType + "-" + currentWindshieldPosition + "-" + currentTint + ".png";
 
-            //     if (currentFrontPositionChange === "front") {
-            //         productFront.css("background-image", "url(" + productImageFrontURL + ")");
-            //     }
-            //     if (currentSidesPositionChange === "sides") {
-            //         productSides.css("background-image", "url(" + productImageSidesURL + ")");
-            //     }
-            //     if (currentBackPositionChange === "back") {
-            //         productBack.css("background-image", "url(" + productImageBackURL + ")");
-            //     }
-            //     if (currentWindshieldPositionChange === "windshield") {
-            //         productWindshield.css("background-image", "url(" + productImageWindshieldURL + ")");
-            //     }
-            // }
-
-            // Event listener for radio buttons
-            radioButtons.on("change", function() {
+            radioButtons.change(function() {
                 updateBaseImage();
-                updateProductImages();
+                updateProductImages(); // Update active parts of the product
             });
 
-            // Event listener for color radios
-            colorRadios.on("click", function() {
+            colorRadios.click(function() {
+                colorRadios.removeClass("active");
+                $(this).addClass("active");
                 currentColor = $(this).data("value");
                 updateBaseImage();
-                updateProductImages();
+                updateProductImages(); // Update active parts of the product
             });
 
-            // Event listener for tint radios
-            tintRadios.on("change", function() {
+            tintRadios.change(function() {
                 currentTint = $(this).val();
-                updateProductImages();
+                updateProductImages(); // Update active parts of the product
             });
         });
-
-
-        // document.addEventListener("DOMContentLoaded", function() {
-        //     // Get references to the relevant elements
-        //     const base = document.getElementById("base");
-        //     const radioButtons = document.getElementsByName("baseType");
-        //     const colorRadios = document.querySelectorAll(".colorRadio");
-        //     const tintRadios = document.querySelectorAll(".tints");
-        //     const productFront = document.getElementById("front");
-        //     const productSides = document.getElementById("sides");
-        //     const productBack = document.getElementById("back");
-        //     const productWindshield = document.getElementById("windshield");
-
-        //     // Initialize the default color, vehicle type, and tint
-        //     let currentColor = "black";
-        //     let currentType = "car";
-        //     let currentTint = ""; // Default tint value
-        //     let currentFrontPosition = "front";
-        //     let currentSidesPosition = "sides";
-        //     let currentBackPosition = "back";
-        //     let currentWindshieldPosition = "windshield";
-
-        //     // Function to update the product position
-        //     function updateProductPosition(position) {
-        //         if (position === "front") {
-        //             currentFrontPosition = "front";
-        //         } else if (position === "sides") {
-        //             currentSidesPosition = "sides";
-        //         } else if (position === "back") {
-        //             currentBackPosition = "back";
-        //         } else if (position === "windshield") {
-        //             currentWindshieldPosition = "windshield";
-        //         }
-
-        //         updateProductImages();
-        //     }
-
-        //     // Event listener for product position radio buttons
-        //     const productPositionRadios = document.querySelectorAll("input[name='productPosition']");
-        //     productPositionRadios.forEach(function(radio) {
-        //         radio.addEventListener("change", function() {
-        //             const selectedPosition = radio.value;
-        //             updateProductPosition(selectedPosition);
-        //         });
-        //     });
-
-        //     // Initialize the base image and product images
-        //     updateBaseImage();
-        //     updateProductImages();
-
-        //     // Function to update the base image
-        //     function updateBaseImage() {
-        //         const selectedType = Array.from(radioButtons).find((radio) => radio.checked).value;
-        //         currentType = selectedType;
-        //         base.style.backgroundImage = `url(web-assets/simulators/images/${currentType}-${currentColor}.jpg)`;
-        //     }
-
-        //     // Function to update the product images based on the selected vehicle type, tint, and position
-        //     function updateProductImages() {
-        //         const selectedType = currentType.toLowerCase();
-        //         const productImageFrontURL = `web-assets/simulators/images/tints/${selectedType}-${currentFrontPosition}-${currentTint}.png`;
-        //         const productImageSidesURL = `web-assets/simulators/images/tints/${selectedType}-${currentSidesPosition}-${currentTint}.png`;
-        //         const productImageBackURL = `web-assets/simulators/images/tints/${selectedType}-${currentBackPosition}-${currentTint}.png`;
-        //         const productImageWindshieldURL = `web-assets/simulators/images/tints/${selectedType}-${currentWindshieldPosition}-${currentTint}.png`;
-        //         console.log(currentFrontPosition);
-        //         if (currentFrontPosition === "front") {
-        //             productFront.style.backgroundImage = `url(${productImageFrontURL})`;
-        //         }
-        //         if (currentSidesPosition === "sides") {
-        //             productSides.style.backgroundImage = `url(${productImageSidesURL})`;
-        //         }
-        //         if (currentBackPosition === "back") {
-        //             productBack.style.backgroundImage = `url(${productImageBackURL})`;
-        //         }
-        //         if (currentWindshieldPosition === "windshield") {
-        //             productWindshield.style.backgroundImage = `url(${productImageWindshieldURL})`;
-        //         }
-        //     }
-
-        //     // Event listener for radio buttons
-        //     radioButtons.forEach(function(radioButton) {
-        //         radioButton.addEventListener("change", function() {
-        //             updateBaseImage();
-        //             updateProductImages();
-        //         });
-        //     });
-
-        //     // Event listener for color radios
-        //     colorRadios.forEach(function(colorRadio) {
-        //         colorRadio.addEventListener("click", function() {
-        //             currentColor = colorRadio.getAttribute("data-value");
-        //             updateBaseImage();
-        //             updateProductImages();
-        //         });
-        //     });
-
-        //     // Event listener for tint radios
-        //     tintRadios.forEach(function(tintRadio) {
-        //         tintRadio.addEventListener("change", function() {
-        //             currentTint = tintRadio.value;
-        //             updateProductImages();
-        //         });
-        //     });
-        // });
     </script>
-
-
-    <script
-        src="secure/shopping.environment674b.ssp?lang=en_US&amp;cur=null&amp;X-SC-Touchpoint=shopping&amp;t=1696719147777">
-    </script>
-
-    <script src="secure/shopping-templatesfef6.js?t=1696719147777"></script>
-
-    <script src="secure/javascript/shoppingfef6.js?t=1696719147777"></script>
-
-    <script type="text/javascript" src="api/cms/v2/sites/cms-templates"></script>
 @endsection

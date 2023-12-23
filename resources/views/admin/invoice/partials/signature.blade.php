@@ -49,7 +49,7 @@
                 <label for="date" class="mb-0">Date:</label>
                 <div class="">
                     <input type="datetime-local" class="form-control" id="date" name="date"
-                        value="{{ @$order->date }}" required>
+                        value="{{ @$order->date }}" >
                 </div>
             </div>
         </div>
