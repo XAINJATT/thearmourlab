@@ -24,7 +24,7 @@
                             <span class="icon-cell"><img src="images/icon/contact/icon1.png" alt="" /></span>
                         </div>
                         <div class="icon-content">
-                            <p><a class="text-white"  href="tel:(416) 675 6853">(416) 675 6853</a></p>
+                            <p><a class="text-white" href="tel:(416) 675 6853">(416) 675 6853</a></p>
                         </div>
                     </div>
                 </div>
@@ -46,9 +46,10 @@
             <div class="row">
                 <div class="col-xl-3 col-md-6">
                     <div class="widget footer_widget">
-                        <h5 class="footer-title">Company</h5>
-                        <p class="mb-20">Need a special repair service? we are happy to fulfil every request in order
-                            to exceed your expectations</p>
+                        <h5 class="footer-title">The Armour Lab</h5>
+                        <p class="mb-20">Elevate your vehicle's resilience with our specialized PPF and Ceramic Coating
+                            services. Our expert team is dedicated to enhancing and protecting your car's appearance.
+                            Expect excellence in every layer of protection.</p>
                         <div class="ft-content">
                             <i class="fa fa-phone"></i>
                             <span>Talk To Our Support</span>
@@ -61,36 +62,42 @@
                         <h5 class="footer-title">Our Solutions</h5>
                         <ul>
                             <li><a href="{{ route('frontend.CeramicCoating') }}">Ceramic coating</a></li>
-                            <li><a href="{{ route('frontend.PaintProtectionFilmSimulator') }}">Paint protection film</a></li>
+                            <li><a href="{{ route('frontend.PaintProtectionFilmSimulator') }}">Paint protection film</a>
+                            </li>
                             <li><a href="{{ route('frontend.WindowTintSimulator') }}">Window tints</a></li>
                             <li><a href="{{ route('frontend.contact') }}">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
-                
+
                 <div class="col-xl-3 col-md-6">
                     <div class="widget recent-posts-entry">
                         <h5 class="footer-title">Latest news</h5>
                         <div class="widget-post-bx">
-                            @foreach(\App\Helpers\SiteHelper::get_blogs() as $blog)
-                            <div class="widget-post clearfix">
-                                <div class="ttr-post-media">
-                                    <img src="{{ asset($blog->image) }}" alt="">
+                            @foreach (\App\Helpers\SiteHelper::get_blogs() as $blog)
+                                <div class="widget-post clearfix">
+                                    <div class="ttr-post-media">
+                                        <img src="{{ asset($blog->image) }}" alt="">
+                                    </div>
+                                    <div class="ttr-post-info">
+                                        <h6 class="post-title"><a
+                                                href="{{ route('frontend.blogDetails', $blog->id) }}">{{ @$blog->title }}</a>
+                                        </h6>
+                                        <ul class="post-meta">
+                                            <li class="date"><a
+                                                    href="{{ route('frontend.blogDetails', $blog->id) }}"><i
+                                                        class="fa fa-calendar"></i>{{ $blog->created_at->format('d M Y') }}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
                                 </div>
-                                <div class="ttr-post-info">
-                                    <h6 class="post-title"><a href="{{ route('frontend.blogDetails', $blog->id) }}">{{@$blog->title}}</a></h6>
-                                    <ul class="post-meta">
-                                        <li class="date"><a href="{{ route('frontend.blogDetails', $blog->id) }}"><i class="fa fa-calendar"></i>{{ $blog->created_at->format('d M Y') }}</a></li>
-                                    </ul>
-                                </div>
-                            </div>
                             @endforeach
-                           
+
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
-                   
+
                 </div>
             </div>
         </div>

@@ -50,10 +50,10 @@
                 <div class="row">
                     <div id="main-container">
                         <div class="container mt-5">
-                            <div class="header row my-5 py-5">
+                            <div class=" row my-1 ">
                                 <h2 class="col-md-6">Signature Features</h2>
                                 <div class="col-md-6">
-                                    <div class="d-flex gap-3 align-items-center">
+                                    <div class="d-flex gap-3 mt-4 pt-3 align-items-center">
                                         <img class="img-fluid text-right" height="200" style="height:150px !important"
                                             src="{{ asset('images/SCF-SEAL_NonSunscreens-2-color-516x600.jpg') }}"
                                             alt="">

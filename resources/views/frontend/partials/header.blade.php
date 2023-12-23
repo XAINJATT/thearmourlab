@@ -30,7 +30,7 @@
                 <!-- Menu Links -->
                 <div class="menu-links navbar-collapse collapse justify-content-center" id="menuDropdown">
                     <div class="menu-logo">
-                        <a href="/"><img src="{{ asset('images/logo.webp') }}" alt=""></a>
+                        <a href="/"><img src="{{ asset('images/white logo.png') }}" alt=""></a>
                     </div>
                     <ul class="nav navbar-nav" style="justify-content: center; margin-top:15px">
                         <li class="active"> <a href="{{ route('frontend.home') }}"> Home </a> </li>
