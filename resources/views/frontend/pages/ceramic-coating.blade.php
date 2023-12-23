@@ -223,7 +223,7 @@
 
                         <div class="my-5 text-center">
 
-                            <div class="header">
+                            <div class="">
                                 <h2>
                                     IGL CERAMIC COATING PACKAGES
                                 </h2>
