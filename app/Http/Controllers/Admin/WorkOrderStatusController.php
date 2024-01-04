@@ -15,7 +15,7 @@ class WorkOrderStatusController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
+    {   
         $workOrderStatus = WorkOrderStatus::orderBy('id', 'DESC')->get();
         return view('admin.workOrderStatus.index', compact('workOrderStatus'));
     }

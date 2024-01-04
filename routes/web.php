@@ -29,6 +29,9 @@ use App\Http\Controllers\User\DashboardController as UserDashboardController;
 use App\Http\Controllers\User\InvoiceController as UserInvoiceController;
 use App\Http\Controllers\User\OrderStatusController as UserOrderStatusController;
 use App\Http\Controllers\User\WarrantyController as UserWarrantyController;
+use App\Http\Controllers\Admin\ContestController as AdminContestController;
+use App\Http\Controllers\User\ContestController as UserContestController;
+use App\Http\Controllers\ContestController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -101,6 +104,8 @@ Route::get('/wraps', [WrapsController::class, 'index'])->name('frontend.wraps');
 // Simulator
 Route::get('/window-tint', [WindowTintSimulatorController::class, 'indexSimulator'])->name('frontend.WindowTintSimulator');
 Route::get('/paint-protection-film', [PaintProtectionFilmController::class, 'indexSimulator'])->name('frontend.PaintProtectionFilmSimulator');
+
+Route::get('live-contests', [UserContestController::class, 'liveContest'])->name('frontend.contest');
 
 /* FRONTEND ROUTE - END */
 
@@ -188,6 +193,14 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/WorkOrderStatus/delete/{id}', [AdminWorkOrderStatusController::class, 'delete'])->name('admin.WorkOrderStatus.delete');
     Route::post('admin/WorkOrderStatus/statusUpdate/{id}', [AdminWorkOrderStatusController::class, 'statusUpdate'])->name('admin.WorkOrderStatus.statusUpdate');
 
+    // Admin / ContestController
+    Route::get('admin/contests', [AdminContestController::class, 'index'])->name('admin.contests');
+    Route::get('admin/contests/create', [AdminContestController::class, 'create'])->name('admin.contest.create');
+    Route::post('admin/contests/store', [AdminContestController::class, 'store'])->name('admin.contest.store');
+    Route::get('admin/contests/edit/{id}', [AdminContestController::class, 'edit'])->name('admin.contest.edit');
+    Route::post('admin/contests/update', [AdminContestController::class, 'update'])->name('admin.contest.update');
+    Route::post('admin/contests/delete/{id}', [AdminContestController::class, 'delete'])->name('admin.contest.delete');
+
     /* ADMIN ROUTE - END */
 
 
@@ -215,6 +228,10 @@ Route::middleware(['auth'])->group(function () {
     // UserOrderStatusController
     Route::get('order-status', [UserOrderStatusController::class, 'index'])->name('user.orderStatus');
     Route::get('order-status/view/{id}', [UserOrderStatusController::class, 'show'])->name('user.orderStatus.view');
+    
+    // UserContestController
+    Route::get('contests', [UserContestController::class, 'index'])->name('contests');
+    Route::get('contest/register/{id}', [UserContestController::class, 'registerUserToContest'])->name('user.contest.register');
 
     // Route::get('order-status', 'App\Http\Controllers\User\OrderStatusController@index')->name('user.orderStatus');
     // Route::get('order-status/order-details', 'App\Http\Controllers\User\OrderStatusController@orderDetails')->name('user.orderDetails');

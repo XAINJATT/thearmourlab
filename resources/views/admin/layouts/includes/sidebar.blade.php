@@ -168,6 +168,26 @@
             <div>Media</div>
           </a>
         </li>
+
+        <li class="menu-item {{ request()->is('admin/contests') ? 'active open' : '' }}">
+          <a href="javascript:void(0)" class="menu-link menu-toggle">
+            <i class="menu-icon tf-icons bx bx-user"></i>
+            <div data-i18n="User interface">Contests</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item {{ request()->is('contests/create') ? 'active' : '' }}">
+              <a href="{{ route('admin.contest.create') }}" class="menu-link">
+                <div data-i18n="Alerts">Add</div>
+              </a>
+            </li>
+            <li class="menu-item {{ request()->is('contests') ? 'active' : '' }}">
+              <a href="{{route('admin.contests')}}" class="menu-link">
+                <div data-i18n="Alerts">List</div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
       @else
         <!-- Dashboard -->
         <li class="menu-item {{ request()->is('dashboard*') ? 'active' : '' }}">
@@ -201,6 +221,13 @@
             <div>Shop Orders Management</div>
           </a>
         </li>
+        <li class="menu-item {{ request()->is('contests*') ? 'active' : '' }}">
+          <a href="{{ route('contests') }}" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-user"></i>
+            <div>Contests</div>
+          </a>
+        </li>
+
 
         <!-- <li class="menu-item {{ request()->is('order-status*') ? 'active' : '' }}">
           <a href="{{ route('user.orderStatus') }}" class="menu-link">

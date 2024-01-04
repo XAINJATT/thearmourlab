@@ -1,0 +1,83 @@
+.span1 {
+    clip-path: polygon(53%, 96%, 58%);
+    background-color: #f70f94;
+}.span2 {
+    clip-path: polygon(59%, 54%, 90%);
+    background-color: #eb275c;
+}.span3 {
+    clip-path: polygon(50%, 16%, 99%);
+    background-color: #9e0483;
+}.span4 {
+    clip-path: polygon(59%, 69%, 38%);
+    background-color: #a1daf;
+}.span5 {
+    clip-path: polygon(35%, 93%, 58%);
+    background-color: #9a8f8f;
+}
+
+
+
+.box1 .span1 b {
+    position: absolute;
+    top: 33%;
+    right: 41%;
+    transform: rotate(318deg);
+    text-align: center;
+}.box1 .span2 b {
+    position: absolute;
+    top: 28%;
+    right: 1%;
+    transform: rotate(65deg);
+    text-align: center;
+}.box1 .span3 b {
+    position: absolute;
+    top: 32%;
+    right: 45%;
+    transform: rotate(351deg);
+    text-align: center;
+}.box1 .span4 b {
+    position: absolute;
+    top: 33%;
+    right: 20%;
+    transform: rotate(160deg);
+    text-align: center;
+}.box1 .span5 b {
+    position: absolute;
+    top: 5%;
+    right: 23%;
+    transform: rotate(280deg);
+    text-align: center;
+}
+
+
+.box2 .span1 b {
+    position: absolute;
+    top: 17%;
+    right: 41%;
+    transform: rotate(66deg);
+    text-align: center;
+}.box2 .span2 b {
+    position: absolute;
+    top: 44%;
+    right: 12%;
+    transform: rotate(16deg);
+    text-align: center;
+}.box2 .span3 b {
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    transform: rotate(330deg);
+    text-align: center;
+}.box2 .span4 b {
+    position: absolute;
+    top: 35%;
+    right: 40%;
+    transform: rotate(118deg);
+    text-align: center;
+}.box2 .span5 b {
+    position: absolute;
+    top: 35%;
+    right: 36%;
+    transform: rotate(323deg);
+    text-align: center;
+}
