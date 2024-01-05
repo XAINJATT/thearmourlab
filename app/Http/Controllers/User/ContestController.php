@@ -30,6 +30,26 @@ class ContestController extends Controller
     }
     
     
+    public function addUserToContest(Request $request)
+    {
+        $data = [
+            'full_name' => $request->full_name,
+            'phone' => $request->phone,
+            'email' => $request->email,
+        ];
+
+        $contest = UserContests::create($data);
+
+
+        if ($contest) {
+            return response()->json(['success' => true]);
+        }else{
+            return response()->json(['success' => false, 'message' => 'Something Went Wrong!']);
+        }
+
+    }
+    
+    
     public function registerUserToContest(string $id)
     {
         // $contest = Contest::where('id', $id)->first();

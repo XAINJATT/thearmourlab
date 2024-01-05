@@ -106,6 +106,7 @@ Route::get('/window-tint', [WindowTintSimulatorController::class, 'indexSimulato
 Route::get('/paint-protection-film', [PaintProtectionFilmController::class, 'indexSimulator'])->name('frontend.PaintProtectionFilmSimulator');
 
 Route::get('live-contests', [UserContestController::class, 'liveContest'])->name('frontend.contest');
+Route::post('addUserToContest', [UserContestController::class, 'addUserToContest'])->name('addUserToContest');
 
 /* FRONTEND ROUTE - END */
 
@@ -232,7 +233,6 @@ Route::middleware(['auth'])->group(function () {
     
     // UserContestController
     // Route::get('contests', [UserContestController::class, 'index'])->name('contests');
-    Route::get('contest/register/{id}', [UserContestController::class, 'registerUserToContest'])->name('user.contest.register');
 
     // Route::get('order-status', 'App\Http\Controllers\User\OrderStatusController@index')->name('user.orderStatus');
     // Route::get('order-status/order-details', 'App\Http\Controllers\User\OrderStatusController@orderDetails')->name('user.orderDetails');

@@ -16,6 +16,11 @@
             color: white;
         }
 
+        .btn-success {
+            background-color: #43491a;
+            color: white;
+        }
+
         .wrapper {
             padding-top: 150px;
             min-height: 100vh;
@@ -124,10 +129,52 @@
     </style>
 
     <div class="wrapper">
-        <h1>Live Contest</h1>
+        <h1>SPIN TO WIN</h1>
         @if ($no_of_contests > 0)
             {{-- @dd($contests) --}}
-            <div class="mainbox">
+
+
+            <div class="col-lg-6 mb-50" id="userForm">
+                <form id="addUserToContest" class="contact-form bg-white p-5" method="post" enctype="multipart/form-data">
+                    @csrf
+                    <div class="ajax-message"></div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group  mb-3">
+                                <div class="input-group">
+                                    <input name="full_name" type="text" required class="form-control valid-character"
+                                        placeholder="Full Name">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <div class="form-group mb-3">
+                                <div class="input-group">
+                                    <input name="phone" type="text" required class="form-control int-value"
+                                        placeholder="Your Phone">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group  mb-3">
+                                <div class="input-group">
+                                    <input name="email" type="email" class="form-control" required
+                                        placeholder="Your Email Address">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12">
+                            <button type="button" id="addUserToContestBtn" class="btn btn-success btn-lg">
+                                I FEEL LUCKY!
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="mainbox d-none" id="spinner-wheel">
                 <div class="spinBtn">spin</div>
                 <div class="wheel">
                     @foreach ($contests as $key => $prize)
@@ -158,14 +205,6 @@
                 }
                 $prizes = [];
                 $angle = 0;
-                // $angles = divideRange(0, 360, $no_of_contests);
-
-                // foreach ($contests as $key => $prize) {
-                //     $prizes[$key + 1] = [
-                //         'name' => $prize->title,
-                //         'angle' => $angles[$key],
-                //     ];
-                // }
                 foreach ($contests as $key => $prize) {
                     $prizes[$key + 1] = [
                         'name' => $prize->title,
@@ -196,6 +235,42 @@
 
         let start_angle = prizes[1]['angle']
         console.log(prizes, start_angle);
+
+        $("#addUserToContestBtn").on("click", function() {
+            var form = document.getElementById('addUserToContest');
+
+            // Check if the form is valid
+            if (form.checkValidity()) {
+                var formData = $('#addUserToContest').serialize();
+
+                $.ajax({
+                    url: "{{ route('addUserToContest') }}",
+                    type: 'POST',
+                    data: formData,
+                    dataType: 'json',
+                    success: function(response) {
+                        console.log(response.message);
+                        $('#userForm').addClass('d-none');
+                        $('#spinner-wheel').removeClass('d-none');
+                        // Handle success, e.g., show a success message to the user
+                    },
+                    error: function(error) {
+                        console.error('Error:', error);
+                        // Handle error, e.g., display an error message to the user
+                    }
+                });
+            } else {
+                Swal.fire({
+                    title: "Alert",
+                    text: "Please enter all required data.",
+                    icon: "warning",
+                    confirmButtonColor: "#3085d6",
+                    confirmButtonText: "Okay!",
+                });
+                // If not valid, the browser will display default error messages
+            }
+
+        });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="{{ asset('assets/js/contest.js') }}"></script>

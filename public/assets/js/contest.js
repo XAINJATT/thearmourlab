@@ -48,6 +48,7 @@ $(".spinBtn").on("click", function () {
         }).then((result) => {
             $(".wheel").css("transition", "initial");
             $(".wheel").css("transform", "rotate(0deg)");
+            window.location.href = '/';
         });
     }, 5500);
 });

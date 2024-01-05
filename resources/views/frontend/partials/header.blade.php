@@ -26,7 +26,7 @@
                         @endif
                     </a>
                     <a href="{{ route('frontend.live') }}" class="btn btn-primary ms-3">Track</a>
-                    <a href="{{ route('frontend.contest') }}" class="btn btn-primary ms-3">Contests</a>
+                    <a href="{{ route('frontend.contest') }}" class="btn btn-primary ms-3">Spin To Win</a>
                 </div>
                 <!-- Menu Links -->
                 <div class="menu-links navbar-collapse collapse justify-content-center" id="menuDropdown">
@@ -85,7 +85,7 @@
                             <a href="{{ route('frontend.live') }}" class="btn btn-primary ms-3">Track</a>
                         </li>
                         <li>
-                            <a href="{{ route('frontend.contest') }}" class="btn btn-primary ms-3">Contests</a>
+                            <a href="{{ route('frontend.contest') }}" class="btn btn-primary ms-3">Spin To Win</a>
                         </li>
 
                     </ul>

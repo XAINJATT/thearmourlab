@@ -13,9 +13,11 @@ return new class extends Migration
     {
         Schema::create('user_contests', function (Blueprint $table) {
             $table->id();
-            $table->bigInteger('contest_id');
-            $table->bigInteger('user_id');
-            $table->tinyInteger('status')->default('0')->comment('0 - Upcomming , 1 - Announced , 2 - Canceled');
+            $table->string('full_name')->nullable();
+            $table->string('email')->nullable();
+            $table->string('phone')->nullable();
+            $table->bigInteger('contest_id')->nullable();
+            $table->tinyInteger('status')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
