@@ -61,12 +61,22 @@
                         @endif
                     </div>
                     <div class="col-lg-12 mb-12">
+                        @if (get_giveaway_status())
+                            <div class="card-header row">
+                                <a style="min-width:100%" class="btn btn-danger col-3 text-white on_off_giveaway">Stop Giveaways</a>
+                            </div>
+                        @else
+                            <div class="card-header row">
+                                <a style="min-width:100%" class="btn btn-success col-3 text-white on_off_giveaway">Start Giveaways</a>
+                            </div>
+                        @endif
+
                         <div class="card">
                             <div class="card-header row">
-                                <h6 class="text-uppercase mb-0 col-9">HERE ARE ALL CONTEST</h6>
+                                <h6 class="text-uppercase mb-0 col-9">HERE ARE ALL Prizes</h6>
                                 <a style="min-width:250px" href="{{ route('admin.contest.create') }}"
                                     class="btn btn-primary col-3 float-right">Add
-                                    New Contest</a>
+                                    New Prize</a>
                             </div>
                             <div class="card-body" style="overflow: scroll">
                                 <table id="data_table" class="table table-striped table-hover card-text">
@@ -76,8 +86,8 @@
                                             <th>Image</th>
                                             <th>Title</th>
                                             <th>Description</th>
-                                            <th>Start Date</th>
-                                            <th>End Date</th>
+                                            {{-- <th>Start Date</th> --}}
+                                            {{-- <th>End Date</th> --}}
                                             <th>Is Active</th>
                                             <th>Action</th>
                                         </tr>
@@ -86,16 +96,17 @@
                                         @foreach ($contests as $contest)
                                             <tr>
                                                 <th scope="row">{{ $loop->iteration }}</th>
-                                                <td> 
-                                                    @if($contest->image)
-                                                        <img src="{{ asset('storage/contest_image/'.$contest->image) }}" alt="" width="100" height="50">
+                                                <td>
+                                                    @if ($contest->image)
+                                                        <img src="{{ asset('storage/contest_image/' . $contest->image) }}"
+                                                            alt="" width="100" height="50">
                                                     @endif
                                                 </td>
                                                 <td>{{ $contest->title }}</td>
                                                 <td>{{ $contest->description }}</td>
-                                                <td>{{ $contest->start_date }}</td>
-                                                <td>{{ $contest->end_date }}</td>
-                                                <td>{{ $contest->is_active == 1 ? 'Upcoming' : 'Finished' }}</td>
+                                                {{-- <td>{{ $contest->start_date }}</td> --}}
+                                                {{-- <td>{{ $contest->end_date }}</td> --}}
+                                                <td>{{ $contest->is_active == 1 ? 'Yes' : 'No' }}</td>
                                                 <td>
                                                     <div class="btn-group">
                                                         <a href="{{ route('admin.contest.edit', $contest->id) }}"
@@ -146,7 +157,7 @@
                             if (response.success) {
                                 Swal.fire(
                                     'Deleted!',
-                                    'Your Contest has been deleted.',
+                                    'Your Prize has been deleted.',
                                     'success'
                                 ).then(() => {
                                     // Reload the page after a short delay (e.g., 0 seconds)
@@ -173,5 +184,35 @@
                 }
             });
         }
+
+        $(document).on("click", ".on_off_giveaway", function() {
+
+            Swal.fire({
+                title: 'Confirmation',
+                text: 'Are you sure?',
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: 'Yes',
+                cancelButtonText: 'Cancel',
+            }).then((result) => {
+                if (result.value) {
+                    $.ajax({
+                        method: "GET",
+                        url: "{{ route('admin.on_off_giveaway') }}",
+                        success: function(data) {
+                            $("#preloader").css("display", "none");
+                            location.reload();
+                        },
+                        error: function(request, status, error) {
+                            console.log(request.responseText);
+                        },
+                    });
+                }
+            });
+
+            return false;
+        });
     </script>
 @endsection

@@ -37,8 +37,8 @@
                                 <div class="card-header" style="padding: 0.5rem 1.5rem">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
                                         <div>
-                                            <h4 class="mb-3 mb-md-0">Contest > <span class="text-secondary">
-                                                    Edit Contest</span>
+                                            <h4 class="mb-3 mb-md-0">Prize > <span class="text-secondary">
+                                                    Edit Prize</span>
                                             </h4>
                                         </div>
                                         <button type="button" class="btn btn-secondary ml-auto"
@@ -57,7 +57,7 @@
                                             <input type="text" class="form-control" name="title" value="{{ $contest->title }}"  required placeholder="Enter Title">
                                         </div>
 
-                                        <div class="col-md-6 mb-3">
+                                        {{-- <div class="col-md-6 mb-3">
                                             <label for="price" class="font-weight-bold">
                                                 Start Date <span class="text-danger">*</span></label>
                                             <input type="date" class="form-control" id="start_date" name="start_date" value="{{ $contest->start_date }}"  required>
@@ -67,7 +67,7 @@
                                             <label for="price" class="font-weight-bold">
                                                 End Date <span class="text-danger">*</span></label>
                                             <input type="date" class="form-control" id="end_date" name="end_date" value="{{ $contest->end_date }}"  required>
-                                        </div>
+                                        </div> --}}
 
                                         
                                         <div class="col-md-12 mt-2">
@@ -78,7 +78,7 @@
 
                                         <div class="col-12 col-md-6 mb-3">
                                             <label for="image" class="font-weight-bold">
-                                                Contest Image 
+                                                Prize Image 
                                                 <span class="text-danger">*</span> &nbsp;&nbsp;
                                                 @if($contest->image)
                                                     <a href="{{ asset('storage/contest_image/'.$contest->image) }}" download="{{ asset('storage/contest_image/'.$contest->image) }}">
@@ -104,8 +104,8 @@
                                                 Status <span class="text-danger">*</span></label>
                                             <select class="form-select" name="is_active" id="is_active">
                                                 <option value="">--please select--</option>
-                                                <option value="1" {{ $contest->is_active == 1 ? 'selected' : ''  }}>Start</option>
-                                                <option value="0" {{ $contest->is_active == 0 ? 'selected' : ''  }}>Finish</option>
+                                                <option value="1" {{ $contest->is_active == 1 ? 'selected' : ''  }}>Activate</option>
+                                                <option value="0" {{ $contest->is_active == 0 ? 'selected' : ''  }}>De-Activate</option>
                                             </select>
                                         </div>
 
@@ -120,7 +120,7 @@
                                                 Cancel
                                             </button>
                                             <button type="submit" class="btn btn-primary submitBtn">
-                                                <i class="fa-solid fa-floppy-disk"></i> Update Contest
+                                                <i class="fa-solid fa-floppy-disk"></i> Update Prize
                                             </button>
                                         </div>
                                     </div>

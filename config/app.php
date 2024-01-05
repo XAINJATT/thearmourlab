@@ -197,6 +197,9 @@ return [
         'cc' => 'frontend.CeramicCoating',
         'ppf' => 'frontend.PaintProtectionFilmSimulator',
         'wt' => 'frontend.WindowTintSimulator',
-    ]
+    ],
+
+    'give_away' => true,
+
 
 ];

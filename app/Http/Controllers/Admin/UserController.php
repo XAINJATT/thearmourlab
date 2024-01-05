@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Mail;
 
 class UserController extends Controller
 {
+
     public function index()
     {
         $users = User::where('role', 1)->get();

@@ -13,11 +13,12 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\DB;
+use App\Models\Setting;
 
 
 class ContestController extends Controller
 {
-    
+
    
     /**
      * Display a listing of the resource.
@@ -53,8 +54,18 @@ class ContestController extends Controller
   
     public function liveContest()
     {
-        $contests = Contest::where('is_active', 1)->with('allRegisteredUser')->orderBy('id', 'DESC')->get();
-        return view('frontend.pages.contest.live_contest', compact('contests'));
+        $give_away_status = Setting::where('name','giveaway')->first();
+        if ($give_away_status) {   
+            if ($give_away_status->value == 1) {
+                $contests = [];
+                $contests = Contest::where('is_active', 1)->orderBy('id', 'DESC')->get();
+                $no_of_contests = count($contests);
+                return view('frontend.pages.contest.live_contest', compact(['contests', 'no_of_contests']));
+            }
+        }
+        return abort('404');
+
+
     }
     /**
      * Show the form for creating a new resource.

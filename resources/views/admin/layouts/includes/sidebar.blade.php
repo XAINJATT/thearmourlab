@@ -172,7 +172,7 @@
         <li class="menu-item {{ request()->is('admin/contests') ? 'active open' : '' }}">
           <a href="javascript:void(0)" class="menu-link menu-toggle">
             <i class="menu-icon tf-icons bx bx-user"></i>
-            <div data-i18n="User interface">Contests</div>
+            <div data-i18n="User interface">Prizes</div>
           </a>
           <ul class="menu-sub">
             <li class="menu-item {{ request()->is('contests/create') ? 'active' : '' }}">
@@ -221,12 +221,12 @@
             <div>Shop Orders Management</div>
           </a>
         </li>
-        <li class="menu-item {{ request()->is('contests*') ? 'active' : '' }}">
+        {{-- <li class="menu-item {{ request()->is('contests*') ? 'active' : '' }}">
           <a href="{{ route('contests') }}" class="menu-link">
             <i class="menu-icon tf-icons bx bx-user"></i>
             <div>Contests</div>
           </a>
-        </li>
+        </li> --}}
 
 
         <!-- <li class="menu-item {{ request()->is('order-status*') ? 'active' : '' }}">

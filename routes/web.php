@@ -194,6 +194,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/WorkOrderStatus/statusUpdate/{id}', [AdminWorkOrderStatusController::class, 'statusUpdate'])->name('admin.WorkOrderStatus.statusUpdate');
 
     // Admin / ContestController
+    Route::get('admin/on_off_giveaway', [AdminContestController::class, 'on_off_giveaway'])->name('admin.on_off_giveaway');
     Route::get('admin/contests', [AdminContestController::class, 'index'])->name('admin.contests');
     Route::get('admin/contests/create', [AdminContestController::class, 'create'])->name('admin.contest.create');
     Route::post('admin/contests/store', [AdminContestController::class, 'store'])->name('admin.contest.store');
@@ -230,7 +231,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('order-status/view/{id}', [UserOrderStatusController::class, 'show'])->name('user.orderStatus.view');
     
     // UserContestController
-    Route::get('contests', [UserContestController::class, 'index'])->name('contests');
+    // Route::get('contests', [UserContestController::class, 'index'])->name('contests');
     Route::get('contest/register/{id}', [UserContestController::class, 'registerUserToContest'])->name('user.contest.register');
 
     // Route::get('order-status', 'App\Http\Controllers\User\OrderStatusController@index')->name('user.orderStatus');

@@ -86,7 +86,7 @@
             height: 50%;
             background: var(--clr);
             transform-origin: bottom right;
-            transform: rotate(calc(45deg * var(--i)));
+            transform: rotate(calc(var(--angle) * var(--i)));
             clip-path: polygon(0 0, 59% 0, 100% 100%, 0 59%);
             display: flex;
             justify-content: center;
@@ -98,8 +98,8 @@
         .mainbox .wheel .number span {
             position: relative;
             transform: rotate(45deg);
-            font-size: 2em;
-            font-weight: 700;
+            font-size: 0.5em;
+            font-weight: 400;
             color: #fff;
             text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.15);
         }
@@ -107,7 +107,7 @@
         .mainbox .wheel .number span::before {
             position: absolute;
             font-size: 0.75em;
-            font-weight: 500;
+            font-weight: 400;
         }
 
         @media (max-width: 576px) {
@@ -125,42 +125,58 @@
 
     <div class="wrapper">
         <h1>Live Contest</h1>
-
-        {{-- @dd($contests) --}}
-        <div class="mainbox">
-            <div class="spinBtn">spin</div>
-            <div class="wheel">
-                <div class="number" style="--i: 1; --clr: #db7093">
-                    <span>Prize 1</span>
-                </div>
-                <div class="number" style="--i: 2; --clr: #ae919b">
-                    <span>Prize 2</span>
-                </div>
-                <div class="number" style="--i: 3; --clr: #70db84">
-                    <span>Prize 3</span>
-                </div>
-                <div class="number" style="--i: 4; --clr: #231b1e">
-                    <span>Prize 4</span>
-                </div>
-                <div class="number" style="--i: 5; --clr: #8470db">
-                    <span>Prize 5</span>
-                </div>
-                <div class="number" style="--i: 6; --clr: #db9b70">
-                    <span>Prize 6</span>
-                </div>
-                <div class="number" style="--i: 7; --clr: #d2db70">
-                    <span>Prize 7</span>
-                </div>
-                <div class="number" style="--i: 8; --clr: #70dbd9">
-                    <span>Prize 8</span>
+        @if ($no_of_contests > 0)
+            {{-- @dd($contests) --}}
+            <div class="mainbox">
+                <div class="spinBtn">spin</div>
+                <div class="wheel">
+                    @foreach ($contests as $key => $prize)
+                        <div class="number"
+                            style="--i: {{ $key + 1 }}; --clr: {{ randomColor() }}; --angle: {{ 360 / $no_of_contests }}deg;">
+                            <span>{{ $prize->title }}</span>
+                        </div>
+                    @endforeach
                 </div>
             </div>
-        </div>
 
 
+            @php
+                function divideRange($start, $end, $parts)
+                {
+                    $range = $end - $start;
+                    $interval = $range / $parts;
+
+                    $divisions = [];
+                    $current = $start;
+
+                    for ($i = 1; $i <= $parts; $i++) {
+                        $divisions[] = $current + $interval;
+                        $current += $interval;
+                    }
+
+                    return $divisions;
+                }
+                $prizes = [];
+                $angle = 0;
+                // $angles = divideRange(0, 360, $no_of_contests);
+
+                // foreach ($contests as $key => $prize) {
+                //     $prizes[$key + 1] = [
+                //         'name' => $prize->title,
+                //         'angle' => $angles[$key],
+                //     ];
+                // }
+                foreach ($contests as $key => $prize) {
+                    $prizes[$key + 1] = [
+                        'name' => $prize->title,
+                        'angle' => $angle,
+                    ];
+                    $angle += 360 / $no_of_contests;
+                }
+            @endphp
+        @endif
 
     </div>
-
 
 
 
@@ -169,13 +185,18 @@
 @endsection
 
 @section('scripts')
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="{{ asset('assets/js/contest.js') }}"></script>
+    <script src="{{ asset('backend/plugins/sweetalert2/sweetalert2.all.min.js') }}"></script>
+
     <script>
         // Audio elements
         let startSound = new Audio("{{ asset('assets/audio/wheel.mp3') }}");
         let applause = new Audio("{{ asset('assets/audio/applause.mp3') }}");
-    </script>
+        let prizes = @json($prizes, JSON_FORCE_OBJECT); // Convert PHP array to JSON for use in JavaScript
+        prizes = Object.values(prizes); // Convert the object to an array
 
+        let start_angle = prizes[1]['angle']
+        console.log(prizes, start_angle);
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="{{ asset('assets/js/contest.js') }}"></script>
 @endsection

@@ -35,8 +35,8 @@
                                 <div class="card-header" style="padding: 0.5rem 1.5rem">
                                     <div class="d-flex justify-content-between align-items-center flex-wrap grid-margin">
                                         <div>
-                                            <h4 class="mb-3 mb-md-0">Contests > <span class="text-secondary">
-                                                    Create contest</span>
+                                            <h4 class="mb-3 mb-md-0">Prizes > <span class="text-secondary">
+                                                    Create prize</span>
                                             </h4>
                                         </div>
                                         <button type="button" class="btn btn-secondary ml-auto"
@@ -60,7 +60,7 @@
                                             @endif
                                         </div>
 
-                                        <div class="col-md-6 mb-3">
+                                        {{-- <div class="col-md-6 mb-3">
                                             <label for="price" class="font-weight-bold">
                                                 Start Date <span class="text-danger">*</span></label>
                                             <input type="date" class="form-control" id="start_date" name="start_date" required>
@@ -80,7 +80,7 @@
                                                     <strong>{{ $errors->first('end_date') }}</strong>
                                                 </span>
                                             @endif
-                                        </div>
+                                        </div> --}}
 
                                         
                                         <div class="col-md-12 mt-2">
@@ -95,7 +95,7 @@
                                         </div>
 
                                         <div class="col-12 col-md-6 mt-2">
-                                            <label for="contest_image" class="font-weight-bold">Contest Image 
+                                            <label for="contest_image" class="font-weight-bold">Prize Image 
                                             <span class="text-danger">*</span></label>
                                             <img src="" alt="" class="picture-src" id="contest_image_preview" onclick="$(this).next().trigger('click')" style="width: 60%; display: none;">
                                             <label class="form-control label-style" id="contest_image_browse">
@@ -118,8 +118,8 @@
                                                 Status <span class="text-danger">*</span></label>
                                             <select class="form-select" name="is_active" id="is_active">
                                                 <option value="">--please select--</option>
-                                                <option value="1">Start</option>
-                                                <option value="0">Finish</option>
+                                                <option value="1">Activate</option>
+                                                <option value="0">De-Activate</option>
                                             </select>
                                             @if ($errors->has('is_active'))
                                                 <span class="invalid-feedback" role="alert">
@@ -141,7 +141,7 @@
                                                 Cancel
                                             </button>
                                             <button type="submit" class="btn btn-primary">
-                                                <i class="fa-solid fa-floppy-disk"></i> Save contest
+                                                <i class="fa-solid fa-floppy-disk"></i> Save prize
                                             </button>
                                         </div>
                                     </div>

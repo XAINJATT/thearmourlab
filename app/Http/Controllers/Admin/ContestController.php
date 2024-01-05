@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Models\UserContests;
 use App\Models\Contest;
+use App\Models\Setting;
 use Illuminate\Support\Facades\Validator;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
@@ -16,6 +17,31 @@ use Illuminate\Support\Facades\DB;
 
 class ContestController extends Controller
 {
+    public function on_off_giveaway()
+    {
+        
+        $previous_status = Setting::where('name','giveaway')->first();
+        if ($previous_status) {
+
+            $previous_status->update([
+                'value' => $previous_status->value == 1 ? false : true,
+            ]);
+
+
+            return response()->json(['success' => true]);
+        }
+        $new = Setting::create([
+            'name' => 'giveaway',
+            'value' => true
+        ]);
+
+        if ($new) {
+            return response()->json(['success' => true]);
+        }else{
+            return response()->json(['success' => false, 'message' => 'Something Went Wrong!']);
+        }
+
+    }
     /**
      * Display a listing of the resource.
      */
@@ -41,8 +67,8 @@ class ContestController extends Controller
     {
         $validator = Validator::make($request->all(), [
             'title' => 'required',
-            'start_date' => 'required', // Assuming 'id' is a required field
-            'end_date' => 'required', // Assuming 'id' is a required field
+            // 'start_date' => 'required', // Assuming 'id' is a required field
+            // 'end_date' => 'required', // Assuming 'id' is a required field
             'is_active' => 'required',
             'description' => 'required',
         ]);
@@ -62,8 +88,8 @@ class ContestController extends Controller
 
         $data = [
             'title' => $request->input('title'),
-            'start_date' => $request->input('start_date'),
-            'end_date' => $request->input('end_date'),
+            // 'start_date' => $request->input('start_date'),
+            // 'end_date' => $request->input('end_date'),
             'is_active' => $request->input('is_active'),
             'description' => $request->input('description'),
             'image' => $FileImage,
@@ -72,7 +98,7 @@ class ContestController extends Controller
         $contest = Contest::create($data);
 
         if ($contest) {
-            return redirect()->route('admin.contests')->with('success-message', 'Contest created successfully!');
+            return redirect()->route('admin.contests')->with('success-message', 'Prize created successfully!');
         } else {
             return redirect()->back()->with('error-message', 'Something Went wrong!');
         }
@@ -141,8 +167,8 @@ class ContestController extends Controller
 
         $Affected = $contest->update([
             'title' => $request->input('title'),
-            'start_date' => $request->input('start_date'),
-            'end_date' => $request->input('end_date'),
+            // 'start_date' => $request->input('start_date'),
+            // 'end_date' => $request->input('end_date'),
             'is_active' => $request->input('is_active'),
             'description' => $request->input('description'),
             'image' => $FileImage,
@@ -152,7 +178,7 @@ class ContestController extends Controller
 
         if ($Affected) {
             DB::commit();
-            return redirect()->route('admin.contests')->with('success-message', 'Contest updated successfully');
+            return redirect()->route('admin.contests')->with('success-message', 'Prize updated successfully');
         } else {
             DB::rollBack();
             return redirect()->route('admin.contests')->with('error', 'An unhandled error occurred');

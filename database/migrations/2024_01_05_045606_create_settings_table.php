@@ -11,14 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('contests', function (Blueprint $table) {
+        Schema::create('settings', function (Blueprint $table) {
             $table->id();
-            $table->string('title')->nullable();
-            $table->string('description')->nullable();
-            $table->string('image')->nullable();
-            $table->date('start_date')->nullable();
-            $table->date('end_date')->nullable();
-            $table->boolean('is_active')->default(true);
+            $table->string('name')->nullable();
+            $table->string('value')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
@@ -29,6 +25,7 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('contests');
+        Schema::dropIfExists('settings');
+        
     }
 };
