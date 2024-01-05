@@ -26,7 +26,9 @@
                         @endif
                     </a>
                     <a href="{{ route('frontend.live') }}" class="btn btn-primary ms-3">Track</a>
-                    <a href="{{ route('frontend.contest') }}" class="btn btn-primary ms-3">Spin To Win</a>
+                    @if (get_giveaway_status())
+                        <a href="{{ route('frontend.contest') }}" class="btn btn-primary ms-3">Spin To Win</a>
+                    @endif
                 </div>
                 <!-- Menu Links -->
                 <div class="menu-links navbar-collapse collapse justify-content-center" id="menuDropdown">
@@ -84,10 +86,11 @@
                         <li>
                             <a href="{{ route('frontend.live') }}" class="btn btn-primary ms-3">Track</a>
                         </li>
-                        <li>
-                            <a href="{{ route('frontend.contest') }}" class="btn btn-primary ms-3">Spin To Win</a>
-                        </li>
-
+                        @if (get_giveaway_status())
+                            <li>
+                                <a href="{{ route('frontend.contest') }}" class="btn btn-primary ms-3">Spin To Win</a>
+                            </li>
+                        @endif
                     </ul>
                     <div class="menu-close">
                         <i class="ti-close"></i>
