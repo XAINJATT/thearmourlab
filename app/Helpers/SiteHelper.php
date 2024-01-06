@@ -4,6 +4,7 @@ namespace App\Helpers;
 
 use App\Models\blog;
 use App\Models\Media;
+use App\Models\Testimonial;
 
 class SiteHelper
 {
@@ -38,5 +39,10 @@ class SiteHelper
     public static function  get_wt_media()
     {
         return Media::where("category", "wt")->latest("created_at")->get();
+    }
+
+    public static function getTestimonials()
+    {
+        return Testimonial::all();
     }
 }

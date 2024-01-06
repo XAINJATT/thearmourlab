@@ -114,4 +114,21 @@
     .my-account {
         width: 100% !important;
     }
+
+    .heading-bx .title:after,
+    footer .footer-title:after,
+    .page-banner h1 span:before,
+    .page-banner .h1 span:before,
+    .page-banner h1 span:after,
+    .page-banner .h1 span:after {
+        display: none !important;
+
+    }
+    .footer .footer-logo{
+        background: #171a1e;
+    }
+
+    .footer-info{
+        padding: 0 !important;
+    }
 </style>

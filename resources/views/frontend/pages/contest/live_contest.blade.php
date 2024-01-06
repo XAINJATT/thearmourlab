@@ -203,14 +203,16 @@
 
                     return $divisions;
                 }
-                $prizes = [];
-                $angle = 0;
-                foreach ($contests as $key => $prize) {
-                    $prizes[$key + 1] = [
-                        'name' => $prize->title,
-                        'angle' => $angle,
-                    ];
-                    $angle += 360 / $no_of_contests;
+                if ($contests) {
+                    $prizes = [];
+                    $angle = 0;
+                    foreach ($contests as $key => $prize) {
+                        $prizes[$key + 1] = [
+                            'name' => $prize->title,
+                            'angle' => $angle,
+                        ];
+                        $angle += 360 / $no_of_contests;
+                    }
                 }
             @endphp
         @endif
@@ -226,52 +228,54 @@
 @section('scripts')
     <script src="{{ asset('backend/plugins/sweetalert2/sweetalert2.all.min.js') }}"></script>
 
-    <script>
-        // Audio elements
-        let startSound = new Audio("{{ asset('assets/audio/wheel.mp3') }}");
-        let applause = new Audio("{{ asset('assets/audio/applause.mp3') }}");
-        let prizes = @json($prizes, JSON_FORCE_OBJECT); // Convert PHP array to JSON for use in JavaScript
-        prizes = Object.values(prizes); // Convert the object to an array
+    @if ($contests)
+        <script>
+            // Audio elements
+            let startSound = new Audio("{{ asset('assets/audio/wheel.mp3') }}");
+            let applause = new Audio("{{ asset('assets/audio/applause.mp3') }}");
+            let prizes = @json($prizes, JSON_FORCE_OBJECT); // Convert PHP array to JSON for use in JavaScript
+            prizes = Object.values(prizes); // Convert the object to an array
 
-        let start_angle = prizes[1]['angle']
-        console.log(prizes, start_angle);
+            let start_angle = prizes[1]['angle']
+            console.log(prizes, start_angle);
 
-        $("#addUserToContestBtn").on("click", function() {
-            var form = document.getElementById('addUserToContest');
+            $("#addUserToContestBtn").on("click", function() {
+                var form = document.getElementById('addUserToContest');
 
-            // Check if the form is valid
-            if (form.checkValidity()) {
-                var formData = $('#addUserToContest').serialize();
+                // Check if the form is valid
+                if (form.checkValidity()) {
+                    var formData = $('#addUserToContest').serialize();
 
-                $.ajax({
-                    url: "{{ route('addUserToContest') }}",
-                    type: 'POST',
-                    data: formData,
-                    dataType: 'json',
-                    success: function(response) {
-                        console.log(response.message);
-                        $('#userForm').addClass('d-none');
-                        $('#spinner-wheel').removeClass('d-none');
-                        // Handle success, e.g., show a success message to the user
-                    },
-                    error: function(error) {
-                        console.error('Error:', error);
-                        // Handle error, e.g., display an error message to the user
-                    }
-                });
-            } else {
-                Swal.fire({
-                    title: "Alert",
-                    text: "Please enter all required data.",
-                    icon: "warning",
-                    confirmButtonColor: "#3085d6",
-                    confirmButtonText: "Okay!",
-                });
-                // If not valid, the browser will display default error messages
-            }
+                    $.ajax({
+                        url: "{{ route('addUserToContest') }}",
+                        type: 'POST',
+                        data: formData,
+                        dataType: 'json',
+                        success: function(response) {
+                            console.log(response.message);
+                            $('#userForm').addClass('d-none');
+                            $('#spinner-wheel').removeClass('d-none');
+                            // Handle success, e.g., show a success message to the user
+                        },
+                        error: function(error) {
+                            console.error('Error:', error);
+                            // Handle error, e.g., display an error message to the user
+                        }
+                    });
+                } else {
+                    Swal.fire({
+                        title: "Alert",
+                        text: "Please enter all required data.",
+                        icon: "warning",
+                        confirmButtonColor: "#3085d6",
+                        confirmButtonText: "Okay!",
+                    });
+                    // If not valid, the browser will display default error messages
+                }
 
-        });
-    </script>
+            });
+        </script>
+    @endif
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="{{ asset('assets/js/contest.js') }}"></script>
 @endsection

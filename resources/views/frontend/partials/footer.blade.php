@@ -3,12 +3,12 @@
     <div class="footer-info bg-primary">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                <div class="col-lg-3 col-md-6 col-sm-6 ">
                     <div class="footer-logo">
                         <img src="{{ asset('images/white logo.png') }}" alt="" />
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                <div class="col-lg-3 col-md-6 col-sm-6 my-3 ">
                     <div class="feature-container left footer-info-bx">
                         <div class="icon-lg">
                             <span class="icon-cell"><img src="images/icon/contact/icon3.png" alt="" /></span>
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                <div class="col-lg-3 col-md-6 col-sm-6 my-3 ">
                     <div class="feature-container left footer-info-bx">
                         <div class="icon-lg">
                             <span class="icon-cell"><img src="images/icon/contact/icon1.png" alt="" /></span>
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 mb-30">
+                <div class="col-lg-3 col-md-6 col-sm-6 my-3 ">
                     <div class="feature-container left footer-info-bx">
                         <div class="icon-lg">
                             <span class="icon-cell"><img src="images/icon/contact/icon2.png" alt="" /></span>

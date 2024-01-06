@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </div> --}}
-                <a href="#" class="btn btn-primary">READ MORE</a>
+                <a href="{{route("frontend.about")}}" class="btn btn-primary">READ MORE</a>
             </div>
         </div>
     </div>

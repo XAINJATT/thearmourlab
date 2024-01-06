@@ -169,19 +169,38 @@
           </a>
         </li>
 
-        <li class="menu-item {{ request()->is('admin/contests') ? 'active open' : '' }}">
+        <li class="menu-item {{ request()->is('admin/contests') || request()->is('admin/contests/create')? 'active open' : '' }}">
           <a href="javascript:void(0)" class="menu-link menu-toggle">
             <i class="menu-icon tf-icons bx bx-user"></i>
             <div data-i18n="User interface">Prizes</div>
           </a>
           <ul class="menu-sub">
-            <li class="menu-item {{ request()->is('contests/create') ? 'active' : '' }}">
+            <li class="menu-item {{ request()->is('admin/contests/create') ? 'active' : '' }}">
               <a href="{{ route('admin.contest.create') }}" class="menu-link">
                 <div data-i18n="Alerts">Add</div>
               </a>
             </li>
-            <li class="menu-item {{ request()->is('contests') ? 'active' : '' }}">
+            <li class="menu-item {{ request()->is('admin/contests') ? 'active' : '' }}">
               <a href="{{route('admin.contests')}}" class="menu-link">
+                <div data-i18n="Alerts">List</div>
+              </a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="menu-item {{ request()->is('admin/testimonials') || request()->is('admin/testimonials/create') ? 'active open' : '' }}">
+          <a href="javascript:void(0)" class="menu-link menu-toggle">
+            <i class="menu-icon tf-icons bx bx-user"></i>
+            <div data-i18n="User interface">Testimonials</div>
+          </a>
+          <ul class="menu-sub">
+            <li class="menu-item {{ request()->is('admin/testimonials/create') ? 'active' : '' }}">
+              <a href="{{ route('admin.testimonials.create') }}" class="menu-link">
+                <div data-i18n="Alerts">Add</div>
+              </a>
+            </li>
+            <li class="menu-item {{ request()->is('admin/testimonials') ? 'active' : '' }}">
+              <a href="{{route('testimonials.index')}}" class="menu-link">
                 <div data-i18n="Alerts">List</div>
               </a>
             </li>

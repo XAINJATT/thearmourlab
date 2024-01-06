@@ -68,7 +68,7 @@
                                 technology to apply premium Paint Protection Films and Ceramic Coatings, ensuring your car
                                 doesn't just shine but is also safeguarded against scratches, dirt, and UV rays.</p>
                         </div>
-                        <a href="#" class="btn btn-primary">About Us</a>
+                        <a href="{{route('frontend.about')}}" class="btn btn-primary">About Us</a>
                     </div>
                     <div class="col-lg-7 mb-30">
                         <div class="about-media">

@@ -48,4 +48,7 @@
             max-width: 1300px;
         }
     }
+    .ttr-slider.style-2 .slider-content .title{
+        font-size: 60px;
+    }
 </style>

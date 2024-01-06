@@ -127,8 +127,8 @@
 
                 <div class="row">
                     <div class="col-lg-6">
-                        <div class="d-flex py-5 align-items-center">
-                            <img height="250" style="height:250px"
+                        <div class="d-flex flex-wrap py-5 align-items-center">
+                            <img style="max-height:250px"
                                 src="{{ asset('images/png-transparent-interest-rate-offer-text-trademark-payment-removebg-preview.webp') }}"
                                 class="img-fluid pb-5" alt="">
                                 <div class="text-white px-3">
@@ -170,9 +170,9 @@
         <section style="margin-bottom:100px" class="">
             <div class="container">
 
-                <div class="row align-items-center">
+                <div class="row align-items-center gap-3">
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
                         <div class="text-white p-4"
                             style=" background: linear-gradient(25deg, #171a1e 50%, #43491a 50%); padding:40px">
                             <p class="fs-2 fw-bold">
@@ -186,7 +186,7 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-6">
+                    <div class="col-lg-5">
                         <div class="d-flex align-items-center justify-content-center">
                             <a target="_blank" href="https://www.financeit.ca/s/vSeB6A">
                                 <img height="250" style="height:300px;"

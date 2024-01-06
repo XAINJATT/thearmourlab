@@ -35,6 +35,7 @@ use App\Http\Controllers\ContestController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\TestimonialController;
 
 //Command Routes
 Route::get('clear-cache', function () {
@@ -179,7 +180,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/media/delete/{id}', [MediaController::class, 'destroy'])->name('admin.media.delete');
     Route::post('admin/media/status/{id}', [MediaController::class, 'status'])->name('admin.media.status');
 
-    
+
     // ShopOrdersController
     Route::get('admin/shop/order', [ShopOrdersController::class, 'index'])->name('admin.shopOrder');
     Route::get('admin/shop/order/view/{id}', [ShopOrdersController::class, 'show'])->name('admin.shopOrder.view');
@@ -202,6 +203,16 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/contests/edit/{id}', [AdminContestController::class, 'edit'])->name('admin.contest.edit');
     Route::post('admin/contests/update', [AdminContestController::class, 'update'])->name('admin.contest.update');
     Route::post('admin/contests/delete/{id}', [AdminContestController::class, 'delete'])->name('admin.contest.delete');
+
+    //Testemonials: 
+
+
+    Route::get('admin/testimonials/', [TestimonialController::class, 'index'])->name("testimonials.index");
+    Route::post('admin/testimonials/store', [TestimonialController::class, 'store'])->name("testimonials.store");
+    Route::get('admin/testimonials/create', [TestimonialController::class, 'create'])->name("admin.testimonials.create");
+    Route::delete('/admin/testimonials/delete/{testimonial}',[TestimonialController::class, 'destroy'])->name('admin.testimonials.destroy');
+    Route::get('/admin/testimonials/edit/{testimonial}', [TestimonialController::class, 'edit'])->name('admin.testimonials.edit');
+    Route::put('/admin/testimonials/update/{testimonial}', [TestimonialController::class, 'update'])->name('admin.testimonials.update');
 
     /* ADMIN ROUTE - END */
 
@@ -230,7 +241,7 @@ Route::middleware(['auth'])->group(function () {
     // UserOrderStatusController
     Route::get('order-status', [UserOrderStatusController::class, 'index'])->name('user.orderStatus');
     Route::get('order-status/view/{id}', [UserOrderStatusController::class, 'show'])->name('user.orderStatus.view');
-    
+
     // UserContestController
     // Route::get('contests', [UserContestController::class, 'index'])->name('contests');
 

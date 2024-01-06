@@ -33,7 +33,7 @@
         @endif
 
         @if (!empty($order->defects))
-            <img style="max-height:300px" src="{{ @$order->defects }}" id="defects" alt="defects"
+            <img style="max-height:500px" src="{{ @$order->defects }}" id="defects" alt="defects"
                 class="img-fluid" />
             <input type="hidden" id="old_defects" name="old_defects" value="{{ @$order->defects }}">
         @endif

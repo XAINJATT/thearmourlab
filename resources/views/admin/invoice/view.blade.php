@@ -207,7 +207,7 @@
                                                 <!-- <div class="">
                                                                                     <label for="price" class="mb-0">Price :</label>
                                                                                     <div class="">
-                                                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                        <input disablad type="text" class="form-control" name="ceramic_coating_price">
                                                                                     </div>
                                                                                 </div> -->
                                             </div>
@@ -318,7 +318,7 @@
                                                 <!-- <div class="">
                                                                                     <label for="price" class="mb-0">Price :</label>
                                                                                     <div class="">
-                                                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                        <input disablad type="text" class="form-control" name="ceramic_coating_price">
                                                                                     </div>
                                                                                 </div> -->
                                             </div>
@@ -431,7 +431,7 @@
                                                 <!-- <div class="">
                                                                                     <label for="price" class="mb-0">Price :</label>
                                                                                     <div class="">
-                                                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                        <input disablad type="text" class="form-control" name="ceramic_coating_price">
                                                                                     </div>
                                                                                 </div> -->
                                             </div>
@@ -506,7 +506,7 @@
                                                 <!-- <div class="">
                                                                                     <label for="price" class="mb-0">Price :</label>
                                                                                     <div class="">
-                                                                                        <input disablad type="number" class="form-control" name="ceramic_coating_price">
+                                                                                        <input disablad type="text" class="form-control" name="ceramic_coating_price">
                                                                                     </div>
                                                                                 </div> -->
                                             </div>
@@ -580,7 +580,7 @@
                                                 <!-- <div class="">
                                                                                     <label for="price" class="mb-0">Price :</label>
                                                                                     <div class="">
-                                                                                        <input type="number" class="form-control" name="ceramic_coating_price">
+                                                                                        <input type="text" class="form-control" name="ceramic_coating_price">
                                                                                     </div>
                                                                                 </div> -->
                                             </div>
@@ -655,7 +655,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="ceramic_coating_price"
+                                                <input type="text" class="form-control" name="ceramic_coating_price"
                                                     value="{{ @$order->ceramic_coating_price }}" disabled>
                                             </div>
                                         </div>
@@ -726,7 +726,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="ppf_price"
+                                                <input type="text" class="form-control" name="ppf_price"
                                                     value="{{ @$order->ppf_price }}" disabled>
                                             </div>
                                         </div>
@@ -798,7 +798,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="wt_price"
+                                                <input type="text" class="form-control" name="wt_price"
                                                     value="{{ @$order->wt_price }}" disabled>
                                             </div>
                                         </div>
@@ -840,7 +840,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="pc_price"
+                                                <input type="text" class="form-control" name="pc_price"
                                                     value="{{ @$order->pc_price }}" disabled>
                                             </div>
                                         </div>
@@ -901,7 +901,7 @@
                                         <div class="">
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
-                                                <input type="number" class="form-control" name="os_price"
+                                                <input type="text" class="form-control" name="os_price"
                                                     value="{{ @$order->os_price }}" disabled>
                                             </div>
                                         </div>
@@ -924,7 +924,7 @@
                                     <div class="col-6 mb-3">
                                         <label for="total_price" class="mb-0">Total Price :</label>
                                         <div class="">
-                                            <input type="number" class="form-control" id="total_price"
+                                            <input type="text" class="form-control" id="total_price"
                                                 name="total_price" value="{{ @$order->total_price }}" disabled>
                                         </div>
                                     </div>
@@ -973,7 +973,7 @@
                                     <div class="col-5">
                                         <label for="price" class="mb-0">Mileage In :</label>
                                         <div class="">
-                                            <input type="number" class="form-control" id="mileage_in_price"
+                                            <input type="text" class="form-control" id="mileage_in_price"
                                                 value="{{ @$order->mileage_in_price }}" disabled>
                                         </div>
                                     </div>
@@ -992,7 +992,7 @@
                                     <div class="col-6 mb-3">
                                         <label for="int" class="mb-0">Int :</label>
                                         <div class="">
-                                            <input type="number" class="form-control" id="int" name="int"
+                                            <input type="text" class="form-control" id="int" name="int"
                                                 value="{{ @$order->int }}" disabled>
                                         </div>
                                     </div>

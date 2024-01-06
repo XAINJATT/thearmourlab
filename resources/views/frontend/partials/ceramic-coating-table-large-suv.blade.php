@@ -130,6 +130,15 @@
         <td> ✖<br /></td>
     </tr>
     <tr>
+        <td>Interior coating</td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✔<br /></td>
+        <td> ✖<br /></td>
+    </tr>
+    <tr>
         <td>Premier coating</td>
         <td>✖</td>
         <td>✖</td>
@@ -140,10 +149,10 @@
     </tr>
     <tr>
         <td>Trim / Exhaust / Misc coating</td>
-        <td> ✔<br /></td>
-        <td> ✔<br /></td>
-        <td> ✔<br /></td>
-        <td> ✔<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
         <td> ✖<br /></td>
         <td> ✖<br /></td>
     </tr>

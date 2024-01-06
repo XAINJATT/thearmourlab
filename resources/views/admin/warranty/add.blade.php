@@ -151,58 +151,58 @@
                                         <div class="">
                                             <label for="exterior_package" class="form-label me-2 fw-medium mt-2">Exterior
                                                 Package:</label>
-                                            <input  type="text" class="form-control" id="exterior_package"
+                                            <input type="text" class="form-control" id="exterior_package"
                                                 name="exterior_package" placeholder="Exterior Package" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="interior" class="form-label me-2 fw-medium mt-2">Interior:</label>
-                                            <input  type="text" class="form-control" id="interior"
-                                                name="interior" placeholder="Interior" />
+                                            <input type="text" class="form-control" id="interior" name="interior"
+                                                placeholder="Interior" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="windows" class="form-label me-2 fw-medium mt-2">Windows:</label>
-                                            <input  type="text" class="form-control" id="windows"
-                                                name="windows" placeholder="Windows" />
+                                            <input type="text" class="form-control" id="windows" name="windows"
+                                                placeholder="Windows" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="wheels" class="form-label me-2 fw-medium mt-2">Wheels:</label>
-                                            <input  type="text" class="form-control" id="wheels"
-                                                name="wheels" placeholder="Wheels" />
+                                            <input type="text" class="form-control" id="wheels" name="wheels"
+                                                placeholder="Wheels" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="trim" class="form-label me-2 fw-medium mt-2">Trim:</label>
-                                            <input  type="text" class="form-control" id="trim"
-                                                name="trim" placeholder="Trim" />
+                                            <input type="text" class="form-control" id="trim" name="trim"
+                                                placeholder="Trim" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="paint_correction" class="form-label me-2 fw-medium mt-2">Paint
                                                 Correction:</label>
-                                            <input  type="text" class="form-control" id="paint_correction"
+                                            <input type="text" class="form-control" id="paint_correction"
                                                 name="paint_correction" placeholder="Paint Correction" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="body" class="form-label me-2 fw-medium mt-2">Body:</label>
-                                            <input  type="text" class="form-control" id="body"
-                                                name="body" placeholder="Body" />
+                                            <input type="text" class="form-control" id="body" name="body"
+                                                placeholder="Body" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="coating_duration" class="form-label me-2 fw-medium mt-2">Coating
                                                 Duration:</label>
-                                            <input  type="text" class="form-control" id="coating_duration"
+                                            <input type="text" class="form-control" id="coating_duration"
                                                 name="coating_duration" placeholder="Coating Duration" />
                                         </div>
                                     </div>
@@ -234,7 +234,7 @@
                                         <div class="">
                                             <label for="attitionl_panels"
                                                 class="form-label me-2 fw-medium mt-2">Additional Panels:</label>
-                                            <input  type="text" class="form-control" id="attitionl_panels"
+                                            <input type="text" class="form-control" id="attitionl_panels"
                                                 name="attitionl_panels" placeholder="Additional Panels" />
                                         </div>
                                     </div>
@@ -242,15 +242,15 @@
                                         <div class="">
                                             <label for="ppf_brand" class="form-label me-2 fw-Medium mt-2">Ppf
                                                 Brand</label>
-                                            <input  type="text" class="form-control" id="ppf_brand"
-                                                name="ppf_brand" placeholder="Ppf Brand" />
+                                            <input type="text" class="form-control" id="ppf_brand" name="ppf_brand"
+                                                placeholder="Ppf Brand" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="roll_serial_number" class="form-label me-2 fw-medium mt-2">Roll
                                                 Serial Number:</label>
-                                            <input  type="text" class="form-control" id="roll_serial_number"
+                                            <input type="text" class="form-control" id="roll_serial_number"
                                                 name="roll_serial_number" placeholder="Roll Serial Number" />
                                         </div>
                                     </div>
@@ -258,7 +258,7 @@
                                         <div class="">
                                             <label for="warranty_duration" class="form-label me-2 fw-medium mt-2">Warranty
                                                 Duration:</label>
-                                            <input  type="text" class="form-control" id="warranty_duration"
+                                            <input type="text" class="form-control" id="warranty_duration"
                                                 name="warranty_duration" placeholder="Warranty Duration" />
                                         </div>
                                     </div>
@@ -266,17 +266,16 @@
                                         <div class="">
                                             <label for="installer"
                                                 class="form-label me-2 fw-medium mt-2">Installer:</label>
-                                            <input  type="text" class="form-control" id="installer"
-                                                name="installer" placeholder="Installer" />
+                                            <input type="text" class="form-control" id="installer" name="installer"
+                                                placeholder="Installer" />
                                         </div>
                                     </div>
                                     <div class="col-md-6 col-12 mt-2">
                                         <div class="">
                                             <label for="date-of_installaction" class="form-label me-2 fw-medium mt-2">Date
                                                 Of Installaction:</label>
-                                            <input  type="date" class="form-control"
-                                                id="date_of_installaction" name="date_of_installation"
-                                                placeholder="Date Of Installaction" />
+                                            <input type="date" class="form-control" id="date_of_installaction"
+                                                name="date_of_installation" placeholder="Date Of Installaction" />
                                         </div>
                                     </div>
 
@@ -341,6 +340,13 @@
                                                     </button>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <label for="date" class="mb-0">Date:</label>
+                                        <div class="">
+                                            <input type="datetime-local" class="form-control" id="date"
+                                                name="warranty_date">
                                         </div>
                                     </div>
                                     <div id="" class="float-right" style="display: flex; justify-content:end;">
@@ -411,5 +417,5 @@
 @endsection
 
 @section('scripts')
-   @include("admin.warranty.partials.scripts")
+    @include('admin.warranty.partials.scripts')
 @endsection

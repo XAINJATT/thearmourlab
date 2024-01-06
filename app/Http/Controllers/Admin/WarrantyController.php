@@ -16,7 +16,7 @@ class WarrantyController extends Controller
      */
     public function index()
     {
-        $warranties = Warranty::all();
+        $warranties = Warranty::orderBy("id", "DESC")->get();
         return view('admin.warranty.index', compact('warranties'));
     }
 
@@ -98,17 +98,22 @@ class WarrantyController extends Controller
 
         $logData = $request->only(['log_date', 'annualInspection', 'productUsed', 'performedBy', 'notes']);
 
-        // Combine the log data into associative arrays for each entry
+        // Initialize an empty array for logs
         $logs = [];
-        foreach ($logData['log_date'] as $index => $date) {
-            $logs[] = [
-                'log_date' => $date,
-                'annualInspection' => $logData['annualInspection'][$index],
-                'productUsed' => $logData['productUsed'][$index],
-                'performedBy' => $logData['performedBy'][$index],
-                'notes' => $logData['notes'][$index],
-            ];
+
+        // Check if 'log_date' key exists and is not empty
+        if (isset($logData['log_date']) && !empty($logData['log_date'])) {
+            foreach ($logData['log_date'] as $index => $date) {
+                $logs[] = [
+                    'log_date' => $date,
+                    'annualInspection' => $logData['annualInspection'][$index] ?? null,
+                    'productUsed' => $logData['productUsed'][$index] ?? null,
+                    'performedBy' => $logData['performedBy'][$index] ?? null,
+                    'notes' => $logData['notes'][$index] ?? null,
+                ];
+            }
         }
+
 
         $jsonLogs = json_encode($logs);
 
@@ -145,6 +150,7 @@ class WarrantyController extends Controller
             'installer' => $request->input('installer'),
             'date_of_installation' => $request->input('date_of_installation'),
             'customer_signature' => $signatureFileName,
+            "date" => $request->warranty_date,
             'log_data' => $jsonLogs
         ]);
 
@@ -190,19 +196,22 @@ class WarrantyController extends Controller
 
         $logData = $request->only(['log_date', 'annualInspection', 'productUsed', 'performedBy', 'notes']);
 
-        // Combine the log data into associative arrays for each entry
+        // Initialize an empty array for logs
         $logs = [];
-        if ($logData) {
+
+        // Check if 'log_date' key exists and is not empty
+        if (isset($logData['log_date']) && !empty($logData['log_date'])) {
             foreach ($logData['log_date'] as $index => $date) {
                 $logs[] = [
                     'log_date' => $date,
-                    'annualInspection' => $logData['annualInspection'][$index],
-                    'productUsed' => $logData['productUsed'][$index],
-                    'performedBy' => $logData['performedBy'][$index],
-                    'notes' => $logData['notes'][$index],
+                    'annualInspection' => $logData['annualInspection'][$index] ?? null,
+                    'productUsed' => $logData['productUsed'][$index] ?? null,
+                    'performedBy' => $logData['performedBy'][$index] ?? null,
+                    'notes' => $logData['notes'][$index] ?? null,
                 ];
             }
         }
+
         $jsonLogs = json_encode($logs);
 
         // dd($jsonLogs);
@@ -211,13 +220,13 @@ class WarrantyController extends Controller
         if (auth()->user()->isAdmin()) {
             $data = [
                 'customer_signature' => $signatureFileName,
-                'date' => $request->date,
+                "date" => $request->warranty_date,
                 'log_data' => $jsonLogs
             ];
         } else {
             $data = [
                 'customer_signature' => $signatureFileName,
-                'date' => $request->date
+                "date" => $request->warranty_date,
             ];
         }
 

@@ -10,7 +10,7 @@
             <section class="py-5">
                 <div class="row">
                     <div class="col-md-12">
-                        @include('partials.alerts') <!-- You can use a partial for session messages -->
+                        {{-- @include('partials.alerts') <!-- You can use a partial for session messages --> --}}
                     </div>
                     <div class="col-lg-12 mb-12">
                         <div class="card">
@@ -68,10 +68,9 @@
     <!-- Testimonials End -->
 @endsection
 
-
 @section('scripts')
     <script>
-        function DeleteProduct(id) {
+        function DeleteTestimonial(id) {
             Swal.fire({
                 title: 'Are you sure?',
                 text: "You won't be able to revert this!",
@@ -84,26 +83,27 @@
                 if (result.isConfirmed) {
                     $.ajax({
                         type: "POST",
-                        url: "{{ url('admin/product/delete') }}" + '/' + id, // Pass the product parameter
+                        url: "{{ url('admin/testimonials/delete') }}" + '/' + id,
                         data: {
-                            _token: "{{ csrf_token() }}"
+                            _token: "{{ csrf_token() }}",
+                            _method: 'DELETE' // Specify the request method
                         },
                         success: function(response) {
                             if (response.success) {
                                 Swal.fire(
                                     'Deleted!',
-                                    'Your product has been deleted.',
+                                    'Your testimonial has been deleted.',
                                     'success'
                                 ).then(() => {
-                                    // Reload the page after a short delay (e.g., 0 seconds)
                                     setTimeout(() => {
                                         location.reload();
-                                    }, 0);
+                                    }, 1000); // Reload the page after 1 second
                                 });
                             } else {
                                 Swal.fire(
                                     'Error!',
-                                    'An error occurred while deleting the item.',
+                                    response.message ||
+                                    'An error occurred while deleting the testimonial.',
                                     'error'
                                 );
                             }
@@ -111,7 +111,7 @@
                         error: function() {
                             Swal.fire(
                                 'Error!',
-                                'An error occurred while deleting the item.',
+                                'An error occurred while deleting the testimonial.',
                                 'error'
                             );
                         }
@@ -120,55 +120,56 @@
             });
         }
 
-        function productStatus(id) {
-            Swal.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#ef3737',
-                cancelButtonColor: '#6c757d',
-                confirmButtonText: 'Yes, update product status!'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    $.ajax({
-                        type: "POST",
-                        url: "{{ route('admin.product.statusUpdate', ['id' => ':id']) }}".replace(':id',
-                            id),
-                        data: {
-                            _token: "{{ csrf_token() }}"
-                        },
-                        success: function(response) {
-                            if (response.success) {
-                                Swal.fire(
-                                    'Status Updated!',
-                                    'Product status has been updated.',
-                                    'success'
-                                ).then(() => {
-                                    // Reload the page after a short delay (e.g., 0 seconds)
-                                    setTimeout(() => {
-                                        location.reload();
-                                    }, 0);
-                                });
-                            } else {
-                                Swal.fire(
-                                    'Error!',
-                                    response.message ||
-                                    'An error occurred while updating the status.',
-                                    'error'
-                                );
-                            }
-                        },
-                        error: function() {
-                            Swal.fire(
-                                'Error!',
-                                'An error occurred while updating the status.',
-                                'error'
-                            );
-                        }
-                    });
-                }
-            });
-        }
+
+        // function productStatus(id) {
+        //     Swal.fire({
+        //         title: 'Are you sure?',
+        //         text: "You won't be able to revert this!",
+        //         icon: 'warning',
+        //         showCancelButton: true,
+        //         confirmButtonColor: '#ef3737',
+        //         cancelButtonColor: '#6c757d',
+        //         confirmButtonText: 'Yes, update product status!'
+        //     }).then((result) => {
+        //         if (result.isConfirmed) {
+        //             $.ajax({
+        //                 type: "POST",
+        //                 url: "{{ route('admin.product.statusUpdate', ['id' => ':id']) }}".replace(':id',
+        //                     id),
+        //                 data: {
+        //                     _token: "{{ csrf_token() }}"
+        //                 },
+        //                 success: function(response) {
+        //                     if (response.success) {
+        //                         Swal.fire(
+        //                             'Status Updated!',
+        //                             'Product status has been updated.',
+        //                             'success'
+        //                         ).then(() => {
+        //                             // Reload the page after a short delay (e.g., 0 seconds)
+        //                             setTimeout(() => {
+        //                                 location.reload();
+        //                             }, 0);
+        //                         });
+        //                     } else {
+        //                         Swal.fire(
+        //                             'Error!',
+        //                             response.message ||
+        //                             'An error occurred while updating the status.',
+        //                             'error'
+        //                         );
+        //                     }
+        //                 },
+        //                 error: function() {
+        //                     Swal.fire(
+        //                         'Error!',
+        //                         'An error occurred while updating the status.',
+        //                         'error'
+        //                     );
+        //                 }
+        //             });
+        //         }
+        //     });
+        // }
     </script>
 @endsection
