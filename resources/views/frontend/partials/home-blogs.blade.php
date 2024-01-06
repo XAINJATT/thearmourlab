@@ -1,3 +1,4 @@
+
 <section class="section-area section-sp2 bg-gray ov-hidden">
     <div class="container">
         <div class="heading-bx text-center">
@@ -11,7 +12,7 @@
                     <div class="blog-card style-1 bg-white shadow">
                         <div class="post-media">
                             <a href="{{ route('frontend.blogDetails', $blog->id) }}"><img
-                                    src="{{ $blog->image }}" style="filter: grayscale(1);" alt=""></a>
+                                    src="{{ $blog->image }}" alt=""></a>
                         </div>
                         <div class="post-info">
                             <h5 class="post-title"><a

@@ -203,6 +203,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/contests/edit/{id}', [AdminContestController::class, 'edit'])->name('admin.contest.edit');
     Route::post('admin/contests/update', [AdminContestController::class, 'update'])->name('admin.contest.update');
     Route::post('admin/contests/delete/{id}', [AdminContestController::class, 'delete'])->name('admin.contest.delete');
+    Route::get('admin/winners', [AdminContestController::class, 'winners'])->name('admin.winners');
 
     //Testemonials: 
 

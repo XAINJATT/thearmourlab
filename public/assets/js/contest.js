@@ -19,6 +19,40 @@ $(".spinBtn").on("click", function () {
     // Check if a winner is found before accessing its properties
     if (winner) {
         // Log the winner and any additional actions you want to perform
+        document.querySelector("#win_prize").value = winner.name;
+
+        var form = document.getElementById("addUserToContest");
+
+        // Check if the form is valid
+        if (form.checkValidity()) {
+            var formData = $("#addUserToContest").serialize();
+
+            $.ajax({
+                url: "/addUserToContest",
+                type: "POST",
+                data: formData,
+                dataType: "json",
+                success: function (response) {
+                    console.log(response.message);
+
+                    // Handle success, e.g., show a success message to the user
+                },
+                error: function (error) {
+                    console.error("Error:", error);
+                    // Handle error, e.g., display an error message to the user
+                },
+            });
+        } else {
+            Swal.fire({
+                title: "Alert",
+                text: "Please enter all required data.",
+                icon: "warning",
+                confirmButtonColor: "#3085d6",
+                confirmButtonText: "Okay!",
+            });
+            // If not valid, the browser will display default error messages
+        }
+
         console.log("Winner: ", winner.name);
     } else {
         console.log("No winner found");
@@ -48,11 +82,10 @@ $(".spinBtn").on("click", function () {
         }).then((result) => {
             $(".wheel").css("transition", "initial");
             $(".wheel").css("transform", "rotate(0deg)");
-            window.location.href = '/';
+            window.location.href = "/";
         });
     }, 5500);
 });
-
 
 // // Starting Code
 // let prizes = [

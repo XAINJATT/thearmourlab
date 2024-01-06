@@ -171,6 +171,8 @@
                             </button>
                         </div>
                     </div>
+                    <input type="hidden" id="win_prize" name="prize" value="">
+                    <input type="hidden" id="contest_id" name="contest_id" value="1">
                 </form>
             </div>
 
@@ -240,38 +242,11 @@
             console.log(prizes, start_angle);
 
             $("#addUserToContestBtn").on("click", function() {
-                var form = document.getElementById('addUserToContest');
 
-                // Check if the form is valid
-                if (form.checkValidity()) {
-                    var formData = $('#addUserToContest').serialize();
+                $('#userForm').addClass('d-none');
+                $('#spinner-wheel').removeClass('d-none');
 
-                    $.ajax({
-                        url: "{{ route('addUserToContest') }}",
-                        type: 'POST',
-                        data: formData,
-                        dataType: 'json',
-                        success: function(response) {
-                            console.log(response.message);
-                            $('#userForm').addClass('d-none');
-                            $('#spinner-wheel').removeClass('d-none');
-                            // Handle success, e.g., show a success message to the user
-                        },
-                        error: function(error) {
-                            console.error('Error:', error);
-                            // Handle error, e.g., display an error message to the user
-                        }
-                    });
-                } else {
-                    Swal.fire({
-                        title: "Alert",
-                        text: "Please enter all required data.",
-                        icon: "warning",
-                        confirmButtonColor: "#3085d6",
-                        confirmButtonText: "Okay!",
-                    });
-                    // If not valid, the browser will display default error messages
-                }
+                
 
             });
         </script>

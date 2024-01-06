@@ -185,6 +185,11 @@
                 <div data-i18n="Alerts">List</div>
               </a>
             </li>
+            <li class="menu-item {{ request()->is('admin/winners') ? 'active' : '' }}">
+              <a href="{{route('admin.winners')}}" class="menu-link">
+                <div data-i18n="Alerts">Winners</div>
+              </a>
+            </li>
           </ul>
         </li>
 
