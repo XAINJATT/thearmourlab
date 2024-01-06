@@ -19,8 +19,8 @@ class ContestController extends Controller
 {
     public function on_off_giveaway()
     {
-        
-        $previous_status = Setting::where('name','giveaway')->first();
+
+        $previous_status = Setting::where('name', 'giveaway')->first();
         if ($previous_status) {
 
             $previous_status->update([
@@ -37,10 +37,9 @@ class ContestController extends Controller
 
         if ($new) {
             return response()->json(['success' => true]);
-        }else{
+        } else {
             return response()->json(['success' => false, 'message' => 'Something Went Wrong!']);
         }
-
     }
     /**
      * Display a listing of the resource.
@@ -174,7 +173,7 @@ class ContestController extends Controller
             'image' => $FileImage,
             'updated_at' => carbon::now()
         ]);
-        
+
 
         if ($Affected) {
             DB::commit();
@@ -186,13 +185,20 @@ class ContestController extends Controller
     }
 
 
+    public function winners()
+    {
+        $contests = UserContests::orderBy('id', 'DESC')->get();
+        return view('admin.contest.winners', compact('contests'));
+    }
+
+
     /**
      * Remove the specified resource from storage.
      */
     public function delete($id)
     {
         $contestDetails = Contest::where('id', $id)->first();
-        
+
         if (!empty($contestDetails)) {
             $temp = explode("/", $contestDetails->image);
             $fileName = end($temp);

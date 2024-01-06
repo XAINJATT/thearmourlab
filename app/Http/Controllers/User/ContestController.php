@@ -36,6 +36,8 @@ class ContestController extends Controller
             'full_name' => $request->full_name,
             'phone' => $request->phone,
             'email' => $request->email,
+            'prize' => $request->prize,
+            'contest_id' => $request->contest_id,
         ];
 
         $contest = UserContests::create($data);
