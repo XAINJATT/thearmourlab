@@ -34,8 +34,8 @@
 					<!-- blog start -->
 					<div class="blog-lg blog-single">
 						<div class="action-box blog-lg">
-							<!-- <img src="images/blog/default/pic1.jpg" style="filter: grayscale(1);" alt=""> -->
-							<img src="{{ $blogDetails->image }}" style="filter: grayscale(1);" alt="{{ $blogDetails->title }}">
+							<!-- <img src="images/blog/default/pic1.jpg" alt=""> -->
+							<img src="{{ $blogDetails->image }}"  alt="{{ $blogDetails->title }}">
 						</div>
 						<div class="info-bx">
 							<!-- <ul class="post-meta">
@@ -52,8 +52,8 @@
 								</blockquote>
 								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
 								<ul class="wp-block-gallery columns-6 is-cropped">
-									<li class="blocks-gallery-item"><img alt="" style="filter: grayscale(1);" src="images/gallery/pic3.jpg"></li>
-									<li class="blocks-gallery-item"><img alt="" style="filter: grayscale(1);" src="images/gallery/pic5.jpg"></li>
+									<li class="blocks-gallery-item"><img alt="" src="images/gallery/pic3.jpg"></li>
+									<li class="blocks-gallery-item"><img alt="" src="images/gallery/pic5.jpg"></li>
 								</ul>
 								<p>You just need to enter the keyword and select the keyword type to generate a list of 6 title ideas and suggestions. If you’re not satisfied with the results, you can always hit the refresh button to generate a new list of unique titles.</p>
 								<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -113,7 +113,7 @@
 							<h5 class="widget-title">Recent Posts</h5>
 							<!-- <div class="widget-post-bx">
 								<div class="widget-post clearfix">
-									<div class="ttr-post-media"> <img style="filter: grayscale(1);" src="images/blog/recent-blog/pic1.jpg" width="200" height="143" alt=""> </div>
+									<div class="ttr-post-media"> <img src="images/blog/recent-blog/pic1.jpg" width="200" height="143" alt=""> </div>
 									<div class="ttr-post-info">
 										<div class="ttr-post-header">
 											<h6 class="post-title"><a href="/blog-details">Precious Tips To Help You Get Better.</a></h6>
@@ -124,7 +124,7 @@
 									</div>
 								</div>
 								<div class="widget-post clearfix">
-									<div class="ttr-post-media"> <img style="filter: grayscale(1);" src="images/blog/recent-blog/pic2.jpg" width="200" height="160" alt=""> </div>
+									<div class="ttr-post-media"> <img src="images/blog/recent-blog/pic2.jpg" width="200" height="160" alt=""> </div>
 									<div class="ttr-post-info">
 										<div class="ttr-post-header">
 											<h6 class="post-title"><a href="/blog-details">Ten Doubts You Should Clarify About.</a></h6>
@@ -135,7 +135,7 @@
 									</div>
 								</div>
 								<div class="widget-post clearfix">
-									<div class="ttr-post-media"> <img style="filter: grayscale(1);" src="images/blog/recent-blog/pic3.jpg" width="200" height="160" alt=""> </div>
+									<div class="ttr-post-media"> <img src="images/blog/recent-blog/pic3.jpg" width="200" height="160" alt=""> </div>
 									<div class="ttr-post-info">
 										<div class="ttr-post-header">
 											<h6 class="post-title"><a href="/blog-details">The 10 Steps Needed For Putting.</a></h6>
@@ -149,7 +149,7 @@
 							@foreach($recentBlogs as $recentBlog)
 							<div class="widget-post clearfix">
 								<div class="ttr-post-media">
-									<img style="filter: grayscale(1);" src="{{ $recentBlog->image }}" width="200" height="143" alt="{{ $recentBlog->title }}">
+									<img src="{{ $recentBlog->image }}" width="200" height="143" alt="{{ $recentBlog->title }}">
 								</div>
 								<div class="ttr-post-info">
 									<div class="ttr-post-header">

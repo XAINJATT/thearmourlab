@@ -62,23 +62,20 @@
                                         </div>
 
                                         <div class="col-md-6 mb-3">
-                                            <label for="-text-" class="font-weight-bold">Discounted Price <span
-                                                    class="text-danger">*</span></label>
+                                            <label for="-text-" class="font-weight-bold">Discounted Price </label>
                                             <input type="number" class="form-control" id="discounted_price"
-                                                name="discounted_price" required>
+                                                name="discounted_price">
                                         </div>
 
                                         <div class="col-md-6 mb-3">
-                                            <label for="soh" class="font-weight-bold">SOH <span
-                                                    class="text-danger">*</span></label>
-                                            <input type="number" class="form-control" id="soh" name="soh"
-                                                required>
+                                            <label for="soh" class="font-weight-bold">SOH</label>
+                                            <input type="number" class="form-control" id="soh" name="soh">
                                         </div>
 
                                         <div class="col-md-12 mt-2">
                                             <label for="description" class="font-weight-bold">Description <span
                                                     class="text-danger">*</span></label>
-                                            <textarea class="form-control" name="description" rows="3" required></textarea>
+                                            <textarea class="form-control" id="description" name="description" rows="3"></textarea>
                                         </div>
 
                                         <div class="col-12 col-md-6 mt-2">
@@ -93,8 +90,7 @@
                                                     <span>&nbsp;Browse</span>
                                                 </span>
                                                 <input type="file" class="input-style" name="product_image"
-                                                    onchange="ReadUrl(this, 'product_image_preview', 'product_image_browse');"
-                                                    required>
+                                                    onchange="ReadUrl(this, 'product_image_preview', 'product_image_browse');">
                                             </label>
                                         </div>
 
