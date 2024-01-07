@@ -40,6 +40,7 @@
 
 <style>
     @media (min-width: 1200px) {
+
         .container,
         .container-sm,
         .container-md,
@@ -48,7 +49,40 @@
             max-width: 1300px;
         }
     }
-    .ttr-slider.style-2 .slider-content .title{
+
+    .ttr-slider.style-2 .slider-content .title {
         font-size: 60px;
+    }
+
+    @media only screen and (max-width: 991px) {
+        .ttr-slider.style-2 .slider-content .title {
+            font-size: 24px;
+        }
+
+        .about-wraper2 .content-left,
+        .about-wraper2 .content-right {
+            display: block;
+        }
+        .about-wraper2 .content-left{
+            left:100px;
+        }
+        .about-wraper2 .service-content{
+            width: 135px;
+            height: 40px;
+        }
+        .about-wraper2 .service-content:before{
+            width: 25px;
+            height: 25px;
+            line-height: 25px;
+        }
+        .about-wraper2 .service-content .title{
+            font-size: 14px;
+        }
+        .about-wraper2 .content-right .service-content{
+            padding: 0 0px 0 43px;
+        }
+        .about-wraper2 .content-right{
+            right: -100px;
+        }
     }
 </style>
