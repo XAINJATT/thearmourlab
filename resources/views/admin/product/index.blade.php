@@ -3,56 +3,72 @@
     @if (!auth()->user()->isAdmin())
         @php(abort(403))
     @endif
-
-    <!-- Testimonials Start -->
+    <!-- Contact Start -->
     <div class="page-holder w-100 d-flex flex-wrap">
         <div class="container-fluid px-xl-5">
             <section class="py-5">
                 <div class="row">
                     <div class="col-md-12">
-                        @include('partials.alerts') <!-- You can use a partial for session messages -->
+                        @if (session()->has('success-message'))
+                            <div class="alert alert-success">
+                                {{ session('success-message') }}
+                            </div>
+                        @elseif(session()->has('error-message'))
+                            <div class="alert alert-danger">
+                                {{ session('error-message') }}
+                            </div>
+                        @endif
                     </div>
                     <div class="col-lg-12 mb-12">
                         <div class="card">
                             <div class="card-header row">
-                                <h6 class="text-uppercase mb-0 col-10">All Testimonials</h6>
-                                <a href="{{ route('admin.testimonials.create') }}"
-                                    class="btn btn-primary col-2 float-right">Add New Testimonial</a>
+                                <h6 class="text-uppercase mb-0 col-10">HERE ARE ALL PRODUCTS </h6>
+                                <a style="min-width:250px" href="{{ route('admin.product.create') }}" class="btn btn-primary col-2 float-right">Add
+                                    New Product</a>
                             </div>
                             <div class="card-body" style="overflow: scroll">
                                 <table id="data_table" class="table table-striped table-hover card-text">
                                     <thead>
                                         <tr>
                                             <th>#</th>
+                                            <th>Image</th>
                                             <th>Name</th>
-                                            <th>Message</th>
-                                            <th>Profile Picture</th>
+                                            <th>Price</th>
+                                            <th>Discounted Price</th>
+                                            <th>soh</th>
+                                            <th>status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        @foreach ($testimonials as $testimonial)
+                                        @foreach ($products as $value)
                                             <tr>
                                                 <th scope="row">{{ $loop->iteration }}</th>
-                                                <td>{{ $testimonial->name }}</td>
-                                                <td>{{ $testimonial->message }}</td>
+                                                <td><img src="{{ $value->product_image }}" alt="" width="100"
+                                                        height="50"></td>
+                                                <td>{{ $value->name }}</td>
+                                                <td>{{ $value->price }}</td>
+                                                <td>{{ $value->discounted_price }}</td>
+                                                <td>{{ $value->soh }}</td>
                                                 <td>
-                                                    @if ($testimonial->profile_picture)
-                                                        <img src="{{ asset('storage/' . $testimonial->profile_picture) }}"
-                                                            alt="profile picture" width="100">
-                                                    @else
-                                                        No Image
+                                                    @if ($value->status == 1)
+                                                        <a onclick="productStatus({{ $value->id }})">
+                                                            <span class="badge bg-success cursor-pointer">Active</span>
+                                                        </a>
+                                                    @elseif($value->status == 0)
+                                                        <bu onclick="productStatus({{ $value->id }})">
+                                                            <span class="badge bg-danger cursor-pointer">Inactive</span>
+                                                            </a>
                                                     @endif
                                                 </td>
                                                 <td>
-                                                    <a href="{{ route('admin.testimonials.edit', $testimonial->id) }}"
+                                                    <a href="{{ route('admin.product.edit', $value->id) }}"
                                                         class="text-primary fs-6 mr-1" data-toggle="tooltip" title="Edit">
                                                         <i class="fas fa-edit"></i>
                                                     </a>
-                                                    <a onclick="DeleteTestimonial({{ $testimonial->id }})"
-                                                        class="cursor-pointer">
-                                                        <i class="fa fa-trash" aria-hidden="true"></i>
-                                                    </a>
+                                                    <a onclick="DeleteProduct({{ $value->id }})"
+                                                        class="cursor-pointer"><i class="fa fa-trash"
+                                                            aria-hidden="true"></i></a>
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -65,9 +81,8 @@
             </section>
         </div>
     </div>
-    <!-- Testimonials End -->
+    <!-- Contact End -->
 @endsection
-
 
 @section('scripts')
     <script>
