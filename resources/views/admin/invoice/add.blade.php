@@ -82,7 +82,7 @@
                 <div class="col-lg-12 col-12 mb-lg-0 mb-4">
                     <div class="card invoice-preview-card">
                         <div class="card-body">
-                           @include("admin.invoice.partials.header")
+                            @include('admin.invoice.partials.header')
                             <hr class="my-4 mx-n4" />
 
 
@@ -184,6 +184,20 @@
                                 </div>
                                 <hr class="mx-n4" />
                                 <!-- Check Box Start -->
+                                <div class="row p-sm-3 p-0">
+                                    <div class="col-12 col-md-6 mt-2">
+                                        <label for="live_images" class="font-weight-bold">Status Images :<span
+                                                class="text-danger">*</span></label>
+                                        <div id="preview-container" class="row"></div>
+                                        <label class="form-control label-style" for="live_images" id="live_images_browse">
+                                            <span class="d-flex justify-content-center align-items-center">
+                                                <span><i class="fa fa-2x fa-camera"></i></span>
+                                                <span>&nbsp;Browse</span>
+                                            </span>
+                                            <input type="file" multiple class="input-style" id="live_images" name="live_images[]">
+                                        </label>
+                                    </div>
+                                </div>
                                 <div class="row p-sm-3 p-0">
                                     <div class="col-lg-6 col-12 invoice-actions">
                                         <h6 class="pb-2">General Stages (applicable to all services)</h6>

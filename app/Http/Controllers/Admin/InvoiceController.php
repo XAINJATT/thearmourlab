@@ -88,6 +88,23 @@ class InvoiceController extends Controller
             $signatureFilePathDefects = 'public/defects/' . $signatureFileNameDefects;
             Storage::put($signatureFilePathDefects, $image_base64_defects);
         }
+
+        $imageNames = [];
+
+        // dd($request->all());
+        if ($request->hasfile('live_images')) {
+            foreach ($request->file('live_images') as $image) {
+                $name = time() . rand(1, 100) . '.' . $image->extension();
+                $image->storeAs('images', $name, 'public');
+                $imageNames[] = $name; // Store the image name in the array
+            }
+        }
+
+        // dd($imageNames);
+        // Convert the array to JSON
+        $jsonNames = json_encode($imageNames);
+
+
         // defects Image End //
 
         $data = [
@@ -214,6 +231,7 @@ class InvoiceController extends Controller
             'int' => $request->input('int'),
             'payment_type' => $request->input('payment_type'),
             'date' => $request->input('date'),
+            'status_images' => $jsonNames
         ];
 
         $order = WorkOrder::create($data);
@@ -339,6 +357,24 @@ class InvoiceController extends Controller
             $fileName = end($temp);
             $signatureFileNameDefects = $fileName;
         }
+
+
+        $imageNames = [];
+
+        if ($request->hasfile('live_images')) {
+            foreach ($request->file('live_images') as $image) {
+                $name = time() . rand(1, 100) . '.' . $image->extension();
+                $image->storeAs('images', $name, 'public');
+                $imageNames[] = $name; // Store the image name in the array
+            }
+            $jsonNames = json_encode($imageNames);
+        } else {
+            $jsonNames = $order->status_images;
+        }
+
+        // Convert the array to JSON
+
+
         // defects Image End //
 
         $order->update([
@@ -466,6 +502,7 @@ class InvoiceController extends Controller
             'int' => $request->input('int'),
             'payment_type' => $request->input('payment_type'),
             'date' => $request->input('date'),
+            'status_images' => $jsonNames
         ]);
 
         // dd($order);

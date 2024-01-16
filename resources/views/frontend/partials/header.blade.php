@@ -106,7 +106,7 @@
 <style>
     .mobile li a {
         height: 40px !important;
-        width: 100px !important;
+        width: auto !important;
         border-radius: 0;
         padding: 8px 10px;
     }
@@ -122,13 +122,31 @@
     .page-banner h1 span:after,
     .page-banner .h1 span:after {
         display: none !important;
-
     }
-    .footer .footer-logo{
+
+    /* .footer .footer-logo{
         background: #171a1e;
+    } */
+
+    .footer-info {
+        padding: 0 !important;
     }
 
-    .footer-info{
-        padding: 0 !important;
+    @media only screen and (max-width: 991px) {
+        .rs-nav .social-media {
+            margin-top: auto;
+            padding: 57px 0;
+        }
+    }
+
+    @media (min-width: 1200px) {
+
+        .container,
+        .container-sm,
+        .container-md,
+        .container-lg,
+        .container-xl {
+            max-width: 1400px;
+        }
     }
 </style>

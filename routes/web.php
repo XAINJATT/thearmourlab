@@ -32,10 +32,12 @@ use App\Http\Controllers\User\WarrantyController as UserWarrantyController;
 use App\Http\Controllers\Admin\ContestController as AdminContestController;
 use App\Http\Controllers\User\ContestController as UserContestController;
 use App\Http\Controllers\ContestController;
+use App\Http\Controllers\GiveawayEntryController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestimonialController;
+use App\Models\GiveawayEntry;
 
 //Command Routes
 Route::get('clear-cache', function () {
@@ -73,6 +75,8 @@ Route::get('/load-more-gallery', [MediaController::class, 'loadMoreGallery']);
 // BlogController
 Route::get('/blog', [BlogController::class, 'index'])->name('frontend.blog');
 Route::get('/blog-details/{id}', [BlogDetailsController::class, 'index'])->name('frontend.blogDetails');
+
+Route::post('/giveaway/enter', [GiveawayEntryController::class, 'store'])->name('frontend.giveaway.enter');
 
 // ContactController
 Route::get('/contact', [ContactController::class, 'index'])->name('frontend.contact');
@@ -204,6 +208,11 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/contests/update', [AdminContestController::class, 'update'])->name('admin.contest.update');
     Route::post('admin/contests/delete/{id}', [AdminContestController::class, 'delete'])->name('admin.contest.delete');
     Route::get('admin/winners', [AdminContestController::class, 'winners'])->name('admin.winners');
+    Route::get('admin/pick/winners', [AdminContestController::class, 'pickWinners'])->name('admin.pick.winners');
+
+    Route::post('admin/pick/store', [GiveawayEntryController::class, 'storeWinner'])->name('admin.draw');
+    Route::get('admin/giveaway/users', [GiveawayEntryController::class, 'listUser'])->name('admin.list.giveaway');
+    Route::get('admin/giveaway/winners', [GiveawayEntryController::class, 'winners'])->name('admin.giveaway.winners');
 
     //Testemonials: 
 
@@ -211,7 +220,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/testimonials/', [TestimonialController::class, 'index'])->name("testimonials.index");
     Route::post('admin/testimonials/store', [TestimonialController::class, 'store'])->name("testimonials.store");
     Route::get('admin/testimonials/create', [TestimonialController::class, 'create'])->name("admin.testimonials.create");
-    Route::delete('/admin/testimonials/delete/{testimonial}',[TestimonialController::class, 'destroy'])->name('admin.testimonials.destroy');
+    Route::delete('/admin/testimonials/delete/{testimonial}', [TestimonialController::class, 'destroy'])->name('admin.testimonials.destroy');
     Route::get('/admin/testimonials/edit/{testimonial}', [TestimonialController::class, 'edit'])->name('admin.testimonials.edit');
     Route::put('/admin/testimonials/update/{testimonial}', [TestimonialController::class, 'update'])->name('admin.testimonials.update');
 

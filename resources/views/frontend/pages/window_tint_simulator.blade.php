@@ -652,7 +652,7 @@
             function updateBaseImage() {
                 var selectedType = radioButtons.filter(":checked").val();
                 base.css("background-image", "url(web-assets/simulators/images/" + selectedType + "-" +
-                    currentColor + ".jpg)");
+                    currentColor + ".jpg?v=1)");
             }
 
             function updateProductImages() {
@@ -665,7 +665,7 @@
 
                     if (isActive) {
                         var imageURL = "web-assets/simulators/images/tints/" + selectedType + "-" +
-                            position + "-" + tintValue + ".png";
+                            position + "-" + tintValue + ".png?v=1";
                         $("#" + position).css("background-image", "url(" + imageURL + ")");
                     }
                 });

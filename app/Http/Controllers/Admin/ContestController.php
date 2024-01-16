@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\User;
 use App\Models\UserContests;
 use App\Models\Contest;
+use App\Models\GiveawayEntry;
 use App\Models\Setting;
 use Illuminate\Support\Facades\Validator;
 use Carbon\Carbon;
@@ -190,6 +191,19 @@ class ContestController extends Controller
         $contests = UserContests::orderBy('id', 'DESC')->get();
         return view('admin.contest.winners', compact('contests'));
     }
+
+    public function pickWinners()
+    {
+        $lastWeek = now()->subWeek();
+
+        $names = GiveawayEntry::where('created_at', '>=', $lastWeek)
+            ->orderBy('id', 'DESC')
+            ->pluck('name')
+            ->join("\n");
+
+        return view('admin.contest.winner-picker', compact('names'));
+    }
+
 
 
     /**

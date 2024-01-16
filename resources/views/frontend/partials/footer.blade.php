@@ -1,6 +1,78 @@
 <!-- Footer ==== -->
+<style>
+    .fixed-bottom-center {
+        position: fixed;
+        bottom: 20px;
+        /* Adjust as needed */
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 999;
+        /* Ensure it's above other elements */
+    }
+</style>
+<!-- Button to Open the Modal -->
+<button type="button" style="position:fixed; bottom:0;" class="btn btn-primary fixed-bottom-center" data-bs-toggle="modal"
+    data-bs-target="#giveawayModal">
+    Enter Giveaway
+</button>
+
+<script>
+    @if (session()->has('success'))
+        alert('You have entered a giveaway!');
+    @endif
+    @if (session()->has('errors'))
+        @foreach (session()->get('errors')->all() as $error)
+            alert('{{ $error }}');
+        @endforeach
+    @endif
+</script>
+
+<!-- The Modal -->
+<div class="modal fade" id="giveawayModal" tabindex="-1" aria-labelledby="giveawayModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="giveawayModalLabel">Giveaway Registration</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center">
+                    <img class="img-fluid rounded-circle" width="100" src="{{ asset('assets/images/giveaway.png') }}"
+                        alt="">
+                </div>
+                <h4 class="text-center">Win Big with Our Exclusive Giveaway!</h4>
+                <p class="text-center">
+                    Enter for a chance to win! Just provide your details below. Quick and easy - your big win awaits!
+                </p>
+                <!-- Form inside Modal Body -->
+                <form method="post" action="{{ route('frontend.giveaway.enter') }}" class="form-card"
+                    id="giveawayForm">
+                    <div class="mb-3 form-group">
+                        @csrf
+                        <label for="name" class="form-label">Name</label>
+                        <input name="name" type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="mb-3 form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input name="phone" type="tel" class="form-control" id="phone" required>
+                    </div>
+                    <div class="mb-3 form-group">
+                        <label for="email" class="form-label">Email address</label>
+                        <input name="email" type="email" class="form-control" id="email" required>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary" form="giveawayForm">Register</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <footer class="footer">
-    <div class="footer-info bg-primary">
+    <div class="footer-info" style="background:#80817d">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-3 col-md-6 col-sm-6 ">
@@ -62,7 +134,8 @@
                         <h5 class="footer-title">Our Solutions</h5>
                         <ul>
                             <li><a href="{{ route('frontend.CeramicCoating') }}">Ceramic coating</a></li>
-                            <li><a href="{{ route('frontend.PaintProtectionFilmSimulator') }}">Paint protection film</a>
+                            <li><a href="{{ route('frontend.PaintProtectionFilmSimulator') }}">Paint protection
+                                    film</a>
                             </li>
                             <li><a href="{{ route('frontend.WindowTintSimulator') }}">Window tints</a></li>
                             <li><a href="{{ route('frontend.contact') }}">Contact Us</a></li>

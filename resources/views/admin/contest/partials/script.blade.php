@@ -14,8 +14,10 @@
         $('#email').trigger('change');
     });
 
+    console.log("Asfd");
     document.getElementById('general_stages').addEventListener('change', function() {
         var additionalRowsgs = document.getElementsByClassName('additional-row-gs');
+        console.log(additionalRowsgs)
         for (var i = 0; i < additionalRowsgs.length; i++) {
             additionalRowsgs[i].style.display = this.checked ? 'table-row' : 'none';
         }

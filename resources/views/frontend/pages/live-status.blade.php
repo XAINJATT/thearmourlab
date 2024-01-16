@@ -306,6 +306,26 @@
                                         @endif
 
                                     </div>
+                                   <div class="row">
+                                    @if ($workOrderStatus->status_images)
+                                    @php($images = json_decode($workOrderStatus->status_images, true))
+                                @else
+                                    @php($images = [])
+                                @endif
+                                
+                                <label for="">Status Images:</label>
+
+
+                                @foreach ($images as $key => $image)
+                                    <div class="col-12 col-md-4">
+                                        <a href="{{ asset('storage/images/' . $image) }}">
+                                            <img src="{{ asset('storage/images/' . $image) }}" alt=""
+                                            class="img-fluid">
+                                        </a>
+
+                                    </div>
+                                @endforeach
+                                   </div>
                                 </div>
                             </div>
 

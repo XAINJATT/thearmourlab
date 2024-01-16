@@ -81,7 +81,7 @@
                 <div class="col-lg-12 col-12 mb-lg-0 mb-4">
                     <div class="card invoice-preview-card">
                         <div class="card-body">
-                            @include("admin.invoice.partials.header")
+                            @include('admin.invoice.partials.header')
                             <hr class="my-4 mx-n4" />
                             <!-- Form Start -->
                             <form method="post" action="{{ route('admin.invoice.update') }}" enctype="multipart/form-data">
@@ -110,17 +110,17 @@
                                     <div class="col-md-4 col-12">
                                         <label for="first_name" class="form-label me-5 fw-medium">First Name:</label>
                                         <input type="text" class="form-control" id="first_name" name="first_name"
-                                            placeholder="First Name" required/>
+                                            placeholder="First Name" required />
                                     </div>
                                     <div class="col-md-4 col-12">
                                         <label for="last_name" class="form-label me-5 fw-medium">Last Name:</label>
                                         <input type="text" class="form-control" id="last_name" name="last_name"
-                                            placeholder="Last Name" required/>
+                                            placeholder="Last Name" required />
                                     </div>
                                     <div class="col-md-4 col-12 mt-2">
                                         <label for="phone" class="form-label me-5 fw-medium">Phone:</label>
                                         <input type="text" class="form-control" id="phone" name="phone"
-                                            placeholder="Phone" required/>
+                                            placeholder="Phone" required />
                                     </div>
                                     <div class="col-md-4 col-12">
                                         <label for="make" class="form-label me-5 fw-medium">Make:</label>
@@ -175,161 +175,197 @@
                                 <hr class="mx-n4" />
                                 <!-- Check Box Start -->
                                 <!-- <div class="row p-sm-3 p-0">
-                                            <div class="col-lg-4 col-12 invoice-actions">
-                                                <h6 class="pb-2">Ceramic Coating</h6>
-                                                <div class="card mb-4">
-                                                    <div class="card-body">
-                                                        <div class="d-flex justify-content-between mb-2">
-                                                            <label for="kenzo_coating" class="mb-0">Kenzo Coating</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input" id="kenzo_coating"
-                                                                    name="ceramic_coating_kenzo_coating"
-                                                                    {{ @$order->ceramic_coating_kenzo_coating ? 'checked' : '' }}
-                                                                    required>
-                                                            </label>
+                                                        <div class="col-lg-4 col-12 invoice-actions">
+                                                            <h6 class="pb-2">Ceramic Coating</h6>
+                                                            <div class="card mb-4">
+                                                                <div class="card-body">
+                                                                    <div class="d-flex justify-content-between mb-2">
+                                                                        <label for="kenzo_coating" class="mb-0">Kenzo Coating</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input" id="kenzo_coating"
+                                                                                name="ceramic_coating_kenzo_coating"
+                                                                                {{ @$order->ceramic_coating_kenzo_coating ? 'checked' : '' }}
+                                                                                required>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between mb-2">
+                                                                        <label for="quartz_plus_coating" class="mb-0">Quartz Plus
+                                                                            Coating</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input"
+                                                                                id="quartz_plus_coating"
+                                                                                name="ceramic_coating_quartz_plus_coating"
+                                                                                {{ @$order->ceramic_coating_quartz_plus_coating ? 'checked' : '' }}
+                                                                                required>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between mb-2">
+                                                                        <label for="quartz_coating" class="mb-0">Quartz Coating</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input" id="quartz_coating"
+                                                                                name="ceramic_coating_quartz_coating"
+                                                                                {{ @$order->ceramic_coating_quartz_coating ? 'checked' : '' }}
+                                                                                required>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between mb-2">
+                                                                        <label for="premier_coating" class="mb-0">Premier Coating</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input" id="premier_coating"
+                                                                                name="ceramic_coating_premier_coating"
+                                                                                {{ @$order->ceramic_coating_premier_coating ? 'checked' : '' }}
+                                                                                required>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between mb-2">
+                                                                        <label for="interior_pkg" class="mb-0">Interior PKG</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input" id="interior_pkg"
+                                                                                name="ceramic_coating_interior_pkg"
+                                                                                {{ @$order->ceramic_coating_interior_pkg ? 'checked' : '' }}
+                                                                                required>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <label for="wheels_of_pkg" class="mb-0">Wheels of PKG</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input" id="wheels_of_pkg"
+                                                                                name="ceramic_coating_wheels_of_pkg"
+                                                                                {{ @$order->ceramic_coating_wheels_of_pkg ? 'checked' : '' }}
+                                                                                required>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="">
+                                                                <label for="price" class="mb-0">Price :</label>
+                                                                <div class="">
+                                                                    <input type="text" class="form-control" name="ceramic_coating_price"
+                                                                        value="{{ @$order->ceramic_coating_price }}" required>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="d-flex justify-content-between mb-2">
-                                                            <label for="quartz_plus_coating" class="mb-0">Quartz Plus
-                                                                Coating</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input"
-                                                                    id="quartz_plus_coating"
-                                                                    name="ceramic_coating_quartz_plus_coating"
-                                                                    {{ @$order->ceramic_coating_quartz_plus_coating ? 'checked' : '' }}
-                                                                    required>
-                                                            </label>
+                                                        <div class="col-lg-4 col-12 invoice-actions">
+                                                            <h6 class="pb-2">PPF</h6>
+                                                            <div class="card mb-4">
+                                                                <div class="card-body">
+                                                                    <div class="d-flex justify-content-between mb-2">
+                                                                        <label for="full_car" class="mb-0">Full Car</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input" id="full_car"
+                                                                                name="ppf_full_car"
+                                                                                {{ @$order->ppf_full_car ? 'checked' : '' }} required>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between mb-2">
+                                                                        <label for="client-notes" class="mb-0">Client Notes</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input" id="client-notes"
+                                                                                name="ppf_client_notes"
+                                                                                {{ @$order->ppf_client_notes ? 'checked' : '' }} required>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between mb-2">
+                                                                        <label for="payment-stub" class="mb-0">Payment Stub</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input" id="payment-stub"
+                                                                                name="ppf_payment_stub"
+                                                                                {{ @$order->ppf_payment_stub ? 'checked' : '' }} required>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between mb-2">
+                                                                        <label for="payment-terms" class="mb-0">Payment Terms</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input" id="payment-terms"
+                                                                                name="ppf_payment_terms"
+                                                                                {{ @$order->ppf_payment_terms ? 'checked' : '' }} required>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="">
+                                                                <label for="price" class="mb-0">Price :</label>
+                                                                <div class="">
+                                                                    <input type="text" class="form-control" name="ppf_price"
+                                                                        value="{{ @$order->ppf_price }}" required>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="d-flex justify-content-between mb-2">
-                                                            <label for="quartz_coating" class="mb-0">Quartz Coating</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input" id="quartz_coating"
-                                                                    name="ceramic_coating_quartz_coating"
-                                                                    {{ @$order->ceramic_coating_quartz_coating ? 'checked' : '' }}
-                                                                    required>
-                                                            </label>
+                                                        <div class="col-lg-4 col-12 invoice-actions">
+                                                            <h6 class="pb-2">Ceramic Coating</h6>
+                                                            <div class="card mb-4">
+                                                                <div class="card-body">
+                                                                    <div class="d-flex justify-content-between mb-2">
+                                                                        <label for="payment-terms" class="mb-0">Payment Terms</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input"
+                                                                                name="cc_payment_terms"
+                                                                                {{ @$order->cc_payment_terms ? 'checked' : '' }} required>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between mb-2">
+                                                                        <label for="client-notes" class="mb-0">Client Notes</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input"
+                                                                                name="cc_client_notes"
+                                                                                {{ @$order->cc_client_notes ? 'checked' : '' }} required>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <label for="payment-stub" class="mb-0">Payment Stub</label>
+                                                                        <label class="switch switch-primary me-0">
+                                                                            <input type="checkbox" class="switch-input"
+                                                                                name="cc_payment_stub"
+                                                                                {{ @$order->cc_payment_stub ? 'checked' : '' }} required>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="">
+                                                                <label for="price" class="mb-0">Price :</label>
+                                                                <div class="">
+                                                                    <input type="text" class="form-control" name="cc_price"
+                                                                        value="{{ @$order->cc_price }}" required>
+                                                                </div>
+                                                            </div>
                                                         </div>
-                                                        <div class="d-flex justify-content-between mb-2">
-                                                            <label for="premier_coating" class="mb-0">Premier Coating</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input" id="premier_coating"
-                                                                    name="ceramic_coating_premier_coating"
-                                                                    {{ @$order->ceramic_coating_premier_coating ? 'checked' : '' }}
-                                                                    required>
-                                                            </label>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between mb-2">
-                                                            <label for="interior_pkg" class="mb-0">Interior PKG</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input" id="interior_pkg"
-                                                                    name="ceramic_coating_interior_pkg"
-                                                                    {{ @$order->ceramic_coating_interior_pkg ? 'checked' : '' }}
-                                                                    required>
-                                                            </label>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between">
-                                                            <label for="wheels_of_pkg" class="mb-0">Wheels of PKG</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input" id="wheels_of_pkg"
-                                                                    name="ceramic_coating_wheels_of_pkg"
-                                                                    {{ @$order->ceramic_coating_wheels_of_pkg ? 'checked' : '' }}
-                                                                    required>
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                                    </div> -->
+
+                                <div class="row p-sm-3 p-0">
+                                    <div class="col-12 col-md-6 mt-2">
+                                        <label for="live_images" class="font-weight-bold">Status Images :<span
+                                                class="text-danger">*</span></label>
+                                        <div id="preview-container" class="row">
+
+                                           
+                                            @if ($order->status_images)
+                                                @php($images = json_decode($order->status_images, true))
+                                            @else
+                                                @php($images = [])
+                                            @endif
+                                            
+
+
+                                            @foreach ($images as $key => $image)
+                                                <div class="col-12 col-md-4">
+                                                    <a href="{{ asset('storage/images/' . $image) }}">
+                                                        <img src="{{ asset('storage/images/' . $image) }}" alt=""
+                                                        class="img-fluid">
+                                                    </a>
+
                                                 </div>
-                                                <div class="">
-                                                    <label for="price" class="mb-0">Price :</label>
-                                                    <div class="">
-                                                        <input type="text" class="form-control" name="ceramic_coating_price"
-                                                            value="{{ @$order->ceramic_coating_price }}" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-12 invoice-actions">
-                                                <h6 class="pb-2">PPF</h6>
-                                                <div class="card mb-4">
-                                                    <div class="card-body">
-                                                        <div class="d-flex justify-content-between mb-2">
-                                                            <label for="full_car" class="mb-0">Full Car</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input" id="full_car"
-                                                                    name="ppf_full_car"
-                                                                    {{ @$order->ppf_full_car ? 'checked' : '' }} required>
-                                                            </label>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between mb-2">
-                                                            <label for="client-notes" class="mb-0">Client Notes</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input" id="client-notes"
-                                                                    name="ppf_client_notes"
-                                                                    {{ @$order->ppf_client_notes ? 'checked' : '' }} required>
-                                                            </label>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between mb-2">
-                                                            <label for="payment-stub" class="mb-0">Payment Stub</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input" id="payment-stub"
-                                                                    name="ppf_payment_stub"
-                                                                    {{ @$order->ppf_payment_stub ? 'checked' : '' }} required>
-                                                            </label>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between mb-2">
-                                                            <label for="payment-terms" class="mb-0">Payment Terms</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input" id="payment-terms"
-                                                                    name="ppf_payment_terms"
-                                                                    {{ @$order->ppf_payment_terms ? 'checked' : '' }} required>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="">
-                                                    <label for="price" class="mb-0">Price :</label>
-                                                    <div class="">
-                                                        <input type="text" class="form-control" name="ppf_price"
-                                                            value="{{ @$order->ppf_price }}" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 col-12 invoice-actions">
-                                                <h6 class="pb-2">Ceramic Coating</h6>
-                                                <div class="card mb-4">
-                                                    <div class="card-body">
-                                                        <div class="d-flex justify-content-between mb-2">
-                                                            <label for="payment-terms" class="mb-0">Payment Terms</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input"
-                                                                    name="cc_payment_terms"
-                                                                    {{ @$order->cc_payment_terms ? 'checked' : '' }} required>
-                                                            </label>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between mb-2">
-                                                            <label for="client-notes" class="mb-0">Client Notes</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input"
-                                                                    name="cc_client_notes"
-                                                                    {{ @$order->cc_client_notes ? 'checked' : '' }} required>
-                                                            </label>
-                                                        </div>
-                                                        <div class="d-flex justify-content-between">
-                                                            <label for="payment-stub" class="mb-0">Payment Stub</label>
-                                                            <label class="switch switch-primary me-0">
-                                                                <input type="checkbox" class="switch-input"
-                                                                    name="cc_payment_stub"
-                                                                    {{ @$order->cc_payment_stub ? 'checked' : '' }} required>
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="">
-                                                    <label for="price" class="mb-0">Price :</label>
-                                                    <div class="">
-                                                        <input type="text" class="form-control" name="cc_price"
-                                                            value="{{ @$order->cc_price }}" required>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
+                                            @endforeach
+                                        </div>
+                                        <label class="form-control label-style" id="live_images_browse">
+                                            <span class="d-flex justify-content-center align-items-center">
+                                                <span><i class="fa fa-2x fa-camera"></i></span>
+                                                <span>&nbsp;Browse</span>
+                                            </span>
+                                            <input type="file" multiple class="input-style" id="live_images"
+                                                name="live_images">
+                                        </label>
+                                    </div>
+                                </div>
 
                                 <div class="row p-sm-3 p-0">
                                     <div class="col-lg-6 col-12 invoice-actions">
@@ -1089,7 +1125,7 @@
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
                                                 <input type="text" class="form-control" name="wt_price"
-                                                    value="{{ @$order->wt_price }}" >
+                                                    value="{{ @$order->wt_price }}">
                                             </div>
                                         </div>
                                     </div>
@@ -1131,7 +1167,7 @@
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
                                                 <input type="text" class="form-control" name="pc_price"
-                                                    value="{{ @$order->pc_price }}" >
+                                                    value="{{ @$order->pc_price }}">
                                             </div>
                                         </div>
                                     </div>
@@ -1192,7 +1228,7 @@
                                             <label for="price" class="mb-0">Price :</label>
                                             <div class="">
                                                 <input type="text" class="form-control" name="os_price"
-                                                    value="{{ @$order->os_price }}" >
+                                                    value="{{ @$order->os_price }}">
                                             </div>
                                         </div>
                                     </div>
@@ -1208,7 +1244,7 @@
                                             <label for="additional_requests" class="form-label fw-medium">Additional
                                                 Requests:</label>
                                             <textarea class="form-control" rows="2" id="additional_requests" name="additional_requests"
-                                                placeholder="Additional Requests" >{{ @$order->additional_requests }}</textarea>
+                                                placeholder="Additional Requests">{{ @$order->additional_requests }}</textarea>
                                         </div>
                                     </div>
                                     <div class="col-6 mb-3">
@@ -1244,7 +1280,7 @@
                                 <!-- Additional Requests End -->
                                 <hr class="my-4 mx-n4" />
                                 <div class="row p-sm-3 p-0">
-                                  
+
                                     <div class="col-md-8 col-sm-7">
                                         <div class="row">
                                             <div class="col-7">
@@ -1257,13 +1293,12 @@
                                                 <label for="price" class="mb-0">Mileage In :</label>
                                                 <div class="">
                                                     <input type="text" class="form-control" id="mileage_in_price"
-                                                        name="mileage_in_price" value="{{ @$order->mileage_in_price }}"
-                                                        >
+                                                        name="mileage_in_price" value="{{ @$order->mileage_in_price }}">
                                                 </div>
                                             </div>
                                         </div>
 
-                                        
+
                                     </div>
                                 </div>
                                 @include('admin.invoice.partials.defects', ['order' => $order])
@@ -1273,7 +1308,7 @@
                                     <div class="col-12">
                                         <div class="mb-3">
                                             <label for="note" class="form-label fw-medium">Note:</label>
-                                            <textarea class="form-control" rows="2" id="note" name="note" placeholder="Note" >{{ @$order->note }}</textarea>
+                                            <textarea class="form-control" rows="2" id="note" name="note" placeholder="Note">{{ @$order->note }}</textarea>
                                         </div>
                                     </div>
                                     {{-- <div class="col-6 mb-3">

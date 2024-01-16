@@ -1,5 +1,36 @@
 <script>
     $(document).ready(function() {
+        $('#live_images').on('change', function() {
+            var files = $(this)[0].files;
+            $('#preview-container').html('');
+            for (var i = 0; i < files.length; i++) {
+                var file = files[i];
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    var content = $('<div class="preview col-md-3"></div>');
+                    if (file.type.startsWith('image/')) {
+                        content.append($('<img width="100">').attr('src', e.target.result).addClass(
+                            'preview-img'));
+                    } else if (file.type.startsWith('video/')) {
+                        content.append($('<video controls>').attr('src', e.target.result).addClass(
+                            'preview-video'));
+                    }
+                    content.append($('<button>').text('Remove').addClass('btn btn-danger btn-sm')
+                        .click(function() {
+                            $(this).parent().remove();
+                        }));
+                    $('#preview-container').append(content);
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    });
+
+    function removeImage(id){
+        $('#'+id).remove();
+    }
+
+    $(document).ready(function() {
         $('#email').change(function() {
             var selectedEmail = $(this).val();
             var selectedOption = $('option:selected', this);
@@ -18,30 +49,35 @@
         var additionalRowsgs = document.getElementsByClassName('additional-row-gs');
         for (var i = 0; i < additionalRowsgs.length; i++) {
             additionalRowsgs[i].style.display = this.checked ? 'table-row' : 'none';
+            additionalRowsgs[i].querySelector('input[type="checkbox"]').checked = true;
         }
     });
     document.getElementById('paint_protection_film_stages').addEventListener('change', function() {
         var additionalRowsppf = document.getElementsByClassName('additional-row-ppf');
         for (var i = 0; i < additionalRowsppf.length; i++) {
             additionalRowsppf[i].style.display = this.checked ? 'table-row' : 'none';
+            additionalRowsppf[i].querySelector('input[type="checkbox"]').checked = true;
         }
     });
     document.getElementById('ceramic_coating_stages').addEventListener('change', function() {
         var additionalRowsccs = document.getElementsByClassName('additional-row-ccs');
         for (var i = 0; i < additionalRowsccs.length; i++) {
             additionalRowsccs[i].style.display = this.checked ? 'table-row' : 'none';
+            additionalRowsccs[i].querySelector('input[type="checkbox"]').checked = true;
         }
     });
     document.getElementById('window_tint_stages').addEventListener('change', function() {
         var additionalRowswts = document.getElementsByClassName('additional-row-wts');
         for (var i = 0; i < additionalRowswts.length; i++) {
             additionalRowswts[i].style.display = this.checked ? 'table-row' : 'none';
+            additionalRowswts[i].querySelector('input[type="checkbox"]').checked = true;
         }
     });
     document.getElementById('final_stages').addEventListener('change', function() {
         var additionalRowsfs = document.getElementsByClassName('additional-row-fs');
         for (var i = 0; i < additionalRowsfs.length; i++) {
             additionalRowsfs[i].style.display = this.checked ? 'table-row' : 'none';
+            additionalRowsfs[i].querySelector('input[type="checkbox"]').checked = true;
         }
     });
 

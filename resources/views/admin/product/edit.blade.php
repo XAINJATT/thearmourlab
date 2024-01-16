@@ -68,20 +68,20 @@
                                             <label for="-text-" class="font-weight-bold">Discounted Price <span
                                                     class="text-danger">*</span></label>
                                             <input type="number" class="form-control" id="discounted_price"
-                                                name="discounted_price" value="{{ $products->discounted_price }}" required>
+                                                name="discounted_price" value="{{ $products->discounted_price }}" >
                                         </div>
 
                                         <div class="col-md-6 mb-3">
                                             <label for="soh" class="font-weight-bold">SOH <span
                                                     class="text-danger">*</span></label>
                                             <input type="number" class="form-control" id="soh" name="soh"
-                                                value="{{ $products->soh }}" required>
+                                                value="{{ $products->soh }}" >
                                         </div>
 
                                         <div class="col-md-6 mt-3">
                                             <label for="description" class="font-weight-bold">Description <span
                                                     class="text-danger">*</span></label>
-                                            <textarea class="form-control" name="description" rows="3" required>{{ $products->description }}</textarea>
+                                            <textarea class="form-control" name="description" id="description" rows="3" >{!! $products->description !!}</textarea>
                                         </div>
 
                                         <div class="col-md-6 mt-3">

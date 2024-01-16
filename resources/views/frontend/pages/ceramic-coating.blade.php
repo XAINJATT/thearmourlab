@@ -5,6 +5,458 @@
 @endsection
 
 @section('css')
+    <link rel="stylesheet" id="contact-form-7-css"
+        href="https://www.washmenow.ca/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.8.4" type="text/css"
+        media="all" />
+    <link rel="stylesheet" id="flatsome-style-css"
+        href="https://www.washmenow.ca/wp-content/themes/flatsome-child/style.css?ver=3.2.108" type="text/css"
+        media="all" />
+    <script type="text/javascript" src="https://www.washmenow.ca/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"
+        id="jquery-core-js"></script>
+
+        <style>
+           .card{
+                height: auto;
+                padding-left: 0;
+                align-items: flex-start;
+                display: block
+            }
+        </style>
+
+    <script>
+        jQuery(document).ready(function($) {
+            /*================================================*/
+            /*=============price table scripts===============*/
+            /*================================================*/
+
+            $("#price1,#price11").html(
+                $(".template-state-selected.act .car-label").attr("data-price1")
+            );
+            $("#price2,#price22").html(
+                $(".template-state-selected.act .car-label").attr("data-price2")
+            );
+            $("#price3,#price33").html(
+                $(".template-state-selected.act .car-label").attr("data-price3")
+            );
+            $("#price4,#price44").html(
+                $(".template-state-selected.act .car-label").attr("data-price4")
+            );
+
+            $("#price5,#price55").html(
+                $(".template-state-selected.act .car-label").attr("data-price5")
+            );
+            $("#price6,#price66").html(
+                $(".template-state-selected.act .car-label").attr("data-price6")
+            );
+            $("#price7,#price77").html(
+                $(".template-state-selected.act .car-label").attr("data-price7")
+            );
+            $("#price8,#price88").html(
+                $(".template-state-selected.act .car-label").attr("data-price8")
+            );
+
+            $("#time1,#time11").text(
+                $(".template-state-selected.act .car-label").attr("data-time1")
+            );
+            $("#time2,#time22").text(
+                $(".template-state-selected.act .car-label").attr("data-time2")
+            );
+            $("#time3,#time33").text(
+                $(".template-state-selected.act .car-label").attr("data-time3")
+            );
+            $("#time4,#time44").text(
+                $(".template-state-selected.act .car-label").attr("data-time4")
+            );
+
+            $("#time5,#time55").text(
+                $(".template-state-selected.act .car-label").attr("data-time5")
+            );
+            $("#time6,#time66").text(
+                $(".template-state-selected.act .car-label").attr("data-time6")
+            );
+            $("#time7,#time77").text(
+                $(".template-state-selected.act .car-label").attr("data-time7")
+            );
+            $("#time8,#time88").text(
+                $(".template-state-selected.act .car-label").attr("data-time8")
+            );
+
+            var w_th1 = $(".package-list th").eq(0).width();
+            var w_th2 = $(".package-list th").eq(1).width();
+            var w_th3 = $(".package-list th").eq(2).width();
+            var w_th4 = $(".package-list th").eq(3).width();
+            var w_th5 = $(".package-list th").eq(4).width();
+
+            var w_th6 = $(".package-list th").eq(5).width();
+            var w_th7 = $(".package-list th").eq(6).width();
+            var w_th8 = $(".package-list th").eq(7).width();
+            var w_th9 = $(".package-list th").eq(8).width();
+
+            // if($.browser.webkit || $.browser.safari) {
+            // $('.package-list th').eq(0).width(w_th1+1);
+            // $('.package-list+tr td').eq(0).width(w_th1+1);
+            // } else {
+            $(".package-list th").eq(0).width(w_th1);
+            $(".package-list+tr td").eq(0).width(w_th1);
+            // }
+            // if($.browser.webkit || $.browser.safari) {
+            // 	$('.package-list th').eq(1).width(w_th2+1);
+            // 	$('.package-list+tr td').eq(1).width(w_th2+1);
+            // } else {
+            $(".package-list th").eq(1).width(w_th2);
+            $(".package-list+tr td").eq(1).width(w_th2);
+            // }
+            // if($.browser.webkit || $.browser.safari) {
+            // 	$('.package-list th').eq(2).width(w_th3+1);
+            // 	$('.package-list+tr td').eq(2).width(w_th3+1);
+            // } else {
+            $(".package-list th").eq(2).width(w_th3);
+            $(".package-list+tr td").eq(2).width(w_th3);
+            // }
+            // if($.browser.webkit || $.browser.safari) {
+            // 	$('.package-list th').eq(3).width(w_th4+1);
+            // 	$('.package-list+tr td').eq(3).width(w_th4+1);
+            // } else {
+            $(".package-list th").eq(3).width(w_th4);
+            $(".package-list+tr td").eq(3).width(w_th4);
+            // }
+            // if($.browser.webkit || $.browser.safari) {
+            // 	$('.package-list th').eq(4).width(w_th5+1);
+            // 	$('.package-list+tr td').eq(4).width(w_th5+1);
+            // } else {
+            $(".package-list th").eq(4).width(w_th5);
+            $(".package-list+tr td").eq(4).width(w_th5);
+            // }
+            // if($.browser.webkit || $.browser.safari) {
+            // 	$('.package-list th').eq(5).width(w_th6+1);
+            // 	$('.package-list+tr td').eq(5).width(w_th6+1);
+            // } else {
+            $(".package-list th").eq(5).width(w_th6);
+            $(".package-list+tr td").eq(5).width(w_th6);
+            // }
+            // if($.browser.webkit || $.browser.safari) {
+            // 	$('.package-list th').eq(6).width(w_th7+1);
+            // 	$('.package-list+tr td').eq(6).width(w_th7+1);
+            // } else {
+            $(".package-list th").eq(6).width(w_th7);
+            $(".package-list+tr td").eq(6).width(w_th7);
+            // }
+            // if($.browser.webkit || $.browser.safari) {
+            // 	$('.package-list th').eq(7).width(w_th8+1);
+            // 	$('.package-list+tr td').eq(7).width(w_th8+1);
+            // } else {
+            $(".package-list th").eq(7).width(w_th8);
+            $(".package-list+tr td").eq(7).width(w_th8);
+            // }
+            // if($.browser.webkit || $.browser.safari) {
+            // 	$('.package-list th').eq(8).width(w_th9+1);
+            // 	$('.package-list+tr td').eq(8).width(w_th9+1);
+            // } else {
+            $(".package-list th").eq(8).width(w_th9);
+            $(".package-list+tr td").eq(8).width(w_th9);
+            // }
+
+            $(document).scroll(function() {
+                var winScr = $(window).scrollTop(),
+                    formTop = $(".price-form").offset().top,
+                    pricesBottom =
+                    $("#price-wrap").offset().top +
+                    $("#price-wrap").height() -
+                    200; /*footerTop = $('#footer').offset().top;*/
+                var offset =
+                    $("table.packages.mob-hide").offset().top -
+                    $(".header-wrapper").height();
+                var check = $(".package-list").hasClass("fix");
+
+                if (winScr > offset && winScr < pricesBottom) {
+                    $("table.packages").css(
+                        "padding-top",
+                        $(".package-list").height() +
+                        $(".package-list + tr").height() +
+                        "px"
+                    );
+                    $(".package-list").addClass("fix");
+                    if ($(".top-wrap").css("display") != "block") {
+                        $(".package-list.fix").css("top", $(".header-wrapper").height());
+                        $(".package-list.fix + tr").css(
+                            "top",
+                            $(".header-wrapper").height() + $(".package-list.fix").height()
+                        );
+                    } else {
+                        $(".package-list.fix").css(
+                            "top",
+                            $(".top-wrap").height() + $(".header-wrapper").height()
+                        );
+                    }
+                } else {
+                    $(".package-list").removeClass("fix");
+                    $("table.packages").css("padding-top", "0px");
+                }
+            });
+            $(".template-component-booking-vehicle-list li").click(function() {
+                $(".template-component-booking-vehicle-list li").removeClass("act");
+                $(".packages div.act, .packages .act").removeClass("act");
+                $(".price-form").slideUp();
+                $(this).addClass("act");
+                $("#price1,#price11").html(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-price1")
+                );
+                $("#price2,#price22").html(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-price2")
+                );
+                $("#price3,#price33").html(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-price3")
+                );
+                $("#price4,#price44").html(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-price4")
+                );
+
+                $("#price5,#price55").html(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-price5")
+                );
+                $("#price6,#price66").html(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-price6")
+                );
+                $("#price7,#price77").html(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-price7")
+                );
+                $("#price8,#price88").html(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-price8")
+                );
+
+                $("#time1,#time11").text(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-time1")
+                );
+                $("#time2,#time22").text(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-time2")
+                );
+                $("#time3,#time33").text(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-time3")
+                );
+                $("#time4,#time44").text(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-time4")
+                );
+
+                $("#time5,#time55").text(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-time5")
+                );
+                $("#time6,#time66").text(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-time6")
+                );
+                $("#time7,#time77").text(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-time7")
+                );
+                $("#time8,#time88").text(
+                    $(
+                        ".template-component-booking-vehicle-list li.act .car-label"
+                    ).attr("data-time8")
+                );
+            });
+            $(".btn-border").click(function() {
+                $(".packages div.act").removeClass("act");
+                $(this).parent().parent("div").addClass("act");
+                var data_val = $(this).parent().attr("data-val");
+                $(".packages td, .packages th").removeClass("act");
+                $(".packages td, .packages th").each(function(index, el) {
+                    if ($(this).attr("data-val") == data_val) {
+                        $(this).addClass("act");
+                    }
+                });
+                var auto = $(
+                    ".template-component-booking-vehicle-list .act .car-label"
+                ).text();
+                var pack = $(".packages .act label").text();
+                var pack1 = $(".packages th.act").text();
+                //			console.log(auto);
+                //			console.log(pack);
+                //			console.log(pack1);
+                if ($(window).width() < 1250) {
+                    $(".price-form .package-select .package-select-label").text(pack);
+                    $("#package-select input").val(pack);
+                    $(".price-form .package-select .package-select-auto").text(auto);
+                    $("#car-select input").val(auto);
+                } else {
+                    $(".price-form .package-select .package-select-label").text(pack1);
+                    $("#package-select input").val(pack1);
+                    $(".price-form .package-select .package-select-auto").text(auto);
+                    $("#car-select input").val(auto);
+                }
+
+                $(".price-form").slideDown();
+                var formTop = $(".price-form").offset().top;
+                var body = $("body, html");
+                body.stop().animate({
+                    scrollTop: formTop - 350
+                }, "500", "swing");
+            });
+            $(".watch-video-btn").click(function(event) {
+                $(".video-block iframe").attr("src", $(this).attr("data-video"));
+                $(".video-block").fadeIn("slow");
+            });
+            $(".video-block span").click(function() {
+                $(".video-block").fadeOut("fast");
+                $(".video-block iframe").attr("src", "");
+            });
+
+            if ($(window).width() < 1250) {
+                $(document).on("click", ".show-more-detailes", function() {
+                    $("body, html").animate({
+                            scrollTop: $(this).parent().offset().top - 43
+                        },
+                        0
+                    );
+                    if ($(this).hasClass("active")) {
+                        $(this)
+                            .removeClass("active")
+                            .parent()
+                            .find(".show-packeg-detail")
+                            .slideUp(0);
+                        $(this).find(".txt").text($(this).attr("data-open"));
+                    } else {
+                        $(this)
+                            .addClass("active")
+                            .parent()
+                            .find(".show-packeg-detail")
+                            .slideDown(0);
+                        $(this).find(".txt").text($(this).attr("data-close"));
+                    }
+                });
+
+                $(document).on("click", ".mobile-step-type", function() {
+                    if ($(this).hasClass("active")) {} else {
+                        $(".mobile-step-title").removeClass("active");
+                        $(this).addClass("active");
+                        $(".show-more-detailes")
+                            .removeClass("active")
+                            .find(".txt")
+                            .text("See Details");
+                        $(".slide-tab-packeg").slideUp(200);
+                        $(".slide-tab-type").removeClass("active");
+                        $(".slide-tab-type").slideDown(200);
+                        $(".packege-item").removeClass("active");
+                        $(".price-form").slideUp();
+                        $(".mobile-step-packeg .edit-link").addClass("act");
+                    }
+                });
+
+                $(document).on("click", ".mobile-step-packeg", function() {
+                    if ($(".mobile-vehicle-list > li").hasClass("act")) {
+                        $(".show-more-detailes")
+                            .removeClass("active")
+                            .find(".txt")
+                            .text("See Details");
+                        $(".mobile-step-title").removeClass("active");
+                        $(this).addClass("active");
+
+                        $(".slide-tab-type").addClass("active");
+                        $(".slide-tab-packeg").slideDown(200);
+                        $(".packege-item").removeClass("active").slideDown();
+                        $(".price-form").slideUp();
+                    } else {
+                        return false;
+                    }
+                });
+
+                function Sort() {
+                    var array = [];
+                    var newText = "";
+                    $(".list-sort .packege-item").each(function(index, element) {
+                        array.push({
+                            key: $(element).find(".price").text(),
+                            value: $(element).html(),
+                        });
+                    });
+                    // array.sort(function(a, b){
+                    // 	if(a.key < b.key) return -1;
+                    // 	if(a.key > b.key) return 1;
+                    // 	return 0;
+                    // });
+
+                    for (var i = 0; i < array.length; i++) {
+                        newText +=
+                            '<div class="packege-item">' + array[i].value + "</div>";
+                    }
+                    $(".packages-sort").html(newText);
+                }
+
+                $(document).on("click", ".mobile-vehicle-list li", function() {
+                    $(".show-more-detailes")
+                        .removeClass("active")
+                        .find(".txt")
+                        .text("See Details");
+                    $(".mobile-step-title").removeClass("active");
+                    $(".mobile-step-packeg").addClass("active");
+                    $(".mobile-step-type .edit-link").addClass("act");
+                    $(".slide-tab-type").addClass("active");
+                    $(".slide-tab-packeg").slideDown(200);
+                    $(".packege-item").slideDown();
+                    $(".price-form").slideUp();
+                    Sort();
+                    var auto = $(this).find(".car-label").text();
+                    $("#car-select input").val(auto);
+                });
+
+                $(document).on("click", ".form-step-open", function() {
+                    $(".mobile-step-title").removeClass("active");
+                    $(".mobile-step-form").addClass("active");
+                    $(".packege-item").removeClass("active");
+                    $(".show-more-detailes")
+                        .removeClass("active")
+                        .find(".txt")
+                        .text("See Details");
+                    $(".show-packeg-detail").slideUp(0);
+                    $(this).parent().parent().addClass("active");
+                    $(".packege-item:not(.active)").slideUp();
+                    $(".mobile-step-packeg .edit-link").addClass("act");
+                    $("body, html").animate({
+                            scrollTop: $(".mobile-step-type").offset().top - 43
+                        },
+                        0
+                    );
+                    $(".price-form").slideDown();
+                    var pack = $(".packege-item.active").find("label").text();
+                    $("#package-select input").val(pack);
+                });
+            }
+
+            if ($(window).width() > 1249) {
+                $(".template-component-booking-vehicle-list li").first().click();
+            }
+            /*================================================*/
+            /*=============END price table scripts===============*/
+            /*================================================*/
+        });
+    </script>
 @endsection
 
 @section('content')
@@ -38,19 +490,19 @@
                     <div class="col-lg-4 col-md-5">
                         <aside class="sticky-top pb-1">
                             <!-- <div class="widget">
-                                                                                                    <ul class="service-menu">
-                                                                                                        <li><a href="{{ url('automotive') }}"><span>Automotive</span><i
-                                                                                                                    class="fa fa-angle-right"></i> </a></li>
-                                                                                                        <li><a href="{{ url('/lube_oil') }}"><span>Marine</span><i
-                                                                                                                    class="fa fa-angle-right"></i></a></li>
-                                                                                                        <li><a href="{{ url('belts') }}"><span>Aviation</span><i
-                                                                                                                    class="fa fa-angle-right"></i></a></li>
-                                                                                                        <li><a href="{{ url('/air-bag') }}"><span>Residential</span><i
-                                                                                                                    class="fa fa-angle-right"></i></a></li>
-                                                                                                        <li><a href="{{ url('/break-repair') }}"><span>Industrial</span><i
-                                                                                                                    class="fa fa-angle-right"></i></a></li>
-                                                                                                    </ul>
-                                                                                                </div> -->
+                                                                                                            <ul class="service-menu">
+                                                                                                                <li><a href="{{ url('automotive') }}"><span>Automotive</span><i
+                                                                                                                            class="fa fa-angle-right"></i> </a></li>
+                                                                                                                <li><a href="{{ url('/lube_oil') }}"><span>Marine</span><i
+                                                                                                                            class="fa fa-angle-right"></i></a></li>
+                                                                                                                <li><a href="{{ url('belts') }}"><span>Aviation</span><i
+                                                                                                                            class="fa fa-angle-right"></i></a></li>
+                                                                                                                <li><a href="{{ url('/air-bag') }}"><span>Residential</span><i
+                                                                                                                            class="fa fa-angle-right"></i></a></li>
+                                                                                                                <li><a href="{{ url('/break-repair') }}"><span>Industrial</span><i
+                                                                                                                            class="fa fa-angle-right"></i></a></li>
+                                                                                                            </ul>
+                                                                                                        </div> -->
                             <div class="widget">
                                 {{-- <div class="brochure-bx">
                                     <h5 class="title-head">Download</h5>
@@ -74,14 +526,15 @@
                                     <div class="info">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60"
                                             viewBox="0 0 476 476">
-                                            <path d="M400.85,181v-18.3c0-43.8-15.5-84.5-43.6-114.7c-28.8-31-68.4-48-111.6-48h-15.1c-43.2,0-82.8,17-111.6,48 c-28.1,30.2-43.6,70.9-43.6,114.7V181c-34.1,2.3-61.2,30.7-61.2,65.4V275c0,36.1,29.4,65.5,65.5,65.5h36.9c6.6,0,12-5.4,12-12
-                                                                               V192.8c0-6.6-5.4-12-12-12h-17.2v-18.1c0-79.1,56.4-138.7,131.1-138.7h15.1c74.8,0,131.1,59.6,131.1,138.7v18.1h-17.2
-                                                                               c-6.6,0-12,5.4-12,12v135.6c0,6.6,5.4,12,12,12h16.8c-4.9,62.6-48,77.1-68,80.4c-5.5-16.9-21.4-29.1-40.1-29.1h-30
-                                                                               c-23.2,0-42.1,18.9-42.1,42.1s18.9,42.2,42.1,42.2h30.1c19.4,0,35.7-13.2,40.6-31c9.8-1.4,25.3-4.9,40.7-13.9
-                                                                               c21.7-12.7,47.4-38.6,50.8-90.8c34.3-2.1,61.5-30.6,61.5-65.4v-28.6C461.95,211.7,434.95,183.2,400.85,181z M104.75,316.4h-24.9
-                                                                               c-22.9,0-41.5-18.6-41.5-41.5v-28.6c0-22.9,18.6-41.5,41.5-41.5h24.9V316.4z M268.25,452h-30.1c-10,0-18.1-8.1-18.1-18.1
-                                                                               s8.1-18.1,18.1-18.1h30.1c10,0,18.1,8.1,18.1,18.1S278.25,452,268.25,452z M437.95,274.9c0,22.9-18.6,41.5-41.5,41.5h-24.9V204.8
-                                                                               h24.9c22.9,0,41.5,18.6,41.5,41.5V274.9z" />
+                                            <path
+                                                d="M400.85,181v-18.3c0-43.8-15.5-84.5-43.6-114.7c-28.8-31-68.4-48-111.6-48h-15.1c-43.2,0-82.8,17-111.6,48 c-28.1,30.2-43.6,70.9-43.6,114.7V181c-34.1,2.3-61.2,30.7-61.2,65.4V275c0,36.1,29.4,65.5,65.5,65.5h36.9c6.6,0,12-5.4,12-12
+                                                                                       V192.8c0-6.6-5.4-12-12-12h-17.2v-18.1c0-79.1,56.4-138.7,131.1-138.7h15.1c74.8,0,131.1,59.6,131.1,138.7v18.1h-17.2
+                                                                                       c-6.6,0-12,5.4-12,12v135.6c0,6.6,5.4,12,12,12h16.8c-4.9,62.6-48,77.1-68,80.4c-5.5-16.9-21.4-29.1-40.1-29.1h-30
+                                                                                       c-23.2,0-42.1,18.9-42.1,42.1s18.9,42.2,42.1,42.2h30.1c19.4,0,35.7-13.2,40.6-31c9.8-1.4,25.3-4.9,40.7-13.9
+                                                                                       c21.7-12.7,47.4-38.6,50.8-90.8c34.3-2.1,61.5-30.6,61.5-65.4v-28.6C461.95,211.7,434.95,183.2,400.85,181z M104.75,316.4h-24.9
+                                                                                       c-22.9,0-41.5-18.6-41.5-41.5v-28.6c0-22.9,18.6-41.5,41.5-41.5h24.9V316.4z M268.25,452h-30.1c-10,0-18.1-8.1-18.1-18.1
+                                                                                       s8.1-18.1,18.1-18.1h30.1c10,0,18.1,8.1,18.1,18.1S278.25,452,268.25,452z M437.95,274.9c0,22.9-18.6,41.5-41.5,41.5h-24.9V204.8
+                                                                                       h24.9c22.9,0,41.5,18.6,41.5,41.5V274.9z" />
                                         </svg>
                                         <h5 class="title mt-20">How Can We Help</h5>
                                         <p>If you need any helps, please free to contact us.</p>
@@ -401,7 +854,10 @@
                                     <div class="car-section-heading">
                                         <h1><span>Ceramic Coating Packages</span></h1>
                                     </div>
-                                    <div class="tabs-wrapper">
+
+                                    @include("frontend.partials.mobile-tables-ceramic")
+
+                                    <div class="tabs-wrapper d-none d-md-block">
                                         <span class="left scroller-btn  table-responsive">
                                             <ul id="scroller" class="d-flex nav-tabs">
                                                 <li style="min-width:150px" class="active mb-3"
@@ -501,8 +957,8 @@
                                             </ul>
                                         </span>
                                     </div>
-                                    <div class="tab-content">
-                                        <div id="menu1" class="tab-pane fade in active show">
+                                    <div class="tab-content d-none d-md-block">
+                                        <div id="menu1" class="tab-pane fade in active table-responsive show">
                                             <div class="card mb-4">
                                                 <div class="card-body">
                                                     <!-- Grid row -->
@@ -512,7 +968,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="menu2" class="tab-pane fade">
+                                        <div id="menu2" class="tab-pane fade table-responsive">
                                             <div class="card mb-4">
                                                 <div class="card-body">
                                                     <!-- Grid row -->
@@ -522,7 +978,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="menu3" class="tab-pane fade">
+                                        <div id="menu3" class="tab-pane fade table-responsive">
                                             <div class="card mb-4">
                                                 <div class="card-body">
                                                     <!-- Grid row -->
@@ -532,7 +988,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="menu4" class="tab-pane fade">
+                                        <div id="menu4" class="tab-pane fade table-responsive">
                                             <div class="card mb-4">
                                                 <div class="card-body">
                                                     <!-- Grid row -->
@@ -542,142 +998,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div id="menu5" class="tab-pane fade">
-                                            <div class="card mb-4">
-                                                <div class="card-body">
-                                                    <!-- Grid row -->
-                                                    <div class="row">
-                                                        <table class="table table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <td style="width:80px">PACKAGES</td>
-                                                                    <td style="width:80px">INTERIOR DETAILING</td>
-                                                                    <td style="width:80px">INTERIOR DETAILING PRO</td>
-                                                                    <td style="width:100px">SHOWROOM (INTERIOR & EXTERIOR)
-                                                                    </td>
-                                                                    <td style="width:80px">EXTERIOR DETAILING</td>
-                                                                    <td style="width:80px">EXTERIOR DETAILING PRO</td>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>Prices</td>
-                                                                    <td>$240</td>
-                                                                    <td>$310</td>
-                                                                    <td>$320</td>
-                                                                    <td>$350</td>
-                                                                    <td>$330</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Estimated Time</td>
-                                                                    <td> 1 - 1.5 Hours</td>
-                                                                    <td>1.15 - 1.45 Hours</td>
-                                                                    <td>1.5 - 2<br> Hours</td>
-                                                                    <td>1.45 - 2.15 Hours</td>
-                                                                    <td>1.5 - 2 hours </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Complete exterior handwash with World's Best Spray
-                                                                        Wax</td>
-                                                                    <td class="text-center">No</td>
-                                                                    <td class="text-center">No</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Interior vacuum, cleaning & dusting, also includes
-                                                                        trunk vacuum & shampoo</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Book Now</td>
-                                                                    <td>
-                                                                        <button class="btn btn-primary">Book</button>
-                                                                    </td>
-                                                                    <td><button class="btn btn-primary">Book</button></td>
-                                                                    <td><button class="btn btn-primary">Book</button></td>
-                                                                    <td><button class="btn btn-primary">Book</button></td>
-                                                                    <td><button class="btn btn-primary">Book</button></td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="menu6" class="tab-pane fade">
-                                            <div class="card mb-4">
-                                                <div class="card-body">
-                                                    <!-- Grid row -->
-                                                    <div class="row">
-                                                        <table class="table table-hover">
-                                                            <thead>
-                                                                <tr>
-                                                                    <td style="width:80px">PACKAGES</td>
-                                                                    <td style="width:80px">INTERIOR DETAILING</td>
-                                                                    <td style="width:80px">INTERIOR DETAILING PRO</td>
-                                                                    <td style="width:100px">SHOWROOM (INTERIOR & EXTERIOR)
-                                                                    </td>
-                                                                    <td style="width:80px">EXTERIOR DETAILING</td>
-                                                                    <td style="width:80px">EXTERIOR DETAILING PRO</td>
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td>Prices</td>
-                                                                    <td>$260</td>
-                                                                    <td>$330</td>
-                                                                    <td>$320</td>
-                                                                    <td>$390</td>
-                                                                    <td>$360</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Estimated Time</td>
-                                                                    <td> 1 - 1.5 Hours</td>
-                                                                    <td>1.15 - 1.45 Hours</td>
-                                                                    <td>1.5 - 2<br> Hours</td>
-                                                                    <td>1.45 - 2.15 Hours</td>
-                                                                    <td>1.5 - 2 hours </td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Complete exterior handwash with World's Best Spray
-                                                                        Wax</td>
-                                                                    <td class="text-center">No</td>
-                                                                    <td class="text-center">No</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>Interior vacuum, cleaning & dusting, also includes
-                                                                        trunk vacuum & shampoo</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                    <td class="text-center">Yes</td>
-                                                                </tr>
-                                                                {{-- <tr>
-                                                                    <td>Book Now</td>
-                                                                    <td>
-                                                                        <button class="btn btn-primary">Book</button>
-                                                                    </td>
-                                                                    <td><button class="btn btn-primary">Book</button></td>
-                                                                    <td><button class="btn btn-primary">Book</button></td>
-                                                                    <td><button class="btn btn-primary">Book</button></td>
-                                                                    <td><button class="btn btn-primary">Book</button></td>
-                                                                </tr> --}}
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>

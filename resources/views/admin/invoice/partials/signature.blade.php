@@ -9,8 +9,15 @@
         @endphp
 
         <div class="col-md-7">
-            <label for="customer_signature" class="form-label mb-0">Customer
-                Signature:</label>
+            <label for="customer_signature" class="form-label mb-0">
+                @php
+                    if (str_contains(url()->current(), 'warranty')) {
+                        echo 'Customer  Signature:';
+                    } else {
+                        echo 'Installer Signature:';
+                    }
+                @endphp
+            </label>
             <img src="{{ $path }}" alt="Customer Signature">
         </div>
         <div class="col-md-5">
@@ -24,7 +31,15 @@
     @if (auth()->user()->isAdmin() || empty($order->customer_signature))
         <div class="row mt-3">
             <div class="col-md-7">
-                <label for="customer_signature" class="form-label mb-0">Customer Signature:</label>
+                <label for="customer_signature" class="form-label mb-0">
+                    @php
+                        if (str_contains(url()->current(), 'warranty')) {
+                            echo 'Customer  Signature:';
+                        } else {
+                            echo 'Installer Signature:';
+                        }
+                    @endphp
+                </label>
                 <div style="padding: 30px" class="row p-3">
                     <div style="width: 100%">
                         <canvas style="background: #dedede" id="signature-pad" width="270" height="300"></canvas>
@@ -49,7 +64,7 @@
                 <label for="date" class="mb-0">Date:</label>
                 <div class="">
                     <input type="datetime-local" class="form-control" id="date" name="date"
-                        value="{{ @$order->date }}" >
+                        value="{{ @$order->date }}">
                 </div>
             </div>
         </div>

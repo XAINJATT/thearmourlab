@@ -9325,7 +9325,7 @@ dl dd {
     .page-banner h1 span, .page-banner .h1 span {
       display: inline-block; }
       .page-banner h1 span:before, .page-banner .h1 span:before, .page-banner h1 span:after, .page-banner .h1 span:after {
-        content: "//";
+        /* content: "//"; */
         color: #43491a;
         font-weight: 900;
         transform: scale(0.98) translateY(-3%);
@@ -9391,7 +9391,7 @@ section {
   .heading-bx.mb-20 {
     margin-bottom: 20px; }
   .heading-bx .title:after {
-    content: "//";
+    /* content: "//"; */
     color: #43491a;
     font-weight: 900;
     transform: scale(0.93) translateY(-3%);
@@ -11030,7 +11030,7 @@ input:-internal-autofill-selected {
       -webkit-animation: move2 5s infinite  alternate;
       animation: move2  5s infinite  alternate; }
       .ttr-slider.style-2 .slider-content .sub-title:before, .ttr-slider.style-2 .slider-content .sub-title:after {
-        content: "//";
+        /* content: "//"; */
         font-family: "Roboto", sans-serif;
         color: #43491a;
         font-weight: 900;
@@ -14217,7 +14217,7 @@ blockquote {
   .widget-title a {
     color: #fff; }
   .widget-title:after {
-    content: "//";
+    /* content: "//"; */
     color: #43491a;
     font-weight: 900;
     transform: scale(0.93) translateY(-3%);
@@ -14829,7 +14829,7 @@ footer {
     line-height: 1.2;
     text-transform: uppercase; }
     footer .footer-title:after {
-      content: "//";
+      /* content: "//"; */
       font-family: "Roboto", sans-serif;
       color: #43491a;
       font-weight: 900;
