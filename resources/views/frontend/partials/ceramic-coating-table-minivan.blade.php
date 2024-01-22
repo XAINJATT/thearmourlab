@@ -1,4 +1,4 @@
-<table class="table table-hover">
+<table class="table table-hover packages">
     <tr class="package-list">
         <th data-val="val1">Packages</th>
         <th data-val="val2">POLY</th>
@@ -17,6 +17,7 @@
         <td>✖</td>
         <td>✖</td>
     </tr>
+
     <tr class="package-list">
         <td>PRICE</td>
         <td id="price1" class="price" data-val="val1">$449.99</td>
@@ -28,13 +29,24 @@
     </tr>
     <tr class="package-list">
         <td>ESTIMATED TIME</td>
-        <td id="time1" data-val="val1">24 HRS</td>
-        <td id="time2" data-val="val2">24 HRS</td>
-        <td id="time3" data-val="val3">48 HRS</td>
-        <td id="time4" data-val="val4">48 HRS</td>
-        <td id="time5" data-val="val5">3-5 HRS</td>
-        <td id="time6" data-val="val6">8 HRS</td>
+        <td>24 HRS</td>
+        <td>24 HRS</td>
+        <td>48 HRS</td>
+        <td>48 HRS</td>
+        <td>3-5 HRS</td>
+        <td>8 HRS</td>
     </tr>
+
+    <tr class="package-list">
+        <td>Warranty</td>
+        <td> 1 Year<br /></td>
+        <td> 2 Years<br /></td>
+        <td> 4 Years<br /></td>
+        <td> 5 Years<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+    </tr>
+
     <tr class="package-list">
         <td>TWO BUCKET WASH</td>
         <td> ✔</td>
@@ -49,7 +61,7 @@
         <td> ✔</td>
         <td> ✔</td>
         <td> ✔</td>
-        <td>✖</td>
+        <td>✔</td>
         <td>✖</td>
         <td> ✔</td>
     </tr>
@@ -58,7 +70,7 @@
         <td> ✔</td>
         <td> ✔</td>
         <td> ✔</td>
-        <td>✖</td>
+        <td>✔</td>
         <td> ✖</td>
         <td> ✔</td>
     </tr>
@@ -67,7 +79,7 @@
         <td>✖</td>
         <td> ✔</td>
         <td> ✔</td>
-        <td>✖</td>
+        <td>✔</td>
         <td>✖</td>
         <td> ✖</td>
     </tr>

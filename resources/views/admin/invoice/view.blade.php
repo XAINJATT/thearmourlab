@@ -52,7 +52,7 @@
                                         <input type="text" class="form-control" name=""
                                             value="{{ @$order->user->email }}" disabled />
                                     </div>
-                                    <div class="col-md-4 col-12">
+                                    {{-- <div class="col-md-4 col-12">
                                         <label for="email" class="form-label me-5 fw-medium">Tracking ID:</label>
                                         <div class="row">
                                             <div class="col-8">
@@ -64,7 +64,7 @@
                                                     onclick="copy(this)">Copy</button>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                     <div class="col-md-4 col-12">
                                         <label for="first_name" class="form-label me-5 fw-medium">First Name:</label>
                                         <input type="text" class="form-control" id="first_name" name="first_name"
@@ -118,8 +118,33 @@
                                 </div>
                                 <hr class="mx-n4" />
                                 <!-- Check Box Start -->
+
                                 <div class="row p-sm-3 p-0">
-                                    <div class="col-lg-6 col-12 invoice-actions">
+                                    <div class="col-12 col-md-6 mt-2">
+                                        <label for="live_images" class="font-weight-bold">Project Progress Images :<span
+                                                class="text-danger">*</span></label>
+                                        <div id="preview-container" class="row">
+                                            @if ($order->status_images)
+                                                @php($images = json_decode($order->status_images, true))
+                                            @else
+                                                @php($images = [])
+                                            @endif
+                                            @foreach ($images as $key => $image)
+                                                <div class="col-12 col-md-4">
+                                                    <a href="{{ asset('storage/images/' . $image) }}">
+                                                        <img src="{{ asset('storage/images/' . $image) }}" alt=""
+                                                        class="img-fluid">
+                                                    </a>
+
+                                                </div>
+                                            @endforeach
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="row p-sm-3 p-0">
+                                    {{-- <div class="col-lg-6 col-12 invoice-actions">
                                         <h6 class="pb-2">General Stages (applicable to all services)</h6>
                                         <div class="card mb-4">
                                             <div class="card-body table-responsive">
@@ -204,17 +229,12 @@
 
                                                     </tbody>
                                                 </table>
-                                                <!-- <div class="">
-                                                                                    <label for="price" class="mb-0">Price :</label>
-                                                                                    <div class="">
-                                                                                        <input disablad type="text" class="form-control" name="ceramic_coating_price">
-                                                                                    </div>
-                                                                                </div> -->
+                                                
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
 
-                                    <div class="col-lg-6 col-12 invoice-actions">
+                                    {{-- <div class="col-lg-6 col-12 invoice-actions">
                                         <h6 class="pb-2">Paint Protection Film Stages</h6>
                                         <div class="card mb-4">
                                             <div class="card-body table-responsive">
@@ -585,7 +605,7 @@
                                                                                 </div> -->
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> --}}
                                 </div>
 
                                 <hr class="mx-n4" />

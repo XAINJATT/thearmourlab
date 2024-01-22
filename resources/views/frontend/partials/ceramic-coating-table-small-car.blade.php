@@ -17,6 +17,7 @@
         <td>✖</td>
         <td>✖</td>
     </tr>
+
     <tr class="package-list">
         <td>PRICE</td>
         <td>$399.99</td>
@@ -34,6 +35,15 @@
         <td>48 HRS</td>
         <td>2-4 HRS</td>
         <td>8 HRS</td>
+    </tr>
+    <tr class="package-list">
+        <td>Warranty</td>
+        <td> 1 Year<br /></td>
+        <td> 2 Years<br /></td>
+        <td> 4 Years<br /></td>
+        <td> 5 Years<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
     </tr>
     <tr class="package-list">
         <td>TWO BUCKET WASH</td>

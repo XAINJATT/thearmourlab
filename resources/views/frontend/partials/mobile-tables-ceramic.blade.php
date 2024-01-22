@@ -14,11 +14,11 @@
     #text-2948055696 {
         line-height: 0.75;
         text-align: center;
-        color: rgb(240, 24, 24);
+        color: #43491a;
     }
 
     #text-2948055696>* {
-        color: rgb(240, 24, 24);
+        color: #43491a;
     }
 </style>
 
@@ -41,7 +41,7 @@
 
                             <div id="tab_full-detailing" class="panel active entry-content" role="tabpanel"
                                 aria-labelledby="tab-full-detailing">
-                                <div id="price-wrap" class="container page-wrap-mobile-full price-wrap">
+                                <div id="price-wrap" class="page-wrap-mobile-full price-wrap">
                                     <div class="sixteen columns price-page">
                                         <div class="padd-40-mobile"></div>
                                         <div class="mobile-step-title mobile-step-type active">
@@ -65,10 +65,10 @@
                                                                 alt="car icon" />
                                                         </div>
                                                         <!-- Name -->
-                                                        <div class="car-label" data-price1="$449.99"
-                                                            data-price2="$749.99" data-price3="$1049.99"
-                                                            data-price4="$1249.99" data-price5="$449.99"
-                                                            data-price6="$249.99" data-time1="8 Hours" data-time2="9H"
+                                                        <div class="car-label" data-price1="$399.99	"
+                                                            data-price2="$599.99" data-price3="$899.99"
+                                                            data-price4="$1099.99" data-price5="$399.99"
+                                                            data-price6="$199.99" data-time1="8 Hours" data-time2="9H"
                                                             data-time3="9H GRAPHENE INFUSED"
                                                             data-time4="10H GRAPHENE INFUSED" data-time5="✖"
                                                             data-time6="✖">
@@ -84,11 +84,10 @@
                                                                 src="https://www.washmenow.ca/wp-content/themes/flatsome-child/img/large-sedan-icon.png"
                                                                 alt="car icon" />
                                                         </div>
-                                                        <div class="car-label" data-price1="$399.99"
-                                                            data-price2="$599.99" data-price3="$240"
-                                                            data-price4="$899.99" data-price5="$1099.99"
-                                                            data-price6="$399.99" data-price7="$199.99"
-                                                            data-time1="8 Hours" data-time2="9H"
+                                                        <div class="car-label" data-price1="$399.99	"
+                                                            data-price2="$599.99" data-price3="$899.99"
+                                                            data-price4="$1099.99" data-price5="$399.99"
+                                                            data-price6="$199.99" data-time1="8 Hours" data-time2="9H"
                                                             data-time3="9H GRAPHENE INFUSED"
                                                             data-time4="10H GRAPHENE INFUSED" data-time5="✖"
                                                             data-time6="✖">
@@ -105,13 +104,12 @@
                                                                 alt="car icon" />
                                                         </div>
                                                         <div class="car-label" data-price1="$449.99"
-                                                        data-price2="$699.99" data-price3="$999.99"
-                                                        data-price4="$1199.99" data-price5="$449.99"
-                                                        data-price6="$249.99" data-price7="$199.99"
-                                                        data-time1="8 Hours" data-time2="9H"
-                                                        data-time3="9H GRAPHENE INFUSED"
-                                                        data-time4="10H GRAPHENE INFUSED" data-time5="✖"
-                                                        data-time6="✖">
+                                                            data-price2="$699.99" data-price3="$999.99"
+                                                            data-price4="$1199.99" data-price5="$449.99"
+                                                            data-price6="$249.99" data-time1="8 Hours" data-time2="9H"
+                                                            data-time3="9H GRAPHENE INFUSED"
+                                                            data-time4="10H GRAPHENE INFUSED" data-time5="✖"
+                                                            data-time6="✖">
                                                             Large SUV
                                                         </div>
                                                     </div>
@@ -125,13 +123,13 @@
                                                                 alt="car icon" />
                                                         </div>
                                                         <div class="car-label" data-price1="$449.99"
-                                                        data-price2="$749.99" data-price3="$1049.99"
-                                                        data-price4="$899.99" data-price5="$1099.99"
-                                                        data-price6="$399.99" data-price7="$199.99"
-                                                        data-time1="8 Hours" data-time2="9H"
-                                                        data-time3="9H GRAPHENE INFUSED"
-                                                        data-time4="10H GRAPHENE INFUSED" data-time5="✖"
-                                                        data-time6="✖">
+                                                            data-price2="$749.99" data-price3="$1049.99"
+                                                            data-price4="$1249.99" data-price5="$449.99"
+                                                            data-price6="$249.99"
+                                                            data-time1="8 Hours" data-time2="9H"
+                                                            data-time3="9H GRAPHENE INFUSED"
+                                                            data-time4="10H GRAPHENE INFUSED" data-time5="✖"
+                                                            data-time6="✖">
                                                             Minivan/Pickup
                                                         </div>
                                                     </div>
@@ -159,12 +157,15 @@
                                                     </div>
                                                     <div class="show-packeg-detail">
                                                         <div id="time11" data-label="Hardness of coating"></div>
-                                                        <div data-label="PRICE">
-                                                            <span>$449.99</span>
-                                                        </div>
+                                                        <div id="price11" data-label="Price"></div>
                                                         <div data-label="ESTIMATED TIME">
                                                             <span>24 HRS</span>
                                                         </div>
+
+                                                        <div data-label="Warranty">
+                                                            <span>1 Year</span>
+                                                        </div>
+
                                                         <div data-label="TWO BUCKET WASH">
                                                             <span>✔</span>
                                                         </div>
@@ -202,7 +203,8 @@
                                                     </div>
                                                     <div class="book-link">
                                                         <span class="btn-border form-step-open"><span
-                                                                class="tp-button lightgrey small">Book
+                                                                onclick="window.location.replace('{{ route('frontend.contact') }}')"
+                                                                class="btn-primary btn rounded-pill lightgrey small">Book
                                                                 Now</span></span>
                                                     </div>
                                                     <span class="show-more-detailes btn-border"
@@ -217,12 +219,15 @@
                                                     </div>
                                                     <div class="show-packeg-detail">
                                                         <div id="time22" data-label="Hardness of coating"></div>
-                                                        <div data-label="PRICE">
-                                                            <span>$749.99</span>
-                                                        </div>
+                                                        <div id="price22" data-label="Price"></div>
                                                         <div data-label="ESTIMATED TIME">
                                                             <span>24 HRS</span>
                                                         </div>
+
+                                                        <div data-label="Warranty">
+                                                            <span>2 Years</span>
+                                                        </div>
+
                                                         <div data-label="TWO BUCKET WASH">
                                                             <span>✔</span>
                                                         </div>
@@ -259,7 +264,8 @@
                                                     </div>
                                                     <div class="book-link">
                                                         <span class="btn-border form-step-open"><span
-                                                                class="tp-button lightgrey small">Book
+                                                                onclick="window.location.replace('{{ route('frontend.contact') }}')"
+                                                                class="btn-primary btn rounded-pill lightgrey small">Book
                                                                 Now</span></span>
                                                     </div>
                                                     <span class="show-more-detailes btn-border"
@@ -274,12 +280,15 @@
                                                     </div>
                                                     <div class="show-packeg-detail">
                                                         <div id="time33" data-label="Hardness of coating"></div>
-                                                        <div data-label="PRICE">
-                                                            <span>$1049.99</span>
-                                                        </div>
+                                                        <div id="price33" data-label="Price"></div>
                                                         <div data-label="ESTIMATED TIME">
                                                             <span>48 HRS</span>
                                                         </div>
+
+                                                        <div data-label="Warranty">
+                                                            <span>4 Years</span>
+                                                        </div>
+
                                                         <div data-label="TWO BUCKET WASH">
                                                             <span>✔</span>
                                                         </div>
@@ -316,7 +325,8 @@
                                                     </div>
                                                     <div class="book-link">
                                                         <span class="btn-border form-step-open"><span
-                                                                class="tp-button lightgrey small">Book
+                                                                onclick="window.location.replace('{{ route('frontend.contact') }}')"
+                                                                class="btn-primary btn rounded-pill lightgrey small">Book
                                                                 Now</span></span>
                                                     </div>
                                                     <span class="show-more-detailes btn-border"
@@ -330,23 +340,27 @@
                                                         <div id="price44" class="price" data-label="Price"></div>
                                                     </div>
                                                     <div class="show-packeg-detail">
-                                                        <div data-label="PRICE">
-                                                            <span>$1249.99</span>
-                                                        </div>
+                                                        <div id="time44" data-label="Hardness of coating"></div>
+                                                        <div id="price44" data-label="Price"></div>
                                                         <div data-label="ESTIMATED TIME">
                                                             <span>48 HRS</span>
                                                         </div>
+
+                                                        <div data-label="Warranty">
+                                                            <span>5 Years</span>
+                                                        </div>
+
                                                         <div data-label="TWO BUCKET WASH">
                                                             <span>✔</span>
                                                         </div>
                                                         <div data-label="CLAY BAR TREATMENT">
-                                                            <span>✖</span>
+                                                            <span>✔</span>
                                                         </div>
                                                         <div data-label="IRON AND DECON REMOVAL">
-                                                            <span>✖</span>
+                                                            <span>✔</span>
                                                         </div>
                                                         <div data-label="ONE STAGE SPEED POLISH">
-                                                            <span>✖</span>
+                                                            <span>✔</span>
                                                         </div>
                                                         <div data-label="Paint Correction (PER STAGE)	">
                                                             <span>$599.99</span>
@@ -372,7 +386,8 @@
                                                     </div>
                                                     <div class="book-link">
                                                         <span class="btn-border form-step-open"><span
-                                                                class="tp-button lightgrey small">Book
+                                                                onclick="window.location.replace('{{ route('frontend.contact') }}')"
+                                                                class="btn-primary btn rounded-pill lightgrey small">Book
                                                                 Now</span></span>
                                                     </div>
                                                     <span class="show-more-detailes btn-border"
@@ -386,9 +401,8 @@
                                                         <div id="price55" class="price" data-label="Price"></div>
                                                     </div>
                                                     <div class="show-packeg-detail">
-                                                        <div data-label="PRICE">
-                                                            <span>$449.99</span>
-                                                        </div>
+                                                        <div id="time55" data-label="Hardness of coating"></div>
+                                                        <div id="price55" data-label="Price"></div>
                                                         <div data-label="ESTIMATED TIME">
                                                             <span>3-5 HRS</span>
                                                         </div>
@@ -428,7 +442,8 @@
                                                     </div>
                                                     <div class="book-link">
                                                         <span class="btn-border form-step-open"><span
-                                                                class="tp-button lightgrey small">Book
+                                                                onclick="window.location.replace('{{ route('frontend.contact') }}')"
+                                                                class="btn-primary btn rounded-pill lightgrey small">Book
                                                                 Now</span></span>
                                                     </div>
                                                     <span class="show-more-detailes btn-border"
@@ -442,9 +457,8 @@
                                                         <div id="price66" class="price" data-label="Price"></div>
                                                     </div>
                                                     <div class="show-packeg-detail">
-                                                        <div data-label="PRICE">
-                                                            <span>$449.99</span>
-                                                        </div>
+                                                        <div id="time66" data-label="Hardness of coating"></div>
+                                                        <div id="price66" data-label="Price"></div>
                                                         <div data-label="ESTIMATED TIME">
                                                             <span>8 HRS</span>
                                                         </div>
@@ -484,7 +498,8 @@
                                                     </div>
                                                     <div class="book-link">
                                                         <span class="btn-border form-step-open"><span
-                                                                class="tp-button lightgrey small">Book
+                                                                onclick="window.location.replace('{{ route('frontend.contact') }}')"
+                                                                class="btn-primary btn rounded-pill lightgrey small">Book
                                                                 Now</span></span>
                                                     </div>
                                                     <span class="show-more-detailes btn-border"

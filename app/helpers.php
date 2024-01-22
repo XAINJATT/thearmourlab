@@ -34,12 +34,20 @@ function randomColor()
 
 
 if (!function_exists('get_giveaway_status')) {
-    function get_giveaway_status()
+    function get_giveaway_status($v = false)
     {
-        $previous_status = Setting::where('name','giveaway')->first();
-        if ($previous_status) {
-            return $previous_status->value;
+        if (!$v) {
+            $previous_status = Setting::where('name', 'wheel')->first();
+            if ($previous_status) {
+                return $previous_status->value;
+            }
+            return false;
+        } else {
+            $previous_status = Setting::where('name', $v)->first();
+            if ($previous_status) {
+                return $previous_status->value;
+            }
+            return false;
         }
-        return false;
     }
 }

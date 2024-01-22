@@ -33,6 +33,7 @@ use App\Http\Controllers\Admin\ContestController as AdminContestController;
 use App\Http\Controllers\User\ContestController as UserContestController;
 use App\Http\Controllers\ContestController;
 use App\Http\Controllers\GiveawayEntryController;
+use App\Http\Controllers\InvoiceController as ControllersInvoiceController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -117,6 +118,8 @@ Route::post('addUserToContest', [UserContestController::class, 'addUserToContest
 
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout');
 
+
+
 Route::middleware(['auth'])->group(function () {
     /* Common Routes for both Admin and User */
 
@@ -128,6 +131,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/profile', [DashboardController::class, 'profile'])->name('admin.profile');
     Route::post('admin/profile/update', [DashboardController::class, 'update'])->name('admin.profile.update');
 
+
     // InvoiceController 
     Route::get('admin/invoice', [InvoiceController::class, 'index'])->name('admin.invoice');
     Route::get('admin/invoice/create', [InvoiceController::class, 'create'])->name('admin.invoice.create');
@@ -136,6 +140,12 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/invoice/edit/{id}', [InvoiceController::class, 'edit'])->name('admin.invoice.edit');
     Route::post('admin/invoice/update', [InvoiceController::class, 'update'])->name('admin.invoice.update');
     Route::post('admin/invoice/delete/{id}', [InvoiceController::class, 'delete'])->name('admin.invoice.delete');
+
+
+    Route::get('admin/upload-invoice', [ControllersInvoiceController::class, 'create'])->name('admin.upload-invoice.create');
+    Route::post('admin/upload-invoice', [ControllersInvoiceController::class, 'store'])->name('admin.upload-invoice.store');
+    Route::get('admin/customer/{id}/invoices', [ControllersInvoiceController::class, 'showCustomerInvoices'])->name('admin.customer.invoices');
+    Route::get('invoices', [ControllersInvoiceController::class, 'showCustomerInvoices'])->name('user.view-invoices');
 
     // WarrantyController
     Route::get('admin/warranty', [WarrantyController::class, 'index'])->name('admin.warranty');

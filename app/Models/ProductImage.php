@@ -10,8 +10,8 @@ class ProductImage extends Model
     use HasFactory;
     protected $guarded=[];
 
-    public function getImageAttribute($value)
-    {
-        return !empty($value) ? asset('storage/products/' . $value) : "";
-    }
+    // public function getImageAttribute($value)
+    // {
+    //     return !empty($value) ? asset('' . $value) : "";
+    // }
 }

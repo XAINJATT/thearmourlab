@@ -5,23 +5,23 @@
 @endsection
 
 @section('css')
-    
 @endsection
 
 @section('content')
-<style>
-	.wrapper {
-		min-height: 100vh;
-		background: linear-gradient(25deg, #171a1e 50%, #43491a 50%) !important;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column
-	}
-    .my-account {
-        width: 100% !important;
-    }
-</style>
+    <style>
+        .wrapper {
+            min-height: 100vh;
+            background: linear-gradient(25deg, #171a1e 50%, #43491a 50%) !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column
+        }
+
+        .my-account {
+            width: 100% !important;
+        }
+    </style>
     <div class="page-wraper wrapper account-wraper bg-gray py-70 px-20">
         <div class="my-account">
             <div class="logo">
@@ -30,6 +30,27 @@
             <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="formLogin" role="tabpanel" aria-labelledby="formLogin">
                     <form id="formAuthentication" action="{{ route('login') }}" method="POST">
+                        @if (session('success-message'))
+                            <div class="alert alert-success">
+                                {{ session('success-message') }}
+                            </div>
+                        @endif
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+
+                        @if (session('error-message'))
+                            <div class="alert alert-danger">
+                                {{ session('error-message') }}
+                            </div>
+                        @endif
                         @csrf
                         <div class="form-group">
                             <input type="text" class="form-control" id="email" name="email"

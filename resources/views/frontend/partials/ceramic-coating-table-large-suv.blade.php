@@ -17,6 +17,7 @@
         <td>✖</td>
         <td>✖</td>
     </tr>
+
     <tr class="package-list">
         <td>PRICE</td>
         <td>
@@ -51,12 +52,23 @@
         <td>3-5 HRS</td>
         <td>8 HRS</td>
     </tr>
+
+    <tr class="package-list">
+        <td>Warranty</td>
+        <td> 1 Year<br /></td>
+        <td> 2 Years<br /></td>
+        <td> 4 Years<br /></td>
+        <td> 5 Years<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+    </tr>
+
     <tr class="package-list">
         <td>TWO BUCKET WASH</td>
         <td> ✔<br /></td>
         <td> ✔<br /></td>
         <td> ✔<br /></td>
-        <td> ✖</td>
+        <td> ✔</td>
         <td> ✖<br /></td>
         <td> ✔<br /></td>
     </tr>
@@ -65,7 +77,7 @@
         <td> ✔<br /></td>
         <td> ✔<br /></td>
         <td> ✔<br /></td>
-        <td> ✖<br /></td>
+        <td> ✔<br /></td>
         <td> ✖<br /></td>
         <td> ✔<br /></td>
     </tr>
@@ -74,7 +86,7 @@
         <td> ✔<br /></td>
         <td> ✔<br /></td>
         <td> ✔<br /></td>
-        <td> ✖<br /></td>
+        <td> ✔<br /></td>
         <td> ✖<br /></td>
         <td> ✔<br /></td>
     </tr>
@@ -83,7 +95,7 @@
         <td> ✖<br /></td>
         <td> ✔<br /></td>
         <td> ✔<br /></td>
-        <td> ✖<br /></td>
+        <td> ✔<br /></td>
         <td> ✖<br /></td>
         <td> ✖<br /></td>
     </tr>
@@ -150,9 +162,9 @@
     <tr class="package-list">
         <td>Trim / Exhaust / Misc coating</td>
         <td> ✖<br /></td>
-        <td> ✖<br /></td>
-        <td> ✖<br /></td>
-        <td> ✖<br /></td>
+        <td> ✔<br /></td>
+        <td> ✔<br /></td>
+        <td> ✔<br /></td>
         <td> ✖<br /></td>
         <td> ✖<br /></td>
     </tr>

@@ -216,8 +216,8 @@
                                         <li><i class="fa fa-check"></i> Full Fenders</li>
                                         <li><i class="fa fa-check"></i> Side View Mirrors</li>
                                         <li><i class="fa fa-check"></i> Headlights and Fog lights</li>
-                                        <li><i class="fa fa-check"></i> Trunk Stripe</li>
-                                        <li><i class="fa fa-check"></i> A-Pillars</li>
+                                        {{-- <li><i class="fa fa-check"></i> Trunk Stripe</li>
+                                        <li><i class="fa fa-check"></i> A-Pillars</li> --}}
                                     </ul>
                                     <div class="pricingtable-footer">
                                         <a href="{{ route('frontend.contact') }}" class="btn btn-primary">Get It Now</a>

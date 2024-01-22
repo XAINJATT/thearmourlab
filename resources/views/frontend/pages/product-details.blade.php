@@ -633,8 +633,8 @@
 
     <style>
         /* body {
-                    background-color: #000
-                } */
+                        background-color: #000
+                    } */
 
         .card {
             border: none
@@ -731,21 +731,21 @@
         </div>
 
         <!-- <div class="wrapper">
-                            <div class="product-img d-flex">
-                                <img src="{{ asset('storage/cart/polish.jpg') }}" height="420" width="327">
-                            </div>
-                            <div class="product-info">
-                                <div class="product-text">
-                                    <h1>polish</h1>
-                                    <h2>by now</h2>
-                                    <p>polish are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+                                <div class="product-img d-flex">
+                                    <img src="{{ asset('storage/cart/polish.jpg') }}" height="420" width="327">
                                 </div>
-                                <div class="product-price-btn">
-                                    <p><span>78</span>$</p>
-                                    <button type="button">buy now</button>
+                                <div class="product-info">
+                                    <div class="product-text">
+                                        <h1>polish</h1>
+                                        <h2>by now</h2>
+                                        <p>polish are a reinterpretation<br> of peeled fruits and vegetables as<br> functional objects. The surfaces<br> appear to be sliced and pulled aside,<br> allowing room for growth. </p>
+                                    </div>
+                                    <div class="product-price-btn">
+                                        <p><span>78</span>$</p>
+                                        <button type="button">buy now</button>
+                                    </div>
                                 </div>
-                            </div>
-                        </div> -->
+                            </div> -->
 
 
         <div class="container mt-5 mb-5">
@@ -817,24 +817,25 @@
                                         <ul class="sliderBlock_items">
                                             @foreach ($productDetails->ProductImages as $image)
                                                 <li class="sliderBlock_items__itemPhoto">
-                                                    <img src="{{ $image->image }}" alt="product-image">
+                                                    <img src="{{ asset("storage/products/$image->image") }}"
+                                                        alt="product-image">
                                                 </li>
                                             @endforeach
                                             <!-- <li class="sliderBlock_items__itemPhoto sliderBlock_items__showing">
-                                                                <img src="{{ asset('storage/cart/polish.jpg') }}" alt="headphones">
-                                                            </li>
-                                                            <li class="sliderBlock_items__itemPhoto">
-                                                                <img src="{{ asset('storage/cart/polish.jpg') }}" alt="headphones">
-                                                            </li>
-                                                            <li class="sliderBlock_items__itemPhoto">
-                                                                <img src="{{ asset('storage/cart/polish.jpg') }}" alt="headphones">
-                                                            </li>
-                                                            <li class="sliderBlock_items__itemPhoto">
-                                                                <img src="{{ asset('storage/cart/polish.jpg') }}" alt="headphones">
-                                                            </li>
-                                                            <li class="sliderBlock_items__itemPhoto">
-                                                                <img src="{{ asset('storage/cart/polish.jpg') }}" alt="headphones">
-                                                            </li> -->
+                                                                    <img src="{{ asset('storage/cart/polish.jpg') }}" alt="headphones">
+                                                                </li>
+                                                                <li class="sliderBlock_items__itemPhoto">
+                                                                    <img src="{{ asset('storage/cart/polish.jpg') }}" alt="headphones">
+                                                                </li>
+                                                                <li class="sliderBlock_items__itemPhoto">
+                                                                    <img src="{{ asset('storage/cart/polish.jpg') }}" alt="headphones">
+                                                                </li>
+                                                                <li class="sliderBlock_items__itemPhoto">
+                                                                    <img src="{{ asset('storage/cart/polish.jpg') }}" alt="headphones">
+                                                                </li>
+                                                                <li class="sliderBlock_items__itemPhoto">
+                                                                    <img src="{{ asset('storage/cart/polish.jpg') }}" alt="headphones">
+                                                                </li> -->
                                         </ul>
 
 
@@ -876,21 +877,21 @@
                                         <div class="block_informationAboutDevice">
 
                                             <!-- <div class="block_rating clearfix">
-                                                                <fieldset class="block_rating__stars">
-                                                                    <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
-                                                                    <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-                                                                    <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Good - 4 stars"></label>
-                                                                    <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Above average - 3.5 stars"></label>
-                                                                    <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Average - 3 stars"></label>
-                                                                    <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-                                                                    <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
-                                                                    <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-                                                                    <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
-                                                                    <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-                                                                </fieldset>
-                                                                <span class="block_rating__avarage">4.25</span>
-                                                                <span class="block_rating__reviews">(153 reviews)</span>
-                                                            </div> -->
+                                                                    <fieldset class="block_rating__stars">
+                                                                        <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label>
+                                                                        <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
+                                                                        <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Good - 4 stars"></label>
+                                                                        <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Above average - 3.5 stars"></label>
+                                                                        <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Average - 3 stars"></label>
+                                                                        <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
+                                                                        <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label>
+                                                                        <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
+                                                                        <input type="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label>
+                                                                        <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
+                                                                    </fieldset>
+                                                                    <span class="block_rating__avarage">4.25</span>
+                                                                    <span class="block_rating__reviews">(153 reviews)</span>
+                                                                </div> -->
                                             <div class="row ">
                                                 <div class="large-6 small-12 column left-align">
                                                     <div class="block_informationAboutDevice">
@@ -931,28 +932,28 @@
                                                         </div>
                                                     </div>
                                                     <!-- <div class="block_quantity clearfix">
-                                                                        <span class="text_specification">Quantity</span>
-                                                                        <div class="block_quantity__chooseBlock">
-                                                                            <input class="block_quantity__number" name="quantityNumber" type="text" min="1" value="1">
-                                                                            <button class="block_quantity__button block_quantity__up"></button>
-                                                                            <button class="block_quantity__button block_quantity__down"></button>
-                                                                        </div>
-                                                                    </div> -->
+                                                                            <span class="text_specification">Quantity</span>
+                                                                            <div class="block_quantity__chooseBlock">
+                                                                                <input class="block_quantity__number" name="quantityNumber" type="text" min="1" value="1">
+                                                                                <button class="block_quantity__button block_quantity__up"></button>
+                                                                                <button class="block_quantity__button block_quantity__down"></button>
+                                                                            </div>
+                                                                        </div> -->
                                                 </div>
                                                 <!-- <div class="large-6 small-12 column end">
-                                                                    <div class="block_goodColor">
-                                                                        <span class="text_specification">Choose your colors:</span>
-                                                                        <div class="block_goodColor__allColors">
-                                                                            <input type="radio" name="colorOfItem" class="radio_button" id="radioColor" checked />
-                                                                            <label for="radioColor" class="block_goodColor__radio block_goodColor__black"></label>
-                                                                            <input type="radio" name="colorOfItem" class="radio_button" id="radioColor2" />
-                                                                            <label for="radioColor2" class="block_goodColor__radio block_goodColor__silver"></label>
+                                                                        <div class="block_goodColor">
+                                                                            <span class="text_specification">Choose your colors:</span>
+                                                                            <div class="block_goodColor__allColors">
+                                                                                <input type="radio" name="colorOfItem" class="radio_button" id="radioColor" checked />
+                                                                                <label for="radioColor" class="block_goodColor__radio block_goodColor__black"></label>
+                                                                                <input type="radio" name="colorOfItem" class="radio_button" id="radioColor2" />
+                                                                                <label for="radioColor2" class="block_goodColor__radio block_goodColor__silver"></label>
+                                                                            </div>
                                                                         </div>
-                                                                    </div>
-                                                                    <button class="button button_addToCard">
-                                                                        Add to Cart
-                                                                    </button>
-                                                                </div> -->
+                                                                        <button class="button button_addToCard">
+                                                                            Add to Cart
+                                                                        </button>
+                                                                    </div> -->
 
                                             </div>
                                         </div>

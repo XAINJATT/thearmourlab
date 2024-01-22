@@ -68,20 +68,20 @@
                                             <label for="-text-" class="font-weight-bold">Discounted Price <span
                                                     class="text-danger">*</span></label>
                                             <input type="number" class="form-control" id="discounted_price"
-                                                name="discounted_price" value="{{ $products->discounted_price }}" >
+                                                name="discounted_price" value="{{ $products->discounted_price }}">
                                         </div>
 
                                         <div class="col-md-6 mb-3">
                                             <label for="soh" class="font-weight-bold">SOH <span
                                                     class="text-danger">*</span></label>
                                             <input type="number" class="form-control" id="soh" name="soh"
-                                                value="{{ $products->soh }}" >
+                                                value="{{ $products->soh }}">
                                         </div>
 
-                                        <div class="col-md-6 mt-3">
+                                        <div class="col-md-12 mt-3">
                                             <label for="description" class="font-weight-bold">Description <span
                                                     class="text-danger">*</span></label>
-                                            <textarea class="form-control" name="description" id="description" rows="3" >{!! $products->description !!}</textarea>
+                                            <textarea class="form-control" name="description" id="description" rows="3">{!! $products->description !!}</textarea>
                                         </div>
 
                                         <div class="col-md-6 mt-3">
@@ -91,23 +91,24 @@
                                                 id="other_images" multiple />
                                             @if (count($products->ProductImages) > 0)
                                                 @foreach ($products->ProductImages as $pImage)
-                                                    <img src="{{ $pImage->image }}" class="mt-2" alt=""
-                                                        width="100px" height="50px">
+                                                    <img src="{{ asset('storage/products/' . $pImage->image) }}"
+                                                        class="mt-2" alt="" width="100px" height="50px">
                                                 @endforeach
                                             @endif
                                         </div>
 
+
                                         <div class="col-12 col-md-6 mb-3">
                                             <label for="product_image" class="font-weight-bold">Product Image <span
                                                     class="text-danger">*</span>&nbsp;&nbsp;
-                                                <a href="{{ $products->product_image }}"
+                                                <a href="{{ asset('storage/products/' . $products->product_image) }}"
                                                     download="{{ $products->product_image }}">
                                                     <i class="fas fa-download"></i>
                                                 </a>
                                             </label>
-                                            <img src="" alt="" class="picture-src"
-                                                id="product_image_preview" onclick="$(this).next().trigger('click')"
-                                                style="width: 60%; display: none;">
+                                            <img src="{{ asset('storage/products/' . $products->product_image) }}"
+                                                alt="" class="picture-src img-fluid" id="product_image_preview"
+                                                onclick="$(this).next().trigger('click')">
                                             <label class="form-control label-style" id="product_image_browse">
                                                 <span class="d-flex justify-content-center align-items-center">
                                                     <span><i class="fa fa-2x fa-camera"></i></span>
@@ -128,7 +129,7 @@
                                                 Cancel
                                             </button>
                                             <button type="submit" name="submit" class="btn btn-primary submitBtn">
-                                                <i class="fa-solid fa-floppy-disk"></i> Save Blog
+                                                <i class="fa-solid fa-floppy-disk"></i> Save Product
                                             </button>
                                         </div>
                                     </div>

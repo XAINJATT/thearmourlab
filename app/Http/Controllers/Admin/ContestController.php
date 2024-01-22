@@ -21,25 +21,48 @@ class ContestController extends Controller
     public function on_off_giveaway()
     {
 
-        $previous_status = Setting::where('name', 'giveaway')->first();
-        if ($previous_status) {
+        if (request("v")) {
+            $previous_status = Setting::where('name', 'giveaway')->first();
+            if ($previous_status) {
 
-            $previous_status->update([
-                'value' => $previous_status->value == 1 ? false : true,
+                $previous_status->update([
+                    'value' => $previous_status->value == 1 ? false : true,
+                ]);
+
+
+                return response()->json(['success' => true]);
+            }
+            $new = Setting::create([
+                'name' => 'giveaway',
+                'value' => true
             ]);
 
-
-            return response()->json(['success' => true]);
-        }
-        $new = Setting::create([
-            'name' => 'giveaway',
-            'value' => true
-        ]);
-
-        if ($new) {
-            return response()->json(['success' => true]);
+            if ($new) {
+                return response()->json(['success' => true]);
+            } else {
+                return response()->json(['success' => false, 'message' => 'Something Went Wrong!']);
+            }
         } else {
-            return response()->json(['success' => false, 'message' => 'Something Went Wrong!']);
+            $previous_status = Setting::where('name', 'wheel')->first();
+            if ($previous_status) {
+
+                $previous_status->update([
+                    'value' => $previous_status->value == 1 ? false : true,
+                ]);
+
+
+                return response()->json(['success' => true]);
+            }
+            $new = Setting::create([
+                'name' => 'wheel',
+                'value' => true
+            ]);
+
+            if ($new) {
+                return response()->json(['success' => true]);
+            } else {
+                return response()->json(['success' => false, 'message' => 'Something Went Wrong!']);
+            }
         }
     }
     /**

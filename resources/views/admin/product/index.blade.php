@@ -23,7 +23,8 @@
                         <div class="card">
                             <div class="card-header row">
                                 <h6 class="text-uppercase mb-0 col-10">HERE ARE ALL PRODUCTS </h6>
-                                <a style="min-width:250px" href="{{ route('admin.product.create') }}" class="btn btn-primary col-2 float-right">Add
+                                <a style="min-width:250px" href="{{ route('admin.product.create') }}"
+                                    class="btn btn-primary col-2 float-right">Add
                                     New Product</a>
                             </div>
                             <div class="card-body" style="overflow: scroll">
@@ -44,8 +45,8 @@
                                         @foreach ($products as $value)
                                             <tr>
                                                 <th scope="row">{{ $loop->iteration }}</th>
-                                                <td><img src="{{ $value->product_image }}" alt="" width="100"
-                                                        height="50"></td>
+                                                <td><img src="{{ asset('storage/products/' . $value->product_image) }}"
+                                                        alt="" width="100" height="50"></td>
                                                 <td>{{ $value->name }}</td>
                                                 <td>{{ $value->price }}</td>
                                                 <td>{{ $value->discounted_price }}</td>
@@ -56,9 +57,9 @@
                                                             <span class="badge bg-success cursor-pointer">Active</span>
                                                         </a>
                                                     @elseif($value->status == 0)
-                                                        <bu onclick="productStatus({{ $value->id }})">
+                                                        <button onclick="productStatus({{ $value->id }})">
                                                             <span class="badge bg-danger cursor-pointer">Inactive</span>
-                                                            </a>
+                                                        </button>
                                                     @endif
                                                 </td>
                                                 <td>

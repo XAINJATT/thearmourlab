@@ -40,13 +40,13 @@ class ContactController extends Controller
             $userDetails = ContactUs::where('id', $Affected->id)->first();
 
 
-            $adminDetails['email'] = "xainjatt@gmail.com";
+            $adminDetails['email'] = env("ADMIN_EMAIL", "info@thearmourlab.com");
 
 
             try {
                 Mail::send('email.ContactUsInformAdminMail', $userDetails->toArray(), function ($m) use ($userDetails) {
-                    $m->from("info@thearmourlab-latest.gw2neverland.com", "The Armour Lab");
-                    $m->to("xainjatt@gmail.com", $userDetails->name)->subject('Email Subject!');
+                    $m->from(env("ADMIN_EMAIL", "info@thearmourlab.com"), "The Armour Lab");
+                    $m->to(env("ADMIN_EMAIL", $userDetails->email), $userDetails->name)->subject('Contact us Query');
                     DB::commit();
                 });
             } catch (Exception $e) {

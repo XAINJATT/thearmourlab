@@ -463,13 +463,13 @@
                                     <tr>
                                         <td valign="windshield">Windshield <sup>*</sup></td>
                                         <td><input type="radio" class="tints" name="windshield" id="windshield80"
-                                                value="80"><label for="windshield80" class="tintLabel">70</label>
+                                                value="70"><label for="windshield80" class="tintLabel">70</label>
                                         </td>
                                         <td><input type="radio" class="tints" name="windshield" id="windshield70"
-                                                value="70"><label for="windshield70" class="tintLabel">50</label>
+                                                value="50"><label for="windshield70" class="tintLabel">50</label>
                                         </td>
                                         <td><input type="radio" class="tints" name="windshield" id="windshield50"
-                                                value="50"><label for="windshield50" class="tintLabel">35</label>
+                                                value="35"><label for="windshield50" class="tintLabel">35</label>
                                         </td>
                                         <td><input type="radio" class="tints" name="windshield" id="windshield20"
                                                 value="20"><label for="windshield20" class="tintLabel">20</label>

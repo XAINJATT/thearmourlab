@@ -2,7 +2,6 @@
     $(document).ready(function() {
         $('#live_images').on('change', function() {
             var files = $(this)[0].files;
-            $('#preview-container').html('');
             for (var i = 0; i < files.length; i++) {
                 var file = files[i];
                 var reader = new FileReader();
@@ -26,8 +25,9 @@
         });
     });
 
-    function removeImage(id){
-        $('#'+id).remove();
+
+    function removeImage(id) {
+        $('#' + id).remove();
     }
 
     $(document).ready(function() {
@@ -45,41 +45,41 @@
         $('#email').trigger('change');
     });
 
-    document.getElementById('general_stages').addEventListener('change', function() {
-        var additionalRowsgs = document.getElementsByClassName('additional-row-gs');
-        for (var i = 0; i < additionalRowsgs.length; i++) {
-            additionalRowsgs[i].style.display = this.checked ? 'table-row' : 'none';
-            additionalRowsgs[i].querySelector('input[type="checkbox"]').checked = true;
-        }
-    });
-    document.getElementById('paint_protection_film_stages').addEventListener('change', function() {
-        var additionalRowsppf = document.getElementsByClassName('additional-row-ppf');
-        for (var i = 0; i < additionalRowsppf.length; i++) {
-            additionalRowsppf[i].style.display = this.checked ? 'table-row' : 'none';
-            additionalRowsppf[i].querySelector('input[type="checkbox"]').checked = true;
-        }
-    });
-    document.getElementById('ceramic_coating_stages').addEventListener('change', function() {
-        var additionalRowsccs = document.getElementsByClassName('additional-row-ccs');
-        for (var i = 0; i < additionalRowsccs.length; i++) {
-            additionalRowsccs[i].style.display = this.checked ? 'table-row' : 'none';
-            additionalRowsccs[i].querySelector('input[type="checkbox"]').checked = true;
-        }
-    });
-    document.getElementById('window_tint_stages').addEventListener('change', function() {
-        var additionalRowswts = document.getElementsByClassName('additional-row-wts');
-        for (var i = 0; i < additionalRowswts.length; i++) {
-            additionalRowswts[i].style.display = this.checked ? 'table-row' : 'none';
-            additionalRowswts[i].querySelector('input[type="checkbox"]').checked = true;
-        }
-    });
-    document.getElementById('final_stages').addEventListener('change', function() {
-        var additionalRowsfs = document.getElementsByClassName('additional-row-fs');
-        for (var i = 0; i < additionalRowsfs.length; i++) {
-            additionalRowsfs[i].style.display = this.checked ? 'table-row' : 'none';
-            additionalRowsfs[i].querySelector('input[type="checkbox"]').checked = true;
-        }
-    });
+    // document.getElementById('general_stages').addEventListener('change', function() {
+    //     var additionalRowsgs = document.getElementsByClassName('additional-row-gs');
+    //     for (var i = 0; i < additionalRowsgs.length; i++) {
+    //         additionalRowsgs[i].style.display = this.checked ? 'table-row' : 'none';
+    //         additionalRowsgs[i].querySelector('input[type="checkbox"]').checked = true;
+    //     }
+    // });
+    // document.getElementById('paint_protection_film_stages').addEventListener('change', function() {
+    //     var additionalRowsppf = document.getElementsByClassName('additional-row-ppf');
+    //     for (var i = 0; i < additionalRowsppf.length; i++) {
+    //         additionalRowsppf[i].style.display = this.checked ? 'table-row' : 'none';
+    //         additionalRowsppf[i].querySelector('input[type="checkbox"]').checked = true;
+    //     }
+    // });
+    // document.getElementById('ceramic_coating_stages').addEventListener('change', function() {
+    //     var additionalRowsccs = document.getElementsByClassName('additional-row-ccs');
+    //     for (var i = 0; i < additionalRowsccs.length; i++) {
+    //         additionalRowsccs[i].style.display = this.checked ? 'table-row' : 'none';
+    //         additionalRowsccs[i].querySelector('input[type="checkbox"]').checked = true;
+    //     }
+    // });
+    // document.getElementById('window_tint_stages').addEventListener('change', function() {
+    //     var additionalRowswts = document.getElementsByClassName('additional-row-wts');
+    //     for (var i = 0; i < additionalRowswts.length; i++) {
+    //         additionalRowswts[i].style.display = this.checked ? 'table-row' : 'none';
+    //         additionalRowswts[i].querySelector('input[type="checkbox"]').checked = true;
+    //     }
+    // });
+    // document.getElementById('final_stages').addEventListener('change', function() {
+    //     var additionalRowsfs = document.getElementsByClassName('additional-row-fs');
+    //     for (var i = 0; i < additionalRowsfs.length; i++) {
+    //         additionalRowsfs[i].style.display = this.checked ? 'table-row' : 'none';
+    //         additionalRowsfs[i].querySelector('input[type="checkbox"]').checked = true;
+    //     }
+    // });
 
     var clearBtn = "#clear";
     var saveBtn = "#save";

@@ -1,4 +1,5 @@
 <div class="row mt-3">
+    {{-- @dd(str_contains(url()->current(), 'warranty')) --}}
     @if (!empty($order->customer_signature))
         @php
             if (str_contains(url()->current(), 'warranty')) {
@@ -11,7 +12,7 @@
         <div class="col-md-7">
             <label for="customer_signature" class="form-label mb-0">
                 @php
-                    if (str_contains(url()->current(), 'warranty')) {
+                    if (!str_contains(url()->current(), 'warranty')) {
                         echo 'Customer  Signature:';
                     } else {
                         echo 'Installer Signature:';
@@ -33,7 +34,7 @@
             <div class="col-md-7">
                 <label for="customer_signature" class="form-label mb-0">
                     @php
-                        if (str_contains(url()->current(), 'warranty')) {
+                        if (!str_contains(url()->current(), 'warranty')) {
                             echo 'Customer  Signature:';
                         } else {
                             echo 'Installer Signature:';

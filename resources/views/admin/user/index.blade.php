@@ -23,7 +23,8 @@
                         <div class="card">
                             <div class="card-header row">
                                 <h6 class="text-uppercase mb-0 col-10">HERE ARE ALL USERS </h6>
-                                <a style="min-width:250px" href="{{ route('admin.user.create') }}" class="btn btn-primary col-2 float-right">Add New
+                                <a style="min-width:250px" href="{{ route('admin.user.create') }}"
+                                    class="btn btn-primary col-2 float-right">Add New
                                     User</a>
                             </div>
                             <div class="card-body" style="overflow: scroll">
@@ -61,13 +62,19 @@
                                                         </button>
                                                     @endif
                                                 </td>
-                                                <td>
+                                                <td class="btn-group">
                                                     <a href="{{ route('admin.user.edit', $user->id) }}"
-                                                        class="text-primary fs-6 mr-1" data-toggle="tooltip" title="Edit">
+                                                        class="btn btn-info fs-6 mr-1" data-toggle="tooltip" title="Edit">
                                                         <i class="fas fa-edit"></i>
                                                     </a>
-                                                    <a onclick="DeleteUser({{ $user->id }})" class="cursor-pointer"><i
-                                                            class="fa fa-trash" aria-hidden="true"></i></a>
+                                                    <a href="{{ route('admin.customer.invoices', $user->id) }}"
+                                                        class="btn btn-primary fs-6 mr-1" data-toggle="tooltip"
+                                                        title="View Invoices">
+                                                        <i class="menu-icon tf-icons bx bx-file"></i>
+                                                    </a>
+                                                    <a onclick="DeleteUser({{ $user->id }})"
+                                                        class="cursor-pointer text-white btn btn-danger"><i class="fa fa-trash"
+                                                            aria-hidden="true"></i></a>
                                                 </td>
                                             </tr>
                                         @endforeach

@@ -11,10 +11,10 @@ class Product extends Model
     use HasFactory, SoftDeletes;
     public $guarded = [];
 
-    public function getProductImageAttribute($value)
-    {
-        return !empty($value) ? asset('storage/products/' . $value) : "";
-    }
+    // public function getProductImageAttribute($value)
+    // {
+    //     return !empty($value) ? asset('' . $value) : "";
+    // }
 
     public function ProductImages(){
         return $this->hasMany(ProductImage::class,'product_id','id');

@@ -65,6 +65,7 @@
         <div class="container-fluid px-xl-5">
             <section class="py-5">
                 <div class="row">
+                    <!-- Alerts -->
                     <div class="col-md-12">
                         @if (session()->has('success-message'))
                             <div class="alert alert-success">
@@ -76,52 +77,51 @@
                             </div>
                         @endif
                     </div>
-                    <div class="col-lg-12 mb-12">
+
+                    <!-- Work Orders Title -->
+                    <div class="col-lg-12 mb-4">
                         <div class="card">
-                            <div class="card-header row">
-                                <h6 class="text-uppercase mb-0 col-12">HERE ARE ALL WORK ORDER </h6>
-                            </div>
-                            <div class="card-body" style="overflow: scroll">
-                                <table id="data_table" class="table table-striped table-hover card-text">
-                                    <thead>
-                                        <tr>
-                                            <th>#</th>
-                                            <th>First Name</th>
-                                            <th>Last Name</th>
-                                            <th>Email</th>
-                                            <th>Tel</th>
-                                            <th>Action</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @foreach ($orders as $order)
-                                            <tr>
-                                                <th scope="row">{{ $loop->iteration }}</th>
-                                                <td>{{ $order->first_name }}</td>
-                                                <td>{{ $order->last_name }}</td>
-                                                <td>{{ $order->email }}</td>
-                                                <td>{{ $order->phone }}</td>
-                                                <td>
-                                                    <div class="btn-group">
-                                                        <a href="{{ route('user.invoice.view', $order->id) }}"
-                                                            class="btn btn-dark fs-6 mr-1" data-toggle="tooltip"
-                                                            title="View">
-                                                            <i class="fas fa-eye"></i>
-                                                        </a>
-                                                        <a href="{{ route('frontend.live', ["id" => $order->id]) }}"
-                                                            class="btn btn-danger fs-6 mr-1" data-toggle="tooltip"
-                                                            title="Status">
-                                                            <i class="fas fa-check"></i>
-                                                        </a>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        @endforeach
-                                    </tbody>
-                                </table>
+                            <div class="card-header">
+                                <h6 class="text-uppercase mb-0">HERE ARE ALL WORK ORDERS</h6>
                             </div>
                         </div>
                     </div>
+
+                    <!-- Work Orders Cards -->
+                    @forelse ($orders as $order)
+                        <div onclick="window.location.href = '{{ route('user.invoice.view', $order->id) }}'" class="col-md-4 mb-4 cursor-pointer">
+                            <div class="card h-100">
+                                <div class="card-header">
+                                    Work Order #{{ $loop->iteration }}
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">{{ $order->first_name }} {{ $order->last_name }}</h5>
+                                    <p class="card-text">
+                                    <p class="card-title">Created At: {{ $order->created_at->format('M d, Y') }}</p>
+                                    Total Price: <strong>$ {{ $order->total_price }}</strong>
+                                    </p>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="btn-group">
+                                        <a href="{{ route('user.invoice.view', $order->id) }}" class="btn btn-dark"
+                                            data-toggle="tooltip" title="View">
+                                            <i class="fas fa-eye"></i>
+                                        </a>
+                                        {{-- <a href="{{ route('frontend.live', ['id' => $order->id]) }}" class="btn btn-danger"
+                                            data-toggle="tooltip" title="Status">
+                                            <i class="fas fa-check"></i>
+                                        </a> --}}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    @empty
+                        <div class="col">
+                            <div class="alert alert-warning" role="alert">
+                                No work orders available.
+                            </div>
+                        </div>
+                    @endforelse
                 </div>
             </section>
         </div>

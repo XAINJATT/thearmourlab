@@ -24,6 +24,30 @@
 
         <section class="contact-area pb-5">
             <div class="container">
+
+                @if (session('success-message'))
+                    <div class="alert alert-success">
+                        {{ session('success-message') }}
+                    </div>
+                @endif
+
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
+
+                @if (session('error-message'))
+                    <div class="alert alert-danger">
+                        {{ session('error-message') }}
+                    </div>
+                @endif
+
+
                 <div class="row justify-content-center">
 
                     <div class="col-12 col-md-8 mt-3">

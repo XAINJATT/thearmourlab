@@ -76,7 +76,7 @@ class ContestController extends Controller
   
     public function liveContest()
     {
-        $give_away_status = Setting::where('name','giveaway')->first();
+        $give_away_status = Setting::where('name','wheel')->first();
         if ($give_away_status) {   
             if ($give_away_status->value == 1) {
                 $contests = [];

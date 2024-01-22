@@ -25,7 +25,7 @@
                             Sign in
                         @endif
                     </a>
-                    <a href="{{ route('frontend.live') }}" class="btn btn-primary ms-3">Track</a>
+                    {{-- <a href="{{ route('frontend.live') }}" class="btn btn-primary ms-3">Track</a> --}}
                     @if (get_giveaway_status())
                         <a href="{{ route('frontend.contest') }}" class="btn btn-primary ms-3">Spin To Win</a>
                     @endif
@@ -83,9 +83,9 @@
                                 @endif
                             </a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="{{ route('frontend.live') }}" class="btn btn-primary ms-3">Track</a>
-                        </li>
+                        </li> --}}
                         @if (get_giveaway_status())
                             <li>
                                 <a href="{{ route('frontend.contest') }}" class="btn btn-primary ms-3">Spin To Win</a>
@@ -132,6 +132,10 @@
         padding: 0 !important;
     }
 
+    .packages .package-list th{
+        text-align: center;
+    }
+
     @media only screen and (max-width: 991px) {
         .rs-nav .social-media {
             margin-top: auto;
@@ -140,7 +144,6 @@
     }
 
     @media (min-width: 1200px) {
-
         .container,
         .container-sm,
         .container-md,

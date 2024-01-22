@@ -186,7 +186,7 @@
                                 <!-- Check Box Start -->
                                 <div class="row p-sm-3 p-0">
                                     <div class="col-12 col-md-6 mt-2">
-                                        <label for="live_images" class="font-weight-bold">Status Images :<span
+                                        <label for="live_images" class="font-weight-bold">Project Progress Images :<span
                                                 class="text-danger">*</span></label>
                                         <div id="preview-container" class="row"></div>
                                         <label class="form-control label-style" for="live_images" id="live_images_browse">
@@ -198,7 +198,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="row p-sm-3 p-0">
+                                {{-- <div class="row p-sm-3 p-0">
                                     <div class="col-lg-6 col-12 invoice-actions">
                                         <h6 class="pb-2">General Stages (applicable to all services)</h6>
                                         <div class="card mb-4">
@@ -637,7 +637,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
+                                </div> --}}
 
                                 <hr class="mx-n4" />
                                 <div class="row p-sm-3 p-0">

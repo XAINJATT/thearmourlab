@@ -112,6 +112,27 @@
                     </ul>
                 </li>
 
+                <li class="menu-item {{ request()->is('admin/upload-invoice*') ? 'active open' : '' }}">
+                    <a href="javascript:void(0)" class="menu-link menu-toggle">
+                        <i class="menu-icon tf-icons bx bx-file"></i>
+                        <div data-i18n="User interface">Invoices</div>
+                    </a>
+                    <ul class="menu-sub">
+                        <li class="menu-item {{ request()->is('admin/upload-invoice') ? 'active' : '' }}">
+                            <a href="{{ route('admin.upload-invoice.create') }}" class="menu-link">
+                                <div data-i18n="Alerts">Upload Invoice</div>
+                            </a>
+                        </li>
+                        <!-- The Customer Invoices section might be accessed from within a specific customer's profile view -->
+                        {{-- <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                <div data-i18n="Alerts">Customer Invoices</div>
+                            </a>
+                        </li> --}}
+                    </ul>
+                </li>
+
+
                 <li class="menu-item {{ request()->is('admin/warranty*') ? 'active open' : '' }}">
                     <a href="javascript:void(0)" class="menu-link menu-toggle">
                         <i class="menu-icon tf-icons bx bx-user"></i>
@@ -252,26 +273,38 @@
                     <span class="menu-header-text">Manage</span>
                 </li>
 
+                <!-- Work Order -->
                 <li class="menu-item {{ request()->is('invoice') ? 'active' : '' }}">
                     <a href="{{ route('user.invoice') }}" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-food-menu"></i>
+                        <i class="menu-icon tf-icons bx bx-receipt"></i>
                         <div>Work Order</div>
                     </a>
                 </li>
 
+                <!-- Invoices -->
+                <li class="menu-item {{ request()->is('invoices') ? 'active' : '' }}">
+                    <a href="{{ route('user.view-invoices') }}" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-file"></i>
+                        <div data-i18n="User interface">Invoices</div>
+                    </a>
+                </li>
+
+                <!-- Warranty -->
                 <li class="menu-item {{ request()->is('warranty') ? 'active' : '' }}">
                     <a href="{{ route('user.warranty') }}" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-food-menu"></i>
+                        <i class="menu-icon tf-icons bx bx-shield"></i>
                         <div>Warranty</div>
                     </a>
                 </li>
 
+                <!-- Shop Orders Management -->
                 <li class="menu-item {{ request()->is('shop/order*') ? 'active' : '' }}">
                     <a href="{{ route('user.shopOrder') }}" class="menu-link">
-                        <i class="menu-icon tf-icons bx bx-food-menu"></i>
-                        <div>Shop Orders Management</div>
+                        <i class="menu-icon tf-icons bx bx-cart"></i>
+                        <div>Shop Orders</div>
                     </a>
                 </li>
+
                 {{-- <li class="menu-item {{ request()->is('contests*') ? 'active' : '' }}">
           <a href="{{ route('contests') }}" class="menu-link">
             <i class="menu-icon tf-icons bx bx-user"></i>

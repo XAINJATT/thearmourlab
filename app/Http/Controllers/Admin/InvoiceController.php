@@ -359,20 +359,26 @@ class InvoiceController extends Controller
         }
 
 
+        // Initialize the $imageNames array
         $imageNames = [];
 
+        // Decode existing images into an array
+        $existingImages = $order->status_images ? json_decode($order->status_images, true) : [];
+
+        // Check if new images are uploaded
         if ($request->hasfile('live_images')) {
             foreach ($request->file('live_images') as $image) {
-                $name = time() . rand(1, 100) . '.' . $image->extension();
-                $image->storeAs('images', $name, 'public');
-                $imageNames[] = $name; // Store the image name in the array
+                $name = time() . rand(1, 100) . '-name.' . $image->extension();
+                $image->storeAs('public/images/', $name);
+                $imageNames[] = $name; 
             }
-            $jsonNames = json_encode($imageNames);
+            // Merge old images with new images
+            $allImages = array_merge($existingImages, $imageNames);
+            $jsonNames = json_encode($allImages);
         } else {
-            $jsonNames = $order->status_images;
+            $jsonNames = json_encode($existingImages);
         }
-
-        // Convert the array to JSON
+        // dd($jsonNames);
 
 
         // defects Image End //

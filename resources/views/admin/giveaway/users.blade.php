@@ -62,6 +62,18 @@
                     </div>
                     <div class="col-lg-12 mb-12">
 
+                        @if (get_giveaway_status("giveaway"))
+                            <div class="card-header row">
+                                <a style="min-width:100%" class="btn btn-danger col-3 text-white on_off_giveaway">Stop
+                                    Giveaways</a>
+                            </div>
+                        @else
+                            <div class="card-header row">
+                                <a style="min-width:100%" class="btn btn-success col-3 text-white on_off_giveaway">Start
+                                    Giveaways</a>
+                            </div>
+                        @endif
+
 
                         <div class="card">
                             <div class="card-header row">
@@ -111,58 +123,9 @@
     </div>
     <!-- Contact End -->
 @endsection
-{{-- 
+
 @section('scripts')
     <script>
-        function DeleteContest(id) {
-            Swal.fire({
-                title: 'Are you sure?',
-                text: "You won't be able to revert this!",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#ef3737',
-                cancelButtonColor: '#6c757d',
-                confirmButtonText: 'Yes, delete it!'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    $.ajax({
-                        type: "POST",
-                        url: "{{ url('admin/contests/delete') }}" + '/' + id, // Pass the product parameter
-                        data: {
-                            _token: "{{ csrf_token() }}"
-                        },
-                        success: function(response) {
-                            if (response.success) {
-                                Swal.fire(
-                                    'Deleted!',
-                                    'Your Prize has been deleted.',
-                                    'success'
-                                ).then(() => {
-                                    // Reload the page after a short delay (e.g., 0 seconds)
-                                    setTimeout(() => {
-                                        location.reload();
-                                    }, 0);
-                                });
-                            } else {
-                                Swal.fire(
-                                    'Error!',
-                                    'An error occurred while deleting the item.',
-                                    'error'
-                                );
-                            }
-                        },
-                        error: function() {
-                            Swal.fire(
-                                'Error!',
-                                'An error occurred while deleting the item.',
-                                'error'
-                            );
-                        }
-                    });
-                }
-            });
-        }
-
         $(document).on("click", ".on_off_giveaway", function() {
 
             Swal.fire({
@@ -178,7 +141,7 @@
                 if (result.value) {
                     $.ajax({
                         method: "GET",
-                        url: "{{ route('admin.on_off_giveaway') }}",
+                        url: "{{ route('admin.on_off_giveaway') . '?v=giveaway' }}",
                         success: function(data) {
                             $("#preloader").css("display", "none");
                             location.reload();
@@ -193,4 +156,4 @@
             return false;
         });
     </script>
-@endsection --}}
+@endsection
