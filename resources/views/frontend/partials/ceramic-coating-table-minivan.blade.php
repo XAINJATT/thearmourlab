@@ -20,12 +20,12 @@
 
     <tr class="package-list">
         <td>PRICE</td>
-        <td id="price1" class="price" data-val="val1">$449.99</td>
-        <td id="price2" class="price" data-val="val2">$749.99</td>
-        <td id="price3" class="price" data-val="val3">$1049.99</td>
-        <td id="price4" class="price" data-val="val4">$1249.99</td>
-        <td id="price5" class="price" data-val="val5">$449.99</td>
-        <td id="price6" class="price" data-val="val6">$249.99</td>
+        <td class="price">$449.99</td>
+        <td class="price">$749.99</td>
+        <td class="price">$1049.99</td>
+        <td class="price">$1249.99</td>
+        <td class="price">$449.99</td>
+        <td class="price">$249.99</td>
     </tr>
     <tr class="package-list">
         <td>ESTIMATED TIME</td>
