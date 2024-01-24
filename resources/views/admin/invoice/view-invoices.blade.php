@@ -44,10 +44,24 @@
                         <div class="card-body">
                             <h5 class="card-title">Uploaded: {{ $invoice->created_at->format('M d, Y') }}</h5>
                             <p class="card-text">Click the button below to download the invoice.</p>
+                        </div>
+                        <div class="card-footer">
                             <a href="{{ Storage::url($invoice->file_path) }}" target="_blank" class="btn btn-success">
                                 <i class="fa fa-download"></i> Download Invoice
                             </a>
+                            @if (auth()->user()->isAdmin())
+                                <form action="{{ route('admin.upload-invoice.delete', $invoice->id) }}" method="POST"
+                                    style="display: inline-block;">
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger"
+                                        onclick="return confirm('Are you sure you want to delete this invoice?')">
+                                        <i class="fa fa-trash"></i> Delete
+                                    </button>
+                                </form>
+                            @endif
                         </div>
+
                     </div>
                 </div>
             @empty

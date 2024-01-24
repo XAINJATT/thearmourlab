@@ -68,10 +68,9 @@
                                                         <div class="car-label" data-price1="$399.99	"
                                                             data-price2="$599.99" data-price3="$899.99"
                                                             data-price4="$1099.99" data-price5="$399.99"
-                                                            data-price6="$199.99" data-time1="8 Hours" data-time2="9H"
-                                                            data-time3="9H GRAPHENE INFUSED"
-                                                            data-time4="10H GRAPHENE INFUSED" data-time5="✖"
-                                                            data-time6="✖">
+                                                            data-price6="$199.99" data-time1="24 HRS"
+                                                            data-time2="24 HRS" data-time3="48 HRS" data-time4="48 HRS"
+                                                            data-time5="2-4 HRS" data-time6="8 HRS">
                                                             Small Car
                                                         </div>
                                                     </div>
@@ -87,10 +86,9 @@
                                                         <div class="car-label" data-price1="$399.99	"
                                                             data-price2="$599.99" data-price3="$899.99"
                                                             data-price4="$1099.99" data-price5="$399.99"
-                                                            data-price6="$199.99" data-time1="8 Hours" data-time2="9H"
-                                                            data-time3="9H GRAPHENE INFUSED"
-                                                            data-time4="10H GRAPHENE INFUSED" data-time5="✖"
-                                                            data-time6="✖">
+                                                            data-price6="$199.99" data-time1="24 HRS"
+                                                            data-time2="24 HRS" data-time3="48 HRS" data-time4="48 HRS"
+                                                            data-time5="2-4 HRS" data-time6="8 HRS">
                                                             Sedan
                                                         </div>
                                                     </div>
@@ -106,10 +104,9 @@
                                                         <div class="car-label" data-price1="$449.99"
                                                             data-price2="$699.99" data-price3="$999.99"
                                                             data-price4="$1199.99" data-price5="$449.99"
-                                                            data-price6="$249.99" data-time1="8 Hours" data-time2="9H"
-                                                            data-time3="9H GRAPHENE INFUSED"
-                                                            data-time4="10H GRAPHENE INFUSED" data-time5="✖"
-                                                            data-time6="✖">
+                                                            data-price6="$249.99" data-time1="24 HRS"
+                                                            data-time2="24 HRS" data-time3="48 HRS" data-time4="48 HRS"
+                                                            data-time5="3-5 HRS" data-time6="8 HRS">
                                                             Large SUV
                                                         </div>
                                                     </div>
@@ -122,14 +119,12 @@
                                                                 src="https://www.washmenow.ca/wp-content/themes/flatsome-child/img/minivan-icon.png"
                                                                 alt="car icon" />
                                                         </div>
-                                                        <div class="car-label" data-price1="$449.99"
-                                                            data-price2="$749.99" data-price3="$1049.99"
-                                                            data-price4="$1249.99" data-price5="$449.99"
-                                                            data-price6="$249.99"
-                                                            data-time1="8 Hours" data-time2="9H"
-                                                            data-time3="9H GRAPHENE INFUSED"
-                                                            data-time4="10H GRAPHENE INFUSED" data-time5="✖"
-                                                            data-time6="✖">
+                                                        <div class="car-label" data-price1="$399.99	"
+                                                            data-price2="$599.99" data-price3="$899.99"
+                                                            data-price4="$1099.99" data-price5="$399.99"
+                                                            data-price6="$199.99" data-time1="24 HRS"
+                                                            data-time2="24 HRS" data-time3="48 HRS" data-time4="48 HRS"
+                                                            data-time5="3-5 HRS" data-time6="8 HRS">
                                                             Minivan/Pickup
                                                         </div>
                                                     </div>
@@ -156,10 +151,10 @@
                                                         <div id="price11" class="price" data-label="Price"></div>
                                                     </div>
                                                     <div class="show-packeg-detail">
-                                                        <div id="time11" data-label="Hardness of coating"></div>
                                                         <div id="price11" data-label="Price"></div>
-                                                        <div data-label="ESTIMATED TIME">
-                                                            <span>24 HRS</span>
+                                                        <div id="time11" data-label="Estimated Time"></div>
+                                                        <div data-label="Hardness of coating">
+                                                            <span>8 HRS</span>
                                                         </div>
 
                                                         <div data-label="Warranty">
@@ -218,10 +213,10 @@
                                                         <div id="price22" class="price" data-label="Price"></div>
                                                     </div>
                                                     <div class="show-packeg-detail">
-                                                        <div id="time22" data-label="Hardness of coating"></div>
                                                         <div id="price22" data-label="Price"></div>
-                                                        <div data-label="ESTIMATED TIME">
-                                                            <span>24 HRS</span>
+                                                        <div id="time22" data-label="Estimated Time"></div>
+                                                        <div data-label="Hardness of coating">
+                                                            <span>9 HRS</span>
                                                         </div>
 
                                                         <div data-label="Warranty">
@@ -279,10 +274,10 @@
                                                         <div id="price33" class="price" data-label="Price"></div>
                                                     </div>
                                                     <div class="show-packeg-detail">
-                                                        <div id="time33" data-label="Hardness of coating"></div>
                                                         <div id="price33" data-label="Price"></div>
-                                                        <div data-label="ESTIMATED TIME">
-                                                            <span>48 HRS</span>
+                                                        <div id="time33" data-label="Estimated Time"></div>
+                                                        <div data-label="Hardness of coating">
+                                                            <span>9H GRAPHENE INFUSED</span>
                                                         </div>
 
                                                         <div data-label="Warranty">
@@ -340,10 +335,10 @@
                                                         <div id="price44" class="price" data-label="Price"></div>
                                                     </div>
                                                     <div class="show-packeg-detail">
-                                                        <div id="time44" data-label="Hardness of coating"></div>
                                                         <div id="price44" data-label="Price"></div>
-                                                        <div data-label="ESTIMATED TIME">
-                                                            <span>48 HRS</span>
+                                                        <div id="time44" data-label="Estimated Time"></div>
+                                                        <div data-label="Hardness of coating">
+                                                            <span>10H GRAPHENE INFUSED</span>
                                                         </div>
 
                                                         <div data-label="Warranty">
@@ -401,10 +396,10 @@
                                                         <div id="price55" class="price" data-label="Price"></div>
                                                     </div>
                                                     <div class="show-packeg-detail">
-                                                        <div id="time55" data-label="Hardness of coating"></div>
                                                         <div id="price55" data-label="Price"></div>
-                                                        <div data-label="ESTIMATED TIME">
-                                                            <span>3-5 HRS</span>
+                                                        <div id="time55" data-label="Estimated Time"></div>
+                                                        <div data-label="Hardness of coating">
+                                                            <span>✖</span>
                                                         </div>
                                                         <div data-label="TWO BUCKET WASH">
                                                             <span>✖</span>
@@ -457,10 +452,10 @@
                                                         <div id="price66" class="price" data-label="Price"></div>
                                                     </div>
                                                     <div class="show-packeg-detail">
-                                                        <div id="time66" data-label="Hardness of coating"></div>
                                                         <div id="price66" data-label="Price"></div>
-                                                        <div data-label="ESTIMATED TIME">
-                                                            <span>8 HRS</span>
+                                                        <div id="time66" data-label="Estimated Time"></div>
+                                                        <div data-label="Hardness of coating">
+                                                            <span>✖</span>
                                                         </div>
                                                         <div data-label="TWO BUCKET WASH">
                                                             <span>✔</span>

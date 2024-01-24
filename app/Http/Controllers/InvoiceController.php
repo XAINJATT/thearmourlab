@@ -53,4 +53,20 @@ class InvoiceController extends Controller
 
         return view('admin.invoice.view-invoices', compact('user', 'invoices'));
     }
+
+    public function destroy(Invoice $invoice)
+    {
+        // Check if the user is an admin
+        if (!auth()->user()->isAdmin()) {
+            return redirect()->back()->with('error-message', 'You do not have permission to delete this invoice.');
+        }
+
+        // Delete the file from storage
+        Storage::delete($invoice->file_path);
+
+        // Delete the invoice record from the database
+        $invoice->delete();
+
+        return redirect()->back()->with('success-message', 'Invoice deleted successfully.');
+    }
 }

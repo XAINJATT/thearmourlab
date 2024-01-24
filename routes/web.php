@@ -146,6 +146,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/upload-invoice', [ControllersInvoiceController::class, 'store'])->name('admin.upload-invoice.store');
     Route::get('admin/customer/{id}/invoices', [ControllersInvoiceController::class, 'showCustomerInvoices'])->name('admin.customer.invoices');
     Route::get('invoices', [ControllersInvoiceController::class, 'showCustomerInvoices'])->name('user.view-invoices');
+    Route::delete('admin/upload-invoice/{invoice}', [ControllersInvoiceController::class, 'destroy'])->name('admin.upload-invoice.delete');
 
     // WarrantyController
     Route::get('admin/warranty', [WarrantyController::class, 'index'])->name('admin.warranty');
