@@ -46,7 +46,7 @@ class ContactController extends Controller
             try {
                 Mail::send('email.ContactUsInformAdminMail', $userDetails->toArray(), function ($m) use ($userDetails) {
                     $m->from(env("ADMIN_EMAIL", "info@thearmourlab.com"), "The Armour Lab");
-                    $m->to(env("ADMIN_EMAIL", $userDetails->email), $userDetails->name)->subject('Contact us Query');
+                    $m->to($userDetails->email, $userDetails->name)->subject('Contact us Query');
                     DB::commit();
                 });
             } catch (Exception $e) {

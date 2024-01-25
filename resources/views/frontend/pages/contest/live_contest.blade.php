@@ -250,5 +250,5 @@
         </script>
     @endif
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-    <script src="{{ asset('assets/js/contest.js') }}"></script>
+    <script src="{{ asset('assets/js/contest.js?v=1') }}"></script>
 @endsection
