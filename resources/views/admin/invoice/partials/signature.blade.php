@@ -43,7 +43,7 @@
                 </label>
                 <div style="padding: 30px" class="row p-3">
                     <div style="width: 100%">
-                        <canvas style="background: #dedede" id="signature-pad" width="270" height="300"></canvas>
+                        <canvas style="background: #dedede" id="signature-pad" width="350" height="200"></canvas>
                     </div>
 
                     <input hidden="" name="signature" value="" id="signature_value" />
@@ -73,3 +73,23 @@
 
 
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var canvas = document.getElementById('signature-pad');
+
+        // Function to set canvas size
+        function setCanvasSize() {
+            var width = window.innerWidth > 500 ? 350 : 270;
+            var height = window.innerWidth > 500 ? 200 : 300;
+            canvas.width = width;
+            canvas.height = height;
+        }
+
+        // Set canvas size on load
+        setCanvasSize();
+
+        // Update canvas size on window resize
+        window.addEventListener('resize', setCanvasSize);
+    });
+</script>

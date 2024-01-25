@@ -33,8 +33,8 @@
 
         .mainbox {
             position: relative;
-            width: 400px;
-            height: 400px;
+            width: 530px;
+            height: 530px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -103,10 +103,12 @@
         .mainbox .wheel .number span {
             position: relative;
             transform: rotate(45deg);
-            font-size: 0.5em;
+            font-size: 18px;
             font-weight: 400;
             color: #fff;
             text-shadow: 3px 5px 2px rgba(0, 0, 0, 0.15);
+            bottom: -30px;
+            left: 30px;
         }
 
         .mainbox .wheel .number span::before {
@@ -242,12 +244,8 @@
             console.log(prizes, start_angle);
 
             $("#addUserToContestBtn").on("click", function() {
-
                 $('#userForm').addClass('d-none');
                 $('#spinner-wheel').removeClass('d-none');
-
-                
-
             });
         </script>
     @endif

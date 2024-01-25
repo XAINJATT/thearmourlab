@@ -158,7 +158,7 @@ from the manufacture of your car during the paint process which is out of our co
 </p>
 
 <h5>Ceramic Coating Terms & Conditions</h5>
-•<strong> &nbsp; Maintenance</strong>: Adequate maintenance per our guide is crucial for the coating's efficacy and warranty
+•<strong>&nbsp;Maintenance</strong>: Adequate maintenance per our guide is crucial for the coating's efficacy and warranty
 validity.
 <br>
 •<strong>&nbsp;Warranty</strong>: Coverage is conditional on proper maintenance. Neglect or improper care may void the

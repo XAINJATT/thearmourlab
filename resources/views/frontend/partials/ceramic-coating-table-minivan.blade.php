@@ -107,6 +107,39 @@
         <td> ✔</td>
         <td> ✔</td>
     </tr>
+
+
+
+    <tr class="package-list">
+        <td>Fabric</td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✔<br /></td>
+        <td> ✖<br /></td>
+    </tr>
+    <tr class="package-list">
+        <td>Suede</td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✔<br /></td>
+        <td> ✖<br /></td>
+    </tr>
+    <tr class="package-list">
+        <td>Leather Plastic</td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✖<br /></td>
+        <td> ✔<br /></td>
+        <td> ✖<br /></td>
+    </tr>
+
+
+
     <tr class="package-list">
         <td>Wheel coating</td>
         <td>✖</td>

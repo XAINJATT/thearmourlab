@@ -220,6 +220,7 @@ class ContestController extends Controller
         $lastWeek = now()->subWeek();
 
         $names = GiveawayEntry::where('created_at', '>=', $lastWeek)
+            ->where("prize", "=", NULL)
             ->orderBy('id', 'DESC')
             ->pluck('name')
             ->join("\n");

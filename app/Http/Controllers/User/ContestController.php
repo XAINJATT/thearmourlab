@@ -44,7 +44,7 @@ class ContestController extends Controller
 
 
         if ($contest) {
-            return response()->json(['success' => true]);
+            return response()->json(['success' => true, 'message' => 'User added to contest successfully', 'contest' => $contest]);
         }else{
             return response()->json(['success' => false, 'message' => 'Something Went Wrong!']);
         }

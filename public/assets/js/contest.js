@@ -35,6 +35,32 @@ $(".spinBtn").on("click", function () {
                 success: function (response) {
                     console.log(response.message);
 
+                    setTimeout(function () {
+                        applause.play();
+                        // swal({
+                        //     title: "Congratulations",
+                        //     text: "You Won The " + winner.name + ".",
+                        //     icon: "success",
+                        // });
+
+                        Swal.fire({
+                            title: "Congratulations",
+                            text:
+                                "You Won The " +
+                                winner.name +
+                                "." +
+                                "Your Tracking ID is: " +
+                                response.contest.id,
+                            icon: "success",
+                            confirmButtonColor: "#3085d6",
+                            confirmButtonText: "Okay!",
+                        }).then((result) => {
+                            $(".wheel").css("transition", "initial");
+                            $(".wheel").css("transform", "rotate(0deg)");
+                            window.location.href = "/";
+                        });
+                    }, 5500);
+
                     // Handle success, e.g., show a success message to the user
                 },
                 error: function (error) {
@@ -65,26 +91,6 @@ $(".spinBtn").on("click", function () {
     console.log(value, finalRotation, $(".wheel").css("transform"));
 
     // Winner Alert
-    setTimeout(function () {
-        applause.play();
-        // swal({
-        //     title: "Congratulations",
-        //     text: "You Won The " + winner.name + ".",
-        //     icon: "success",
-        // });
-
-        Swal.fire({
-            title: "Congratulations",
-            text: "You Won The " + winner.name + ".",
-            icon: "success",
-            confirmButtonColor: "#3085d6",
-            confirmButtonText: "Okay!",
-        }).then((result) => {
-            $(".wheel").css("transition", "initial");
-            $(".wheel").css("transform", "rotate(0deg)");
-            window.location.href = "/";
-        });
-    }, 5500);
 });
 
 // // Starting Code

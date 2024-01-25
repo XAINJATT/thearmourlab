@@ -122,7 +122,7 @@
                                                         <div class="car-label" data-price1="$499.99"
                                                             data-price2="$749.99" data-price3="$1049.99"
                                                             data-price4="$1249.99" data-price5="$399.99"
-                                                            data-price6="$199.99" data-time1="24 HRS"
+                                                            data-price6="$249.99" data-time1="24 HRS"
                                                             data-time2="24 HRS" data-time3="48 HRS" data-time4="48 HRS"
                                                             data-time5="3-5 HRS" data-time6="8 HRS">
                                                             Minivan/Pickup
@@ -179,6 +179,19 @@
                                                         <div data-label="Window coating">
                                                             <span>✖</span>
                                                         </div>
+
+
+                                                        <div data-label="Fabric">
+                                                            <span>✖</span>
+                                                        </div>
+                                                        <div data-label="Suede">
+                                                            <span>✖</span>
+                                                        </div>
+                                                        <div data-label="Leather Plastic">
+                                                            <span>✖</span>
+                                                        </div>
+
+
                                                         <div data-label="Wheel coating">
                                                             <span>✖</span>
                                                         </div>
@@ -241,6 +254,19 @@
                                                         <div data-label="Window coating">
                                                             <span>✔</span>
                                                         </div>
+
+
+                                                        <div data-label="Fabric">
+                                                            <span>✖</span>
+                                                        </div>
+                                                        <div data-label="Suede">
+                                                            <span>✖</span>
+                                                        </div>
+                                                        <div data-label="Leather Plastic">
+                                                            <span>✖</span>
+                                                        </div>
+
+
                                                         <div data-label="Wheel coating">
                                                             <span>✔</span>
                                                         </div>
@@ -302,6 +328,19 @@
                                                         <div data-label="Window coating">
                                                             <span>✔</span>
                                                         </div>
+
+
+                                                        <div data-label="Fabric">
+                                                            <span>✖</span>
+                                                        </div>
+                                                        <div data-label="Suede">
+                                                            <span>✖</span>
+                                                        </div>
+                                                        <div data-label="Leather Plastic">
+                                                            <span>✖</span>
+                                                        </div>
+
+
                                                         <div data-label="Wheel coating">
                                                             <span>✔</span>
                                                         </div>
@@ -363,6 +402,19 @@
                                                         <div data-label="Window coating">
                                                             <span>✔</span>
                                                         </div>
+
+
+                                                        <div data-label="Fabric">
+                                                            <span>✖</span>
+                                                        </div>
+                                                        <div data-label="Suede">
+                                                            <span>✖</span>
+                                                        </div>
+                                                        <div data-label="Leather Plastic">
+                                                            <span>✖</span>
+                                                        </div>
+
+
                                                         <div data-label="Wheel coating">
                                                             <span>✔</span>
                                                         </div>
@@ -417,8 +469,20 @@
                                                             <span>$599.99</span>
                                                         </div>
                                                         <div data-label="Window coating">
+                                                            <span>✖</span>
+                                                        </div>
+
+                                                        <div data-label="Fabric">
                                                             <span>✔</span>
                                                         </div>
+                                                        <div data-label="Suede">
+                                                            <span>✔</span>
+                                                        </div>
+                                                        <div data-label="Leather Plastic">
+                                                            <span>✔</span>
+                                                        </div>
+
+
                                                         <div data-label="Wheel coating">
                                                             <span>✖</span>
                                                         </div>
@@ -475,6 +539,20 @@
                                                         <div data-label="Window coating">
                                                             <span>✔</span>
                                                         </div>
+
+
+
+                                                        <div data-label="Fabric">
+                                                            <span>✖</span>
+                                                        </div>
+                                                        <div data-label="Suede">
+                                                            <span>✖</span>
+                                                        </div>
+                                                        <div data-label="Leather Plastic">
+                                                            <span>✖</span>
+                                                        </div>
+
+
                                                         <div data-label="Wheel coating">
                                                             <span>✖</span>
                                                         </div>

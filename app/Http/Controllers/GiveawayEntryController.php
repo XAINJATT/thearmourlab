@@ -10,9 +10,9 @@ class GiveawayEntryController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name' => 'required|max:255',
-            'phone' => 'required|max:255',
-            'email' => 'required|email|max:255'
+            'name' => 'required|max:255|unique:giveaway_entries,name',
+            'phone' => 'required|max:255|unique:giveaway_entries,phone',
+            'email' => 'required|email|max:255|unique:giveaway_entries,email'
         ]);
 
         GiveawayEntry::create($request->all());

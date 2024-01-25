@@ -147,14 +147,6 @@ class BlogController extends Controller
             }
         }
 
-        if (!empty($blogsDetails)) {
-            $temp = explode("/", $blogsDetails->blog_writer_picture);
-            $fileName = end($temp);
-            $Path = public_path('storage/blogs/') . $fileName;
-            if (file_exists($Path)) {
-                unlink($Path);
-            }
-        }
         $blogsDetails->delete();
 
         if ($blogsDetails) {

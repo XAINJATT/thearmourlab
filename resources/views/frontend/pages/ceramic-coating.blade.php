@@ -487,7 +487,7 @@
 
 
                 <div style="flex-wrap: wrap-reverse;" class="row">
-                    <div class="col-lg-4 col-md-5">
+                    <div class="col-lg-4 col-md-12">
                         <aside class="sticky-top pb-1">
                             <!-- <div class="widget">
                                                                                                             <ul class="service-menu">
@@ -591,7 +591,7 @@
                             </div>
                         </aside>
                     </div>
-                    <div class="col-lg-8 col-md-7">
+                    <div class="col-lg-8 col-md-12">
                         <div class="row">
                             <div class="col-xl-6">
                                 <div class="ttr-media mb-30">
