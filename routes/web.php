@@ -32,6 +32,7 @@ use App\Http\Controllers\User\WarrantyController as UserWarrantyController;
 use App\Http\Controllers\Admin\ContestController as AdminContestController;
 use App\Http\Controllers\User\ContestController as UserContestController;
 use App\Http\Controllers\ContestController;
+use App\Http\Controllers\FaqController;
 use App\Http\Controllers\GiveawayEntryController;
 use App\Http\Controllers\InvoiceController as ControllersInvoiceController;
 use Illuminate\Support\Facades\Artisan;
@@ -195,6 +196,14 @@ Route::middleware(['auth'])->group(function () {
     Route::post('admin/media/delete/{id}', [MediaController::class, 'destroy'])->name('admin.media.delete');
     Route::post('admin/media/status/{id}', [MediaController::class, 'status'])->name('admin.media.status');
 
+    // FaqController
+    Route::get('admin/faq', [FaqController::class, 'index'])->name('admin.faq');
+    Route::get('admin/faq/create', [FaqController::class, 'create'])->name('admin.faq.create');
+    Route::post('admin/faq/store', [FaqController::class, 'store'])->name('admin.faq.store');
+    Route::get('admin/faq/edit/{id}', [FaqController::class, 'edit'])->name('admin.faq.edit');
+    Route::post('admin/faq/update', [FaqController::class, 'update'])->name('admin.faq.update');
+    Route::post('admin/faq/delete/{id}', [FaqController::class, 'destroy'])->name('admin.faq.delete');
+    Route::post('admin/faq/status/{id}', [FaqController::class, 'status'])->name('admin.faq.status');
 
     // ShopOrdersController
     Route::get('admin/shop/order', [ShopOrdersController::class, 'index'])->name('admin.shopOrder');
