@@ -11,7 +11,8 @@ class CeramicCoatingController extends Controller
 {
     public function index()
     {
-        return view('frontend.pages.ceramic-coating');
+        $ccFaqs = Faq::where('category', 'cc')->where('status', 1)->latest("created_at")->get(); 
+        return view('frontend.pages.ceramic-coating', compact('ccFaqs'));
     }
     public function faq()
     {
