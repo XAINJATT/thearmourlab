@@ -45,7 +45,7 @@
                                 <h4 class="secondary-title">
                                     NOT ALL COATINGS ARE CREATED EQUAL
                                 </h4>
-                                <a class="cta-primary" href="{{ route('icon-rocklear.index') }}">
+                                <a class="cta-primary" href="{{ route('icon-rocklear.contact') }}">
                                     <span>Contact for more details</span>
                                 </a>
                             </div>
@@ -267,7 +267,7 @@
                         </div>
                         <div class="cta-btns">
                             {{-- <a href="#" class="cta-primary">Find an Installer</a> --}}
-                            <a href="{{ route('icon-rocklear.index') }}" class="cta-secondary">Become an installer</a>
+                            <a href="{{ route('icon-rocklear.contact') }}" class="cta-secondary">Become an installer</a>
                         </div>
                     </div>
                 </div>
@@ -733,7 +733,7 @@
                             </h6>
                         </div>
                         <div class="cta-btns">
-                            <a href="{{ route('icon-rocklear.index') }}" class="cta-primary w-100">Inquire</a>
+                            <a href="{{ route('icon-rocklear.contact') }}" class="cta-primary w-100">Inquire</a>
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-12">
@@ -1015,7 +1015,7 @@
                     </div>
                 </div>
                 <div class="cta-btn mt-5 pt-5 text-center">
-                    <a href="{{ route('icon-rocklear.index') }}" class="cta-primary">
+                    <a href="{{ route('icon-rocklear.contact') }}" class="cta-primary">
                         <span class="btn-text">A SYSTEM FOR LIFE</span>
                     </a>
                 </div>
@@ -1445,10 +1445,10 @@
               "
                         sizes="(max-width: 800px) 100vw, 800px" />
                     <div class="cta-btns mt-5 mb-5">
-                        <a href="{{ route('icon-rocklear.index') }}" rel="noopener noreferrer">
+                        <a href="{{ route('icon-rocklear.contact') }}" rel="noopener noreferrer">
                             <button class="cta-primary">INQUIRIES</button>
                         </a>
-                        <a href="{{ route('icon-rocklear.index') }}" rel="noopener noreferrer">
+                        <a href="{{ route('icon-rocklear.contact') }}" rel="noopener noreferrer">
                             <button class="cta-secondary">BECOME AN INSTALLER</button>
                         </a>
                     </div>

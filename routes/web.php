@@ -115,6 +115,7 @@ Route::get('/paint-protection-film', [PaintProtectionFilmController::class, 'ind
 Route::get('live-contests', [UserContestController::class, 'liveContest'])->name('frontend.contest');
 
 Route::get("icon-rocklear", [IconRockLearController::class, "index"])->name("icon-rocklear.index");
+Route::get("icon-rocklear/contact", [IconRockLearController::class, "index"])->name("icon-rocklear.contact");
 Route::post("icon-rocklear/store", [IconRockLearController::class, "index"])->name("icon-rocklear.store");
 
 Route::post('addUserToContest', [UserContestController::class, 'addUserToContest'])->name('addUserToContest');
