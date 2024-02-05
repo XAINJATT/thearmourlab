@@ -891,7 +891,7 @@ body p {
     height: 100%;
 }
 .section-12 .card-body{
-  background-color: #1e1d1de8;
+  background-color: #1e1d1de8 !important;
   background-image: url(../images/Rectangle-10-copy1.png);
   background-position: bottom center;
   background-repeat: no-repeat;
