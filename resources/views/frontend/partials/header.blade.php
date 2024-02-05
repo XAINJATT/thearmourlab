@@ -148,10 +148,6 @@
         width: 40px;
     }
 
-    .menu-links .cta-primary {
-        max-width: 259px;
-        padding: 24px 12px 20px 12px;
-    }
 
     .cta-primary {
         --e-global-color-primary: #cfb728;
@@ -188,6 +184,13 @@
         background-image: linear-gradient(90deg,
                 var(--e-global-color-accent) 3%,
                 #ffffff 0%);
+    }
+
+    
+    .menu-links .cta-primary {
+        max-width: 259px;
+        padding: 0px 12px 0px 12px !important;
+    margin-top: 14px;
     }
 
     @media only screen and (max-width: 991px) {
