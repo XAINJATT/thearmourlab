@@ -33,6 +33,7 @@ use App\Http\Controllers\Admin\ContestController as AdminContestController;
 use App\Http\Controllers\User\ContestController as UserContestController;
 use App\Http\Controllers\ContestController;
 use App\Http\Controllers\GiveawayEntryController;
+use App\Http\Controllers\IconRockLearController;
 use App\Http\Controllers\InvoiceController as ControllersInvoiceController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
@@ -112,6 +113,10 @@ Route::get('/window-tint', [WindowTintSimulatorController::class, 'indexSimulato
 Route::get('/paint-protection-film', [PaintProtectionFilmController::class, 'indexSimulator'])->name('frontend.PaintProtectionFilmSimulator');
 
 Route::get('live-contests', [UserContestController::class, 'liveContest'])->name('frontend.contest');
+
+Route::get("icon-rocklear", [IconRockLearController::class, "index"])->name("icon-rocklear.index");
+Route::post("icon-rocklear/store", [IconRockLearController::class, "index"])->name("icon-rocklear.store");
+
 Route::post('addUserToContest', [UserContestController::class, 'addUserToContest'])->name('addUserToContest');
 
 /* FRONTEND ROUTE - END */
