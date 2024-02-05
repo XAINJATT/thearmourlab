@@ -267,7 +267,8 @@
                         </div>
                         <div class="cta-btns">
                             {{-- <a href="#" class="cta-primary">Find an Installer</a> --}}
-                            <a href="{{ route('icon-rocklear.contact') }}" class="cta-secondary">Become an installer</a>
+                            <a href="{{ route('icon-rocklear.contact') }}" class="cta-secondary">Become an
+                                installer</a>
                         </div>
                     </div>
                 </div>
@@ -843,11 +844,11 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="iframe-container">
-                          <iframe class="elementor-video" frameborder="0" allowfullscreen=""
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            title="Icon Rocklear Protection and Correction" width="440" height="360"
-                            src="https://www.youtube.com/embed/Y64MWlBVmz8?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Ficonrocklear.com&amp;widgetid=1"
-                            id="widget2" __idm_id__="56844289"></iframe>
+                            <iframe class="elementor-video" frameborder="0" allowfullscreen=""
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                title="Icon Rocklear Protection and Correction" width="440" height="360"
+                                src="https://www.youtube.com/embed/Y64MWlBVmz8?controls=1&amp;rel=0&amp;playsinline=0&amp;modestbranding=0&amp;autoplay=0&amp;enablejsapi=1&amp;origin=https%3A%2F%2Ficonrocklear.com&amp;widgetid=1"
+                                id="widget2" __idm_id__="56844289"></iframe>
                         </div>
                     </div>
                     <div class="col-lg-7">
