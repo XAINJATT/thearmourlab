@@ -8,5 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class IconRockLearModel extends Model
 {
     use HasFactory;
+    protected $table= "icon_rocklear";
     public $guarded = [];
 }
