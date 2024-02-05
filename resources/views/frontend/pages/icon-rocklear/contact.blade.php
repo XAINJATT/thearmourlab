@@ -194,8 +194,19 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <form method="POST" action="{{ route('icon-rocklear.store') }}" class="contact-form">
-                          @csrf
+                            @csrf
                             <div class="row">
+                                <div class="col-md-12">
+                                    @if (session()->has('success-message'))
+                                        <div class="alert alert-success">
+                                            {{ session('success-message') }}
+                                        </div>
+                                    @elseif(session()->has('error-message'))
+                                        <div class="alert alert-danger">
+                                            {{ session('error-message') }}
+                                        </div>
+                                    @endif
+                                </div>
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
                                         <input type="text" placeholder="Full Name" name="full_name"
@@ -253,8 +264,8 @@
                                 <div class="col-md-12 col-lg-12">
                                     <div class="form-group">
                                         <input type="submit" class="cta-primary text-white"
-                                            placeholder="Additional Information" name="submit"
-                                            id="submit" value="Submit Now" />
+                                            placeholder="Additional Information" name="submit" id="submit"
+                                            value="Submit Now" />
                                     </div>
                                 </div>
                             </div>
