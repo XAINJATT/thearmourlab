@@ -64,11 +64,18 @@
                         <!-- <li class="active"> <a href="{{ route('cart.list') }}"> Cart </a> </li> -->
                         <!-- Add this in your HTML or Blade file -->
                         {{-- <li class="active"> <a href="#"> FAQ </a> </li> --}}
-                        <li>
+                        {{-- <li>
                             <a href="{{ route('cart.list') }}" class="flex items-center text-white">
                                 <i class="fas fa-shopping-cart text-primary" style="font-size: 1.5em;"></i>
                                 <span class="badge text-primary border border-primary rounded-circle"
                                     style="padding-bottom: 2px">{{ Cart::getTotalQuantity() }}</span>
+                            </a>
+                        </li> --}}
+                        <li>
+                            <a href="{{ route('cart.list') }}" class="flex items-center text-white cta-primary">
+                                <img class="img-fluid" src="{{ asset('images/cropped-android-chrome-512x512-1-192x192.png') }}"
+                                    alt="">
+                                <span class="" style="padding-bottom: 2px">Icon Rocklear</span>
                             </a>
                         </li>
                     </ul>
@@ -132,8 +139,37 @@
         padding: 0 !important;
     }
 
-    .packages .package-list th{
+    .packages .package-list th {
         text-align: center;
+    }
+
+    .cta-primary {
+        font-family: "Montserrat", Sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        fill: #ffffff;
+        color: #ffffff;
+        background-color: transparent;
+        background-image: linear-gradient(90deg,
+                var(--e-global-color-primary) 2%,
+                var(--e-global-color-accent) 0%);
+        border-radius: 0px 0px 0px 0px;
+        padding: 16px 26px 16px 26px;
+        box-shadow: none;
+        text-decoration: none;
+        display: inline-block;
+        line-height: 1;
+        text-align: center;
+        transition: all 0.3s;
+    }
+
+    .cta-primary:hover {
+        color: var(--e-global-color-secondary);
+        background-color: transparent;
+        background-image: linear-gradient(90deg,
+                var(--e-global-color-accent) 3%,
+                #ffffff 0%);
     }
 
     @media only screen and (max-width: 991px) {
@@ -144,6 +180,7 @@
     }
 
     @media (min-width: 1200px) {
+
         .container,
         .container-sm,
         .container-md,
