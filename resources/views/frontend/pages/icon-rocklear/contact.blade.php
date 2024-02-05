@@ -194,6 +194,7 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
                         <form method="POST" action="{{ route('icon-rocklear.store') }}" class="contact-form">
+                          @csrf
                             <div class="row">
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
