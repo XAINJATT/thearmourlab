@@ -86,7 +86,8 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 my-3 ">
                     <div class="feature-container left footer-info-bx">
                         <div class="icon-lg">
-                            <span class="icon-cell"><img src="images/icon/contact/icon3.png" alt="" /></span>
+                            <span class="icon-cell"><img src="{{ asset('images/icon/contact/icon3.png') }}"
+                                    alt="" /></span>
                         </div>
                         <div class="icon-content">
                             <p>701 Millway Ave Unit 6 Concord, Ontario L4K3S7 Canada</p>
@@ -96,7 +97,8 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 my-3 ">
                     <div class="feature-container left footer-info-bx">
                         <div class="icon-lg">
-                            <span class="icon-cell"><img src="images/icon/contact/icon1.png" alt="" /></span>
+                            <span class="icon-cell"><img src="{{ asset('images/icon/contact/icon1.png') }}"
+                                    alt="" /></span>
                         </div>
                         <div class="icon-content">
                             <p><a class="text-white" href="tel:(416) 675 6853">(416) 675 6853</a></p>
@@ -106,7 +108,8 @@
                 <div class="col-lg-3 col-md-6 col-sm-6 my-3 ">
                     <div class="feature-container left footer-info-bx">
                         <div class="icon-lg">
-                            <span class="icon-cell"><img src="images/icon/contact/icon2.png" alt="" /></span>
+                            <span class="icon-cell"><img src="{{ asset('images/icon/contact/icon2.png') }}"
+                                    alt="" /></span>
                         </div>
                         <div class="icon-content">
                             <p><a class="text-white" href="mailto:info@thearmourlab.com">info@thearmourlab.com</a> </p>
