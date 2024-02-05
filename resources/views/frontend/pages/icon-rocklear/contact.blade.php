@@ -23,9 +23,9 @@
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <link rel="stylesheet" href="{{asset("css/ep-marquee.css")}}" />
+    <link rel="stylesheet" href="{{ asset('css/ep-marquee.css') }}" />
 
-    <link rel="stylesheet" href="{{asset("icon_rocklear/css/style.css")}}" />
+    <link rel="stylesheet" href="{{ asset('icon_rocklear/css/style.css') }}" />
 </head>
 
 <body>
@@ -101,56 +101,56 @@
                                     <div class="swiper-wrapper">
                                         <div class="swiper-slide">
                                             <img decoding="async" width="843" height="588"
-                                                src="{{asset("images/Layer-4-copy.png")}}" class="attachment-full size-full"
-                                                alt=""
+                                                src="{{ asset('images/Layer-4-copy.png') }}"
+                                                class="attachment-full size-full" alt=""
                                                 srcset="
-                            {{asset("images/Layer-4-copy.png")}}         843w,
-                            {{asset("images/Layer-4-copy-300x209.png")}} 300w,
-                            {{asset("images/Layer-4-copy-768x536.png")}} 768w
+                            {{ asset('images/Layer-4-copy.png') }}         843w,
+                            {{ asset('images/Layer-4-copy-300x209.png') }} 300w,
+                            {{ asset('images/Layer-4-copy-768x536.png') }} 768w
                           "
                                                 sizes="(max-width: 843px) 100vw, 843px" />
                                         </div>
                                         <div class="swiper-slide">
                                             <img loading="lazy" decoding="async" width="789" height="588"
-                                                src="{{asset("images/Aviations.png")}}" class="attachment-full size-full"
-                                                alt=""
+                                                src="{{ asset('images/Aviations.png') }}"
+                                                class="attachment-full size-full" alt=""
                                                 srcset="
-                            {{asset("images/Aviations.png")}} 789w,
-                            {{asset("images/Aviations-300x224.png")}} 300w,
-                            {{asset("images/Aviations-768x572.png")}} 768w
+                            {{ asset('images/Aviations.png') }} 789w,
+                            {{ asset('images/Aviations-300x224.png') }} 300w,
+                            {{ asset('images/Aviations-768x572.png') }} 768w
                           "
                                                 sizes="(max-width: 789px) 100vw, 789px" />
                                         </div>
                                         <div class="swiper-slide">
                                             <img loading="lazy" decoding="async" width="1006" height="646"
-                                                src="{{asset("images/Agriculture-min.png")}}" class="attachment-full size-full"
-                                                alt=""
+                                                src="{{ asset('images/Agriculture-min.png') }}"
+                                                class="attachment-full size-full" alt=""
                                                 srcset="
-                            {{asset("images/Agriculture-min.png")}} 1006w,
-                            {{asset("images/Agriculture-min-300x193.png")}}  300w,
-                            {{asset("images/Agriculture-min-768x493.png")}}  768w
+                            {{ asset('images/Agriculture-min.png') }} 1006w,
+                            {{ asset('images/Agriculture-min-300x193.png') }}  300w,
+                            {{ asset('images/Agriculture-min-768x493.png') }}  768w
                           "
                                                 sizes="(max-width: 1006px) 100vw, 1006px" />
                                         </div>
                                         <div class="swiper-slide">
                                             <img loading="lazy" decoding="async" width="1019" height="588"
-                                                src="{{asset("images/Trucking-min.png")}}" class="attachment-full size-full"
-                                                alt=""
+                                                src="{{ asset('images/Trucking-min.png') }}"
+                                                class="attachment-full size-full" alt=""
                                                 srcset="
-                            {{asset("images/Trucking-min.png")}}         1019w,
-                            {{asset("images/Trucking-min-300x173.png")}}  300w,
-                            {{asset("images/Trucking-min-768x443.png")}}  768w
+                            {{ asset('images/Trucking-min.png') }}         1019w,
+                            {{ asset('images/Trucking-min-300x173.png') }}  300w,
+                            {{ asset('images/Trucking-min-768x443.png') }}  768w
                           "
                                                 sizes="(max-width: 1019px) 100vw, 1019px" />
                                         </div>
                                         <div class="swiper-slide">
                                             <img decoding="async" width="908" height="588"
-                                                src="{{asset("images/Auto-min.png")}}" class="attachment-full size-full"
-                                                alt=""
+                                                src="{{ asset('images/Auto-min.png') }}"
+                                                class="attachment-full size-full" alt=""
                                                 srcset="
-                            {{asset("images/Auto-min.png")}}         908w,
-                            {{asset("images/Auto-min-300x194.png")}} 300w,
-                            {{asset("images/Auto-min-768x497.png")}} 768w
+                            {{ asset('images/Auto-min.png') }}         908w,
+                            {{ asset('images/Auto-min-300x194.png') }} 300w,
+                            {{ asset('images/Auto-min-768x497.png') }} 768w
                           "
                                                 sizes="(max-width: 908px) 100vw, 908px" />
                                         </div>
@@ -279,7 +279,7 @@
                 <div class="row gap-3">
                     <div class="col-sm-12 col-md-12 col-lg-4">
                         <div class="image-area">
-                            <img src="{{asset("images/Group-32.png")}}" class="img-fluid" alt="" />
+                            <img src="{{ asset('images/Group-32.png') }}" class="img-fluid" alt="" />
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-12 col-lg-7">
@@ -291,8 +291,8 @@
                                         data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
                                         aria-controls="collapseOne">
                                         <span>
-                                            <img width="40" height="44" src="{{asset("{{asset("images/q-icon.png")}}")}}"
-                                                alt="" />
+                                            <img width="40" height="44"
+                                                src="{{ asset('images/q-icon.png') }}" alt="" />
                                         </span>
                                         Is Icon Rocklear a Ceramic Coating?
                                     </button>
@@ -320,8 +320,8 @@
                                         data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
                                         aria-controls="collapseTwo">
                                         <span>
-                                            <img width="40" height="44" src="{{asset("{{asset("images/q-icon.png")}}")}}"
-                                                alt="" />
+                                            <img width="40" height="44"
+                                                src="{{ asset('images/q-icon.png') }}" alt="" />
                                         </span>
                                         What is Icon Rocklear?
                                     </button>
@@ -346,8 +346,8 @@
                                         data-bs-toggle="collapse" data-bs-target="#collapseThree"
                                         aria-expanded="false" aria-controls="collapseThree">
                                         <span>
-                                            <img width="40" height="44" src="{{asset("images/q-icon.png")}}"
-                                                alt="" />
+                                            <img width="40" height="44"
+                                                src="{{ asset('images/q-icon.png') }}" alt="" />
                                         </span>
                                         Can you put other materials on top of Icon Rocklear?
                                     </button>
@@ -374,8 +374,8 @@
                                         data-bs-toggle="collapse" data-bs-target="#collapseFour"
                                         aria-expanded="false" aria-controls="collapseFour">
                                         <span>
-                                            <img width="40" height="44" src="{{asset("images/q-icon.png")}}"
-                                                alt="" />
+                                            <img width="40" height="44"
+                                                src="{{ asset('images/q-icon.png') }}" alt="" />
                                         </span>
                                         How long can I expect my Icon Rocklear system to last?
                                     </button>
