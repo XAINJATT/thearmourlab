@@ -72,7 +72,7 @@
                             </a>
                         </li> --}}
                         <li>
-                            <a href="{{ route('cart.list') }}" class="flex items-center cta-primary">
+                            <a href="{{ route('icon-rocklear.index') }}" class="flex items-center cta-primary">
                                 <img class="img-fluid"
                                     src="{{ asset('images/cropped-android-chrome-512x512-1-192x192.png') }}"
                                     alt="">
