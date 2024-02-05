@@ -193,7 +193,7 @@
                         </h2>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <form action="{{ route('icon-rocklear.store') }}" class="contact-form">
+                        <form method="POST" action="{{ route('icon-rocklear.store') }}" class="contact-form">
                             <div class="row">
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
