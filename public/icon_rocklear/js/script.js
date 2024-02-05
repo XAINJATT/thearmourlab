@@ -199,12 +199,12 @@ $(document).ready(function () {
   });
 
   // Link the opencustomTab function to tab clicks if necessary
-  $(".customTab").click(function (evt) {
+  $(document).on("click", ".customTab", function (evt) {
     var customTabName = this.getAttribute("data-customTab");
     opencustomTab(evt, customTabName);
   });
 
-  $(".read-more").on("click", function () {
+  $(document).on("click", ".read-more", function () {
     $(this).prev(".content-details").slideToggle(100); // Use slideToggle() on the paragraph
 
     // Optionally, change the text of the link based on the state
