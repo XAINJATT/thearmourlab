@@ -2003,6 +2003,6 @@
     ];
 </script>
 
-<script src="js/script.js?v=1"></script>
+<script src="js/script.js?v=1asd"></script>
 
 </html>
