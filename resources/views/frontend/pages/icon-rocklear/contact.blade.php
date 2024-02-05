@@ -227,7 +227,7 @@
                                 </div>
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" placeholder="City" name="City" id="City" />
+                                        <input type="text" placeholder="City" name="city" id="City" />
                                     </div>
                                 </div>
 
@@ -253,8 +253,8 @@
                                 <div class="col-md-12 col-lg-12">
                                     <div class="form-group">
                                         <input type="submit" class="cta-primary text-white"
-                                            placeholder="Additional Information" name="additional_information"
-                                            id="additional_information" value="Submit Now" />
+                                            placeholder="Additional Information" name="submit"
+                                            id="submit" value="Submit Now" />
                                     </div>
                                 </div>
                             </div>
