@@ -399,7 +399,7 @@
             </div>
         </section>
     </main>
-
+@endsection
 
 @section('scripts')
     <script src="https://unpkg.com/image-compare-viewer@1.6.2/dist/image-compare-viewer.min.js"></script>
