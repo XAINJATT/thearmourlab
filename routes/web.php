@@ -194,6 +194,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/contact', [ContactUsController::class, 'index'])->name('admin.contact');
     Route::post('admin/contact/delete/{id}', [ContactUsController::class, 'delete'])->name('admin.contact.delete');
 
+    
     // MediaController
     Route::get('admin/media', [MediaController::class, 'index'])->name('admin.media');
     Route::get('admin/media/create', [MediaController::class, 'create'])->name('admin.media.create');

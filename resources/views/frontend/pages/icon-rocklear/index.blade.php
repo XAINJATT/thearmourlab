@@ -45,7 +45,7 @@
                                 <h4 class="secondary-title">
                                     NOT ALL COATINGS ARE CREATED EQUAL
                                 </h4>
-                                <a class="cta-primary" href="{{ route('icon-rocklear.contact') }}">
+                                <a class="cta-primary" href="{{ route('frontend.contact') }}">
                                     <span>Contact for more details</span>
                                 </a>
                             </div>
@@ -734,7 +734,7 @@
                             </h6>
                         </div>
                         <div class="cta-btns">
-                            <a href="{{ route('icon-rocklear.contact') }}" class="cta-primary w-100">Inquire</a>
+                            <a href="{{ route('frontend.contact') }}" class="cta-primary w-100">Inquire</a>
                         </div>
                     </div>
                     <div class="col-lg-8 col-md-12">
@@ -1016,7 +1016,7 @@
                     </div>
                 </div>
                 <div class="cta-btn mt-5 pt-5 text-center">
-                    <a href="{{ route('icon-rocklear.contact') }}" class="cta-primary">
+                    <a href="{{ route('frontend.contact') }}" class="cta-primary">
                         <span class="btn-text">A SYSTEM FOR LIFE</span>
                     </a>
                 </div>
@@ -1446,7 +1446,7 @@
               "
                         sizes="(max-width: 800px) 100vw, 800px" />
                     <div class="cta-btns mt-5 mb-5">
-                        <a href="{{ route('icon-rocklear.contact') }}" rel="noopener noreferrer">
+                        <a href="{{ route('frontend.contact') }}" rel="noopener noreferrer">
                             <button class="cta-primary">INQUIRIES</button>
                         </a>
                         <a href="{{ route('icon-rocklear.contact') }}" rel="noopener noreferrer">
