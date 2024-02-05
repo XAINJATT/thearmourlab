@@ -29,7 +29,7 @@ class IconRockLearController extends Controller
             'additional_information' => 'required',
         ]);
 
-        $data = $request->all();
+        $data = $request->except(["submit", "_token"]);
         $data['user_id'] = auth()->user()->id ?? NULL;
         if (IconRockLearModel::create($data)) {
             return redirect()->back()->with('success-message', 'Your request has been sent successfully');
