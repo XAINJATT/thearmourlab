@@ -73,7 +73,8 @@
                         </li> --}}
                         <li>
                             <a href="{{ route('cart.list') }}" class="flex items-center text-white cta-primary">
-                                <img class="img-fluid" src="{{ asset('images/cropped-android-chrome-512x512-1-192x192.png') }}"
+                                <img class="img-fluid"
+                                    src="{{ asset('images/cropped-android-chrome-512x512-1-192x192.png') }}"
                                     alt="">
                                 <span class="" style="padding-bottom: 2px">Icon Rocklear</span>
                             </a>
@@ -143,7 +144,20 @@
         text-align: center;
     }
 
+    .menu-links .cta-primary img {
+        width: 40px;
+    }
+
+    .menu-links .cta-primary {
+        max-width: 259px;
+        padding: 24px 12px 20px 12px;
+    }
+
     .cta-primary {
+        --e-global-color-primary: #cfb728;
+        --e-global-color-secondary: #54595f;
+        --e-global-color-text: #afafaf;
+        --e-global-color-accent: #0d9344;
         font-family: "Montserrat", Sans-serif;
         font-size: 13px;
         font-weight: 700;
@@ -165,6 +179,10 @@
     }
 
     .cta-primary:hover {
+        --e-global-color-primary: #cfb728;
+        --e-global-color-secondary: #54595f;
+        --e-global-color-text: #afafaf;
+        --e-global-color-accent: #0d9344;
         color: var(--e-global-color-secondary);
         background-color: transparent;
         background-image: linear-gradient(90deg,
