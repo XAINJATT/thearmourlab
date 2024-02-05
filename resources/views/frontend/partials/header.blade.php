@@ -72,7 +72,7 @@
                             </a>
                         </li> --}}
                         <li>
-                            <a href="{{ route('cart.list') }}" class="flex items-center text-white cta-primary">
+                            <a href="{{ route('cart.list') }}" class="flex items-center cta-primary">
                                 <img class="img-fluid"
                                     src="{{ asset('images/cropped-android-chrome-512x512-1-192x192.png') }}"
                                     alt="">
@@ -179,18 +179,18 @@
         --e-global-color-secondary: #54595f;
         --e-global-color-text: #afafaf;
         --e-global-color-accent: #0d9344;
-        color: var(--e-global-color-secondary);
+        color: var(--e-global-color-secondary) !important;
         background-color: transparent;
         background-image: linear-gradient(90deg,
                 var(--e-global-color-accent) 3%,
                 #ffffff 0%);
     }
 
-    
+
     .menu-links .cta-primary {
         max-width: 259px;
         padding: 0px 12px 0px 12px !important;
-    margin-top: 14px;
+        margin-top: 14px;
     }
 
     @media only screen and (max-width: 991px) {
