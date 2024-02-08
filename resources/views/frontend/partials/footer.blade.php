@@ -121,34 +121,31 @@
             <div class="row">
                 <div class="col-xl-3 col-md-6">
                     <div class="widget footer_widget">
-                        <h5 class="footer-title">The Armour Lab</h5>
-                        <p class="mb-20">Elevate your vehicle's resilience with our specialized PPF and Ceramic Coating
-                            services. Our expert team is dedicated to enhancing and protecting your car's appearance.
-                            Expect excellence in every layer of protection.</p>
+                        <h5 class="footer-title">@lang("messages.The Armour Lab")</h5>
+                        <p class="mb-20">@lang("messages.Elevate your vehicle's resilience with our specialized PPF and Ceramic Coating services. Our expert team is dedicated to enhancing and protecting your car's appearance. Expect excellence in every layer of protection.")</p>
                         <div class="ft-content">
                             <i class="fa fa-phone"></i>
-                            <span>Talk To Our Support</span>
+                            <span>@lang("messages.Talk To Our Support")</span>
                             <h4><a href="tel:(416) 675 6853">(416) 675 6853</a></h4>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-3 col-md-6">
                     <div class="widget widget-link-2">
-                        <h5 class="footer-title">Our Solutions</h5>
+                        <h5 class="footer-title">@lang("messages.Our Solutions")</h5>
                         <ul>
-                            <li><a href="{{ route('frontend.CeramicCoating') }}">Ceramic coating</a></li>
-                            <li><a href="{{ route('frontend.PaintProtectionFilmSimulator') }}">Paint protection
-                                    film</a>
+                            <li><a href="{{ route('frontend.CeramicCoating') }}">@lang("messages.Ceramic coating")</a></li>
+                            <li><a href="{{ route('frontend.PaintProtectionFilmSimulator') }}">@lang("messages.Paint protection film") </a>
                             </li>
-                            <li><a href="{{ route('frontend.WindowTintSimulator') }}">Window tints</a></li>
-                            <li><a href="{{ route('frontend.contact') }}">Contact Us</a></li>
+                            <li><a href="{{ route('frontend.WindowTintSimulator') }}">@lang("messages.Window tints")</a></li>
+                            <li><a href="{{ route('frontend.contact') }}">@lang("messages.Contact Us")</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="col-xl-3 col-md-6">
                     <div class="widget recent-posts-entry">
-                        <h5 class="footer-title">Latest news</h5>
+                        <h5 class="footer-title">@lang("messages.Latest news")</h5>
                         <div class="widget-post-bx">
                             @foreach (\App\Helpers\SiteHelper::get_blogs() as $blog)
                                 <div class="widget-post clearfix">

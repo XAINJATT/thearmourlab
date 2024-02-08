@@ -33,6 +33,7 @@ use App\Http\Controllers\Admin\ContestController as AdminContestController;
 use App\Http\Controllers\User\ContestController as UserContestController;
 use App\Http\Controllers\ContestController;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\frontend\LanguageController;
 use App\Http\Controllers\GiveawayEntryController;
 use App\Http\Controllers\InvoiceController as ControllersInvoiceController;
 use Illuminate\Support\Facades\Artisan;
@@ -65,6 +66,8 @@ Route::get('/password', function () {
 
 
 /* FRONTEND ROUTE - START */
+
+Route::get('lang/{lang}', [LanguageController::class, 'switchLang'])->name('lang.switch');
 
 Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
 Route::get('/ceramic-coating', [CeramicCoatingController::class, 'index'])->name('frontend.CeramicCoating');

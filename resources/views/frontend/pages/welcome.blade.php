@@ -36,9 +36,8 @@
                         </div>
                         <div class="slider-content container text-center text-white">
                             <div class="content-inner">
-                                <h6 class="sub-title" data-swiper-parallax="-200">Welcome to The Armour Lab</h6>
-                                <h2 class="title" data-swiper-parallax="-400">Your Premier Destination for PPF and Ceramic
-                                    Coatings</h2>
+                                <h6 class="sub-title" data-swiper-parallax="-200">@lang('messages.Welcome to The Armour Lab')</h6>
+                                <h2 class="title" data-swiper-parallax="-400">@lang('messages.Your Premier Destination for PPF and Ceramic Coatings')</h2>
                                 <div class="car-wheel wheel2" data-swiper-parallax="-600">
                                     <img src="images/slider/car2.png" alt="">
                                     <div class="wheel-1"><img src="images/slider/wheel2.png" alt=""></div>
@@ -60,15 +59,11 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 mb-40">
                         <div class="heading-bx mb-4">
-                            <h6 class="title-ext text-primary">about Us</h6>
-                            <h2 class="title">EXPERTS IN AUTOMOTIVE PAINT PROTECTION & CERAMIC COATINGS</h2>
-                            <p>At The Armour Lab, we're not just about detailing cars; we're about preserving perfection.
-                                With over a decade in the automotive protection industry, we've mastered the art of
-                                shielding your vehicle from the elements. Our highly skilled technicians use cutting-edge
-                                technology to apply premium Paint Protection Films and Ceramic Coatings, ensuring your car
-                                doesn't just shine but is also safeguarded against scratches, dirt, and UV rays.</p>
+                            <h6 class="title-ext text-primary">@lang('messages.about Us')</h6>
+                            <h2 class="title">@lang('messages.EXPERTS IN AUTOMOTIVE PAINT PROTECTION & CERAMIC COATINGS')</h2>
+                            <p>@lang('messages.At The Armour Lab, we are not just about detailing cars; we are about preserving perfection')</p>
                         </div>
-                        <a href="{{route('frontend.about')}}" class="btn btn-primary">About Us</a>
+                        <a href="{{route('frontend.about')}}" class="btn btn-primary">@lang('messages.about Us')</a>
                     </div>
                     <div class="col-lg-7 mb-30">
                         <div class="about-media">
@@ -76,14 +71,12 @@
                                 <img src="images/male-worker-wrapping-car-with-ptotective-foil.jpg" alt="">
                             </div>
                             <div class="about-contact bg-primary text-white">
-                                <span>Ready to elevate your vehicle's resilience and radiance?</span>
+                                <span>@lang("messages.Ready to elevate your vehicle's resilience and radiance?")</span>
                                 <br>
                                 <h3 class="number mb-15 text-white"><a class="text-white" href="tel:(416) 675 6853">(416)
                                         675 6853</a> </h3>
-                                <p class="mb-20"> Connect with our specialists or Book An Appointment for
-                                    a consultation. Trust in The Armour Lab to add an invisible armour to your prized
-                                    possession.</p>
-                                <a href="{{ route('frontend.contact') }}" class="btn btn-light">BOOK AN APPOINTMENT</a>
+                                <p class="mb-20"> @lang("messages.Connect with our specialists or Book An Appointment for a consultation. Trust in The Armour Lab to add an invisible armour to your prized possession.")</p>
+                                <a href="{{ route('frontend.contact') }}" class="btn btn-light">@lang('messages.BOOK AN APPOINTMENT')</a>
                             </div>
                         </div>
                     </div>

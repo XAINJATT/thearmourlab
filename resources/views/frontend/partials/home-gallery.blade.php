@@ -3,16 +3,20 @@
 
     @php
 
+        $ceramicCoatingKey = __('CERAMIC COATING');
+        $windowTintsKey = __('WINDOW TINTS');
+        $paintProtectionFilmKey = __('PAINT PROTECTION FILM');
+
         $cermaic_coating_images = [
-            'CERAMIC COATING' => [
+            $ceramicCoatingKey => [
                 'images' => [App\Helpers\SiteHelper::get_wt_media()->toArray()],
                 'url' => route('frontend.CeramicCoating'),
             ],
-            'Paint Protection' => [
+            $windowTintsKey => [
                 'images' => [App\Helpers\SiteHelper::get_wt_media()],
                 'url' => route('frontend.PaintProtectionFilmSimulator'),
             ],
-            'Window Tints' => [
+            $paintProtectionFilmKey => [
                 'images' => [App\Helpers\SiteHelper::get_wt_media()],
                 'url' => route('frontend.WindowTintSimulator'),
             ],
@@ -30,7 +34,7 @@
                 <ul class="filters" data-toggle="buttons">
                     <li ata-category="" data-filter="" class="btn active">
                         <input type="radio">
-                        <a href="javascript:;"><span>All Services</span></a>
+                        <a href="javascript:;"><span>@lang("messages.All Services")</span></a>
                     </li>
                     @foreach (config('app.services') as $key => $service)
                         <li data-category="{{ $key }}"
@@ -53,7 +57,7 @@
             <!-- Load More Button -->
             @if (get_gallery_media()->count() >= 6)
                 <div class="width-100 mt-5 d-flex align-items-center justify-content-center">
-                    <button id="load-more" class="btn btn-primary">Load More</button>
+                    <button id="load-more" class="btn btn-primary">@lang("messages.Load More")</button>
                 </div>
             @endif
         </div>

@@ -3,8 +3,8 @@
     <div class="container">
         <div class="heading-bx text-white d-lg-flex d-md-block align-items-end justify-content-between">
             <div class="clearfix mb-2">
-                <h6 class="title-ext text-primary">TESTIMONIAL</h6>
-                <h2 class="title mb-0">WHAT CLIENTS SAY</h2>
+                <h6 class="title-ext text-primary">@lang("messages.TESTIMONIAL")</h6>
+                <h2 class="title mb-0">@lang("messages.WHAT CLIENTS SAY")</h2>
             </div>
             {{-- <div class="clearfix mt-md-20">
                 <a href="javascript:void(0);" class="btn btn-outline-primary">View All Client</a>

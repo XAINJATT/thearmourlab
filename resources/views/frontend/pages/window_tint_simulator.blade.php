@@ -31,12 +31,12 @@
         <div class="page-banner ovbl-dark" style="background-image:url(images/banner/bnr1.jpg);">
             <div class="container">
                 <div class="page-banner-entry text-center">
-                    <h1><span>Window Tint</span></h1>
+                    <h1><span>@lang("messages.Window Tint")</span></h1>
                     <!-- Breadcrumb row -->
                     <nav aria-label="breadcrumb" class="breadcrumb-row">
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="/"><i class="las la-home"></i>Home > </a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Window Tint</li>
+                            <li class="breadcrumb-item"><a href="/"><i class="las la-home"></i>@lang("messages.Home") > </a></li>
+                            <li class="breadcrumb-item active" aria-current="page">@lang("messages.Window Tint")</li>
                         </ul>
                     </nav>
                     <!-- Breadcrumb row END -->
@@ -53,7 +53,7 @@
                             <div class="row">
                                 <div class="col-xl-9">
                                     <div class=" row my-1 ">
-                                        <h2 class="col-md-6">Signature Features</h2>
+                                        <h2 class="col-md-6">@lang("messages.Signature Features")</h2>
                                         <div class="col-md-6">
                                             <div class="d-flex gap-3 mt-4 pt-3 align-items-center">
                                                 <img class="img-fluid text-right" height="200"
@@ -61,14 +61,7 @@
                                                     src="{{ asset('images/SCF-SEAL_NonSunscreens-2-color-516x600.jpg') }}"
                                                     alt="">
                                                 <span>
-                                                    Endorsed by the
-                                                    Skin Cancer Foundation:
-                                                    Our window tints meet
-                                                    the rigorous standards for
-                                                    effective UV protection,
-                                                    helping to safeguard your
-                                                    skin's health with every
-                                                    drive.
+                                                    @lang("messages.Endorsed by the Skin Cancer Foundation: Our window tints meet the rigorous standards for effective UV protection, helping to safeguard your skin's health with every drive.")
                                                 </span>
 
                                             </div>
@@ -79,38 +72,23 @@
                                     <div class="row mb-3">
                                         <div class="col-md-6">
                                             <h4 class=""> <i class="fas fa-atom text-warning"></i> &nbsp;&nbsp;&nbsp;
-                                                Ceramic
-                                                Particle Technology</h4>
-                                            <p>Contains a proprietary blend of ceramic particles to act as a solid barrier
-                                                to heat
-                                                while maintaining the ease of install in a 1.5 mil construction.</p>
+                                            @lang("messages.Ceramic Particle Technology")</h4>
+                                            <p>@lang("messages.Contains a proprietary blend of ceramic particles to act as a solid barrier to heat while maintaining the ease of install in a 1.5 mil construction.")</p>
                                         </div>
                                         <div class="col-md-6">
-                                            <h4> <i class="fas fa-sun text-warning"></i> &nbsp;&nbsp;&nbsp; UV Ray
-                                                Protection</h4>
-                                            <p>Nano-Ceramic Film like PRIME XR PLUS provides SPF 1,000 protection that
-                                                effectively
-                                                blocks over 99% of harmful UV rays that can lead to numerous skin cancers,
-                                                premature
-                                                aging and skin cell damage.</p>
+                                            <h4> <i class="fas fa-sun text-warning"></i> &nbsp;&nbsp;&nbsp; @lang("messages.UV Ray Protection")</h4>
+                                            <p>@lang("messages.Nano-Ceramic Film like PRIME XR PLUS provides SPF 1,000 protection that effectively blocks over 99% of harmful UV rays that can lead to numerous skin cancers, premature aging and skin cell damage.")</p>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <h4><i class="fas fa-eye text-warning"></i> &nbsp;&nbsp;&nbsp; Greater Clarity
+                                            <h4><i class="fas fa-eye text-warning"></i> &nbsp;&nbsp;&nbsp; @lang("messages.Greater Clarity")
                                             </h4>
-                                            <p>In the past, keeping cool meant choosing a darker shade of tint. The
-                                                multilayer
-                                                nano-ceramic construction provides ultra-high performance without reducing
-                                                outbound
-                                                visibility.</p>
+                                            <p>@lang("messages.In the past, keeping cool meant choosing a darker shade of tint. The multilayer nano-ceramic construction provides ultra-high performance without reducing outbound visibility.")</p>
                                         </div>
                                         <div class="col-md-6">
-                                            <h4><i class="fas fa-wifi text-warning"></i>&nbsp;&nbsp;&nbsp; Crystal Clear
-                                                Signal</h4>
-                                            <p>In a digital world, clear communication is key. Ceramic Window Tint
-                                                construction will
-                                                not interfere with radio, cellular, or bluetooth signals.</p>
+                                            <h4><i class="fas fa-wifi text-warning"></i>&nbsp;&nbsp;&nbsp; @lang("messages.Crystal Clear Signal")</h4>
+                                            <p>@lang("messages.In a digital world, clear communication is key. Ceramic Window Tint construction will not interfere with radio, cellular, or bluetooth signals.")</p>
                                         </div>
                                     </div>
                                 </div>
@@ -125,8 +103,8 @@
                             <!-- Heading Section -->
                             <div class="row mb-4 py-5">
                                 <div class="col">
-                                    <h1 class="text-center">Vehicle Window Tinting by The Armour Lab</h1>
-                                    <h2 class="text-center text-muted">Elevate Protection, Elevate Style</h2>
+                                    <h1 class="text-center">@lang("messages.Vehicle Window Tinting by The Armour Lab")</h1>
+                                    <h2 class="text-center text-muted">@lang("messages.Elevate Protection, Elevate Style")</h2>
                                 </div>
                             </div>
 
@@ -134,43 +112,21 @@
                             <div style=" background: linear-gradient(25deg, #171a1e 50%, #43491a 50%); padding:40px"
                                 class="row g-5 mb-3 text-white">
                                 <div class="col-xl-6">
-                                    <h3>At The Armour Lab</h3>
-                                    <p class="text-white">Our automotive window tinting services not only enhance the look
-                                        of your vehicle but
-                                        also offer a fortress of protection. Our superior tinting solutions significantly
-                                        block UV rays, safeguarding your vehicle's interior. This means that the delicate
-                                        fabrics and materials inside your car, like the dashboard and upholstery, are
-                                        preserved from the sun's relentless glare, maintaining their integrity and colour
-                                        for years to come.</p>
+                                    <h3>@lang("messages.At The Armour Lab")</h3>
+                                    <p class="text-white">@lang("messages.Our automotive window tinting services not only enhance the look of your vehicle but also offer a fortress of protection. Our superior tinting solutions significantly block UV rays, safeguarding your vehicle's interior. This means that the delicate fabrics and materials inside your car, like the dashboard and upholstery, are preserved from the sun's relentless glare, maintaining their integrity and colour for years to come.")</p>
                                 </div>
                                 <div class="col-xl-6">
-                                    <h3>The Science Behind Our Tinting</h3>
-                                    <p class="text-white">Tinting involves adhering a micro-thin, laminated film to your
-                                        vehicle's windows,
-                                        transitioning their appearance to a sleek, darker shade. This process serves
-                                        multiple purposes: from protecting passengers from UV exposure to increasing
-                                        privacy, reducing thermal intake, and minimizing sun glare. Enhanced focus on the
-                                        road, not on the discomfort of bright sunlight, is a pivotal benefit. Beyond
-                                        functionality, our window films also add a touch of personal style to your vehicle.
+                                    <h3>@lang("messages.The Science Behind Our Tinting")</h3>
+                                    <p class="text-white">@lang("messages.Tinting involves adhering a micro-thin, laminated film to your vehicle's windows, transitioning their appearance to a sleek, darker shade. This process serves multiple purposes: from protecting passengers from UV exposure to increasing privacy, reducing thermal intake, and minimizing sun glare. Enhanced focus on the road, not on the discomfort of bright sunlight, is a pivotal benefit. Beyond functionality, our window films also add a touch of personal style to your vehicle.")
                                     </p>
                                 </div>
                                 <div class="col-xl-6">
-                                    <h3>Protection Beyond the Surface</h3>
-                                    <p class="text-white">Our high-grade, resilient tints double as a safety feature during
-                                        accidents by
-                                        reinforcing glass integrity, minimizing the risk of shattering. For those who store
-                                        valuables in their car, the added privacy of tinted windows offers a layer of
-                                        security from onlookers. Although applying window film might seem straightforward,
-                                        it requires precision and expertise. An incorrect application can damage both film
-                                        and glass, not to mention the aesthetics of your vehicle. The process, depending on
-                                        complexity, can span from one to several hours, with costs reflecting the quality of
-                                        the service.</p>
+                                    <h3>@lang("messages.Protection Beyond the Surface")</h3>
+                                    <p class="text-white">@lang("messages.Our high-grade, resilient tints double as a safety feature during accidents by reinforcing glass integrity, minimizing the risk of shattering. For those who store valuables in their car, the added privacy of tinted windows offers a layer of security from onlookers. Although applying window film might seem straightforward, it requires precision and expertise. An incorrect application can damage both film and glass, not to mention the aesthetics of your vehicle. The process, depending on complexity, can span from one to several hours, with costs reflecting the quality of the service.")</p>
                                 </div>
                                 <div class="col-xl-6">
-                                    <h3>Choose The Armour Lab</h3>
-                                    <p class="text-white">for efficient, expert window tinting service that comes with our
-                                        assurance of quality
-                                        and competitive pricing. Connect with us for a service that transcends expectations.
+                                    <h3>@lang("messages.Choose The Armour Lab")</h3>
+                                    <p class="text-white">@lang("messages.for efficient, expert window tinting service that comes with our assurance of quality and competitive pricing. Connect with us for a service that transcends expectations.")
                                     </p>
                                 </div>
                             </div>
@@ -183,14 +139,14 @@
                         <section class="section-area bg-white section-sp1">
                             <div class="container">
 
-                                <h2 class="text-center fs-2">Window Tints Packages</h2>
+                                <h2 class="text-center fs-2">@lang("messages.Window Tints Packages")</h2>
                                 <div class="pricingtable-row my-5">
                                     <div class="row">
                                         <div class="col-xl-1"></div>
                                         <div class="col-xl-5 col-sm-6 mb-30">
                                             <div class="pricingtable-wrapper style1 pricingtable-highlight">
                                                 <div class="pricingtable-tag">
-                                                    most used
+                                                @lang("messages.most used")
                                                 </div>
                                                 <div class="pricingtable-inner">
                                                     <div class="pricingtable-main">
@@ -204,69 +160,64 @@
                                                             </div> --}}
                                                         </div>
                                                         <div class="pricingtable-title">
-                                                            <h4 class="text-center">Ceramic</h4>
+                                                            <h4 class="text-center">@lang("messages.Ceramic")</h4>
                                                             <!-- <p><i class="la la-clock"></i> </p> -->
                                                         </div>
                                                     </div>
                                                     <ul class="pricingtable-features fs-4">
-                                                        <li><i class="fa fa-check"></i> Comprehensive Lifetime Warranty
-                                                            (Parts & Labour).</li>
-                                                        <li><i class="fa fa-check"></i> Advanced Nano-Hybrid Technology.
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Comprehensive Lifetime Warranty (Parts & Labour).")</li>
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Advanced Nano-Hybrid Technology.")
                                                         </li>
-                                                        <li><i class="fa fa-check"></i> Exceptional Heat Rejection for
-                                                            Comfort.</li>
-                                                        <li><i class="fa fa-check"></i> Improves Visibility for Safer
-                                                            Driving.</li>
-                                                        <li><i class="fa fa-check"></i> Blocks up to 99% of harmful UV
-                                                            rays.
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Exceptional Heat Rejection for Comfort.")</li>
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Improves Visibility for Safer Driving.")</li>
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Blocks up to 99% of harmful UV rays.")
                                                         </li>
-                                                        <li><i class="fa fa-check"></i> Infrared Heat Rejection up to 88%.
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Infrared Heat Rejection up to 88%.")
                                                         </li>
-                                                        <li><i class="fa fa-check"></i> Maintains Signal Clarity for Radio,
-                                                            Cellular, and Bluetooth Devices</li>
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Maintains Signal Clarity for Radio, Cellular, and Bluetooth Devices")</li>
                                                     </ul>
 
                                                     <div class="">
                                                         {{-- <span class="px-4">Ceramic</span> --}}
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>Warranty</strong>
-                                                            <span class="text-warning fw-bold">Life Time</span>
+                                                            <strong>@lang("messages.Warranty")</strong>
+                                                            <span class="text-warning fw-bold">@lang("messages.Life Time")</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>UV Rejection</strong>
+                                                            <strong>@lang("messages.UV Rejection")</strong>
                                                             <span>99%</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex text-white px-4 bg-danger p-3 align-items-center my-2 justify-content-between">
-                                                            <strong>IR HEAT Rejection</strong>
+                                                            <strong>@lang("messages.IR HEAT Rejection")</strong>
                                                             <span>78% - 88%</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>2 Front Windows</strong>
+                                                            <strong>2 @lang("messages.Front Windows")</strong>
                                                             <span>$199.99</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>COUPE/SEDAN/CROSSOVER</strong>
+                                                            <strong>@lang("messages.COUPE/SEDAN/CROSSOVER")</strong>
                                                             <span>$349</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>SUV/MINIVAN</strong>
+                                                            <strong>@lang("messages.SUV/MINIVAN")</strong>
                                                             <span>$379</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>FULL WINDSHIELD</strong>
+                                                            <strong>@lang("messages.FULL WINDSHIELD")</strong>
                                                             <span>$220+</span>
                                                         </span>
                                                         <hr>
@@ -274,7 +225,7 @@
 
                                                     <div class="pricingtable-footer">
                                                         <a href="{{ route('frontend.contact') }}"
-                                                            class="btn btn-primary">Get It Now</a>
+                                                            class="btn btn-primary">@lang("messages.Get It Now")</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -294,26 +245,19 @@
                                                             </div> --}}
                                                         </div>
                                                         <div class="pricingtable-title">
-                                                            <h4 class="text-center">Nano Ceramic</h4>
+                                                            <h4 class="text-center">@lang("messages.Nano Ceramic")</h4>
                                                             <!-- <p><i class="la la-clock"></i> </p> -->
                                                         </div>
                                                     </div>
                                                     <ul class="pricingtable-features">
-                                                        <li><i class="fa fa-check"></i> Inclusive Lifetime Warranty (Parts
-                                                            &
-                                                            Labour).</li>
-                                                        <li><i class="fa fa-check"></i> State-of-the-Art Nano-Ceramic
-                                                            Particle Technology.</li>
-                                                        <li><i class="fa fa-check"></i> Superior Heat Rejection Maximizing
-                                                            Comfort.</li>
-                                                        <li><i class="fa fa-check"></i> Enhanced Performance for Optimal
-                                                            Results. </li>
-                                                        <li><i class="fa fa-check"></i> Over 99% Effective at Blocking
-                                                            Harmful UV Rays.</li>
-                                                        <li><i class="fa fa-check"></i> Infrared Heat Rejection up to 98%.
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Inclusive Lifetime Warranty (Parts & Labour).")</li>
+                                                        <li><i class="fa fa-check"></i> @lang("messages.State-of-the-Art Nano-Ceramic Particle Technology.")</li>
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Superior Heat Rejection Maximizing Comfort.")</li>
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Enhanced Performance for Optimal Results.") </li>
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Over 99% Effective at Blocking Harmful UV Rays.")</li>
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Infrared Heat Rejection up to 98%.")
                                                         </li>
-                                                        <li><i class="fa fa-check"></i> Designed to Preserve Signal
-                                                            Integrity for All Devices.</li>
+                                                        <li><i class="fa fa-check"></i> @lang("messages.Designed to Preserve Signal Integrity for All Devices.")</li>
 
                                                         {{-- <li><i class="fa fa-check"></i> Select</li> --}}
                                                     </ul>
@@ -323,43 +267,43 @@
                                                         {{-- <span class="px-4">Nano Ceramic</span> --}}
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>Warranty</strong>
-                                                            <span class="text-warning fw-bold">Life Time</span>
+                                                            <strong>@lang("messages.Warranty")</strong>
+                                                            <span class="text-warning fw-bold">@lang("messages.Life Time")</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>UV Rejection</strong>
+                                                            <strong>@lang("messages.UV Rejection")</strong>
                                                             <span>99%</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex text-white px-4 bg-danger p-3 align-items-center my-2 justify-content-between">
-                                                            <strong>IR HEAT Rejection</strong>
+                                                            <strong>@lang("messages.IR HEAT Rejection")</strong>
                                                             <span>92% - 98%</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>2 Front Windows</strong>
+                                                            <strong>2 @lang("messages.Front Windows")</strong>
                                                             <span>$229</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>COUPE/SEDAN/CROSSOVER</strong>
+                                                            <strong>@lang("messages.COUPE/SEDAN/CROSSOVER")</strong>
                                                             <span>$550</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>SUV/MINIVAN</strong>
+                                                            <strong>@lang("messages.SUV/MINIVAN")</strong>
                                                             <span>$600</span>
                                                         </span>
                                                         <hr>
                                                         <span
                                                             class="d-flex px-4 align-items-center my-2 justify-content-between">
-                                                            <strong>FULL WINDSHIELD</strong>
+                                                            <strong>@lang("messages.FULL WINDSHIELD")</strong>
                                                             <span>$300+</span>
                                                         </span>
                                                         <hr>
@@ -367,7 +311,7 @@
 
                                                     <div class="pricingtable-footer">
                                                         <a href="{{ route('frontend.contact') }}"
-                                                            class="btn btn-primary">Get It Now</a>
+                                                            class="btn btn-primary">@lang("messages.Get It Now")</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -391,11 +335,8 @@
                                 <div data-view="CCT-View" data-cms-cct-instanceid="CMS_HTML-388"
                                     class="cms-content cms-content-CMS_HTML cms-content-selector-CMS_HTML-388">
                                     <div>
-                                        <h1 class="simulator-title">Window Tints</h1>
-                                        <p class="simulator-description">Select a vehicle type and color.
-                                            Then see how the different tint percentages, or as we call it
-                                            Variable Light Transfers (VLT’s), could look on the front,
-                                            sides, and back of your vehicle.</p>
+                                        <h1 class="simulator-title">@lang("messages.Window Tints")</h1>
+                                        <p class="simulator-description">@lang("messages.Select a vehicle type and color. Then see how the different tint percentages, or as we call it Variable Light Transfers (VLT’s), could look on the front, sides, and back of your vehicle.")</p>
                                     </div>
                                 </div>
                             </div>
@@ -411,18 +352,18 @@
                     </div>
                     <div id="controls">
                         <div class="step" id="controlType">
-                            <h3>Vehicle Type</h3><label>
+                            <h3>@lang("messages.Vehicle Type")</h3><label>
                                 <input type="radio" name="baseType" value="car" checked="">
-                                Car</label><label>
-                                <input type="radio" name="baseType" value="suv"> SUV</label><label>
-                                <input type="radio" name="baseType" value="truck"> Truck</label>
+                                @lang("messages.Car")</label><label>
+                                <input type="radio" name="baseType" value="suv"> @lang("messages.SUV")</label><label>
+                                <input type="radio" name="baseType" value="truck"> @lang("messages.Truck")</label>
                         </div>
                         <div class="step" id="controlTint">
-                            <h3>Window Tints</h3>
+                            <h3>@lang("messages.Window Tints")</h3>
                             <table>
                                 <tbody>
                                     <tr>
-                                        <td valign="middle">Front</td>
+                                        <td valign="middle">@lang("messages.Front")</td>
                                         <td><input type="radio" class="tints" name="front" id="front70"
                                                 value="70"><label for="front70" class="tintLabel">70</label></td>
                                         <td><input type="radio" class="tints" name="front" id="front50"
@@ -435,7 +376,7 @@
                                                 value="05"><label for="front05" class="tintLabel">05</label></td>
                                     </tr>
                                     <tr>
-                                        <td valign="middle">Side</td>
+                                        <td valign="middle">@lang("messages.Side")</td>
                                         <td><input type="radio" class="tints" name="sides" id="sides70"
                                                 value="70"><label for="sides70" class="tintLabel">70</label></td>
                                         <td><input type="radio" class="tints" name="sides" id="sides50"
@@ -448,7 +389,7 @@
                                                 value="05"><label for="sides05" class="tintLabel">05</label></td>
                                     </tr>
                                     <tr>
-                                        <td valign="middle">Back</td>
+                                        <td valign="middle">@lang("messages.Back")</td>
                                         <td><input type="radio" class="tints" name="back" id="back70"
                                                 value="70"><label for="back70" class="tintLabel">70</label></td>
                                         <td><input type="radio" class="tints" name="back" id="back50"
@@ -461,7 +402,7 @@
                                                 value="05"><label for="back05" class="tintLabel">05</label></td>
                                     </tr>
                                     <tr>
-                                        <td valign="windshield">Windshield <sup>*</sup></td>
+                                        <td valign="windshield">@lang("messages.Windshield") <sup>*</sup></td>
                                         <td><input type="radio" class="tints" name="windshield" id="windshield80"
                                                 value="70"><label for="windshield80" class="tintLabel">70</label>
                                         </td>
@@ -479,14 +420,13 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="5"><sup>*</sup><small>Check local tint laws in your
-                                                area</small></td>
+                                        <td colspan="5"><sup>*</sup><small>@lang("messages.Check local tint laws in your area")</small></td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
                         <div class="step" id="controlColors">
-                            <h3>Vehicle Color</h3>
+                            <h3>@lang("messages.Vehicle Color")</h3>
                             <div type="radio" class="colorRadio active" name="black" data-value="black"></div>
                             <div type="radio" class="colorRadio" name="white" data-value="white">
                             </div>
@@ -508,7 +448,7 @@
 
         <div style="max-width:750px; margin:auto;" class="container">
             <div class="my-5">
-                <h2>Window Tints FAQs</h2>
+                <h2>@lang("messages.Window Tints FAQs")</h2>
                 @include('frontend.partials.window-tints-faq', ['show' => true])
             </div>
             <div class="widget">
@@ -528,8 +468,8 @@
                                                                                                            s8.1-18.1,18.1-18.1h30.1c10,0,18.1,8.1,18.1,18.1S278.25,452,268.25,452z M437.95,274.9c0,22.9-18.6,41.5-41.5,41.5h-24.9V204.8
                                                                                                            h24.9c22.9,0,41.5,18.6,41.5,41.5V274.9z" />
                         </svg>
-                        <h5 class="title mt-20">How Can We Help</h5>
-                        <p>If you need any helps, please free to contact us.</p>
+                        <h5 class="title mt-20">@lang("messages.How Can We Help")</h5>
+                        <p>@lang("messages.If you need any helps, please free to contact us.")</p>
                         <form action="{{ route('frontend.contact.store') }}" id="addDriverForm"
                             class="contact-form style1" method="post" enctype="multipart/form-data">
                             @csrf
@@ -572,7 +512,7 @@
                                 </div>
                                 <div class="col-lg-12">
                                     <button type="submit" name="submit" class="btn btn-secondary btn-lg">
-                                        Send Message
+                                        @lang("messages.Send Message")
                                     </button>
                                 </div>
                             </div>
@@ -616,7 +556,7 @@
                             <div class="info">
                                 <h5 class="title">
                                     <a href="#">
-                                        <i class="flaticon-fuel-1"></i> Window Tints
+                                        <i class="flaticon-fuel-1"></i> @lang("messages.Window Tints")
                                     </a>
                                 </h5>
                             </div>

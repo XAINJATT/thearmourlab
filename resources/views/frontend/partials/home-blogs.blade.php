@@ -2,9 +2,9 @@
 <section class="section-area section-sp2 bg-gray ov-hidden">
     <div class="container">
         <div class="heading-bx text-center">
-            <h6 class="title-ext text-primary">Latest BLOGS</h6>
-            <h2 class="title mb-0">OUR LATEST NEWS</h2>
-            <p>Discover a world of fresh insights and intriguing developments in our latest news section.  Stay informed and inspired with stories that matter, written with a touch of creativity and a commitment to quality journalism</p>
+            <h6 class="title-ext text-primary">@lang("messages.Latest BLOGS")</h6>
+            <h2 class="title mb-0">@lang("messages.OUR LATEST NEWS")</h2>
+            <p>@lang("messages.Discover a world of fresh insights and intriguing developments in our latest news section. Stay informed and inspired with stories that matter, written with a touch of creativity and a commitment to quality journalism")</p>
         </div>
         <div class="blog-carousel owl-carousel owl-loaded owl-none owl-drag">
             @foreach ($blogDetails as $blog)

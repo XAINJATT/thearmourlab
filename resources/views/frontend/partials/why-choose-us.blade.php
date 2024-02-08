@@ -8,24 +8,24 @@
             </div>
             <div class="col-lg-6 mb-30">
                 <div class="heading-bx mb-30">
-                    <h6 class="title-ext text-primary">WHY PEOPLE CHOOSE US</h6>
-                    <h2 class="title mb-0">WHY CHOOSE US</h2>
+                    <h6 class="title-ext text-primary">@lang("messages.WHY PEOPLE CHOOSE US")</h6>
+                    <h2 class="title mb-0">@lang("messages.WHY CHOOSE US")</h2>
                     <ul class="list-check-squer mb-0">
                         <li>
-                            <strong>Expert Application:</strong>
-                            <p>Precision-driven techniques for a flawless finish.</p>
+                            <strong>@lang("messages.Expert Application:")</strong>
+                            <p>@lang("messages.Precision-driven techniques for a flawless finish.")</p>
                         </li>
                         <li>
-                            <strong>Superior Products: </strong>
-                            <p>Only the highest quality materials for maximum durability.</p>
+                            <strong>@lang("messages.Superior Products:") </strong>
+                            <p>@lang("messages.Only the highest quality materials for maximum durability.")</p>
                         </li>
                         <li>
-                            <strong>Custom Solutions:</strong>
-                            <p>Tailored protection that fits your vehicle’s specific needs.</p>
+                            <strong>@lang("messages.Custom Solutions:")</strong>
+                            <p>@lang("messages.Tailored protection that fits your vehicle’s specific needs.")</p>
                         </li>
                         <li>
-                            <strong>Lasting Results:</strong>
-                            <p>Enjoy a pristine, polished look that lasts for years.</p>
+                            <strong>@lang("messages.Lasting Results:")</strong>
+                            <p>@lang("messages.Enjoy a pristine, polished look that lasts for years.")</p>
                         </li>
                     </ul>
                 </div>
@@ -60,7 +60,7 @@
                         </div>
                     </div>
                 </div> --}}
-                <a href="{{route("frontend.about")}}" class="btn btn-primary">READ MORE</a>
+                <a href="{{route("frontend.about")}}" class="btn btn-primary">@lang("messages.Read More")</a>
             </div>
         </div>
     </div>

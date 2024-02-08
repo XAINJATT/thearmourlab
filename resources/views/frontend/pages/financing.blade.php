@@ -13,12 +13,12 @@
         <div class="page-banner ovbl-dark" style="background-image:url(images/banner/bnr1.jpg);">
             <div class="container">
                 <div class="page-banner-entry text-center">
-                    <h1><span>Financing</span></h1>
+                    <h1><span>@lang("messages.Financing")</span></h1>
                     <!-- Breadcrumb row -->
                     <nav aria-label="breadcrumb" class="breadcrumb-row">
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/"><i class="las la-home"></i>Home > </a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Financing</li>
+                            <li class="breadcrumb-item active" aria-current="page">@lang("messages.Financing")</li>
                         </ul>
                     </nav>
                     <!-- Breadcrumb row END -->
@@ -35,26 +35,8 @@
                     <div class="col-lg-6 mb-30 mb-md-50">
                         <div class="heading-bx">
                             {{-- <h6 class="title-ext text-primary"></h6> --}}
-                            <h2 class="title">Flexible Financing For Your Vehicles Protection</h2>
-                            <p>Protecting and enhancing your vehicle with our premium paint protection film
-
-                                and ceramic coating services is an investment in its longevity and beauty. While the
-
-                                cost of these services can vary based on factors such as the make and model of your
-
-                                vehicle and the specific products you choose, we are dedicated to making sure
-
-                                our solutions are accessible and budget-friendly.
-
-                                Our flexible financing options are tailored to accommodate different financial needs,
-
-                                ensuring you can enjoy the benefits of our top-quality PPF and ceramic coatings
-
-                                without worrying about immediate financial constraints. We're here to work with
-
-                                you to find a payment plan that suits your situation, making it easier and more
-
-                                manageable to invest in the best care for your vehicle</p>
+                            <h2 class="title">@lang("messages.Flexible Financing For Your Vehicles Protection")</h2>
+                            <p>@lang("messages.Protecting and enhancing your vehicle with our premium paint protection film and ceramic coating services is an investment in its longevity and beauty. While the cost of these services can vary based on factors such as the make and model of your vehicle and the specific products you choose, we are dedicated to making sure our solutions are accessible and budget-friendly. Our flexible financing options are tailored to accommodate different financial needs, ensuring you can enjoy the benefits of our top-quality PPF and ceramic coatings without worrying about immediate financial constraints. We're here to work with you to find a payment plan that suits your situation, making it easier and more manageable to invest in the best care for your vehicle")</p>
                         </div>
                         <div class="row">
                             {{-- <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-6">
@@ -84,11 +66,11 @@
                         </div>
                         <div class="mt-10 mt-md-0">
                             <a href="https://www.financeit.ca/s/vSeB6A" target="_blank" class="btn btn-primary me-3">
-                            Apply Now
+                            @lang("messages.Apply Now")
                             </a>
                                 <br>
                                 
-                            <span class="mt-10 mt-md-0 d-block">Pre-qualification won't affect your credit score</span>
+                            <span class="mt-10 mt-md-0 d-block">@lang("messages.Pre-qualification won't affect your credit score")</span>
                             {{-- <a href="booking.html" class="btn btn-outline-secondary">Book Now</a> --}}
                         </div>
                     </div>
@@ -133,11 +115,11 @@
                                 class="img-fluid pb-5" alt="">
                                 <div class="text-white px-3">
                                     <p class="fs-4 fw-bold">
-                                        NO INTEREST
+                                    @lang("messages.NO INTEREST")
                                     </p>
                                     <hr>
                                     <p class="fs-4 fw-bold">
-                                        12 EQUAL MONTHLY PAYMENTS!
+                                        @lang("messages.12 EQUAL MONTHLY PAYMENTS!")
                                     </p>
                                 </div>
                         </div>
@@ -146,8 +128,7 @@
                         <div class="text-white"
                             style=" background: linear-gradient(25deg, #171a1e 50%, #43491a 50%); padding:40px">
                             <p class="fs-2 fw-bold">
-                                Catering to Your Financial Needs: Accessible Financing for Premier PPF and Ceramic Coating
-                                Services
+                                Catering to Your Financial Needs: Accessible Financing for Premier PPF and Ceramic Coating Services
                             </p>
                         </div>
                     </div> --}}
@@ -176,12 +157,10 @@
                         <div class="text-white p-4"
                             style=" background: linear-gradient(25deg, #171a1e 50%, #43491a 50%); padding:40px">
                             <p class="fs-2 fw-bold">
-                                Vehicle Protection Financing
+                            @lang("messages.Vehicle Protection Financing")
                             </p>
                             <p style="padding:0px 0 15px;">
-                                We recognize that the cost is a significant consideration when choosing PPF and ceramic
-                                coating services. Therefore, we endeavor to make our vehicle protection solutions as
-                                affordable as possible.
+                            @lang("messages.We recognize that the cost is a significant consideration when choosing PPF and ceramic coating services. Therefore, we endeavor to make our vehicle protection solutions as affordable as possible.")
                             </p>
                         </div>
                     </div>
@@ -211,21 +190,15 @@
                 <div>
                     <div style="max-width:770px; margin:auto" class="heading-bx text-center ">
                         {{-- <h6 class="title-ext text-primary"></h6> --}}
-                        <h2 class="title">Discover Your Vehicle Protection Options</h2>
-                        <p>Our expert team is ready to discuss your specific needs and explain the costs associated with our
-                            PPF and ceramic coating services, helping you make an informed decision.</p>
+                        <h2 class="title">@lang("messages.Discover Your Vehicle Protection Options")</h2>
+                        <p>@lang("messages.Our expert team is ready to discuss your specific needs and explain the costs associated with our PPF and ceramic coating services, helping you make an informed decision.")</p>
                     </div>
 
 
                     <div class="table-image" style="margin-bottom:100px">
                         <img src="{{ asset('images/financing_options_chart_army_green.png') }}" class="img-fluid"
                             alt="">
-                        <p class="text-center">Purchase amount is approximate and may vary based on service selection and vehicle specifics. The
-                            examples shown in the table are for illustrative purposes only. The maximum amount available for
-                            financing is $10,000. 0% interest plans are offered exclusively on select PPF and ceramic
-                            coating
-                            services and cannot be combined with other offers or discounts. Financing is subject to credit
-                            approval by our financing partners</p>
+                        <p class="text-center">@lang("messages.Purchase amount is approximate and may vary based on service selection and vehicle specifics. The examples shown in the table are for illustrative purposes only. The maximum amount available for financing is $10,000. 0% interest plans are offered exclusively on select PPF and ceramic coating services and cannot be combined with other offers or discounts. Financing is subject to credit approval by our financing partners")</p>
                     </div>
 
                     <div style="max-width:770px; margin:auto" class="mt-15 mt-md-0">
@@ -246,8 +219,8 @@
                                    s8.1-18.1,18.1-18.1h30.1c10,0,18.1,8.1,18.1,18.1S278.25,452,268.25,452z M437.95,274.9c0,22.9-18.6,41.5-41.5,41.5h-24.9V204.8
                                    h24.9c22.9,0,41.5,18.6,41.5,41.5V274.9z" />
                                     </svg>
-                                    <h5 class="title mt-20">How Can We Help</h5>
-                                    <p>If you need any helps, please free to contact us.</p>
+                                    <h5 class="title mt-20">@lang("messages.How Can We Help")</h5>
+                                    <p>@lang("messages.If you need any helps, please free to contact us.")</p>
                                     <form action="{{ route('frontend.contact.store') }}" id="addDriverForm"
                                         class="contact-form style1" method="post" enctype="multipart/form-data">
                                         @csrf
@@ -290,7 +263,7 @@
                                             </div>
                                             <div class="col-lg-12">
                                                 <button type="submit" name="submit" class="btn btn-secondary btn-lg">
-                                                    Send Message
+                                                    @lang("messages.Send Message")
                                                 </button>
                                             </div>
                                         </div>

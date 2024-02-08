@@ -3,8 +3,8 @@
         <div class="row align-items-center">
             <div class="col-lg-3 align-self-center">
                 <div class="form-head text-white mb-md-30">
-                    <h3 class="title">Schedule Service</h3>
-                    <h6 class="mb-0"><span class="fw4 me-1">OR Call</span> <a class="text-white"
+                    <h3 class="title">@lang("messages.Schedule Service")</h3>
+                    <h6 class="mb-0"><span class="fw4 me-1">@lang("messages.OR Call")</span> <a class="text-white"
                             href="tel:(416) 675 6853">(416) 675 6853</a></h6>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                         </div>
                         <div class="col-md-4 col-sm-6">
                             <div class="form-group">
-                                <button type="submit" class="btn btn-warning w-100">SUBMIT REQUEST</button>
+                                <button type="submit" class="btn btn-warning w-100">@lang("messages.SUBMIT REQUEST")</button>
                             </div>
                         </div>
                     </div>
