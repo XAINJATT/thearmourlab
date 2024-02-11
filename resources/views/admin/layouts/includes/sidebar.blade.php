@@ -198,6 +198,13 @@
                     </a>
                 </li>
 
+                <li class="menu-item {{ request()->is('admin/language') ? 'active' : '' }}">
+                    <a href="{{ route('admin.language') }}" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-food-menu"></i>
+                        <div>Language</div>
+                    </a>
+                </li>
+
                 <li
                     class="menu-item {{ request()->is('admin/contests') || request()->is('admin/contests/create') ? 'active open' : '' }}">
                     <a href="javascript:void(0)" class="menu-link menu-toggle">

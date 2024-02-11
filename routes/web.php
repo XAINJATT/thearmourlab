@@ -33,6 +33,7 @@ use App\Http\Controllers\Admin\ContestController as AdminContestController;
 use App\Http\Controllers\User\ContestController as UserContestController;
 use App\Http\Controllers\ContestController;
 use App\Http\Controllers\FaqController;
+use App\Http\Controllers\Admin\LanguageController as AdminLanguageController;
 use App\Http\Controllers\frontend\LanguageController;
 use App\Http\Controllers\GiveawayEntryController;
 use App\Http\Controllers\InvoiceController as ControllersInvoiceController;
@@ -238,14 +239,17 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/giveaway/winners', [GiveawayEntryController::class, 'winners'])->name('admin.giveaway.winners');
 
     //Testemonials: 
-
-
     Route::get('admin/testimonials/', [TestimonialController::class, 'index'])->name("testimonials.index");
     Route::post('admin/testimonials/store', [TestimonialController::class, 'store'])->name("testimonials.store");
     Route::get('admin/testimonials/create', [TestimonialController::class, 'create'])->name("admin.testimonials.create");
     Route::delete('/admin/testimonials/delete/{testimonial}', [TestimonialController::class, 'destroy'])->name('admin.testimonials.destroy');
     Route::get('/admin/testimonials/edit/{testimonial}', [TestimonialController::class, 'edit'])->name('admin.testimonials.edit');
     Route::put('/admin/testimonials/update/{testimonial}', [TestimonialController::class, 'update'])->name('admin.testimonials.update');
+
+    // AdminLanguageController
+    Route::get('admin/language', [AdminLanguageController::class, 'index'])->name('admin.language');
+    Route::get('admin/language/edit/{id}', [AdminLanguageController::class, 'edit'])->name('admin.language.edit');
+    Route::post('admin/language/update/{id}', [AdminLanguageController::class, 'update'])->name('admin.language.update');
 
     /* ADMIN ROUTE - END */
 

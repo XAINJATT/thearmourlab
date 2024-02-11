@@ -26,23 +26,27 @@
                         @endif
                     </a>
 
-                    <li>
-                        <a href="#">{{ Config::get('languages')[App::getLocale()] }} <i class="fa fa-chevron-down"></i></a>
-                        <ul class="sub-menu">
-                            <li class="add-menu-left">
-                                <ul>
-                                    @foreach (Config::get('languages') as $lang => $language)
-                                    @if ($lang != App::getLocale())
+                    <!-- Menu Links -->
+                    <div class="menu-links navbar-collapse collapse justify-content-center" id="menuDropdown">
+                        <ul class="nav navbar-nav" style="justify-content: center; margin-top:15px">
+                            <li>
+                                <a href="#">{{ Config::get('languages')[App::getLocale()] }} <i class="fa fa-chevron-down"></i></a>
+                                <ul class="sub-menu">
+                                    <li class="add-menu-left">
+                                        <ul>
                                             <li>
-                                                <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"> {{$language}}</a>
+                                                @foreach (Config::get('languages') as $lang => $language)
+                                                    @if ($lang != App::getLocale())
+                                                        <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"><span>{{ $language }}</span></a>
+                                                    @endif
+                                                @endforeach
                                             </li>
-                                        @endif
-                                    @endforeach
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
-                    </li>
-
+                    </div>
 
                     {{-- <a href="{{ route('frontend.live') }}" class="btn btn-primary ms-3">Track</a> --}}
                     @if (get_giveaway_status())
@@ -102,18 +106,27 @@
                                 @endif
                             </a>
                         </li>
-                        <li class="nav-item dropdown language-dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                {{ Config::get('languages')[App::getLocale()] }}
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            @foreach (Config::get('languages') as $lang => $language)
-                                @if ($lang != App::getLocale())
-                                        <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"> {{$language}}</a>
-                                @endif
-                            @endforeach
-                            </div>
-                        </li>
+                        <!-- Menu Links -->
+                        <div class="menu-links navbar-collapse collapse justify-content-center" id="menuDropdown">
+                            <ul class="nav navbar-nav" style="justify-content: center; margin-top:15px">
+                                <li>
+                                    <a href="#">{{ Config::get('languages')[App::getLocale()] }} <i class="fa fa-chevron-down"></i></a>
+                                    <ul class="sub-menu">
+                                        <li class="add-menu-left">
+                                            <ul>
+                                                <li>
+                                                    @foreach (Config::get('languages') as $lang => $language)
+                                                        @if ($lang != App::getLocale())
+                                                            <a class="dropdown-item" href="{{ route('lang.switch', $lang) }}"><span>{{ $language }}</span></a>
+                                                        @endif
+                                                    @endforeach
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
                         {{-- <li>
                             <a href="{{ route('frontend.live') }}" class="btn btn-primary ms-3">Track</a>
                         </li> --}}
