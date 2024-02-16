@@ -71,7 +71,7 @@
                                             <textarea class="form-control" id="description" name="description">{{ $blogs->description }}</textarea>
                                         </div>
 
-                                        <div class="col-12 col-md-6 mb-3">
+                                        <div class="col-12 col-md-6 mb-3 mt-5">
                                             <label for="image" class="font-weight-bold">Blog Image <span
                                                     class="text-danger">*</span>&nbsp;&nbsp;
                                                 <a href="{{ $blogs->image }}" download="{{ $blogs->image }}">

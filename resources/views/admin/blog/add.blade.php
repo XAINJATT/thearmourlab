@@ -61,13 +61,13 @@
                                                 name="blog_writer_name" required>
                                         </div>
 
-                                        <div class="col-md-12 mb-3">
+                                        <div class="col-md-12 mb-3 ">
                                             <label for="-text-" class="font-weight-bold">Description <span
                                                     class="text-danger">*</span></label>
                                             <textarea class="form-control" id="description" name="description"></textarea>
                                         </div>
 
-                                        <div class="col-12 col-md-6 mb-3">
+                                        <div class="col-12 col-md-6 mb-3 mt-5">
                                             <label for="image" class="font-weight-bold">Blog Image <span
                                                     class="text-danger">*</span></label>
                                             <img src="" alt="" class="picture-src" id="image_preview"
