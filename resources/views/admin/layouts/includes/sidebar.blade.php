@@ -158,6 +158,12 @@
                         <div>Shop Orders Management</div>
                     </a>
                 </li>
+                <li class="menu-item {{ request()->is('admin/icon/contact*') ? 'active' : '' }}">
+                    <a href="{{ route('admin.icon.contact') }}" class="menu-link">
+                        <i class="menu-icon tf-icons bx bx-food-menu"></i>
+                        <div>Icon Rocklear</div>
+                    </a>
+                </li>
 
                 <!-- <li class="menu-item {{ request()->is('admin/WorkOrderStatus*') ? 'active open' : '' }}">
           <a href="javascript:void(0)" class="menu-link menu-toggle">
