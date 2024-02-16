@@ -194,6 +194,10 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/contact', [ContactUsController::class, 'index'])->name('admin.contact');
     Route::post('admin/contact/delete/{id}', [ContactUsController::class, 'delete'])->name('admin.contact.delete');
 
+    //Icon Rocklear
+    Route::get('admin/icon/contact', [IconRockLearController::class, 'adminIndex'])->name('admin.icon.contact');
+    Route::post('admin/icon/contact/delete/{id}', [IconRockLearController::class, 'delete'])->name('admin.icon.contact.delete');
+
     
     // MediaController
     Route::get('admin/media', [MediaController::class, 'index'])->name('admin.media');

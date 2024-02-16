@@ -5,7 +5,6 @@
 @endsection
 
 @section('css')
-
     <title>Icon Rock Lear</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,10 +25,10 @@
 @section('content')
     <main>
         <!--
-      |--------------------------------------------------------------------------
-      | Section 1
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 1
+                  |--------------------------------------------------------------------------
+                  -->
         <section class="section-1">
             <div class="section-1-container">
                 <h2 class="main-title"><span>Icon</span> Rocklear</h2>
@@ -106,8 +105,7 @@
                                         </div>
                                         <div class="swiper-slide">
                                             <img loading="lazy" decoding="async" width="789" height="588"
-                                                src="images/Aviations.png" class="attachment-full size-full"
-                                                alt=""
+                                                src="images/Aviations.png" class="attachment-full size-full" alt=""
                                                 srcset="
                             images/Aviations.png         789w,
                             images/Aviations-300x224.png 300w,
@@ -138,9 +136,8 @@
                                                 sizes="(max-width: 1019px) 100vw, 1019px" />
                                         </div>
                                         <div class="swiper-slide">
-                                            <img decoding="async" width="908" height="588"
-                                                src="images/Auto-min.png" class="attachment-full size-full"
-                                                alt=""
+                                            <img decoding="async" width="908" height="588" src="images/Auto-min.png"
+                                                class="attachment-full size-full" alt=""
                                                 srcset="
                             images/Auto-min.png         908w,
                             images/Auto-min-300x194.png 300w,
@@ -170,10 +167,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 2
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 2
+                  |--------------------------------------------------------------------------
+                  -->
 
         <section class="section-2">
             <div id="marqueeContainer" class="marquee-container">
@@ -191,10 +188,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 3
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 3
+                  |--------------------------------------------------------------------------
+                  -->
         <section class="section-3">
             <div class="section-container">
                 <div>
@@ -219,10 +216,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 4
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 4
+                  |--------------------------------------------------------------------------
+                  -->
 
         <section class="section-4">
             <div class="section-container">
@@ -271,10 +268,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 5
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 5
+                  |--------------------------------------------------------------------------
+                  -->
         <section class="section-5">
             <div class="section-container">
                 <div class="text-center">
@@ -310,10 +307,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 6
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 6
+                  |--------------------------------------------------------------------------
+                  -->
         <section class="section-6">
             <div class="section-container">
                 <div>
@@ -375,10 +372,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 7
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 7
+                  |--------------------------------------------------------------------------
+                  -->
         <div class="section-7-bg"></div>
 
         <section class="section-7">
@@ -395,15 +392,14 @@
                         <div class="progress-bar-container">
                             <div class="section-header">
                                 <h3>ICON <span>ROCKLEAR</span></h3>
-                                <span class="section-icon"><i aria-hidden="true"
-                                        class="fas fa-chevron-down"></i></span>
+                                <span class="section-icon"><i aria-hidden="true" class="fas fa-chevron-down"></i></span>
                             </div>
                             <div id="rocklear-progress-bar">
                                 <!--
-                |--------------------------------------------------------------------------
-                | Data coming from javascript  //script.js
-                |--------------------------------------------------------------------------
-                -->
+                            |--------------------------------------------------------------------------
+                            | Data coming from javascript  //script.js
+                            |--------------------------------------------------------------------------
+                            -->
                             </div>
                             <ul class="custom-list">
                                 <li>
@@ -417,8 +413,8 @@
                             </ul>
                             <div class="progress-image">
                                 <img loading="lazy" decoding="async" width="394" height="394"
-                                    src="images/Vector-Smart-Object.png"
-                                    class="attachment-large size-large wp-image-433" alt=""
+                                    src="images/Vector-Smart-Object.png" class="attachment-large size-large wp-image-433"
+                                    alt=""
                                     srcset="
                       images/Vector-Smart-Object.png         394w,
                       images/Vector-Smart-Object-300x300.png 300w,
@@ -432,15 +428,14 @@
                         <div class="progress-bar-container">
                             <div class="section-header">
                                 <h3>CERAMICS <span>/ GRAPHENE</span></h3>
-                                <span class="section-icon"><i aria-hidden="true"
-                                        class="fas fa-chevron-down"></i></span>
+                                <span class="section-icon"><i aria-hidden="true" class="fas fa-chevron-down"></i></span>
                             </div>
                             <div id="ceramic-progress-bar">
                                 <!--
-                |--------------------------------------------------------------------------
-                | Data coming from javascript  //script.js
-                |--------------------------------------------------------------------------
-                -->
+                            |--------------------------------------------------------------------------
+                            | Data coming from javascript  //script.js
+                            |--------------------------------------------------------------------------
+                            -->
                             </div>
                             <ul class="custom-list">
                                 <li>
@@ -472,30 +467,25 @@
                         <div class="progress-bar-container">
                             <div class="section-header">
                                 <h3>POLYMERS <span>/ WAX</span></h3>
-                                <span class="section-icon"><i aria-hidden="true"
-                                        class="fas fa-chevron-down"></i></span>
+                                <span class="section-icon"><i aria-hidden="true" class="fas fa-chevron-down"></i></span>
                             </div>
                             <div id="polymers-progress-bar">
                                 <!--
-                |--------------------------------------------------------------------------
-                | Data coming from javascript  //script.js
-                |--------------------------------------------------------------------------
-                -->
+                            |--------------------------------------------------------------------------
+                            | Data coming from javascript  //script.js
+                            |--------------------------------------------------------------------------
+                            -->
                             </div>
 
                             <ul class="custom-list">
                                 <li>Temporary</li>
                             </ul>
                             <div class="progress-image">
-                                <img loading="lazy" decoding="async" width="394" height="394"
-                                    src="images/Vector-Smart-Object.png"
-                                    class="attachment-large size-large wp-image-433" alt=""
-                                    srcset="
-                      images/Vector-Smart-Object.png         394w,
-                      images/Vector-Smart-Object-300x300.png 300w,
-                      images/Vector-Smart-Object-150x150.png 150w
-                    "
-                                    sizes="(max-width: 394px) 100vw, 394px" />
+                                <img loading="lazy" decoding="async" width="409" height="409"
+                                    src="imagesVector-Smart-Object-2.png" class="attachment-large size-large wp-image-450"
+                                    alt=""
+                                    srcset="imagesVector-Smart-Object-2.png 409w, imagesVector-Smart-Object-2-300x300.png 300w, imagesVector-Smart-Object-2-150x150.png 150w"
+                                    sizes="(max-width: 409px) 100vw, 409px">
                             </div>
                         </div>
                     </div>
@@ -504,10 +494,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 8
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 8
+                  |--------------------------------------------------------------------------
+                  -->
 
         <section class="section-8">
             <div class="section-container">
@@ -582,8 +572,8 @@
                                 <div class="col-md-12 col-lg-6">
                                     <div class="image-area">
                                         <img loading="lazy" decoding="async" width="608" height="340"
-                                            src="images/Performance.png"
-                                            class="attachment-large size-large wp-image-1012" alt=""
+                                            src="images/Performance.png" class="attachment-large size-large wp-image-1012"
+                                            alt=""
                                             srcset="
                           images/Performance.png         608w,
                           images/Performance-300x168.png 300w
@@ -613,8 +603,8 @@
                                 <div class="col-md-12 col-lg-6">
                                     <div class="image-area">
                                         <img loading="lazy" decoding="async" width="608" height="375"
-                                            src="images/Versatality.png"
-                                            class="attachment-large size-large wp-image-1008" alt=""
+                                            src="images/Versatality.png" class="attachment-large size-large wp-image-1008"
+                                            alt=""
                                             srcset="
                           images/Versatality.png         608w,
                           images/Versatality-300x185.png 300w
@@ -643,8 +633,8 @@
                                 <div class="col-md-12 col-lg-6">
                                     <div class="image-area">
                                         <img loading="lazy" decoding="async" width="608" height="435"
-                                            src="images/Exclusive.png"
-                                            class="attachment-large size-large wp-image-1010" alt=""
+                                            src="images/Exclusive.png" class="attachment-large size-large wp-image-1010"
+                                            alt=""
                                             srcset="
                           images/Exclusive.png         608w,
                           images/Exclusive-300x215.png 300w
@@ -666,10 +656,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 9
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 9
+                  |--------------------------------------------------------------------------
+                  -->
 
         <section class="section-9 mb-5">
             <div class="section-container text-center mt-5 pt-3">
@@ -701,10 +691,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 10
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 10
+                  |--------------------------------------------------------------------------
+                  -->
 
         <div class="section-10-bg"></div>
         <section class="section-10 mt-5">
@@ -824,10 +814,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 11
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 11
+                  |--------------------------------------------------------------------------
+                  -->
 
         <div class="section-11-bg mt-5"></div>
         <section class="section-11">
@@ -857,8 +847,8 @@
                             <div class="col-lg-4 col-md-4 col">
                                 <div class="card">
                                     <div class="card-body pb-2">
-                                        <img class="" width="54" height="61"
-                                            src="images/Group-26-4.png" alt="" />
+                                        <img class="" width="54" height="61" src="images/Group-26-4.png"
+                                            alt="" />
                                         <h6 class="mt-3">SCRATCHES</h6>
                                     </div>
                                 </div>
@@ -866,8 +856,8 @@
                             <div class="col-lg-4 col-md-4 col">
                                 <div class="card">
                                     <div class="card-body pb-2">
-                                        <img class="" width="54" height="61"
-                                            src="images/Group-26-4.png" alt="" />
+                                        <img class="" width="54" height="61" src="images/Group-26-4.png"
+                                            alt="" />
                                         <h6 class="mt-3">HARD WATER SPOTS</h6>
                                     </div>
                                 </div>
@@ -875,8 +865,8 @@
                             <div class="col-lg-4 col-md-4 col">
                                 <div class="card">
                                     <div class="card-body pb-2">
-                                        <img class="" width="54" height="61"
-                                            src="images/Group-26-4.png" alt="" />
+                                        <img class="" width="54" height="61" src="images/Group-26-4.png"
+                                            alt="" />
                                         <h6 class="mt-3">BIRD ECTHING</h6>
                                     </div>
                                 </div>
@@ -884,8 +874,8 @@
                             <div class="col-lg-4 col-md-4 col">
                                 <div class="card">
                                     <div class="card-body pb-2">
-                                        <img class="" width="54" height="61"
-                                            src="images/Group-26-4.png" alt="" />
+                                        <img class="" width="54" height="61" src="images/Group-26-4.png"
+                                            alt="" />
                                         <h6 class="mt-3">SWIRLS</h6>
                                     </div>
                                 </div>
@@ -893,8 +883,8 @@
                             <div class="col-lg-4 col-md-4 col">
                                 <div class="card">
                                     <div class="card-body pb-2">
-                                        <img class="" width="54" height="61"
-                                            src="images/Group-26-4.png" alt="" />
+                                        <img class="" width="54" height="61" src="images/Group-26-4.png"
+                                            alt="" />
                                         <h6 class="mt-3">CHEMICAL DAMAGE</h6>
                                     </div>
                                 </div>
@@ -902,8 +892,8 @@
                             <div class="col-lg-4 col-md-4 col">
                                 <div class="card">
                                     <div class="card-body pb-2">
-                                        <img class="" width="54" height="61"
-                                            src="images/Group-26-4.png" alt="" />
+                                        <img class="" width="54" height="61" src="images/Group-26-4.png"
+                                            alt="" />
                                         <h6 class="mt-3">THIN CLEAR COAT</h6>
                                     </div>
                                 </div>
@@ -911,8 +901,8 @@
                             <div class="col-lg-4 col-md-4 col">
                                 <div class="card">
                                     <div class="card-body pb-2">
-                                        <img class="" width="54" height="61"
-                                            src="images/Group-26-4.png" alt="" />
+                                        <img class="" width="54" height="61" src="images/Group-26-4.png"
+                                            alt="" />
                                         <h6 class="mt-3">GRAVEL RASH</h6>
                                     </div>
                                 </div>
@@ -920,8 +910,8 @@
                             <div class="col-lg-4 col-md-4 col">
                                 <div class="card">
                                     <div class="card-body pb-2">
-                                        <img class="" width="54" height="61"
-                                            src="images/Group-26-4.png" alt="" />
+                                        <img class="" width="54" height="61" src="images/Group-26-4.png"
+                                            alt="" />
                                         <h6 class="mt-3">TREE SAP ETCHING</h6>
                                     </div>
                                 </div>
@@ -929,8 +919,8 @@
                             <div class="col-lg-4 col-md-4 col">
                                 <div class="card">
                                     <div class="card-body pb-2">
-                                        <img class="" width="54" height="61"
-                                            src="images/Group-26-4.png" alt="" />
+                                        <img class="" width="54" height="61" src="images/Group-26-4.png"
+                                            alt="" />
                                         <h6 class="mt-3">COLOR DEPTH & GLOSS</h6>
                                     </div>
                                 </div>
@@ -942,10 +932,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 12
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 12
+                  |--------------------------------------------------------------------------
+                  -->
         <div class="section-12-bg"></div>
         <section class="section-12">
             <div class="section-container">
@@ -1019,10 +1009,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 13
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 13
+                  |--------------------------------------------------------------------------
+                  -->
 
         <section class="section-13 mt-5">
             <div class="section-container">
@@ -1031,19 +1021,19 @@
                 <h2 class="header-title">ROCKLEAR BENEFITS</h2>
                 <div id="cards-container" class="row">
                     <!--
-            |--------------------------------------------------------------------------
-            | Content coming from footer
-            |--------------------------------------------------------------------------
-            -->
+                        |--------------------------------------------------------------------------
+                        | Content coming from footer
+                        |--------------------------------------------------------------------------
+                        -->
                 </div>
             </div>
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 14
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 14
+                  |--------------------------------------------------------------------------
+                  -->
         <div class="section-14-bg"></div>
         <section class="section-14">
             <div class="section-container">
@@ -1055,7 +1045,7 @@
                         <h6 class="open-text text-white">
                             15 YEAR WARRANTY FOR AUTOMOTIVE
                         </h6>
-                        <div class="openable-text">
+                        <div style="display:block;" class="openable-text">
                             <p>
                                 All <span>Icon</span> <span>Rocklear</span> installers and
                                 application facilities warranty <span>Icon</span>
@@ -1095,10 +1085,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 15
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 15
+                  |--------------------------------------------------------------------------
+                  -->
         <div class="section-15-bg"></div>
         <section class="section-15">
             <div class="section-container">
@@ -1128,10 +1118,10 @@
         <div class="section-15-bg-2"></div>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 16
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 16
+                  |--------------------------------------------------------------------------
+                  -->
 
         <section class="section-16">
             <div class="section-container">
@@ -1179,10 +1169,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 17
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 17
+                  |--------------------------------------------------------------------------
+                  -->
 
         <div class="section-17-bg"></div>
         <section class="section-17">
@@ -1216,10 +1206,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 18
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 18
+                  |--------------------------------------------------------------------------
+                  -->
         <div class="section-15-bg section-18-bg"></div>
         <section class="section-15 section-18">
             <div class="section-container">
@@ -1238,10 +1228,10 @@
         <div class="section-15-bg-2"></div>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 19
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 19
+                  |--------------------------------------------------------------------------
+                  -->
 
         <section class="section-19 mt-5">
             <div class="section-container">
@@ -1423,10 +1413,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 20
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 20
+                  |--------------------------------------------------------------------------
+                  -->
         <section class="section-20 py-5 mt-5">
             <div class="section-container py-5 mt-5">
                 <div class="d-flex gap-4 pt-3 flex-column align-items-center justify-content-center">
@@ -1445,17 +1435,17 @@
                             <button class="cta-primary">INQUIRIES</button>
                         </a>
                         <a href="{{ route('icon-rocklear.contact') }}" rel="noopener noreferrer">
-                            <button class="cta-secondary">BECOME AN INSTALLER</button>
+                            <button class="cta-primary">BECOME AN INSTALLER</button>
                         </a>
                     </div>
                 </div>
             </div>
         </section>
         <!--
-      |--------------------------------------------------------------------------
-      | Section 21
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 21
+                  |--------------------------------------------------------------------------
+                  -->
 
         <section class="section-21">
             <div class="section-container">
@@ -1516,10 +1506,10 @@
         </section>
 
         <!--
-      |--------------------------------------------------------------------------
-      | Section 22
-      |--------------------------------------------------------------------------
-      -->
+                  |--------------------------------------------------------------------------
+                  | Section 22
+                  |--------------------------------------------------------------------------
+                  -->
         <div class="section-15-bg section-22-bg"></div>
         <section class="section-15 section-22">
             <div class="section-container">
@@ -1539,18 +1529,16 @@
                             <!-- Accordion item 1 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingOne">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
-                                        aria-controls="collapseOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                         <span>
-                                            <img width="40" height="44" src="images/q-icon.png"
-                                                alt="" />
+                                            <img width="40" height="44" src="images/q-icon.png" alt="" />
                                         </span>
                                         Is Icon Rocklear a Ceramic Coating?
                                     </button>
                                 </h2>
-                                <div id="collapseOne" class="accordion-collapse collapse"
-                                    aria-labelledby="headingOne" data-bs-parent="#iconRocklearAccordion">
+                                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                    data-bs-parent="#iconRocklearAccordion">
                                     <div class="accordion-body">
                                         <p>
                                             No. Ceramic coatings were developed in the early 2000s
@@ -1568,18 +1556,16 @@
                             <!-- Accordion item 2 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingTwo">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
-                                        aria-controls="collapseTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                         <span>
-                                            <img width="40" height="44" src="images/q-icon.png"
-                                                alt="" />
+                                            <img width="40" height="44" src="images/q-icon.png" alt="" />
                                         </span>
                                         What is Icon Rocklear?
                                     </button>
                                 </h2>
-                                <div id="collapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="headingTwo" data-bs-parent="#iconRocklearAccordion">
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#iconRocklearAccordion">
                                     <div class="accordion-body">
                                         <p>
                                             Icon Rocklear was forged by blending higher tensile,
@@ -1594,12 +1580,11 @@
                             <!-- Accordion item 3 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingThree">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                        aria-expanded="false" aria-controls="collapseThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
                                         <span>
-                                            <img width="40" height="44" src="images/q-icon.png"
-                                                alt="" />
+                                            <img width="40" height="44" src="images/q-icon.png" alt="" />
                                         </span>
                                         Can you put other materials on top of Icon Rocklear?
                                     </button>
@@ -1622,18 +1607,17 @@
                             <!-- Accordion item 4 -->
                             <div class="accordion-item">
                                 <h2 class="accordion-header" id="headingFour">
-                                    <button class="accordion-button collapsed" type="button"
-                                        data-bs-toggle="collapse" data-bs-target="#collapseFour"
-                                        aria-expanded="false" aria-controls="collapseFour">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseFour" aria-expanded="false"
+                                        aria-controls="collapseFour">
                                         <span>
-                                            <img width="40" height="44" src="images/q-icon.png"
-                                                alt="" />
+                                            <img width="40" height="44" src="images/q-icon.png" alt="" />
                                         </span>
                                         How long can I expect my Icon Rocklear system to last?
                                     </button>
                                 </h2>
-                                <div id="collapseFour" class="accordion-collapse collapse"
-                                    aria-labelledby="headingFour" data-bs-parent="#iconRocklearAccordion">
+                                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                    data-bs-parent="#iconRocklearAccordion">
                                     <div class="accordion-body">
                                         <p>
                                             A bonafide 15 years under normal conditions is standard.
@@ -1650,349 +1634,348 @@
 @endsection
 
 @section('scripts')
+    <script src="https://unpkg.com/image-compare-viewer@1.6.2/dist/image-compare-viewer.min.js"></script>
 
-<script src="https://unpkg.com/image-compare-viewer@1.6.2/dist/image-compare-viewer.min.js"></script>
+    <script src="js/ep-marquee.min.js"></script>
 
-<script src="js/ep-marquee.min.js"></script>
+    <script>
+        var progressBars = {
+            rocklear: [{
+                    label: "SCRATCH RESISTANCE",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "COLOR ENHANCEMENT",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "FEATURE CLARITY",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "COATING THICKNESS (UM+)",
+                    value: 35,
+                    maxValue: 35
+                },
+                {
+                    label: "UV PROTECTION",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "ROCK CHIP RESISTANCE",
+                    value: 40,
+                    maxValue: 100
+                },
+                {
+                    label: "CHEMICAL PROTECTION",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "SALT SPRAY",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "IMPACT ABSORPTION (IN LBS)",
+                    value: 120,
+                    maxValue: 100
+                }, // Note: The value here is above the maxValue.
+                {
+                    label: "FLEXIBILITY",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "LONGEVITY",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "WARRANTY",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "DURABILITY",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "CLEAR COAT REDUCTION",
+                    value: 5,
+                    maxValue: 100
+                },
+                {
+                    label: "YEARLY RECOATS COSTS",
+                    value: 0,
+                    maxValue: 100
+                },
+                {
+                    label: "MANDATORY MAINTENANCE",
+                    value: 0,
+                    maxValue: 100
+                },
+            ],
+            ceramic: [{
+                    label: "SCRATCH RESISTANCE",
+                    value: 10,
+                    maxValue: 100
+                },
+                {
+                    label: "COLOR ENHANCEMENT",
+                    value: 60,
+                    maxValue: 100
+                },
+                {
+                    label: "FEATURE CLARITY",
+                    value: 30,
+                    maxValue: 100
+                },
+                {
+                    label: "COATING THICKNESS (UM+)",
+                    value: 2.5,
+                    maxValue: 35
+                },
+                {
+                    label: "UV PROTECTION",
+                    value: 50,
+                    maxValue: 100
+                },
+                {
+                    label: "ROCK CHIP RESISTANCE",
+                    value: 0,
+                    maxValue: 100
+                },
+                {
+                    label: "CHEMICAL PROTECTION",
+                    value: 10,
+                    maxValue: 100
+                },
+                {
+                    label: "SALT SPRAY",
+                    value: 30,
+                    maxValue: 100
+                },
+                {
+                    label: "IMPACT ABSORPTION (IN LBS)",
+                    value: 80,
+                    maxValue: 100
+                },
+                {
+                    label: "FLEXIBILITY",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "LONGEVITY",
+                    value: 25,
+                    maxValue: 100
+                },
+                {
+                    label: "WARRANTY",
+                    value: 25,
+                    maxValue: 100
+                },
+                {
+                    label: "DURABILITY",
+                    value: 20,
+                    maxValue: 100
+                },
+                {
+                    label: "CLEAR COAT REDUCTION",
+                    value: 60,
+                    maxValue: 100
+                },
+                {
+                    label: "YEARLY RECOATS COSTS",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "MANDATORY MAINTENANCE",
+                    value: 100,
+                    maxValue: 100
+                },
+            ],
+            polymers: [{
+                    label: "SCRATCH RESISTANCE",
+                    value: 0,
+                    maxValue: 100
+                },
+                {
+                    label: "COLOR ENHANCEMENT",
+                    value: 20,
+                    maxValue: 100
+                },
+                {
+                    label: "FEATURE CLARITY",
+                    value: 15,
+                    maxValue: 100
+                },
+                {
+                    label: "COATING THICKNESS",
+                    value: 0,
+                    maxValue: 35
+                },
+                {
+                    label: "UV PROTECTION",
+                    value: 15,
+                    maxValue: 100
+                },
+                {
+                    label: "ROCK CHIP RESISTANCE",
+                    value: 0,
+                    maxValue: 100
+                },
+                {
+                    label: "CHEMICAL PROTECTION",
+                    value: 0,
+                    maxValue: 100
+                },
+                {
+                    label: "SALT SPRAY",
+                    value: 0,
+                    maxValue: 100
+                },
+                {
+                    label: "IMPACT ABSORPTION",
+                    value: 0,
+                    maxValue: 100
+                },
+                {
+                    label: "FLEXIBILITY",
+                    value: 0,
+                    maxValue: 100
+                },
+                {
+                    label: "LONGEVITY",
+                    value: 5,
+                    maxValue: 100
+                },
+                {
+                    label: "WARRANTY",
+                    value: 0,
+                    maxValue: 100
+                },
+                {
+                    label: "DURABILITY",
+                    value: 0,
+                    maxValue: 100
+                },
+                {
+                    label: "CLEAR COAT REDUCTION",
+                    value: 0,
+                    maxValue: 100
+                },
+                {
+                    label: "YEARLY RECOATS COSTS",
+                    value: 100,
+                    maxValue: 100
+                },
+                {
+                    label: "MANDATORY MAINTENANCE",
+                    value: 100,
+                    maxValue: 100
+                },
+            ],
+        };
 
-<script>
-    var progressBars = {
-        rocklear: [{
-                label: "SCRATCH RESISTANCE",
-                value: 100,
-                maxValue: 100
+        var cards = [{
+                imgSrc: "images/Strentgth.png",
+                imgSrcset: "images/Strentgth.png 407w, images/Strentgth-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "75X STRENGTH",
+                description: "In tests of tensile strength Icon Rocklear resists heavy damage when compared to any other coating on the market. It’s up to 63 microns of a hard protected surface brings you over 75x the strength when compared to other coatings in the world. Making it the only coating to help with resistance to heavy damage such as real world perils, rock chips, & actual car key scratches.",
             },
             {
-                label: "COLOR ENHANCEMENT",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "FEATURE CLARITY",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "COATING THICKNESS (UM+)",
-                value: 35,
-                maxValue: 35
-            },
-            {
-                label: "UV PROTECTION",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "ROCK CHIP RESISTANCE",
-                value: 40,
-                maxValue: 100
-            },
-            {
-                label: "CHEMICAL PROTECTION",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "SALT SPRAY",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "IMPACT ABSORPTION (IN LBS)",
-                value: 120,
-                maxValue: 100
-            }, // Note: The value here is above the maxValue.
-            {
-                label: "FLEXIBILITY",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "LONGEVITY",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "WARRANTY",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "DURABILITY",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "CLEAR COAT REDUCTION",
-                value: 5,
-                maxValue: 100
-            },
-            {
-                label: "YEARLY RECOATS COSTS",
-                value: 0,
-                maxValue: 100
-            },
-            {
-                label: "MANDATORY MAINTENANCE",
-                value: 0,
-                maxValue: 100
-            },
-        ],
-        ceramic: [{
-                label: "SCRATCH RESISTANCE",
-                value: 10,
-                maxValue: 100
-            },
-            {
-                label: "COLOR ENHANCEMENT",
-                value: 60,
-                maxValue: 100
-            },
-            {
-                label: "FEATURE CLARITY",
-                value: 30,
-                maxValue: 100
-            },
-            {
-                label: "COATING THICKNESS (UM+)",
-                value: 2.5,
-                maxValue: 35
-            },
-            {
-                label: "UV PROTECTION",
-                value: 50,
-                maxValue: 100
-            },
-            {
-                label: "ROCK CHIP RESISTANCE",
-                value: 0,
-                maxValue: 100
-            },
-            {
-                label: "CHEMICAL PROTECTION",
-                value: 10,
-                maxValue: 100
-            },
-            {
-                label: "SALT SPRAY",
-                value: 30,
-                maxValue: 100
-            },
-            {
-                label: "IMPACT ABSORPTION (IN LBS)",
-                value: 80,
-                maxValue: 100
-            },
-            {
-                label: "FLEXIBILITY",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "LONGEVITY",
-                value: 25,
-                maxValue: 100
-            },
-            {
-                label: "WARRANTY",
-                value: 25,
-                maxValue: 100
-            },
-            {
-                label: "DURABILITY",
-                value: 20,
-                maxValue: 100
-            },
-            {
-                label: "CLEAR COAT REDUCTION",
-                value: 60,
-                maxValue: 100
-            },
-            {
-                label: "YEARLY RECOATS COSTS",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "MANDATORY MAINTENANCE",
-                value: 100,
-                maxValue: 100
-            },
-        ],
-        polymers: [{
-                label: "SCRATCH RESISTANCE",
-                value: 0,
-                maxValue: 100
-            },
-            {
-                label: "COLOR ENHANCEMENT",
-                value: 20,
-                maxValue: 100
-            },
-            {
-                label: "FEATURE CLARITY",
-                value: 15,
-                maxValue: 100
-            },
-            {
-                label: "COATING THICKNESS",
-                value: 0,
-                maxValue: 35
-            },
-            {
-                label: "UV PROTECTION",
-                value: 15,
-                maxValue: 100
-            },
-            {
-                label: "ROCK CHIP RESISTANCE",
-                value: 0,
-                maxValue: 100
-            },
-            {
-                label: "CHEMICAL PROTECTION",
-                value: 0,
-                maxValue: 100
-            },
-            {
-                label: "SALT SPRAY",
-                value: 0,
-                maxValue: 100
-            },
-            {
-                label: "IMPACT ABSORPTION",
-                value: 0,
-                maxValue: 100
-            },
-            {
-                label: "FLEXIBILITY",
-                value: 0,
-                maxValue: 100
-            },
-            {
-                label: "LONGEVITY",
-                value: 5,
-                maxValue: 100
-            },
-            {
-                label: "WARRANTY",
-                value: 0,
-                maxValue: 100
-            },
-            {
-                label: "DURABILITY",
-                value: 0,
-                maxValue: 100
-            },
-            {
-                label: "CLEAR COAT REDUCTION",
-                value: 0,
-                maxValue: 100
-            },
-            {
-                label: "YEARLY RECOATS COSTS",
-                value: 100,
-                maxValue: 100
-            },
-            {
-                label: "MANDATORY MAINTENANCE",
-                value: 100,
-                maxValue: 100
-            },
-        ],
-    };
-
-    var cards = [{
-            imgSrc: "images/Strentgth.png",
-            imgSrcset: "images/Strentgth.png 407w, images/Strentgth-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "75X STRENGTH",
-            description: "In tests of tensile strength Icon Rocklear resists heavy damage when compared to any other coating on the market. It’s up to 63 microns of a hard protected surface brings you over 75x the strength when compared to other coatings in the world. Making it the only coating to help with resistance to heavy damage such as real world perils, rock chips, & actual car key scratches.",
-        },
-        {
-            imgSrc: "images/Thicknes.png",
-            imgSrcset: "images/Thicknes.png 407w, images/Thicknes-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "35X THICKNESS",
-            description: `<ul>
+                imgSrc: "images/Thicknes.png",
+                imgSrcset: "images/Thicknes.png 407w, images/Thicknes-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "35X THICKNESS",
+                description: `<ul>
       <li>Icon Rocklear is the most depth efficient coating on the market today. Certified Icon Rocklear technicians can achieve a 2.5 mil or 63 micron depth in a single application. Or for easy math, 35+ times thicker than a Ceramic or Graphene Coating. This eliminates the need for counterproductive paint correction / grind off of your precious protective clear coat as is necessary with Ceramic and Graphene Coatings.<br>Icon Rocklear only adds protection!</li>
       <li>Ceramic Coatings are 1-3 microns.</li>
       </ul>`,
-        },
-        {
-            imgSrc: "images/Brilance-1.png",
-            imgSrcset: "images/Brilance-1.png 407w, images/Brilance-1-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "30%+ BRILLIANCE",
-            description: `Icon Rocklear is unequalled in its brilliance and clarity. In recent spectrometer testing, Icon Rocklear registered a 97% reflective quality over an 85° angle. This was over a five year old automotive painted surface.  This has never been achieved by any other coating until now. Icon Rocklear’s brilliance is 30% greater than any Ceramic or Graphene coating can achieve even with multiple layers.`,
-        },
-        {
-            imgSrc: "images/Uv.png",
-            imgSrcset: "images/Uv.png 407w, images/Uv-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "20X UV WEATHERING",
-            description: `<ul><li aria-level="2">ASTM D4587&nbsp; No change in appearance after 4000 hours of extreme UV and condensation exposure</li><li>Up to 20x the UV protection than Ceramic Coatings</li></ul>`,
-        },
-        {
-            imgSrc: "images/Salt.png",
-            imgSrcset: "images/Salt.png 407w, images/Salt-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "SALT SPRAY",
-            description: `<ul><li aria-level="2">300% more longevity in Salty/Humid environments than any other coating.</li><li aria-level="2">ASTM B117 Withstood 1000 hours with no visible change</li><li aria-level="2">(Premium Professional Ceramics) withstood 350 hours<span style="color: var( --e-global-color-secondary ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">&nbsp;</span></li></ul>`,
-        },
-        {
-            imgSrc: "images/Scratch.png",
-            imgSrcset: "images/Scratch.png 407w, images/Scratch-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "SCRATCH / ABRASION",
-            description: `<ul><li aria-level="2">In a lab tested environment, a key was dragged against a 50/50 coated panel. The scratch was started on the non coated area, then to the coated area. The key left a very clear scratch on the non coated area, but the scratch left on the coated area could barely be seen.&nbsp;</li><li>In competitors coatings, the moment it has the swirls or scratches it must be removed, paint corrected and reapplied.</li></ul>`,
-        },
-        {
-            imgSrc: "images/Impact-resistance.png",
-            imgSrcset: "images/Impact-resistance.png 407w, images/Impact-resistance-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "IMPACT RESISTANCE",
-            description: `<ul><li>Over 50% more Impact Resistance than Ceramics</li><li aria-level="2">Lab tested using ASTM D-2794. Impact resistance at 120 in. Ibs.</li><li aria-level="2">(Premium Professional Ceramics) tested at 80 in. Ibs</li></ul>`,
-        },
-        {
-            imgSrc: "images/PPF-Wrap.png",
-            imgSrcset: "images/PPF-Wrap.png 407w, images/PPF-Wrap-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "PPF / WRAP VERSATILITY",
-            description: `<div class="bdt-show-hide-content" style="display: block;">
+            },
+            {
+                imgSrc: "images/Brilance-1.png",
+                imgSrcset: "images/Brilance-1.png 407w, images/Brilance-1-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "30%+ BRILLIANCE",
+                description: `Icon Rocklear is unequalled in its brilliance and clarity. In recent spectrometer testing, Icon Rocklear registered a 97% reflective quality over an 85° angle. This was over a five year old automotive painted surface.  This has never been achieved by any other coating until now. Icon Rocklear’s brilliance is 30% greater than any Ceramic or Graphene coating can achieve even with multiple layers.`,
+            },
+            {
+                imgSrc: "images/Uv.png",
+                imgSrcset: "images/Uv.png 407w, images/Uv-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "20X UV WEATHERING",
+                description: `<ul><li aria-level="2">ASTM D4587&nbsp; No change in appearance after 4000 hours of extreme UV and condensation exposure</li><li>Up to 20x the UV protection than Ceramic Coatings</li></ul>`,
+            },
+            {
+                imgSrc: "images/Salt.png",
+                imgSrcset: "images/Salt.png 407w, images/Salt-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "SALT SPRAY",
+                description: `<ul><li aria-level="2">300% more longevity in Salty/Humid environments than any other coating.</li><li aria-level="2">ASTM B117 Withstood 1000 hours with no visible change</li><li aria-level="2">(Premium Professional Ceramics) withstood 350 hours<span style="color: var( --e-global-color-secondary ); font-family: var( --e-global-typography-text-font-family ), Sans-serif;">&nbsp;</span></li></ul>`,
+            },
+            {
+                imgSrc: "images/Scratch.png",
+                imgSrcset: "images/Scratch.png 407w, images/Scratch-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "SCRATCH / ABRASION",
+                description: `<ul><li aria-level="2">In a lab tested environment, a key was dragged against a 50/50 coated panel. The scratch was started on the non coated area, then to the coated area. The key left a very clear scratch on the non coated area, but the scratch left on the coated area could barely be seen.&nbsp;</li><li>In competitors coatings, the moment it has the swirls or scratches it must be removed, paint corrected and reapplied.</li></ul>`,
+            },
+            {
+                imgSrc: "images/Impact-resistance.png",
+                imgSrcset: "images/Impact-resistance.png 407w, images/Impact-resistance-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "IMPACT RESISTANCE",
+                description: `<ul><li>Over 50% more Impact Resistance than Ceramics</li><li aria-level="2">Lab tested using ASTM D-2794. Impact resistance at 120 in. Ibs.</li><li aria-level="2">(Premium Professional Ceramics) tested at 80 in. Ibs</li></ul>`,
+            },
+            {
+                imgSrc: "images/PPF-Wrap.png",
+                imgSrcset: "images/PPF-Wrap.png 407w, images/PPF-Wrap-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "PPF / WRAP VERSATILITY",
+                description: `<div class="bdt-show-hide-content" style="display: block;">
                         <p>Body shops, Tint, Paint Protection Film &amp; Wrap shops, we also got you covered. Icon Rocklear allows for the adhesion of vinyl wrap and PPF on top. Meaning it radiates the brilliance from underneath your film creating an even better finish for film installed, and secondly, it acts as a barrier for future paint peeling incidents if wraps or film is removed. Icon Rocklear also allows for paint refinishing over the surface of Icon Rocklear. It is not necessary to remove.</p><p>See your Icon Rocklear facility for more details.</p>                    </div>`,
-        },
-        {
-            imgSrc: "images/car-adhesion.png",
-            imgSrcset: "images/car-adhesion.png 407w, images/car-adhesion-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "ADHESION",
-            description: `<ul><li aria-level="2">ASTM D4541 Aluminum was epoxied to the coated surface and pulled off to test adhesion. It took 540psi to separate the car paint from the metal. The coating did not separate from the car paint.</li><li aria-level="2">(Premium Professional Ceramics) uses ASTM D3359 which tests for adhesion using tape.</li></ul>`,
-        },
-        {
-            imgSrc: "images/renewable.png",
-            imgSrcset: "images/renewable.png 407w, images/renewable-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "RENEWABLE",
-            description: `Specifically because of our ICE technology, Icon Rocklear may be corrected by an Icon Rocklear technician if damaged. Icon Rocklear depth, and strength make correction possible when performed by Icon Rocklear technician. Even in the most perilous of occurrences, Icon Rocklear can be reapplied over itself without removing the basecoat. This makes Icon Rocklear a system for life. Icon Rocklear can achieve a new looking finish for the life of the vehicle or boat! Again, Icon Rocklear is not just another  coating but a system for life.`,
-        },
-        {
-            imgSrc: "images/mandrel-bend-car.png",
-            imgSrcset: "images/mandrel-bend-car.png 407w, images/mandrel-bend-car-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "MANDREL BEND",
-            description: `<ul><li aria-level="2">ASTM D522 A ⅛ in Bend at 180 degrees was made in the coated panel with no cracking.</li><li aria-level="2">(Premium Professional Ceramics) passed the same test</li></ul>`,
-        },
-        {
-            imgSrc: "images/maintance.png",
-            imgSrcset: "images/maintance.png 407w, images/maintance-300x148.png 300w",
-            imgSizes: "(max-width: 407px) 100vw, 407px",
-            title: "MAINTENANCE",
-            description: `Icon Rocklear requires zero maintenance. This eliminates the need for pesky and expensive bi-weekly maintenance washes and expensive yearly recoat costs.`,
-        },
-        // ... add more card objects ...
-    ];
-</script>
+            },
+            {
+                imgSrc: "images/car-adhesion.png",
+                imgSrcset: "images/car-adhesion.png 407w, images/car-adhesion-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "ADHESION",
+                description: `<ul><li aria-level="2">ASTM D4541 Aluminum was epoxied to the coated surface and pulled off to test adhesion. It took 540psi to separate the car paint from the metal. The coating did not separate from the car paint.</li><li aria-level="2">(Premium Professional Ceramics) uses ASTM D3359 which tests for adhesion using tape.</li></ul>`,
+            },
+            {
+                imgSrc: "images/renewable.png",
+                imgSrcset: "images/renewable.png 407w, images/renewable-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "RENEWABLE",
+                description: `Specifically because of our ICE technology, Icon Rocklear may be corrected by an Icon Rocklear technician if damaged. Icon Rocklear depth, and strength make correction possible when performed by Icon Rocklear technician. Even in the most perilous of occurrences, Icon Rocklear can be reapplied over itself without removing the basecoat. This makes Icon Rocklear a system for life. Icon Rocklear can achieve a new looking finish for the life of the vehicle or boat! Again, Icon Rocklear is not just another  coating but a system for life.`,
+            },
+            {
+                imgSrc: "images/mandrel-bend-car.png",
+                imgSrcset: "images/mandrel-bend-car.png 407w, images/mandrel-bend-car-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "MANDREL BEND",
+                description: `<ul><li aria-level="2">ASTM D522 A ⅛ in Bend at 180 degrees was made in the coated panel with no cracking.</li><li aria-level="2">(Premium Professional Ceramics) passed the same test</li></ul>`,
+            },
+            {
+                imgSrc: "images/maintance.png",
+                imgSrcset: "images/maintance.png 407w, images/maintance-300x148.png 300w",
+                imgSizes: "(max-width: 407px) 100vw, 407px",
+                title: "MAINTENANCE",
+                description: `Icon Rocklear requires zero maintenance. This eliminates the need for pesky and expensive bi-weekly maintenance washes and expensive yearly recoat costs.`,
+            },
+            // ... add more card objects ...
+        ];
+    </script>
 
-<script src="js/script.js?v=1asd"></script>
+    <script src="js/script.js?v=1asd"></script>
 @endsection

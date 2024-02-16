@@ -245,7 +245,7 @@
                                 </div>
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group d-flex">
-                                        <label for="LICENSEE">LICENSEE</label>
+                                        <label for="LICENSEE">LICENSE</label>
                                         <input value="LICENSEE" type="radio" name="service_type"
                                             id="service_type_installation" />
                                     </div>

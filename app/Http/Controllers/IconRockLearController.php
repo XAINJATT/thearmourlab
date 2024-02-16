@@ -16,6 +16,12 @@ class IconRockLearController extends Controller
         return view('frontend.pages.icon-rocklear.contact');
     }
 
+    public function adminIndex()
+    {
+        $IconRockLearModel = IconRockLearModel::all();
+        return view('admin.iconrocklear.index', compact('IconRockLearModel'));
+    }
+
     public function store(Request $request)
     {
         $request->validate([
@@ -33,6 +39,21 @@ class IconRockLearController extends Controller
         $data['user_id'] = auth()->user()->id ?? NULL;
         if (IconRockLearModel::create($data)) {
             return redirect()->back()->with('success-message', 'Your request has been sent successfully');
+        }
+    }
+
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function delete($id)
+    {
+        // Get the existing product details
+        $IconRockLearModelDetails = IconRockLearModel::where('id', $id)->delete();
+
+        if ($IconRockLearModelDetails) {
+            return response()->json(['success' => true]);
+        } else {
+            return response()->json(['success' => true]);
         }
     }
 }
