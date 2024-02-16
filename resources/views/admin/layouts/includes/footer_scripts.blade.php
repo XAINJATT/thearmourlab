@@ -88,7 +88,7 @@
     ];
 
 
-    var quill = new Quill('textarea#description', {
+    var quill = new Quill('#description', {
         modules: {
             toolbar: toolbarOptions
         },
