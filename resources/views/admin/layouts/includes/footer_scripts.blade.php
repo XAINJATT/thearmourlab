@@ -11,7 +11,7 @@
 {{-- <script src="https://cdn.tiny.cloud/1/<your API key>/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script> --}}
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 <!-- Include the Quill library -->
-<script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.jsjs"></script>
+<script src="https://cdn.jsdelivr.net/npm/quill@2.0.0-rc.2/dist/quill.js"></script>
 <script src="{{ asset('assets/vendor/js/menu.js') }}"></script>
 <!-- endbuild -->
 
