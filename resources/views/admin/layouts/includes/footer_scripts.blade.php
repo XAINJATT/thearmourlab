@@ -6,6 +6,8 @@
 <script src="{{ asset('assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js') }}"></script>
 <script src="https://cdn.tiny.cloud/1/<your API key>/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
 <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+<!-- Include the Quill library -->
+<script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
 <script src="{{ asset('assets/vendor/js/menu.js') }}"></script>
 <!-- endbuild -->
 
@@ -28,46 +30,51 @@
         $("#email").select2();
     });
 
-    var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    tinymce.init({
-        selector: 'textarea#description',
-        plugins: ' preview powerpaste casechange importcss searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen image link media mediaembed codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists checklist wordcount tinymcespellchecker a11ychecker help formatpainter permanentpen pageembed charmap tinycomments mentions quickbars linkchecker emoticons advtable export',
-        mobile: {
-            plugins: ' preview powerpaste casechange importcss searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen image link media mediaembed codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists checklist wordcount tinymcespellchecker a11ychecker help formatpainter pageembed charmap mentions quickbars linkchecker emoticons advtable'
-        },
-        menu: {
-            tc: {
-                title: 'Comments',
-                items: 'addcomment showcomments deleteallconversations'
-            }
-        },
-        menubar: 'file edit view insert format tools table tc help',
-        toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment',
-        autosave_ask_before_unload: true,
-        autosave_interval: '30s',
-        autosave_prefix: '{path}{query}-{id}-',
-        autosave_restore_when_empty: false,
-        autosave_retention: '2m',
-        image_advtab: true,
 
-        importcss_append: true,
-        height: 600,
-        image_caption: true,
-        quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
-        noneditable_noneditable_class: 'mceNonEditable',
-        toolbar_mode: 'sliding',
-        spellchecker_ignore_list: ['Ephox', 'Moxiecode'],
-        tinycomments_mode: 'embedded',
-        content_style: '.mymention{ color: gray; }',
-        contextmenu: 'link image table configurepermanentpen',
-        a11y_advanced_options: true,
-        skin: 'oxide',
-        content_css: 'default',
+    var quill = new Quill('textarea#description', {
+    theme: 'snow'
+  });
 
-    }).then(function(editors) {
-        $(".tox.tox-silver-sink.tox-tinymce-aux .tox-notifications-container .tox-notification").css("display",
-            "none")
-    });
+    // var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    // tinymce.init({
+    //     selector: 'textarea#description',
+    //     plugins: ' preview powerpaste casechange importcss searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen image link media mediaembed codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists checklist wordcount tinymcespellchecker a11ychecker help formatpainter permanentpen pageembed charmap tinycomments mentions quickbars linkchecker emoticons advtable export',
+    //     mobile: {
+    //         plugins: ' preview powerpaste casechange importcss searchreplace autolink autosave save directionality advcode visualblocks visualchars fullscreen image link media mediaembed codesample table charmap pagebreak nonbreaking anchor insertdatetime advlist lists checklist wordcount tinymcespellchecker a11ychecker help formatpainter pageembed charmap mentions quickbars linkchecker emoticons advtable'
+    //     },
+    //     menu: {
+    //         tc: {
+    //             title: 'Comments',
+    //             items: 'addcomment showcomments deleteallconversations'
+    //         }
+    //     },
+    //     menubar: 'file edit view insert format tools table tc help',
+    //     toolbar: 'undo redo | bold italic underline strikethrough | fontselect fontsizeselect formatselect | alignleft aligncenter alignright alignjustify | outdent indent |  numlist bullist checklist | forecolor backcolor casechange permanentpen formatpainter removeformat | pagebreak | charmap emoticons | fullscreen  preview save | insertfile image media pageembed template link anchor codesample | a11ycheck ltr rtl | showcomments addcomment',
+    //     autosave_ask_before_unload: true,
+    //     autosave_interval: '30s',
+    //     autosave_prefix: '{path}{query}-{id}-',
+    //     autosave_restore_when_empty: false,
+    //     autosave_retention: '2m',
+    //     image_advtab: true,
+
+    //     importcss_append: true,
+    //     height: 600,
+    //     image_caption: true,
+    //     quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote quickimage quicktable',
+    //     noneditable_noneditable_class: 'mceNonEditable',
+    //     toolbar_mode: 'sliding',
+    //     spellchecker_ignore_list: ['Ephox', 'Moxiecode'],
+    //     tinycomments_mode: 'embedded',
+    //     content_style: '.mymention{ color: gray; }',
+    //     contextmenu: 'link image table configurepermanentpen',
+    //     a11y_advanced_options: true,
+    //     skin: 'oxide',
+    //     content_css: 'default',
+
+    // }).then(function(editors) {
+    //     $(".tox.tox-silver-sink.tox-tinymce-aux .tox-notifications-container .tox-notification").css("display",
+    //         "none")
+    // });
 </script>
 
 <!-- Apex Charts -->
