@@ -46,7 +46,7 @@
                                                 <td>{{ $value->email }}</td>
                                                 <td>{{ $value->phone }}</td>
                                                 <td>{{ $value->city . " , ". $value->state . " , ". $value->country }}</td>
-                                                <td>{{ $value->message }}</td>
+                                                <td>{{ $value->additional_information }}</td>
                                                 <td>
                                                     <a onclick="ContactUsBlog({{ $value->id }})"
                                                         class="cursor-pointer"><i class="fa fa-trash"
