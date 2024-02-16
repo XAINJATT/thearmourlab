@@ -111,8 +111,8 @@
                                                 </td>
                                                 <td>{{ $contest->created_at }}</td>
 
-                                                <a onclick="DeleteUser({{ $value->id }})" class="cursor-pointer"><i
-                                                    class="fa fa-trash" aria-hidden="true"></i></a>
+                                                <td><td><a onclick="DeleteUser({{ $contest->id }})" class="cursor-pointer"><i
+                                                    class="fa fa-trash" aria-hidden="true"></i></a></td></td>
 
                                             </tr>
                                         @endforeach

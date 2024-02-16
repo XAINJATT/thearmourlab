@@ -80,8 +80,7 @@
                                             <th>Phone</th>
                                             <th>Prize</th>
                                             <th>Date</th>
-                                            <a onclick="DeleteUser({{ $value->id }})" class="cursor-pointer"><i
-                                                class="fa fa-trash" aria-hidden="true"></i></a>
+                                           <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -93,6 +92,8 @@
                                                 <td>{{ $contest->phone }}</td>
                                                 <td>{{ $contest->prize }}</td>
                                                 <td>{{ $contest->created_at }}</td>
+                                                <td><a onclick="DeleteUser({{ $contest->id }})" class="cursor-pointer"><i
+                                                    class="fa fa-trash" aria-hidden="true"></i></a></td>
 
                                             </tr>
                                         @endforeach
