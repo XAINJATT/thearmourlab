@@ -259,7 +259,7 @@
                         </div>
                         <div class="cta-btns">
                             {{-- <a href="#" class="cta-primary">Find an Installer</a> --}}
-                            <a href="{{ route('icon-rocklear.contact') }}" class="cta-secondary">Become an
+                            <a href="{{ route('icon-rocklear.contact') }}" class="cta-primary">Become an
                                 installer</a>
                         </div>
                     </div>
