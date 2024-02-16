@@ -92,6 +92,7 @@
                                             <th>Phone</th>
                                             <th>Winner</th>
                                             <th>Date</th>
+                                            <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -109,6 +110,9 @@
                                                     @endif
                                                 </td>
                                                 <td>{{ $contest->created_at }}</td>
+
+                                                <a onclick="DeleteUser({{ $value->id }})" class="cursor-pointer"><i
+                                                    class="fa fa-trash" aria-hidden="true"></i></a>
 
                                             </tr>
                                         @endforeach
@@ -155,5 +159,54 @@
 
             return false;
         });
+
+        function DeleteUser(id) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#ef3737',
+                cancelButtonColor: '#6c757d',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        type: "POST",
+                        url: "{{ url('admin/giveaway-user/delete') }}" + '/' + id, // Pass the product parameter
+                        data: {
+                            _token: "{{ csrf_token() }}"
+                        },
+                        success: function(response) {
+                            if (response.success) {
+                                Swal.fire(
+                                    'Deleted!',
+                                    'Your blog has been deleted.',
+                                    'success'
+                                ).then(() => {
+                                    // Reload the page after a short delay (e.g., 0 seconds)
+                                    setTimeout(() => {
+                                        location.reload();
+                                    }, 0);
+                                });
+                            } else {
+                                Swal.fire(
+                                    'Error!',
+                                    'An error occurred while deleting the item.',
+                                    'error'
+                                );
+                            }
+                        },
+                        error: function() {
+                            Swal.fire(
+                                'Error!',
+                                'An error occurred while deleting the item.',
+                                'error'
+                            );
+                        }
+                    });
+                }
+            });
+        }
     </script>
 @endsection

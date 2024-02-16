@@ -80,6 +80,8 @@
                                             <th>Phone</th>
                                             <th>Prize</th>
                                             <th>Date</th>
+                                            <a onclick="DeleteUser({{ $value->id }})" class="cursor-pointer"><i
+                                                class="fa fa-trash" aria-hidden="true"></i></a>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -105,10 +107,12 @@
     </div>
     <!-- Contact End -->
 @endsection
-{{-- 
+
 @section('scripts')
     <script>
-        function DeleteContest(id) {
+
+
+function DeleteUser(id) {
             Swal.fire({
                 title: 'Are you sure?',
                 text: "You won't be able to revert this!",
@@ -121,7 +125,7 @@
                 if (result.isConfirmed) {
                     $.ajax({
                         type: "POST",
-                        url: "{{ url('admin/contests/delete') }}" + '/' + id, // Pass the product parameter
+                        url: "{{ url('admin/contest-user/delete') }}" + '/' + id, // Pass the product parameter
                         data: {
                             _token: "{{ csrf_token() }}"
                         },
@@ -129,7 +133,7 @@
                             if (response.success) {
                                 Swal.fire(
                                     'Deleted!',
-                                    'Your Prize has been deleted.',
+                                    'Your blog has been deleted.',
                                     'success'
                                 ).then(() => {
                                     // Reload the page after a short delay (e.g., 0 seconds)
@@ -157,34 +161,83 @@
             });
         }
 
-        $(document).on("click", ".on_off_giveaway", function() {
+        // function DeleteContest(id) {
+        //     Swal.fire({
+        //         title: 'Are you sure?',
+        //         text: "You won't be able to revert this!",
+        //         icon: 'warning',
+        //         showCancelButton: true,
+        //         confirmButtonColor: '#ef3737',
+        //         cancelButtonColor: '#6c757d',
+        //         confirmButtonText: 'Yes, delete it!'
+        //     }).then((result) => {
+        //         if (result.isConfirmed) {
+        //             $.ajax({
+        //                 type: "POST",
+        //                 url: "{{ url('admin/contests/delete') }}" + '/' + id, // Pass the product parameter
+        //                 data: {
+        //                     _token: "{{ csrf_token() }}"
+        //                 },
+        //                 success: function(response) {
+        //                     if (response.success) {
+        //                         Swal.fire(
+        //                             'Deleted!',
+        //                             'Your Prize has been deleted.',
+        //                             'success'
+        //                         ).then(() => {
+        //                             // Reload the page after a short delay (e.g., 0 seconds)
+        //                             setTimeout(() => {
+        //                                 location.reload();
+        //                             }, 0);
+        //                         });
+        //                     } else {
+        //                         Swal.fire(
+        //                             'Error!',
+        //                             'An error occurred while deleting the item.',
+        //                             'error'
+        //                         );
+        //                     }
+        //                 },
+        //                 error: function() {
+        //                     Swal.fire(
+        //                         'Error!',
+        //                         'An error occurred while deleting the item.',
+        //                         'error'
+        //                     );
+        //                 }
+        //             });
+        //         }
+        //     });
+        // }
 
-            Swal.fire({
-                title: 'Confirmation',
-                text: 'Are you sure?',
-                icon: "warning",
-                showCancelButton: true,
-                confirmButtonColor: "#3085d6",
-                cancelButtonColor: "#d33",
-                confirmButtonText: 'Yes',
-                cancelButtonText: 'Cancel',
-            }).then((result) => {
-                if (result.value) {
-                    $.ajax({
-                        method: "GET",
-                        url: "{{ route('admin.on_off_giveaway') }}",
-                        success: function(data) {
-                            $("#preloader").css("display", "none");
-                            location.reload();
-                        },
-                        error: function(request, status, error) {
-                            console.log(request.responseText);
-                        },
-                    });
-                }
-            });
+        // $(document).on("click", ".on_off_giveaway", function() {
 
-            return false;
-        });
+        //     Swal.fire({
+        //         title: 'Confirmation',
+        //         text: 'Are you sure?',
+        //         icon: "warning",
+        //         showCancelButton: true,
+        //         confirmButtonColor: "#3085d6",
+        //         cancelButtonColor: "#d33",
+        //         confirmButtonText: 'Yes',
+        //         cancelButtonText: 'Cancel',
+        //     }).then((result) => {
+        //         if (result.value) {
+        //             $.ajax({
+        //                 method: "GET",
+        //                 url: "{{ route('admin.on_off_giveaway') }}",
+        //                 success: function(data) {
+        //                     $("#preloader").css("display", "none");
+        //                     location.reload();
+        //                 },
+        //                 error: function(request, status, error) {
+        //                     console.log(request.responseText);
+        //                 },
+        //             });
+        //         }
+        //     });
+
+        //     return false;
+        // });
     </script>
-@endsection --}}
+@endsection
