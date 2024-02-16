@@ -482,9 +482,9 @@
                             </ul>
                             <div class="progress-image">
                                 <img loading="lazy" decoding="async" width="409" height="409"
-                                    src="imagesVector-Smart-Object-2.png" class="attachment-large size-large wp-image-450"
+                                    src="images/Vector-Smart-Object-2.png" class="attachment-large size-large wp-image-450"
                                     alt=""
-                                    srcset="imagesVector-Smart-Object-2.png 409w, imagesVector-Smart-Object-2-300x300.png 300w, imagesVector-Smart-Object-2-150x150.png 150w"
+                                    srcset="images/Vector-Smart-Object-2.png 409w, images/Vector-Smart-Object-2-300x300.png 300w, images/Vector-Smart-Object-2-150x150.png 150w"
                                     sizes="(max-width: 409px) 100vw, 409px">
                             </div>
                         </div>
