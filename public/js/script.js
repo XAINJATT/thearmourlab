@@ -58,7 +58,7 @@ const options = {
     hoverStart: false,
     verticalMode: false,
     startingPoint: 50,
-    fluidMode: true,
+    fluidMode: false,
 };
 
 // Add your options object as the second argument
