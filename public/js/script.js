@@ -36,7 +36,7 @@ const options = {
 
     controlColor: "#FFFFFF",
     controlShadow: true,
-    addCircle: false,
+    addCircle: true,
     addCircleBlur: true,
 
     // Label Defaults
