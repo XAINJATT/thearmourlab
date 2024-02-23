@@ -269,4 +269,18 @@ class ContestController extends Controller
             return response()->json(['success' => true]);
         }
     }
+     /**
+     * Remove the specified resource from storage.
+     */
+    public function deleteAllUser()
+    {
+        // Get the existing product details
+        $IconRockLearModelDetails = Contest::query()->delete();
+
+        if ($IconRockLearModelDetails) {
+            return response()->json(['success' => true]);
+        } else {
+            return response()->json(['success' => true]);
+        }
+    }
 }

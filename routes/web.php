@@ -232,11 +232,13 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/winners', [AdminContestController::class, 'winners'])->name('admin.winners');
     Route::get('admin/pick/winners', [AdminContestController::class, 'pickWinners'])->name('admin.pick.winners');
     Route::post('admin/contest-user/delete/{id}', [AdminContestController::class, 'deleteUser'])->name('admin.pick.winners.delete.user');
+    Route::post('admin/contest-user/all/delete', [AdminContestController::class, 'deleteAllUser'])->name('admin.pick.winners.delete.user');
 
     Route::post('admin/pick/store', [GiveawayEntryController::class, 'storeWinner'])->name('admin.draw');
     Route::get('admin/giveaway/users', [GiveawayEntryController::class, 'listUser'])->name('admin.list.giveaway');
     Route::get('admin/giveaway/winners', [GiveawayEntryController::class, 'winners'])->name('admin.giveaway.winners');
     Route::post('admin/giveaway-user/delete/{id}', [GiveawayEntryController::class, 'delete'])->name('admin.giveaway.winners.delete');
+    Route::post('admin/giveaway-user/all/delete', [GiveawayEntryController::class, 'deleteAll'])->name('admin.giveaway.winners.delete');
 
     //Testemonials: 
 

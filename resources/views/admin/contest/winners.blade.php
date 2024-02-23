@@ -66,6 +66,8 @@
                         <div class="card">
                             <div class="card-header row">
                                 <h6 class="text-uppercase mb-0 col-9">HERE ARE ALL Winners</h6>
+                                <a onclick="DeleteAllUser()" class="cursor-pointer btn btn-darnger"><i class="fa fa-trash"
+                                    aria-hidden="true"></i></a>
                                 {{-- <a style="min-width:250px" href="{{ route('admin.contest.create') }}"
                                     class="btn btn-primary col-3 float-right">Add
                                     New Prize</a> --}}
@@ -80,7 +82,7 @@
                                             <th>Phone</th>
                                             <th>Prize</th>
                                             <th>Date</th>
-                                           <th>Actions</th>
+                                            <th>Actions</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -93,7 +95,7 @@
                                                 <td>{{ $contest->prize }}</td>
                                                 <td>{{ $contest->created_at }}</td>
                                                 <td><a onclick="DeleteUser({{ $contest->id }})" class="cursor-pointer"><i
-                                                    class="fa fa-trash" aria-hidden="true"></i></a></td>
+                                                            class="fa fa-trash" aria-hidden="true"></i></a></td>
 
                                             </tr>
                                         @endforeach
@@ -111,9 +113,7 @@
 
 @section('scripts')
     <script>
-
-
-function DeleteUser(id) {
+        function DeleteAllUser() {
             Swal.fire({
                 title: 'Are you sure?',
                 text: "You won't be able to revert this!",
@@ -126,7 +126,58 @@ function DeleteUser(id) {
                 if (result.isConfirmed) {
                     $.ajax({
                         type: "POST",
-                        url: "{{ url('admin/contest-user/delete') }}" + '/' + id, // Pass the product parameter
+                        url: "{{ url('admin/contest-user/all/delete') }}" + '/' +
+                            // id, // Pass the product parameter
+                            data: {
+                                _token: "{{ csrf_token() }}"
+                            },
+                        success: function(response) {
+                            if (response.success) {
+                                Swal.fire(
+                                    'Deleted!',
+                                    'All contest users deleted!.',
+                                    'success'
+                                ).then(() => {
+                                    // Reload the page after a short delay (e.g., 0 seconds)
+                                    setTimeout(() => {
+                                        location.reload();
+                                    }, 0);
+                                });
+                            } else {
+                                Swal.fire(
+                                    'Error!',
+                                    'An error occurred while deleting the item.',
+                                    'error'
+                                );
+                            }
+                        },
+                        error: function() {
+                            Swal.fire(
+                                'Error!',
+                                'An error occurred while deleting the item.',
+                                'error'
+                            );
+                        }
+                    });
+                }
+            });
+        }
+
+        function DeleteUser(id) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#ef3737',
+                cancelButtonColor: '#6c757d',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        type: "POST",
+                        url: "{{ url('admin/contest-user/delete') }}" + '/' +
+                        id, // Pass the product parameter
                         data: {
                             _token: "{{ csrf_token() }}"
                         },

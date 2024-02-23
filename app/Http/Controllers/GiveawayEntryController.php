@@ -48,13 +48,27 @@ class GiveawayEntryController extends Controller
         return view("admin.giveaway.users", compact("names"));
     }
 
-     /**
+    /**
      * Remove the specified resource from storage.
      */
     public function delete($id)
     {
         // Get the existing product details
         $GiveawayEntryDetails = GiveawayEntry::where('id', $id)->delete();
+
+        if ($GiveawayEntryDetails) {
+            return response()->json(['success' => true]);
+        } else {
+            return response()->json(['success' => true]);
+        }
+    }
+    /**
+     * Remove the specified resource from storage.
+     */
+    public function deleteAll()
+    {
+        // Get the existing product details
+        $GiveawayEntryDetails = GiveawayEntry::query()->delete();
 
         if ($GiveawayEntryDetails) {
             return response()->json(['success' => true]);
