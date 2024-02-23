@@ -181,8 +181,7 @@
                 if (result.isConfirmed) {
                     $.ajax({
                         type: "POST",
-                        url: "{{ url('admin/giveaway-user/all/delete') }}" + '/' +
-                            // id, // Pass the product parameter
+                        url: "{{ url('admin/giveaway-user/all/delete') }}" 
                             data: {
                                 _token: "{{ csrf_token() }}"
                             },
