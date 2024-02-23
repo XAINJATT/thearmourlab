@@ -225,10 +225,10 @@
                 if (result.isConfirmed) {
                     $.ajax({
                         type: "POST",
-                        url: "{{ url('admin/giveaway-user/all/delete') }}" 
-                            data: {
-                                _token: "{{ csrf_token() }}"
-                            },
+                        url: "{{ url('admin/giveaway-user/all/delete') }}",
+                        data: {
+                            _token: "{{ csrf_token() }}"
+                        },
                         success: function(response) {
                             if (response.success) {
                                 Swal.fire(

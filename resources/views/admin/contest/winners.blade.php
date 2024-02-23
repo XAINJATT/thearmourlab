@@ -125,10 +125,10 @@
                 if (result.isConfirmed) {
                     $.ajax({
                         type: "POST",
-                        url: "{{ url('admin/contest-user/all/delete') }}" 
-                            data: {
-                                _token: "{{ csrf_token() }}"
-                            },
+                        url: "{{ url('admin/contest-user/all/delete') }}",
+                        data: {
+                            _token: "{{ csrf_token() }}"
+                        },
                         success: function(response) {
                             if (response.success) {
                                 Swal.fire(
@@ -175,7 +175,7 @@
                     $.ajax({
                         type: "POST",
                         url: "{{ url('admin/contest-user/delete') }}" + '/' +
-                        id, // Pass the product parameter
+                            id, // Pass the product parameter
                         data: {
                             _token: "{{ csrf_token() }}"
                         },
