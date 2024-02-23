@@ -1,45 +1,25 @@
-const element = document.getElementById("image-compare");
-
-element.addEventListener(
-    "touchstart",
-    function (e) {
-        e.preventDefault();
-    },
-    { passive: false }
-);
-
-const options = {
-    // UI Theme Defaults
-
-    controlColor: "#FFFFFF",
-    controlShadow: true,
-    addCircle: false,
-    addCircleBlur: true,
-
-    // Label Defaults
-
-    showLabels: false,
-    labelOptions: {
-        before: "Before",
-        after: "After",
-        onHover: false,
-    },
-
-    // Smoothing
-
-    smoothing: true,
-    smoothingAmount: 100,
-
-    // Other options
-
-    hoverStart: false,
-    verticalMode: false,
-    startingPoint: 50,
-    fluidMode: false,
-};
-
-// Add your options object as the second argument
-const viewer = new ImageCompare(element, options).mount();
+document.addEventListener("DOMContentLoaded", function () {
+    const element = document.getElementById("image-compare");
+    const options = {
+        controlColor: "#FFFFFF",
+        controlShadow: true,
+        addCircle: true,
+        addCircleBlur: true,
+        showLabels: true, // Set to true if you want labels
+        labelOptions: {
+            before: "Before",
+            after: "After",
+            onHover: true,
+        },
+        smoothing: true,
+        smoothingAmount: 100,
+        hoverStart: false,
+        verticalMode: false,
+        startingPoint: 50,
+        fluidMode: true,
+    };
+    new ImageCompare(element, options).mount();
+});
 /*
 |--------------------------------------------------------------------------
 | Cards animations bar 
