@@ -20,6 +20,49 @@ document.addEventListener("DOMContentLoaded", function () {
     };
     new ImageCompare(element, options).mount();
 });
+
+// const element = document.getElementById("image-compare");
+
+// element.addEventListener(
+//     "touchstart",
+//     function (e) {
+//         e.preventDefault();
+//     },
+//     { passive: false }
+// );
+
+// const options = {
+//     // UI Theme Defaults
+
+//     controlColor: "#FFFFFF",
+//     controlShadow: true,
+//     addCircle: false,
+//     addCircleBlur: true,
+
+//     // Label Defaults
+
+//     showLabels: false,
+//     labelOptions: {
+//         before: "Before",
+//         after: "After",
+//         onHover: false,
+//     },
+
+//     // Smoothing
+
+//     smoothing: true,
+//     smoothingAmount: 100,
+
+//     // Other options
+
+//     hoverStart: false,
+//     verticalMode: false,
+//     startingPoint: 50,
+//     fluidMode: false,
+// };
+
+// // Add your options object as the second argument
+// const viewer = new ImageCompare(element, options).mount();
 /*
 |--------------------------------------------------------------------------
 | Cards animations bar 
