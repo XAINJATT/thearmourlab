@@ -66,8 +66,7 @@
                         <div class="card">
                             <div class="card-header row">
                                 <h6 class="text-uppercase mb-0 col-9">HERE ARE ALL Winners</h6>
-                                <a onclick="DeleteAllUser()" class="cursor-pointer btn btn-darnger"><i class="fa fa-trash"
-                                    aria-hidden="true"></i></a>
+                                <a onclick="DeleteAllUser()" class="cursor-pointer btn btn-darnger">Delete All</a>
                                 {{-- <a style="min-width:250px" href="{{ route('admin.contest.create') }}"
                                     class="btn btn-primary col-3 float-right">Add
                                     New Prize</a> --}}
