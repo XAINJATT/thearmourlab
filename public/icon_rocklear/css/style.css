@@ -890,15 +890,15 @@ body p {
     --e-column-margin-right: 10px;
     height: 100%;
 }
-.section-12 .card-body{
-  background-color: #1e1d1de8 !important;
-  background-image: url(../images/Rectangle-10-copy1.png);
-  background-position: bottom center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  border-style: none;
-  transition: background 0.3s, border 0.3s, border-radius 0.3s,
-      box-shadow 0.3s;
+.section-12 .card-body {
+    background-color: #1e1d1de8 !important;
+    background-image: url(../images/Rectangle-10-copy1.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-style: none;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s,
+        box-shadow 0.3s;
 }
 .section-12 .card:hover {
     background-image: url(../images/Rectangle-10-copy.png);
@@ -1295,7 +1295,10 @@ body p {
     .section-4 a {
         width: 100%;
     }
-    section{
+    section {
         overflow: hidden !important;
+    }
+    .section-5 .section-container {
+        padding-bottom: 60px;
     }
 }
