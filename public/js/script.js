@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+// document.addEventListener("DOMContentLoaded", function () {
     const element = document.getElementById("image-compare");
     const options = {
         controlColor: "#FFFFFF",
@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", function () {
         fluidMode: true,
     };
     new ImageCompare(element, options).mount();
-});
+// });
 
 // const element = document.getElementById("image-compare");
 
