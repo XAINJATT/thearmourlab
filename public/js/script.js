@@ -1,68 +1,68 @@
-// document.addEventListener("DOMContentLoaded", function () {
-    const element = document.getElementById("image-compare");
-    const options = {
-        controlColor: "#FFFFFF",
-        controlShadow: true,
-        addCircle: true,
-        addCircleBlur: true,
-        showLabels: true, // Set to true if you want labels
-        labelOptions: {
-            before: "Before",
-            after: "After",
-            onHover: true,
-        },
-        smoothing: true,
-        smoothingAmount: 100,
-        hoverStart: false,
-        verticalMode: false,
-        startingPoint: 50,
-        fluidMode: true,
-    };
-    new ImageCompare(element, options).mount();
-// });
+// // document.addEventListener("DOMContentLoaded", function () {
+//     const element = document.getElementById("image-compare");
+//     const options = {
+//         controlColor: "#FFFFFF",
+//         controlShadow: true,
+//         addCircle: true,
+//         addCircleBlur: true,
+//         showLabels: true, // Set to true if you want labels
+//         labelOptions: {
+//             before: "Before",
+//             after: "After",
+//             onHover: true,
+//         },
+//         smoothing: true,
+//         smoothingAmount: 100,
+//         hoverStart: false,
+//         verticalMode: false,
+//         startingPoint: 50,
+//         fluidMode: true,
+//     };
+//     new ImageCompare(element, options).mount();
+// // });
 
-// const element = document.getElementById("image-compare");
+const element = document.getElementById("image-compare");
 
-// element.addEventListener(
-//     "touchstart",
-//     function (e) {
-//         e.preventDefault();
-//     },
-//     { passive: false }
-// );
+element.addEventListener(
+    "touchstart",
+    function (e) {
+        e.preventDefault();
+    },
+    { passive: false }
+);
 
-// const options = {
-//     // UI Theme Defaults
+const options = {
+    // UI Theme Defaults
 
-//     controlColor: "#FFFFFF",
-//     controlShadow: true,
-//     addCircle: false,
-//     addCircleBlur: true,
+    controlColor: "#FFFFFF",
+    controlShadow: true,
+    addCircle: false,
+    addCircleBlur: true,
 
-//     // Label Defaults
+    // Label Defaults
 
-//     showLabels: false,
-//     labelOptions: {
-//         before: "Before",
-//         after: "After",
-//         onHover: false,
-//     },
+    showLabels: false,
+    labelOptions: {
+        before: "Before",
+        after: "After",
+        onHover: false,
+    },
 
-//     // Smoothing
+    // Smoothing
 
-//     smoothing: true,
-//     smoothingAmount: 100,
+    smoothing: true,
+    smoothingAmount: 100,
 
-//     // Other options
+    // Other options
 
-//     hoverStart: false,
-//     verticalMode: false,
-//     startingPoint: 50,
-//     fluidMode: false,
-// };
+    hoverStart: false,
+    verticalMode: false,
+    startingPoint: 50,
+    fluidMode: false,
+};
 
-// // Add your options object as the second argument
-// const viewer = new ImageCompare(element, options).mount();
+// Add your options object as the second argument
+const viewer = new ImageCompare(element, options).mount();
 /*
 |--------------------------------------------------------------------------
 | Cards animations bar 
