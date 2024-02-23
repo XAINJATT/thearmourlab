@@ -1977,5 +1977,5 @@
         ];
     </script>
 
-    <script src="js/script.js?v=1asd"></script>
+    <script src="js/script.js?v=1asdad"></script>
 @endsection
