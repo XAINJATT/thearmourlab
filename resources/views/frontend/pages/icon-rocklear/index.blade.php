@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/ep-marquee.css') }}" />
 
-    <link rel="stylesheet" href="{{ asset('icon_rocklear/css/style.css?v=11adff') }}" />
+    <link rel="stylesheet" href="{{ asset('icon_rocklear/css/style.css?v=11adffg') }}" />
 @endsection
 
 @section('content')

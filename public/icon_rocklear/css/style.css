@@ -1295,4 +1295,7 @@ body p {
     .section-4 a {
         width: 100%;
     }
+    section{
+        overflow: hidden !important;
+    }
 }
