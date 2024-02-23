@@ -87,7 +87,7 @@
                                     <tbody>
                                         @foreach ($contests as $contest)
                                             <tr>
-                                                <th scope="row">{{ $loop->iteration }}</th>
+                                                <td scope="row">{{ $loop->iteration }}</td>
                                                 <td>{{ $contest->full_name }}</td>
                                                 <td>{{ $contest->email }}</td>
                                                 <td>{{ $contest->phone }}</td>

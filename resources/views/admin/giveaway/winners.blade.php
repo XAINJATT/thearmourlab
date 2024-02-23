@@ -87,7 +87,7 @@
                                     <tbody>
                                         @foreach ($names as $contest)
                                             <tr>
-                                                <th scope="row">{{ $loop->iteration }}</th>
+                                                <td scope="row">{{ $loop->iteration }}</td>
                                                 <td>{{ $contest->name }}</td>
                                                 <td>{{ $contest->email }}</td>
                                                 <td>{{ $contest->phone }}</td>
@@ -99,10 +99,9 @@
                                                     @endif
                                                 </td>
                                                 <td>{{ $contest->created_at }}</td>
-                                                <td>
                                                 <td><a onclick="DeleteUser({{ $contest->id }})" class="cursor-pointer"><i
                                                             class="fa fa-trash" aria-hidden="true"></i></a></td>
-                                                </td>
+
                                             </tr>
                                         @endforeach
                                     </tbody>
@@ -133,7 +132,7 @@
                     $.ajax({
                         type: "POST",
                         url: "{{ url('admin/giveaway-user/delete') }}" + '/' +
-                        id, // Pass the product parameter
+                            id, // Pass the product parameter
                         data: {
                             _token: "{{ csrf_token() }}"
                         },
