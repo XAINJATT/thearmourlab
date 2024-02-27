@@ -21,48 +21,76 @@
 //     new ImageCompare(element, options).mount();
 // // });
 
-const element = document.getElementById("image-compare");
+// const element = document.getElementById("image-compare");
 
-element.addEventListener(
-    "touchstart",
-    function (e) {
-        e.preventDefault();
-    },
-    { passive: false }
-);
+// element.addEventListener(
+//     "touchstart",
+//     function (e) {
+//         e.preventDefault();
+//     },
+//     { passive: false }
+// );
 
-const options = {
-    // UI Theme Defaults
+// const options = {
+//     // UI Theme Defaults
 
-    controlColor: "#FFFFFF",
-    controlShadow: true,
-    addCircle: true,
-    addCircleBlur: true,
+//     controlColor: "#FFFFFF",
+//     controlShadow: true,
+//     addCircle: true,
+//     addCircleBlur: true,
 
-    // Label Defaults
+//     // Label Defaults
 
-    showLabels: false,
-    labelOptions: {
-        before: "Before",
-        after: "After",
-        onHover: false,
-    },
+//     showLabels: false,
+//     labelOptions: {
+//         before: "Before",
+//         after: "After",
+//         onHover: false,
+//     },
 
-    // Smoothing
+//     // Smoothing
 
-    smoothing: true,
-    smoothingAmount: 100,
+//     smoothing: true,
+//     smoothingAmount: 100,
 
-    // Other options
+//     // Other options
 
-    hoverStart: false,
-    verticalMode: false,
-    startingPoint: 50,
-    fluidMode: false,
-};
+//     hoverStart: false,
+//     verticalMode: false,
+//     startingPoint: 50,
+//     fluidMode: false,
+// };
 
-// Add your options object as the second argument
-const viewer = new ImageCompare(element, options).mount();
+// // Add your options object as the second argument
+// const viewer = new ImageCompare(element, options).mount();
+
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    var element = document.getElementById("image-compare");
+    var options = {
+        // Match these options to those from your WordPress settings
+        controlColor: "#fff", // bar_color from data-settings
+        controlShadow: true, // Not directly from WP but common option
+        addCircle: true, // add_circle from data-settings
+        addCircleBlur: true, // add_circle_blur from data-settings
+        showLabels: true, // Assuming you want labels since WP version likely had them
+        labelOptions: {
+            before: "Before", // before_label from data-settings
+            after: "After", // after_label from data-settings
+            onHover: false, // Adjust based on your needs; not directly from WP settings
+        },
+        smoothing: true, // smoothing from data-settings
+        smoothingAmount: 400, // smoothing_amount from data-settings
+        hoverStart: false, // Not directly from WP, set based on preference
+        verticalMode: false, // orientation from data-settings (convert to boolean if needed)
+        startingPoint: 57, // default_offset_pct from data-settings
+        fluidMode: false, // Not directly from WP, set based on preference
+    };
+    new ImageCompare(element, options).mount();
+});
+
+
 /*
 |--------------------------------------------------------------------------
 | Cards animations bar 

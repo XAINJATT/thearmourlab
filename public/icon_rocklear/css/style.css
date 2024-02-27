@@ -1252,6 +1252,12 @@ body p {
 .contact-form .row {
     row-gap: 20px;
 }
+.image-compare {
+    position: relative;
+    width: 100%; /* Adjust based on your needs */
+    max-width: 1500px; /* Adjust based on your images */
+    margin: auto; /* Center the component */
+}
 
 @media screen and (max-width: 768px) {
     .header-title,
