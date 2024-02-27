@@ -1258,6 +1258,9 @@ body p {
     max-width: 1500px; /* Adjust based on your images */
     margin: auto; /* Center the component */
 }
+.image-compare {
+    touch-action: auto; /* Or try removing this property altogether */
+}
 
 @media screen and (max-width: 768px) {
     .header-title,

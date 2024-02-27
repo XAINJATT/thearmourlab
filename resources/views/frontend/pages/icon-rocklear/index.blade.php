@@ -19,7 +19,7 @@
 
     <link rel="stylesheet" href="{{ asset('css/ep-marquee.css') }}" />
 
-    <link rel="stylesheet" href="{{ asset('icon_rocklear/css/style.css?v=11adfffgf') }}" />
+    <link rel="stylesheet" href="{{ asset('icon_rocklear/css/style.css?v=11adfffgfaf') }}" />
 @endsection
 
 @section('content')
@@ -1962,5 +1962,5 @@
         ];
     </script>
 
-    <script src="js/script.js?v=1asdtestizxnaasdgif"></script>
+    <script src="js/script.js?v=1asdtestizxnaasdgfif"></script>
 @endsection
