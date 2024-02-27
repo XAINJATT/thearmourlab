@@ -1962,5 +1962,5 @@
         ];
     </script>
 
-    <script src="js/script.js?v=1asdtestizxng2if"></script>
+    <script src="js/script.js?v=1asdtestizxnaasdgif"></script>
 @endsection
