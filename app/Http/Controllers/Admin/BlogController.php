@@ -32,7 +32,7 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request->all());
+        // dd($request->all());
         /* - Image */
         $FileImage = "";
         if ($request->has('image')) {
