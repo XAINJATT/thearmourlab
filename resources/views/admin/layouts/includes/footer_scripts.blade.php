@@ -96,9 +96,10 @@
     });
 
     $(document).ready(function() {
-        $("form").on(".blogs_form", function() {
+        $("form").on(".blogs_form", 'submit' ,function() {
             var hvalue = $('#description').html();
 
+            console.log(hvalue);
             // Create a jQuery object from the hvalue string to manipulate it
             var $hvalue = $("<div>").html(
                 hvalue); // Wrap the html to make sure jQuery treats it as a DOM structure
