@@ -195,8 +195,8 @@
 
     @media only screen and (max-width: 991px) {
         .rs-nav .social-media {
-            margin-top: auto;
-            padding: 57px 0;
+            /* margin-top: auto; */
+            /* padding: 57px 0; */
         }
     }
 

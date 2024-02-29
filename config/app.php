@@ -201,5 +201,7 @@ return [
 
     'give_away' => true,
 
+    'asset' => '?v=v1.0'
+
 
 ];

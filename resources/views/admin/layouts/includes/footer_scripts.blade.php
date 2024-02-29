@@ -95,6 +95,26 @@
         theme: 'snow'
     });
 
+    $(document).ready(function() {
+        $("form").on(".blogs_form", function() {
+            var hvalue = $('#description').html();
+
+            // Create a jQuery object from the hvalue string to manipulate it
+            var $hvalue = $("<div>").html(
+                hvalue); // Wrap the html to make sure jQuery treats it as a DOM structure
+
+            // Remove the 'contenteditable' attribute from all elements with the 'ql-editor' class
+            $hvalue.find('.ql-editor').removeAttr('contenteditable');
+
+            // Convert the jQuery object back to HTML string after modification
+            var modifiedHtml = $hvalue.html();
+
+            // Append the modified HTML as a hidden textarea to the form
+            $(this).append("<textarea name='description' style='display:none'>" + modifiedHtml +
+                "</textarea>");
+        });
+    });
+
     // var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
     // tinymce.init({
     //     selector: 'textarea#description',

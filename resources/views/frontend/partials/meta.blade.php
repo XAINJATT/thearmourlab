@@ -34,7 +34,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 <link rel="stylesheet" href="{{ url('vendor/swiper/swiper.min.css') }}">
-<link rel="stylesheet" type="text/css" href="{{ url('css/style.css?v=1f') }}">
+<link rel="stylesheet" type="text/css" href="{{ url('css/style.css?v=') . config('app.asset') }}">
 
 @yield('css')
 
@@ -63,25 +63,31 @@
         .about-wraper2 .content-right {
             display: block;
         }
-        .about-wraper2 .content-left{
-            left:100px;
+
+        .about-wraper2 .content-left {
+            left: 100px;
         }
-        .about-wraper2 .service-content{
+
+        .about-wraper2 .service-content {
             width: 135px;
             height: 40px;
         }
-        .about-wraper2 .service-content:before{
+
+        .about-wraper2 .service-content:before {
             width: 25px;
             height: 25px;
             line-height: 25px;
         }
-        .about-wraper2 .service-content .title{
+
+        .about-wraper2 .service-content .title {
             font-size: 14px;
         }
-        .about-wraper2 .content-right .service-content{
+
+        .about-wraper2 .content-right .service-content {
             padding: 0 0px 0 43px;
         }
-        .about-wraper2 .content-right{
+
+        .about-wraper2 .content-right {
             right: -100px;
         }
     }

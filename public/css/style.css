@@ -13901,7 +13901,7 @@ blockquote {
         min-width: 300px; } }
   .menu-links .social-media {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 20px;
     display: none; }
   .menu-links .menu-close {
     height: 40px;
@@ -14083,8 +14083,9 @@ blockquote {
   .rs-nav .is-fixed .menu-links .nav {
     height: auto; }
   .rs-nav .social-media {
-    margin-top: auto;
-    padding: 30px 0; }
+    /* margin-top: auto; */
+    /* padding: 30px 0;  */
+  }
   .navbar-nav {
     height: auto; }
   .menu-links .nav > li {

@@ -27,7 +27,7 @@
                 <div class="row justify-content-center">
 
                     <div class="col-12 col-md-8 mt-3">
-                        <form action="{{ route('admin.blog.store') }}" id="addDriverForm" method="post"
+                        <form action="{{ route('admin.blog.store') }}" id="addDriverForm" class="blogs_form" method="post"
                             enctype="multipart/form-data">
                             @csrf
 

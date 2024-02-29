@@ -5,7 +5,6 @@
 @endsection
 
 @section('css')
-
     <title>Icon Rock Lear</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,10 +25,10 @@
 @section('content')
     <main>
         <!--
-              |--------------------------------------------------------------------------
-              | Section 1
-              |--------------------------------------------------------------------------
-              -->
+                      |--------------------------------------------------------------------------
+                      | Section 1
+                      |--------------------------------------------------------------------------
+                      -->
         <section class="section-1">
             <div class="section-1-container">
                 <h2 class="main-title"><span>Icon</span> Rocklear</h2>
@@ -171,10 +170,10 @@
         </section>
 
         <!--
-              |--------------------------------------------------------------------------
-              | Section 2
-              |--------------------------------------------------------------------------
-              -->
+                      |--------------------------------------------------------------------------
+                      | Section 2
+                      |--------------------------------------------------------------------------
+                      -->
 
         <section class="section-contact-form mb-5">
             <div class="section-container">
@@ -221,13 +220,14 @@
                                 </div>
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" placeholder="Country" name="country" id="country" />
+                                        <input type="text" placeholder="Company Name" name="country"
+                                            id="country" />
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" placeholder="State / Province" name="state"
-                                            id="state" />
+                                        <input type="text" placeholder="State / Province" readonly value="Ontario"
+                                            name="state" id="state" />
                                     </div>
                                 </div>
                                 <div class="col-md-12 col-lg-6">
@@ -270,10 +270,10 @@
         </section>
 
         <!--
-              |--------------------------------------------------------------------------
-              | Section 22
-              |--------------------------------------------------------------------------
-              -->
+                      |--------------------------------------------------------------------------
+                      | Section 22
+                      |--------------------------------------------------------------------------
+                      -->
         <div class="section-15-bg section-22-bg"></div>
         <section class="section-15 section-22">
             <div class="section-container">
@@ -406,10 +406,10 @@
 
     <script>
         /*
-        |--------------------------------------------------------------------------
-        | Swipper First 
-        |--------------------------------------------------------------------------
-        */
+                |--------------------------------------------------------------------------
+                | Swipper First 
+                |--------------------------------------------------------------------------
+                */
 
         var swiper = new Swiper(".swiperFirst", {
             autoplay: {
