@@ -153,7 +153,7 @@
                     <div class="widget recent-posts-entry">
                         <h5 class="footer-title">Latest news</h5>
                         <div class="widget-post-bx">
-                            @foreach (\App\Helpers\SiteHelper::get_blogs() as $blog)
+                            @foreach (\App\Helpers\SiteHelper::get_blogs(4) as $blog)
                                 <div class="widget-post clearfix">
                                     <div class="ttr-post-media">
                                         <img src="{{ asset($blog->image) }}" alt="">

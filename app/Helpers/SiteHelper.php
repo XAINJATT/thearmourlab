@@ -20,10 +20,15 @@ class SiteHelper
         $Settings['PageTitle'] = 'The Armour Lab - Data Analytics';
         return $Settings;
     }
-    public static function get_blogs()
+    public static function get_blogs($limit = false)
     {
-        return blog::latest("created_at")->get();
+        if ($limit) {
+            return blog::latest("created_at")->get();
+        } else {
+            return blog::latest("updated_at")->paginate($limit);
+        }
     }
+
     public static function get_media()
     {
         return Media::latest("created_at");
