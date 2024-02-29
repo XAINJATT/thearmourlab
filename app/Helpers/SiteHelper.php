@@ -22,6 +22,7 @@ class SiteHelper
     }
     public static function get_blogs($limit = false)
     {
+        dd($limit);
         if ($limit) {
             return blog::latest("created_at")->get();
         } else {
