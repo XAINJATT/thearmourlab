@@ -32,20 +32,21 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
+        dd($request->all());
         /* - Image */
         $FileImage = "";
         if ($request->has('image')) {
             $FileImage = 'Image-' . Carbon::now()->format('Ymd-His') . '.' . $request->file('image')->extension();
             $request->file('image')->storeAs('public/blogs/', $FileImage);
         }
-        
+
         /* - Blog Writer Profile Picture */
         $FileProfile = "";
         if ($request->has('blog_writer_picture')) {
             $FileProfile = 'BlogWriterImage-' . Carbon::now()->format('Ymd-His') . '.' . $request->file('blog_writer_picture')->extension();
             $request->file('blog_writer_picture')->storeAs('public/blogs/', $FileProfile);
         }
-        
+
         DB::beginTransaction();
         $Affected = null;
         $Affected = Blog::create([
@@ -56,7 +57,7 @@ class BlogController extends Controller
             'blog_writer_picture' => $FileProfile,
             'created_at' => carbon::now()
         ]);
-        
+
         if ($Affected) {
             DB::commit();
 
@@ -92,7 +93,7 @@ class BlogController extends Controller
             $fileName = end($temp);
             $FileImage = $fileName;
         }
-        
+
         /* Profile Picture */
         $FileProfile = "";
         if (!empty($request->has('blog_writer_picture'))) {
@@ -111,7 +112,7 @@ class BlogController extends Controller
             $fileName = end($temp);
             $FileProfile = $fileName;
         }
-        
+
         DB::beginTransaction();
         $Affected = null;
         $Affected = Blog::where('id', $request->blog_id)->update([
@@ -123,7 +124,7 @@ class BlogController extends Controller
             'created_at' => carbon::now(),
             'updated_at' => carbon::now()
         ]);
-        
+
         if ($Affected) {
             DB::commit();
             return redirect()->route('admin.blog')->with('success-message', 'Blog updated successfully');
@@ -137,7 +138,7 @@ class BlogController extends Controller
     {
         // Get the existing product details
         $blogsDetails = Blog::where('id', $id)->first();
-        
+
         if (!empty($blogsDetails)) {
             $temp = explode("/", $blogsDetails->image);
             $fileName = end($temp);
@@ -162,7 +163,7 @@ class BlogController extends Controller
             $blog = Blog::findOrFail($id);
             if ($blog->status == 1) {
                 $blog->status = 0;
-            }elseif($blog->status == 0){
+            } elseif ($blog->status == 0) {
                 $blog->status = 1;
             }
             $blog->save();

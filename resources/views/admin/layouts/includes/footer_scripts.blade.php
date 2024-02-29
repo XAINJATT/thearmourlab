@@ -96,7 +96,8 @@
     });
 
     $(document).ready(function() {
-        $("form").on(".blogs_form", 'submit' ,function() {
+        $("form").on('submit', function() {
+            // alert("okk")
             var hvalue = $('#description').html();
 
             console.log(hvalue);
