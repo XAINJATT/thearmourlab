@@ -97,16 +97,17 @@
 
     $(document).ready(function() {
         $("form").on('submit', function() {
-            // alert("okk")
             var hvalue = $('#description').html();
 
-            console.log(hvalue);
             // Create a jQuery object from the hvalue string to manipulate it
             var $hvalue = $("<div>").html(
-                hvalue); // Wrap the html to make sure jQuery treats it as a DOM structure
+            hvalue); // Wrap the html to make sure jQuery treats it as a DOM structure
 
             // Remove the 'contenteditable' attribute from all elements with the 'ql-editor' class
             $hvalue.find('.ql-editor').removeAttr('contenteditable');
+
+            // Remove input elements with specific data attributes
+            $hvalue.find('input[data-formula], input[data-link], input[data-video]').remove();
 
             // Convert the jQuery object back to HTML string after modification
             var modifiedHtml = $hvalue.html();
@@ -116,6 +117,7 @@
                 "</textarea>");
         });
     });
+
 
     // var useDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
     // tinymce.init({
