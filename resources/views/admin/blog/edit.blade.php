@@ -68,7 +68,7 @@
                                         <div class="col-md-12 mb-3">
                                             <label for="-text-" class="font-weight-bold">Description <span
                                                     class="text-danger">*</span></label>
-                                            <div class="form-control" id="description" name="description">{{ $blogs->description }}</div>
+                                            <div class="form-control" id="description">{{ $blogs->description }}</div>
                                         </div>
 
                                         <div class="col-12 col-md-6 mb-3 mt-5">
