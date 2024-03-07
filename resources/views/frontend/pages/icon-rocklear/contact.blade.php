@@ -236,7 +236,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-md-12 col-lg-6">
+                                {{-- <div class="col-md-12 col-lg-6">
                                     <div class="form-group d-flex">
                                         <label for="INSTALLATION">INSTALLATION</label>
                                         <input value="INSTALLATION" type="radio" name="service_type"
@@ -249,7 +249,7 @@
                                         <input value="LICENSEE" type="radio" name="service_type"
                                             id="service_type_installation" />
                                     </div>
-                                </div>
+                                </div> --}}
                                 <div class="col-md-12 col-lg-12">
                                     <div class="form-group">
                                         <textarea placeholder="Additional Information" name="additional_information" id="additional_information"></textarea>

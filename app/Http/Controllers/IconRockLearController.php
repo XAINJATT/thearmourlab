@@ -31,7 +31,7 @@ class IconRockLearController extends Controller
             'country' => 'required',
             'state' => 'required',
             'city' => 'required',
-            'service_type' => 'required',
+            // 'service_type' => 'required',
             'additional_information' => 'required',
         ]);
 
