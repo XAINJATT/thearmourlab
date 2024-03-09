@@ -64,49 +64,6 @@
 // // Add your options object as the second argument
 // const viewer = new ImageCompare(element, options).mount();
 
-document.addEventListener("DOMContentLoaded", function () {
-    var element = document.getElementById("image-compare");
-    var options = {
-        // Match these options to those from your WordPress settings
-        controlColor: "#fff", // bar_color from data-settings
-        controlShadow: true, // Not directly from WP but common option
-        addCircle: true, // add_circle from data-settings
-        addCircleBlur: true, // add_circle_blur from data-settings
-        showLabels: true, // Assuming you want labels since WP version likely had them
-        labelOptions: {
-            before: "Before", // before_label from data-settings
-            after: "After", // after_label from data-settings
-            onHover: false, // Adjust based on your needs; not directly from WP settings
-        },
-        smoothing: true, // smoothing from data-settings
-        smoothingAmount: 400, // smoothing_amount from data-settings
-        hoverStart: false, // Not directly from WP, set based on preference
-        verticalMode: false, // orientation from data-settings (convert to boolean if needed)
-        startingPoint: 57, // default_offset_pct from data-settings
-        fluidMode: false, // Not directly from WP, set based on preference
-    };
-
-    new ImageCompare(element, options).mount();
-
-    // Prevent default behavior on drag start
-    element.addEventListener("mousedown", function (event) {
-        event.preventDefault();
-    });
-
-    // For touch devices
-    element.addEventListener("touchstart", function (event) {
-        event.preventDefault();
-    });
-    // Disable scrolling on touch start
-    element.addEventListener("touchstart", function (event) {
-        document.body.style.overflow = "hidden";
-    });
-
-    // Re-enable scrolling on touch end
-    element.addEventListener("touchend", function (event) {
-        document.body.style.overflow = "";
-    });
-});
 
 /*
 |--------------------------------------------------------------------------
