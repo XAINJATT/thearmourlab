@@ -13,15 +13,15 @@
         rel="stylesheet" />
 
     <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css" />
-    <link rel="stylesheet"
-        href="https://iconrocklear.com/wp-content/plugins/bdthemes-element-pack/assets/css/ep-image-compare.css?ver=7.1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    
     <link rel="stylesheet" href="{{ asset('css/ep-marquee.css') . config('app.asset') }}" />
-
+    
     <link rel="stylesheet" href="{{ asset('icon_rocklear/css/style.css') . config('app.asset') }}" />
+    <link rel="stylesheet"
+    href="https://iconrocklear.com/wp-content/plugins/bdthemes-element-pack/assets/css/ep-image-compare.css?ver=7.1.0">
 @endsection
 
 @section('content')
