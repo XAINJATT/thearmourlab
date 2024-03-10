@@ -667,8 +667,8 @@
                 <hr class="hr-light" />
                 <h2 class="header-title text-white">ICON ROCKLEAR</h2>
 
-                <div style="overflow:auto" class="image-compare-container">
-                    <div id="image-compare" style="overflow:hidden" class="image-compare">
+                <div class="image-compare-container">
+                    <div id="image-compare" style="overflow:hidden !important;" class="image-compare">
                         <img src="https://iconrocklear.com/wp-content/uploads/2023/09/Correction.png" alt="Before">
                         <img src="https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION.png" alt="After">
                     </div>
