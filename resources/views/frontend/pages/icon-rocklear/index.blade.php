@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="{{ asset('css/ep-marquee.css') . config('app.asset') }}" />
     
     <link rel="stylesheet" href="{{ asset('icon_rocklear/css/style.css') . config('app.asset') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet"
     href="https://iconrocklear.com/wp-content/plugins/bdthemes-element-pack/assets/css/ep-image-compare.css?ver=7.1.0">
 @endsection
