@@ -2000,12 +2000,12 @@
             });
             // Disable scrolling on touch start
             element.addEventListener("touchstart", function(event) {
-                document.body.style.overflow = "hidden";
+                document.body.style.overflow = "auto";
             });
 
             // Re-enable scrolling on touch end
             element.addEventListener("touchend", function(event) {
-                document.body.style.overflow = "";
+                document.body.style.overflow = "auto";
             });
         });
     </script>
