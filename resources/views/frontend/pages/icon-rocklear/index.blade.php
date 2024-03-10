@@ -667,9 +667,11 @@
                 <hr class="hr-light" />
                 <h2 class="header-title text-white">ICON ROCKLEAR</h2>
 
-                <div id="image-compare" class="image-compare">
-                    <img src="https://iconrocklear.com/wp-content/uploads/2023/09/Correction.png" alt="Before">
-                    <img src="https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION.png" alt="After">
+                <div style="overflow:auto" class="image-compare-container">
+                    <div id="image-compare" style="overflow:hidden" class="image-compare">
+                        <img src="https://iconrocklear.com/wp-content/uploads/2023/09/Correction.png" alt="Before">
+                        <img src="https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION.png" alt="After">
+                    </div>
                 </div>
 
             </div>
@@ -1990,23 +1992,23 @@
             new ImageCompare(element, options).mount();
 
             // Prevent default behavior on drag start
-            element.addEventListener("mousedown", function(event) {
-                event.preventDefault();
-            });
+            // element.addEventListener("mousedown", function(event) {
+            //     event.preventDefault();
+            // });
 
-            // For touch devices
-            element.addEventListener("touchstart", function(event) {
-                event.preventDefault();
-            });
-            // Disable scrolling on touch start
-            element.addEventListener("touchstart", function(event) {
-                document.body.style.overflow = "hidden";
-            });
+            // // For touch devices
+            // element.addEventListener("touchstart", function(event) {
+            //     event.preventDefault();
+            // });
+            // // Disable scrolling on touch start
+            // element.addEventListener("touchstart", function(event) {
+            //     document.body.style.overflow = "hidden";
+            // });
 
-            // Re-enable scrolling on touch end
-            element.addEventListener("touchend", function(event) {
-                document.body.style.overflow = "";
-            });
+            // // Re-enable scrolling on touch end
+            // element.addEventListener("touchend", function(event) {
+            //     document.body.style.overflow = "";
+            // });
         });
     </script>
 @endsection
