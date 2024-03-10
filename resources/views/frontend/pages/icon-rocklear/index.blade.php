@@ -16,9 +16,9 @@
         <!-- Swiper JS -->
         <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         
-        <link rel="stylesheet" href="{{ asset('css/ep-marquee.css') . config('app.asset') }}" />
+        {{-- <link rel="stylesheet" href="{{ asset('css/ep-marquee.css') . config('app.asset') }}" /> --}}
         
-        <link rel="stylesheet" href="{{ asset('icon_rocklear/css/style.css') . config('app.asset') }}" />
+        {{-- <link rel="stylesheet" href="{{ asset('icon_rocklear/css/style.css') . config('app.asset') }}" /> --}}
         <link rel="stylesheet" href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css" />
 @endsection
 
