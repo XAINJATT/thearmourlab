@@ -2001,12 +2001,24 @@
             // Disable scrolling on touch start
             element.addEventListener("touchstart", function(event) {
                 document.body.style.overflow = "auto";
+                disableScrolling();
             });
 
             // Re-enable scrolling on touch end
             element.addEventListener("touchend", function(event) {
                 document.body.style.overflow = "auto";
+                enableScrolling();
             });
         });
+
+        function disableScrolling(){
+    var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+}
+
+function enableScrolling(){
+    window.onscroll=function(){};
+}
     </script>
 @endsection
