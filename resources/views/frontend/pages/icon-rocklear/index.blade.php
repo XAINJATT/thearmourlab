@@ -1,6 +1,6 @@
 {{-- @extends('frontend.layout.app') --}}
 
-@section('title')
+{{-- @section('title')
     {{ __('THE ARMOUR LAB') }}
 @endsection
 
@@ -25,7 +25,7 @@
     href="https://iconrocklear.com/wp-content/plugins/bdthemes-element-pack/assets/css/ep-image-compare.css?ver=7.1.0">
 @endsection
 
-@section('content')
+@section('content') --}}
 <title>Icon Rock Lear</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -1663,9 +1663,9 @@
             </div>
         </section>
     </main>
-@endsection
+{{-- @endsection --}}
 
-@section('scripts')
+{{-- @section('scripts') --}}
     <script src="js/ep-marquee.min.js"></script>
 
     <script>
@@ -2056,4 +2056,4 @@
             // });
         });
     </script>
-@endsection
+{{-- @endsection --}}
