@@ -1989,7 +1989,7 @@
         ];
     </script>
 
-    <script src="{{ asset('js/script.js') . config('app.asset') }}"></script>
+    {{-- <script src="{{ asset('js/script.js') . config('app.asset') }}"></script> --}}
     <script src="https://unpkg.com/image-compare-viewer@1.6.2/dist/image-compare-viewer.min.js"></script>
 
 
