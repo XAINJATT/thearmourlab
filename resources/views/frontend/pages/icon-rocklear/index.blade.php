@@ -2024,13 +2024,13 @@
             // });
 
             // // For touch devices
-            // element.addEventListener("touchstart", function(event) {
-            //     event.preventDefault();
-            // });
+            element.addEventListener("touchstart", function(event) {
+                event.preventDefault();
+            });
             // // Disable scrolling on touch start
-            // element.addEventListener("touchstart", function(event) {
-            //     document.body.style.overflow = "hidden";
-            // });
+            element.addEventListener("touchstart", function(event) {
+                document.body.style.overflow = "hidden";
+            });
 
             // // Re-enable scrolling on touch end
             // element.addEventListener("touchend", function(event) {
