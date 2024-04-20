@@ -739,14 +739,14 @@
 
                 <div class="img-comp-container">
                     <div class="img-comp-img">
-                        <img loading="lazy" decoding="async" width="1200" height="800"
+                        <img loading="lazy" decoding="async" width="2400" height="800"
                             src="https://iconrocklear.com/wp-content/uploads/2023/09/Correction.png"
                             class="attachment-full size-full wp-image-1022" alt=""
                             srcset="https://iconrocklear.com/wp-content/uploads/2023/09/Correction.png 1500w, https://iconrocklear.com/wp-content/uploads/2023/09/Correction-300x160.png 300w, https://iconrocklear.com/wp-content/uploads/2023/09/Correction-1024x546.png 1024w, https://iconrocklear.com/wp-content/uploads/2023/09/Correction-768x410.png 768w"
                             sizes="(max-width: 1500px) 100vw, 1500px" />
                     </div>
                     <div class="img-comp-img img-comp-overlay">
-                        <img loading="lazy" decoding="async" width="1200" height="800"
+                        <img loading="lazy" decoding="async" width="2400" height="800"
                             src="https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION.png"
                             class="attachment-full size-full wp-image-1023" alt=""
                             srcset="https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION.png 1500w, https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION-300x160.png 300w, https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION-1024x546.png 1024w, https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION-768x410.png 768w"
