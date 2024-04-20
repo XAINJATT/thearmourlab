@@ -26,197 +26,226 @@
 
 
     <style>
-        div#comparison {
-            width: 60vw;
-            height: 60vw;
-            max-width: 600px;
-            max-height: 600px;
-            overflow: hidden;
-        }
+        /* div#comparison {
+                width: 60vw;
+                height: 60vw;
+                max-width: 600px;
+                max-height: 600px;
+                overflow: hidden;
+            } */
 
-        div#comparison figure {
-            background-image: url(https://iconrocklear.com/wp-content/uploads/2023/09/Correction.png);
-            background-size: cover;
+        #comparison {
             position: relative;
-            font-size: 0;
-            width: 100%;
-            height: 100%;
-            margin: 0;
-        }
-
-        div#comparison figure>img {
-            position: relative;
-            width: 100%;
-        }
-
-        div#comparison figure div {
-            background-image: url(https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION.png);
-            background-size: cover;
-            position: absolute;
             width: 50%;
-            box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+            /* Adjust the width as needed */
+        }
+
+        .img-comp-img {
+            position: absolute;
+            width: 100%;
             overflow: hidden;
-            bottom: 0;
-            height: 100%;
         }
 
-        input[type=range] {
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            position: relative;
-            top: -2rem;
-            left: -2%;
-            background-color: rgba(255, 255, 255, 0.1);
-            width: 102%;
+        .img-comp-img img {
+            display: block;
+            width: 100%;
         }
 
-        input[type=range]:focus {
-            outline: none;
+        .img-comp-slider {
+            position: absolute;
+            z-index: 9;
+            cursor: ew-resize;
+            width: 40px;
+            height: 40px;
+            background-color: #2196F3;
+            opacity: 0.7;
+            border-radius: 50%;
+            box-shadow: 0 0 20px #000;
         }
 
-        input[type=range]:active {
-            outline: none;
-        }
+        /* div#comparison figure {
+                background-image: url(https://iconrocklear.com/wp-content/uploads/2023/09/Correction.png);
+                background-size: cover;
+                position: relative;
+                font-size: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
 
-        input[type=range]::-moz-range-track {
-            -moz-appearance: none;
-            height: 15px;
-            width: 98%;
-            background-color: rgba(255, 255, 255, 0.1);
-            position: relative;
-            outline: none;
-        }
+            div#comparison figure>img {
+                position: relative;
+                width: 100%;
+            }
 
-        input[type=range]::active {
-            border: none;
-            outline: none;
-        }
+            div#comparison figure div {
+                background-image: url(https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION.png);
+                background-size: cover;
+                position: absolute;
+                width: 50%;
+                box-shadow: 0 5px 10px -2px rgba(0, 0, 0, 0.3);
+                overflow: hidden;
+                bottom: 0;
+                height: 100%;
+            }
 
-        input[type=range]::-webkit-slider-thumb {
-            -webkit-appearance: none;
-            width: 20px;
-            height: 15px;
-            background: #fff;
-            border-radius: 0;
-        }
+            input[type=range] {
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                position: relative;
+                top: -2rem;
+                left: -2%;
+                background-color: rgba(255, 255, 255, 0.1);
+                width: 102%;
+            }
 
-        input[type=range]::-moz-range-thumb {
-            -moz-appearance: none;
-            width: 20px;
-            height: 15px;
-            background: #fff;
-            border-radius: 0;
-        }
+            input[type=range]:focus {
+                outline: none;
+            }
 
-        input[type=range]:focus::-webkit-slider-thumb {
-            background: rgba(255, 255, 255, 0.5);
-        }
+            input[type=range]:active {
+                outline: none;
+            }
 
-        input[type=range]:focus::-moz-range-thumb {
-            background: rgba(255, 255, 255, 0.5);
-        }
+            input[type=range]::-moz-range-track {
+                -moz-appearance: none;
+                height: 15px;
+                width: 98%;
+                background-color: rgba(255, 255, 255, 0.1);
+                position: relative;
+                outline: none;
+            }
+
+            input[type=range]::active {
+                border: none;
+                outline: none;
+            }
+
+            input[type=range]::-webkit-slider-thumb {
+                -webkit-appearance: none;
+                width: 20px;
+                height: 15px;
+                background: #fff;
+                border-radius: 0;
+            }
+
+            input[type=range]::-moz-range-thumb {
+                -moz-appearance: none;
+                width: 20px;
+                height: 15px;
+                background: #fff;
+                border-radius: 0;
+            }
+
+            input[type=range]:focus::-webkit-slider-thumb {
+                background: rgba(255, 255, 255, 0.5);
+            }
+
+            input[type=range]:focus::-moz-range-thumb {
+                background: rgba(255, 255, 255, 0.5);
+            } */
     </style>
     <script>
-        var divisor = document.getElementById("divisor"),
-            slider = document.getElementById("slider");
+        // var divisor = document.getElementById("divisor"),
+        //     slider = document.getElementById("slider");
 
-        function moveDivisor() {
-            divisor.style.width = slider.value + "%";
-        }
+        // function moveDivisor() {
+        //     divisor.style.width = slider.value + "%";
+        // }
 
-        function initComparisons() {
-            var x, i;
-            /*find all elements with an "overlay" class:*/
-            x = document.getElementsByClassName("img-comp-overlay");
-            for (i = 0; i < x.length; i++) {
-                /*once for each "overlay" element:
-                pass the "overlay" element as a parameter when executing the compareImages function:*/
-                compareImages(x[i]);
-            }
+        // function initComparisons() {
+        //     var x, i;
+        //     /*find all elements with an "overlay" class:*/
+        //     x = document.getElementsByClassName("img-comp-overlay");
+        //     for (i = 0; i < x.length; i++) {
+        //         /*once for each "overlay" element:
+        //         pass the "overlay" element as a parameter when executing the compareImages function:*/
+        //         compareImages(x[i]);
+        //     }
 
-            function compareImages(img) {
-                var slider, img, clicked = 0,
-                    w, h;
-                /*get the width and height of the img element*/
-                w = img.offsetWidth;
-                h = img.offsetHeight;
-                /*set the width of the img element to 50%:*/
-                img.style.width = (w / 2) + "px";
-                /*create slider:*/
-                slider = document.createElement("DIV");
-                slider.setAttribute("class", "img-comp-slider");
-                /*insert slider*/
-                img.parentElement.insertBefore(slider, img);
-                /*position the slider in the middle:*/
-                slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
-                slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
-                /*execute a function when the mouse button is pressed:*/
-                slider.addEventListener("mousedown", slideReady);
-                /*and another function when the mouse button is released:*/
-                window.addEventListener("mouseup", slideFinish);
-                /*or touched (for touch screens:*/
-                slider.addEventListener("touchstart", slideReady);
-                /*and released (for touch screens:*/
-                window.addEventListener("touchend", slideFinish);
+        //     function compareImages(img) {
+        //         var slider, img, clicked = 0,
+        //             w, h;
+        //         /*get the width and height of the img element*/
+        //         w = img.offsetWidth;
+        //         h = img.offsetHeight;
+        //         /*set the width of the img element to 50%:*/
+        //         img.style.width = (w / 2) + "px";
+        //         /*create slider:*/
+        //         slider = document.createElement("DIV");
+        //         slider.setAttribute("class", "img-comp-slider");
+        //         /*insert slider*/
+        //         img.parentElement.insertBefore(slider, img);
+        //         /*position the slider in the middle:*/
+        //         slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+        //         slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+        //         /*execute a function when the mouse button is pressed:*/
+        //         slider.addEventListener("mousedown", slideReady);
+        //         /*and another function when the mouse button is released:*/
+        //         window.addEventListener("mouseup", slideFinish);
+        //         /*or touched (for touch screens:*/
+        //         slider.addEventListener("touchstart", slideReady);
+        //         /*and released (for touch screens:*/
+        //         window.addEventListener("touchend", slideFinish);
 
-                function slideReady(e) {
-                    /*prevent any other actions that may occur when moving over the image:*/
-                    e.preventDefault();
-                    /*the slider is now clicked and ready to move:*/
-                    clicked = 1;
-                    /*execute a function when the slider is moved:*/
-                    window.addEventListener("mousemove", slideMove);
-                    window.addEventListener("touchmove", slideMove);
-                }
+        //         function slideReady(e) {
+        //             /*prevent any other actions that may occur when moving over the image:*/
+        //             e.preventDefault();
+        //             /*the slider is now clicked and ready to move:*/
+        //             clicked = 1;
+        //             /*execute a function when the slider is moved:*/
+        //             window.addEventListener("mousemove", slideMove);
+        //             window.addEventListener("touchmove", slideMove);
+        //         }
 
-                function slideFinish() {
-                    /*the slider is no longer clicked:*/
-                    clicked = 0;
-                }
+        //         function slideFinish() {
+        //             /*the slider is no longer clicked:*/
+        //             clicked = 0;
+        //         }
 
-                function slideMove(e) {
-                    var pos;
-                    /*if the slider is no longer clicked, exit this function:*/
-                    if (clicked == 0) return false;
-                    /*get the cursor's x position:*/
-                    pos = getCursorPos(e)
-                    /*prevent the slider from being positioned outside the image:*/
-                    if (pos < 0) pos = 0;
-                    if (pos > w) pos = w;
-                    /*execute a function that will resize the overlay image according to the cursor:*/
-                    slide(pos);
-                }
+        //         function slideMove(e) {
+        //             var pos;
+        //             /*if the slider is no longer clicked, exit this function:*/
+        //             if (clicked == 0) return false;
+        //             /*get the cursor's x position:*/
+        //             pos = getCursorPos(e)
+        //             /*prevent the slider from being positioned outside the image:*/
+        //             if (pos < 0) pos = 0;
+        //             if (pos > w) pos = w;
+        //             /*execute a function that will resize the overlay image according to the cursor:*/
+        //             slide(pos);
+        //         }
 
-                function getCursorPos(e) {
-                    var a, x = 0;
-                    e = (e.changedTouches) ? e.changedTouches[0] : e;
-                    /*get the x positions of the image:*/
-                    a = img.getBoundingClientRect();
-                    /*calculate the cursor's x coordinate, relative to the image:*/
-                    x = e.pageX - a.left;
-                    /*consider any page scrolling:*/
-                    x = x - window.pageXOffset;
-                    return x;
-                }
+        //         function getCursorPos(e) {
+        //             var a, x = 0;
+        //             e = (e.changedTouches) ? e.changedTouches[0] : e;
+        //             /*get the x positions of the image:*/
+        //             a = img.getBoundingClientRect();
+        //             /*calculate the cursor's x coordinate, relative to the image:*/
+        //             x = e.pageX - a.left;
+        //             /*consider any page scrolling:*/
+        //             x = x - window.pageXOffset;
+        //             return x;
+        //         }
 
-                function slide(x) {
-                    /*resize the image:*/
-                    img.style.width = x + "px";
-                    /*position the slider:*/
-                    slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-                }
-            }
-        }
+        //         function slide(x) {
+        //             /*resize the image:*/
+        //             img.style.width = x + "px";
+        //             /*position the slider:*/
+        //             slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+        //         }
+        //     }
+        // }
     </script>
 @endsection
 
 @section('content')
     <main>
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 1
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 1
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
         <section class="section-1">
             <div class="section-1-container">
                 <h2 class="main-title"><span>Icon</span> Rocklear</h2>
@@ -355,10 +384,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 2
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 2
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
 
         <section class="section-2">
             <div id="marqueeContainer" class="marquee-container">
@@ -376,10 +405,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 3
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 3
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
         <section class="section-3">
             <div class="section-container">
                 <div>
@@ -404,10 +433,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 4
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 4
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
 
         <section class="section-4">
             <div class="section-container">
@@ -456,10 +485,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 5
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 5
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
         <section class="section-5">
             <div class="section-container">
                 <div class="text-center">
@@ -495,10 +524,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 6
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 6
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
         <section class="section-6">
             <div class="section-container">
                 <div>
@@ -560,10 +589,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 7
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 7
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
         <div class="section-7-bg"></div>
 
         <section class="section-7">
@@ -584,10 +613,10 @@
                             </div>
                             <div id="rocklear-progress-bar">
                                 <!--
-                                                                    |--------------------------------------------------------------------------
-                                                                    | Data coming from javascript  //script.js
-                                                                    |--------------------------------------------------------------------------
-                                                                    -->
+                                                                            |--------------------------------------------------------------------------
+                                                                            | Data coming from javascript  //script.js
+                                                                            |--------------------------------------------------------------------------
+                                                                            -->
                             </div>
                             <ul class="custom-list">
                                 <li>
@@ -620,10 +649,10 @@
                             </div>
                             <div id="ceramic-progress-bar">
                                 <!--
-                                                                    |--------------------------------------------------------------------------
-                                                                    | Data coming from javascript  //script.js
-                                                                    |--------------------------------------------------------------------------
-                                                                    -->
+                                                                            |--------------------------------------------------------------------------
+                                                                            | Data coming from javascript  //script.js
+                                                                            |--------------------------------------------------------------------------
+                                                                            -->
                             </div>
                             <ul class="custom-list">
                                 <li>
@@ -659,10 +688,10 @@
                             </div>
                             <div id="polymers-progress-bar">
                                 <!--
-                                                                    |--------------------------------------------------------------------------
-                                                                    | Data coming from javascript  //script.js
-                                                                    |--------------------------------------------------------------------------
-                                                                    -->
+                                                                            |--------------------------------------------------------------------------
+                                                                            | Data coming from javascript  //script.js
+                                                                            |--------------------------------------------------------------------------
+                                                                            -->
                             </div>
 
                             <ul class="custom-list">
@@ -682,10 +711,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 8
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 8
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
 
         <section class="section-8">
             <div class="section-container">
@@ -844,10 +873,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 9
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 9
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
 
         <section class="section-9 mb-5">
             <div class="section-container text-center mt-5 pt-3">
@@ -857,11 +886,12 @@
 
 
                 <div id="comparison">
-                    <figure>
-                        <div id="divisor"></div>
-                    </figure>
-                    <input type="range" min="0" max="100" value="50" id="slider"
-                        oninput="moveDivisor()">
+                    <div class="img-comp-img">
+                        <img src="https://via.placeholder.com/500x250?text=Before" alt="Before">
+                    </div>
+                    <div class="img-comp-img img-comp-overlay">
+                        <img src="https://via.placeholder.com/500x250?text=After" alt="After">
+                    </div>
                 </div>
 
 
@@ -918,10 +948,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 10
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 10
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
 
         <div class="section-10-bg"></div>
         <section class="section-10 mt-5">
@@ -1041,10 +1071,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 11
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 11
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
 
         <div class="section-11-bg mt-5"></div>
         <section class="section-11">
@@ -1159,10 +1189,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 12
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 12
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
         <div class="section-12-bg"></div>
         <section class="section-12">
             <div class="section-container">
@@ -1236,10 +1266,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 13
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 13
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
 
         <section class="section-13 mt-5">
             <div class="section-container">
@@ -1248,19 +1278,19 @@
                 <h2 class="header-title">ROCKLEAR BENEFITS</h2>
                 <div id="cards-container" class="row">
                     <!--
-                                                                |--------------------------------------------------------------------------
-                                                                | Content coming from footer
-                                                                |--------------------------------------------------------------------------
-                                                                -->
+                                                                        |--------------------------------------------------------------------------
+                                                                        | Content coming from footer
+                                                                        |--------------------------------------------------------------------------
+                                                                        -->
                 </div>
             </div>
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 14
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 14
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
         <div class="section-14-bg"></div>
         <section class="section-14">
             <div class="section-container">
@@ -1312,10 +1342,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 15
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 15
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
         <div class="section-15-bg"></div>
         <section class="section-15">
             <div class="section-container">
@@ -1345,10 +1375,10 @@
         <div class="section-15-bg-2"></div>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 16
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 16
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
 
         <section class="section-16">
             <div class="section-container">
@@ -1396,10 +1426,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 17
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 17
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
 
         <div class="section-17-bg"></div>
         <section class="section-17">
@@ -1433,10 +1463,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 18
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 18
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
         <div class="section-15-bg section-18-bg"></div>
         <section class="section-15 section-18">
             <div class="section-container">
@@ -1455,10 +1485,10 @@
         <div class="section-15-bg-2"></div>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 19
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 19
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
 
         <section class="section-19 mt-5">
             <div class="section-container">
@@ -1640,10 +1670,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 20
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 20
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
         <section class="section-20 py-5 mt-5">
             <div class="section-container py-5 mt-5">
                 <div class="d-flex gap-4 pt-3 flex-column align-items-center justify-content-center">
@@ -1669,10 +1699,10 @@
             </div>
         </section>
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 21
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 21
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
 
         <section class="section-21">
             <div class="section-container">
@@ -1733,10 +1763,10 @@
         </section>
 
         <!--
-                                                          |--------------------------------------------------------------------------
-                                                          | Section 22
-                                                          |--------------------------------------------------------------------------
-                                                          -->
+                                                                  |--------------------------------------------------------------------------
+                                                                  | Section 22
+                                                                  |--------------------------------------------------------------------------
+                                                                  -->
         <div class="section-15-bg section-22-bg"></div>
         <section class="section-15 section-22">
             <div class="section-container">
@@ -1862,6 +1892,59 @@
 
 @section('scripts')
     <script src="js/ep-marquee.min.js"></script>
+
+
+    <script>
+        // Initialize the Image Comparer
+        function initComparisons() {
+            var x, i, container, img, slider, clicked = 0,
+                w, h;
+            container = document.getElementById("comparison");
+            w = container.offsetWidth;
+            h = container.offsetHeight;
+            img = container.querySelector(".img-comp-img img");
+            slider = document.createElement("div");
+            slider.classList.add("img-comp-slider");
+            container.appendChild(slider);
+
+            slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+            slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+
+            slider.addEventListener("mousedown", function(e) {
+                e.preventDefault();
+                clicked = 1;
+                window.addEventListener("mousemove", slideMove);
+            });
+
+            window.addEventListener("mouseup", function() {
+                clicked = 0;
+            });
+
+            function slideMove(e) {
+                var pos;
+                if (clicked == 0) return;
+                pos = getCursorPos(e)
+                if (pos < 0) pos = 0;
+                if (pos > w) pos = w;
+                slide(pos);
+            }
+
+            function getCursorPos(e) {
+                var a, x = 0;
+                e = e || window.event;
+                a = container.getBoundingClientRect();
+                x = e.pageX - a.left;
+                x = x - window.pageXOffset;
+                return x;
+            }
+
+            function slide(x) {
+                img.style.width = x + "px";
+                slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+            }
+        }
+        window.onload = initComparisons;
+    </script>
 
     <script>
         /*Execute a function that will execute an image compare function for each element with the img-comp-overlay class:*/
