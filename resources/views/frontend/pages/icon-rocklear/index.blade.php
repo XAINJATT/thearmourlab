@@ -41,7 +41,7 @@
        
 .img-comp-container {
   position: relative;
-  height: 200px; /*should be the same height as the images*/
+  min-height: 100vh;
 }
 
 .img-comp-img {
