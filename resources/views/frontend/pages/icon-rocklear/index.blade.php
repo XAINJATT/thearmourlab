@@ -95,7 +95,7 @@
         @media screen and (min-width: 769px) {
             .img-comp-container {
                 margin-left: -200px;
-                display: block;
+                display: none;
             }
 
             .elementor-widget-bdt-image-compare {
