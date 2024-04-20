@@ -752,6 +752,7 @@
                             srcset="https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION.png 1500w, https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION-300x160.png 300w, https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION-1024x546.png 1024w, https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION-768x410.png 768w"
                             sizes="(max-width: 1500px) 100vw, 1500px" />
                     </div>
+                    <div class="img-comp-slider"></div>
                 </div>
 
                 {{-- 
