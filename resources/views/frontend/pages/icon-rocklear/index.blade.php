@@ -27,66 +27,91 @@
 
     <style>
         /* div#comparison {
-                            width: 60vw;
-                            height: 60vw;
-                            max-width: 600px;
-                            max-height: 600px;
-                            overflow: hidden;
-                        } */
+                                width: 60vw;
+                                height: 60vw;
+                                max-width: 600px;
+                                max-height: 600px;
+                                overflow: hidden;
+                            } */
 
         .img-comp-container img {
             all: unset !important;
         }
 
         .img-comp-container {
-        position: relative;
-        width: 100%;
-        max-width: 600px; /* Adjust to suit your needs, or make it responsive */
-        user-select: none;
-    }
-    .img-comp-img, .img-comp-overlay img {
-        display: block;
-        width: 100%;
-        height: auto;
-        user-select: none;
-    }
-    .img-comp-slider {
-        position: absolute;
-        z-index: 9;
-        cursor: ew-resize; /* Fallback for desktop devices */
-        width: 30px; /* Larger touch area for mobile devices */
-        height: 30px;
-        background-color: #2196F3;
-        border: 2px solid #fff;
-        border-radius: 50%;
-        top: 50%;
-        transform: translateY(-50%);
-        box-shadow: 0 0 5px #666;
-    }
-    .img-comp-overlay {
-        position: absolute;
-        top: 0;
-        width: 100%; /* Initially covering the full image */
-        height: 100%;
-        overflow: hidden;
-        border-right: 2px solid #2196F3; /* Visible divider line */
-    }
-
-    @media screen and (min-width: 600px) {
-        .img-comp-container {
-            margin-left: -200px; 
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            /* Adjust to suit your needs, or make it responsive */
+            user-select: none;
         }
-    }
+
+        .img-comp-img,
+        .img-comp-overlay img {
+            display: block;
+            width: 100%;
+            height: auto;
+            user-select: none;
+        }
+
+        .img-comp-slider {
+            position: absolute;
+            z-index: 9;
+            cursor: ew-resize;
+            /* Fallback for desktop devices */
+            width: 30px;
+            /* Larger touch area for mobile devices */
+            height: 30px;
+            background-color: #2196F3;
+            border: 2px solid #fff;
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            box-shadow: 0 0 5px #666;
+        }
+
+        .img-comp-overlay {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            /* Initially covering the full image */
+            height: 100%;
+            overflow: hidden;
+            border-right: 2px solid #2196F3;
+            /* Visible divider line */
+        }
+
+        @media screen and (max-width: 768px) {
+            .elementor-widget-bdt-image-compare {
+                display: none;
+            }
+
+            .img-comp-container {
+
+                display: none;
+            }
+        }
+
+        @media screen and (min-width: 769px) {
+            .img-comp-container {
+                margin-left: -200px;
+                display: block;
+            }
+
+            .elementor-widget-bdt-image-compare {
+                display: block;
+            }
+        }
     </style>
 @endsection
 
 @section('content')
     <main>
         <!--
-            |--------------------------------------------------------------------------
-            | Section 1
-            |--------------------------------------------------------------------------
-            -->
+                |--------------------------------------------------------------------------
+                | Section 1
+                |--------------------------------------------------------------------------
+                -->
         <section class="section-1">
             <div class="section-1-container">
                 <h2 class="main-title"><span>Icon</span> Rocklear</h2>
@@ -225,10 +250,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 2
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 2
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
 
         <section class="section-2">
             <div id="marqueeContainer" class="marquee-container">
@@ -246,10 +271,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 3
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 3
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
         <section class="section-3">
             <div class="section-container">
                 <div>
@@ -274,10 +299,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 4
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 4
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
 
         <section class="section-4">
             <div class="section-container">
@@ -326,10 +351,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 5
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 5
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
         <section class="section-5">
             <div class="section-container">
                 <div class="text-center">
@@ -365,10 +390,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 6
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 6
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
         <section class="section-6">
             <div class="section-container">
                 <div>
@@ -430,10 +455,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 7
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 7
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
         <div class="section-7-bg"></div>
 
         <section class="section-7">
@@ -454,10 +479,10 @@
                             </div>
                             <div id="rocklear-progress-bar">
                                 <!--
-                                                                                        |--------------------------------------------------------------------------
-                                                                                        | Data coming from javascript  //script.js
-                                                                                        |--------------------------------------------------------------------------
-                                                                                        -->
+                                                                                            |--------------------------------------------------------------------------
+                                                                                            | Data coming from javascript  //script.js
+                                                                                            |--------------------------------------------------------------------------
+                                                                                            -->
                             </div>
                             <ul class="custom-list">
                                 <li>
@@ -490,10 +515,10 @@
                             </div>
                             <div id="ceramic-progress-bar">
                                 <!--
-                                                                                        |--------------------------------------------------------------------------
-                                                                                        | Data coming from javascript  //script.js
-                                                                                        |--------------------------------------------------------------------------
-                                                                                        -->
+                                                                                            |--------------------------------------------------------------------------
+                                                                                            | Data coming from javascript  //script.js
+                                                                                            |--------------------------------------------------------------------------
+                                                                                            -->
                             </div>
                             <ul class="custom-list">
                                 <li>
@@ -529,10 +554,10 @@
                             </div>
                             <div id="polymers-progress-bar">
                                 <!--
-                                                                                        |--------------------------------------------------------------------------
-                                                                                        | Data coming from javascript  //script.js
-                                                                                        |--------------------------------------------------------------------------
-                                                                                        -->
+                                                                                            |--------------------------------------------------------------------------
+                                                                                            | Data coming from javascript  //script.js
+                                                                                            |--------------------------------------------------------------------------
+                                                                                            -->
                             </div>
 
                             <ul class="custom-list">
@@ -552,10 +577,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 8
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 8
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
 
         <section class="section-8">
             <div class="section-container">
@@ -714,10 +739,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 9
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 9
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
 
         <section class="section-9 mb-5">
             <div class="section-container text-center mt-5 pt-3">
@@ -755,7 +780,7 @@
                     <div class="img-comp-slider"></div>
                 </div>
 
-                {{-- 
+
                 <div class="elementor-element elementor-element-13dc195 elementor-widget elementor-widget-bdt-image-compare"
                     data-id="13dc195" data-element_type="widget" data-widget_type="bdt-image-compare.default">
                     <div class="elementor-widget-container">
@@ -776,7 +801,7 @@
                         </div>
 
                     </div>
-                </div> --}}
+                </div>
 
 
                 {{-- <div class="image-compare-container">
@@ -790,10 +815,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 10
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 10
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
 
         <div class="section-10-bg"></div>
         <section class="section-10 mt-5">
@@ -913,10 +938,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 11
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 11
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
 
         <div class="section-11-bg mt-5"></div>
         <section class="section-11">
@@ -1031,10 +1056,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 12
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 12
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
         <div class="section-12-bg"></div>
         <section class="section-12">
             <div class="section-container">
@@ -1108,10 +1133,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 13
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 13
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
 
         <section class="section-13 mt-5">
             <div class="section-container">
@@ -1120,19 +1145,19 @@
                 <h2 class="header-title">ROCKLEAR BENEFITS</h2>
                 <div id="cards-container" class="row">
                     <!--
-                                                                                    |--------------------------------------------------------------------------
-                                                                                    | Content coming from footer
-                                                                                    |--------------------------------------------------------------------------
-                                                                                    -->
+                                                                                        |--------------------------------------------------------------------------
+                                                                                        | Content coming from footer
+                                                                                        |--------------------------------------------------------------------------
+                                                                                        -->
                 </div>
             </div>
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 14
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 14
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
         <div class="section-14-bg"></div>
         <section class="section-14">
             <div class="section-container">
@@ -1184,10 +1209,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 15
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 15
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
         <div class="section-15-bg"></div>
         <section class="section-15">
             <div class="section-container">
@@ -1217,10 +1242,10 @@
         <div class="section-15-bg-2"></div>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 16
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 16
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
 
         <section class="section-16">
             <div class="section-container">
@@ -1268,10 +1293,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 17
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 17
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
 
         <div class="section-17-bg"></div>
         <section class="section-17">
@@ -1305,10 +1330,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 18
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 18
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
         <div class="section-15-bg section-18-bg"></div>
         <section class="section-15 section-18">
             <div class="section-container">
@@ -1327,10 +1352,10 @@
         <div class="section-15-bg-2"></div>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 19
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 19
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
 
         <section class="section-19 mt-5">
             <div class="section-container">
@@ -1512,10 +1537,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 20
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 20
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
         <section class="section-20 py-5 mt-5">
             <div class="section-container py-5 mt-5">
                 <div class="d-flex gap-4 pt-3 flex-column align-items-center justify-content-center">
@@ -1541,10 +1566,10 @@
             </div>
         </section>
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 21
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 21
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
 
         <section class="section-21">
             <div class="section-container">
@@ -1605,10 +1630,10 @@
         </section>
 
         <!--
-                                                                              |--------------------------------------------------------------------------
-                                                                              | Section 22
-                                                                              |--------------------------------------------------------------------------
-                                                                              -->
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 22
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
         <div class="section-15-bg section-22-bg"></div>
         <section class="section-15 section-22">
             <div class="section-container">
@@ -1739,53 +1764,53 @@
     <script>
         function initComparisons() {
             var slider = document.querySelector(".img-comp-slider");
-        var img = document.querySelector(".img-comp-overlay");
-        var clicked = 0;
-        var width = img.offsetWidth;
+            var img = document.querySelector(".img-comp-overlay");
+            var clicked = 0;
+            var width = img.offsetWidth;
 
-        // Set the slider's initial position to the far right
-        slider.style.left = (width - (slider.offsetWidth / 2)) + "px";
-        img.style.width = width + "px"; // Set initial overlay width to full width
+            // Set the slider's initial position to the far right
+            slider.style.left = (width - (slider.offsetWidth / 2)) + "px";
+            img.style.width = width + "px"; // Set initial overlay width to full width
 
-        // Event listeners for mouse
-        slider.addEventListener("mousedown", startSlide);
-        window.addEventListener("mouseup", stopSlide);
+            // Event listeners for mouse
+            slider.addEventListener("mousedown", startSlide);
+            window.addEventListener("mouseup", stopSlide);
 
-        // Event listeners for touch
-        slider.addEventListener("touchstart", startSlide);
-        window.addEventListener("touchend", stopSlide);
+            // Event listeners for touch
+            slider.addEventListener("touchstart", startSlide);
+            window.addEventListener("touchend", stopSlide);
 
-        function startSlide(e) {
-            e.preventDefault(); // Prevent default touch event
-            clicked = 1;
-            window.addEventListener("mousemove", slideMove);
-            window.addEventListener("touchmove", slideMove);
-        }
+            function startSlide(e) {
+                e.preventDefault(); // Prevent default touch event
+                clicked = 1;
+                window.addEventListener("mousemove", slideMove);
+                window.addEventListener("touchmove", slideMove);
+            }
 
-        function stopSlide() {
-            clicked = 0;
-            window.removeEventListener("mousemove", slideMove);
-            window.removeEventListener("touchmove", slideMove);
-        }
+            function stopSlide() {
+                clicked = 0;
+                window.removeEventListener("mousemove", slideMove);
+                window.removeEventListener("touchmove", slideMove);
+            }
 
-        function slideMove(e) {
-            if (clicked === 0) return;
-            var pos = getCursorPos(e);
-            if (pos < 0) pos = 0;
-            if (pos > width) pos = width;
-            slide(pos);
-        }
+            function slideMove(e) {
+                if (clicked === 0) return;
+                var pos = getCursorPos(e);
+                if (pos < 0) pos = 0;
+                if (pos > width) pos = width;
+                slide(pos);
+            }
 
-        function getCursorPos(e) {
-            var a = img.getBoundingClientRect();
-            var x = e.pageX || e.touches[0].pageX;
-            return x - a.left - window.pageXOffset;
-        }
+            function getCursorPos(e) {
+                var a = img.getBoundingClientRect();
+                var x = e.pageX || e.touches[0].pageX;
+                return x - a.left - window.pageXOffset;
+            }
 
-        function slide(x) {
-            img.style.width = x + "px";
-            slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
-        }
+            function slide(x) {
+                img.style.width = x + "px";
+                slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+            }
         }
 
         window.onload = initComparisons;
@@ -2136,10 +2161,10 @@
     </script>
 
     <script src="{{ asset('js/script.js') . config('app.asset') }}"></script>
-    {{-- <script src="https://unpkg.com/image-compare-viewer@1.6.2/dist/image-compare-viewer.min.js"></script> --}}
+    <script src="https://unpkg.com/image-compare-viewer@1.6.2/dist/image-compare-viewer.min.js"></script>
 
 
-    {{-- <script>
+    <script>
         document.addEventListener("DOMContentLoaded", function() {
             var element = document.getElementById("image-compare-13dc195");
             var options = {
@@ -2183,5 +2208,5 @@
             //     document.body.style.overflow = "";
             // });
         });
-    </script> --}}
+    </script>
 @endsection
