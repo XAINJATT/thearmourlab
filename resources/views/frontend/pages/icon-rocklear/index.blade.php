@@ -887,10 +887,10 @@
 
                 <div id="comparison">
                     <div class="img-comp-img">
-                        <img src="https://via.placeholder.com/500x250?text=Before" alt="Before">
+                        <img src="https://iconrocklear.com/wp-content/uploads/2023/09/Correction.png" alt="Before">
                     </div>
                     <div class="img-comp-img img-comp-overlay">
-                        <img src="https://via.placeholder.com/500x250?text=After" alt="After">
+                        <img src="https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION.png" alt="After">
                     </div>
                 </div>
 
