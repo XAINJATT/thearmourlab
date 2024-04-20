@@ -71,6 +71,12 @@
         overflow: hidden;
         border-right: 2px solid #2196F3; /* Visible divider line */
     }
+
+    @media screen and (min-width: 600px) {
+        .img-comp-container {
+            margin-left: -200px; 
+        }
+    }
     </style>
 @endsection
 
