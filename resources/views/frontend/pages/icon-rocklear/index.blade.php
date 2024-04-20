@@ -35,7 +35,7 @@
         }
 
         div#comparison figure {
-            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/photoshop-face-before.jpg);
+            background-image: url(https://iconrocklear.com/wp-content/uploads/2023/09/Correction.png);
             background-size: cover;
             position: relative;
             font-size: 0;
@@ -50,7 +50,7 @@
         }
 
         div#comparison figure div {
-            background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/photoshop-face-after.jpg);
+            background-image: url(https://iconrocklear.com/wp-content/uploads/2023/09/PROTECTION.png);
             background-size: cover;
             position: absolute;
             width: 50%;
