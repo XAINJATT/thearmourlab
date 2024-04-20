@@ -88,7 +88,7 @@
 
             .img-comp-container {
 
-                display: none;
+                display: block;
             }
         }
 
