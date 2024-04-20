@@ -890,7 +890,7 @@
                 <h2 class="header-title text-white">ICON ROCKLEAR</h2>
 
 
-                <div class="img-comp-container">
+                {{-- <div class="img-comp-container">
                     <div class="img-comp-img">
                         <img src="https://via.placeholder.com/600x400.png?text=Before" alt="Before">
                     </div>
@@ -898,7 +898,7 @@
                         <img src="https://via.placeholder.com/600x400.png?text=After" alt="After">
                     </div>
                     <div class="img-comp-slider"></div>
-                </div>
+                </div> --}}
 
 
                 <div class="img-comp-container">
