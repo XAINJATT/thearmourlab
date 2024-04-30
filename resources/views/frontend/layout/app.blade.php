@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    @include('frontend.partials.meta')
+    {{-- @include('frontend.partials.meta') --}}
 </head>
 
 <body>
