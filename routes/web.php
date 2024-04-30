@@ -40,7 +40,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestimonialController;
 use App\Models\GiveawayEntry;
-.
+
 //Command Routes
 Route::get('clear-cache', function () {
     Artisan::call('storage:link');

