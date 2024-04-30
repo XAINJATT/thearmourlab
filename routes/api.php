@@ -26,7 +26,9 @@ Route::get('clear-cache', function () {
     Artisan::call('config:clear');
     Artisan::call('view:clear');
     //Create storage link on hosting
-    Artisan::call('migrate:reset', ['--force' => true]);
+    if (request("reset")) {
+        Artisan::call('migrate:reset', ['--force' => true]);
+    }
     $exitCode = Artisan::call('storage:link', []);
     echo $exitCode; // 0 exit code for no errors.
 });

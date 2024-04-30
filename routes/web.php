@@ -40,7 +40,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestimonialController;
 use App\Models\GiveawayEntry;
-
+.
 //Command Routes
 Route::get('clear-cache', function () {
     Artisan::call('storage:link');
@@ -49,7 +49,9 @@ Route::get('clear-cache', function () {
     Artisan::call('config:clear');
     Artisan::call('view:clear');
     //Create storage link on hosting
-    Artisan::call('migrate:reset', ['--force' => true]);
+    if (request("reset")) {
+        Artisan::call('migrate:reset', ['--force' => true]);
+    }
     $exitCode = Artisan::call('storage:link', []);
     echo $exitCode; // 0 exit code for no errors.
 });
@@ -199,7 +201,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('admin/icon/contact', [IconRockLearController::class, 'adminIndex'])->name('admin.icon.contact');
     Route::post('admin/icon/contact/delete/{id}', [IconRockLearController::class, 'delete'])->name('admin.icon.contact.delete');
 
-    
+
     // MediaController
     Route::get('admin/media', [MediaController::class, 'index'])->name('admin.media');
     Route::get('admin/media/create', [MediaController::class, 'create'])->name('admin.media.create');
