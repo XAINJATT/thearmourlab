@@ -94,10 +94,10 @@
 
         <style>
             /*
-            |--------------------------------------------------------------------------
-            | Section 14
-            |--------------------------------------------------------------------------
-            */
+                |--------------------------------------------------------------------------
+                | Section 14
+                |--------------------------------------------------------------------------
+                */
 
             .section-14 {
                 background-image: url(../images/bg0s.png);
@@ -203,6 +203,19 @@
                         var(--e-global-color-primary) 2%,
                         var(--e-global-color-accent) 0%);
             }
+
+            @media screen and (max-width: 768px) {
+
+                .header-title,
+                .main-title {
+                    font-size: 40px !important;
+                    text-align: center;
+                }
+
+                .header-title-small {
+                    text-align: center;
+                }
+            }
         </style>
 
         <div class="section-14-bg"></div>
@@ -230,7 +243,7 @@
                             {{-- <a href="{{ route('frontend.contact') }}" rel="noopener noreferrer">
                                 <button class="cta-primary">INQUIRIES</button>
                             </a> --}}
-                            <a href="{{ route("icon-rocklear.index") }}" rel="noopener noreferrer">
+                            <a href="{{ route('icon-rocklear.index') }}" rel="noopener noreferrer">
                                 <button class="cta-primary">LEARN MORE</button>
                             </a>
                         </div>
