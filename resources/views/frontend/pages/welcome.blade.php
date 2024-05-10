@@ -216,11 +216,11 @@
                 .main-title {
                     font-size: 40px !important;
                     /* text-align: center; */
-                    margin-top: 20px;
+                    margin-top: 25px;
                 }
 
                 .header-title-small {
-                    font-size: 16px;
+                    font-size: 16px !important;
                 }
             }
         </style>
