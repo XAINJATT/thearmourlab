@@ -28,7 +28,19 @@
                 <div class="row justify-content-center">
 
                     <div class="col-12 col-md-8 mt-3">
-                        <form action="{{ route('admin.contest.store') }}" id="addContestForm" method="POST" enctype="multipart/form-data">
+
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <p><strong>Opps Something went wrong</strong></p>
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <form action="{{ route('admin.contest.store') }}" id="addContestForm" method="POST"
+                            enctype="multipart/form-data">
                             @csrf
                             <div class="card mb-3">
 
@@ -51,8 +63,9 @@
                                     <div class="row">
                                         <div class="col-md-12 mb-3">
                                             <label class="font-weight-bold text-black">
-                                                Title  <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" name="title" placeholder="Enter Title" required>
+                                                Title <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" name="title"
+                                                placeholder="Enter Title" required>
                                             @if ($errors->has('title'))
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $errors->first('title') }}</strong>
@@ -82,7 +95,7 @@
                                             @endif
                                         </div> --}}
 
-                                        
+
                                         <div class="col-md-12 mt-2">
                                             <label for="description" class="font-weight-bold">Description <span
                                                     class="text-danger">*</span></label>
@@ -95,15 +108,18 @@
                                         </div>
 
                                         <div class="col-12 col-md-6 mt-2">
-                                            <label for="contest_image" class="font-weight-bold">Prize Image 
-                                            <span class="text-danger">*</span></label>
-                                            <img src="" alt="" class="picture-src" id="contest_image_preview" onclick="$(this).next().trigger('click')" style="width: 60%; display: none;">
+                                            <label for="contest_image" class="font-weight-bold">Prize Image
+                                                <span class="text-danger">*</span></label>
+                                            <img src="" alt="" class="picture-src"
+                                                id="contest_image_preview" onclick="$(this).next().trigger('click')"
+                                                style="width: 60%; display: none;">
                                             <label class="form-control label-style" id="contest_image_browse">
                                                 <span class="d-flex justify-content-center align-items-center">
                                                     <span><i class="fa fa-2x fa-camera"></i></span>
                                                     <span>&nbsp;Browse</span>
                                                 </span>
-                                                <input type="file" class="input-style" name="contest_image" onchange="ReadUrl(this, 'contest_image_preview', 'contest_image_browse');">
+                                                <input type="file" class="input-style" name="contest_image"
+                                                    onchange="ReadUrl(this, 'contest_image_preview', 'contest_image_browse');">
                                             </label>
                                             @if ($errors->has('contest_image'))
                                                 <span class="invalid-feedback" role="alert">

@@ -21,13 +21,24 @@
             margin-bottom: 0;
         }
     </style>
-    
+
     <div class="page-content">
         <section class="contact-area pb-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8 mt-3">
-                        <form action="{{ route('admin.contest.update') }}" id="addContestForm" method="post" enctype="multipart/form-data">
+                        @if ($errors->any())
+                            <div class="alert alert-danger">
+                                <p><strong>Opps Something went wrong</strong></p>
+                                <ul>
+                                    @foreach ($errors->all() as $error)
+                                        <li>{{ $error }}</li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @endif
+                        <form action="{{ route('admin.contest.update') }}" id="addContestForm" method="post"
+                            enctype="multipart/form-data">
                             @csrf
 
                             <input type="hidden" name="contest_id" value="{{ $contest->id }}" />
@@ -50,11 +61,12 @@
                                 <hr>
                                 <div class="card-body pb-2">
                                     <div class="row">
-                                        
+
                                         <div class="col-md-12 mb-3">
                                             <label class="font-weight-bold text-black">
-                                                Title  <span class="text-danger">*</span></label>
-                                            <input type="text" class="form-control" name="title" value="{{ $contest->title }}"  required placeholder="Enter Title">
+                                                Title <span class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" name="title"
+                                                value="{{ $contest->title }}" required placeholder="Enter Title">
                                         </div>
 
                                         {{-- <div class="col-md-6 mb-3">
@@ -69,19 +81,20 @@
                                             <input type="date" class="form-control" id="end_date" name="end_date" value="{{ $contest->end_date }}"  required>
                                         </div> --}}
 
-                                        
+
                                         <div class="col-md-12 mt-2">
                                             <label for="description" class="font-weight-bold">
                                                 Description <span class="text-danger">*</span></label>
-                                            <textarea class="form-control" name="description" rows="3" required>{{$contest->description}}</textarea>
+                                            <textarea class="form-control" name="description" rows="3" required>{{ $contest->description }}</textarea>
                                         </div>
 
                                         <div class="col-12 col-md-6 mb-3">
                                             <label for="image" class="font-weight-bold">
-                                                Prize Image 
+                                                Prize Image
                                                 <span class="text-danger">*</span> &nbsp;&nbsp;
-                                                @if($contest->image)
-                                                    <a href="{{ asset('storage/contest_image/'.$contest->image) }}" download="{{ asset('storage/contest_image/'.$contest->image) }}">
+                                                @if ($contest->image)
+                                                    <a href="{{ asset('storage/contest_image/' . $contest->image) }}"
+                                                        download="{{ asset('storage/contest_image/' . $contest->image) }}">
                                                         <i class="fas fa-download"></i>
                                                     </a>
                                                 @endif
@@ -104,19 +117,22 @@
                                                 Status <span class="text-danger">*</span></label>
                                             <select class="form-select" name="is_active" id="is_active">
                                                 <option value="">--please select--</option>
-                                                <option value="1" {{ $contest->is_active == 1 ? 'selected' : ''  }}>Activate</option>
-                                                <option value="0" {{ $contest->is_active == 0 ? 'selected' : ''  }}>De-Activate</option>
+                                                <option value="1" {{ $contest->is_active == 1 ? 'selected' : '' }}>
+                                                    Activate</option>
+                                                <option value="0" {{ $contest->is_active == 0 ? 'selected' : '' }}>
+                                                    De-Activate</option>
                                             </select>
                                         </div>
 
                                     </div>
                                 </div>
-                                
+
                                 <hr>
                                 <div class="card-header" style="padding: 0.5rem 1.5rem">
                                     <div class="row">
                                         <div class="col-12 text-end">
-                                            <button type="button" class="btn btn-light px-4 py-2" onclick="window.location.href='{{ route('admin.contests') }}'">
+                                            <button type="button" class="btn btn-light px-4 py-2"
+                                                onclick="window.location.href='{{ route('admin.contests') }}'">
                                                 Cancel
                                             </button>
                                             <button type="submit" class="btn btn-primary submitBtn">
