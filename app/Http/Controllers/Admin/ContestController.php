@@ -94,7 +94,7 @@ class ContestController extends Controller
             // 'start_date' => 'required', // Assuming 'id' is a required field
             // 'end_date' => 'required', // Assuming 'id' is a required field
             'is_active' => 'required',
-            'description' => 'required',
+            'description_2' => 'required',
         ]);
 
 
@@ -114,7 +114,7 @@ class ContestController extends Controller
             // 'start_date' => $request->input('start_date'),
             // 'end_date' => $request->input('end_date'),
             'is_active' => $request->input('is_active'),
-            'description' => $request->input('description'),
+            'description' => $request->input('description_2'),
             'image' => $FileImage,
         ];
 

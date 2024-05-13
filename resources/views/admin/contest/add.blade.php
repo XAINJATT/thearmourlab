@@ -99,7 +99,7 @@
                                         <div class="col-md-12 mt-2">
                                             <label for="description" class="font-weight-bold">Description <span
                                                     class="text-danger">*</span></label>
-                                            <input class="form-control" name="description" rows="3" required>
+                                            <input class="form-control" name="description_2" >
                                             @if ($errors->has('description'))
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $errors->first('description') }}</strong>
