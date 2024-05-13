@@ -99,9 +99,7 @@
                                         <div class="col-md-12 mt-2">
                                             <label for="description" class="font-weight-bold">Description <span
                                                     class="text-danger">*</span></label>
-                                            <textarea class="form-control" name="description" rows="3" required>
-                                                test
-                                            </textarea>
+                                            <input class="form-control" name="description" rows="3" required>
                                             @if ($errors->has('description'))
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $errors->first('description') }}</strong>

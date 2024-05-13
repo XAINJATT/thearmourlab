@@ -88,7 +88,7 @@ class ContestController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        // dd($request);
         $validator = Validator::make($request->all(), [
             'title' => 'required',
             // 'start_date' => 'required', // Assuming 'id' is a required field
@@ -96,7 +96,7 @@ class ContestController extends Controller
             'is_active' => 'required',
             'description' => 'required',
         ]);
-                
+
 
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
