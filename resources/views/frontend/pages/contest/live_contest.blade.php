@@ -232,7 +232,8 @@
 @section('scripts')
     <script src="{{ asset('backend/plugins/sweetalert2/sweetalert2.all.min.js') }}"></script>
 
-    @if ($contests && $prizes)
+    @if ($contests)
+    @if($prizes)
         <script>
             // Audio elements
             let startSound = new Audio("{{ asset('assets/audio/wheel.mp3') }}");
@@ -248,6 +249,7 @@
                 $('#spinner-wheel').removeClass('d-none');
             });
         </script>
+        @endif
     @endif
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="{{ asset('assets/js/contest.js?v=1') }}"></script>
