@@ -232,7 +232,7 @@
 @section('scripts')
     <script src="{{ asset('backend/plugins/sweetalert2/sweetalert2.all.min.js') }}"></script>
 
-    @if ($contests)
+    @if ($contests && $prizes)
         <script>
             // Audio elements
             let startSound = new Audio("{{ asset('assets/audio/wheel.mp3') }}");
