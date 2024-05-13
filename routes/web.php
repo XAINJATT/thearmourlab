@@ -115,7 +115,7 @@ Route::get('/wraps', [WrapsController::class, 'index'])->name('frontend.wraps');
 Route::get('/window-tint', [WindowTintSimulatorController::class, 'indexSimulator'])->name('frontend.WindowTintSimulator');
 Route::get('/paint-protection-film', [PaintProtectionFilmController::class, 'indexSimulator'])->name('frontend.PaintProtectionFilmSimulator');
 
-Route::get('live-contests', [UserContestController::class, 'liveContest'])->name('frontend.contest');
+Route::get('live-contests', [UserContestController::class, 'liveCofntest'])->name('frontend.contest');
 
 Route::get("icon-rocklear", [IconRockLearController::class, "index"])->name("icon-rocklear.index");
 Route::get("icon-rocklear/contact", [IconRockLearController::class, "contact"])->name("icon-rocklear.contact");

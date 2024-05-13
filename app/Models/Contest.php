@@ -16,7 +16,7 @@ class Contest extends Model
         ->where('user_id', auth()->user()->id)
         ->where('status', '!=', '2');
     }
-    
+        
     // public function allRegisteredUser(){ // UserContests
     //     return $this->hasMany(UserContests::class,'contest_id','id')
     //     ->where('status', '!=', '2');

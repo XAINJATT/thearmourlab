@@ -81,6 +81,7 @@ class ContestController extends Controller
             if ($give_away_status->value == 1) {
                 $contests = [];
                 $contests = Contest::where('is_active', 1)->orderBy('id', 'DESC')->get();
+                // $prizes = 
                 $no_of_contests = count($contests);
                 return view('frontend.pages.contest.live_contest', compact(['contests', 'no_of_contests']));
             }
