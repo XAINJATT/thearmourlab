@@ -130,6 +130,9 @@
         }
     </style>
 
+@php
+$prizes = [];
+@endphp
     <div class="wrapper">
         <h1>SPIN TO WIN</h1>
         @if ($no_of_contests > 0)
@@ -208,7 +211,7 @@
                     return $divisions;
                 }
                 if ($contests) {
-                    $prizes = [];
+                    
                     $angle = 0;
                     foreach ($contests as $key => $prize) {
                         $prizes[$key + 1] = [
@@ -237,7 +240,7 @@
             // Audio elements
             let startSound = new Audio("{{ asset('assets/audio/wheel.mp3') }}");
             let applause = new Audio("{{ asset('assets/audio/applause.mp3') }}");
-            let prizes = @json($contests, JSON_FORCE_OBJECT); // Convert PHP array to JSON for use in JavaScript
+            let prizes = @json($prizes, JSON_FORCE_OBJECT); // Convert PHP array to JSON for use in JavaScript
             prizes = Object.values(prizes); // Convert the object to an array
 
             let start_angle = prizes[1]['angle']
