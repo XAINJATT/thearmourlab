@@ -233,12 +233,11 @@
     <script src="{{ asset('backend/plugins/sweetalert2/sweetalert2.all.min.js') }}"></script>
 
     @if ($contests)
-    @if($prizes)
         <script>
             // Audio elements
             let startSound = new Audio("{{ asset('assets/audio/wheel.mp3') }}");
             let applause = new Audio("{{ asset('assets/audio/applause.mp3') }}");
-            let prizes = @json($prizes, JSON_FORCE_OBJECT); // Convert PHP array to JSON for use in JavaScript
+            let prizes = @json($contests, JSON_FORCE_OBJECT); // Convert PHP array to JSON for use in JavaScript
             prizes = Object.values(prizes); // Convert the object to an array
 
             let start_angle = prizes[1]['angle']
@@ -249,7 +248,6 @@
                 $('#spinner-wheel').removeClass('d-none');
             });
         </script>
-        @endif
     @endif
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="{{ asset('assets/js/contest.js?v=1') }}"></script>
