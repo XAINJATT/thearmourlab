@@ -96,7 +96,7 @@ class ContestController extends Controller
             'is_active' => 'required',
             'description' => 'required',
         ]);
-
+                
 
         if ($validator->fails()) {
             return redirect()->back()->withErrors($validator)->withInput();
