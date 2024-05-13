@@ -49,7 +49,7 @@
                                                     protection film</span></a></li>
                                         <li><a href="{{ route('frontend.WindowTintSimulator') }}"><span>Window
                                                     tints</span></a></li>
-                                        <!-- <li><a href="{{ route('frontend.wraps') }}"><span>Wraps</span></a></li> -->
+                                        <li><a href="{{ route('icon-rocklear.index') }}"><span>Icon Rocklear</span></a></li> 
                                         <!-- <li><a href="{{ url('/automotive') }}"><span>Automotive</span></a></li> -->
                                     </ul>
                                 </li>
@@ -72,7 +72,7 @@
                             </a>
                         </li> --}}
                         <li>
-                            <a href="{{ route('icon-rocklear.index') }}" class="flex items-center cta-primary">
+                            <a style="font-size:20px !important;" href="{{ route('icon-rocklear.index') }}" class="flex items-center cta-primary">
                                 <img class="img-fluid"
                                     src="{{ asset('images/cropped-android-chrome-512x512-1-192x192.png') }}"
                                     alt="">
