@@ -119,6 +119,7 @@ Route::get('live-contests', [UserContestController::class, 'liveContest'])->name
 
 
 Route::get("icon-rocklear", [IconRockLearController::class, "index"])->name("icon-rocklear.index");
+Route::get("icon-rocklear/thankyou", [IconRockLearController::class, "thankyou"])->name("icon-rocklear.index.thankyou");
 Route::get("icon-rocklear/contact", [IconRockLearController::class, "contact"])->name("icon-rocklear.contact");
 Route::post("icon-rocklear/store", [IconRockLearController::class, "store"])->name("icon-rocklear.store");
 

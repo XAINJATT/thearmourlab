@@ -82,53 +82,54 @@
                                     </svg>
                                     <h5 class="title mt-20">How Can We Help</h5>
                                     <p>If you need any helps, please free to contact us.</p>
-                                    <form action="{{ route('frontend.contact.store') }}" id="addDriverForm"
-                                        class="contact-form style1" method="post" enctype="multipart/form-data">
-                                        @csrf
-                                        {{-- <div class="heading-bx mb-4 text-white">
-                                                <h6 class="title-ext text-white">Contact Form</h6>
-                                                <h3 class="title mb-0">DO YOU HAVE ANY<br /> QUESTIONS</h3>
-                                            </div> --}}
-                                        <div class="ajax-message"></div>
-                                        <div class="row">
-                                            <div class="col-lg-12">
-                                                <div class="form-group  mb-3">
-                                                    <div class="input-group">
-                                                        <input name="name" type="text" required
-                                                            class="form-control valid-character" placeholder="Your Name">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group  mb-3">
-                                                    <div class="input-group">
-                                                        <input name="email" type="email" class="form-control"
-                                                            required placeholder="Your Email Address">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group mb-3">
-                                                    <div class="input-group">
-                                                        <input name="phone" type="text" required
-                                                            class="form-control int-value" placeholder="Your Phone">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="form-group mb-3">
-                                                    <div class="input-group">
-                                                        <textarea name="message" rows="4" class="form-control" placeholder="Type Message" required></textarea>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <button type="submit" name="submit" class="btn btn-secondary btn-lg">
-                                                    Send Message
-                                                </button>
-                                            </div>
+                                    {{-- <form action="{{ route('frontend.contact.store') }}" id="addDriverForm"
+                            class="contact-form style1" method="post" enctype="multipart/form-data">
+                            @csrf
+                            {{-- <div class="heading-bx mb-4 text-white">
+                                <h6 class="title-ext text-white">Contact Form</h6>
+                                <h3 class="title mb-0">DO YOU HAVE ANY<br /> QUESTIONS</h3>
+                            </div> --} }
+                            <div class="ajax-message"></div>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-group  mb-3">
+                                        <div class="input-group">
+                                            <input name="name" type="text" required
+                                                class="form-control valid-character" placeholder="Your Name">
                                         </div>
-                                    </form>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group  mb-3">
+                                        <div class="input-group">
+                                            <input name="email" type="email" class="form-control" required
+                                                placeholder="Your Email Address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group mb-3">
+                                        <div class="input-group">
+                                            <input name="phone" type="text" required class="form-control int-value"
+                                                placeholder="Your Phone">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-group mb-3">
+                                        <div class="input-group">
+                                            <textarea name="message" rows="4" class="form-control" placeholder="Type Message" required></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <button type="submit" name="submit" class="btn btn-secondary btn-lg">
+                                        Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form> --}}
+                        <script type="text/javascript" src="https://form.jotform.com/jsform/241586322618055"></script>
                                 </div>
                             </div>
                         </div>

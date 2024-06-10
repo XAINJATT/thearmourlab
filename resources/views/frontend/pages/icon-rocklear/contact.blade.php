@@ -187,7 +187,8 @@
                         </h2>
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12">
-                        <form method="POST" action="{{ route('icon-rocklear.store') }}" class="contact-form">
+                        <script type="text/javascript" src="https://form.jotform.com/jsform/241586322618055"></script>
+                        {{-- <form method="POST" action="{{ route('icon-rocklear.store') }}" class="contact-form">
                             @csrf
                             <div class="row">
                                 <div class="col-md-12">
@@ -249,7 +250,7 @@
                                         <input value="LICENSEE" type="radio" name="service_type"
                                             id="service_type_installation" />
                                     </div>
-                                </div> --}}
+                                </div> --} }
                                 <div class="col-md-12 col-lg-12">
                                     <div class="form-group">
                                         <textarea placeholder="Additional Information" name="additional_information" id="additional_information"></textarea>
@@ -263,7 +264,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </form>
+                        </form> --}}
                     </div>
                 </div>
             </div>

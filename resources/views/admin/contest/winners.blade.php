@@ -183,7 +183,7 @@
                             if (response.success) {
                                 Swal.fire(
                                     'Deleted!',
-                                    'Your blog has been deleted.',
+                                    'User has been deleted.',
                                     'success'
                                 ).then(() => {
                                     // Reload the page after a short delay (e.g., 0 seconds)

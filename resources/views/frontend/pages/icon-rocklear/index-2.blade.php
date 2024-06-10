@@ -114,12 +114,7 @@
                 -->
         <section class="section-1">
             <div class="section-1-container">
-                @if(request("thankyou"))
-                <div class="alert alert-success">
-                    <h3 >Thank your for your Inquiry one of our team members will be in touch shortly</h3>
-                <h5 >For faster service and to book your appointment please call <a class="text-primary bg-white px-3" href="tel:+416-675-6853">416-675-6853</a></h5>
-                </div>
-                @endif
+                <h1>Thank you for contacting us</h1>
                 <h2 class="main-title"><span>Icon</span> Rocklear</h2>
                 <div class="row">
                     <div class="col-md-12 col-lg-6">

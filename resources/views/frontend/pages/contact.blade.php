@@ -30,6 +30,7 @@
 		<div class="container">
 			<div class="row align-items-center">
 				<div class="col-md-12">
+					
 					@if(session()->has('success-message'))
 					<div class="alert alert-success">
 						{{ session('success-message') }}
@@ -48,41 +49,7 @@
 							<h3 class="title mb-0">DO YOU HAVE ANY<br /> QUESTIONS</h3>
 						</div>
 						<div class="ajax-message"></div>
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="form-group  mb-3">
-									<div class="input-group">
-										<input name="name" type="text" required class="form-control valid-character" placeholder="Your Name">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="form-group  mb-3">
-									<div class="input-group">
-										<input name="email" type="email" class="form-control" required placeholder="Your Email Address">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="form-group mb-3">
-									<div class="input-group">
-										<input name="phone" type="text" required class="form-control int-value" placeholder="Your Phone">
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<div class="form-group mb-3">
-									<div class="input-group">
-										<textarea name="message" rows="4" class="form-control" placeholder="Type Message" required></textarea>
-									</div>
-								</div>
-							</div>
-							<div class="col-lg-12">
-								<button type="submit" name="submit"  class="btn btn-secondary btn-lg">
-									Send Message
-								</button>
-							</div>
-						</div>
+						<script type="text/javascript" src="https://form.jotform.com/jsform/241586322618055"></script>
 					</form>
 				</div>
 				<div class="col-lg-7 mb-30">

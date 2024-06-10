@@ -11,6 +11,10 @@ class IconRockLearController extends Controller
     {
         return view('frontend.pages.icon-rocklear.index');
     }
+    public function thankyou()
+    {
+        return view('frontend.pages.icon-rocklear.index-2');
+    }
     public function contact()
     {
         return view('frontend.pages.icon-rocklear.contact');
