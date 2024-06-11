@@ -18,7 +18,7 @@
                         </div>
                         <div class="post-info">
                             <h5 class="post-title"><a
-                                    href="{{ route('frontend.blogDetails', $blog->id) }}">{{ $blog->title }}</a>
+                                    href="{{ route('frontend.blogDetails', ['id' => $blog->id, 'slug' => \Str::slug($blog->title)]) }}">{{ $blog->title }}</a>
                             </h5>
                             <div class="post-content">
                                 <p class="mb-0">
