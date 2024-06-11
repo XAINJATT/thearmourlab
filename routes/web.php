@@ -83,9 +83,9 @@ Route::get('/blog', [BlogController::class, 'index'])->name('frontend.blog');
 
 
 
-Route::get('/blog-details/{id}/{slug}', [BlogDetailsController::class, 'index'])->name('frontend.blogDetails');
+Route::get('/blog/{id}/{slug}', [BlogDetailsController::class, 'index'])->name('frontend.blogDetails');
 
-Route::get('/blog/{id}', function ($id) {
+Route::get('/blog-details/{id}', function ($id) {
     $blog = blog::findOrFail($id);
     return redirect()->route('frontend.blogDetails', ['id' => $id, 'slug' => \Str::slug($blog->title)], 301);
 });
