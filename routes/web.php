@@ -39,6 +39,7 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TestimonialController;
+use App\Models\blog;
 use App\Models\GiveawayEntry;
 
 //Command Routes
@@ -79,7 +80,15 @@ Route::get('/load-more-gallery', [MediaController::class, 'loadMoreGallery']);
 // Route::get('invoice/order-status/{id}', [UserInvoiceController::class, 'orderStatusShow'])->name('user.invoice.orderStatusShow');
 // BlogController
 Route::get('/blog', [BlogController::class, 'index'])->name('frontend.blog');
-Route::get('/blog-details/{id}', [BlogDetailsController::class, 'index'])->name('frontend.blogDetails');
+
+
+
+Route::get('/blog-details/{id}/{slug}', [BlogDetailsController::class, 'index'])->name('frontend.blogDetails');
+
+Route::get('/blog-details/{id}', function ($id) {
+    $blog = blog::findOrFail($id);
+    return redirect()->route('frontend.blogDetails', ['id' => $id, 'slug' => $blog->slug], 301);
+});
 
 Route::post('/giveaway/enter', [GiveawayEntryController::class, 'store'])->name('frontend.giveaway.enter');
 

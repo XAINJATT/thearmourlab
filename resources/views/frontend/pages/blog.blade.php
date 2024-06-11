@@ -141,12 +141,12 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="blog-card style-1 bg-white shadow">
                                 <div class="post-media">
-                                    <a href="{{ route('frontend.blogDetails', $blog->id) }}"><img
+                                    <a href="{{ route('frontend.blogDetails', ['id' => $blog->id, 'slug' => \Str::slug($blog->title)]) }}"><img
                                             src="{{ asset($blog->image) }}" alt=""></a>
                                 </div>
                                 <div class="post-info">
                                     <h4 class="post-title"><a
-                                            href="{{ route('frontend.blogDetails', $blog->id) }}">{{ $blog->title }}</a>
+                                            href="{{ route('frontend.blogDetails', ['id' => $blog->id, 'slug' => \Str::slug($blog->title)]) }}">{{ $blog->title }}</a>
                                     </h4>
                                     <div class="post-content">
                                         <p class="mb-0">

@@ -42,7 +42,8 @@
 					@endif
 				</div>
 				<div class="col-lg-5 mb-50">
-					<form action="{{route('frontend.contact.store')}}" id="addDriverForm" class="contact-form style1" method="post" enctype="multipart/form-data">
+					{{-- Add style1 class to get the green background back --}}
+					<form action="{{route('frontend.contact.store')}}" id="addDriverForm" class="contact-form" method="post" enctype="multipart/form-data">
 						@csrf
 						<div class="heading-bx mb-4 text-white">
 							<h6 class="title-ext text-white">Contact Form</h6>
@@ -56,7 +57,7 @@
 					<div class="contact-ri">
 						<div class="heading-bx mb-4">
 							<h6 class="title-ext text-primary">Contact Info</h6>
-							<h2 class="title mb-0">CONTACT US FOR ANY <br />INFORMATIONS</h2>
+							{{-- <h2 class="title mb-0">CONTACT US FOR ANY <br />INFORMATIONS</h2> --}}
 						</div>
 						<div class="row">
 							<div class="col-md-6 col-sm-6 mb-15">

@@ -129,7 +129,7 @@
                                     NOT ALL COATINGS ARE CREATED EQUAL
                                 </h4>
                                 <a class="cta-primary" href="{{ route('frontend.contact') }}">
-                                    <span>Contact for more details</span>
+                                    <span>Inquire Now</span>
                                 </a>
                             </div>
 

@@ -153,7 +153,7 @@
 								</div>
 								<div class="ttr-post-info">
 									<div class="ttr-post-header">
-										<h6 class="post-title"><a href="{{ route('frontend.blogDetails', ['id' => $recentBlog->id]) }}">{{ $recentBlog->title }}</a></h6>
+										<h6 class="post-title"><a href="{{ route('frontend.blogDetails', ['id' => $recentBlog->id, 'slug' => \Str::slug($recentBlog->title)]) }}">{{ $recentBlog->title }}</a></h6>
 									</div>
 									<ul class="post-meta">
 										<li class="author">By <a href="javascript:;">{{ $recentBlog->blog_writer_name }}</a></li>
