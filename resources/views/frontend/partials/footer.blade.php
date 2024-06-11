@@ -160,11 +160,11 @@
                                     </div>
                                     <div class="ttr-post-info">
                                         <h6 class="post-title"><a
-                                                href="{{ route('frontend.blogDetails', $blog->id) }}">{{ @$blog->title }}</a>
+                                                href="{{ route('frontend.blogDetails', ['id' => $blog->id, 'slug' => \Str::slug($blog->title)]) }}">{{ @$blog->title }}</a>
                                         </h6>
                                         <ul class="post-meta">
                                             <li class="date"><a
-                                                    href="{{ route('frontend.blogDetails', $blog->id) }}"><i
+                                                    href="{{ route('frontend.blogDetails', ['id' => $blog->id, 'slug' => \Str::slug($blog->title)]) }}"><i
                                                         class="fa fa-calendar"></i>{{ $blog->created_at->format('d M Y') }}</a>
                                             </li>
                                         </ul>

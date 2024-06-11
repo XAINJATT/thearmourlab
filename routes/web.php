@@ -87,7 +87,7 @@ Route::get('/blog-details/{id}/{slug}', [BlogDetailsController::class, 'index'])
 
 Route::get('/blog-details/{id}', function ($id) {
     $blog = blog::findOrFail($id);
-    return redirect()->route('frontend.blogDetails', ['id' => $id, 'slug' => $blog->slug], 301);
+    return redirect()->route('frontend.blogDetails', ['id' => $id, 'slug' => \Str::slug($blog->title)], 301);
 });
 
 Route::post('/giveaway/enter', [GiveawayEntryController::class, 'store'])->name('frontend.giveaway.enter');
