@@ -177,7 +177,7 @@
 
         <section class="section-contact-form mb-5">
             <div class="section-container">
-                <h3 class="header-title-small">CONTACT US TODAY</h3>
+                <h3 class="header-title-small">INQUIRE NOW</h3>
                 <hr class="hr-dark" />
                 <div class="row">
                     <div class="col-lg-6 col-md-12 col-sm-12">
