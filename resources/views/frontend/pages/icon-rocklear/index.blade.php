@@ -117,7 +117,7 @@
                 @if(request("thankyou"))
                 <div class="alert alert-success" style="background:#0d9344">
                     <h3 >Thank your for your Inquiry one of our team members will be in touch shortly</h3>
-                <h6>For faster service or to book your appointment please call <a href="tel:+416-675-6853">416-675-6853</a></h6>
+                <h6 style="text-align: center" class="text-center">For faster service or to book your appointment please call <a href="tel:+416-675-6853">416-675-6853</a></h6>
                 </div>
                 @endif
                 <h2 class="main-title"><span>Icon</span> Rocklear</h2>
