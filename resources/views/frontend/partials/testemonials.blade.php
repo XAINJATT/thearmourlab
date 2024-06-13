@@ -10,7 +10,7 @@
                 <a href="javascript:void(0);" class="btn btn-outline-primary">View All Client</a>
             </div> --}}
         </div>
-        <div class="testimonial-carousel-1 owl-carousel owl-btn-1 owl-btn-center-lr dots-style-1 owl-none wow fadeIn"
+        {{-- <div class="testimonial-carousel-1 owl-carousel owl-btn-1 owl-btn-center-lr dots-style-1 owl-none wow fadeIn"
             data-wow-delay="0.9s">
             @if (App\Helpers\SiteHelper::getTestimonials())
                 @foreach (App\Helpers\SiteHelper::getTestimonials() as $testimonial)
@@ -32,6 +32,8 @@
                 @endforeach
             @endif
 
-        </div>
+        </div> --}}
+
+        <script src="https://widget.trustmary.com/LdAswXUC5"></script>
     </div>
 </section>

@@ -27,12 +27,12 @@
 
     <style>
         /* div#comparison {
-                                width: 60vw;
-                                height: 60vw;
-                                max-width: 600px;
-                                max-height: 600px;
-                                overflow: hidden;
-                            } */
+                                    width: 60vw;
+                                    height: 60vw;
+                                    max-width: 600px;
+                                    max-height: 600px;
+                                    overflow: hidden;
+                                } */
 
         .img-comp-container img {
             all: unset !important;
@@ -107,263 +107,283 @@
 
 @section('content')
     <main>
-        <!--
-                |--------------------------------------------------------------------------
-                | Section 1
-                |--------------------------------------------------------------------------
-                -->
-        <section class="section-1">
-            <div class="section-1-container">
-                @if(request("thankyou"))
-                <div class="alert alert-success" style="background:#0d9344">
-                    <h3 >Thank your for your Inquiry one of our team members will be in touch shortly</h3>
-                <h6 style="text-align: center" class="text-center">For faster service or to book your appointment please call <a href="tel:+416-675-6853">416-675-6853</a></h6>
-                </div>
-                @endif
-                <h2 class="main-title"><span>Icon</span> Rocklear</h2>
-                <div class="row">
-                    <div class="col-md-12 col-lg-6">
-                        <div class="left">
-                            <div>
-                                <h4 class="secondary-title">
-                                    NOT ALL COATINGS ARE CREATED EQUAL
-                                </h4>
-                                <a class="cta-primary" href="{{ route('frontend.contact') }}">
-                                    <span>Inquire Now</span>
-                                </a>
-                            </div>
 
-                            <div class="icon-list-container">
-                                <ul class="icon-list">
-                                    <li class="icon-list-item">
-                                        <span class="icon-list-icon">
-                                            <i aria-hidden="true" class="fas fa-circle"></i>
-                                        </span>
-                                        <span class="icon-list-text">AUTO</span>
-                                    </li>
-                                    <li class="icon-list-item">
-                                        <span class="icon-list-icon">
-                                            <i aria-hidden="true" class="fas fa-circle"></i>
-                                        </span>
-                                        <span class="icon-list-text">MARINE</span>
-                                    </li>
-                                    <li class="icon-list-item">
-                                        <span class="icon-list-icon">
-                                            <i aria-hidden="true" class="fas fa-circle"></i>
-                                        </span>
-                                        <span class="icon-list-text">AVIATION</span>
-                                    </li>
-                                    <li class="icon-list-item">
-                                        <span class="icon-list-icon">
-                                            <i aria-hidden="true" class="fas fa-circle"></i>
-                                        </span>
-                                        <span class="icon-list-text">TRUCKING</span>
-                                    </li>
-                                    <li class="icon-list-item">
-                                        <span class="icon-list-icon">
-                                            <i aria-hidden="true" class="fas fa-circle"></i>
-                                        </span>
-                                        <span class="icon-list-text">AGRICULTURE</span>
-                                    </li>
-                                </ul>
-                                <div class="icon-list-text">
-                                    <p>
-                                        Scientifically Confirmed Protection , Correction &amp;
-                                        Brilliance
-                                    </p>
+        @if (!request('thankyou'))
+            <!--
+                    |--------------------------------------------------------------------------
+                    | Section 1
+                    |--------------------------------------------------------------------------
+                    -->
+            <section class="section-1">
+                <div class="section-1-container">
+                    @if (request('thankyou'))
+                        <div class="alert alert-success" style="background:#0d9344">
+                            <h3>Thank your for your Inquiry one of our team members will be in touch shortly</h3>
+                            <h6 style="text-align: center" class="text-center">For faster service or to book your
+                                appointment please call <a href="tel:+416-675-6853">416-675-6853</a></h6>
+                        </div>
+                    @endif
+                    <h2 class="main-title"><span>Icon</span> Rocklear</h2>
+                    <div class="row">
+                        <div class="col-md-12 col-lg-6">
+                            <div class="left">
+                                <div>
+                                    <h4 class="secondary-title">
+                                        NOT ALL COATINGS ARE CREATED EQUAL
+                                    </h4>
+                                    <a class="cta-primary" href="{{ route('frontend.contact') }}">
+                                        <span>Inquire Now</span>
+                                    </a>
+                                </div>
+
+                                <div class="icon-list-container">
+                                    <ul class="icon-list">
+                                        <li class="icon-list-item">
+                                            <span class="icon-list-icon">
+                                                <i aria-hidden="true" class="fas fa-circle"></i>
+                                            </span>
+                                            <span class="icon-list-text">AUTO</span>
+                                        </li>
+                                        <li class="icon-list-item">
+                                            <span class="icon-list-icon">
+                                                <i aria-hidden="true" class="fas fa-circle"></i>
+                                            </span>
+                                            <span class="icon-list-text">MARINE</span>
+                                        </li>
+                                        <li class="icon-list-item">
+                                            <span class="icon-list-icon">
+                                                <i aria-hidden="true" class="fas fa-circle"></i>
+                                            </span>
+                                            <span class="icon-list-text">AVIATION</span>
+                                        </li>
+                                        <li class="icon-list-item">
+                                            <span class="icon-list-icon">
+                                                <i aria-hidden="true" class="fas fa-circle"></i>
+                                            </span>
+                                            <span class="icon-list-text">TRUCKING</span>
+                                        </li>
+                                        <li class="icon-list-item">
+                                            <span class="icon-list-icon">
+                                                <i aria-hidden="true" class="fas fa-circle"></i>
+                                            </span>
+                                            <span class="icon-list-text">AGRICULTURE</span>
+                                        </li>
+                                    </ul>
+                                    <div class="icon-list-text">
+                                        <p>
+                                            Scientifically Confirmed Protection , Correction &amp;
+                                            Brilliance
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-12 col-lg-6">
-                        <div class="right">
-                            <!-- Swiper -->
-                            <div>
-                                <div class="swiper swiperFirst">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <img decoding="async" width="843" height="588"
-                                                src="images/Layer-4-copy.png" class="attachment-full size-full"
-                                                alt=""
-                                                srcset="
+                        <div class="col-md-12 col-lg-6">
+                            <div class="right">
+                                <!-- Swiper -->
+                                <div>
+                                    <div class="swiper swiperFirst">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img decoding="async" width="843" height="588"
+                                                    src="images/Layer-4-copy.png" class="attachment-full size-full"
+                                                    alt=""
+                                                    srcset="
                             images/Layer-4-copy.png         843w,
                             images/Layer-4-copy-300x209.png 300w,
                             images/Layer-4-copy-768x536.png 768w
                           "
-                                                sizes="(max-width: 843px) 100vw, 843px" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img loading="lazy" decoding="async" width="789" height="588"
-                                                src="images/Aviations.png" class="attachment-full size-full" alt=""
-                                                srcset="
+                                                    sizes="(max-width: 843px) 100vw, 843px" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img loading="lazy" decoding="async" width="789" height="588"
+                                                    src="images/Aviations.png" class="attachment-full size-full"
+                                                    alt=""
+                                                    srcset="
                             images/Aviations.png         789w,
                             images/Aviations-300x224.png 300w,
                             images/Aviations-768x572.png 768w
                           "
-                                                sizes="(max-width: 789px) 100vw, 789px" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img loading="lazy" decoding="async" width="1006" height="646"
-                                                src="images/Agriculture-min.png" class="attachment-full size-full"
-                                                alt=""
-                                                srcset="
+                                                    sizes="(max-width: 789px) 100vw, 789px" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img loading="lazy" decoding="async" width="1006" height="646"
+                                                    src="images/Agriculture-min.png" class="attachment-full size-full"
+                                                    alt=""
+                                                    srcset="
                             images/Agriculture-min.png         1006w,
                             images/Agriculture-min-300x193.png  300w,
                             images/Agriculture-min-768x493.png  768w
                           "
-                                                sizes="(max-width: 1006px) 100vw, 1006px" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img loading="lazy" decoding="async" width="1019" height="588"
-                                                src="images/Trucking-min.png" class="attachment-full size-full"
-                                                alt=""
-                                                srcset="
+                                                    sizes="(max-width: 1006px) 100vw, 1006px" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img loading="lazy" decoding="async" width="1019" height="588"
+                                                    src="images/Trucking-min.png" class="attachment-full size-full"
+                                                    alt=""
+                                                    srcset="
                             images/Trucking-min.png         1019w,
                             images/Trucking-min-300x173.png  300w,
                             images/Trucking-min-768x443.png  768w
                           "
-                                                sizes="(max-width: 1019px) 100vw, 1019px" />
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <img decoding="async" width="908" height="588" src="images/Auto-min.png"
-                                                class="attachment-full size-full" alt=""
-                                                srcset="
+                                                    sizes="(max-width: 1019px) 100vw, 1019px" />
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img decoding="async" width="908" height="588"
+                                                    src="images/Auto-min.png" class="attachment-full size-full"
+                                                    alt=""
+                                                    srcset="
                             images/Auto-min.png         908w,
                             images/Auto-min-300x194.png 300w,
                             images/Auto-min-768x497.png 768w
                           "
-                                                sizes="(max-width: 908px) 100vw, 908px" />
+                                                    sizes="(max-width: 908px) 100vw, 908px" />
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-5 swiper-controls">
-                                        <div class="swiper-button-prev-first">
-                                            <i class="fas fa-chevron-left"></i>
-                                        </div>
+                                        <div class="d-flex align-items-center gap-5 swiper-controls">
+                                            <div class="swiper-button-prev-first">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </div>
 
-                                        <div class="swiper-pagination-first text-white w-auto"></div>
-                                        <div class="swiper-button-next-first">
-                                            <i class="fas fa-chevron-right"></i>
+                                            <div class="swiper-pagination-first text-white w-auto"></div>
+                                            <div class="swiper-button-next-first">
+                                                <i class="fas fa-chevron-right"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
 
-                            <!-- Include the Swiper JS here or at the end of the body -->
+                                <!-- Include the Swiper JS here or at the end of the body -->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 2
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+            <!--
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 2
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
 
-        <section class="section-2">
-            <div id="marqueeContainer" class="marquee-container">
-                <div class="marquee-content">
-                    <span class="text">
-                        <span style="color: #108d19">ICON ROCKLEAR</span> -
-                        <span>75x stronger</span> - <span>35x thicker</span> -
-                    </span>
-                    <span class="text">
-                        <span style="color: #108d19">ICON ROCKLEAR</span> -
-                        <span>75x stronger</span> - <span>35x thicker</span> -
-                    </span>
-                </div>
-            </div>
-        </section>
-
-        <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 3
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
-        <section class="section-3">
-            <div class="section-container">
-                <div>
-                    <h4 class="header-title-small">
-                        THE WORLD'S ONE AND ONLY SYSTEM FOR LIFE.
-                    </h4>
-                    <hr class="hr-dark" />
-                    <h2 class="header-title">EXPERIENCE</h2>
-                    <div class="section-3-content">
-                        <div class="empty-box"></div>
-                        <p class="section-content">
-                            Icon Rocklear is the most cutting edge surface protection
-                            technology in the world today that’s 75x Stronger than other
-                            coatings. The only coating to achieve sheer strength, brilliance
-                            and depth correction capabilities – Making it the world’s best
-                            all in one system.
-                        </p>
+            <section class="section-2">
+                <div id="marqueeContainer" class="marquee-container">
+                    <div class="marquee-content">
+                        <span class="text">
+                            <span style="color: #108d19">ICON ROCKLEAR</span> -
+                            <span>75x stronger</span> - <span>35x thicker</span> -
+                        </span>
+                        <span class="text">
+                            <span style="color: #108d19">ICON ROCKLEAR</span> -
+                            <span>75x stronger</span> - <span>35x thicker</span> -
+                        </span>
                     </div>
-                    <hr class="hr-light" />
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 4
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+            <!--
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 3
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
+            <section class="section-3">
+                <div class="section-container">
+                    <div>
+                        <h4 class="header-title-small">
+                            THE WORLD'S ONE AND ONLY SYSTEM FOR LIFE.
+                        </h4>
+                        <hr class="hr-dark" />
+                        <h2 class="header-title">EXPERIENCE</h2>
+                        <div class="section-3-content">
+                            <div class="empty-box"></div>
+                            <p class="section-content">
+                                Icon Rocklear is the most cutting edge surface protection
+                                technology in the world today that’s 75x Stronger than other
+                                coatings. The only coating to achieve sheer strength, brilliance
+                                and depth correction capabilities – Making it the world’s best
+                                all in one system.
+                            </p>
+                        </div>
+                        <hr class="hr-light" />
+                    </div>
+                </div>
+            </section>
 
-        <section class="section-4">
-            <div class="section-container">
-                <div class="flex">
-                    <div class="column">
-                        <img loading="lazy" decoding="async" width="562" height="384"
-                            src="images/oRANGE-TRUCK.png" class="attachment-large size-large wp-image-1416"
-                            alt=""
-                            srcset="
+            <!--
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 4
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
+
+            <section class="section-4">
+                <div class="section-container">
+                    <div class="flex">
+                        <div class="column">
+                            <img loading="lazy" decoding="async" width="562" height="384"
+                                src="images/oRANGE-TRUCK.png" class="attachment-large size-large wp-image-1416"
+                                alt=""
+                                srcset="
                   images/oRANGE-TRUCK.png         562w,
                   images/oRANGE-TRUCK-300x205.png 300w
                 "
-                            sizes="(max-width: 562px) 100vw, 562px" />
-                    </div>
-                    <div class="column">
-                        <div class="flex">
-                            <div class="column">
-                                <h4 class="header-title-small">NEW UNITS</h4>
-                                <p>
-                                    The global leader in surface protection. <br />
-                                    <br />
-                                    Unquestionably escustomTablished armour protection.
-                                    Longevity, strength, and brilliance are absolutely
-                                    guaranteed for peace of mind past any other coating seen
-                                    before.
-                                </p>
-                            </div>
-                            <div class="column">
-                                <h4 class="header-title-small">PRE-OWNED UNITS</h4>
-                                <p>
-                                    In addition to the armour provided by Icon Rocklear, you
-                                    also get the world renowned correction on worn and weathered
-                                    finishes that Icon Rocklear has become famous for. Best of
-                                    all, Icon does it all without clearcoat reduction!
-                                </p>
-                            </div>
+                                sizes="(max-width: 562px) 100vw, 562px" />
                         </div>
-                        <div class="cta-btns">
-                            {{-- <a href="#" class="cta-primary">Find an Installer</a> --}}
-                            <a href="{{ route('icon-rocklear.contact') }}" class="cta-primary">Become an
-                                installer</a>
+                        <div class="column">
+                            <div class="flex">
+                                <div class="column">
+                                    <h4 class="header-title-small">NEW UNITS</h4>
+                                    <p>
+                                        The global leader in surface protection. <br />
+                                        <br />
+                                        Unquestionably escustomTablished armour protection.
+                                        Longevity, strength, and brilliance are absolutely
+                                        guaranteed for peace of mind past any other coating seen
+                                        before.
+                                    </p>
+                                </div>
+                                <div class="column">
+                                    <h4 class="header-title-small">PRE-OWNED UNITS</h4>
+                                    <p>
+                                        In addition to the armour provided by Icon Rocklear, you
+                                        also get the world renowned correction on worn and weathered
+                                        finishes that Icon Rocklear has become famous for. Best of
+                                        all, Icon does it all without clearcoat reduction!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cta-btns">
+                                {{-- <a href="#" class="cta-primary">Find an Installer</a> --}}
+                                <a href="{{ route('icon-rocklear.contact') }}" class="cta-primary">Become an
+                                    installer</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
 
-        <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 5
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+            <!--
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 5
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
+        @endif
         <section class="section-5">
+
             <div class="section-container">
                 <div class="text-center">
+                    @if (request('thankyou'))
+                        <style>
+                            .section-5 {
+                                padding-top: 100px;
+                                margin-top: -100px;
+                            }
+                        </style>
+                        <div class="alert alert-success" style="background:#0d9344">
+                            <h3>Thank your for your Inquiry one of our team members will be in touch shortly</h3>
+                            <h6 style="text-align: center" class="text-center pt-0">For faster service or to book your
+                                appointment please call <a href="tel:+416-675-6853">416-675-6853</a></h6>
+                        </div>
+                    @endif
                     <h4 class="header-title-small">OUR STATISTICS</h4>
                     <hr class="hr-light" />
                     <h2 class="header-title">GLOBAL NETWORK</h2>
@@ -396,10 +416,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 6
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 6
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
         <section class="section-6">
             <div class="section-container">
                 <div>
@@ -461,10 +481,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 7
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 7
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
         <div class="section-7-bg"></div>
 
         <section class="section-7">
@@ -485,10 +505,10 @@
                             </div>
                             <div id="rocklear-progress-bar">
                                 <!--
-                                                                                            |--------------------------------------------------------------------------
-                                                                                            | Data coming from javascript  //script.js
-                                                                                            |--------------------------------------------------------------------------
-                                                                                            -->
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                | Data coming from javascript  //script.js
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                -->
                             </div>
                             <ul class="custom-list">
                                 <li>
@@ -521,10 +541,10 @@
                             </div>
                             <div id="ceramic-progress-bar">
                                 <!--
-                                                                                            |--------------------------------------------------------------------------
-                                                                                            | Data coming from javascript  //script.js
-                                                                                            |--------------------------------------------------------------------------
-                                                                                            -->
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                | Data coming from javascript  //script.js
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                -->
                             </div>
                             <ul class="custom-list">
                                 <li>
@@ -560,10 +580,10 @@
                             </div>
                             <div id="polymers-progress-bar">
                                 <!--
-                                                                                            |--------------------------------------------------------------------------
-                                                                                            | Data coming from javascript  //script.js
-                                                                                            |--------------------------------------------------------------------------
-                                                                                            -->
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                | Data coming from javascript  //script.js
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                -->
                             </div>
 
                             <ul class="custom-list">
@@ -583,10 +603,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 8
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 8
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
 
         <section class="section-8">
             <div class="section-container">
@@ -745,10 +765,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 9
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 9
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
 
         <section class="section-9 mb-5">
             <div class="section-container text-center mt-5 pt-3">
@@ -821,10 +841,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 10
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 10
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
 
         <div class="section-10-bg"></div>
         <section class="section-10 mt-5">
@@ -944,10 +964,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 11
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 11
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
 
         <div class="section-11-bg mt-5"></div>
         <section class="section-11">
@@ -1062,10 +1082,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 12
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 12
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
         <div class="section-12-bg"></div>
         <section class="section-12">
             <div class="section-container">
@@ -1139,10 +1159,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 13
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 13
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
 
         <section class="section-13 mt-5">
             <div class="section-container">
@@ -1151,19 +1171,19 @@
                 <h2 class="header-title">ROCKLEAR BENEFITS</h2>
                 <div id="cards-container" class="row">
                     <!--
-                                                                                        |--------------------------------------------------------------------------
-                                                                                        | Content coming from footer
-                                                                                        |--------------------------------------------------------------------------
-                                                                                        -->
+                                                                                            |--------------------------------------------------------------------------
+                                                                                            | Content coming from footer
+                                                                                            |--------------------------------------------------------------------------
+                                                                                            -->
                 </div>
             </div>
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 14
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 14
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
         <div class="section-14-bg"></div>
         <section class="section-14">
             <div class="section-container">
@@ -1215,10 +1235,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 15
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 15
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
         <div class="section-15-bg"></div>
         <section class="section-15">
             <div class="section-container">
@@ -1248,10 +1268,10 @@
         <div class="section-15-bg-2"></div>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 16
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 16
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
 
         <section class="section-16">
             <div class="section-container">
@@ -1299,10 +1319,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 17
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 17
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
 
         <div class="section-17-bg"></div>
         <section class="section-17">
@@ -1336,10 +1356,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 18
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 18
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
         <div class="section-15-bg section-18-bg"></div>
         <section class="section-15 section-18">
             <div class="section-container">
@@ -1358,10 +1378,10 @@
         <div class="section-15-bg-2"></div>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 19
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 19
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
 
         <section class="section-19 mt-5">
             <div class="section-container">
@@ -1370,7 +1390,9 @@
                     <hr class="hr-dark" />
                     <h2 class="header-title">HAPPY CUSTOMER</h2>
 
-                    <div class="row wrap-reverse">
+                    <script src="https://widget.trustmary.com/LdAswXUC5"></script>
+
+                    {{-- <div class="row wrap-reverse">
                         <div class="col-md-12 col-lg-4"></div>
                         <div class="col-md-12 col-lg-8">
                             <div class="swiper swiperFirst">
@@ -1537,16 +1559,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 20
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 20
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
         <section class="section-20 py-5 mt-5">
             <div class="section-container py-5 mt-5">
                 <div class="d-flex gap-4 pt-3 flex-column align-items-center justify-content-center">
@@ -1572,10 +1594,10 @@
             </div>
         </section>
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 21
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 21
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
 
         <section class="section-21">
             <div class="section-container">
@@ -1636,10 +1658,10 @@
         </section>
 
         <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 22
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      | Section 22
+                                                                                      |--------------------------------------------------------------------------
+                                                                                      -->
         <div class="section-15-bg section-22-bg"></div>
         <section class="section-15 section-22">
             <div class="section-container">
