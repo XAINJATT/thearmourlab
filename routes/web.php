@@ -61,7 +61,7 @@ Auth::routes(["verify" => true]);
 
 Route::get('/', function () {
     return redirect(url('/login'));
-});\
+});
 
 Route::get('/password', function () {
     return view('auth.forget_password');
