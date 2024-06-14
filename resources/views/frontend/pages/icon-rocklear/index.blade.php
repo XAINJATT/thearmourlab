@@ -278,6 +278,196 @@
             </div>
         </section>
 
+
+        
+        <!--
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  | Section 19
+                                                                                  |--------------------------------------------------------------------------
+                                                                                  -->
+
+                                                                                  <section class="section-19 mt-5">
+                                                                                    <div class="section-container">
+                                                                                        <div class="section-header">
+                                                                                            <h4 class="header-title-small">TESTIMONIALS</h4>
+                                                                                            <hr class="hr-dark" />
+                                                                                            {{-- <h2 class="header-title">HAPPY CUSTOMER</h2> --}}
+                                                                        
+                                                                                            <script src="https://widget.trustmary.com/LdAswXUC5"></script>
+                                                                        
+                                                                                            {{-- <div class="row wrap-reverse">
+                                                                                                <div class="col-md-12 col-lg-4"></div>
+                                                                                                <div class="col-md-12 col-lg-8">
+                                                                                                    <div class="swiper swiperFirst">
+                                                                                                        <div class="swiper-wrapper">
+                                                                                                            <div class="swiper-slide">
+                                                                                                                <div class="customer-review-container">
+                                                                                                                    <div style="padding-top: 35px" class="d-flex justify-content-between">
+                                                                                                                        <div class="title-wrapper">Harry r.</div>
+                                                                                                                        <div>
+                                                                                                                            <i class="fas fa-star"></i>
+                                                                                                                            <span>5.0 RATING</span>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <hr />
+                                                                                                                    <div>
+                                                                                                                        <h3 class="text-uppercase">
+                                                                                                                            transformation of a lifetime
+                                                                                                                        </h3>
+                                                                                                                        <p>
+                                                                                                                            Find it hard in words to describe what Icon Rocklear
+                                                                                                                            did to my 1972 Mercedes. I had been in talks with
+                                                                                                                            shops for a repaint for over 20k, and despite the
+                                                                                                                            cost, I wanted to keep the original paint. I found
+                                                                                                                            Icon Rocklear and went with the Hail Mary. I could
+                                                                                                                            not believe the transformation, I constantly have
+                                                                                                                            events and people asking me to show my car our
+                                                                                                                            vehicle, constant questions asking if it was
+                                                                                                                            repainted, still cannot believe it. I now have 5 of
+                                                                                                                            my vehicles protected with Rocklear, new or old,
+                                                                                                                            this protection is next level!
+                                                                                                                        </p>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="swiper-slide">
+                                                                                                                <div class="customer-review-container">
+                                                                                                                    <div style="padding-top: 35px" class="d-flex justify-content-between">
+                                                                                                                        <div class="title-wrapper">Harry r.</div>
+                                                                                                                        <div>
+                                                                                                                            <i class="fas fa-star"></i>
+                                                                                                                            <span>5.0 RATING</span>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <hr />
+                                                                                                                    <div>
+                                                                                                                        <h3 class="text-uppercase">
+                                                                                                                            transformation of a lifetime
+                                                                                                                        </h3>
+                                                                                                                        <p>
+                                                                                                                            Find it hard in words to describe what Icon Rocklear
+                                                                                                                            did to my 1972 Mercedes. I had been in talks with
+                                                                                                                            shops for a repaint for over 20k, and despite the
+                                                                                                                            cost, I wanted to keep the original paint. I found
+                                                                                                                            Icon Rocklear and went with the Hail Mary. I could
+                                                                                                                            not believe the transformation, I constantly have
+                                                                                                                            events and people asking me to show my car our
+                                                                                                                            vehicle, constant questions asking if it was
+                                                                                                                            repainted, still cannot believe it. I now have 5 of
+                                                                                                                            my vehicles protected with Rocklear, new or old,
+                                                                                                                            this protection is next level!
+                                                                                                                        </p>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="swiper-slide">
+                                                                                                                <div class="customer-review-container">
+                                                                                                                    <div style="padding-top: 35px" class="d-flex justify-content-between">
+                                                                                                                        <div class="title-wrapper">Harry r.</div>
+                                                                                                                        <div>
+                                                                                                                            <i class="fas fa-star"></i>
+                                                                                                                            <span>5.0 RATING</span>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <hr />
+                                                                                                                    <div>
+                                                                                                                        <h3 class="text-uppercase">
+                                                                                                                            transformation of a lifetime
+                                                                                                                        </h3>
+                                                                                                                        <p>
+                                                                                                                            Find it hard in words to describe what Icon Rocklear
+                                                                                                                            did to my 1972 Mercedes. I had been in talks with
+                                                                                                                            shops for a repaint for over 20k, and despite the
+                                                                                                                            cost, I wanted to keep the original paint. I found
+                                                                                                                            Icon Rocklear and went with the Hail Mary. I could
+                                                                                                                            not believe the transformation, I constantly have
+                                                                                                                            events and people asking me to show my car our
+                                                                                                                            vehicle, constant questions asking if it was
+                                                                                                                            repainted, still cannot believe it. I now have 5 of
+                                                                                                                            my vehicles protected with Rocklear, new or old,
+                                                                                                                            this protection is next level!
+                                                                                                                        </p>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="swiper-slide">
+                                                                                                                <div class="customer-review-container">
+                                                                                                                    <div style="padding-top: 35px" class="d-flex justify-content-between">
+                                                                                                                        <div class="title-wrapper">Harry r.</div>
+                                                                                                                        <div>
+                                                                                                                            <i class="fas fa-star"></i>
+                                                                                                                            <span>5.0 RATING</span>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <hr />
+                                                                                                                    <div>
+                                                                                                                        <h3 class="text-uppercase">
+                                                                                                                            transformation of a lifetime
+                                                                                                                        </h3>
+                                                                                                                        <p>
+                                                                                                                            Find it hard in words to describe what Icon Rocklear
+                                                                                                                            did to my 1972 Mercedes. I had been in talks with
+                                                                                                                            shops for a repaint for over 20k, and despite the
+                                                                                                                            cost, I wanted to keep the original paint. I found
+                                                                                                                            Icon Rocklear and went with the Hail Mary. I could
+                                                                                                                            not believe the transformation, I constantly have
+                                                                                                                            events and people asking me to show my car our
+                                                                                                                            vehicle, constant questions asking if it was
+                                                                                                                            repainted, still cannot believe it. I now have 5 of
+                                                                                                                            my vehicles protected with Rocklear, new or old,
+                                                                                                                            this protection is next level!
+                                                                                                                        </p>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="swiper-slide">
+                                                                                                                <div class="customer-review-container">
+                                                                                                                    <div style="padding-top: 35px" class="d-flex justify-content-between">
+                                                                                                                        <div class="title-wrapper">Harry r.</div>
+                                                                                                                        <div>
+                                                                                                                            <i class="fas fa-star"></i>
+                                                                                                                            <span>5.0 RATING</span>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                    <hr />
+                                                                                                                    <div>
+                                                                                                                        <h3 class="text-uppercase">
+                                                                                                                            transformation of a lifetime
+                                                                                                                        </h3>
+                                                                                                                        <p>
+                                                                                                                            Find it hard in words to describe what Icon Rocklear
+                                                                                                                            did to my 1972 Mercedes. I had been in talks with
+                                                                                                                            shops for a repaint for over 20k, and despite the
+                                                                                                                            cost, I wanted to keep the original paint. I found
+                                                                                                                            Icon Rocklear and went with the Hail Mary. I could
+                                                                                                                            not believe the transformation, I constantly have
+                                                                                                                            events and people asking me to show my car our
+                                                                                                                            vehicle, constant questions asking if it was
+                                                                                                                            repainted, still cannot believe it. I now have 5 of
+                                                                                                                            my vehicles protected with Rocklear, new or old,
+                                                                                                                            this protection is next level!
+                                                                                                                        </p>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                        <div class="d-flex align-items-center justify-content-between">
+                                                                                                            <div class="swiper-button-prev-first">
+                                                                                                                <i class="fas fa-angle-left"></i>
+                                                                                                            </div>
+                                                                                                            <div class="swiper-pagination-first"></div>
+                                                                                                            <div class="swiper-button-next-first">
+                                                                                                                <i class="fas fa-angle-right"></i>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div> --}}
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </section>
+                                                                        
+
         <!--
                                                                                   |--------------------------------------------------------------------------
                                                                                   | Section 3
@@ -1358,193 +1548,6 @@
             </div>
         </section>
         <div class="section-15-bg-2"></div>
-
-        <!--
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  | Section 19
-                                                                                  |--------------------------------------------------------------------------
-                                                                                  -->
-
-        <section class="section-19 mt-5">
-            <div class="section-container">
-                <div class="section-header">
-                    <h4 class="header-title-small">TESTIMONIALS</h4>
-                    <hr class="hr-dark" />
-                    <h2 class="header-title">HAPPY CUSTOMER</h2>
-
-                    <script src="https://widget.trustmary.com/LdAswXUC5"></script>
-
-                    {{-- <div class="row wrap-reverse">
-                        <div class="col-md-12 col-lg-4"></div>
-                        <div class="col-md-12 col-lg-8">
-                            <div class="swiper swiperFirst">
-                                <div class="swiper-wrapper">
-                                    <div class="swiper-slide">
-                                        <div class="customer-review-container">
-                                            <div style="padding-top: 35px" class="d-flex justify-content-between">
-                                                <div class="title-wrapper">Harry r.</div>
-                                                <div>
-                                                    <i class="fas fa-star"></i>
-                                                    <span>5.0 RATING</span>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                            <div>
-                                                <h3 class="text-uppercase">
-                                                    transformation of a lifetime
-                                                </h3>
-                                                <p>
-                                                    Find it hard in words to describe what Icon Rocklear
-                                                    did to my 1972 Mercedes. I had been in talks with
-                                                    shops for a repaint for over 20k, and despite the
-                                                    cost, I wanted to keep the original paint. I found
-                                                    Icon Rocklear and went with the Hail Mary. I could
-                                                    not believe the transformation, I constantly have
-                                                    events and people asking me to show my car our
-                                                    vehicle, constant questions asking if it was
-                                                    repainted, still cannot believe it. I now have 5 of
-                                                    my vehicles protected with Rocklear, new or old,
-                                                    this protection is next level!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="customer-review-container">
-                                            <div style="padding-top: 35px" class="d-flex justify-content-between">
-                                                <div class="title-wrapper">Harry r.</div>
-                                                <div>
-                                                    <i class="fas fa-star"></i>
-                                                    <span>5.0 RATING</span>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                            <div>
-                                                <h3 class="text-uppercase">
-                                                    transformation of a lifetime
-                                                </h3>
-                                                <p>
-                                                    Find it hard in words to describe what Icon Rocklear
-                                                    did to my 1972 Mercedes. I had been in talks with
-                                                    shops for a repaint for over 20k, and despite the
-                                                    cost, I wanted to keep the original paint. I found
-                                                    Icon Rocklear and went with the Hail Mary. I could
-                                                    not believe the transformation, I constantly have
-                                                    events and people asking me to show my car our
-                                                    vehicle, constant questions asking if it was
-                                                    repainted, still cannot believe it. I now have 5 of
-                                                    my vehicles protected with Rocklear, new or old,
-                                                    this protection is next level!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="customer-review-container">
-                                            <div style="padding-top: 35px" class="d-flex justify-content-between">
-                                                <div class="title-wrapper">Harry r.</div>
-                                                <div>
-                                                    <i class="fas fa-star"></i>
-                                                    <span>5.0 RATING</span>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                            <div>
-                                                <h3 class="text-uppercase">
-                                                    transformation of a lifetime
-                                                </h3>
-                                                <p>
-                                                    Find it hard in words to describe what Icon Rocklear
-                                                    did to my 1972 Mercedes. I had been in talks with
-                                                    shops for a repaint for over 20k, and despite the
-                                                    cost, I wanted to keep the original paint. I found
-                                                    Icon Rocklear and went with the Hail Mary. I could
-                                                    not believe the transformation, I constantly have
-                                                    events and people asking me to show my car our
-                                                    vehicle, constant questions asking if it was
-                                                    repainted, still cannot believe it. I now have 5 of
-                                                    my vehicles protected with Rocklear, new or old,
-                                                    this protection is next level!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="customer-review-container">
-                                            <div style="padding-top: 35px" class="d-flex justify-content-between">
-                                                <div class="title-wrapper">Harry r.</div>
-                                                <div>
-                                                    <i class="fas fa-star"></i>
-                                                    <span>5.0 RATING</span>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                            <div>
-                                                <h3 class="text-uppercase">
-                                                    transformation of a lifetime
-                                                </h3>
-                                                <p>
-                                                    Find it hard in words to describe what Icon Rocklear
-                                                    did to my 1972 Mercedes. I had been in talks with
-                                                    shops for a repaint for over 20k, and despite the
-                                                    cost, I wanted to keep the original paint. I found
-                                                    Icon Rocklear and went with the Hail Mary. I could
-                                                    not believe the transformation, I constantly have
-                                                    events and people asking me to show my car our
-                                                    vehicle, constant questions asking if it was
-                                                    repainted, still cannot believe it. I now have 5 of
-                                                    my vehicles protected with Rocklear, new or old,
-                                                    this protection is next level!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-slide">
-                                        <div class="customer-review-container">
-                                            <div style="padding-top: 35px" class="d-flex justify-content-between">
-                                                <div class="title-wrapper">Harry r.</div>
-                                                <div>
-                                                    <i class="fas fa-star"></i>
-                                                    <span>5.0 RATING</span>
-                                                </div>
-                                            </div>
-                                            <hr />
-                                            <div>
-                                                <h3 class="text-uppercase">
-                                                    transformation of a lifetime
-                                                </h3>
-                                                <p>
-                                                    Find it hard in words to describe what Icon Rocklear
-                                                    did to my 1972 Mercedes. I had been in talks with
-                                                    shops for a repaint for over 20k, and despite the
-                                                    cost, I wanted to keep the original paint. I found
-                                                    Icon Rocklear and went with the Hail Mary. I could
-                                                    not believe the transformation, I constantly have
-                                                    events and people asking me to show my car our
-                                                    vehicle, constant questions asking if it was
-                                                    repainted, still cannot believe it. I now have 5 of
-                                                    my vehicles protected with Rocklear, new or old,
-                                                    this protection is next level!
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="swiper-button-prev-first">
-                                        <i class="fas fa-angle-left"></i>
-                                    </div>
-                                    <div class="swiper-pagination-first"></div>
-                                    <div class="swiper-button-next-first">
-                                        <i class="fas fa-angle-right"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div> --}}
-                </div>
-            </div>
-        </section>
 
         <!--
                                                                                   |--------------------------------------------------------------------------

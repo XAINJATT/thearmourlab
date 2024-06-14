@@ -271,6 +271,9 @@
             </div>
         </section>
 
+        <!-- Testimonial -->
+        @include('frontend.partials.testemonials')
+
 
         <!-- Services -->
         @include('frontend.partials.home-services')
@@ -289,8 +292,7 @@
 
 
 
-        <!-- Testimonial -->
-        @include('frontend.partials.testemonials')
+        
 
 
         <!-- Blog -->
