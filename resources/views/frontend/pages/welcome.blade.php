@@ -53,6 +53,9 @@
             </div>
         </div>
 
+        <!-- Testimonial -->
+        @include('frontend.partials.testemonials')
+
         <!-- About US -->
         <section class="section-area section-sp1 bg-white"
             style="background-image: url(images/background/bg1.png); background-repeat:no-repeat;">
@@ -271,8 +274,7 @@
             </div>
         </section>
 
-        <!-- Testimonial -->
-        @include('frontend.partials.testemonials')
+        
 
 
         <!-- Services -->
