@@ -36,7 +36,7 @@
 <link rel="stylesheet" href="{{ url('vendor/swiper/swiper.min.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url('css/style.css?v=') . config('app.asset') }}">
 
-@yield('css')
+@yield('css')   
 
 <style>
     @media (min-width: 1200px) {

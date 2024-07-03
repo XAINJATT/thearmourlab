@@ -1,10 +1,19 @@
 @extends('frontend.layout.app')
 
 @section('title')
-{{ __('THE ARMOUR LAB') }}
+{{ {{ $blogDetails->title }} ' - THE ARMOUR LAB' }}
 @endsection
 
 @section('css')
+<meta name="description" content="{{ \Str::limit(html_entity_decode(strip_tags($blogDetails->description)), 150) }}">
+
+<meta name="date_created" content="{{ $blogDetails->created_at->format('d M Y') }}">
+<link rel="canonical" href="{{ route('frontend.blogDetails', ['id' => $blogDetails->id, 'slug' => \Str::slug($blogDetails->title)]) }}">{{ $blogDetails->title }}" />
+
+<meta property="og:type" content= "website" />
+        <meta property="og:url" content="{{ route('frontend.blogDetails', ['id' => $blogDetails->id, 'slug' => \Str::slug($blogDetails->title)]) }}">{{ $blogDetails->title }}"/>
+        <meta property="og:site_name" content="THE ARMOUR LAB" />
+        <meta property="og:image" itemprop="image primaryImageOfPage" content="{{ asset($blogDetails->image) }}" />
 @endsection
 
 @section('content')
