@@ -1,7 +1,7 @@
 @extends('frontend.layout.app')
 
 @section('title')
-{{ {{ $blogDetails->title }} ' - THE ARMOUR LAB' }}
+ {{ $blogDetails->title }} - THE ARMOUR LAB
 @endsection
 
 @section('css')
