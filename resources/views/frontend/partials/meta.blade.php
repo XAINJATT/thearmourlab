@@ -122,6 +122,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-E1B34Y35YL');
-  
-  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+
 </script>
+
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
