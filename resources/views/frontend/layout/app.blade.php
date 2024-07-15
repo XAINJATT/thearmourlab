@@ -3,7 +3,7 @@
 
 <head>
     @include('frontend.partials.meta')
-    <script>
+    {{-- <script>
         (function(w, d, s, o, r, js, fjs) {
             w[r] = w[r] || function() {
                 (w[r].q = w[r].q || []).push(arguments)
@@ -16,7 +16,7 @@
             js.async = 1;
             fjs.parentNode.insertBefore(js, fjs);
         }(window, document, 'script', 'trustmary-embed', 'tmary'));
-    </script>
+    </script> --}}
 </head>
 
 <body>
