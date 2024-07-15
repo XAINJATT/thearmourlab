@@ -293,7 +293,9 @@
                                                                                             <hr class="hr-dark" />
                                                                                             {{-- <h2 class="header-title">HAPPY CUSTOMER</h2> --}}
                                                                         
-                                                                                            <script src="https://widget.trustmary.com/LdAswXUC5"></script>
+                                                                                            {{-- <script src="https://widget.trustmary.com/LdAswXUC5"></script> --}}
+
+                                                                                            <div class="elfsight-app-536b4b55-576e-4d32-a7f1-57d0f8c36d4d" data-elfsight-app-lazy></div>
                                                                         
                                                                                             {{-- <div class="row wrap-reverse">
                                                                                                 <div class="col-md-12 col-lg-4"></div>
