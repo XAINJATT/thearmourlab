@@ -1,10 +1,20 @@
 @extends('frontend.layout.app')
 
 @section('title')
-    {{ __('THE ARMOUR LAB') }}
+    {{ __('THE ARMOUR LAB  (Icon Rocklear)') }}
 @endsection
 
 @section('css')
+    <meta name="description"
+        content="Servicing the Greater Toronto Area for 15 years, The Armour Lab enhances your vehicle's durability and shine with leading automotive protection services. Specializing in Icon Rocklear,  Paint Protection Films (PPF), and Ceramic Coatings, we safeguard your vehicle against environmental damages and UV rays. Trust our experienced technicians to elevate your vehicle's resilience and aesthetics with the latest industry technologies. For superior automotive care, visit The Armour Lab.">
+
+
+    <link rel="canonical" href="{{ url()->current() }}">
+
+    <meta property="og:type" content= "website" />
+    <meta property="og:url" content="{{ url()->current() }}">
+    <meta property="og:site_name" content="THE ARMOUR LAB" />
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="{{ asset('images/logo.webp') }}" />
 @endsection
 
 @section('content')
@@ -97,10 +107,10 @@
 
         <style>
             /*
-                    |--------------------------------------------------------------------------
-                    | Section 14
-                    |--------------------------------------------------------------------------
-                    */
+                            |--------------------------------------------------------------------------
+                            | Section 14
+                            |--------------------------------------------------------------------------
+                            */
             :root {
                 --e-global-color-primary: #cfb728;
                 --e-global-color-secondary: #54595f;
@@ -274,7 +284,7 @@
             </div>
         </section>
 
-        
+
 
 
         <!-- Services -->
@@ -294,7 +304,7 @@
 
 
 
-        
+
 
 
         <!-- Blog -->
