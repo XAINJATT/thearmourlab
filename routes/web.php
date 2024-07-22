@@ -42,6 +42,15 @@ use App\Http\Controllers\TestimonialController;
 use App\Models\blog;
 use App\Models\GiveawayEntry;
 
+
+use Spatie\Sitemap\SitemapGenerator;
+
+Route::get('/sitemap.xml', function () {
+    SitemapGenerator::create(config('app.url'))->writeToFile(public_path('sitemap.xml'));
+    return 'Sitemap generated!';
+});
+
+
 //Command Routes
 Route::get('clear-cache', function () {
     Artisan::call('storage:link');
