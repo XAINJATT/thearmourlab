@@ -45,7 +45,7 @@ use App\Models\GiveawayEntry;
 
 use Spatie\Sitemap\SitemapGenerator;
 
-Route::get('/sitemap.xml', function () {
+Route::get('/sitemap-generate.xml', function () {
     SitemapGenerator::create(config('app.url'))->writeToFile(public_path('sitemap.xml'));
     return 'Sitemap generated!';
 });
