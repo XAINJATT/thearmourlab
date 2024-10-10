@@ -1,5 +1,5 @@
 <!-- Header -->
-<header class="header header-transparent rs-nav">
+<header style="background:black;" class="header header-transparent rs-nav">
     <!-- Menu Header -->
     <div class="sticky-header navbar-expand-lg">
         <div class="menu-bar clearfix ">

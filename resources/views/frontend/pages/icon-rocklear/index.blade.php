@@ -139,7 +139,7 @@
                                                                                           |--------------------------------------------------------------------------
                                                                                           -->
 
-                                                                                          <section class="section-2">
+                                                                                          <section class="section-2" style="margin-top:95px;">
                                                                                             <div id="marqueeContainer" class="marquee-container">
                                                                                                 <div class="marquee-content">
                                                                                                     <span class="text">
