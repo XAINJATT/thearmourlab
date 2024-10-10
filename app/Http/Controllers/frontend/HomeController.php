@@ -11,7 +11,7 @@ class HomeController extends Controller
     public function index()
     {
         $blogDetails = blog::where('status', 1)->get();
-        return view('frontend.pages.icon-rocklear.index', compact('blogDetails'));
-        // return view('frontend.pages.welcome', compact('blogDetails'));
+        // return view('frontend.pages.icon-rocklear.index', compact('blogDetails'));
+        return view('frontend.pages.welcome', compact('blogDetails'));
     }
 }
