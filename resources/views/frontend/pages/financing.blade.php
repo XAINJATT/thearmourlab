@@ -36,25 +36,13 @@
                         <div class="heading-bx">
                             {{-- <h6 class="title-ext text-primary"></h6> --}}
                             <h2 class="title">Flexible Financing For Your Vehicles Protection</h2>
-                            <p>Protecting and enhancing your vehicle with our premium paint protection film
-
-                                and ceramic coating services is an investment in its longevity and beauty. While the
-
-                                cost of these services can vary based on factors such as the make and model of your
-
-                                vehicle and the specific products you choose, we are dedicated to making sure
-
-                                our solutions are accessible and budget-friendly.
-
-                                Our flexible financing options are tailored to accommodate different financial needs,
-
-                                ensuring you can enjoy the benefits of our top-quality PPF and ceramic coatings
-
-                                without worrying about immediate financial constraints. We're here to work with
-
-                                you to find a payment plan that suits your situation, making it easier and more
-
-                                manageable to invest in the best care for your vehicle</p>
+                            <p>Protecting and enhancing your vehicle with our premium auto protection services is an
+                                investment in its longevity and appearance. While the cost of these services may vary based
+                                on factors like your vehicle's make and model, as well as the specific products you choose, we
+                                are committed to making these solutions accessible and budget-friendly. Our flexible financing
+                                options cater to various financial needs, allowing you to benefit from our top-quality protection
+                                without immediate financial concerns. We're here to help you find a payment plan that suits
+                                your situation.</p>
                         </div>
                         <div class="row">
                             {{-- <div class="col-xl-4 col-lg-6 col-md-4 col-sm-6 col-6">
@@ -83,7 +71,7 @@
                             </div> --}}
                         </div>
                         <div class="mt-10 mt-md-0">
-                            <a href="https://www.financeit.ca/s/vSeB6A" target="_blank" class="btn btn-primary me-3">
+                            <a href="https://www.financeit.ca/s/gqtdFg" target="_blank" class="btn btn-primary me-3">
                             Apply Now
                             </a>
                                 <br>
@@ -121,7 +109,7 @@
             }
         </style>
 
-        <section class="section-area bg-primary service-wraper1 section-sp2"
+        {{-- <section class="section-area bg-primary service-wraper1 section-sp2"
             style="background-image: url(images/background/bg2.png); background-repeat: no-repeat; background-position:right top;">
             <div class="container">
 
@@ -142,19 +130,11 @@
                                 </div>
                         </div>
                     </div>
-                    {{-- <div class="col-lg-6">
-                        <div class="text-white"
-                            style=" background: linear-gradient(25deg, #171a1e 50%, #43491a 50%); padding:40px">
-                            <p class="fs-2 fw-bold">
-                                Catering to Your Financial Needs: Accessible Financing for Premier PPF and Ceramic Coating
-                                Services
-                            </p>
-                        </div>
-                    </div> --}}
+                   
 
                     <div class="col-lg-6">
                         <div class="d-flex align-items-center justify-content-center">
-                            <a target="_blank" href="https://www.financeit.ca/s/vSeB6A">
+                            <a target="_blank" href="https://www.financeit.ca/s/gqtdFg">
                                 <img height="250" style="height:300px;"
                                     src="{{ asset('images/250x250-financing-available-A.webp') }}" class="img-fluid"
                                     alt="">
@@ -166,7 +146,7 @@
                 </div>
 
             </div>
-        </section>
+        </section> --}}
         <section style="margin-bottom:100px" class="">
             <div class="container">
 
@@ -176,19 +156,19 @@
                         <div class="text-white p-4"
                             style=" background: linear-gradient(25deg, #171a1e 50%, #43491a 50%); padding:40px">
                             <p class="fs-2 fw-bold">
-                                Vehicle Protection Financing
+                                Auto Protection Financing
                             </p>
                             <p style="padding:0px 0 15px;">
-                                We recognize that the cost is a significant consideration when choosing PPF and ceramic
-                                coating services. Therefore, we endeavor to make our vehicle protection solutions as
-                                affordable as possible.
+                                We understand that cost is a significant factor when considering auto protection services. That's
+why we are committed to making our solutions, from protective films to coatings, as affordable
+as possible.
                             </p>
                         </div>
                     </div>
 
                     <div class="col-lg-5">
                         <div class="d-flex align-items-center justify-content-center">
-                            <a target="_blank" href="https://www.financeit.ca/s/vSeB6A">
+                            <a target="_blank" href="https://www.financeit.ca/s/gqtdFg">
                                 <img height="250" style="height:300px;"
                                     src="{{ asset('images/250x250-financing-available-A.webp') }}" class="img-fluid"
                                     alt="">
@@ -212,8 +192,10 @@
                     <div style="max-width:770px; margin:auto" class="heading-bx text-center ">
                         {{-- <h6 class="title-ext text-primary"></h6> --}}
                         <h2 class="title">Discover Your Vehicle Protection Options</h2>
-                        <p>Our expert team is ready to discuss your specific needs and explain the costs associated with our
-                            PPF and ceramic coating services, helping you make an informed decision.</p>
+                        <p>Our expert team is ready to
+                            discuss your specific needs and break down the costs of our vehicle enhancement and protection
+                            solutions. We're here to guide you through the available options and ensure you have all the
+                            information you need to make the best decision for your vehicle and budget.</p>
                     </div>
 
 

@@ -79,7 +79,10 @@ Route::get('/password', function () {
 
 /* FRONTEND ROUTE - START */
 
-Route::get('/', [HomeController::class, 'index'])->name('frontend.home');
+
+Route::get('/', [IconRockLearController::class, "index"])->name('frontend.home');
+Route::get("icon-rocklear", [IconRockLearController::class, "index"])->name("icon-rocklear.index");
+Route::get('/home', [HomeController::class, 'index'])->name('frontend.home.new');
 Route::get('/ceramic-coating', [CeramicCoatingController::class, 'index'])->name('frontend.CeramicCoating');
 Route::get('/faq', [CeramicCoatingController::class, 'faq'])->name('frontend.faq');
 Route::get('/financing', [CeramicCoatingController::class, 'financing'])->name('frontend.financing');

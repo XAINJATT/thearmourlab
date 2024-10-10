@@ -47,8 +47,7 @@
                         <div class="slider-content container text-center text-white">
                             <div class="content-inner">
                                 <h6 class="sub-title" data-swiper-parallax="-200">Welcome to The Armour Lab</h6>
-                                <h2 class="title" data-swiper-parallax="-400">Your Premier Destination for PPF and Ceramic
-                                    Coatings</h2>
+                                <h2 class="title" data-swiper-parallax="-400">Your Trusted Experts in Advanced Vehicle Protection Solutions</h2>
                                 <div class="car-wheel wheel2" data-swiper-parallax="-600">
                                     <img src="images/slider/car2.png" alt="">
                                     <div class="wheel-1"><img src="images/slider/wheel2.png" alt=""></div>

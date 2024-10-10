@@ -125,9 +125,12 @@
                 <div class="col-xl-3 col-md-6">
                     <div class="widget footer_widget">
                         <h5 class="footer-title">The Armour Lab</h5>
-                        <p class="mb-20">Elevate your vehicle's resilience with our specialized PPF and Ceramic Coating
-                            services. Our expert team is dedicated to enhancing and protecting your car's appearance.
-                            Expect excellence in every layer of protection.</p>
+                        <p class="mb-20">“Protect your car with Icon Rocklear, the ultimate solution for unmatched shine
+                            and lasting durability. Alongside PPF, ceramic coatings, and window tinting, we provide
+                            complete protection to keep your vehicle looking flawless. Whether it’s shielding from
+                            scratches or sun damage, our services ensure your car stays beautiful and well-defended for
+                            years to come. Expect top-tier care and results designed to enhance and preserve your
+                            vehicle. </p>
                         <div class="ft-content">
                             <i class="fa fa-phone"></i>
                             <span>Talk To Our Support</span>
@@ -139,6 +142,7 @@
                     <div class="widget widget-link-2">
                         <h5 class="footer-title">Our Solutions</h5>
                         <ul>
+                            <li><a href="{{ route('icon-rocklear.index') }}">Icon Rocklear</a></li>
                             <li><a href="{{ route('frontend.CeramicCoating') }}">Ceramic coating</a></li>
                             <li><a href="{{ route('frontend.PaintProtectionFilmSimulator') }}">Paint protection
                                     film</a>
