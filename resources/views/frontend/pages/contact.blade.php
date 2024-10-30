@@ -1,7 +1,7 @@
 @extends('frontend.layout.app')
 
 @section('title')
-{{ __('THE ARMOUR LAB') }}
+{{ __('Contact us - THE ARMOUR LAB') }}
 @endsection
 
 @section('css')
@@ -50,7 +50,18 @@
 							<h3 class="title mb-0">DO YOU HAVE ANY<br /> QUESTIONS</h3>
 						</div>
 						<div class="ajax-message"></div>
-						<script type="text/javascript" src="https://form.jotform.com/jsform/241586322618055"></script>
+						<iframe       id="JotFormIFrame-241586322618055"       title=" Add Lead form"
+                    onload="window.parent.scrollTo(0,0)"       allowtransparency="true"
+                    allow="geolocation; microphone; camera; fullscreen"
+                    src="https://form.jotform.com/241586322618055"       frameborder="0"
+                    style="min-width:100%;max-width:100%;height:1600px;border:none;"       scrolling="no"     >
+                    </iframe>
+                
+                <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+                
+                <script>
+                    window.jotformEmbedHandler("iframe[id='JotFormIFrame-241586322618055']", "https://form.jotform.com/")
+                </script>
 					</form>
 				</div>
 				<div class="col-lg-7 mb-30">
