@@ -58,6 +58,7 @@
                         <li class=""> <a href="{{ route('frontend.blog') }}"> Blog </a> </li>
                         <li class=""> <a href="{{ route('frontend.contact') }}"> Contact us </a> </li>
                         {{-- <li class=""> <a href="{{ route('frontend.shop') }}"> Shop </a> </li> --}}
+                        <li class=""> <a href="{{ route('frontend.gallery') }}"> Gallery </a> </li>
                         <li class=""> <a href="{{ route('frontend.financing') }}"> Financing </a> </li>
                         <li class=""> <a href="{{ route('frontend.faq') }}"> FAQs </a> </li>
                         <li class=""> <a href="{{ route('frontend.about') }}"> About </a> </li>

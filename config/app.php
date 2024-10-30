@@ -188,12 +188,14 @@ return [
     ])->toArray(),
 
     'services' => [
+        'ir' => 'Icon Rocklear',
         'cc' => 'Ceramic Coating',
         'ppf' => 'Paint Protection Film',
         'wt' => 'Window Tints',
     ],
 
     'services_url' => [
+        'ir' => 'icon-rocklear.index',
         'cc' => 'frontend.CeramicCoating',
         'ppf' => 'frontend.PaintProtectionFilmSimulator',
         'wt' => 'frontend.WindowTintSimulator',

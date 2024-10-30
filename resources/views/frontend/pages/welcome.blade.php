@@ -62,6 +62,53 @@
             </div>
         </div>
 
+        <div class="section-14-bg"></div>
+        <section class="section-14 ">
+            <div class="section-container container">
+                <h4 class="header-title-small">ICON</h4>
+                <hr class="hr-light" />
+                <h2 class="header-title text-white">ROCKKLEAR</h2>
+                <div class="row row-reverse">
+                    <div class="col-md-12 col-lg-6 col-sm-12">
+                        <h6 class="open-text text-white">
+                            Unlock the Future of Surface Protection with Icon Rocklear
+                        </h6>
+                        <div style="display:block;" class="openable-text">
+                            <p>
+                                Experience unparalleled durability with Icon Rocklear, the ultimate surface protection
+                                technology. Designed for automotive, marine, and aviation, Icon Rocklear is 75x stronger and
+                                35x thicker than other coatings. With zero maintenance and a lifetime warranty, ensure your
+                                investment remains pristine.
+                            </p>
+
+                        </div>
+
+                        <div class="cta-btns mt-5 mb-5">
+                            {{-- <a href="{{ route('frontend.contact') }}" rel="noopener noreferrer">
+                                <button class="cta-primary">INQUIRIES</button>
+                            </a> --}}
+                            <a href="{{ route('icon-rocklear.index') }}" rel="noopener noreferrer">
+                                <button class="cta-primary">LEARN MORE</button>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6 col-sm-12">
+                        <div class="image-are">
+                            <img loading="lazy" decoding="async" width="800" height="446" src="images/Group-26-5.png"
+                                class="img-fluid" alt=""
+                                srcset="
+                    images/Group-26-5.png         818w,
+                    images/Group-26-5-300x167.png 300w,
+                    images/Group-26-5-768x428.png 768w
+                  "
+                                sizes="(max-width: 800px) 100vw, 800px" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
         <!-- Testimonial -->
         @include('frontend.partials.testemonials')
 
@@ -73,12 +120,14 @@
                     <div class="col-lg-5 mb-40">
                         <div class="heading-bx mb-4">
                             <h6 class="title-ext text-primary">about Us</h6>
-                            <h2 class="title">EXPERTS IN AUTOMOTIVE PAINT PROTECTION & CERAMIC COATINGS</h2>
-                            <p>At The Armour Lab, we're not just about detailing cars; we're about preserving perfection.
-                                With over a decade in the automotive protection industry, we've mastered the art of
-                                shielding your vehicle from the elements. Our highly skilled technicians use cutting-edge
-                                technology to apply premium Paint Protection Films and Ceramic Coatings, ensuring your car
-                                doesn't just shine but is also safeguarded against scratches, dirt, and UV rays.</p>
+                            <h2 class="title">EXPERTS IN VEHICLE PAINT PROTECTION & LONG-LASTING
+                                SHIELDING SOLUTIONS</h2>
+                            <p>At The Armour Lab, we’re dedicated to preserving the beauty and integrity of your vehicle. With
+                                over a decade of experience in the automotive protection industry, we specialize in safeguarding
+                                your car against the elements. Our expert technicians use advanced technology to apply top-tier
+                                Paint Protection Films (PPF) and Icon Rocklear, providing an unparalleled shield that defends
+                                your vehicle from scratches, chips, and harmful UV rays. We ensure that your car not only shines
+                                but remains protected for the long haul.</p>
                         </div>
                         <a href="{{ route('frontend.about') }}" class="btn btn-primary">About Us</a>
                     </div>
@@ -237,57 +286,12 @@
             }
         </style>
 
-        <div class="section-14-bg"></div>
-        <section class="section-14 ">
-            <div class="section-container container">
-                <h4 class="header-title-small">ICON</h4>
-                <hr class="hr-light" />
-                <h2 class="header-title text-white">ROCKKLEAR</h2>
-                <div class="row row-reverse">
-                    <div class="col-md-12 col-lg-6 col-sm-12">
-                        <h6 class="open-text text-white">
-                            Unlock the Future of Surface Protection with Icon Rocklear
-                        </h6>
-                        <div style="display:block;" class="openable-text">
-                            <p>
-                                Experience unparalleled durability with Icon Rocklear, the ultimate surface protection
-                                technology. Designed for automotive, marine, and aviation, Icon Rocklear is 75x stronger and
-                                35x thicker than other coatings. With zero maintenance and a lifetime warranty, ensure your
-                                investment remains pristine.
-                            </p>
-
-                        </div>
-
-                        <div class="cta-btns mt-5 mb-5">
-                            {{-- <a href="{{ route('frontend.contact') }}" rel="noopener noreferrer">
-                                <button class="cta-primary">INQUIRIES</button>
-                            </a> --}}
-                            <a href="{{ route('icon-rocklear.index') }}" rel="noopener noreferrer">
-                                <button class="cta-primary">LEARN MORE</button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-12 col-lg-6 col-sm-12">
-                        <div class="image-are">
-                            <img loading="lazy" decoding="async" width="800" height="446" src="images/Group-26-5.png"
-                                class="img-fluid" alt=""
-                                srcset="
-                    images/Group-26-5.png         818w,
-                    images/Group-26-5-300x167.png 300w,
-                    images/Group-26-5-768x428.png 768w
-                  "
-                                sizes="(max-width: 800px) 100vw, 800px" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
+        
 
 
 
         <!-- Services -->
-        @include('frontend.partials.home-services')
+        {{-- @include('frontend.partials.home-services') --}}
 
 
         <!-- Why Choose us -->

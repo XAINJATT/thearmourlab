@@ -1,5 +1,5 @@
 <!-- Ceramic Coating FAQs -->
-<div class="tab-pane fade show active" id="ceramicCoating" role="tabpanel" aria-labelledby="ceramic-coating-tab">
+<div class="tab-pane fade @if($show)  show active @endif" id="ceramicCoating" role="tabpanel" aria-labelledby="ceramic-coating-tab">
 
     <div class="row">
         <div class="">

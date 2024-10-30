@@ -4,6 +4,10 @@
     @php
 
         $cermaic_coating_images = [
+            'Icon Rocklear' => [
+                'images' => [App\Helpers\SiteHelper::get_wt_media()->toArray()],
+                'url' => route('frontend.CeramicCoating'),
+            ],
             'CERAMIC COATING' => [
                 'images' => [App\Helpers\SiteHelper::get_wt_media()->toArray()],
                 'url' => route('frontend.CeramicCoating'),

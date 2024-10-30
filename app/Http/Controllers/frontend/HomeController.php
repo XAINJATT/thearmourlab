@@ -14,4 +14,8 @@ class HomeController extends Controller
         // return view('frontend.pages.icon-rocklear.index', compact('blogDetails'));
         return view('frontend.pages.welcome', compact('blogDetails'));
     }
+
+    function gallery(){
+        return view('frontend.pages.gallery');
+    }
 }

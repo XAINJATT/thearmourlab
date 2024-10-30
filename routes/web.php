@@ -85,6 +85,7 @@ Route::get("icon-rocklear", [IconRockLearController::class, "index"])->name("ico
 Route::get('/home', [HomeController::class, 'index'])->name('frontend.home.new');
 Route::get('/ceramic-coating', [CeramicCoatingController::class, 'index'])->name('frontend.CeramicCoating');
 Route::get('/faq', [CeramicCoatingController::class, 'faq'])->name('frontend.faq');
+Route::get('/gallery', [HomeController::class, 'gallery'])->name('frontend.gallery');
 Route::get('/financing', [CeramicCoatingController::class, 'financing'])->name('frontend.financing');
 Route::get('live-status', [UserInvoiceController::class, 'orderStatusShow'])->name('frontend.live');
 Route::get('about-us', [CeramicCoatingController::class, 'about'])->name('frontend.about');

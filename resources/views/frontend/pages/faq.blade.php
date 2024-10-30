@@ -35,7 +35,12 @@
                         <!-- Tabs for selecting different FAQ categories -->
                         <ul class="nav nav-tabs" id="faqTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="ceramic-coating-tab" data-bs-toggle="tab"
+                                <button class="nav-link active" id="iconrocklear-tab" data-bs-toggle="tab"
+                                    data-bs-target="#iconRockLear" type="button" role="tab"
+                                    aria-controls="iconRockLear" aria-selected="true">Icon Rocklear FAQ's</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="ceramic-coating-tab" data-bs-toggle="tab"
                                     data-bs-target="#ceramicCoating" type="button" role="tab"
                                     aria-controls="ceramicCoating" aria-selected="true">Ceramic Coating FAQ's</button>
                             </li>
@@ -53,12 +58,10 @@
 
                         <!-- Tab content -->
                         <div class="tab-content" id="faqTabContent">
+                            @include("frontend.partials.icon-rocklear", ["show" => false])
                             @include("frontend.partials.ceramic-coating-faq", ["show" => false])
                             @include("frontend.partials.paint-protection-faq", ["show" => false])
                             @include("frontend.partials.window-tints-faq", ["show" => false])
-
-                           
-                           
                         </div>
 
                     </div>

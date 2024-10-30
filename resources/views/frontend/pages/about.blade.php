@@ -44,7 +44,7 @@
                             <div class="content-info">
                                 <div class="content-left">
                                     <div class="service-content">
-                                        <h6 class="title">General Service</h6>
+                                        <h6 class="title">Icon Rocklear</h6>
                                     </div>
                                     <div class="service-content">
                                         <h6 class="title">PPF</h6>
@@ -71,24 +71,44 @@
                 </div>
 
                 <div class="text-center fs-4">
+                    
                     <div class="py-5">
                         <h2>Our History</h2>
-                        Founded in 2014 by Shawn, a visionary with a profound respect for automotive care, The
-                        Armour Lab began its journey to redefine vehicle protection. What started as a specialized
-                        service in Paint Protection Film (PPF) and ceramic coatings has expanded to include premium
-                        window tinting, catering to a growing clientele seeking comprehensive protection solutions.
+                        Founded in 2014 by Shawn, a visionary with a profound respect for automotive care, The Armour Lab
+                        began its journey to
+                        redefine vehicle protection. What started as a specialized service in Paint Protection Film (PPF)
+                        and ceramic coatings has
+                        expanded to include premium window tinting, catering to a growing clientele seeking comprehensive
+                        protection solutions
                     </div>
+                    <h4>Our Growth Story</h4>
                     <p class="pb-5">
-                        Our Growth Story The Armour Lab has evolved significantly since its doors first opened. Our
-                        reputation for excellence in PPF, ceramic coatings, and window tints has been built on a
-                        foundation of precision, durability, and aesthetic enhancement. We have grown from a
-                        passionate local start-up to a leading name in the industry, continuously adapting and
-                        expanding our services to meet the needs of car enthusiasts and everyday drivers alike.
+                        The Armour Lab has evolved significantly since its doors first opened. Our reputation for excellence
+                        in PPF, ceramic coatings,
+                        and window tints has been built on a foundation of precision, durability, and aesthetic enhancement.
+                        We have grown from a
+                        passionate local start-up to a leading name in the industry, continuously adapting and expanding our
+                        services to meet the needs of
+                        car enthusiasts and everyday drivers alike.
                     </p>
+                    <h4>Leading the Industry</h4>
                     <p class="pb-5">
-                        Leading the Industry As a premier company in the industry, we pride ourselves on setting benchmarks
-                        for quality and service. Our technicians are trained in the latest application techniques, ensuring
-                        each vehicle receives the finest treatment with results that speak for themselves.
+                        As a premier company in the industry, we pride ourselves on setting benchmarks for quality and
+                        service. Our technicians are
+                        trained in the latest application techniques, ensuring each vehicle receives the finest treatment
+                        with results that speak for
+                        themselves.
+                    </p>
+                    <h4>Expanding with Icon Rocklear</h4>
+                    <p class="pb-5">
+                        In our commitment to offering the most advanced vehicle protection solutions, we proudly acquired
+                        the license for <strong>Icon
+                            Rocklear</strong>, a rapidly growing, cutting-edge coating technology. Icon Rocklear has quickly become one
+                        of our most in-demand
+                        services due to its unmatched durability, correction capabilities, and 15-year lifespan. We take
+                        immense pride in being a certified
+                        installer of this revolutionary product, providing our clients with the ultimate protection for
+                        their vehicles.
                     </p>
                 </div>
 
@@ -132,7 +152,7 @@
                     <h4>
                         <i>Let us make your daily routine a hassle-free environment! </i>
                     </h4>
-					<a class="btn btn-primary my-5" href="{{route("frontend.contact")}}">Contact Us</a>
+                    <a class="btn btn-primary my-5" href="{{ route('frontend.contact') }}">Contact Us</a>
                 </div>
 
             </div>
