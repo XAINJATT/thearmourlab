@@ -1012,7 +1012,7 @@
                         </div>
 
 
-                        @include('frontend.partials.ceramic-coating-faq')
+                        @include('frontend.partials.ceramic-coating-faq', ['show' => true])
 
 
 
