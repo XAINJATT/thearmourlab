@@ -491,127 +491,127 @@
             </div>
         </section>
 
-        <!--
-                                                                                          |--------------------------------------------------------------------------
-                                                                                          | Section 7
-                                                                                          |--------------------------------------------------------------------------
-                                                                                          -->
-        <div class="section-7-bg"></div>
+    <!--
+                                                                                        |--------------------------------------------------------------------------
+                                                                                        | Section 7
+                                                                                        |--------------------------------------------------------------------------
+                                                                                        -->
+    <div class="section-7-bg"></div>
 
-        <section class="section-7">
-            <div class="section-container">
-                <div>
-                    <h4 class="header-title-small">
-                        HOW DOES ICON ROCKLEAR COMPARE TO ALL OTHER COATINGS?
-                    </h4>
-                    <hr class="hr-light" />
-                    <h2 class="header-title">EFFICIENCY</h2>
+    <section class="section-7">
+        <div class="section-container">
+            <div>
+                <h4 class="header-title-small">
+                    HOW DOES ICON ROCKLEAR COMPARE TO ALL OTHER COATINGS?
+                </h4>
+                <hr class="hr-light" />
+                <h2 class="header-title">EFFICIENCY</h2>
+            </div>
+            <div class="flex">
+                <div class="column">
+                    <div class="progress-bar-container">
+                        <div class="section-header">
+                            <h3>ICON <span>ROCKLEAR</span></h3>
+                            <span class="section-icon"><i aria-hidden="true" class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div id="rocklear-progress-bar">
+                            <!--
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                | Data coming from javascript  //script.js
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                -->
+                        </div>
+                        <ul class="custom-list">
+                            <li>
+                                Does not require clear coat reduction, only provides depth
+                            </li>
+                            <li>Zero Maintenance Costs</li>
+                            <li>
+                                Renewable system for life, repairable defects while still
+                                maintaining a thick layer
+                            </li>
+                        </ul>
+                        <div class="progress-image">
+                            <img loading="lazy" decoding="async" width="394" height="394"
+                                src="images/Vector-Smart-Object.png" class="attachment-large size-large wp-image-433"
+                                alt=""
+                                srcset="
+                    images/Vector-Smart-Object.png         394w,
+                    images/Vector-Smart-Object-300x300.png 300w,
+                    images/Vector-Smart-Object-150x150.png 150w
+                "
+                                sizes="(max-width: 394px) 100vw, 394px" />
+                        </div>
+                    </div>
                 </div>
-                <div class="flex">
-                    <div class="column">
-                        <div class="progress-bar-container">
-                            <div class="section-header">
-                                <h3>ICON <span>ROCKLEAR</span></h3>
-                                <span class="section-icon"><i aria-hidden="true" class="fas fa-chevron-down"></i></span>
-                            </div>
-                            <div id="rocklear-progress-bar">
-                                <!--
-                                                                                                    |--------------------------------------------------------------------------
-                                                                                                    | Data coming from javascript  //script.js
-                                                                                                    |--------------------------------------------------------------------------
-                                                                                                    -->
-                            </div>
-                            <ul class="custom-list">
-                                <li>
-                                    Does not require clear coat reduction, only provides depth
-                                </li>
-                                <li>Zero Maintenance Costs</li>
-                                <li>
-                                    Renewable system for life, repairable defects while still
-                                    maintaining a thick layer
-                                </li>
-                            </ul>
-                            <div class="progress-image">
-                                <img loading="lazy" decoding="async" width="394" height="394"
-                                    src="images/Vector-Smart-Object.png" class="attachment-large size-large wp-image-433"
-                                    alt=""
-                                    srcset="
-                      images/Vector-Smart-Object.png         394w,
-                      images/Vector-Smart-Object-300x300.png 300w,
-                      images/Vector-Smart-Object-150x150.png 150w
-                    "
-                                    sizes="(max-width: 394px) 100vw, 394px" />
-                            </div>
+                <div class="column">
+                    <div class="progress-bar-container">
+                        <div class="section-header">
+                            <h3>CERAMICS <span>/ GRAPHENE</span></h3>
+                            <span class="section-icon"><i aria-hidden="true" class="fas fa-chevron-down"></i></span>
+                        </div>
+                        <div id="ceramic-progress-bar">
+                            <!--
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                | Data coming from javascript  //script.js
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                -->
+                        </div>
+                        <ul class="custom-list">
+                            <li>
+                                Requires Clear Coat reduction, lessening its Life &
+                                Protection
+                            </li>
+                            <li>
+                                Requires weekly maintenance, toppers, & yearly recoat costs
+                            </li>
+                            <li>
+                                Easily damaged, requires full removal, correction, and
+                                reinstallation costs
+                            </li>
+                        </ul>
+                        <div class="progress-image">
+                            <img loading="lazy" decoding="async" width="406" height="410"
+                                src="images/Vector-Smart-Object-1.png"
+                                class="attachment-large size-large wp-image-449" alt=""
+                                srcset="
+                    images/Vector-Smart-Object-1.png         406w,
+                    images/Vector-Smart-Object-1-297x300.png 297w,
+                    images/Vector-Smart-Object-1-150x150.png 150w
+                "
+                                sizes="(max-width: 406px) 100vw, 406px" />
                         </div>
                     </div>
-                    <div class="column">
-                        <div class="progress-bar-container">
-                            <div class="section-header">
-                                <h3>CERAMICS <span>/ GRAPHENE</span></h3>
-                                <span class="section-icon"><i aria-hidden="true" class="fas fa-chevron-down"></i></span>
-                            </div>
-                            <div id="ceramic-progress-bar">
-                                <!--
-                                                                                                    |--------------------------------------------------------------------------
-                                                                                                    | Data coming from javascript  //script.js
-                                                                                                    |--------------------------------------------------------------------------
-                                                                                                    -->
-                            </div>
-                            <ul class="custom-list">
-                                <li>
-                                    Requires Clear Coat reduction, lessening its Life &
-                                    Protection
-                                </li>
-                                <li>
-                                    Requires weekly maintenance, toppers, & yearly recoat costs
-                                </li>
-                                <li>
-                                    Easily damaged, requires full removal, correction, and
-                                    reinstallation costs
-                                </li>
-                            </ul>
-                            <div class="progress-image">
-                                <img loading="lazy" decoding="async" width="406" height="410"
-                                    src="images/Vector-Smart-Object-1.png"
-                                    class="attachment-large size-large wp-image-449" alt=""
-                                    srcset="
-                      images/Vector-Smart-Object-1.png         406w,
-                      images/Vector-Smart-Object-1-297x300.png 297w,
-                      images/Vector-Smart-Object-1-150x150.png 150w
-                    "
-                                    sizes="(max-width: 406px) 100vw, 406px" />
-                            </div>
+                </div>
+                <div class="column">
+                    <div class="progress-bar-container">
+                        <div class="section-header">
+                            <h3>POLYMERS <span>/ WAX</span></h3>
+                            <span class="section-icon"><i aria-hidden="true" class="fas fa-chevron-down"></i></span>
                         </div>
-                    </div>
-                    <div class="column">
-                        <div class="progress-bar-container">
-                            <div class="section-header">
-                                <h3>POLYMERS <span>/ WAX</span></h3>
-                                <span class="section-icon"><i aria-hidden="true" class="fas fa-chevron-down"></i></span>
-                            </div>
-                            <div id="polymers-progress-bar">
-                                <!--
-                                                                                                    |--------------------------------------------------------------------------
-                                                                                                    | Data coming from javascript  //script.js
-                                                                                                    |--------------------------------------------------------------------------
-                                                                                                    -->
-                            </div>
+                        <div id="polymers-progress-bar">
+                            <!--
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                | Data coming from javascript  //script.js
+                                                                                                |--------------------------------------------------------------------------
+                                                                                                -->
+                        </div>
 
-                            <ul class="custom-list">
-                                <li>Temporary</li>
-                            </ul>
-                            <div class="progress-image">
-                                <img loading="lazy" decoding="async" width="409" height="409"
-                                    src="images/Vector-Smart-Object-2.png"
-                                    class="attachment-large size-large wp-image-450" alt=""
-                                    srcset="images/Vector-Smart-Object-2.png 409w, images/Vector-Smart-Object-2-300x300.png 300w, images/Vector-Smart-Object-2-150x150.png 150w"
-                                    sizes="(max-width: 409px) 100vw, 409px">
-                            </div>
+                        <ul class="custom-list">
+                            <li>Temporary</li>
+                        </ul>
+                        <div class="progress-image">
+                            <img loading="lazy" decoding="async" width="409" height="409"
+                                src="images/Vector-Smart-Object-2.png"
+                                class="attachment-large size-large wp-image-450" alt=""
+                                srcset="images/Vector-Smart-Object-2.png 409w, images/Vector-Smart-Object-2-300x300.png 300w, images/Vector-Smart-Object-2-150x150.png 150w"
+                                sizes="(max-width: 409px) 100vw, 409px">
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
         <!--
                                                                                           |--------------------------------------------------------------------------

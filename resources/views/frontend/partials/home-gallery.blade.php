@@ -5,15 +5,15 @@
 
         $cermaic_coating_images = [
             'Icon Rocklear' => [
-                'images' => [App\Helpers\SiteHelper::get_wt_media()->toArray()],
-                'url' => route('frontend.CeramicCoating'),
+                'images' => [App\Helpers\SiteHelper::get_ir_media()->toArray()],
+                'url' => route('icon-rocklear.index'),
             ],
             'CERAMIC COATING' => [
-                'images' => [App\Helpers\SiteHelper::get_wt_media()->toArray()],
+                'images' => [App\Helpers\SiteHelper::get_cc_media()->toArray()],
                 'url' => route('frontend.CeramicCoating'),
             ],
             'Paint Protection' => [
-                'images' => [App\Helpers\SiteHelper::get_wt_media()],
+                'images' => [App\Helpers\SiteHelper::get_ppf_media()],
                 'url' => route('frontend.PaintProtectionFilmSimulator'),
             ],
             'Window Tints' => [
@@ -46,7 +46,8 @@
                 </ul>
             </div>
             <div id="loader" class="loader" style="display:none;"></div>
-            <ul class="row sp5 magnific-image mb-0" id="masonry">
+
+            <ul class="row sp5  mb-0" id="masonry">
 
                 {{-- @foreach (config('app.services') as $key => $service) --}}
                 @include('frontend.partials.gallery_items', [

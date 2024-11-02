@@ -1,9 +1,18 @@
 @foreach ($images as $image)
     <li
-        class="action-card col-lg-4 col-md-6 col-sm-12 col-12 {{ strtolower(str_replace(' ', '-', config('app.services')[$image->category])) }}">
+        class="action-card  col-lg-4 col-md-6 col-sm-12 col-12 {{ strtolower(str_replace(' ', '-', config('app.services')[$image->category])) }}">
         <div class="portfolio-box style-2 mb-2">
             <div class="portfolio-media">
-                <img style="height: 300px; object-fit: cover; width:100%" src="{{ Storage::url($image->path) }}" alt="">
+                @if (strpos($image->type, 'image'))
+                    <img style="height: 300px; object-fit: cover; width:100%" src="{{ Storage::url($image->path) }}"
+                        alt="">
+                @endif
+                {{-- @dd($image->type) --}}
+                @if (strpos($image->type, 'video') !== false)
+                    <video style="height: 300px; object-fit: cover; width:100%" src="{{ Storage::url($image->path) }}">
+                        <source src="{{ $image->path }}">
+                    </video>
+                @endif
             </div>
             <div class="portfolio-info">
                 <h4 class="title"><a
@@ -11,7 +20,7 @@
                 </h4>
                 <span class="exe-title">SERVICES</span>
             </div>
-            <a href="{{ Storage::url($image->path) }}" class="magnific-anchor">View Image</a>
+            <a target="_blank" href="{{ Storage::url($image->path) }}" class="magnific-anchor">View Image</a>
         </div>
     </li>
 @endforeach

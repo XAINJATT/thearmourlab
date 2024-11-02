@@ -46,6 +46,10 @@ class SiteHelper
     {
         return Media::where("category", "wt")->latest("created_at")->get();
     }
+    public static function  get_ir_media()
+    {
+        return Media::where("category", "ir")->latest("created_at")->get();
+    }
 
     public static function getTestimonials()
     {
