@@ -3,7 +3,7 @@
         class="action-card  col-lg-4 col-md-6 col-sm-12 col-12 {{ strtolower(str_replace(' ', '-', config('app.services')[$image->category])) }}">
         <div class="portfolio-box style-2 mb-2">
             <div class="portfolio-media">
-                @if (strpos($image->type, 'image'))
+                @if (strpos($image->type, 'image') !== false)
                     <img style="height: 300px; object-fit: cover; width:100%" src="{{ Storage::url($image->path) }}"
                         alt="">
                 @endif
