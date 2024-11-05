@@ -65,6 +65,27 @@
             </div>
         </div>
 
+        <!--
+                                                                                              |--------------------------------------------------------------------------
+                                                                                              | Section 2
+                                                                                              |--------------------------------------------------------------------------
+                                                                                              -->
+
+        <section class="section-2" style="margin-top:95px;">
+            <div id="marqueeContainer" class="marquee-container">
+                <div class="marquee-content">
+                    <span class="text">
+                        <span style="color: #108d19">ICON ROCKLEAR</span> -
+                        <span>75x stronger</span> - <span>35x thicker</span> -
+                    </span>
+                    <span class="text">
+                        <span style="color: #108d19">ICON ROCKLEAR</span> -
+                        <span>75x stronger</span> - <span>35x thicker</span> -
+                    </span>
+                </div>
+            </div>
+        </section>
+
         <div class="section-14-bg"></div>
         <section class="section-14 ">
             <div class="section-container container">
@@ -113,10 +134,47 @@
 
         <style>
             /*
-    |--------------------------------------------------------------------------
-    | Section 7
-    |--------------------------------------------------------------------------
-    */
+        |--------------------------------------------------------------------------
+        | Section 7
+        |--------------------------------------------------------------------------
+        */
+            .marquee-container {
+                overflow: hidden;
+                white-space: nowrap;
+                box-sizing: border-box;
+                width: 100%;
+                border: 1px solid #ccc;
+                /* For visibility. You can remove this if you want */
+            }
+
+            .marquee-content {
+                display: inline-block;
+                text-transform: uppercase;
+                animation: marqueeAnimation linear infinite;
+            }
+
+            .marquee-content .text {
+                display: inline-block;
+                white-space: nowrap;
+                font-size: 72px;
+                font-weight: 900;
+            }
+
+            .marquee-content .text span:hover {
+                color: #fff !important;
+                text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+                    1px 1px 0 #000;
+            }
+
+            @keyframes marqueeAnimation {
+                0% {
+                    transform: translateX(0);
+                }
+
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
 
             .section-7-bg {
                 background-color: #262626;
@@ -282,7 +340,7 @@
                 position: absolute;
                 text-align: center;
                 left: 0;
-                bottom: -190px;
+                bottom: -250px;
                 width: 100%;
                 z-index: 1;
             }
@@ -309,35 +367,38 @@
             }
 
             /*
-|--------------------------------------------------------------------------
-| Section 9 
-|--------------------------------------------------------------------------
-*/
+    |--------------------------------------------------------------------------
+    | Section 9
+    |--------------------------------------------------------------------------
+    */
 
-.section-9 {
-    background-image: url(../images/Group-26-2.png);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    transition: background 0.3s, border 0.3s, border-radius 0.3s,
-        box-shadow 0.3s;
-    padding: 30px 0px 30px 0px;
-    margin-top: 100px;
-}
+            .section-9 {
+                background-image: url(../images/Group-26-2.png);
+                background-position: top center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                transition: background 0.3s, border 0.3s, border-radius 0.3s,
+                    box-shadow 0.3s;
+                padding: 30px 0px 30px 0px;
+                margin-top: 100px;
+            }
 
-.section-10 .header-title {
-    font-size: 76px;
-}
-.section-10 > * {
-    line-height: 2;
-}
-.section-10 h6,
-.section-10 h5 {
-    font-weight: 800 !important;
-}
-.section-10 .card {
-    height: 100%;
-}
+            .section-10 .header-title {
+                font-size: 76px;
+            }
+
+            .section-10>* {
+                line-height: 2;
+            }
+
+            .section-10 h6,
+            .section-10 h5 {
+                font-weight: 800 !important;
+            }
+
+            .section-10 .card {
+                height: 100%;
+            }
 
             .image-compare {
                 position: relative;
@@ -425,10 +486,10 @@
         </style>
 
         <!--
-                                                                                              |--------------------------------------------------------------------------
-                                                                                              | Section 7
-                                                                                              |--------------------------------------------------------------------------
-                                                                                              -->
+                                                                                                  |--------------------------------------------------------------------------
+                                                                                                  | Section 7
+                                                                                                  |--------------------------------------------------------------------------
+                                                                                                  -->
         <div class="section-7-bg"></div>
 
         <section class="section-7">
@@ -449,10 +510,10 @@
                             </div>
                             <div id="rocklear-progress-bar">
                                 <!--
-                                                                                                                                                                                          |--------------------------------------------------------------------------
-                                                                                                                                                                                          | Data coming from javascript  //script.js
-                                                                                                                                                                                          |--------------------------------------------------------------------------
-                                                                                                                                                                                          -->
+                                                                                                                                                                                              |--------------------------------------------------------------------------
+                                                                                                                                                                                              | Data coming from javascript  //script.js
+                                                                                                                                                                                              |--------------------------------------------------------------------------
+                                                                                                                                                                                              -->
                             </div>
                             <ul class="custom-list">
                                 <li>
@@ -485,10 +546,10 @@
                             </div>
                             <div id="ceramic-progress-bar">
                                 <!--
-                                                                                                                                                                                          |--------------------------------------------------------------------------
-                                                                                                                                                                                          | Data coming from javascript  //script.js
-                                                                                                                                                                                          |--------------------------------------------------------------------------
-                                                                                                                                                                                          -->
+                                                                                                                                                                                              |--------------------------------------------------------------------------
+                                                                                                                                                                                              | Data coming from javascript  //script.js
+                                                                                                                                                                                              |--------------------------------------------------------------------------
+                                                                                                                                                                                              -->
                             </div>
                             <ul class="custom-list">
                                 <li>
@@ -524,10 +585,10 @@
                             </div>
                             <div id="polymers-progress-bar">
                                 <!--
-                                                                                                                                                                                          |--------------------------------------------------------------------------
-                                                                                                                                                                                          | Data coming from javascript  //script.js
-                                                                                                                                                                                          |--------------------------------------------------------------------------
-                                                                                                                                                                                          -->
+                                                                                                                                                                                              |--------------------------------------------------------------------------
+                                                                                                                                                                                              | Data coming from javascript  //script.js
+                                                                                                                                                                                              |--------------------------------------------------------------------------
+                                                                                                                                                                                              -->
                             </div>
 
                             <ul class="custom-list">
@@ -547,10 +608,10 @@
         </section>
 
         <!--
-                                                                                              |--------------------------------------------------------------------------
-                                                                                              | Section 9
-                                                                                              |--------------------------------------------------------------------------
-                                                                                              -->
+                                                                                                  |--------------------------------------------------------------------------
+                                                                                                  | Section 9
+                                                                                                  |--------------------------------------------------------------------------
+                                                                                                  -->
 
         <section class="section-9 mb-5">
             <div class="section-container text-center mt-5 pt-3">
@@ -675,10 +736,10 @@
 
         <style>
             /*
-                                |--------------------------------------------------------------------------
-                                | Section 14
-                                |--------------------------------------------------------------------------
-                                */
+                                    |--------------------------------------------------------------------------
+                                    | Section 14
+                                    |--------------------------------------------------------------------------
+                                    */
             :root {
                 --e-global-color-primary: #cfb728;
                 --e-global-color-secondary: #54595f;
@@ -839,6 +900,7 @@
 
 @section('scripts')
     <script src="{{ asset('js/script.js') . config('app.asset') }}"></script>
+    <script src="js/ep-marquee.min.js"></script>
     <script src="https://unpkg.com/image-compare-viewer@1.6.2/dist/image-compare-viewer.min.js"></script>
 
 

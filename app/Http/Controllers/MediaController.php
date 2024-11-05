@@ -33,7 +33,7 @@ class MediaController extends Controller
         try {
             // Validate the request...
             $request->validate([
-                'file' => 'required|mimes:jpg,jpeg,png,bmp,gif,svg,mp4,mov,ogg,qt,mp4,mov,ogg,qt|max:20000', // Single file
+                'file' => 'required|mimes:jpg,jpeg,png,bmp,gif,svg,mp4,mov,ogg,qt,mp4,mov,ogg,qt|max:200000', // Single file
                 'category' => 'string|nullable'
             ]);
 
