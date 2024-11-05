@@ -37,7 +37,7 @@
 <link rel="stylesheet" type="text/css" href="{{ url('css/style.css?v=') . config('app.asset') }}">
 <style>
     .WidgetBackground__ContentContainer-sc-1ho7q3r-1 {
-        height: 100vh !important;
+        height: 75vh !important;
         overflow: auto;
     }
 </style>
