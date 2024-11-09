@@ -13,6 +13,11 @@
                         <source src="{{ $image->path }}">
                     </video>
                 @endif
+                @if (strpos($image->type, 'youtube') !== false)
+                    <iframe width="440" height="100%" src="{{ $image->path }}" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                @endif
             </div>
             <div class="portfolio-info">
                 <h4 class="title"><a
@@ -20,7 +25,12 @@
                 </h4>
                 <span class="exe-title">SERVICES</span>
             </div>
-            <a target="_blank" href="{{ Storage::url($image->path) }}" class="magnific-anchor">View Image</a>
+            @if (strpos($image->type, 'youtube') !== false)
+                <a target="_blank" href="{{ $image->youtube_url }}" class="magnific-anchor">Watch Video</a>
+            @else
+                <a target="_blank" href="{{ Storage::url($image->path) }}" class="magnific-anchor">View Image</a>
+            @endif
+
         </div>
     </li>
 @endforeach
