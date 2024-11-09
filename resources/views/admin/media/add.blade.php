@@ -234,11 +234,10 @@
                         },
                         error: function(xhr, status, error) {
                             // Update status to error
-                            $('#status-' + index).text('Error uploading ');
+                            $('#upload-status').html('<div class="alert alert-danger">No File Selected.</div>');
                         },
                         complete: function() {
-                            $('#upload-status').html(
-                                '<div class="alert alert-success">URL Uploaded Successfully.</div>');
+                           
                             // Re-enable the submit button after the last file is processed
                             $('.submitBtn').prop('disabled', false);
 
