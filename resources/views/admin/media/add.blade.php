@@ -61,27 +61,28 @@
                                         <div id="file_uploader" class="col-12 col-md-12 mt-2">
                                             <label for="">Upload Files</label>
                                             <input name="files[]" class="form-control" type="file" id="file-upload"
-                                                multiple>
+                                            multiple>
                                             <div class="row" id="preview-container"></div>
-                                            <div id="upload-status"></div>
-
+                                            
                                         </div>
                                         <div style="display:none" id="youtube_url" class="col-12 col-md-12 mt-2">
                                             <div class="row">
                                                 <div class="col-12 col-md-12 mt-2">
                                                     <label for="">Add Youtube Original URL</label>
-                                                    <input placeholder="https://www.youtube.com/watch?v=xyz" name="youtube_url"
-                                                        class="form-control" type="text" id="youtube-upload-url">
+                                                    <input placeholder="https://www.youtube.com/watch?v=xyz"
+                                                        name="youtube_url" class="form-control" type="text"
+                                                        id="youtube-upload-url">
                                                 </div>
                                                 <div class="col-12 col-md-12 mt-2">
-                                                    <label for="">Add Youtube Embeded URL</label>
-                                                    <input placeholder="https://www.youtube.com/embed/abcd" name="youtube"
-                                                        class="form-control" type="text" id="youtube-upload">
+                                                    <label for="">Add Youtube Thumbnail</label>
+                                                    <input name="youtube" class="form-control" type="file"
+                                                    id="youtube-upload">
                                                 </div>
                                             </div>
-
+                                            
                                         </div>
-
+                                        
+                                        <div id="upload-status"></div>
 
                                         <div class="col-md-6">
                                             <div class="form-group d-flex">
@@ -214,7 +215,7 @@
                     });
                 } else if (youtube == true) {
                     var formData = new FormData();
-                    formData.append('youtube', $("#youtube-upload").val());
+                    formData.append('youtube', $("#youtube-upload")[0].files[0]);
                     formData.append('is_gallery', isGallery);
                     formData.append('is_youtube', true);
                     formData.append('youtube_url', $("#youtube-upload-url").val());

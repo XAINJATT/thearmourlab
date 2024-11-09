@@ -46,7 +46,7 @@ class MediaController extends Controller
                 'category' => 'string|nullable',
                 'youtube' => [
                     'required_if:is_youtube,true',
-                    'string' // add other rules if necessary
+                    'mimes:jpg,jpeg,png,bmp,gif,svg' // add other rules if necessary
                 ],
                 'youtube_url' => [
                     'required_if:is_youtube,true',
@@ -61,7 +61,8 @@ class MediaController extends Controller
                 $type = $file->getClientMimeType();
             } else {
                 $type = "youtube";
-                $path = $request->youtube;
+                $file = $request->youtube;
+                $path = $file->store('public/media'); // Stores in Storage/app/public/media
             }
             $isGallery = $request->input('is_gallery');
             $category = $request->input('category');

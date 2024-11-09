@@ -14,9 +14,8 @@
                     </video>
                 @endif
                 @if (strpos($image->type, 'youtube') !== false)
-                    <iframe width="440" height="100%" src="{{ $image->path }}" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <img style="height: 300px; object-fit: cover; width:100%" src="{{ Storage::url($image->path) }}"
+                alt="">
                 @endif
             </div>
             <div class="portfolio-info">
