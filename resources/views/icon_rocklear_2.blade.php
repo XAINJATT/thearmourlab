@@ -7,9 +7,9 @@
 
 <head>
 
-   
 
-   
+
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="https://gmpg.org/xfn/11">
@@ -33,6 +33,7 @@
     <meta property="og:image:height" content="1067" />
     <meta property="og:image:type" content="image/jpeg" />
     <meta name="twitter:card" content="summary_large_image" />
+    @include('frontend.partials.meta')
 
     <link rel='stylesheet' id='remodal-css' href='wp-content/plugins/wp-google-maps-pro/lib/remodal109c.css?ver=6.6.2'
         media='all' />
@@ -3688,117 +3689,12 @@
         Skip to content</a>
 
     <div class="hfeed site" id="page">
-        <header data-elementor-type="header" data-elementor-id="19"
-            class="elementor elementor-19 elementor-location-header" data-elementor-post-type="elementor_library">
-            <section
-                class="elementor-section elementor-top-section elementor-element elementor-element-5b27d2a4 elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                data-id="5b27d2a4" data-element_type="section"
-                data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_opacity_effect&quot;:&quot;yes&quot;,&quot;motion_fx_opacity_direction&quot;:&quot;in-out-in&quot;,&quot;motion_fx_opacity_range&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:20,&quot;end&quot;:56}},&quot;sticky&quot;:&quot;top&quot;,&quot;motion_fx_opacity_level&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
-                <div class="elementor-container elementor-column-gap-no">
-                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-48f9f0fb"
-                        data-id="48f9f0fb" data-element_type="column"
-                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                        <div class="elementor-widget-wrap elementor-element-populated">
-                            <div class="elementor-element elementor-element-6c001ac5 elementor-widget elementor-widget-image"
-                                data-id="6c001ac5" data-element_type="widget" data-widget_type="image.default">
-                                <div class="elementor-widget-container">
-                                    <style>
-                                        /*! elementor - v3.22.0 - 17-06-2024 */
-                                        .elementor-widget-image {
-                                            text-align: center
-                                        }
+      
 
-                                        .elementor-widget-image a {
-                                            display: inline-block
-                                        }
+        @include('frontend.partials.header')
 
-                                        .elementor-widget-image a img[src$=".svg"] {
-                                            width: 48px
-                                        }
 
-                                        .elementor-widget-image img {
-                                            vertical-align: middle;
-                                            display: inline-block
-                                        }
-                                    </style> <a href="/">
-                                        <img fetchpriority="high" width="500" height="166"
-                                            src="wp-content/uploads/2024/04/657f0c1576cabbfba11854c3_Icon-Rocklear-logo-white-p-500.png"
-                                            class="attachment-full size-full wp-image-22" alt="car detailing"
-                                            srcset="https://iconrocklearfl.com/wp-content/uploads/2024/04/657f0c1576cabbfba11854c3_Icon-Rocklear-logo-white-p-500.png 500w, https://iconrocklearfl.com/wp-content/uploads/2024/04/657f0c1576cabbfba11854c3_Icon-Rocklear-logo-white-p-500-300x100.png 300w"
-                                            sizes="(max-width: 500px) 100vw, 500px" /> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3b05df01"
-                        data-id="3b05df01" data-element_type="column"
-                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                        <div class="elementor-widget-wrap elementor-element-populated">
-                            <div class="elementor-element elementor-element-3bab3ce9 elementor-widget elementor-widget-ekit-nav-menu"
-                                data-id="3bab3ce9" data-element_type="widget"
-                                data-widget_type="ekit-nav-menu.default">
-                                <div class="elementor-widget-container">
-                                    <div class="ekit-wid-con ekit_menu_responsive_tablet"
-                                        data-hamburger-icon="icon icon-burger-menu" data-hamburger-icon-type="icon"
-                                        data-responsive-breakpoint="1024"> <button
-                                            class="elementskit-menu-hamburger elementskit-menu-toggler" type="button"
-                                            aria-label="hamburger-icon">
-                                            <i aria-hidden="true" class="ekit-menu-icon icon icon-burger-menu"></i>
-                                        </button>
-                                        <div id="ekit-megamenu-menu"
-                                            class="elementskit-menu-container elementskit-menu-offcanvas-elements elementskit-navbar-nav-default ekit-nav-menu-one-page-no ekit-nav-dropdown-hover">
-                                            {{-- <ul id="menu-menu"
-                                                class="elementskit-navbar-nav elementskit-menu-po-center submenu-click-on-icon">
-                                                <li id="menu-item-24"
-                                                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-24 nav-item elementskit-mobile-builder-content active"
-                                                    data-vertical-menu=750px><a href="index.html#Benefits"
-                                                        class="ekit-menu-nav-link active menu-link">Benefits</a></li>
-                                                <li id="menu-item-25"
-                                                    class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-25 nav-item elementskit-mobile-builder-content active"
-                                                    data-vertical-menu=750px><a href="index.html#Form"
-                                                        class="ekit-menu-nav-link active menu-link">Get a Quote</a>
-                                                </li>
-                                                <li id="menu-item-1114"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1114 nav-item elementskit-mobile-builder-content"
-                                                    data-vertical-menu=750px><a href="installer-finder/index.html"
-                                                        class="ekit-menu-nav-link menu-link">Find an Installer</a></li>
-                                                <li id="menu-item-1572"
-                                                    class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1572 nav-item elementskit-mobile-builder-content"
-                                                    data-vertical-menu=750px><a href="become-an-installer/index.html"
-                                                        class="ekit-menu-nav-link menu-link">Become an Installer</a>
-                                                </li>
-                                                <li id="menu-item-1496"
-                                                    class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1496 nav-item elementskit-mobile-builder-content"
-                                                    data-vertical-menu=750px><a href="account/index.html"
-                                                        class="ekit-menu-nav-link menu-link">Installer Login</a></li>
-                                            </ul> --}}
-                                            <div class="elementskit-nav-identity-panel">
-                                                <div class="elementskit-site-title">
-                                                    <a class="elementskit-nav-logo" href="index.html" target="_self"
-                                                        rel="">
-                                                        <img width="500" height="166"
-                                                            src="wp-content/uploads/2024/04/657f0c1576cabbfba11854c3_Icon-Rocklear-logo-white-p-500.png"
-                                                            class="attachment-full size-full" alt="car detailing"
-                                                            decoding="async"
-                                                            srcset="https://iconrocklearfl.com/wp-content/uploads/2024/04/657f0c1576cabbfba11854c3_Icon-Rocklear-logo-white-p-500.png 500w, https://iconrocklearfl.com/wp-content/uploads/2024/04/657f0c1576cabbfba11854c3_Icon-Rocklear-logo-white-p-500-300x100.png 300w"
-                                                            sizes="(max-width: 500px) 100vw, 500px" />
-                                                    </a>
-                                                </div><button class="elementskit-menu-close elementskit-menu-toggler"
-                                                    type="button">X</button>
-                                            </div>
-                                        </div>
-                                        <div
-                                            class="elementskit-menu-overlay elementskit-menu-offcanvas-elements elementskit-menu-toggler ekit-nav-menu--overlay">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </header>
-        <div id="content" class="site-content">
+        <div style="margin-top:250px" id="content" class="site-content">
             <div class="ast-container">
 
 
@@ -5002,18 +4898,159 @@
                                                     <section
                                                         class="elementor-section elementor-inner-section elementor-element elementor-element-3a91feb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
                                                         data-id="3a91feb" data-element_type="section" id="Form">
-                                                        <iframe       id="JotFormIFrame-241586322618055"       title=" Add Lead form"
-                                onload="window.parent.scrollTo(0,0)"       allowtransparency="true"
-                                allow="geolocation; microphone; camera; fullscreen"
-                                src="https://form.jotform.com/241586322618055"       frameborder="0"
-                                style="min-width:100%;max-width:100%;height:1600px;border:none;"       scrolling="no"     >
-                            </iframe>
 
-                            <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+                                                        <div class="elementor-container elementor-column-gap-default">
 
-                            <script>
-                                window.jotformEmbedHandler("iframe[id='JotFormIFrame-241586322618055']", "https://form.jotform.com/")
-                            </script>
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-27253b1 elementor-invisible"
+                                                                data-id="27253b1" data-element_type="column"
+                                                                data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-f1b5493 elementor-widget elementor-widget-video"
+                                                                        data-id="f1b5493" data-element_type="widget"
+                                                                        data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;controls&quot;:&quot;yes&quot;}"
+                                                                        data-widget_type="video.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <style>
+                                                                                /*! elementor - v3.22.0 - 17-06-2024 */
+                                                                                .elementor-widget-video .elementor-widget-container {
+                                                                                    overflow: hidden;
+                                                                                    transform: translateZ(0)
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-wrapper {
+                                                                                    aspect-ratio: var(--video-aspect-ratio)
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-wrapper iframe,
+                                                                                .elementor-widget-video .elementor-wrapper video {
+                                                                                    height: 100%;
+                                                                                    width: 100%;
+                                                                                    display: flex;
+                                                                                    border: none;
+                                                                                    background-color: #000
+                                                                                }
+
+                                                                                @supports not (aspect-ratio:1/1) {
+                                                                                    .elementor-widget-video .elementor-wrapper {
+                                                                                        position: relative;
+                                                                                        overflow: hidden;
+                                                                                        height: 0;
+                                                                                        padding-bottom: calc(100% / var(--video-aspect-ratio))
+                                                                                    }
+
+                                                                                    .elementor-widget-video .elementor-wrapper iframe,
+                                                                                    .elementor-widget-video .elementor-wrapper video {
+                                                                                        position: absolute;
+                                                                                        top: 0;
+                                                                                        right: 0;
+                                                                                        bottom: 0;
+                                                                                        left: 0
+                                                                                    }
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-open-inline .elementor-custom-embed-image-overlay {
+                                                                                    position: absolute;
+                                                                                    top: 0;
+                                                                                    right: 0;
+                                                                                    bottom: 0;
+                                                                                    left: 0;
+                                                                                    background-size: cover;
+                                                                                    background-position: 50%
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-custom-embed-image-overlay {
+                                                                                    cursor: pointer;
+                                                                                    text-align: center
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-custom-embed-image-overlay:hover .elementor-custom-embed-play i {
+                                                                                    opacity: 1
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-custom-embed-image-overlay img {
+                                                                                    display: block;
+                                                                                    width: 100%;
+                                                                                    aspect-ratio: var(--video-aspect-ratio);
+                                                                                    -o-object-fit: cover;
+                                                                                    object-fit: cover;
+                                                                                    -o-object-position: center center;
+                                                                                    object-position: center center
+                                                                                }
+
+                                                                                @supports not (aspect-ratio:1/1) {
+                                                                                    .elementor-widget-video .elementor-custom-embed-image-overlay {
+                                                                                        position: relative;
+                                                                                        overflow: hidden;
+                                                                                        height: 0;
+                                                                                        padding-bottom: calc(100% / var(--video-aspect-ratio))
+                                                                                    }
+
+                                                                                    .elementor-widget-video .elementor-custom-embed-image-overlay img {
+                                                                                        position: absolute;
+                                                                                        top: 0;
+                                                                                        right: 0;
+                                                                                        bottom: 0;
+                                                                                        left: 0
+                                                                                    }
+                                                                                }
+
+                                                                                .elementor-widget-video .e-hosted-video .elementor-video {
+                                                                                    -o-object-fit: cover;
+                                                                                    object-fit: cover
+                                                                                }
+
+                                                                                .e-con-inner>.elementor-widget-video,
+                                                                                .e-con>.elementor-widget-video {
+                                                                                    width: var(--container-widget-width);
+                                                                                    --flex-grow: var(--container-widget-flex-grow)
+                                                                                }
+                                                                            </style>
+                                                                            <div
+                                                                                class="e-hosted-video elementor-wrapper elementor-open-inline">
+                                                                                <video class="elementor-video"
+                                                                                    src="wp-content/uploads/2024/04/659c71946754a6b0b136b91a_Sequence-08_1-transcode.mp4"
+                                                                                    autoplay="" controls=""
+                                                                                    controlsList="nodownload"></video>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-62c52a3 elementor-invisible"
+                                                                data-id="62c52a3" data-element_type="column"
+                                                                data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-0a0add2 elementor-button-align-stretch elementor-widget elementor-widget-form"
+                                                                        data-id="0a0add2" data-element_type="widget"
+                                                                        data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}"
+                                                                        data-widget_type="form.default">
+                                                                        <div class="elementor-widget-container">
+
+                                                                            <iframe
+                                                                                id="JotFormIFrame-241586322618055"
+                                                                                title=" Add Lead form"
+                                                                                onload="window.parent.scrollTo(0,0)"
+                                                                                allowtransparency="true"
+                                                                                allow="geolocation; microphone; camera; fullscreen"
+                                                                                src="https://form.jotform.com/241586322618055"
+                                                                                frameborder="0"
+                                                                                style="min-width:100%;max-width:100%;height:1095px;border:none;"
+                                                                                scrolling="no"     >
+                                                                            </iframe>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+
+                                                            <script>
+                                                                window.jotformEmbedHandler("iframe[id='JotFormIFrame-241586322618055']", "https://form.jotform.com/")
+                                                            </script>
+                                                        </div>
                                                     </section>
                                                 </div>
                                             </div>
@@ -5032,8 +5069,7 @@
                                                         data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
                                                         data-widget_type="heading.default">
                                                         <div class="elementor-widget-container">
-                                                            <h2
-                                                                class="elementor-heading-title elementor-size-default">
+                                                            <h2 class="elementor-heading-title elementor-size-default">
                                                                 To find your nearest installer</h2>
                                                         </div>
                                                     </div>
@@ -5054,13 +5090,14 @@
                                                         <div class="elementor-widget-container">
                                                             <div class="elementor-shortcode">
 
-<!-- Map -->
-<div class="section-area">
-	<iframe
-		src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.1117088358656!2d-79.53489302407557!3d43.812042242143306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2f8768e07897%3A0x33dd98ca9562b219!2sThe%20Armour%20Lab!5e0!3m2!1sen!2sus!4v1702199588491!5m2!1sen!2sus"
-		class="align-self-stretch d-flex" style="width:70%; width:100%; min-height: 350px;"
-		allowfullscreen=""></iframe>
-</div>
+                                                                <!-- Map -->
+                                                                <div class="section-area">
+                                                                    <iframe
+                                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.1117088358656!2d-79.53489302407557!3d43.812042242143306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2f8768e07897%3A0x33dd98ca9562b219!2sThe%20Armour%20Lab!5e0!3m2!1sen!2sus!4v1702199588491!5m2!1sen!2sus"
+                                                                        class="align-self-stretch d-flex"
+                                                                        style="width:70%; width:100%; min-height: 350px;"
+                                                                        allowfullscreen=""></iframe>
+                                                                </div>
 
 
                                                             </div>
@@ -5088,497 +5125,7 @@
 
             </div> <!-- ast-container -->
         </div><!-- #content -->
-        <div data-elementor-type="footer" data-elementor-id="183"
-            class="elementor elementor-183 elementor-location-footer" data-elementor-post-type="elementor_library">
-            <div class="elementor-element elementor-element-d60899a e-flex e-con-boxed e-con e-parent"
-                data-id="d60899a" data-element_type="container"
-                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-6201913 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-                        data-id="6201913" data-element_type="widget" data-widget_type="divider.default">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-divider">
-                                <span class="elementor-divider-separator">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-05219ad e-flex e-con-boxed e-con e-parent"
-                data-id="05219ad" data-element_type="container"
-                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-7ff89e5 e-con-full e-flex e-con e-child"
-                        data-id="7ff89e5" data-element_type="container">
-                        <div class="elementor-element elementor-element-dfd40d4 animated-fast elementor-invisible elementor-widget elementor-widget-heading"
-                            data-id="dfd40d4" data-element_type="widget"
-                            data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-                            data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-default">Our social networks</h2>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-fcab485 elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor"
-                            data-id="fcab485" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
-                                <p>Follow Us for Important Updates</p>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-b834690 e-grid-align-left e-grid-align-mobile-center elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons"
-                            data-id="b834690" data-element_type="widget" data-widget_type="social-icons.default">
-                            <div class="elementor-widget-container">
-                                <style>
-                                    /*! elementor - v3.22.0 - 17-06-2024 */
-                                    .elementor-widget-social-icons.elementor-grid-0 .elementor-widget-container,
-                                    .elementor-widget-social-icons.elementor-grid-mobile-0 .elementor-widget-container,
-                                    .elementor-widget-social-icons.elementor-grid-tablet-0 .elementor-widget-container {
-                                        line-height: 1;
-                                        font-size: 0
-                                    }
-
-                                    .elementor-widget-social-icons:not(.elementor-grid-0):not(.elementor-grid-tablet-0):not(.elementor-grid-mobile-0) .elementor-grid {
-                                        display: inline-grid
-                                    }
-
-                                    .elementor-widget-social-icons .elementor-grid {
-                                        grid-column-gap: var(--grid-column-gap, 5px);
-                                        grid-row-gap: var(--grid-row-gap, 5px);
-                                        grid-template-columns: var(--grid-template-columns);
-                                        justify-content: var(--justify-content, center);
-                                        justify-items: var(--justify-content, center)
-                                    }
-
-                                    .elementor-icon.elementor-social-icon {
-                                        font-size: var(--icon-size, 25px);
-                                        line-height: var(--icon-size, 25px);
-                                        width: calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em));
-                                        height: calc(var(--icon-size, 25px) + 2 * var(--icon-padding, .5em))
-                                    }
-
-                                    .elementor-social-icon {
-                                        --e-social-icon-icon-color: #fff;
-                                        display: inline-flex;
-                                        background-color: #69727d;
-                                        align-items: center;
-                                        justify-content: center;
-                                        text-align: center;
-                                        cursor: pointer
-                                    }
-
-                                    .elementor-social-icon i {
-                                        color: var(--e-social-icon-icon-color)
-                                    }
-
-                                    .elementor-social-icon svg {
-                                        fill: var(--e-social-icon-icon-color)
-                                    }
-
-                                    .elementor-social-icon:last-child {
-                                        margin: 0
-                                    }
-
-                                    .elementor-social-icon:hover {
-                                        opacity: .9;
-                                        color: #fff
-                                    }
-
-                                    .elementor-social-icon-android {
-                                        background-color: #a4c639
-                                    }
-
-                                    .elementor-social-icon-apple {
-                                        background-color: #999
-                                    }
-
-                                    .elementor-social-icon-behance {
-                                        background-color: #1769ff
-                                    }
-
-                                    .elementor-social-icon-bitbucket {
-                                        background-color: #205081
-                                    }
-
-                                    .elementor-social-icon-codepen {
-                                        background-color: #000
-                                    }
-
-                                    .elementor-social-icon-delicious {
-                                        background-color: #39f
-                                    }
-
-                                    .elementor-social-icon-deviantart {
-                                        background-color: #05cc47
-                                    }
-
-                                    .elementor-social-icon-digg {
-                                        background-color: #005be2
-                                    }
-
-                                    .elementor-social-icon-dribbble {
-                                        background-color: #ea4c89
-                                    }
-
-                                    .elementor-social-icon-elementor {
-                                        background-color: #d30c5c
-                                    }
-
-                                    .elementor-social-icon-envelope {
-                                        background-color: #ea4335
-                                    }
-
-                                    .elementor-social-icon-facebook,
-                                    .elementor-social-icon-facebook-f {
-                                        background-color: #3b5998
-                                    }
-
-                                    .elementor-social-icon-flickr {
-                                        background-color: #0063dc
-                                    }
-
-                                    .elementor-social-icon-foursquare {
-                                        background-color: #2d5be3
-                                    }
-
-                                    .elementor-social-icon-free-code-camp,
-                                    .elementor-social-icon-freecodecamp {
-                                        background-color: #006400
-                                    }
-
-                                    .elementor-social-icon-github {
-                                        background-color: #333
-                                    }
-
-                                    .elementor-social-icon-gitlab {
-                                        background-color: #e24329
-                                    }
-
-                                    .elementor-social-icon-globe {
-                                        background-color: #69727d
-                                    }
-
-                                    .elementor-social-icon-google-plus,
-                                    .elementor-social-icon-google-plus-g {
-                                        background-color: #dd4b39
-                                    }
-
-                                    .elementor-social-icon-houzz {
-                                        background-color: #7ac142
-                                    }
-
-                                    .elementor-social-icon-instagram {
-                                        background-color: #262626
-                                    }
-
-                                    .elementor-social-icon-jsfiddle {
-                                        background-color: #487aa2
-                                    }
-
-                                    .elementor-social-icon-link {
-                                        background-color: #818a91
-                                    }
-
-                                    .elementor-social-icon-linkedin,
-                                    .elementor-social-icon-linkedin-in {
-                                        background-color: #0077b5
-                                    }
-
-                                    .elementor-social-icon-medium {
-                                        background-color: #00ab6b
-                                    }
-
-                                    .elementor-social-icon-meetup {
-                                        background-color: #ec1c40
-                                    }
-
-                                    .elementor-social-icon-mixcloud {
-                                        background-color: #273a4b
-                                    }
-
-                                    .elementor-social-icon-odnoklassniki {
-                                        background-color: #f4731c
-                                    }
-
-                                    .elementor-social-icon-pinterest {
-                                        background-color: #bd081c
-                                    }
-
-                                    .elementor-social-icon-product-hunt {
-                                        background-color: #da552f
-                                    }
-
-                                    .elementor-social-icon-reddit {
-                                        background-color: #ff4500
-                                    }
-
-                                    .elementor-social-icon-rss {
-                                        background-color: #f26522
-                                    }
-
-                                    .elementor-social-icon-shopping-cart {
-                                        background-color: #4caf50
-                                    }
-
-                                    .elementor-social-icon-skype {
-                                        background-color: #00aff0
-                                    }
-
-                                    .elementor-social-icon-slideshare {
-                                        background-color: #0077b5
-                                    }
-
-                                    .elementor-social-icon-snapchat {
-                                        background-color: #fffc00
-                                    }
-
-                                    .elementor-social-icon-soundcloud {
-                                        background-color: #f80
-                                    }
-
-                                    .elementor-social-icon-spotify {
-                                        background-color: #2ebd59
-                                    }
-
-                                    .elementor-social-icon-stack-overflow {
-                                        background-color: #fe7a15
-                                    }
-
-                                    .elementor-social-icon-steam {
-                                        background-color: #00adee
-                                    }
-
-                                    .elementor-social-icon-stumbleupon {
-                                        background-color: #eb4924
-                                    }
-
-                                    .elementor-social-icon-telegram {
-                                        background-color: #2ca5e0
-                                    }
-
-                                    .elementor-social-icon-threads {
-                                        background-color: #000
-                                    }
-
-                                    .elementor-social-icon-thumb-tack {
-                                        background-color: #1aa1d8
-                                    }
-
-                                    .elementor-social-icon-tripadvisor {
-                                        background-color: #589442
-                                    }
-
-                                    .elementor-social-icon-tumblr {
-                                        background-color: #35465c
-                                    }
-
-                                    .elementor-social-icon-twitch {
-                                        background-color: #6441a5
-                                    }
-
-                                    .elementor-social-icon-twitter {
-                                        background-color: #1da1f2
-                                    }
-
-                                    .elementor-social-icon-viber {
-                                        background-color: #665cac
-                                    }
-
-                                    .elementor-social-icon-vimeo {
-                                        background-color: #1ab7ea
-                                    }
-
-                                    .elementor-social-icon-vk {
-                                        background-color: #45668e
-                                    }
-
-                                    .elementor-social-icon-weibo {
-                                        background-color: #dd2430
-                                    }
-
-                                    .elementor-social-icon-weixin {
-                                        background-color: #31a918
-                                    }
-
-                                    .elementor-social-icon-whatsapp {
-                                        background-color: #25d366
-                                    }
-
-                                    .elementor-social-icon-wordpress {
-                                        background-color: #21759b
-                                    }
-
-                                    .elementor-social-icon-x-twitter {
-                                        background-color: #000
-                                    }
-
-                                    .elementor-social-icon-xing {
-                                        background-color: #026466
-                                    }
-
-                                    .elementor-social-icon-yelp {
-                                        background-color: #af0606
-                                    }
-
-                                    .elementor-social-icon-youtube {
-                                        background-color: #cd201f
-                                    }
-
-                                    .elementor-social-icon-500px {
-                                        background-color: #0099e5
-                                    }
-
-                                    .elementor-shape-rounded .elementor-icon.elementor-social-icon {
-                                        border-radius: 10%
-                                    }
-
-                                    .elementor-shape-circle .elementor-icon.elementor-social-icon {
-                                        border-radius: 50%
-                                    }
-                                </style>
-                                <div class="elementor-social-icons-wrapper elementor-grid">
-                                    <span class="elementor-grid-item">
-                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-instagram elementor-repeater-item-de598d7"
-                                            href="https://www.instagram.com/iconrocklearfl/" target="_blank">
-                                            <span class="elementor-screen-only">Instagram</span>
-                                            <svg class="e-font-icon-svg e-fab-instagram" viewBox="0 0 448 512"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
-                                                </path>
-                                            </svg> </a>
-                                    </span>
-                                    <span class="elementor-grid-item">
-                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-facebook elementor-repeater-item-df5ec86"
-                                            href="https://www.facebook.com/iconrocklearfl" target="_blank">
-                                            <span class="elementor-screen-only">Facebook</span>
-                                            <svg class="e-font-icon-svg e-fab-facebook" viewBox="0 0 512 512"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z">
-                                                </path>
-                                            </svg> </a>
-                                    </span>
-                                    <span class="elementor-grid-item">
-                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-tiktok elementor-repeater-item-484e40c"
-                                            href="https://www.tiktok.com/@iconrocklearfl?is_from_webapp=1&amp;sender_device=pc"
-                                            target="_blank">
-                                            <span class="elementor-screen-only">Tiktok</span>
-                                            <svg class="e-font-icon-svg e-fab-tiktok" viewBox="0 0 448 512"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M448,209.91a210.06,210.06,0,0,1-122.77-39.25V349.38A162.55,162.55,0,1,1,185,188.31V278.2a74.62,74.62,0,1,0,52.23,71.18V0l88,0a121.18,121.18,0,0,0,1.86,22.17h0A122.18,122.18,0,0,0,381,102.39a121.43,121.43,0,0,0,67,20.14Z">
-                                                </path>
-                                            </svg> </a>
-                                    </span>
-                                    <span class="elementor-grid-item">
-                                        <a class="elementor-icon elementor-social-icon elementor-social-icon-youtube elementor-repeater-item-06d7cc7"
-                                            href="https://www.youtube.com/channel/UCQS_OydosLMzGqhg9DGs42A"
-                                            target="_blank">
-                                            <span class="elementor-screen-only">Youtube</span>
-                                            <svg class="e-font-icon-svg e-fab-youtube" viewBox="0 0 576 512"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
-                                                </path>
-                                            </svg> </a>
-                                    </span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-4977746 e-con-full e-flex e-con e-child"
-                        data-id="4977746" data-element_type="container">
-                        <div class="elementor-element elementor-element-a9a71b3 animated-fast elementor-invisible elementor-widget elementor-widget-heading"
-                            data-id="a9a71b3" data-element_type="widget"
-                            data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-                            data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h2 class="elementor-heading-title elementor-size-default">Contact Us</h2>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-5d25d9f elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor"
-                            data-id="5d25d9f" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
-                                <p>701 Millway Ave unit 6 Vaughan Ontario L4K3S7</p>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-a0c5afd animated-fast elementor-invisible elementor-widget elementor-widget-heading"
-                            data-id="a0c5afd" data-element_type="widget"
-                            data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
-                            data-widget_type="heading.default">
-                            <div class="elementor-widget-container">
-                                <h3 class="elementor-heading-title elementor-size-default"><a
-                                        href="tel:(416) 675 6853">(416) 675 6853</a></h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="elementor-element elementor-element-3f7cd74 e-con-full e-flex e-con e-child"
-                        data-id="3f7cd74" data-element_type="container">
-                        <div class="elementor-element elementor-element-e0b3cc2 elementor-widget elementor-widget-image"
-                            data-id="e0b3cc2" data-element_type="widget" data-widget_type="image.default">
-                            <div class="elementor-widget-container">
-                                <img width="500" height="166"
-                                    src="wp-content/uploads/2024/04/657f0c1576cabbfba11854c3_Icon-Rocklear-logo-white-p-500.png"
-                                    class="attachment-large size-large wp-image-22" alt="car detailing"
-                                    srcset="https://iconrocklearfl.com/wp-content/uploads/2024/04/657f0c1576cabbfba11854c3_Icon-Rocklear-logo-white-p-500.png 500w, https://iconrocklearfl.com/wp-content/uploads/2024/04/657f0c1576cabbfba11854c3_Icon-Rocklear-logo-white-p-500-300x100.png 300w"
-                                    sizes="(max-width: 500px) 100vw, 500px" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-acfbbc0 e-flex e-con-boxed e-con e-parent"
-                data-id="acfbbc0" data-element_type="container"
-                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-2d0388d elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
-                        data-id="2d0388d" data-element_type="widget" data-widget_type="divider.default">
-                        <div class="elementor-widget-container">
-                            <div class="elementor-divider">
-                                <span class="elementor-divider-separator">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="elementor-element elementor-element-cd3649e e-flex e-con-boxed e-con e-parent"
-                data-id="cd3649e" data-element_type="container"
-                data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
-                <div class="e-con-inner">
-                    <div class="elementor-element elementor-element-44872cb e-con-full e-flex e-con e-child"
-                        data-id="44872cb" data-element_type="container">
-                        <div class="elementor-element elementor-element-f24a65b elementor-widget-mobile__width-initial elementor-widget__width-initial elementor-widget elementor-widget-text-editor"
-                            data-id="f24a65b" data-element_type="widget" data-widget_type="text-editor.default">
-                            <div class="elementor-widget-container">
-                                <p>TheArmourLab. All Rights Reserved 2024</p>
-                            </div>
-                        </div>
-                        <div class="elementor-element elementor-element-c581dd0 elementor-icon-list--layout-inline elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list"
-                            data-id="c581dd0" data-element_type="widget" data-widget_type="icon-list.default">
-                            <div class="elementor-widget-container">
-                                <link rel="stylesheet"
-                                    href="wp-content/plugins/elementor/assets/css/widget-icon-list.min.css">
-                                {{-- <ul class="elementor-icon-list-items elementor-inline-items">
-                                    <li class="elementor-icon-list-item elementor-inline-item">
-                                        <a href="privacy-policy/index.html">
-
-                                            <span class="elementor-icon-list-text">Privacy policy</span>
-                                        </a>
-                                    </li>
-                                    <li class="elementor-icon-list-item elementor-inline-item">
-                                        <a href="terms-conditions/index.html">
-
-                                            <span class="elementor-icon-list-text">Terms and Conditions</span>
-                                        </a>
-                                    </li>
-                                </ul> --}}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        @include('frontend.partials.footer')
     </div><!-- #page -->
 
     <div id="um_upload_single" style="display:none;"></div>

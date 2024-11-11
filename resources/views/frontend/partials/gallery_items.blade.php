@@ -14,7 +14,7 @@
                     </video>
                 @endif
                 @if (strpos($image->type, 'youtube') !== false)
-                <img style="height: 300px; object-fit: cover; width:100%" src="{{ Storage::url($image->path) }}"
+                <img style="height: 300px; object-fit: contain; width:100%" src="{{ Storage::url($image->path) }}"
                 alt="">
                 @endif
             </div>
