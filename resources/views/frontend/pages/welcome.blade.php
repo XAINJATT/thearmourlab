@@ -471,6 +471,10 @@
 
                     display: block;
                 }
+
+                .section-7 .column {
+               margin-top: 165px;
+            }
             }
 
             @media screen and (min-width: 769px) {
@@ -482,6 +486,8 @@
                 .elementor-widget-bdt-image-compare {
                     display: block;
                 }
+
+                
             }
         </style>
 
