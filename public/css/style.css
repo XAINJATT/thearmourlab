@@ -11012,7 +11012,7 @@ input:-internal-autofill-selected {
     height: 100vh; }
   .ttr-slider.style-2 .slider-content {
     top: auto;
-    bottom: 30px;
+    bottom: -30px;
     transform: translateX(-50%); }
     .ttr-slider.style-2 .slider-content .title {
       font-size: 110px;
@@ -11025,7 +11025,7 @@ input:-internal-autofill-selected {
       font-size: 36px;
       text-transform: uppercase;
       font-weight: 500;
-      margin-bottom: 25px;
+      margin-bottom: 15px;
       letter-spacing: 2px;
       -webkit-animation: move2 5s infinite  alternate;
       animation: move2  5s infinite  alternate; }
@@ -11096,7 +11096,7 @@ input:-internal-autofill-selected {
       font-size: 52px; } }
   @media only screen and (max-width: 575px) {
     .ttr-slider.style-2 .slider-content {
-      bottom: 60px; }
+      bottom: 0px; }
       .ttr-slider.style-2 .slider-content .title {
         font-size: 42px;
         line-height: 42px; }
