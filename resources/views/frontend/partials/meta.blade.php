@@ -24,16 +24,25 @@
     rel="stylesheet">
 
 <!-- All PLUGINS CSS ============================================= -->
-<link rel="stylesheet" href="{{ url('vendor/owl-carousel/owl.carousel.css') }}">
-<link rel="stylesheet" href="{{ url('vendor/magnific-popup/magnific-popup.min.css') }}">
-<link rel="stylesheet" href="{{ url('vendor/bootstrap-select/bootstrap-select.min.css') }}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css"
+    integrity="sha512-GqP/pjlymwlPb6Vd7KmT5YbapvowpteRq9ffvufiXYZp0YpMTtR9tI6/v3U3hFi1N9MQmXum/yBfELxoY+S1Mw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"
+    integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.2/css/bootstrap-select.min.css"
+    integrity="sha512-473INEzyQMIGYi0u3abrPNKmJQeZY9kDpT2MrkZY3Qo2wHpdRBIVZKdrFWIo8rs4ZLsYpBCzBzR29jGEw/99Ww=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 {{-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> --}}
 <!-- Font Awesome -->
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet" />
 <!-- Bootstrap 5 CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-<link rel="stylesheet" href="{{ url('vendor/swiper/swiper.min.css') }}">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.2.0/css/swiper.min.css"
+    integrity="sha512-jXiTcbR0Bo1fD009BCOo3FHIHD1bdN+ARxEXBkTD/xoQDL+zzv1CRbgUoOzWw81slbD1t6MawbtjOR3x9BB7eA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" type="text/css" href="{{ url('css/style.css?v=') . config('app.asset') }}">
 <style>
     .WidgetBackground__ContentContainer-sc-1ho7q3r-1 {

@@ -1,20 +1,31 @@
 <!-- External JavaScripts -->
-<script src="{{ url('js/jquery.min.js') }}"></script>
-<script src="{{ url('vendor/bootstrap/js/bootstrap.bundle.min.js') . config('app.asset') }}"></script>
-<script src="{{ url('vendor/bootstrap-select/bootstrap-select.min.js') . config('app.asset') }}"></script>
-<script src="{{ url('vendor/magnific-popup/magnific-popup.js') . config('app.asset') }}"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+{{-- <script src="{{ url('vendor/bootstrap/js/bootstrap.bundle.min.js') . config('app.asset') }}"></script> --}}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.2/js/bootstrap-select.min.js"
+    integrity="sha512-XGVlMoVv0uWUvlNXLTsd6m0K4u7k7FL1SZ4e56pZWjUyxduGmHyWHggcHy45jH4TjvFkiuC1LQnLmNUGnaoNpA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"
+    integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="{{ url('vendor/imagesloaded/imagesloaded.js') . config('app.asset') }}"></script>
-<script src="{{ url('vendor/owl-carousel/owl.carousel.js') . config('app.asset') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"
+    integrity="sha512-lo4YgiwkxsVIJ5mex2b+VHUKlInSK2pFtkGFRzHsAL64/ZO5vaiCPmdGP3qZq1h9MzZzghrpDP336ScWugUMTg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="{{ url('vendor/progress-bar/jquery.appear.js') . config('app.asset') }}"></script>
 <script src="{{ url('vendor/progress-bar/jquery.skillbar.js') . config('app.asset') }}"></script>
-<script src="{{ url('vendor/swiper/swiper.min.js') . config('app.asset') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.2.0/js/swiper.min.js"
+    integrity="sha512-dEcJn+6xTNTBfFsnzrF7r6P8/TkR6RxRrrisTKW6Wd+6LzedLBG6AvVB8X0tvcNYka6Csf4Vci5Isemo12apIw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="{{ asset('vendor/masonry/isotope.pkgd.min.js') . config('app.asset') }}"></script>
 <script src="{{ asset('vendor/masonry/masonry.pkgd.min.js') . config('app.asset') }}"></script>
 <script src="{{ url('js/functions.js') . config('app.asset') }}"></script>
 <script src="{{ url('js/contact.js') . config('app.asset') }}"></script>
-<!-- Bootstrap 5 JavaScript Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+
 </script>
 
 
