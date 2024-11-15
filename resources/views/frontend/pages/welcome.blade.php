@@ -93,7 +93,7 @@
             <div class="section-container container">
                 <h4 class="header-title-small">ICON</h4>
                 <hr class="hr-light" />
-                <h2 class="header-title text-white">ROCKKLEAR</h2>
+                <h2 class="header-title text-white">ROCKLEAR</h2>
                 <div class="row row-reverse">
                     <div class="col-md-12 col-lg-6 col-sm-12">
                         <h6 class="open-text text-white">
