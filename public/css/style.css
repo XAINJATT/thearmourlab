@@ -11012,7 +11012,7 @@ input:-internal-autofill-selected {
     height: 100vh; }
   .ttr-slider.style-2 .slider-content {
     top: auto;
-    bottom: 30px;
+    bottom: -30px;
     transform: translateX(-50%); }
     .ttr-slider.style-2 .slider-content .title {
       font-size: 110px;

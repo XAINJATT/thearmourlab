@@ -17,14 +17,16 @@
                     aria-expanded="false"
                     aria-label="Toggle navigation"><span></span><span></span><span></span></button>
                 <!-- Secondary Menu -->
-                <div class="secondary-menu" style=" margin-top:15px">
-                    <a href="{{ url('/login') }}" class="btn btn-outline-light">
-                        @if (auth()->check())
-                            Dashboard
-                        @else
-                            Sign in
-                        @endif
-                    </a>
+                <div class="secondary-menu" style=" margin-top:15px; display:none">
+                    @if (auth()->check())
+                        <a href="{{ url('/login') }}" class="btn btn-outline-light">
+                            @if (auth()->check())
+                                Dashboard
+                                {{-- @else
+                            Sign in --}}
+                            @endif
+                        </a>
+                    @endif
                     {{-- <a href="{{ route('frontend.live') }}" class="btn btn-primary ms-3">Track</a> --}}
                     @if (get_giveaway_status())
                         <a href="{{ route('frontend.contest') }}" class="btn btn-primary ms-3">Spin To Win</a>
@@ -43,13 +45,14 @@
                             <ul class="sub-menu">
                                 <li class="add-menu-left">
                                     <ul>
-                                        <li><a href="{{ route('frontend.CeramicCoating') }}"><span>Ceramic
-                                                    coating</span> </a></li>
+                                        <li><a href="{{ route('icon-rocklear.index') }}"><span>Icon Rocklear</span></a>
+                                        </li>
+                                        {{-- <li><a href="{{ route('frontend.CeramicCoating') }}"><span>Ceramic
+                                                    coating</span> </a></li> --}}
                                         <li><a href="{{ route('frontend.PaintProtectionFilmSimulator') }}"><span>Paint
                                                     protection film</span></a></li>
                                         <li><a href="{{ route('frontend.WindowTintSimulator') }}"><span>Window
                                                     tints</span></a></li>
-                                        <li><a href="{{ route('icon-rocklear.index') }}"><span>Icon Rocklear</span></a></li> 
                                         <!-- <li><a href="{{ url('/automotive') }}"><span>Automotive</span></a></li> -->
                                     </ul>
                                 </li>
@@ -62,6 +65,13 @@
                         <li class=""> <a href="{{ route('frontend.financing') }}"> Financing </a> </li>
                         <li class=""> <a href="{{ route('frontend.faq') }}"> FAQs </a> </li>
                         <li class=""> <a href="{{ route('frontend.about') }}"> About </a> </li>
+                        {{-- <li class="">
+                            <select name="country" id="country">
+                                <option value="Florida">🇺🇸 Florida</option>
+                                <option value="Florida">ca Florida</option>
+                            </select>
+                        </li> --}}
+
                         <!-- <li class="active"> <a href="{{ route('cart.list') }}"> Cart </a> </li> -->
                         <!-- Add this in your HTML or Blade file -->
                         {{-- <li class="active"> <a href="#"> FAQ </a> </li> --}}
@@ -73,7 +83,8 @@
                             </a>
                         </li> --}}
                         <li>
-                            <a style="font-size:20px !important;" href="{{ route('icon-rocklear.index') }}" class="flex items-center cta-primary">
+                            <a style="font-size:20px !important;" href="{{ route('icon-rocklear.index') }}"
+                                class="flex items-center cta-primary">
                                 <img class="img-fluid"
                                     src="{{ asset('images/cropped-android-chrome-512x512-1-192x192.png') }}"
                                     alt="">
@@ -87,8 +98,8 @@
                             <a href="{{ url('/login') }}" class="btn btn-outline-light">
                                 @if (auth()->check())
                                     Dashboard
-                                @else
-                                    Sign in
+                                    {{-- @else
+                                    Sign in --}}
                                 @endif
                             </a>
                         </li>

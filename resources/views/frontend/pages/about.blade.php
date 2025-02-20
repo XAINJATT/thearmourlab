@@ -50,12 +50,12 @@
                                         <h6 class="title">PPF</h6>
                                     </div>
                                     <div class="service-content">
-                                        <h6 class="title">Ceramic Coating </h6>
+                                        <h6 class="title">Window Tints </h6>
                                     </div>
                                 </div>
                                 <div class="content-right">
                                     <div class="service-content">
-                                        <h6 class="title">Window Tints</h6>
+                                        <h6 class="title">Quality</h6>
                                     </div>
                                     <div class="service-content">
                                         <h6 class="title">Durability</h6>
@@ -77,14 +77,14 @@
                         Founded in 2014 by Shawn, a visionary with a profound respect for automotive care, The Armour Lab
                         began its journey to
                         redefine vehicle protection. What started as a specialized service in Paint Protection Film (PPF)
-                        and ceramic coatings has
+                        and Icon Rocklear has
                         expanded to include premium window tinting, catering to a growing clientele seeking comprehensive
                         protection solutions
                     </div>
                     <h4>Our Growth Story</h4>
                     <p class="pb-5">
                         The Armour Lab has evolved significantly since its doors first opened. Our reputation for excellence
-                        in PPF, ceramic coatings,
+                        in PPF, Icon Rocklear,
                         and window tints has been built on a foundation of precision, durability, and aesthetic enhancement.
                         We have grown from a
                         passionate local start-up to a leading name in the industry, continuously adapting and expanding our
@@ -146,7 +146,7 @@
                         and
                         your investments. Life is hectic, accidents are unavoidable and maintaining your assets like the day
                         you
-                        bought them is practically impossible. With our team of ceramic coating experts, we are here to turn
+                        bought them is practically impossible. With our team of Icon Rocklear experts, we are here to turn
                         your everyday assets into an easy, maintainable and enjoyable investment.
                     </p>
                     <h4>

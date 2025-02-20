@@ -6,12 +6,12 @@
         $cermaic_coating_images = [
             'Icon Rocklear' => [
                 'images' => [App\Helpers\SiteHelper::get_wt_media()->toArray()],
-                'url' => route('frontend.CeramicCoating'),
+                'url' => route('icon-rocklear.index'),
             ],
-            'CERAMIC COATING' => [
-                'images' => [App\Helpers\SiteHelper::get_wt_media()->toArray()],
-                'url' => route('frontend.CeramicCoating'),
-            ],
+            // 'CERAMIC COATING' => [
+            //     'images' => [App\Helpers\SiteHelper::get_wt_media()->toArray()],
+            //     'url' => route('frontend.CeramicCoating'),
+            // ],
             'Paint Protection' => [
                 'images' => [App\Helpers\SiteHelper::get_wt_media()],
                 'url' => route('frontend.PaintProtectionFilmSimulator'),

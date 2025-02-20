@@ -15,10 +15,15 @@
             @php
 
                 $services = [
-                    'CERAMIC COATING' => [
-                        'description' => 'Our advanced ceramic coatings provide a robust layer of protection, along with an exceptional gloss that keeps vehicles looking new.',
+                    // 'CERAMIC COATING' => [
+                    //     'description' => 'Our advanced ceramic coatings provide a robust layer of protection, along with an exceptional gloss that keeps vehicles looking new.',
+                    //     'icon' => asset('images/icon/vehicle.png'),
+                    //     'url' => route('frontend.CeramicCoating'),
+                    // ],
+                    'ICON ROCKLEAR' => [
+                        'description' => 'Our advanced Icon Rocklear provide a robust layer of protection, along with an exceptional gloss that keeps vehicles looking new.',
                         'icon' => asset('images/icon/vehicle.png'),
-                        'url' => route('frontend.CeramicCoating'),
+                        'url' => route('icon-rocklear.index'),
                     ],
                     'WINDOW TINTS' => [
                         'description' => 'Beyond aesthetics, our window tinting services offer UV protection, heat reduction, and enhanced privacy.',
