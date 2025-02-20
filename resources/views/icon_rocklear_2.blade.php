@@ -1,0 +1,6164 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<!-- Mirrored from iconrocklearfl.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Nov 2024 16:59:44 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+    <!-- This site is optimized with the Yoast SEO plugin v23.4 - https://yoast.com/wordpress/plugins/seo/ -->
+    <title>Installer Finder Auto Detailing Services Icon Rocklear</title>
+    <meta name="description"
+        content="Fast &amp; Free Estimates for Auto Detailing, Ultimate Protection, and Protection Film/Wrap. Call Icon Rocklear now (416) 675 6853" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Installer Finder Auto Detailing Services Icon Rocklear" />
+    <meta property="og:description"
+        content="Fast &amp; Free Estimates for Auto Detailing, Ultimate Protection, and Protection Film/Wrap. Call Icon Rocklear now (416) 675 6853" />
+    <meta property="og:url" content="https://iconrocklearfl.com/" />
+    <meta property="og:site_name" content="Icon Rocklear" />
+    <meta property="article:modified_time" content="2024-11-08T09:05:50+00:00" />
+    <meta property="og:image"
+        content="https://iconrocklearfl.com/wp-content/uploads/2024/04/6584b56d64e171ddd2da2c4b_AdobeStock_511317693_Editorial_Use_Only-p-1600.jpeg" />
+    <meta property="og:image:width" content="1600" />
+    <meta property="og:image:height" content="1067" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    @include('frontend.partials.meta')
+
+    <link rel='stylesheet' id='remodal-css' href='wp-content/plugins/wp-google-maps-pro/lib/remodal109c.css?ver=6.6.2'
+        media='all' />
+    <link rel='stylesheet' id='remodal-default-theme-css'
+        href='wp-content/plugins/wp-google-maps-pro/lib/remodal-default-theme109c.css?ver=6.6.2' media='all' />
+    <link rel='stylesheet' id='wpgmza-marker-library-dialog-css'
+        href='wp-content/plugins/wp-google-maps-pro/css/marker-library-dialog109c.css?ver=6.6.2' media='all' />
+    <link rel='stylesheet' id='astra-theme-css-css'
+        href='wp-content/themes/astra/assets/css/minified/main.min6996.css?ver=4.7.1' media='all' />
+    <style id='astra-theme-css-inline-css'>
+        :root {
+            --ast-post-nav-space: 0;
+            --ast-container-default-xlg-padding: 2.5em;
+            --ast-container-default-lg-padding: 2.5em;
+            --ast-container-default-slg-padding: 2em;
+            --ast-container-default-md-padding: 2.5em;
+            --ast-container-default-sm-padding: 2.5em;
+            --ast-container-default-xs-padding: 2.4em;
+            --ast-container-default-xxs-padding: 1.8em;
+            --ast-code-block-background: #ECEFF3;
+            --ast-comment-inputs-background: #F9FAFB;
+            --ast-normal-container-width: 1200px;
+            --ast-narrow-container-width: 750px;
+            --ast-blog-title-font-weight: 600;
+            --ast-blog-meta-weight: 600;
+        }
+
+        html {
+            font-size: 100%;
+        }
+
+        a {
+            color: var(--ast-global-color-0);
+        }
+
+        a:hover,
+        a:focus {
+            color: var(--ast-global-color-1);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea,
+        .ast-button,
+        .ast-custom-button {
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            font-size: 1rem;
+            line-height: var(--ast-body-line-height, 1.65em);
+        }
+
+        blockquote {
+            color: var(--ast-global-color-3);
+        }
+
+        h1,
+        .entry-content h1,
+        h2,
+        .entry-content h2,
+        h3,
+        .entry-content h3,
+        h4,
+        .entry-content h4,
+        h5,
+        .entry-content h5,
+        h6,
+        .entry-content h6,
+        .site-title,
+        .site-title a {
+            font-weight: 600;
+        }
+
+        .site-title {
+            font-size: 26px;
+            font-size: 1.625rem;
+            display: block;
+        }
+
+        .site-header .site-description {
+            font-size: 15px;
+            font-size: 0.9375rem;
+            display: none;
+        }
+
+        .entry-title {
+            font-size: 20px;
+            font-size: 1.25rem;
+        }
+
+        .ast-blog-single-element.ast-taxonomy-container a {
+            font-size: 14px;
+            font-size: 0.875rem;
+        }
+
+        .ast-blog-meta-container {
+            font-size: 13px;
+            font-size: 0.8125rem;
+        }
+
+        .archive .ast-article-post .ast-article-inner,
+        .blog .ast-article-post .ast-article-inner,
+        .archive .ast-article-post .ast-article-inner:hover,
+        .blog .ast-article-post .ast-article-inner:hover {
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            border-bottom-right-radius: 6px;
+            border-bottom-left-radius: 6px;
+            overflow: hidden;
+        }
+
+        h1,
+        .entry-content h1 {
+            font-size: 36px;
+            font-size: 2.25rem;
+            font-weight: 600;
+            line-height: 1.4em;
+        }
+
+        h2,
+        .entry-content h2 {
+            font-size: 30px;
+            font-size: 1.875rem;
+            font-weight: 600;
+            line-height: 1.3em;
+        }
+
+        h3,
+        .entry-content h3 {
+            font-size: 24px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            line-height: 1.3em;
+        }
+
+        h4,
+        .entry-content h4 {
+            font-size: 20px;
+            font-size: 1.25rem;
+            line-height: 1.2em;
+            font-weight: 600;
+        }
+
+        h5,
+        .entry-content h5 {
+            font-size: 16px;
+            font-size: 1rem;
+            line-height: 1.2em;
+            font-weight: 600;
+        }
+
+        h6,
+        .entry-content h6 {
+            font-size: 16px;
+            font-size: 1rem;
+            line-height: 1.25em;
+            font-weight: 600;
+        }
+
+        ::selection {
+            background-color: var(--ast-global-color-0);
+            color: #ffffff;
+        }
+
+        body,
+        h1,
+        .entry-title a,
+        .entry-content h1,
+        h2,
+        .entry-content h2,
+        h3,
+        .entry-content h3,
+        h4,
+        .entry-content h4,
+        h5,
+        .entry-content h5,
+        h6,
+        .entry-content h6 {
+            color: var(--ast-global-color-3);
+        }
+
+        .tagcloud a:hover,
+        .tagcloud a:focus,
+        .tagcloud a.current-item{color:#ffffff;border-color:var(--ast-global-color-0);background-color:var(--ast-global-color-0);}input:focus,input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="reset"]:focus,
+        input[type="search"]:focus,
+        textarea:focus {
+            border-color: var(--ast-global-color-0);
+        }
+
+        input[type="radio"]:checked,
+        input[type=reset],
+        input[type="checkbox"]:checked,
+        input[type="checkbox"]:hover:checked,
+        input[type="checkbox"]:focus:checked,
+        input[type=range]::-webkit-slider-thumb {
+            border-color: var(--ast-global-color-0);
+            background-color: var(--ast-global-color-0);
+            box-shadow: none;
+        }
+
+        .site-footer a:hover+.post-count,
+        .site-footer a:focus+.post-count {
+            background: var(--ast-global-color-0);
+            border-color: var(--ast-global-color-0);
+        }
+
+        .single .nav-links .nav-previous,
+        .single .nav-links .nav-next {
+            color: var(--ast-global-color-0);
+        }
+
+        .entry-meta,
+        .entry-meta * {
+            line-height: 1.45;
+            color: var(--ast-global-color-0);
+            font-weight: 600;
+        }
+
+        .entry-meta a:not(.ast-button):hover,
+        .entry-meta a:not(.ast-button):hover *,
+        .entry-meta a:not(.ast-button):focus,
+        .entry-meta a:not(.ast-button):focus *,
+        .page-links>.page-link,
+        .page-links .page-link:hover,
+        .post-navigation a:hover {
+            color: var(--ast-global-color-1);
+        }
+
+        #cat option,
+        .secondary .calendar_wrap thead a,
+        .secondary .calendar_wrap thead a:visited {
+            color: var(--ast-global-color-0);
+        }
+
+        .secondary .calendar_wrap #today,
+        .ast-progress-val span {
+            background: var(--ast-global-color-0);
+        }
+
+        .secondary a:hover+.post-count,
+        .secondary a:focus+.post-count {
+            background: var(--ast-global-color-0);
+            border-color: var(--ast-global-color-0);
+        }
+
+        .calendar_wrap #today>a {
+            color: #ffffff;
+        }
+
+        .page-links .page-link,
+        .single .post-navigation a {
+            color: var(--ast-global-color-3);
+        }
+
+        .ast-search-menu-icon .search-form button.search-submit {
+            padding: 0 4px;
+        }
+
+        .ast-search-menu-icon form.search-form {
+            padding-right: 0;
+        }
+
+        .ast-search-menu-icon.slide-search input.search-field {
+            width: 0;
+        }
+
+        .ast-header-search .ast-search-menu-icon.ast-dropdown-active .search-form,
+        .ast-header-search .ast-search-menu-icon.ast-dropdown-active .search-field:focus {
+            transition: all 0.2s;
+        }
+
+        .search-form input.search-field:focus {
+            outline: none;
+        }
+
+        .ast-search-menu-icon .search-form button.search-submit:focus,
+        .ast-theme-transparent-header .ast-header-search .ast-dropdown-active .ast-icon,
+        .ast-theme-transparent-header .ast-inline-search .search-field:focus .ast-icon {
+            color: var(--ast-global-color-1);
+        }
+
+        .ast-header-search .slide-search .search-form {
+            border: 2px solid var(--ast-global-color-0);
+        }
+
+        .ast-header-search .slide-search .search-field {
+            background-color: #fff;
+        }
+
+        .ast-archive-title {
+            color: var(--ast-global-color-2);
+        }
+
+        .widget-title,
+        .widget .wp-block-heading {
+            font-size: 22px;
+            font-size: 1.375rem;
+            color: var(--ast-global-color-2);
+        }
+
+        .ast-single-post .entry-content a,
+        .ast-comment-content a:not(.ast-comment-edit-reply-wrap a) {
+            text-decoration: underline;
+        }
+
+        .ast-single-post .elementor-button-wrapper .elementor-button,
+        .ast-single-post .entry-content .uagb-tab a,
+        .ast-single-post .entry-content .uagb-ifb-cta a,
+        .ast-single-post .entry-content .uabb-module-content a,
+        .ast-single-post .entry-content .uagb-post-grid a,
+        .ast-single-post .entry-content .uagb-timeline a,
+        .ast-single-post .entry-content .uagb-toc__wrap a,
+        .ast-single-post .entry-content .uagb-taxomony-box a,
+        .ast-single-post .entry-content .woocommerce a,
+        .entry-content .wp-block-latest-posts>li>a,
+        .ast-single-post .entry-content .wp-block-file__button,
+        li.ast-post-filter-single,
+        .ast-single-post .ast-comment-content .comment-reply-link,
+        .ast-single-post .ast-comment-content .comment-edit-link {
+            text-decoration: none;
+        }
+
+        .ast-search-menu-icon.slide-search a:focus-visible:focus-visible,
+        .astra-search-icon:focus-visible,
+        #close:focus-visible,
+        a:focus-visible,
+        .ast-menu-toggle:focus-visible,
+        .site .skip-link:focus-visible,
+        .wp-block-loginout input:focus-visible,
+        .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper,
+        .ast-header-navigation-arrow:focus-visible,
+        .woocommerce .wc-proceed-to-checkout>.checkout-button:focus-visible,
+        .woocommerce .woocommerce-MyAccount-navigation ul li a:focus-visible,
+        .ast-orders-table__row .ast-orders-table__cell:focus-visible,
+        .woocommerce .woocommerce-order-details .order-again>.button:focus-visible,
+        .woocommerce .woocommerce-message a.button.wc-forward:focus-visible,
+        .woocommerce #minus_qty:focus-visible,
+        .woocommerce #plus_qty:focus-visible,
+        a#ast-apply-coupon:focus-visible,
+        .woocommerce .woocommerce-info a:focus-visible,
+        .woocommerce .astra-shop-summary-wrap a:focus-visible,
+        .woocommerce a.wc-forward:focus-visible,
+        #ast-apply-coupon:focus-visible,
+        .woocommerce-js .woocommerce-mini-cart-item a.remove:focus-visible,#close:focus-visible,.button.search-submit:focus-visible,#search_submit:focus,.normal-search:focus-visible,.ast-header-account-wrap:focus-visible{outline-style:dotted;outline-color:inherit;outline-width:thin;}input:focus,input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="reset"]:focus,
+        input[type="search"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        .wp-block-search__input:focus,
+        [data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal:focus,
+        .ast-mobile-popup-drawer.active .menu-toggle-close:focus,
+        .woocommerce-ordering select.orderby:focus,
+        #ast-scroll-top:focus,
+        #coupon_code:focus,
+        .woocommerce-page #comment:focus,
+        .woocommerce #reviews #respond input#submit:focus,
+        .woocommerce a.add_to_cart_button:focus,
+        .woocommerce .button.single_add_to_cart_button:focus,
+        .woocommerce .woocommerce-cart-form button:focus,
+        .woocommerce .woocommerce-cart-form__cart-item .quantity .qty:focus,
+        .woocommerce .woocommerce-billing-fields .woocommerce-billing-fields__field-wrapper .woocommerce-input-wrapper>.input-text:focus,
+        .woocommerce #order_comments:focus,
+        .woocommerce #place_order:focus,
+        .woocommerce .woocommerce-address-fields .woocommerce-address-fields__field-wrapper .woocommerce-input-wrapper>.input-text:focus,
+        .woocommerce .woocommerce-MyAccount-content form button:focus,
+        .woocommerce .woocommerce-MyAccount-content .woocommerce-EditAccountForm .woocommerce-form-row .woocommerce-Input.input-text:focus,
+        .woocommerce .ast-woocommerce-container .woocommerce-pagination ul.page-numbers li a:focus,
+        body #content .woocommerce form .form-row .select2-container--default .select2-selection--single:focus,
+        #ast-coupon-code:focus,
+        .woocommerce.woocommerce-js .quantity input[type=number]:focus,
+        .woocommerce-js .woocommerce-mini-cart-item .quantity input[type=number]:focus,
+        .woocommerce p#ast-coupon-trigger:focus {
+            border-style: dotted;
+            border-color: inherit;
+            border-width: thin;
+        }
+
+        input {
+            outline: none;
+        }
+
+        .ast-logo-title-inline .site-logo-img {
+            padding-right: 1em;
+        }
+
+        body .ast-oembed-container * {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            left: 0;
+        }
+
+        body .wp-block-embed-pocket-casts .ast-oembed-container * {
+            position: unset;
+        }
+
+        .ast-single-post-featured-section+article {
+            margin-top: 2em;
+        }
+
+        .site-content .ast-single-post-featured-section img {
+            width: 100%;
+            overflow: hidden;
+            object-fit: cover;
+        }
+
+        .ast-separate-container .site-content .ast-single-post-featured-section+article {
+            margin-top: -80px;
+            z-index: 9;
+            position: relative;
+            border-radius: 4px;
+        }
+
+        @media (min-width: 922px) {
+            .ast-no-sidebar .site-content .ast-article-image-container--wide {
+                margin-left: -120px;
+                margin-right: -120px;
+                max-width: unset;
+                width: unset;
+            }
+
+            .ast-left-sidebar .site-content .ast-article-image-container--wide,
+            .ast-right-sidebar .site-content .ast-article-image-container--wide {
+                margin-left: -10px;
+                margin-right: -10px;
+            }
+
+            .site-content .ast-article-image-container--full {
+                margin-left: calc(-50vw + 50%);
+                margin-right: calc(-50vw + 50%);
+                max-width: 100vw;
+                width: 100vw;
+            }
+
+            .ast-left-sidebar .site-content .ast-article-image-container--full,
+            .ast-right-sidebar .site-content .ast-article-image-container--full {
+                margin-left: -10px;
+                margin-right: -10px;
+                max-width: inherit;
+                width: auto;
+            }
+        }
+
+        .site>.ast-single-related-posts-container {
+            margin-top: 0;
+        }
+
+        @media (min-width: 922px) {
+            .ast-desktop .ast-container--narrow {
+                max-width: var(--ast-narrow-container-width);
+                margin: 0 auto;
+            }
+        }
+
+        .ast-page-builder-template .hentry {
+            margin: 0;
+        }
+
+        .ast-page-builder-template .site-content>.ast-container {
+            max-width: 100%;
+            padding: 0;
+        }
+
+        .ast-page-builder-template .site .site-content #primary {
+            padding: 0;
+            margin: 0;
+        }
+
+        .ast-page-builder-template .no-results {
+            text-align: center;
+            margin: 4em auto;
+        }
+
+        .ast-page-builder-template .ast-pagination {
+            padding: 2em;
+        }
+
+        .ast-page-builder-template .entry-header.ast-no-title.ast-no-thumbnail {
+            margin-top: 0;
+        }
+
+        .ast-page-builder-template .entry-header.ast-header-without-markup {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .ast-page-builder-template .entry-header.ast-no-title.ast-no-meta {
+            margin-bottom: 0;
+        }
+
+        .ast-page-builder-template.single .post-navigation {
+            padding-bottom: 2em;
+        }
+
+        .ast-page-builder-template.single-post .site-content>.ast-container {
+            max-width: 100%;
+        }
+
+        .ast-page-builder-template .entry-header {
+            margin-top: 2em;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .ast-page-builder-template .ast-archive-description {
+            margin: 2em auto 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        .ast-page-builder-template .ast-row {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .single.ast-page-builder-template .entry-header+.entry-content,
+        .single.ast-page-builder-template .ast-single-entry-banner+.site-content article .entry-content {
+            margin-bottom: 2em;
+        }
+
+        @media(min-width: 921px) {
+
+            .ast-page-builder-template.archive.ast-right-sidebar .ast-row article,
+            .ast-page-builder-template.archive.ast-left-sidebar .ast-row article {
+                padding-left: 0;
+
+                padding-right: 0;}}input[type="text"],
+                input[type="number"],
+                input[type="email"],
+                input[type="url"],
+                input[type="password"],
+                input[type="search"],
+                input[type=reset],
+                input[type=tel],
+                input[type=date],
+                select,
+                textarea {
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    width: 100%;
+                    padding: 12px 16px;
+                    border-radius: 4px;
+
+                    box-shadow:0px 1px 2px 0px rgba(0,0,0,0.05);color:var(--ast-form-input-text,#475569);}input[type="text"],
+                    input[type="number"],
+                    input[type="email"],
+                    input[type="url"],
+                    input[type="password"],
+                    input[type="search"],
+                    input[type=reset],
+                    input[type=tel],
+                    input[type=date],
+                    select {
+                        height: 40px;
+                    }
+
+                    input[type="date"] {
+                        border-width: 1px;
+                        border-style: solid;
+                        border-color: var(--ast-border-color);
+                    }
+
+                    input[type="text"]:focus,
+                    input[type="number"]:focus,
+                    input[type="email"]:focus,
+                    input[type="url"]:focus,
+                    input[type="password"]:focus,
+                    input[type="search"]:focus,
+                    input[type=reset]:focus,
+                    input[type="tel"]:focus,
+                    input[type="date"]:focus,
+                    select:focus,
+                    textarea:focus {
+                        border-color: #046BD2;
+                        box-shadow: none;
+                        outline: none;
+                        color: var(--ast-form-input-focus-text, #475569);
+                    }
+
+                    label,
+                    legend {
+                        color: #111827;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 20px;
+                    }
+
+                    select {
+
+                        padding:6px 10px;}fieldset{padding:30px;border-radius:4px;}button,.ast-button,.button,input[type="button"],
+                        input[type="reset"],
+                        input[type="submit"] {
+                            border-radius: 4px;
+                            box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+                        }
+
+                        :root {
+                            --ast-comment-inputs-background: #FFF;
+                        }
+
+                        ::placeholder {
+                            color: var(--ast-form-field-color, #9CA3AF);
+                        }
+
+                        ::-ms-input-placeholder {
+                            color: var(--ast-form-field-color, #9CA3AF);
+                        }
+
+                        @media (max-width:921.9px) {
+                            #ast-desktop-header {
+                                display: none;
+                            }
+                        }
+
+                        @media (min-width:922px) {
+                            #ast-mobile-header {
+                                display: none;
+                            }
+                        }
+
+                        .wp-block-buttons.aligncenter {
+                            justify-content: center;
+                        }
+
+                        @media (max-width:921px) {
+
+                            .ast-theme-transparent-header #primary,
+                            .ast-theme-transparent-header #secondary {
+                                padding: 0;
+                            }
+                        }
+
+                        @media (max-width:921px) {
+                            .ast-plain-container.ast-no-sidebar #primary {
+                                padding: 0;
+                            }
+                        }
+
+                        .ast-plain-container.ast-no-sidebar #primary {
+                            margin-top: 0;
+                            margin-bottom: 0;
+                        }
+
+                        .wp-block-button.is-style-outline .wp-block-button__link {
+                            border-color: var(--ast-global-color-0);
+                        }
+
+                        div.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color),
+                        div.wp-block-button.wp-block-button__link.is-style-outline:not(.has-text-color) {
+                            color: var(--ast-global-color-0);
+                        }
+
+                        .wp-block-button.is-style-outline .wp-block-button__link:hover,
+                        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:focus,
+                        .wp-block-buttons .wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color):hover,
+                        .wp-block-buttons .wp-block-button.wp-block-button__link.is-style-outline:not(.has-text-color):hover {
+                            color: #ffffff;
+                            background-color: var(--ast-global-color-1);
+                            border-color: var(--ast-global-color-1);
+                        }
+
+                        .post-page-numbers.current .page-link,
+                        .ast-pagination .page-numbers.current {
+                            color: #ffffff;
+                            border-color: var(--ast-global-color-0);
+                            background-color: var(--ast-global-color-0);
+                        }
+
+                        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.wp-element-button,
+                        .ast-outline-button,
+                        .wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button {
+                            border-color: var(--ast-global-color-0);
+                            font-family: inherit;
+                            font-weight: 500;
+                            font-size: 16px;
+                            font-size: 1rem;
+                            line-height: 1em;
+                            padding-top: 13px;
+                            padding-right: 30px;
+                            padding-bottom: 13px;
+                            padding-left: 30px;
+                        }
+
+                        .wp-block-buttons .wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color),
+                        .wp-block-buttons .wp-block-button.wp-block-button__link.is-style-outline:not(.has-text-color),
+                        .ast-outline-button {
+                            color: var(--ast-global-color-0);
+                        }
+
+                        .wp-block-button.is-style-outline .wp-block-button__link:hover,
+                        .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link:focus,
+                        .wp-block-buttons .wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color):hover,
+                        .wp-block-buttons .wp-block-button.wp-block-button__link.is-style-outline:not(.has-text-color):hover,
+                        .ast-outline-button:hover,
+                        .ast-outline-button:focus,
+                        .wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button:hover,
+                        .wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button:focus {
+                            color: #ffffff;
+                            background-color: var(--ast-global-color-1);
+                            border-color: var(--ast-global-color-1);
+                        }
+
+                        .ast-single-post .entry-content a.ast-outline-button,
+                        .ast-single-post .entry-content .is-style-outline>.wp-block-button__link {
+                            text-decoration: none;
+                        }
+
+                        .uagb-buttons-repeater.ast-outline-button {
+                            border-radius: 9999px;
+                        }
+
+                        @media (max-width:921px) {
+
+                            .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.wp-element-button,
+                            .ast-outline-button,
+                            .wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button {
+                                padding-top: 12px;
+                                padding-right: 28px;
+                                padding-bottom: 12px;
+                                padding-left: 28px;
+                            }
+                        }
+
+                        @media (max-width:544px) {
+
+                            .wp-block-buttons .wp-block-button.is-style-outline .wp-block-button__link.wp-element-button,
+                            .ast-outline-button,
+                            .wp-block-uagb-buttons-child .uagb-buttons-repeater.ast-outline-button {
+                                padding-top: 10px;
+                                padding-right: 24px;
+                                padding-bottom: 10px;
+                                padding-left: 24px;
+                            }
+                        }
+
+                        .entry-content[ast-blocks-layout]>figure {
+                            margin-bottom: 1em;
+                        }
+
+                        h1.widget-title {
+                            font-weight: 600;
+                        }
+
+                        h2.widget-title {
+                            font-weight: 600;
+                        }
+
+                        h3.widget-title {
+                            font-weight: 600;
+                        }
+
+                        .content-area .elementor-widget-theme-post-content h1,
+                        .content-area .elementor-widget-theme-post-content h2,
+                        .content-area .elementor-widget-theme-post-content h3,
+                        .content-area .elementor-widget-theme-post-content h4,
+                        .content-area .elementor-widget-theme-post-content h5,
+                        .content-area .elementor-widget-theme-post-content h6 {
+                            margin-top: 1.5em;
+                            margin-bottom: calc(0.3em + 10px);
+                        }
+
+                        #page {
+                            display: flex;
+                            flex-direction: column;
+                            min-height: 100vh;
+                        }
+
+                        .ast-404-layout-1 h1.page-title {
+                            color: var(--ast-global-color-2);
+                        }
+
+                        .single .post-navigation a {
+                            line-height: 1em;
+                            height: inherit;
+                        }
+
+                        .error-404 .page-sub-title {
+                            font-size: 1.5rem;
+                            font-weight: inherit;
+                        }
+
+                        .search .site-content .content-area .search-form {
+                            margin-bottom: 0;
+                        }
+
+                        #page .site-content {
+                            flex-grow: 1;
+                        }
+
+                        .widget {
+                            margin-bottom: 1.25em;
+                        }
+
+                        #secondary li {
+                            line-height: 1.5em;
+                        }
+
+                        #secondary .wp-block-group h2 {
+                            margin-bottom: 0.7em;
+                        }
+
+                        #secondary h2 {
+                            font-size: 1.7rem;
+                        }
+
+                        .ast-separate-container .ast-article-post,
+                        .ast-separate-container .ast-article-single,
+                        .ast-separate-container .comment-respond {
+                            padding: 3em;
+                        }
+
+                        .ast-separate-container .ast-article-single .ast-article-single {
+                            padding: 0;
+                        }
+
+                        .ast-article-single .wp-block-post-template-is-layout-grid {
+                            padding-left: 0;
+                        }
+
+                        .ast-separate-container .comments-title,
+                        .ast-narrow-container .comments-title {
+                            padding: 1.5em 2em;
+                        }
+
+                        .ast-page-builder-template .comment-form-textarea,
+                        .ast-comment-formwrap .ast-grid-common-col {
+                            padding: 0;
+                        }
+
+                        .ast-comment-formwrap {
+                            padding: 0;
+                            display: inline-flex;
+                            column-gap: 20px;
+                            width: 100%;
+                            margin-left: 0;
+                            margin-right: 0;
+                        }
+
+                        .comments-area textarea#comment:focus,
+                        .comments-area textarea#comment:active,
+                        .comments-area .ast-comment-formwrap input[type="text"]:focus,
+                        .comments-area .ast-comment-formwrap input[type="text"]:active {
+                            box-shadow: none;
+                            outline: none;
+                        }
+
+                        .archive.ast-page-builder-template .entry-header {
+                            margin-top: 2em;
+                        }
+
+                        .ast-page-builder-template .ast-comment-formwrap {
+                            width: 100%;
+                        }
+
+                        .entry-title {
+                            margin-bottom: 0.6em;
+                        }
+
+                        .ast-archive-description p {
+                            font-size: inherit;
+                            font-weight: inherit;
+                            line-height: inherit;
+                        }
+
+                        .ast-separate-container .ast-comment-list li.depth-1,
+                        .hentry {
+                            margin-bottom: 1.5em;
+                        }
+
+                        .site-content section.ast-archive-description {
+                            margin-bottom: 2em;
+                        }
+
+                        @media (min-width:921px) {
+
+                            .ast-left-sidebar.ast-page-builder-template #secondary,
+                            .archive.ast-right-sidebar.ast-page-builder-template .site-main {
+                                padding-left: 20px;
+                                padding-right: 20px;
+                            }
+                        }
+
+                        @media (max-width:544px) {
+                            .ast-comment-formwrap.ast-row {
+                                column-gap: 10px;
+                                display: inline-block;
+                            }
+
+                            #ast-commentform .ast-grid-common-col {
+                                position: relative;
+                                width: 100%;
+                            }
+                        }
+
+                        @media (min-width:1201px) {
+
+                            .ast-separate-container .ast-article-post,
+                            .ast-separate-container .ast-article-single,
+                            .ast-separate-container .ast-author-box,
+                            .ast-separate-container .ast-404-layout-1,
+                            .ast-separate-container .no-results {
+                                padding: 3em;
+                            }
+                        }
+
+                        .content-area .elementor-widget-theme-post-content h1,
+                        .content-area .elementor-widget-theme-post-content h2,
+                        .content-area .elementor-widget-theme-post-content h3,
+                        .content-area .elementor-widget-theme-post-content h4,
+                        .content-area .elementor-widget-theme-post-content h5,
+                        .content-area .elementor-widget-theme-post-content h6 {
+                            margin-top: 1.5em;
+                            margin-bottom: calc(0.3em + 10px);
+                        }
+
+                        .elementor-loop-container .e-loop-item,
+                        .elementor-loop-container .ast-separate-container .ast-article-post,
+                        .elementor-loop-container .ast-separate-container .ast-article-single,
+                        .elementor-loop-container .ast-separate-container .comment-respond {
+                            padding: 0px;
+                        }
+
+                        @media (max-width:921px) {
+
+                            .ast-separate-container #primary,
+                            .ast-separate-container #secondary {
+                                padding: 1.5em 0;
+                            }
+
+                            #primary,
+                            #secondary {
+                                padding: 1.5em 0;
+                                margin: 0;
+                            }
+
+                            .ast-left-sidebar #content>.ast-container {
+                                display: flex;
+                                flex-direction: column-reverse;
+                                width: 100%;
+                            }
+                        }
+
+                        @media (min-width:922px) {
+
+                            .ast-separate-container.ast-right-sidebar #primary,
+                            .ast-separate-container.ast-left-sidebar #primary {
+                                border: 0;
+                            }
+
+                            .search-no-results.ast-separate-container #primary {
+                                margin-bottom: 4em;
+                            }
+                        }
+
+                        .elementor-button-wrapper .elementor-button {
+                            border-style: solid;
+                            text-decoration: none;
+                            border-top-width: 0;
+                            border-right-width: 0;
+                            border-left-width: 0;
+                            border-bottom-width: 0;
+                        }
+
+                        body .elementor-button.elementor-size-sm,
+                        body .elementor-button.elementor-size-xs,
+                        body .elementor-button.elementor-size-md,
+                        body .elementor-button.elementor-size-lg,
+                        body .elementor-button.elementor-size-xl,
+                        body .elementor-button {
+                            padding-top: 15px;
+                            padding-right: 30px;
+                            padding-bottom: 15px;
+                            padding-left: 30px;
+                        }
+
+                        @media (max-width:921px) {
+
+                            .elementor-button-wrapper .elementor-button.elementor-size-sm,
+                            .elementor-button-wrapper .elementor-button.elementor-size-xs,
+                            .elementor-button-wrapper .elementor-button.elementor-size-md,
+                            .elementor-button-wrapper .elementor-button.elementor-size-lg,
+                            .elementor-button-wrapper .elementor-button.elementor-size-xl,
+                            .elementor-button-wrapper .elementor-button {
+                                padding-top: 14px;
+                                padding-right: 28px;
+                                padding-bottom: 14px;
+                                padding-left: 28px;
+                            }
+                        }
+
+                        @media (max-width:544px) {
+
+                            .elementor-button-wrapper .elementor-button.elementor-size-sm,
+                            .elementor-button-wrapper .elementor-button.elementor-size-xs,
+                            .elementor-button-wrapper .elementor-button.elementor-size-md,
+                            .elementor-button-wrapper .elementor-button.elementor-size-lg,
+                            .elementor-button-wrapper .elementor-button.elementor-size-xl,
+                            .elementor-button-wrapper .elementor-button {
+                                padding-top: 12px;
+                                padding-right: 24px;
+                                padding-bottom: 12px;
+                                padding-left: 24px;
+                            }
+                        }
+
+                        .elementor-button-wrapper .elementor-button {
+                            border-color: var(--ast-global-color-0);
+                            background-color: var(--ast-global-color-0);
+                        }
+
+                        .elementor-button-wrapper .elementor-button:hover,
+                        .elementor-button-wrapper .elementor-button:focus {
+                            color: #ffffff;
+                            background-color: var(--ast-global-color-1);
+                            border-color: var(--ast-global-color-1);
+                        }
+
+                        .wp-block-button .wp-block-button__link,
+                        .elementor-button-wrapper .elementor-button {
+                            color: #ffffff;
+                        }
+
+                        .elementor-button-wrapper .elementor-button {
+                            font-weight: 500;
+                            font-size: 16px;
+                            font-size: 1rem;
+                            line-height: 1em;
+                        }
+
+                        body .elementor-button.elementor-size-sm,
+                        body .elementor-button.elementor-size-xs,
+                        body .elementor-button.elementor-size-md,
+                        body .elementor-button.elementor-size-lg,
+                        body .elementor-button.elementor-size-xl,
+                        body .elementor-button {
+                            font-size: 16px;
+                            font-size: 1rem;
+                        }
+
+                        .wp-block-button .wp-block-button__link:hover,
+                        .wp-block-button .wp-block-button__link:focus {
+                            color: #ffffff;
+                            background-color: var(--ast-global-color-1);
+                            border-color: var(--ast-global-color-1);
+                        }
+
+                        .elementor-widget-heading h1.elementor-heading-title {
+                            line-height: 1.4em;
+                        }
+
+                        .elementor-widget-heading h2.elementor-heading-title {
+                            line-height: 1.3em;
+                        }
+
+                        .elementor-widget-heading h3.elementor-heading-title {
+                            line-height: 1.3em;
+                        }
+
+                        .elementor-widget-heading h4.elementor-heading-title {
+                            line-height: 1.2em;
+                        }
+
+                        .elementor-widget-heading h5.elementor-heading-title {
+                            line-height: 1.2em;
+                        }
+
+                        .elementor-widget-heading h6.elementor-heading-title {
+                            line-height: 1.25em;
+                        }
+
+                        .wp-block-button .wp-block-button__link,
+                        .wp-block-search .wp-block-search__button,
+                        body .wp-block-file .wp-block-file__button {
+                            border-color: var(--ast-global-color-0);
+                            background-color: var(--ast-global-color-0);
+                            color: #ffffff;
+                            font-family: inherit;
+                            font-weight: 500;
+                            line-height: 1em;
+                            font-size: 16px;
+                            font-size: 1rem;
+                            padding-top: 15px;
+                            padding-right: 30px;
+                            padding-bottom: 15px;
+                            padding-left: 30px;
+                        }
+
+                        .ast-single-post .entry-content .wp-block-button .wp-block-button__link,
+                        .ast-single-post .entry-content .wp-block-search .wp-block-search__button,
+                        body .entry-content .wp-block-file .wp-block-file__button {
+                            text-decoration: none;
+                        }
+
+                        @media (max-width:921px) {
+
+                            .wp-block-button .wp-block-button__link,
+                            .wp-block-search .wp-block-search__button,
+                            body .wp-block-file .wp-block-file__button {
+                                padding-top: 14px;
+                                padding-right: 28px;
+                                padding-bottom: 14px;
+                                padding-left: 28px;
+                            }
+                        }
+
+                        @media (max-width:544px) {
+
+                            .wp-block-button .wp-block-button__link,
+                            .wp-block-search .wp-block-search__button,
+                            body .wp-block-file .wp-block-file__button{padding-top:12px;padding-right:24px;padding-bottom:12px;padding-left:24px;}}.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],
+                            input[type="submit"],
+                            input[type="reset"],
+                            #comments .submit,
+                            .search .search-submit,form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button,
+                            body .wp-block-file .wp-block-file__button,
+                            .search .search-submit,
+                            .woocommerce-js a.button,
+                            .woocommerce button.button,
+                            .woocommerce .woocommerce-message a.button,
+                            .woocommerce #respond input#submit.alt,
+                            .woocommerce input.button.alt,
+                            .woocommerce input.button,
+                            .woocommerce input.button:disabled,
+                            .woocommerce input.button:disabled[disabled],
+                            .woocommerce input.button:disabled:hover,
+                            .woocommerce input.button:disabled[disabled]:hover,
+                            .woocommerce #respond input#submit,
+                            .woocommerce button.button.alt.disabled,
+                            .wc-block-grid__products .wc-block-grid__product .wp-block-button__link,.wc-block-grid__product-onsale,[CLASS*="wc-block"] button,
+                            .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons .button:not(.checkout):not(.ast-continue-shopping),
+                            .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons a.checkout,
+                            .woocommerce button.button.alt.disabled.wc-variation-selection-needed,[CLASS*="wc-block"] .wc-block-components-button {
+                                border-style: solid;
+                                border-top-width: 0;
+                                border-right-width: 0;
+                                border-left-width: 0;
+                                border-bottom-width: 0;
+                                color: #ffffff;
+                                border-color: var(--ast-global-color-0);
+                                background-color: var(--ast-global-color-0);
+                                padding-top: 15px;
+                                padding-right: 30px;
+                                padding-bottom: 15px;
+                                padding-left: 30px;
+                                font-family: inherit;
+                                font-weight: 500;
+                                font-size: 16px;
+                                font-size: 1rem;
+                                line-height: 1em;
+                            }
+
+                            button:focus,
+                            .menu-toggle:hover,
+                            button:hover,
+                            .ast-button:hover,
+                            .ast-custom-button:hover .button:hover,
+                            .ast-custom-button:hover ,input[type=reset]:hover,input[type=reset]:focus,input#submit:hover,input#submit:focus,input[type="button"]:hover,
+                            input[type="button"]:focus,
+                            input[type="submit"]:hover,
+                            input[type="submit"]:focus,
+                            form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button:hover,form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button:focus,
+                            body .wp-block-file .wp-block-file__button:hover,
+                            body .wp-block-file .wp-block-file__button:focus,
+                            .woocommerce-js a.button:hover,
+                            .woocommerce button.button:hover,
+                            .woocommerce .woocommerce-message a.button:hover,
+                            .woocommerce #respond input#submit:hover,
+                            .woocommerce #respond input#submit.alt:hover,
+                            .woocommerce input.button.alt:hover,
+                            .woocommerce input.button:hover,
+                            .woocommerce button.button.alt.disabled:hover,
+                            .wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover,[CLASS*="wc-block"] button:hover,
+                            .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons .button:not(.checkout):not(.ast-continue-shopping):hover,
+                            .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons a.checkout:hover,
+                            .woocommerce button.button.alt.disabled.wc-variation-selection-needed:hover,[CLASS*="wc-block"] .wc-block-components-button:hover,[CLASS*="wc-block"] .wc-block-components-button:focus{color:#ffffff;background-color:var(--ast-global-color-1);border-color:var(--ast-global-color-1);}form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button.has-icon {
+                                padding-top: calc(15px - 3px);
+                                padding-right: calc(30px - 3px);
+                                padding-bottom: calc(15px - 3px);
+                                padding-left: calc(30px - 3px);
+                            }
+
+                            @media (max-width:921px){.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],
+                            input[type="submit"],
+                            input[type="reset"],
+                            #comments .submit,
+                            .search .search-submit,form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button,
+                            body .wp-block-file .wp-block-file__button,
+                            .search .search-submit,
+                            .woocommerce-js a.button,
+                            .woocommerce button.button,
+                            .woocommerce .woocommerce-message a.button,
+                            .woocommerce #respond input#submit.alt,
+                            .woocommerce input.button.alt,
+                            .woocommerce input.button,
+                            .woocommerce input.button:disabled,
+                            .woocommerce input.button:disabled[disabled],
+                            .woocommerce input.button:disabled:hover,
+                            .woocommerce input.button:disabled[disabled]:hover,
+                            .woocommerce #respond input#submit,
+                            .woocommerce button.button.alt.disabled,
+                            .wc-block-grid__products .wc-block-grid__product .wp-block-button__link,.wc-block-grid__product-onsale,[CLASS*="wc-block"] button,
+                            .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons .button:not(.checkout):not(.ast-continue-shopping),
+                            .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons a.checkout,
+                            .woocommerce button.button.alt.disabled.wc-variation-selection-needed,[CLASS*="wc-block"] .wc-block-components-button {
+                                padding-top: 14px;
+                                padding-right: 28px;
+                                padding-bottom: 14px;
+                                padding-left: 28px;
+                            }
+                        }
+
+                        @media (max-width:544px){.menu-toggle,button,.ast-button,.ast-custom-button,.button,input#submit,input[type="button"],
+                        input[type="submit"],
+                        input[type="reset"],
+                        #comments .submit,
+                        .search .search-submit,form[CLASS*="wp-block-search__"].wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button,
+                        body .wp-block-file .wp-block-file__button,
+                        .search .search-submit,
+                        .woocommerce-js a.button,
+                        .woocommerce button.button,
+                        .woocommerce .woocommerce-message a.button,
+                        .woocommerce #respond input#submit.alt,
+                        .woocommerce input.button.alt,
+                        .woocommerce input.button,
+                        .woocommerce input.button:disabled,
+                        .woocommerce input.button:disabled[disabled],
+                        .woocommerce input.button:disabled:hover,
+                        .woocommerce input.button:disabled[disabled]:hover,
+                        .woocommerce #respond input#submit,
+                        .woocommerce button.button.alt.disabled,
+                        .wc-block-grid__products .wc-block-grid__product .wp-block-button__link,.wc-block-grid__product-onsale,[CLASS*="wc-block"] button,
+                        .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons .button:not(.checkout):not(.ast-continue-shopping),
+                        .woocommerce-js .astra-cart-drawer .astra-cart-drawer-content .woocommerce-mini-cart__buttons a.checkout,
+                        .woocommerce button.button.alt.disabled.wc-variation-selection-needed,[CLASS*="wc-block"] .wc-block-components-button {
+                            padding-top: 12px;
+                            padding-right: 24px;
+                            padding-bottom: 12px;
+                            padding-left: 24px;
+                        }
+                    }
+
+                    @media (max-width:921px) {
+                        .ast-mobile-header-stack .main-header-bar .ast-search-menu-icon {
+                            display: inline-block;
+                        }
+
+                        .ast-header-break-point.ast-header-custom-item-outside .ast-mobile-header-stack .main-header-bar .ast-search-icon {
+                            margin: 0;
+                        }
+
+                        .ast-comment-avatar-wrap img {
+                            max-width: 2.5em;
+                        }
+
+                        .ast-comment-meta {
+                            padding: 0 1.8888em 1.3333em;
+                        }
+                    }
+
+                    @media (min-width:544px) {
+                        .ast-container {
+                            max-width: 100%;
+                        }
+                    }
+
+                    @media (max-width:544px) {
+
+                        .ast-separate-container .ast-article-post,
+                        .ast-separate-container .ast-article-single,
+                        .ast-separate-container .comments-title,
+                        .ast-separate-container .ast-archive-description {
+                            padding: 1.5em 1em;
+                        }
+
+                        .ast-separate-container #content .ast-container {
+                            padding-left: 0.54em;
+                            padding-right: 0.54em;
+                        }
+
+                        .ast-separate-container .ast-comment-list .bypostauthor {
+                            padding: .5em;
+                        }
+
+                        .ast-search-menu-icon.ast-dropdown-active .search-field {
+                            width: 170px;
+                        }
+                    }
+
+                    .ast-separate-container {
+                        background-color: var(--ast-global-color-4);
+                        ;
+                    }
+
+                    @media (max-width:921px) {
+                        .site-title {
+                            display: block;
+                        }
+
+                        .site-header .site-description {
+                            display: none;
+                        }
+
+                        h1,
+                        .entry-content h1 {
+                            font-size: 30px;
+                        }
+
+                        h2,
+                        .entry-content h2 {
+                            font-size: 25px;
+                        }
+
+                        h3,
+                        .entry-content h3 {
+                            font-size: 20px;
+                        }
+                    }
+
+                    @media (max-width:544px) {
+                        .site-title {
+                            display: block;
+                        }
+
+                        .site-header .site-description {
+                            display: none;
+                        }
+
+                        h1,
+                        .entry-content h1 {
+                            font-size: 30px;
+                        }
+
+                        h2,
+                        .entry-content h2 {
+                            font-size: 25px;
+                        }
+
+                        h3,
+                        .entry-content h3 {
+                            font-size: 20px;
+                        }
+                    }
+
+                    @media (max-width:921px) {
+                        html {
+                            font-size: 91.2%;
+                        }
+                    }
+
+                    @media (max-width:544px) {
+                        html {
+                            font-size: 91.2%;
+                        }
+                    }
+
+                    @media (min-width:922px) {
+                        .ast-container {
+                            max-width: 1240px;
+                        }
+                    }
+
+                    @media (min-width:922px) {
+                        .site-content .ast-container {
+                            display: flex;
+                        }
+                    }
+
+                    @media (max-width:921px) {
+                        .site-content .ast-container {
+                            flex-direction: column;
+                        }
+                    }
+
+                    @media (min-width:922px) {
+                        .single-post .site-content>.ast-container {
+                            max-width: 1920px;
+                        }
+                    }
+
+                    @media (min-width:922px) {
+
+                        .main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu:hover>.sub-menu,
+                        .main-header-menu .sub-menu .menu-item.ast-left-align-sub-menu.focus>.sub-menu {
+                            margin-left: -0px;
+                        }
+                    }
+
+                    .entry-content li>p {
+                        margin-bottom: 0;
+                    }
+
+                    .site .comments-area {
+                        padding-bottom: 2em;
+                        margin-top: 2em;
+                    }
+
+                    .wp-block-file {
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                    }
+
+                    .wp-block-pullquote {
+                        border: none;
+                    }
+
+                    .wp-block-pullquote blockquote::before {
+                        content: "\201D";
+                        font-family: "Helvetica", sans-serif;
+                        display: flex;
+                        transform: rotate(180deg);
+                        font-size: 6rem;
+                        font-style: normal;
+                        line-height: 1;
+                        font-weight: bold;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .has-text-align-right>blockquote::before {
+                        justify-content: flex-start;
+                    }
+
+                    .has-text-align-left>blockquote::before {
+                        justify-content: flex-end;
+                    }
+
+                    figure.wp-block-pullquote.is-style-solid-color blockquote {
+                        max-width: 100%;
+                        text-align: inherit;
+                    }
+
+                    html body {
+                        --wp--custom--ast-default-block-top-padding: 3em;
+                        --wp--custom--ast-default-block-right-padding: 3em;
+                        --wp--custom--ast-default-block-bottom-padding: 3em;
+                        --wp--custom--ast-default-block-left-padding: 3em;
+                        --wp--custom--ast-container-width: 1200px;
+                        --wp--custom--ast-content-width-size: 1200px;
+                        --wp--custom--ast-wide-width-size: calc(1200px + var(--wp--custom--ast-default-block-left-padding) + var(--wp--custom--ast-default-block-right-padding));
+                    }
+
+                    .ast-narrow-container {
+                        --wp--custom--ast-content-width-size: 750px;
+                        --wp--custom--ast-wide-width-size: 750px;
+                    }
+
+                    @media(max-width: 921px) {
+                        html body {
+                            --wp--custom--ast-default-block-top-padding: 3em;
+                            --wp--custom--ast-default-block-right-padding: 2em;
+                            --wp--custom--ast-default-block-bottom-padding: 3em;
+                            --wp--custom--ast-default-block-left-padding: 2em;
+                        }
+                    }
+
+                    @media(max-width: 544px) {
+                        html body {
+                            --wp--custom--ast-default-block-top-padding: 3em;
+                            --wp--custom--ast-default-block-right-padding: 1.5em;
+                            --wp--custom--ast-default-block-bottom-padding: 3em;
+                            --wp--custom--ast-default-block-left-padding: 1.5em;
+                        }
+                    }
+
+                    .entry-content>.wp-block-group,
+                    .entry-content>.wp-block-cover,
+                    .entry-content>.wp-block-columns {
+                        padding-top: var(--wp--custom--ast-default-block-top-padding);
+                        padding-right: var(--wp--custom--ast-default-block-right-padding);
+                        padding-bottom: var(--wp--custom--ast-default-block-bottom-padding);
+                        padding-left: var(--wp--custom--ast-default-block-left-padding);
+                    }
+
+                    .ast-plain-container.ast-no-sidebar .entry-content>.alignfull,
+                    .ast-page-builder-template .ast-no-sidebar .entry-content>.alignfull {
+                        margin-left: calc(-50vw + 50%);
+                        margin-right: calc(-50vw + 50%);
+                        max-width: 100vw;
+                        width: 100vw;
+                    }
+
+                    .ast-plain-container.ast-no-sidebar .entry-content .alignfull .alignfull,
+                    .ast-page-builder-template.ast-no-sidebar .entry-content .alignfull .alignfull,
+                    .ast-plain-container.ast-no-sidebar .entry-content .alignfull .alignwide,
+                    .ast-page-builder-template.ast-no-sidebar .entry-content .alignfull .alignwide,
+                    .ast-plain-container.ast-no-sidebar .entry-content .alignwide .alignfull,
+                    .ast-page-builder-template.ast-no-sidebar .entry-content .alignwide .alignfull,
+                    .ast-plain-container.ast-no-sidebar .entry-content .alignwide .alignwide,
+                    .ast-page-builder-template.ast-no-sidebar .entry-content .alignwide .alignwide,
+                    .ast-plain-container.ast-no-sidebar .entry-content .wp-block-column .alignfull,
+                    .ast-page-builder-template.ast-no-sidebar .entry-content .wp-block-column .alignfull,
+                    .ast-plain-container.ast-no-sidebar .entry-content .wp-block-column .alignwide,
+                    .ast-page-builder-template.ast-no-sidebar .entry-content .wp-block-column .alignwide {
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 100%;
+                    }
+
+                    [ast-blocks-layout] .wp-block-separator:not(.is-style-dots) {
+                        height: 0;
+                    }
+
+                    [ast-blocks-layout] .wp-block-separator {
+                        margin: 20px auto;
+                    }
+
+                    [ast-blocks-layout] .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
+                        max-width: 100px;
+                    }
+
+                    [ast-blocks-layout] .wp-block-separator.has-background {
+                        padding: 0;
+                    }
+
+                    .entry-content[ast-blocks-layout]>* {
+                        max-width: var(--wp--custom--ast-content-width-size);
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .entry-content[ast-blocks-layout]>.alignwide {
+                        max-width: var(--wp--custom--ast-wide-width-size);
+                    }
+
+                    .entry-content[ast-blocks-layout] .alignfull {
+                        max-width: none;
+                    }
+
+                    .entry-content .wp-block-columns {
+                        margin-bottom: 0;
+                    }
+
+                    blockquote {
+                        margin: 1.5em;
+                        border-color: rgba(0, 0, 0, 0.05);
+                    }
+
+                    .wp-block-quote:not(.has-text-align-right):not(.has-text-align-center) {
+                        border-left: 5px solid rgba(0, 0, 0, 0.05);
+                    }
+
+                    .has-text-align-right>blockquote,
+                    blockquote.has-text-align-right {
+                        border-right: 5px solid rgba(0, 0, 0, 0.05);
+                    }
+
+                    .has-text-align-left>blockquote,
+                    blockquote.has-text-align-left {
+                        border-left: 5px solid rgba(0, 0, 0, 0.05);
+                    }
+
+                    .wp-block-site-tagline,
+                    .wp-block-latest-posts .read-more {
+                        margin-top: 15px;
+                    }
+
+                    .wp-block-loginout p label {
+                        display: block;
+                    }
+
+                    .wp-block-loginout p:not(.login-remember):not(.login-submit) input {
+                        width: 100%;
+                    }
+
+                    .wp-block-loginout input:focus {
+                        border-color: transparent;
+                    }
+
+                    .wp-block-loginout input:focus {
+                        outline: thin dotted;
+                    }
+
+                    .entry-content .wp-block-media-text .wp-block-media-text__content {
+                        padding: 0 0 0 8%;
+                    }
+
+                    .entry-content .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+                        padding: 0 8% 0 0;
+                    }
+
+                    .entry-content .wp-block-media-text.has-background .wp-block-media-text__content {
+                        padding: 8%;
+                    }
+
+                    .entry-content .wp-block-cover:not([class*="background-color"]) .wp-block-cover__inner-container,
+                    .entry-content .wp-block-cover:not([class*="background-color"]) .wp-block-cover-image-text,
+                    .entry-content .wp-block-cover:not([class*="background-color"]) .wp-block-cover-text,
+                    .entry-content .wp-block-cover-image:not([class*="background-color"]) .wp-block-cover__inner-container,
+                    .entry-content .wp-block-cover-image:not([class*="background-color"]) .wp-block-cover-image-text,
+                    .entry-content .wp-block-cover-image:not([class*="background-color"]) .wp-block-cover-text {
+                        color: var(--ast-global-color-5);
+                    }
+
+                    .wp-block-loginout .login-remember input {
+                        width: 1.1rem;
+                        height: 1.1rem;
+                        margin: 0 5px 4px 0;
+                        vertical-align: middle;
+                    }
+
+                    .wp-block-latest-posts>li>*:first-child,
+                    .wp-block-latest-posts:not(.is-grid)>li:first-child {
+                        margin-top: 0;
+                    }
+
+                    .wp-block-search__inside-wrapper .wp-block-search__input {
+                        padding: 0 10px;
+                        color: var(--ast-global-color-3);
+                        background: var(--ast-global-color-5);
+                        border-color: var(--ast-border-color);
+                    }
+
+                    .wp-block-latest-posts .read-more {
+                        margin-bottom: 1.5em;
+                    }
+
+                    .wp-block-search__no-button .wp-block-search__inside-wrapper .wp-block-search__input {
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                    }
+
+                    .wp-block-latest-posts .wp-block-latest-posts__post-date,
+                    .wp-block-latest-posts .wp-block-latest-posts__post-author {
+                        font-size: 1rem;
+                    }
+
+                    .wp-block-latest-posts>li>*,
+                    .wp-block-latest-posts:not(.is-grid)>li {
+                        margin-top: 12px;
+                        margin-bottom: 12px;
+                    }
+
+                    .ast-page-builder-template .entry-content[ast-blocks-layout]>*,
+                    .ast-page-builder-template .entry-content[ast-blocks-layout]>.alignfull>* {
+                        max-width: none;
+                    }
+
+                    .ast-page-builder-template .entry-content[ast-blocks-layout]>.alignwide>* {
+                        max-width: var(--wp--custom--ast-wide-width-size);
+                    }
+
+                    .ast-page-builder-template .entry-content[ast-blocks-layout]>.inherit-container-width>*,
+                    .ast-page-builder-template .entry-content[ast-blocks-layout]>*>*,
+                    .entry-content[ast-blocks-layout]>.wp-block-cover .wp-block-cover__inner-container {
+                        max-width: var(--wp--custom--ast-content-width-size);
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .entry-content[ast-blocks-layout] .wp-block-cover:not(.alignleft):not(.alignright) {
+                        width: auto;
+                    }
+
+                    @media(max-width: 1200px) {
+
+                        .ast-separate-container .entry-content>.alignfull,
+                        .ast-separate-container .entry-content[ast-blocks-layout]>.alignwide,
+                        .ast-plain-container .entry-content[ast-blocks-layout]>.alignwide,
+                        .ast-plain-container .entry-content .alignfull {
+                            margin-left: calc(-1 * min(var(--ast-container-default-xlg-padding), 20px));
+                            margin-right: calc(-1 * min(var(--ast-container-default-xlg-padding), 20px));
+                        }
+                    }
+
+                    @media(min-width: 1201px) {
+                        .ast-separate-container .entry-content>.alignfull {
+                            margin-left: calc(-1 * var(--ast-container-default-xlg-padding));
+                            margin-right: calc(-1 * var(--ast-container-default-xlg-padding));
+                        }
+
+                        .ast-separate-container .entry-content[ast-blocks-layout]>.alignwide,
+                        .ast-plain-container .entry-content[ast-blocks-layout]>.alignwide {
+                            margin-left: calc(-1 * var(--wp--custom--ast-default-block-left-padding));
+                            margin-right: calc(-1 * var(--wp--custom--ast-default-block-right-padding));
+                        }
+                    }
+
+                    @media(min-width: 921px) {
+
+                        .ast-separate-container .entry-content .wp-block-group.alignwide:not(.inherit-container-width)> :where(:not(.alignleft):not(.alignright)),
+                        .ast-plain-container .entry-content .wp-block-group.alignwide:not(.inherit-container-width)> :where(:not(.alignleft):not(.alignright)) {
+                            max-width: calc(var(--wp--custom--ast-content-width-size) + 80px);
+                        }
+
+                        .ast-plain-container.ast-right-sidebar .entry-content[ast-blocks-layout] .alignfull,
+                        .ast-plain-container.ast-left-sidebar .entry-content[ast-blocks-layout] .alignfull {
+                            margin-left: -60px;
+                            margin-right: -60px;
+                        }
+                    }
+
+                    @media(min-width: 544px) {
+                        .entry-content>.alignleft {
+                            margin-right: 20px;
+                        }
+
+                        .entry-content>.alignright {
+                            margin-left: 20px;
+                        }
+                    }
+
+                    @media (max-width:544px) {
+                        .wp-block-columns .wp-block-column:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+
+                        .wp-block-latest-posts {
+                            margin: 0;
+                        }
+                    }
+
+                    @media(max-width: 600px) {
+
+                        .entry-content .wp-block-media-text .wp-block-media-text__content,
+                        .entry-content .wp-block-media-text.has-media-on-the-right .wp-block-media-text__content {
+                            padding: 8% 0 0;
+                        }
+
+                        .entry-content .wp-block-media-text.has-background .wp-block-media-text__content {
+                            padding: 8%;
+                        }
+                    }
+
+                    .ast-page-builder-template .entry-header {
+                        padding-left: 0;
+                    }
+
+                    .ast-narrow-container .site-content .wp-block-uagb-image--align-full .wp-block-uagb-image__figure {
+                        max-width: 100%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .entry-content ul,
+                    .entry-content ol {
+                        padding: revert;
+                        margin: revert;
+                        padding-left: 20px;
+                    }
+
+                    :root .has-ast-global-color-0-color {
+                        color: var(--ast-global-color-0);
+                    }
+
+                    :root .has-ast-global-color-0-background-color {
+                        background-color: var(--ast-global-color-0);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-0-color {
+                        color: var(--ast-global-color-0);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-0-background-color {
+                        background-color: var(--ast-global-color-0);
+                    }
+
+                    :root .has-ast-global-color-1-color {
+                        color: var(--ast-global-color-1);
+                    }
+
+                    :root .has-ast-global-color-1-background-color {
+                        background-color: var(--ast-global-color-1);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-1-color {
+                        color: var(--ast-global-color-1);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-1-background-color {
+                        background-color: var(--ast-global-color-1);
+                    }
+
+                    :root .has-ast-global-color-2-color {
+                        color: var(--ast-global-color-2);
+                    }
+
+                    :root .has-ast-global-color-2-background-color {
+                        background-color: var(--ast-global-color-2);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-2-color {
+                        color: var(--ast-global-color-2);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-2-background-color {
+                        background-color: var(--ast-global-color-2);
+                    }
+
+                    :root .has-ast-global-color-3-color {
+                        color: var(--ast-global-color-3);
+                    }
+
+                    :root .has-ast-global-color-3-background-color {
+                        background-color: var(--ast-global-color-3);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-3-color {
+                        color: var(--ast-global-color-3);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-3-background-color {
+                        background-color: var(--ast-global-color-3);
+                    }
+
+                    :root .has-ast-global-color-4-color {
+                        color: var(--ast-global-color-4);
+                    }
+
+                    :root .has-ast-global-color-4-background-color {
+                        background-color: var(--ast-global-color-4);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-4-color {
+                        color: var(--ast-global-color-4);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-4-background-color {
+                        background-color: var(--ast-global-color-4);
+                    }
+
+                    :root .has-ast-global-color-5-color {
+                        color: var(--ast-global-color-5);
+                    }
+
+                    :root .has-ast-global-color-5-background-color {
+                        background-color: var(--ast-global-color-5);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-5-color {
+                        color: var(--ast-global-color-5);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-5-background-color {
+                        background-color: var(--ast-global-color-5);
+                    }
+
+                    :root .has-ast-global-color-6-color {
+                        color: var(--ast-global-color-6);
+                    }
+
+                    :root .has-ast-global-color-6-background-color {
+                        background-color: var(--ast-global-color-6);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-6-color {
+                        color: var(--ast-global-color-6);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-6-background-color {
+                        background-color: var(--ast-global-color-6);
+                    }
+
+                    :root .has-ast-global-color-7-color {
+                        color: var(--ast-global-color-7);
+                    }
+
+                    :root .has-ast-global-color-7-background-color {
+                        background-color: var(--ast-global-color-7);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-7-color {
+                        color: var(--ast-global-color-7);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-7-background-color {
+                        background-color: var(--ast-global-color-7);
+                    }
+
+                    :root .has-ast-global-color-8-color {
+                        color: var(--ast-global-color-8);
+                    }
+
+                    :root .has-ast-global-color-8-background-color {
+                        background-color: var(--ast-global-color-8);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-8-color {
+                        color: var(--ast-global-color-8);
+                    }
+
+                    :root .wp-block-button .has-ast-global-color-8-background-color {
+                        background-color: var(--ast-global-color-8);
+                    }
+
+                    :root {
+                        --ast-global-color-0: #046bd2;
+                        --ast-global-color-1: #045cb4;
+                        --ast-global-color-2: #1e293b;
+                        --ast-global-color-3: #334155;
+                        --ast-global-color-4: #F0F5FA;
+                        --ast-global-color-5: #FFFFFF;
+                        --ast-global-color-6: #D1D5DB;
+                        --ast-global-color-7: #111111;
+                        --ast-global-color-8: #111111;
+                    }
+
+                    :root {
+                        --ast-border-color: var(--ast-global-color-6);
+                    }
+
+                    .ast-single-entry-banner {
+                        -js-display: flex;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        text-align: center;
+                        position: relative;
+
+                        background: #eeeeee;}.ast-single-entry-banner[data-banner-layout="layout-1"] {
+                            max-width: 1200px;
+                            background: inherit;
+
+                            padding: 20px 0;}.ast-single-entry-banner[data-banner-width-type="custom"] {
+                                margin: 0 auto;
+                                width: 100%;
+                            }
+
+                            .ast-single-entry-banner+.site-content .entry-header {
+                                margin-bottom: 0;
+                            }
+
+                            .site .ast-author-avatar {
+                                --ast-author-avatar-size: ;
+                            }
+
+                            a.ast-underline-text {
+                                text-decoration: underline;
+                            }
+
+                            .ast-container>.ast-terms-link {
+                                position: relative;
+                                display: block;
+                            }
+
+                            a.ast-button.ast-badge-tax {
+                                padding: 4px 8px;
+                                border-radius: 3px;
+                                font-size: inherit;
+                            }
+
+                            header.entry-header .entry-title {
+                                font-weight: 600;
+                                font-size: 32px;
+                                font-size: 2rem;
+                            }
+
+                            header.entry-header>*:not(:last-child) {
+                                margin-bottom: 10px;
+                            }
+
+                            header.entry-header .post-thumb-img-content {
+                                text-align: center;
+                            }
+
+                            header.entry-header .post-thumb img,
+                            .ast-single-post-featured-section.post-thumb img {
+                                aspect-ratio: 16/9;
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                            .ast-archive-entry-banner {
+                                -js-display: flex;
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                text-align: center;
+                                position: relative;
+
+                                background: #eeeeee;}.ast-archive-entry-banner[data-banner-width-type="custom"] {
+                                    margin: 0 auto;
+
+                                    width: 100%;}.ast-archive-entry-banner[data-banner-layout="layout-1"] {
+                                        background: inherit;
+                                        padding: 20px 0;
+                                        text-align: left;
+                                    }
+
+                                    body.archive .ast-archive-description {
+                                        max-width: 1200px;
+                                        width: 100%;
+                                        text-align: left;
+                                        padding-top: 3em;
+                                        padding-right: 3em;
+                                        padding-bottom: 3em;
+                                        padding-left: 3em;
+                                    }
+
+                                    body.archive .ast-archive-description .ast-archive-title,
+                                    body.archive .ast-archive-description .ast-archive-title * {
+                                        font-weight: 600;
+                                        font-size: 32px;
+                                        font-size: 2rem;
+                                    }
+
+                                    body.archive .ast-archive-description>*:not(:last-child) {
+                                        margin-bottom: 10px;
+                                    }
+
+                                    @media (max-width:921px) {
+                                        body.archive .ast-archive-description {
+                                            text-align: left;
+                                        }
+                                    }
+
+                                    @media (max-width:544px) {
+                                        body.archive .ast-archive-description {
+                                            text-align: left;
+                                        }
+                                    }
+
+                                    .ast-breadcrumbs .trail-browse,
+                                    .ast-breadcrumbs .trail-items,
+                                    .ast-breadcrumbs .trail-items li {
+                                        display: inline-block;
+                                        margin: 0;
+                                        padding: 0;
+                                        border: none;
+                                        background: inherit;
+                                        text-indent: 0;
+                                        text-decoration: none;
+                                    }
+
+                                    .ast-breadcrumbs .trail-browse {
+                                        font-size: inherit;
+                                        font-style: inherit;
+                                        font-weight: inherit;
+                                        color: inherit;
+                                    }
+
+                                    .ast-breadcrumbs .trail-items {
+                                        list-style: none;
+                                    }
+
+                                    .trail-items li::after {
+                                        padding: 0 0.3em;
+                                        content: "\00bb";
+                                    }
+
+                                    .trail-items li:last-of-type::after {
+                                        display: none;
+                                    }
+
+                                    h1,
+                                    .entry-content h1,
+                                    h2,
+                                    .entry-content h2,
+                                    h3,
+                                    .entry-content h3,
+                                    h4,
+                                    .entry-content h4,
+                                    h5,
+                                    .entry-content h5,
+                                    h6,
+                                    .entry-content h6 {
+                                        color: var(--ast-global-color-2);
+                                    }
+
+                                    .entry-title a {
+                                        color: var(--ast-global-color-2);
+                                    }
+
+                                    @media (max-width:921px) {
+
+                                        .ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-firstrow .ast-builder-grid-row>*:first-child,
+                                        .ast-builder-grid-row-container.ast-builder-grid-row-tablet-3-lastrow .ast-builder-grid-row>*:last-child {
+                                            grid-column: 1 / -1;
+                                        }
+                                    }
+
+                                    @media (max-width:544px) {
+
+                                        .ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-firstrow .ast-builder-grid-row>*:first-child,
+                                        .ast-builder-grid-row-container.ast-builder-grid-row-mobile-3-lastrow .ast-builder-grid-row>*:last-child {
+                                            grid-column:1 / -1;}}.ast-builder-layout-element[data-section="title_tagline"] {
+                                                display: flex;
+                                            }
+
+                                            @media (max-width:921px) {
+                                                .ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"] {
+                                                    display: flex;
+                                                }
+                                            }
+
+                                            @media (max-width:544px) {
+                                                .ast-header-break-point .ast-builder-layout-element[data-section="title_tagline"] {
+                                                    display: flex;
+                                                }
+                                            }
+
+                                            .ast-builder-menu-1 {
+                                                font-family: inherit;
+                                                font-weight: inherit;
+                                            }
+
+                                            .ast-builder-menu-1 .menu-item>.menu-link {
+                                                color: var(--ast-global-color-3);
+                                            }
+
+                                            .ast-builder-menu-1 .menu-item>.ast-menu-toggle {
+                                                color: var(--ast-global-color-3);
+                                            }
+
+                                            .ast-builder-menu-1 .menu-item:hover>.menu-link,
+                                            .ast-builder-menu-1 .inline-on-mobile .menu-item:hover>.ast-menu-toggle {
+                                                color: var(--ast-global-color-1);
+                                            }
+
+                                            .ast-builder-menu-1 .menu-item:hover>.ast-menu-toggle {
+                                                color: var(--ast-global-color-1);
+                                            }
+
+                                            .ast-builder-menu-1 .menu-item.current-menu-item>.menu-link,
+                                            .ast-builder-menu-1 .inline-on-mobile .menu-item.current-menu-item>.ast-menu-toggle,
+                                            .ast-builder-menu-1 .current-menu-ancestor>.menu-link {
+                                                color: var(--ast-global-color-1);
+                                            }
+
+                                            .ast-builder-menu-1 .menu-item.current-menu-item>.ast-menu-toggle {
+                                                color: var(--ast-global-color-1);
+                                            }
+
+                                            .ast-builder-menu-1 .sub-menu,
+                                            .ast-builder-menu-1 .inline-on-mobile .sub-menu {
+                                                border-top-width: 2px;
+                                                border-bottom-width: 0px;
+                                                border-right-width: 0px;
+                                                border-left-width: 0px;
+                                                border-color: var(--ast-global-color-0);
+                                                border-style: solid;
+                                            }
+
+                                            .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu,
+                                            .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper {
+                                                margin-top: 0px;
+                                            }
+
+                                            .ast-desktop .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu:before,
+                                            .ast-desktop .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper:before {
+                                                height: calc(0px + 5px);
+                                            }
+
+                                            .ast-desktop .ast-builder-menu-1 .menu-item .sub-menu .menu-link {
+                                                border-style: none;
+                                            }
+
+                                            @media (max-width:921px) {
+                                                .ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children>.ast-menu-toggle {
+                                                    top: 0;
+                                                }
+
+                                                .ast-builder-menu-1 .inline-on-mobile .menu-item.menu-item-has-children>.ast-menu-toggle {
+                                                    right: -15px;
+                                                }
+
+                                                .ast-builder-menu-1 .menu-item-has-children>.menu-link:after {
+                                                    content: unset;
+                                                }
+
+                                                .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu,
+                                                .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper {
+                                                    margin-top: 0;
+                                                }
+                                            }
+
+                                            @media (max-width:544px) {
+                                                .ast-header-break-point .ast-builder-menu-1 .menu-item.menu-item-has-children>.ast-menu-toggle {
+                                                    top: 0;
+                                                }
+
+                                                .ast-builder-menu-1 .main-header-menu>.menu-item>.sub-menu,
+                                                .ast-builder-menu-1 .main-header-menu>.menu-item>.astra-full-megamenu-wrapper {
+                                                    margin-top: 0;
+                                                }
+                                            }
+
+                                            .ast-builder-menu-1 {
+                                                display: flex;
+                                            }
+
+                                            @media (max-width:921px) {
+                                                .ast-header-break-point .ast-builder-menu-1 {
+                                                    display: flex;
+                                                }
+                                            }
+
+                                            @media (max-width:544px) {
+                                                .ast-header-break-point .ast-builder-menu-1{display:flex;}}.site-below-footer-wrap{padding-top:20px;padding-bottom:20px;}.site-below-footer-wrap[data-section="section-below-footer-builder"] {
+                                                    background-color: var(--ast-global-color-5);
+                                                    ;
+                                                    min-height: 60px;
+                                                    border-style: solid;
+                                                    border-width: 0px;
+                                                    border-top-width: 1px;
+                                                    border-top-color: #eaeaea;
+                                                }
+
+                                                .site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row{max-width:1200px;min-height:60px;margin-left:auto;margin-right:auto;}.site-below-footer-wrap[data-section="section-below-footer-builder"] .ast-builder-grid-row,.site-below-footer-wrap[data-section="section-below-footer-builder"] .site-footer-section{align-items:center;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-inline .site-footer-section {
+                                                    display: flex;
+                                                    margin-bottom: 0;
+                                                }
+
+                                                .ast-builder-grid-row-full .ast-builder-grid-row {
+                                                    grid-template-columns: 1fr;
+                                                }
+
+                                                @media (max-width:921px){.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-tablet-inline .site-footer-section{display:flex;margin-bottom:0;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-tablet-stack .site-footer-section {
+                                                    display: block;
+                                                    margin-bottom: 10px;
+                                                }
+
+                                                .ast-builder-grid-row-container.ast-builder-grid-row-tablet-full .ast-builder-grid-row {
+                                                    grid-template-columns: 1fr;
+                                                }
+                                            }
+
+                                            @media (max-width:544px){.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-mobile-inline .site-footer-section{display:flex;margin-bottom:0;}.site-below-footer-wrap[data-section="section-below-footer-builder"].ast-footer-row-mobile-stack .site-footer-section {
+                                                display: block;
+                                                margin-bottom: 10px;
+                                            }
+
+                                            .ast-builder-grid-row-container.ast-builder-grid-row-mobile-full .ast-builder-grid-row{grid-template-columns:1fr;}}.site-below-footer-wrap[data-section="section-below-footer-builder"] {
+                                                display: grid;
+                                            }
+
+                                            @media (max-width:921px) {
+                                                .ast-header-break-point .site-below-footer-wrap[data-section="section-below-footer-builder"] {
+                                                    display: grid;
+                                                }
+                                            }
+
+                                            @media (max-width:544px) {
+                                                .ast-header-break-point .site-below-footer-wrap[data-section="section-below-footer-builder"] {
+                                                    display: grid;
+                                                }
+                                            }
+
+                                            .ast-footer-copyright {
+                                                text-align: center;
+                                            }
+
+                                            .ast-footer-copyright {
+                                                color: var(--ast-global-color-3);
+                                            }
+
+                                            @media (max-width:921px) {
+                                                .ast-footer-copyright {
+                                                    text-align: center;
+                                                }
+                                            }
+
+                                            @media (max-width:544px) {
+                                                .ast-footer-copyright {
+                                                    text-align: center;
+                                                }
+                                            }
+
+                                            .ast-footer-copyright {
+                                                font-size: 16px;
+                                                font-size: 1rem;
+                                            }
+
+                                            .ast-footer-copyright.ast-builder-layout-element {
+                                                display: flex;
+                                            }
+
+                                            @media (max-width:921px) {
+                                                .ast-header-break-point .ast-footer-copyright.ast-builder-layout-element {
+                                                    display: flex;
+                                                }
+                                            }
+
+                                            @media (max-width:544px) {
+                                                .ast-header-break-point .ast-footer-copyright.ast-builder-layout-element {
+                                                    display: flex;
+                                                }
+                                            }
+
+                                            .footer-widget-area.widget-area.site-footer-focus-item {
+                                                width: auto;
+                                            }
+
+                                            .elementor-widget-heading .elementor-heading-title {
+                                                margin: 0;
+                                            }
+
+                                            .elementor-page .ast-menu-toggle {
+                                                color: unset !important;
+                                                background: unset !important;
+                                            }
+
+                                            .elementor-post.elementor-grid-item.hentry {
+                                                margin-bottom: 0;
+                                            }
+
+                                            .woocommerce div.product .elementor-element.elementor-products-grid .related.products ul.products li.product,
+                                            .elementor-element .elementor-wc-products .woocommerce[class*='columns-'] ul.products li.product {
+                                                width: auto;
+                                                margin: 0;
+                                                float: none;
+                                            }
+
+                                            .elementor-toc__list-wrapper {
+                                                margin: 0;
+                                            }
+
+                                            body .elementor hr {
+                                                background-color: #ccc;
+                                                margin: 0;
+                                            }
+
+                                            .ast-left-sidebar .elementor-section.elementor-section-stretched,
+                                            .ast-right-sidebar .elementor-section.elementor-section-stretched {
+                                                max-width: 100%;
+                                                left: 0 !important;
+                                            }
+
+                                            .elementor-posts-container [CLASS*="ast-width-"] {
+                                                width: 100%;
+                                            }
+
+                                            .elementor-template-full-width .ast-container {
+                                                display: block;
+                                            }
+
+                                            .elementor-screen-only,
+                                            .screen-reader-text,
+                                            .screen-reader-text span,
+                                            .ui-helper-hidden-accessible {
+                                                top: 0 !important;
+                                            }
+
+                                            @media (max-width:544px) {
+                                                .elementor-element .elementor-wc-products .woocommerce[class*="columns-"] ul.products li.product {
+                                                    width: auto;
+                                                    margin: 0;
+                                                }
+
+                                                .elementor-element .woocommerce .woocommerce-result-count {
+                                                    float: none;
+                                                }
+                                            }
+
+                                            .ast-header-break-point .main-header-bar {
+                                                border-bottom-width: 1px;
+                                            }
+
+                                            @media (min-width:922px) {
+                                                .main-header-bar {
+                                                    border-bottom-width: 1px;
+                                                }
+                                            }
+
+                                            .main-header-menu .menu-item,
+                                            #astra-footer-menu .menu-item,
+                                            .main-header-bar .ast-masthead-custom-menu-items {
+                                                -js-display: flex;
+                                                display: flex;
+                                                -webkit-box-pack: center;
+                                                -webkit-justify-content: center;
+                                                -moz-box-pack: center;
+                                                -ms-flex-pack: center;
+                                                justify-content: center;
+                                                -webkit-box-orient: vertical;
+                                                -webkit-box-direction: normal;
+                                                -webkit-flex-direction: column;
+                                                -moz-box-orient: vertical;
+                                                -moz-box-direction: normal;
+                                                -ms-flex-direction: column;
+                                                flex-direction: column;
+                                            }
+
+                                            .main-header-menu>.menu-item>.menu-link,
+                                            #astra-footer-menu>.menu-item>.menu-link {
+                                                height: 100%;
+                                                -webkit-box-align: center;
+                                                -webkit-align-items: center;
+                                                -moz-box-align: center;
+                                                -ms-flex-align: center;
+                                                align-items: center;
+                                                -js-display: flex;
+                                                display: flex;
+                                            }
+
+                                            .ast-header-break-point .main-navigation ul .menu-item .menu-link .icon-arrow:first-of-type svg {
+                                                top: .2em;
+                                                margin-top: 0px;
+                                                margin-left: 0px;
+                                                width: .65em;
+                                                transform: translate(0, -2px) rotateZ(270deg);
+                                            }
+
+                                            .ast-mobile-popup-content .ast-submenu-expanded>.ast-menu-toggle {
+                                                transform: rotateX(180deg);
+                                                overflow-y: auto;
+                                            }
+
+                                            @media (min-width:922px) {
+                                                .ast-builder-menu .main-navigation>ul>li:last-child a {
+                                                    margin-right: 0;
+                                                }
+                                            }
+
+                                            .ast-separate-container .ast-article-inner {
+                                                background-color: var(--ast-global-color-5);
+                                                ;
+                                            }
+
+                                            @media (max-width:921px) {
+                                                .ast-separate-container .ast-article-inner {
+                                                    background-color: var(--ast-global-color-5);
+                                                    ;
+                                                }
+                                            }
+
+                                            @media (max-width:544px) {
+                                                .ast-separate-container .ast-article-inner {
+                                                    background-color: var(--ast-global-color-5);
+                                                    ;
+                                                }
+                                            }
+
+                                            .ast-separate-container .ast-article-single:not(.ast-related-post),
+                                            .woocommerce.ast-separate-container .ast-woocommerce-container,
+                                            .ast-separate-container .error-404,
+                                            .ast-separate-container .no-results,
+                                            .single.ast-separate-container .site-main .ast-author-meta,
+                                            .ast-separate-container .related-posts-title-wrapper,
+                                            .ast-separate-container .comments-count-wrapper,
+                                            .ast-box-layout.ast-plain-container .site-content,
+                                            .ast-padded-layout.ast-plain-container .site-content,
+                                            .ast-separate-container .ast-archive-description,
+                                            .ast-separate-container .comments-area {
+                                                background-color: var(--ast-global-color-5);
+                                                ;
+                                            }
+
+                                            @media (max-width:921px) {
+
+                                                .ast-separate-container .ast-article-single:not(.ast-related-post),
+                                                .woocommerce.ast-separate-container .ast-woocommerce-container,
+                                                .ast-separate-container .error-404,
+                                                .ast-separate-container .no-results,
+                                                .single.ast-separate-container .site-main .ast-author-meta,
+                                                .ast-separate-container .related-posts-title-wrapper,
+                                                .ast-separate-container .comments-count-wrapper,
+                                                .ast-box-layout.ast-plain-container .site-content,
+                                                .ast-padded-layout.ast-plain-container .site-content,
+                                                .ast-separate-container .ast-archive-description {
+                                                    background-color: var(--ast-global-color-5);
+                                                    ;
+                                                }
+                                            }
+
+                                            @media (max-width:544px) {
+
+                                                .ast-separate-container .ast-article-single:not(.ast-related-post),
+                                                .woocommerce.ast-separate-container .ast-woocommerce-container,
+                                                .ast-separate-container .error-404,
+                                                .ast-separate-container .no-results,
+                                                .single.ast-separate-container .site-main .ast-author-meta,
+                                                .ast-separate-container .related-posts-title-wrapper,
+                                                .ast-separate-container .comments-count-wrapper,
+                                                .ast-box-layout.ast-plain-container .site-content,
+                                                .ast-padded-layout.ast-plain-container .site-content,
+                                                .ast-separate-container .ast-archive-description {
+                                                    background-color: var(--ast-global-color-5);
+                                                    ;
+                                                }
+                                            }
+
+                                            .ast-separate-container.ast-two-container #secondary .widget {
+                                                background-color: var(--ast-global-color-5);
+                                                ;
+                                            }
+
+                                            @media (max-width:921px) {
+                                                .ast-separate-container.ast-two-container #secondary .widget {
+                                                    background-color: var(--ast-global-color-5);
+                                                    ;
+                                                }
+                                            }
+
+                                            @media (max-width:544px) {
+                                                .ast-separate-container.ast-two-container #secondary .widget {
+                                                    background-color: var(--ast-global-color-5);
+                                                    ;
+                                                }
+                                            }
+
+                                            .ast-plain-container,
+                                            .ast-page-builder-template {
+                                                background-color: var(--ast-global-color-5);
+                                                ;
+                                            }
+
+                                            @media (max-width:921px) {
+
+                                                .ast-plain-container,
+                                                .ast-page-builder-template {
+                                                    background-color: var(--ast-global-color-5);
+                                                    ;
+                                                }
+                                            }
+
+                                            @media (max-width:544px) {
+
+                                                .ast-plain-container,
+                                                .ast-page-builder-template {
+                                                    background-color: var(--ast-global-color-5);
+                                                    ;
+                                                }
+                                            }
+
+                                            #ast-scroll-top {
+                                                display: none;
+                                                position: fixed;
+                                                text-align: center;
+                                                cursor: pointer;
+                                                z-index: 99;
+                                                width: 2.1em;
+                                                height: 2.1em;
+                                                line-height: 2.1;
+                                                color: #ffffff;
+                                                border-radius: 2px;
+                                                content: "";
+                                                outline: inherit;
+                                            }
+
+                                            @media (min-width: 769px) {
+                                                #ast-scroll-top {
+                                                    content: "769";
+                                                }
+                                            }
+
+                                            #ast-scroll-top .ast-icon.icon-arrow svg {
+                                                margin-left: 0px;
+                                                vertical-align: middle;
+                                                transform: translate(0, -20%) rotate(180deg);
+                                                width: 1.6em;
+                                            }
+
+                                            .ast-scroll-to-top-right {
+                                                right: 30px;
+                                                bottom: 30px;
+                                            }
+
+                                            .ast-scroll-to-top-left {
+                                                left: 30px;
+                                                bottom: 30px;
+                                            }
+
+                                            #ast-scroll-top {
+                                                background-color: var(--ast-global-color-0);
+                                                font-size: 15px;
+                                            }
+
+                                            @media (max-width:921px) {
+                                                #ast-scroll-top .ast-icon.icon-arrow svg {
+                                                    width: 1em;
+                                                }
+                                            }
+
+                                            .ast-mobile-header-content>*,
+                                            .ast-desktop-header-content>* {
+                                                padding: 10px 0;
+                                                height: auto;
+                                            }
+
+                                            .ast-mobile-header-content>*:first-child,
+                                            .ast-desktop-header-content>*:first-child {
+                                                padding-top: 10px;
+                                            }
+
+                                            .ast-mobile-header-content>.ast-builder-menu,
+                                            .ast-desktop-header-content>.ast-builder-menu {
+                                                padding-top: 0;
+                                            }
+
+                                            .ast-mobile-header-content>*:last-child,
+                                            .ast-desktop-header-content>*:last-child {
+                                                padding-bottom: 0;
+                                            }
+
+                                            .ast-mobile-header-content .ast-search-menu-icon.ast-inline-search label,
+                                            .ast-desktop-header-content .ast-search-menu-icon.ast-inline-search label {
+                                                width: 100%;
+                                            }
+
+                                            .ast-desktop-header-content .main-header-bar-navigation .ast-submenu-expanded>.ast-menu-toggle::before {
+                                                transform: rotateX(180deg);
+                                            }
+
+                                            #ast-desktop-header .ast-desktop-header-content,
+                                            .ast-mobile-header-content .ast-search-icon,
+                                            .ast-desktop-header-content .ast-search-icon,
+                                            .ast-mobile-header-wrap .ast-mobile-header-content,
+                                            .ast-main-header-nav-open.ast-popup-nav-open .ast-mobile-header-wrap .ast-mobile-header-content,
+                                            .ast-main-header-nav-open.ast-popup-nav-open .ast-desktop-header-content {
+                                                display: none;
+                                            }
+
+                                            .ast-main-header-nav-open.ast-header-break-point #ast-desktop-header .ast-desktop-header-content,
+                                            .ast-main-header-nav-open.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content {
+                                                display: block;
+                                            }
+
+                                            .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up>.menu-item>.sub-menu,
+                                            .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-up>.menu-item .menu-item>.sub-menu,
+                                            .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down>.menu-item>.sub-menu,
+                                            .ast-desktop .ast-desktop-header-content .astra-menu-animation-slide-down>.menu-item .menu-item>.sub-menu,
+                                            .ast-desktop .ast-desktop-header-content .astra-menu-animation-fade>.menu-item>.sub-menu,
+                                            .ast-desktop .ast-desktop-header-content .astra-menu-animation-fade>.menu-item .menu-item>.sub-menu {
+                                                opacity: 1;
+                                                visibility: visible;
+                                            }
+
+                                            .ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation {
+                                                width: unset;
+                                                margin: unset;
+                                            }
+
+                                            .ast-mobile-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle,
+                                            .ast-desktop-header-content.content-align-flex-end .main-header-bar-navigation .menu-item-has-children>.ast-menu-toggle {
+                                                left: calc(20px - 0.907em);
+                                                right: auto;
+                                            }
+
+                                            .ast-mobile-header-content .ast-search-menu-icon,
+                                            .ast-mobile-header-content .ast-search-menu-icon.slide-search,
+                                            .ast-desktop-header-content .ast-search-menu-icon,
+                                            .ast-desktop-header-content .ast-search-menu-icon.slide-search {
+                                                width: 100%;
+                                                position: relative;
+                                                display: block;
+                                                right: auto;
+                                                transform: none;
+                                            }
+
+                                            .ast-mobile-header-content .ast-search-menu-icon.slide-search .search-form,
+                                            .ast-mobile-header-content .ast-search-menu-icon .search-form,
+                                            .ast-desktop-header-content .ast-search-menu-icon.slide-search .search-form,
+                                            .ast-desktop-header-content .ast-search-menu-icon .search-form {
+                                                right: 0;
+                                                visibility: visible;
+                                                opacity: 1;
+                                                position: relative;
+                                                top: auto;
+                                                transform: none;
+                                                padding: 0;
+                                                display: block;
+                                                overflow: hidden;
+                                            }
+
+                                            .ast-mobile-header-content .ast-search-menu-icon.ast-inline-search .search-field,
+                                            .ast-mobile-header-content .ast-search-menu-icon .search-field,
+                                            .ast-desktop-header-content .ast-search-menu-icon.ast-inline-search .search-field,
+                                            .ast-desktop-header-content .ast-search-menu-icon .search-field {
+                                                width: 100%;
+                                                padding-right: 5.5em;
+                                            }
+
+                                            .ast-mobile-header-content .ast-search-menu-icon .search-submit,
+                                            .ast-desktop-header-content .ast-search-menu-icon .search-submit {
+                                                display: block;
+                                                position: absolute;
+                                                height: 100%;
+                                                top: 0;
+                                                right: 0;
+                                                padding: 0 1em;
+                                                border-radius: 0;
+                                            }
+
+                                            .ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation ul .sub-menu .menu-link {
+                                                padding-left: 30px;
+                                            }
+
+                                            .ast-hfb-header.ast-default-menu-enable.ast-header-break-point .ast-mobile-header-wrap .ast-mobile-header-content .main-header-bar-navigation .sub-menu .menu-item .menu-item .menu-link {
+                                                padding-left: 40px;
+                                            }
+
+                                            .ast-mobile-popup-drawer.active .ast-mobile-popup-inner {
+                                                background-color: #ffffff;
+                                                ;
+                                            }
+
+                                            .ast-mobile-header-wrap .ast-mobile-header-content,
+                                            .ast-desktop-header-content {
+                                                background-color: #ffffff;
+                                                ;
+                                            }
+
+                                            .ast-mobile-popup-content>*,
+                                            .ast-mobile-header-content>*,
+                                            .ast-desktop-popup-content>*,
+                                            .ast-desktop-header-content>* {
+                                                padding-top: 0px;
+                                                padding-bottom: 0px;
+                                            }
+
+                                            .content-align-flex-start .ast-builder-layout-element {
+                                                justify-content: flex-start;
+                                            }
+
+                                            .content-align-flex-start .main-header-menu {
+                                                text-align: left;
+                                            }
+
+                                            .ast-mobile-popup-drawer.active .menu-toggle-close {
+                                                color: #3a3a3a;
+                                            }
+
+                                            .ast-mobile-header-wrap .ast-primary-header-bar,
+                                            .ast-primary-header-bar .site-primary-header-wrap {
+                                                min-height: 80px;
+                                            }
+
+                                            .ast-desktop .ast-primary-header-bar .main-header-menu>.menu-item {
+                                                line-height: 80px;
+                                            }
+
+                                            .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-primary-header-bar,
+                                            .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-below-header-bar,
+                                            .ast-header-break-point #masthead .ast-mobile-header-wrap .ast-above-header-bar {
+                                                padding-left: 20px;
+                                                padding-right: 20px;
+                                            }
+
+                                            .ast-header-break-point .ast-primary-header-bar {
+                                                border-bottom-width: 1px;
+                                                border-bottom-color: #eaeaea;
+                                                border-bottom-style: solid;
+                                            }
+
+                                            @media (min-width:922px) {
+                                                .ast-primary-header-bar {
+                                                    border-bottom-width: 1px;
+                                                    border-bottom-color: #eaeaea;
+                                                    border-bottom-style: solid;
+                                                }
+                                            }
+
+                                            .ast-primary-header-bar {
+                                                background-color: #ffffff;
+                                                ;
+                                            }
+
+                                            .ast-primary-header-bar {
+                                                display: block;
+                                            }
+
+                                            @media (max-width:921px) {
+                                                .ast-header-break-point .ast-primary-header-bar {
+                                                    display: grid;
+                                                }
+                                            }
+
+                                            @media (max-width:544px) {
+                                                .ast-header-break-point .ast-primary-header-bar{display:grid;}}[data-section="section-header-mobile-trigger"] .ast-button-wrap .ast-mobile-menu-trigger-minimal{color:var(--ast-global-color-0);border:none;background:transparent;}[data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-toggle-icon .ast-mobile-svg{width:20px;height:20px;fill:var(--ast-global-color-0);}[data-section="section-header-mobile-trigger"] .ast-button-wrap .mobile-menu-wrap .mobile-menu {
+                                                    color: var(--ast-global-color-0);
+                                                }
+
+                                                .ast-builder-menu-mobile .main-navigation .main-header-menu .menu-item>.menu-link {
+                                                    color: var(--ast-global-color-3);
+                                                }
+
+                                                .ast-builder-menu-mobile .main-navigation .main-header-menu .menu-item>.ast-menu-toggle {
+                                                    color: var(--ast-global-color-3);
+                                                }
+
+                                                .ast-builder-menu-mobile .main-navigation .menu-item:hover>.menu-link,
+                                                .ast-builder-menu-mobile .main-navigation .inline-on-mobile .menu-item:hover>.ast-menu-toggle {
+                                                    color: var(--ast-global-color-1);
+                                                }
+
+                                                .ast-builder-menu-mobile .main-navigation .menu-item:hover>.ast-menu-toggle {
+                                                    color: var(--ast-global-color-1);
+                                                }
+
+                                                .ast-builder-menu-mobile .main-navigation .menu-item.current-menu-item>.menu-link,
+                                                .ast-builder-menu-mobile .main-navigation .inline-on-mobile .menu-item.current-menu-item>.ast-menu-toggle,
+                                                .ast-builder-menu-mobile .main-navigation .menu-item.current-menu-ancestor>.menu-link,
+                                                .ast-builder-menu-mobile .main-navigation .menu-item.current-menu-ancestor>.ast-menu-toggle {
+                                                    color: var(--ast-global-color-1);
+                                                }
+
+                                                .ast-builder-menu-mobile .main-navigation .menu-item.current-menu-item>.ast-menu-toggle {
+                                                    color: var(--ast-global-color-1);
+                                                }
+
+                                                .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
+                                                    top: 0;
+                                                }
+
+                                                .ast-builder-menu-mobile .main-navigation .menu-item-has-children>.menu-link:after {
+                                                    content: unset;
+                                                }
+
+                                                .ast-hfb-header .ast-builder-menu-mobile .main-header-menu,
+                                                .ast-hfb-header .ast-builder-menu-mobile .main-navigation .menu-item .menu-link,
+                                                .ast-hfb-header .ast-builder-menu-mobile .main-navigation .menu-item .sub-menu .menu-link {
+                                                    border-style: none;
+                                                }
+
+                                                .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
+                                                    top: 0;
+                                                }
+
+                                                @media (max-width:921px) {
+                                                    .ast-builder-menu-mobile .main-navigation .main-header-menu .menu-item>.menu-link {
+                                                        color: var(--ast-global-color-3);
+                                                    }
+
+                                                    .ast-builder-menu-mobile .main-navigation .menu-item>.ast-menu-toggle {
+                                                        color: var(--ast-global-color-3);
+                                                    }
+
+                                                    .ast-builder-menu-mobile .main-navigation .menu-item:hover>.menu-link,
+                                                    .ast-builder-menu-mobile .main-navigation .inline-on-mobile .menu-item:hover>.ast-menu-toggle {
+                                                        color: var(--ast-global-color-1);
+                                                        background: var(--ast-global-color-4);
+                                                    }
+
+                                                    .ast-builder-menu-mobile .main-navigation .menu-item:hover>.ast-menu-toggle {
+                                                        color: var(--ast-global-color-1);
+                                                    }
+
+                                                    .ast-builder-menu-mobile .main-navigation .menu-item.current-menu-item>.menu-link,
+                                                    .ast-builder-menu-mobile .main-navigation .inline-on-mobile .menu-item.current-menu-item>.ast-menu-toggle,
+                                                    .ast-builder-menu-mobile .main-navigation .menu-item.current-menu-ancestor>.menu-link,
+                                                    .ast-builder-menu-mobile .main-navigation .menu-item.current-menu-ancestor>.ast-menu-toggle {
+                                                        color: var(--ast-global-color-1);
+                                                        background: var(--ast-global-color-4);
+                                                    }
+
+                                                    .ast-builder-menu-mobile .main-navigation .menu-item.current-menu-item>.ast-menu-toggle {
+                                                        color: var(--ast-global-color-1);
+                                                    }
+
+                                                    .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
+                                                        top: 0;
+                                                    }
+
+                                                    .ast-builder-menu-mobile .main-navigation .menu-item-has-children>.menu-link:after {
+                                                        content: unset;
+                                                    }
+
+                                                    .ast-builder-menu-mobile .main-navigation .main-header-menu,
+                                                    .ast-builder-menu-mobile .main-navigation .main-header-menu .sub-menu {
+                                                        background-color: var(--ast-global-color-5);
+                                                        ;
+                                                    }
+                                                }
+
+                                                @media (max-width:544px) {
+                                                    .ast-builder-menu-mobile .main-navigation .menu-item.menu-item-has-children>.ast-menu-toggle {
+                                                        top: 0;
+                                                    }
+                                                }
+
+                                                .ast-builder-menu-mobile .main-navigation {
+                                                    display: block;
+                                                }
+
+                                                @media (max-width:921px) {
+                                                    .ast-header-break-point .ast-builder-menu-mobile .main-navigation {
+                                                        display: block;
+                                                    }
+                                                }
+
+                                                @media (max-width:544px) {
+                                                    .ast-header-break-point .ast-builder-menu-mobile .main-navigation {
+                                                        display: block;
+                                                    }
+                                                }
+
+                                                :root {
+                                                    --e-global-color-astglobalcolor0: #046bd2;
+                                                    --e-global-color-astglobalcolor1: #045cb4;
+                                                    --e-global-color-astglobalcolor2: #1e293b;
+                                                    --e-global-color-astglobalcolor3: #334155;
+                                                    --e-global-color-astglobalcolor4: #F0F5FA;
+                                                    --e-global-color-astglobalcolor5: #FFFFFF;
+                                                    --e-global-color-astglobalcolor6: #D1D5DB;
+                                                    --e-global-color-astglobalcolor7: #111111;
+                                                    --e-global-color-astglobalcolor8: #111111;
+                                                }
+    </style>
+    <style id='wp-emoji-styles-inline-css'>
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 0.07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <style id='pdfemb-pdf-embedder-viewer-style-inline-css'>
+        .wp-block-pdfemb-pdf-embedder-viewer {
+            max-width: none
+        }
+    </style>
+    <style id='global-styles-inline-css'>
+        :root {
+            --wp--preset--aspect-ratio--square: 1;
+            --wp--preset--aspect-ratio--4-3: 4/3;
+            --wp--preset--aspect-ratio--3-4: 3/4;
+            --wp--preset--aspect-ratio--3-2: 3/2;
+            --wp--preset--aspect-ratio--2-3: 2/3;
+            --wp--preset--aspect-ratio--16-9: 16/9;
+            --wp--preset--aspect-ratio--9-16: 9/16;
+            --wp--preset--color--black: #000000;
+            --wp--preset--color--cyan-bluish-gray: #abb8c3;
+            --wp--preset--color--white: #ffffff;
+            --wp--preset--color--pale-pink: #f78da7;
+            --wp--preset--color--vivid-red: #cf2e2e;
+            --wp--preset--color--luminous-vivid-orange: #ff6900;
+            --wp--preset--color--luminous-vivid-amber: #fcb900;
+            --wp--preset--color--light-green-cyan: #7bdcb5;
+            --wp--preset--color--vivid-green-cyan: #00d084;
+            --wp--preset--color--pale-cyan-blue: #8ed1fc;
+            --wp--preset--color--vivid-cyan-blue: #0693e3;
+            --wp--preset--color--vivid-purple: #9b51e0;
+            --wp--preset--color--ast-global-color-0: var(--ast-global-color-0);
+            --wp--preset--color--ast-global-color-1: var(--ast-global-color-1);
+            --wp--preset--color--ast-global-color-2: var(--ast-global-color-2);
+            --wp--preset--color--ast-global-color-3: var(--ast-global-color-3);
+            --wp--preset--color--ast-global-color-4: var(--ast-global-color-4);
+            --wp--preset--color--ast-global-color-5: var(--ast-global-color-5);
+            --wp--preset--color--ast-global-color-6: var(--ast-global-color-6);
+            --wp--preset--color--ast-global-color-7: var(--ast-global-color-7);
+            --wp--preset--color--ast-global-color-8: var(--ast-global-color-8);
+            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+            --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+            --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+            --wp--preset--font-size--small: 13px;
+            --wp--preset--font-size--medium: 20px;
+            --wp--preset--font-size--large: 36px;
+            --wp--preset--font-size--x-large: 42px;
+            --wp--preset--spacing--20: 0.44rem;
+            --wp--preset--spacing--30: 0.67rem;
+            --wp--preset--spacing--40: 1rem;
+            --wp--preset--spacing--50: 1.5rem;
+            --wp--preset--spacing--60: 2.25rem;
+            --wp--preset--spacing--70: 3.38rem;
+            --wp--preset--spacing--80: 5.06rem;
+            --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
+            --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
+            --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+            --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+        }
+
+        :root {
+            --wp--style--global--content-size: var(--wp--custom--ast-content-width-size);
+            --wp--style--global--wide-size: var(--wp--custom--ast-wide-width-size);
+        }
+
+        :where(body) {
+            margin: 0;
+        }
+
+        .wp-site-blocks>.alignleft {
+            float: left;
+            margin-right: 2em;
+        }
+
+        .wp-site-blocks>.alignright {
+            float: right;
+            margin-left: 2em;
+        }
+
+        .wp-site-blocks>.aligncenter {
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        :where(.wp-site-blocks)>* {
+            margin-block-start: 24px;
+            margin-block-end: 0;
+        }
+
+        :where(.wp-site-blocks)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :where(.wp-site-blocks)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root {
+            --wp--style--block-gap: 24px;
+        }
+
+        :root :where(.is-layout-flow)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-flow)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flow)>* {
+            margin-block-start: 24px;
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :first-child {
+            margin-block-start: 0;
+        }
+
+        :root :where(.is-layout-constrained)> :last-child {
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-constrained)>* {
+            margin-block-start: 24px;
+            margin-block-end: 0;
+        }
+
+        :root :where(.is-layout-flex) {
+            gap: 24px;
+        }
+
+        :root :where(.is-layout-grid) {
+            gap: 24px;
+        }
+
+        .is-layout-flow>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-flow>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-flow>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignleft {
+            float: left;
+            margin-inline-start: 0;
+            margin-inline-end: 2em;
+        }
+
+        .is-layout-constrained>.alignright {
+            float: right;
+            margin-inline-start: 2em;
+            margin-inline-end: 0;
+        }
+
+        .is-layout-constrained>.aligncenter {
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained> :where(:not(.alignleft):not(.alignright):not(.alignfull)) {
+            max-width: var(--wp--style--global--content-size);
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+
+        .is-layout-constrained>.alignwide {
+            max-width: var(--wp--style--global--wide-size);
+        }
+
+        body .is-layout-flex {
+            display: flex;
+        }
+
+        .is-layout-flex {
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .is-layout-flex> :is(*, div) {
+            margin: 0;
+        }
+
+        body .is-layout-grid {
+            display: grid;
+        }
+
+        .is-layout-grid> :is(*, div) {
+            margin: 0;
+        }
+
+        body {
+            padding-top: 0px;
+            padding-right: 0px;
+            padding-bottom: 0px;
+            padding-left: 0px;
+        }
+
+        a:where(:not(.wp-element-button)) {
+            text-decoration: none;
+        }
+
+        :root :where(.wp-element-button, .wp-block-button__link) {
+            background-color: #32373c;
+            border-width: 0;
+            color: #fff;
+            font-family: inherit;
+            font-size: inherit;
+            line-height: inherit;
+            padding: calc(0.667em + 2px) calc(1.333em + 2px);
+            text-decoration: none;
+        }
+
+        .has-black-color {
+            color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-color {
+            color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-color {
+            color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-color {
+            color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-color {
+            color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-color {
+            color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-color {
+            color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-color {
+            color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-color {
+            color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-color {
+            color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-color {
+            color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-color {
+            color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-ast-global-color-0-color {
+            color: var(--wp--preset--color--ast-global-color-0) !important;
+        }
+
+        .has-ast-global-color-1-color {
+            color: var(--wp--preset--color--ast-global-color-1) !important;
+        }
+
+        .has-ast-global-color-2-color {
+            color: var(--wp--preset--color--ast-global-color-2) !important;
+        }
+
+        .has-ast-global-color-3-color {
+            color: var(--wp--preset--color--ast-global-color-3) !important;
+        }
+
+        .has-ast-global-color-4-color {
+            color: var(--wp--preset--color--ast-global-color-4) !important;
+        }
+
+        .has-ast-global-color-5-color {
+            color: var(--wp--preset--color--ast-global-color-5) !important;
+        }
+
+        .has-ast-global-color-6-color {
+            color: var(--wp--preset--color--ast-global-color-6) !important;
+        }
+
+        .has-ast-global-color-7-color {
+            color: var(--wp--preset--color--ast-global-color-7) !important;
+        }
+
+        .has-ast-global-color-8-color {
+            color: var(--wp--preset--color--ast-global-color-8) !important;
+        }
+
+        .has-black-background-color {
+            background-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-background-color {
+            background-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-background-color {
+            background-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-background-color {
+            background-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-background-color {
+            background-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-background-color {
+            background-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-background-color {
+            background-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-background-color {
+            background-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-background-color {
+            background-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-background-color {
+            background-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-ast-global-color-0-background-color {
+            background-color: var(--wp--preset--color--ast-global-color-0) !important;
+        }
+
+        .has-ast-global-color-1-background-color {
+            background-color: var(--wp--preset--color--ast-global-color-1) !important;
+        }
+
+        .has-ast-global-color-2-background-color {
+            background-color: var(--wp--preset--color--ast-global-color-2) !important;
+        }
+
+        .has-ast-global-color-3-background-color {
+            background-color: var(--wp--preset--color--ast-global-color-3) !important;
+        }
+
+        .has-ast-global-color-4-background-color {
+            background-color: var(--wp--preset--color--ast-global-color-4) !important;
+        }
+
+        .has-ast-global-color-5-background-color {
+            background-color: var(--wp--preset--color--ast-global-color-5) !important;
+        }
+
+        .has-ast-global-color-6-background-color {
+            background-color: var(--wp--preset--color--ast-global-color-6) !important;
+        }
+
+        .has-ast-global-color-7-background-color {
+            background-color: var(--wp--preset--color--ast-global-color-7) !important;
+        }
+
+        .has-ast-global-color-8-background-color {
+            background-color: var(--wp--preset--color--ast-global-color-8) !important;
+        }
+
+        .has-black-border-color {
+            border-color: var(--wp--preset--color--black) !important;
+        }
+
+        .has-cyan-bluish-gray-border-color {
+            border-color: var(--wp--preset--color--cyan-bluish-gray) !important;
+        }
+
+        .has-white-border-color {
+            border-color: var(--wp--preset--color--white) !important;
+        }
+
+        .has-pale-pink-border-color {
+            border-color: var(--wp--preset--color--pale-pink) !important;
+        }
+
+        .has-vivid-red-border-color {
+            border-color: var(--wp--preset--color--vivid-red) !important;
+        }
+
+        .has-luminous-vivid-orange-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-amber-border-color {
+            border-color: var(--wp--preset--color--luminous-vivid-amber) !important;
+        }
+
+        .has-light-green-cyan-border-color {
+            border-color: var(--wp--preset--color--light-green-cyan) !important;
+        }
+
+        .has-vivid-green-cyan-border-color {
+            border-color: var(--wp--preset--color--vivid-green-cyan) !important;
+        }
+
+        .has-pale-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--pale-cyan-blue) !important;
+        }
+
+        .has-vivid-cyan-blue-border-color {
+            border-color: var(--wp--preset--color--vivid-cyan-blue) !important;
+        }
+
+        .has-vivid-purple-border-color {
+            border-color: var(--wp--preset--color--vivid-purple) !important;
+        }
+
+        .has-ast-global-color-0-border-color {
+            border-color: var(--wp--preset--color--ast-global-color-0) !important;
+        }
+
+        .has-ast-global-color-1-border-color {
+            border-color: var(--wp--preset--color--ast-global-color-1) !important;
+        }
+
+        .has-ast-global-color-2-border-color {
+            border-color: var(--wp--preset--color--ast-global-color-2) !important;
+        }
+
+        .has-ast-global-color-3-border-color {
+            border-color: var(--wp--preset--color--ast-global-color-3) !important;
+        }
+
+        .has-ast-global-color-4-border-color {
+            border-color: var(--wp--preset--color--ast-global-color-4) !important;
+        }
+
+        .has-ast-global-color-5-border-color {
+            border-color: var(--wp--preset--color--ast-global-color-5) !important;
+        }
+
+        .has-ast-global-color-6-border-color {
+            border-color: var(--wp--preset--color--ast-global-color-6) !important;
+        }
+
+        .has-ast-global-color-7-border-color {
+            border-color: var(--wp--preset--color--ast-global-color-7) !important;
+        }
+
+        .has-ast-global-color-8-border-color {
+            border-color: var(--wp--preset--color--ast-global-color-8) !important;
+        }
+
+        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
+            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;
+        }
+
+        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
+            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;
+        }
+
+        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;
+        }
+
+        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
+            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;
+        }
+
+        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
+            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;
+        }
+
+        .has-cool-to-warm-spectrum-gradient-background {
+            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;
+        }
+
+        .has-blush-light-purple-gradient-background {
+            background: var(--wp--preset--gradient--blush-light-purple) !important;
+        }
+
+        .has-blush-bordeaux-gradient-background {
+            background: var(--wp--preset--gradient--blush-bordeaux) !important;
+        }
+
+        .has-luminous-dusk-gradient-background {
+            background: var(--wp--preset--gradient--luminous-dusk) !important;
+        }
+
+        .has-pale-ocean-gradient-background {
+            background: var(--wp--preset--gradient--pale-ocean) !important;
+        }
+
+        .has-electric-grass-gradient-background {
+            background: var(--wp--preset--gradient--electric-grass) !important;
+        }
+
+        .has-midnight-gradient-background {
+            background: var(--wp--preset--gradient--midnight) !important;
+        }
+
+        .has-small-font-size {
+            font-size: var(--wp--preset--font-size--small) !important;
+        }
+
+        .has-medium-font-size {
+            font-size: var(--wp--preset--font-size--medium) !important;
+        }
+
+        .has-large-font-size {
+            font-size: var(--wp--preset--font-size--large) !important;
+        }
+
+        .has-x-large-font-size {
+            font-size: var(--wp--preset--font-size--x-large) !important;
+        }
+
+        :root :where(.wp-block-pullquote) {
+            font-size: 1.5em;
+            line-height: 1.6;
+        }
+    </style>
+    <link rel='stylesheet' id='menu-image-css'
+        href='wp-content/plugins/menu-image/includes/css/menu-imagea237.css?ver=3.11' media='all' />
+    <link rel='stylesheet' id='dashicons-css' href='wp-includes/css/dashicons.min109c.css?ver=6.6.2'
+        media='all' />
+    <link rel='stylesheet' id='elementor-frontend-css'
+        href='wp-content/plugins/elementor/assets/css/frontend-lite.min4d52.css?ver=3.22.1' media='all' />
+    <link rel='stylesheet' id='swiper-css'
+        href='wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min94a4.css?ver=8.4.5' media='all' />
+    <link rel='stylesheet' id='elementor-post-27-css'
+        href='wp-content/uploads/elementor/css/post-27836b.css?ver=1727509353' media='all' />
+    <link rel='stylesheet' id='elementor-pro-css'
+        href='wp-content/plugins/elementor-pro/assets/css/frontend-lite.min0599.css?ver=3.22.0' media='all' />
+    <link rel='stylesheet' id='elementor-post-15-css'
+        href='wp-content/uploads/elementor/css/post-158d0e.css?ver=1731056754' media='all' />
+    <link rel='stylesheet' id='elementor-post-19-css'
+        href='wp-content/uploads/elementor/css/post-19836b.css?ver=1727509353' media='all' />
+    <link rel='stylesheet' id='elementor-post-183-css'
+        href='wp-content/uploads/elementor/css/post-183836b.css?ver=1727509353' media='all' />
+    <link rel='stylesheet' id='elementor-icons-ekiticons-css'
+        href='wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons55a0.css?ver=3.2.0'
+        media='all' />
+    <link rel='stylesheet' id='skb-cife-elegant_icon-css'
+        href='wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/elegantce14.css?ver=1.0.8'
+        media='all' />
+    <link rel='stylesheet' id='skb-cife-linearicons_icon-css'
+        href='wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/lineariconsce14.css?ver=1.0.8'
+        media='all' />
+    <link rel='stylesheet' id='skb-cife-themify_icon-css'
+        href='wp-content/plugins/skyboot-custom-icons-for-elementor/assets/css/themifyce14.css?ver=1.0.8'
+        media='all' />
+    <link rel='stylesheet' id='ekit-widget-styles-css'
+        href='wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles55a0.css?ver=3.2.0'
+        media='all' />
+    <link rel='stylesheet' id='ekit-responsive-css'
+        href='wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive55a0.css?ver=3.2.0'
+        media='all' />
+    <link rel='stylesheet' id='eael-general-css'
+        href='wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/css/view/general.minab15.css?ver=5.9.24'
+        media='all' />
+    <link rel='stylesheet' id='um_modal-css'
+        href='wp-content/plugins/ultimate-member/assets/css/um-modal.mind2b8.css?ver=2.8.6' media='all' />
+    <link rel='stylesheet' id='um_ui-css'
+        href='wp-content/plugins/ultimate-member/assets/libs/jquery-ui/jquery-ui.min3f14.css?ver=1.13.2'
+        media='all' />
+    <link rel='stylesheet' id='um_tipsy-css'
+        href='wp-content/plugins/ultimate-member/assets/libs/tipsy/tipsy.mina677.css?ver=1.0.0a' media='all' />
+    <link rel='stylesheet' id='um_raty-css'
+        href='wp-content/plugins/ultimate-member/assets/libs/raty/um-raty.mind315.css?ver=2.6.0' media='all' />
+    <link rel='stylesheet' id='select2-css'
+        href='wp-content/plugins/ultimate-member/assets/libs/select2/select2.min4819.css?ver=4.0.13' media='all' />
+    <link rel='stylesheet' id='um_fileupload-css'
+        href='wp-content/plugins/ultimate-member/assets/css/um-fileupload.mind2b8.css?ver=2.8.6' media='all' />
+    <link rel='stylesheet' id='um_confirm-css'
+        href='wp-content/plugins/ultimate-member/assets/libs/um-confirm/um-confirm.min5152.css?ver=1.0'
+        media='all' />
+    <link rel='stylesheet' id='um_datetime-css'
+        href='wp-content/plugins/ultimate-member/assets/libs/pickadate/default.min822f.css?ver=3.6.2'
+        media='all' />
+    <link rel='stylesheet' id='um_datetime_date-css'
+        href='wp-content/plugins/ultimate-member/assets/libs/pickadate/default.date.min822f.css?ver=3.6.2'
+        media='all' />
+    <link rel='stylesheet' id='um_datetime_time-css'
+        href='wp-content/plugins/ultimate-member/assets/libs/pickadate/default.time.min822f.css?ver=3.6.2'
+        media='all' />
+    <link rel='stylesheet' id='um_fonticons_ii-css'
+        href='wp-content/plugins/ultimate-member/assets/libs/legacy/fonticons/fonticons-ii.mind2b8.css?ver=2.8.6'
+        media='all' />
+    <link rel='stylesheet' id='um_fonticons_fa-css'
+        href='wp-content/plugins/ultimate-member/assets/libs/legacy/fonticons/fonticons-fa.mind2b8.css?ver=2.8.6'
+        media='all' />
+    <link rel='stylesheet' id='um_fontawesome-css'
+        href='wp-content/plugins/ultimate-member/assets/css/um-fontawesome.mine63c.css?ver=6.5.2' media='all' />
+    <link rel='stylesheet' id='um_common-css'
+        href='wp-content/plugins/ultimate-member/assets/css/common.mind2b8.css?ver=2.8.6' media='all' />
+    <link rel='stylesheet' id='um_responsive-css'
+        href='wp-content/plugins/ultimate-member/assets/css/um-responsive.mind2b8.css?ver=2.8.6' media='all' />
+    <link rel='stylesheet' id='um_styles-css'
+        href='wp-content/plugins/ultimate-member/assets/css/um-styles.mind2b8.css?ver=2.8.6' media='all' />
+    <link rel='stylesheet' id='um_crop-css'
+        href='wp-content/plugins/ultimate-member/assets/libs/cropper/cropper.min51a2.css?ver=1.6.1' media='all' />
+    <link rel='stylesheet' id='um_profile-css'
+        href='wp-content/plugins/ultimate-member/assets/css/um-profile.mind2b8.css?ver=2.8.6' media='all' />
+    <link rel='stylesheet' id='um_account-css'
+        href='wp-content/plugins/ultimate-member/assets/css/um-account.mind2b8.css?ver=2.8.6' media='all' />
+    <link rel='stylesheet' id='um_misc-css'
+        href='wp-content/plugins/ultimate-member/assets/css/um-misc.mind2b8.css?ver=2.8.6' media='all' />
+    <link rel='stylesheet' id='um_default_css-css'
+        href='wp-content/plugins/ultimate-member/assets/css/um-old-default.mind2b8.css?ver=2.8.6' media='all' />
+    <link rel='stylesheet' id='google-fonts-1-css'
+        href='https://fonts.googleapis.com/css?family=Barlow%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CHeebo%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CSpace+Grotesk%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;display=swap&amp;ver=6.6.2'
+        media='all' />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <script src="wp-includes/js/jquery/jquery.minf43b.js?ver=3.7.1" id="jquery-core-js"></script>
+    <script src="wp-includes/js/jquery/jquery-migrate.min5589.js?ver=3.4.1" id="jquery-migrate-js"></script>
+    <script src="wp-content/plugins/wp-google-maps-pro/lib/remodal.min109c.js?ver=6.6.2" id="remodal-js"></script>
+    <!--[if IE]>
+<script src="https://iconrocklearfl.com/wp-content/themes/astra/assets/js/minified/flexibility.min.js?ver=4.7.1"
+    id="astra-flexibility-js"></script>
+<script id="astra-flexibility-js-after">
+    flexibility(document.documentElement);
+</script>
+<![endif]-->
+    <script id="wpgmza_data-js-extra">
+        var wpgmza_google_api_status = {
+            "message": "Enqueued",
+            "code": "ENQUEUED"
+        };
+    </script>
+    <script src="wp-content/plugins/wp-google-maps/wpgmza_data109c.js?ver=6.6.2" id="wpgmza_data-js"></script>
+    <script src="wp-content/plugins/ultimate-member/assets/js/um-gdpr.mind2b8.js?ver=2.8.6" id="um-gdpr-js"></script>
+
+    <link rel="alternate" title="JSON" type="application/json" href="wp-json/wp/v2/pages/15.json" />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="xmlrpc0db0.html?rsd" />
+    <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed"
+        href="wp-json/oembed/1.0/embed2177.json?url=https%3A%2F%2Ficonrocklearfl.com%2F" />
+    <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed"
+        href="wp-json/oembed/1.0/embed43e8?url=https%3A%2F%2Ficonrocklearfl.com%2F&amp;format=xml" />
+    <style type="text/css">
+        .um_request_name {
+            display: none !important;
+        }
+    </style>
+    <meta name="generator"
+        content="Elementor 3.22.1; features: e_optimized_assets_loading, e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+    <meta name="facebook-domain-verification" content="ciqla9a14qy7vl9vo7f6xg0g6ui4wo" />
+    <link rel="icon" href="wp-content/uploads/2024/05/cropped-Untitled-21-32x32.png" sizes="32x32" />
+    <link rel="icon" href="wp-content/uploads/2024/05/cropped-Untitled-21-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="wp-content/uploads/2024/05/cropped-Untitled-21-180x180.png" />
+    <meta name="msapplication-TileImage"
+        content="https://iconrocklearfl.com/wp-content/uploads/2024/05/cropped-Untitled-21-270x270.png" />
+    <style id="wp-custom-css">
+        /** Start Block Kit CSS: 144-3-3a7d335f39a8579c20cdf02f8d462582 **/
+
+        .envato-block__preview {
+            overflow: visible;
+        }
+
+        /* Envato Kit 141 Custom Styles - Applied to the element under Advanced */
+
+        .elementor-headline-animation-type-drop-in .elementor-headline-dynamic-wrapper {
+            text-align: center;
+        }
+
+        .envato-kit-141-top-0 h1,
+        .envato-kit-141-top-0 h2,
+        .envato-kit-141-top-0 h3,
+        .envato-kit-141-top-0 h4,
+        .envato-kit-141-top-0 h5,
+        .envato-kit-141-top-0 h6,
+        .envato-kit-141-top-0 p {
+            margin-top: 0;
+        }
+
+        .envato-kit-141-newsletter-inline .elementor-field-textual.elementor-size-md {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+
+        .envato-kit-141-bottom-0 p {
+            margin-bottom: 0;
+        }
+
+        .envato-kit-141-bottom-8 .elementor-price-list .elementor-price-list-item .elementor-price-list-header {
+            margin-bottom: .5rem;
+        }
+
+        .envato-kit-141.elementor-widget-testimonial-carousel.elementor-pagination-type-bullets .swiper-container {
+            padding-bottom: 52px;
+        }
+
+        .envato-kit-141-display-inline {
+            display: inline-block;
+        }
+
+        .envato-kit-141 .elementor-slick-slider ul.slick-dots {
+            bottom: -40px;
+        }
+
+        /** End Block Kit CSS: 144-3-3a7d335f39a8579c20cdf02f8d462582 **/
+    </style>
+</head>
+
+<body itemtype='https://schema.org/WebPage' itemscope='itemscope'
+    class="home page-template-default page page-id-15 ast-desktop ast-page-builder-template ast-no-sidebar astra-4.7.1 ast-single-post ast-inherit-site-logo-transparent ast-hfb-header elementor-default elementor-kit-27 elementor-page elementor-page-15">
+
+    <a class="skip-link screen-reader-text" href="#content" role="link" title="Skip to content">
+        Skip to content</a>
+
+    <div class="hfeed site" id="page">
+      
+
+        @include('frontend.partials.header')
+
+
+        <div style="margin-top:250px" id="content" class="site-content">
+            <div class="ast-container">
+
+
+                <div id="primary" class="content-area primary">
+
+
+                    <main id="main" class="site-main">
+                        <article class="post-15 page type-page status-publish has-post-thumbnail ast-article-single"
+                            id="post-15" itemtype="https://schema.org/CreativeWork" itemscope="itemscope">
+
+                            <header class="entry-header ast-no-title ast-header-without-markup">
+                            </header> <!-- .entry-header -->
+
+                            <div class="entry-content clear" itemprop="text">
+
+
+                                <div data-elementor-type="wp-page" data-elementor-id="15"
+                                    class="elementor elementor-15" data-elementor-post-type="page">
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-7a5ea72a elementor-section-height-min-height elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
+                                        data-id="7a5ea72a" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-background-overlay"></div>
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9b1b6da"
+                                                data-id="9b1b6da" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-655b3c7a animated-fast elementor-invisible elementor-widget elementor-widget-heading"
+                                                        data-id="655b3c7a" data-element_type="widget"
+                                                        data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <style>
+                                                                /*! elementor - v3.22.0 - 17-06-2024 */
+                                                                .elementor-heading-title {
+                                                                    padding: 0;
+                                                                    margin: 0;
+                                                                    line-height: 1
+                                                                }
+
+                                                                .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+                                                                    color: inherit;
+                                                                    font-size: inherit;
+                                                                    line-height: inherit
+                                                                }
+
+                                                                .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                                                                    font-size: 15px
+                                                                }
+
+                                                                .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                                                                    font-size: 19px
+                                                                }
+
+                                                                .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                                                                    font-size: 29px
+                                                                }
+
+                                                                .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                                                                    font-size: 39px
+                                                                }
+
+                                                                .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                                                                    font-size: 59px
+                                                                }
+                                                            </style>
+                                                            <h1 class="elementor-heading-title elementor-size-default">
+                                                                Icon Rocklear®</h1>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-33712430 elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-text-editor"
+                                                        data-id="33712430" data-element_type="widget"
+                                                        data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <style>
+                                                                /*! elementor - v3.22.0 - 17-06-2024 */
+                                                                .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                                                                    background-color: #69727d;
+                                                                    color: #fff
+                                                                }
+
+                                                                .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                                                                    color: #69727d;
+                                                                    border: 3px solid;
+                                                                    background-color: transparent
+                                                                }
+
+                                                                .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                                                                    margin-top: 8px
+                                                                }
+
+                                                                .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                                                                    width: 1em;
+                                                                    height: 1em
+                                                                }
+
+                                                                .elementor-widget-text-editor .elementor-drop-cap {
+                                                                    float: left;
+                                                                    text-align: center;
+                                                                    line-height: 1;
+                                                                    font-size: 50px
+                                                                }
+
+                                                                .elementor-widget-text-editor .elementor-drop-cap-letter {
+                                                                    display: inline-block
+                                                                }
+                                                            </style>
+                                                            <p>The most advanced surface protection technology, offering
+                                                                unmatched strength, brilliance, and depth correction
+                                                                capabilities.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <div class="elementor-element elementor-element-f6362fa e-con-full e-flex e-con e-parent"
+                                        data-id="f6362fa" data-element_type="container"
+                                        data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
+                                        <div class="elementor-element elementor-element-e3734c5 elementor-widget elementor-widget-html"
+                                            data-id="e3734c5" data-element_type="widget"
+                                            data-widget_type="html.default">
+                                            <div class="elementor-widget-container">
+                                                <div class="outer">
+                                                    <!-- This div is important! It lets us specify margin-left later on. -->
+                                                    <div>
+                                                        <div class="loop">
+                                                            <div class="content"> SCIENTIFICALLY TESTED
+                                                                75X STRONGER THAN ANY OTHER COATING
+                                                                35X THICKNESS
+                                                                30%+ BRILLIANCE
+                                                                RENEWABLE
+                                                                35X THICKER THAN OTHER COATINGS
+                                                                20X UV WEATHERING
+                                                                ZERO MAINTENANCE ✦</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <script>
+                                                    document.querySelectorAll('.outer').forEach(el => {
+                                                        let content = el.querySelector('.content');
+
+                                                        repeatContent(content, el.offsetWidth);
+
+                                                        let slider = el.querySelector('.loop');
+                                                        slider.innerHTML = slider.innerHTML + slider.innerHTML;
+                                                    });
+
+
+                                                    function repeatContent(el, till) {
+                                                        let html = el.innerHTML;
+                                                        let counter = 0; // prevents infinite loop
+
+                                                        while (el.offsetWidth < till && counter < 100) {
+                                                            el.innerHTML += html;
+                                                            counter += 1;
+                                                        }
+                                                    }
+                                                </script>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-5e1ecf37 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="5e1ecf37" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1c48e087"
+                                                data-id="1c48e087" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-74e5b0aa elementor-widget elementor-widget-heading"
+                                                        data-id="74e5b0aa" data-element_type="widget"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2 class="elementor-heading-title elementor-size-default">
+                                                                #ICONROCKLEAR</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-7aa0293 animated-fast elementor-invisible elementor-widget elementor-widget-heading"
+                                                        data-id="7aa0293" data-element_type="widget"
+                                                        data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2 class="elementor-heading-title elementor-size-default">
+                                                                Not All Coatings Are<br> Created Equal</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-402cba8 elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor"
+                                                        data-id="402cba8" data-element_type="widget"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p>Scientifically Confirmed Protection , Correction &amp;
+                                                                Brilliance</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-1fa37919 elementor-widget-divider--separator-type-pattern elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                        data-id="1fa37919" data-element_type="widget"
+                                                        data-widget_type="divider.default">
+                                                        <div class="elementor-widget-container">
+                                                            <style>
+                                                                /*! elementor - v3.22.0 - 17-06-2024 */
+                                                                .elementor-widget-divider {
+                                                                    --divider-border-style: none;
+                                                                    --divider-border-width: 1px;
+                                                                    --divider-color: #0c0d0e;
+                                                                    --divider-icon-size: 20px;
+                                                                    --divider-element-spacing: 10px;
+                                                                    --divider-pattern-height: 24px;
+                                                                    --divider-pattern-size: 20px;
+                                                                    --divider-pattern-url: none;
+                                                                    --divider-pattern-repeat: repeat-x
+                                                                }
+
+                                                                .elementor-widget-divider .elementor-divider {
+                                                                    display: flex
+                                                                }
+
+                                                                .elementor-widget-divider .elementor-divider__text {
+                                                                    font-size: 15px;
+                                                                    line-height: 1;
+                                                                    max-width: 95%
+                                                                }
+
+                                                                .elementor-widget-divider .elementor-divider__element {
+                                                                    margin: 0 var(--divider-element-spacing);
+                                                                    flex-shrink: 0
+                                                                }
+
+                                                                .elementor-widget-divider .elementor-icon {
+                                                                    font-size: var(--divider-icon-size)
+                                                                }
+
+                                                                .elementor-widget-divider .elementor-divider-separator {
+                                                                    display: flex;
+                                                                    margin: 0;
+                                                                    direction: ltr
+                                                                }
+
+                                                                .elementor-widget-divider--view-line_icon .elementor-divider-separator,
+                                                                .elementor-widget-divider--view-line_text .elementor-divider-separator {
+                                                                    align-items: center
+                                                                }
+
+                                                                .elementor-widget-divider--view-line_icon .elementor-divider-separator:after,
+                                                                .elementor-widget-divider--view-line_icon .elementor-divider-separator:before,
+                                                                .elementor-widget-divider--view-line_text .elementor-divider-separator:after,
+                                                                .elementor-widget-divider--view-line_text .elementor-divider-separator:before {
+                                                                    display: block;
+                                                                    content: "";
+                                                                    border-block-end: 0;
+                                                                    flex-grow: 1;
+                                                                    border-block-start: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type {
+                                                                    flex-grow: 0;
+                                                                    flex-shrink: 100
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-left .elementor-divider-separator:before {
+                                                                    content: none
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-left .elementor-divider__element {
+                                                                    margin-left: 0
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type {
+                                                                    flex-grow: 0;
+                                                                    flex-shrink: 100
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-right .elementor-divider-separator:after {
+                                                                    content: none
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-right .elementor-divider__element {
+                                                                    margin-right: 0
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-start .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type {
+                                                                    flex-grow: 0;
+                                                                    flex-shrink: 100
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-start .elementor-divider-separator:before {
+                                                                    content: none
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-start .elementor-divider__element {
+                                                                    margin-inline-start: 0
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-end .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type {
+                                                                    flex-grow: 0;
+                                                                    flex-shrink: 100
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-end .elementor-divider-separator:after {
+                                                                    content: none
+                                                                }
+
+                                                                .elementor-widget-divider--element-align-end .elementor-divider__element {
+                                                                    margin-inline-end: 0
+                                                                }
+
+                                                                .elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator {
+                                                                    border-block-start: var(--divider-border-width) var(--divider-border-style) var(--divider-color)
+                                                                }
+
+                                                                .elementor-widget-divider--separator-type-pattern {
+                                                                    --divider-border-style: none
+                                                                }
+
+                                                                .elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,
+                                                                .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,
+                                                                .elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,
+                                                                .elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator {
+                                                                    width: 100%;
+                                                                    min-height: var(--divider-pattern-height);
+                                                                    -webkit-mask-size: var(--divider-pattern-size) 100%;
+                                                                    mask-size: var(--divider-pattern-size) 100%;
+                                                                    -webkit-mask-repeat: var(--divider-pattern-repeat);
+                                                                    mask-repeat: var(--divider-pattern-repeat);
+                                                                    background-color: var(--divider-color);
+                                                                    -webkit-mask-image: var(--divider-pattern-url);
+                                                                    mask-image: var(--divider-pattern-url)
+                                                                }
+
+                                                                .elementor-widget-divider--no-spacing {
+                                                                    --divider-pattern-size: auto
+                                                                }
+
+                                                                .elementor-widget-divider--bg-round {
+                                                                    --divider-pattern-repeat: round
+                                                                }
+
+                                                                .rtl .elementor-widget-divider .elementor-divider__text {
+                                                                    direction: rtl
+                                                                }
+
+                                                                .e-con-inner>.elementor-widget-divider,
+                                                                .e-con>.elementor-widget-divider {
+                                                                    width: var(--container-widget-width, 100%);
+                                                                    --flex-grow: var(--container-widget-flex-grow)
+                                                                }
+                                                            </style>
+                                                            <div class="elementor-divider"
+                                                                style="--divider-pattern-url: url(_data_image/svg%2bxml%2c_svg%20xmlns%3d%27http_/www.w3.org/2000/svg%27%20preserveAspectRatio%3d%27none%27%20overflow%3d%27visib/__/svg__.html);">
+                                                                <span class="elementor-divider-separator">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-74a06fb3 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                                        data-id="74a06fb3" data-element_type="section">
+                                                        <div class="elementor-container elementor-column-gap-default">
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-6ebdad67 elementor-invisible"
+                                                                data-id="6ebdad67" data-element_type="column"
+                                                                data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-55fd0bf elementor-widget elementor-widget-image"
+                                                                        data-id="55fd0bf" data-element_type="widget"
+                                                                        data-widget_type="image.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <img decoding="async" width="1024"
+                                                                                height="784"
+                                                                                src="wp-content/uploads/2024/04/231w1w2-1024x784.jpg"
+                                                                                class="attachment-large size-large wp-image-137"
+                                                                                alt="car detailing"
+                                                                                srcset="https://iconrocklearfl.com/wp-content/uploads/2024/04/231w1w2-1024x784.jpg 1024w, https://iconrocklearfl.com/wp-content/uploads/2024/04/231w1w2-300x230.jpg 300w, https://iconrocklearfl.com/wp-content/uploads/2024/04/231w1w2-768x588.jpg 768w, https://iconrocklearfl.com/wp-content/uploads/2024/04/231w1w2.jpg 1244w"
+                                                                                sizes="(max-width: 1024px) 100vw, 1024px" />
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-31193fb7 elementor-invisible"
+                                                                data-id="31193fb7" data-element_type="column"
+                                                                data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-467953b9 elementor-widget elementor-widget-elementskit-simple-tab"
+                                                                        data-id="467953b9" data-element_type="widget"
+                                                                        data-widget_type="elementskit-simple-tab.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <div class="ekit-wid-con">
+                                                                                <div
+                                                                                    class="elementkit-tab-wraper   elementskit-fitcontent-tab ">
+                                                                                    <ul
+                                                                                        class="nav nav-tabs elementkit-tab-nav  elementskit_tab_border_bottm elementskit_tab_border_bottm">
+                                                                                        <li
+                                                                                            class="elementkit-nav-item elementor-repeater-item-e7fb3c4">
+                                                                                            <a class="elementkit-nav-link  active show left-pos"
+                                                                                                id="content-e7fb3c4672e42a29acb5-tab"
+                                                                                                data-ekit-handler-id="performance"
+                                                                                                data-ekit-toggle="tab"
+                                                                                                data-target="#content-e7fb3c4672e42a29acb5"
+                                                                                                href="#Content-e7fb3c4672e42a29acb5"
+                                                                                                data-ekit-toggle-trigger="click"
+                                                                                                aria-describedby="Content-e7fb3c4672e42a29acb5">
+                                                                                                <span
+                                                                                                    class="elementskit-tab-title">
+                                                                                                    PERFORMANCE</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li
+                                                                                            class="elementkit-nav-item elementor-repeater-item-cb879c9">
+                                                                                            <a class="elementkit-nav-link  left-pos"
+                                                                                                id="content-cb879c9672e42a29acb5-tab"
+                                                                                                data-ekit-handler-id="versatility"
+                                                                                                data-ekit-toggle="tab"
+                                                                                                data-target="#content-cb879c9672e42a29acb5"
+                                                                                                href="#Content-cb879c9672e42a29acb5"
+                                                                                                data-ekit-toggle-trigger="click"
+                                                                                                aria-describedby="Content-cb879c9672e42a29acb5">
+                                                                                                <span
+                                                                                                    class="elementskit-tab-title">
+                                                                                                    VERSATILITY</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li
+                                                                                            class="elementkit-nav-item elementor-repeater-item-ca55ecd">
+                                                                                            <a class="elementkit-nav-link  left-pos"
+                                                                                                id="content-ca55ecd672e42a29acb5-tab"
+                                                                                                data-ekit-handler-id="guaranteed"
+                                                                                                data-ekit-toggle="tab"
+                                                                                                data-target="#content-ca55ecd672e42a29acb5"
+                                                                                                href="#Content-ca55ecd672e42a29acb5"
+                                                                                                data-ekit-toggle-trigger="click"
+                                                                                                aria-describedby="Content-ca55ecd672e42a29acb5">
+                                                                                                <span
+                                                                                                    class="elementskit-tab-title">
+                                                                                                    GUARANTEED</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                        <li
+                                                                                            class="elementkit-nav-item elementor-repeater-item-6830f3d">
+                                                                                            <a class="elementkit-nav-link  left-pos"
+                                                                                                id="content-6830f3d672e42a29acb5-tab"
+                                                                                                data-ekit-handler-id="exclusive"
+                                                                                                data-ekit-toggle="tab"
+                                                                                                data-target="#content-6830f3d672e42a29acb5"
+                                                                                                href="#Content-6830f3d672e42a29acb5"
+                                                                                                data-ekit-toggle-trigger="click"
+                                                                                                aria-describedby="Content-6830f3d672e42a29acb5">
+                                                                                                <span
+                                                                                                    class="elementskit-tab-title">
+                                                                                                    EXCLUSIVE</span>
+                                                                                            </a>
+                                                                                        </li>
+                                                                                    </ul>
+
+                                                                                    <div
+                                                                                        class="tab-content elementkit-tab-content">
+                                                                                        <div class="tab-pane elementkit-tab-pane elementor-repeater-item-e7fb3c4  active show"
+                                                                                            id="content-e7fb3c4672e42a29acb5"
+                                                                                            role="tabpanel"
+                                                                                            aria-labelledby="content-e7fb3c4672e42a29acb5-tab">
+                                                                                            <div
+                                                                                                class="animated fadeIn">
+                                                                                                <p>
+                                                                                                <div data-elementor-type="section"
+                                                                                                    data-elementor-id="322"
+                                                                                                    class="elementor elementor-322"
+                                                                                                    data-elementor-post-type="elementor_library">
+                                                                                                    <div class="elementor-element elementor-element-2b34dba e-flex e-con-boxed e-con e-parent"
+                                                                                                        data-id="2b34dba"
+                                                                                                        data-element_type="container"
+                                                                                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                                                        <div
+                                                                                                            class="e-con-inner">
+                                                                                                            <div class="elementor-element elementor-element-b7a7042 animated-fast elementor-invisible elementor-widget elementor-widget-heading"
+                                                                                                                data-id="b7a7042"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                                                                                data-widget_type="heading.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <h2
+                                                                                                                        class="elementor-heading-title elementor-size-default">
+                                                                                                                        Ultimate
+                                                                                                                        Protection
+                                                                                                                    </h2>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="elementor-element elementor-element-a61ec91 elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor"
+                                                                                                                data-id="a61ec91"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-widget_type="text-editor.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <p>Icon
+                                                                                                                        Rocklear
+                                                                                                                        is
+                                                                                                                        the
+                                                                                                                        toughest
+                                                                                                                        coating
+                                                                                                                        on
+                                                                                                                        the
+                                                                                                                        market,
+                                                                                                                        and
+                                                                                                                        it&#8217;s
+                                                                                                                        not
+                                                                                                                        even
+                                                                                                                        close.
+                                                                                                                        Its
+                                                                                                                        unique
+                                                                                                                        chemistry
+                                                                                                                        provides
+                                                                                                                        a
+                                                                                                                        rock-like
+                                                                                                                        bond
+                                                                                                                        for
+                                                                                                                        the
+                                                                                                                        best
+                                                                                                                        long-term
+                                                                                                                        protection
+                                                                                                                        in
+                                                                                                                        the
+                                                                                                                        world
+                                                                                                                        today.
+                                                                                                                    </p>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="elementor-element elementor-element-4d5b872 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                                                                                data-id="4d5b872"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-widget_type="divider.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <div
+                                                                                                                        class="elementor-divider">
+                                                                                                                        <span
+                                                                                                                            class="elementor-divider-separator">
+                                                                                                                        </span>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="tab-pane elementkit-tab-pane elementor-repeater-item-cb879c9 "
+                                                                                            id="content-cb879c9672e42a29acb5"
+                                                                                            role="tabpanel"
+                                                                                            aria-labelledby="content-cb879c9672e42a29acb5-tab">
+                                                                                            <div
+                                                                                                class="animated fadeIn">
+                                                                                                <p>
+                                                                                                <div data-elementor-type="section"
+                                                                                                    data-elementor-id="335"
+                                                                                                    class="elementor elementor-335"
+                                                                                                    data-elementor-post-type="elementor_library">
+                                                                                                    <div class="elementor-element elementor-element-53e9c5f e-flex e-con-boxed e-con e-parent"
+                                                                                                        data-id="53e9c5f"
+                                                                                                        data-element_type="container"
+                                                                                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                                                        <div
+                                                                                                            class="e-con-inner">
+                                                                                                            <div class="elementor-element elementor-element-6a8e306 animated-fast elementor-invisible elementor-widget elementor-widget-heading"
+                                                                                                                data-id="6a8e306"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                                                                                data-widget_type="heading.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <h2
+                                                                                                                        class="elementor-heading-title elementor-size-default">
+                                                                                                                        Protection
+                                                                                                                        Film/Wrap
+                                                                                                                    </h2>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="elementor-element elementor-element-5270b2d elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor"
+                                                                                                                data-id="5270b2d"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-widget_type="text-editor.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <p>Unlock
+                                                                                                                        the
+                                                                                                                        next
+                                                                                                                        level
+                                                                                                                        of
+                                                                                                                        vehicle
+                                                                                                                        paint
+                                                                                                                        defense
+                                                                                                                        with
+                                                                                                                        Icon
+                                                                                                                        Rocklear&#8217;s
+                                                                                                                        state-of-the-art
+                                                                                                                        coating
+                                                                                                                        technology.
+                                                                                                                        Engineered
+                                                                                                                        to
+                                                                                                                        form
+                                                                                                                        a
+                                                                                                                        steadfast
+                                                                                                                        bond
+                                                                                                                        with
+                                                                                                                        your
+                                                                                                                        vehicle&#8217;s
+                                                                                                                        surface,
+                                                                                                                        our
+                                                                                                                        innovative
+                                                                                                                        coating
+                                                                                                                        not
+                                                                                                                        only
+                                                                                                                        allows
+                                                                                                                        for
+                                                                                                                        the
+                                                                                                                        application
+                                                                                                                        of
+                                                                                                                        additional
+                                                                                                                        paint
+                                                                                                                        protection
+                                                                                                                        films
+                                                                                                                        and
+                                                                                                                        vinyl
+                                                                                                                        wraps
+                                                                                                                        but
+                                                                                                                        enhances
+                                                                                                                        their
+                                                                                                                        adhesion.
+                                                                                                                    </p>
+                                                                                                                    <p>This
+                                                                                                                        revolutionary
+                                                                                                                        system
+                                                                                                                        ensures
+                                                                                                                        that
+                                                                                                                        your
+                                                                                                                        personalized
+                                                                                                                        designs
+                                                                                                                        and
+                                                                                                                        wraps
+                                                                                                                        are
+                                                                                                                        not
+                                                                                                                        only
+                                                                                                                        showcased
+                                                                                                                        in
+                                                                                                                        high
+                                                                                                                        fidelity
+                                                                                                                        but
+                                                                                                                        are
+                                                                                                                        also
+                                                                                                                        shielded
+                                                                                                                        by
+                                                                                                                        Icon
+                                                                                                                        Rocklear&#8217;s
+                                                                                                                        superior
+                                                                                                                        protective
+                                                                                                                        layer.
+                                                                                                                    </p>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="elementor-element elementor-element-b670414 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                                                                                data-id="b670414"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-widget_type="divider.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <div
+                                                                                                                        class="elementor-divider">
+                                                                                                                        <span
+                                                                                                                            class="elementor-divider-separator">
+                                                                                                                        </span>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="tab-pane elementkit-tab-pane elementor-repeater-item-ca55ecd "
+                                                                                            id="content-ca55ecd672e42a29acb5"
+                                                                                            role="tabpanel"
+                                                                                            aria-labelledby="content-ca55ecd672e42a29acb5-tab">
+                                                                                            <div
+                                                                                                class="animated fadeIn">
+                                                                                                <p>
+                                                                                                <div data-elementor-type="section"
+                                                                                                    data-elementor-id="343"
+                                                                                                    class="elementor elementor-343"
+                                                                                                    data-elementor-post-type="elementor_library">
+                                                                                                    <div class="elementor-element elementor-element-4628269 e-flex e-con-boxed e-con e-parent"
+                                                                                                        data-id="4628269"
+                                                                                                        data-element_type="container"
+                                                                                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                                                        <div
+                                                                                                            class="e-con-inner">
+                                                                                                            <div class="elementor-element elementor-element-d186fd9 animated-fast elementor-invisible elementor-widget elementor-widget-heading"
+                                                                                                                data-id="d186fd9"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                                                                                data-widget_type="heading.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <h2
+                                                                                                                        class="elementor-heading-title elementor-size-default">
+                                                                                                                        Lifetime
+                                                                                                                        Workmanship
+                                                                                                                    </h2>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="elementor-element elementor-element-e27d44e elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor"
+                                                                                                                data-id="e27d44e"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-widget_type="text-editor.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <p>Icon
+                                                                                                                        Rocklear
+                                                                                                                        installations
+                                                                                                                        are
+                                                                                                                        backed
+                                                                                                                        by
+                                                                                                                        a
+                                                                                                                        lifetime
+                                                                                                                        workmanship
+                                                                                                                        warranty,
+                                                                                                                        offering
+                                                                                                                        global
+                                                                                                                        assurance.
+                                                                                                                        Enjoy
+                                                                                                                        peace
+                                                                                                                        of
+                                                                                                                        mind
+                                                                                                                        knowing
+                                                                                                                        that
+                                                                                                                        your
+                                                                                                                        Icon
+                                                                                                                        Rocklear
+                                                                                                                        protection
+                                                                                                                        is
+                                                                                                                        fully
+                                                                                                                        warranted
+                                                                                                                        worldwide,
+                                                                                                                        no
+                                                                                                                        matter
+                                                                                                                        where
+                                                                                                                        life
+                                                                                                                        takes
+                                                                                                                        you.
+                                                                                                                    </p>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="elementor-element elementor-element-14f3c15 elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                                                                                data-id="14f3c15"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-widget_type="divider.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <div
+                                                                                                                        class="elementor-divider">
+                                                                                                                        <span
+                                                                                                                            class="elementor-divider-separator">
+                                                                                                                        </span>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="tab-pane elementkit-tab-pane elementor-repeater-item-6830f3d "
+                                                                                            id="content-6830f3d672e42a29acb5"
+                                                                                            role="tabpanel"
+                                                                                            aria-labelledby="content-6830f3d672e42a29acb5-tab">
+                                                                                            <div
+                                                                                                class="animated fadeIn">
+                                                                                                <p>
+                                                                                                <div data-elementor-type="section"
+                                                                                                    data-elementor-id="346"
+                                                                                                    class="elementor elementor-346"
+                                                                                                    data-elementor-post-type="elementor_library">
+                                                                                                    <div class="elementor-element elementor-element-57c93b6 e-flex e-con-boxed e-con e-parent"
+                                                                                                        data-id="57c93b6"
+                                                                                                        data-element_type="container"
+                                                                                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                                                                                        <div
+                                                                                                            class="e-con-inner">
+                                                                                                            <div class="elementor-element elementor-element-046f9aa animated-fast elementor-invisible elementor-widget elementor-widget-heading"
+                                                                                                                data-id="046f9aa"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                                                                                data-widget_type="heading.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <h2
+                                                                                                                        class="elementor-heading-title elementor-size-default">
+                                                                                                                        Expert
+                                                                                                                        Installation
+                                                                                                                    </h2>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="elementor-element elementor-element-695b947 elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor"
+                                                                                                                data-id="695b947"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-widget_type="text-editor.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <p>Icon
+                                                                                                                        Rocklear
+                                                                                                                        sets
+                                                                                                                        itself
+                                                                                                                        apart
+                                                                                                                        with
+                                                                                                                        a
+                                                                                                                        commitment
+                                                                                                                        to
+                                                                                                                        excellence,
+                                                                                                                        entrusting
+                                                                                                                        installations
+                                                                                                                        exclusively
+                                                                                                                        to
+                                                                                                                        professionally
+                                                                                                                        trained
+                                                                                                                        experts
+                                                                                                                        within
+                                                                                                                        specialized
+                                                                                                                        facilities.
+                                                                                                                    </p>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="elementor-element elementor-element-7ea8e1e elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                                                                                data-id="7ea8e1e"
+                                                                                                                data-element_type="widget"
+                                                                                                                data-widget_type="divider.default">
+                                                                                                                <div
+                                                                                                                    class="elementor-widget-container">
+                                                                                                                    <div
+                                                                                                                        class="elementor-divider">
+                                                                                                                        <span
+                                                                                                                            class="elementor-divider-separator">
+                                                                                                                        </span>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                                </p>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <div class="elementor-element elementor-element-e00dc71 e-flex e-con-boxed e-con e-parent"
+                                        data-id="e00dc71" data-element_type="container"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="e-con-inner">
+                                            <div class="elementor-element elementor-element-99b15b9 e-con-full e-flex e-con e-child"
+                                                data-id="99b15b9" data-element_type="container">
+                                                <div class="elementor-element elementor-element-eeb614b elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-heading"
+                                                    data-id="eeb614b" data-element_type="widget"
+                                                    data-settings="{&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_parent&quot;:&quot;yes&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}"
+                                                    data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h2 class="elementor-heading-title elementor-size-default">
+                                                            #ICONROCKLEAR</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-ede4c4e animated-fast elementor-invisible elementor-widget elementor-widget-heading"
+                                                    data-id="ede4c4e" data-element_type="widget"
+                                                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                    data-widget_type="heading.default">
+                                                    <div class="elementor-widget-container">
+                                                        <h2 class="elementor-heading-title elementor-size-default">
+                                                            Advantages Of Rocklear© Coating</h2>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-07ca1d7 elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor"
+                                                    data-id="07ca1d7" data-element_type="widget" id="Benefits"
+                                                    data-widget_type="text-editor.default">
+                                                    <div class="elementor-widget-container">
+                                                        <p>Icon Rocklear is the most cutting edge surface protection
+                                                            technology in the world today that’s 75x Stronger than other
+                                                            coatings.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-d4031b5 e-con-full e-flex e-con e-child"
+                                                data-id="d4031b5" data-element_type="container">
+                                                <div class="elementor-element elementor-element-1ba021c elementor-hidden-mobile elementor-widget elementor-widget-spacer"
+                                                    data-id="1ba021c" data-element_type="widget"
+                                                    data-widget_type="spacer.default">
+                                                    <div class="elementor-widget-container">
+                                                        <style>
+                                                            /*! elementor - v3.22.0 - 17-06-2024 */
+                                                            .elementor-column .elementor-spacer-inner {
+                                                                height: var(--spacer-size)
+                                                            }
+
+                                                            .e-con {
+                                                                --container-widget-width: 100%
+                                                            }
+
+                                                            .e-con-inner>.elementor-widget-spacer,
+                                                            .e-con>.elementor-widget-spacer {
+                                                                width: var(--container-widget-width, var(--spacer-size));
+                                                                --align-self: var(--container-widget-align-self, initial);
+                                                                --flex-shrink: 0
+                                                            }
+
+                                                            .e-con-inner>.elementor-widget-spacer>.elementor-widget-container,
+                                                            .e-con>.elementor-widget-spacer>.elementor-widget-container {
+                                                                height: 100%;
+                                                                width: 100%
+                                                            }
+
+                                                            .e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer,
+                                                            .e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer {
+                                                                height: 100%
+                                                            }
+
+                                                            .e-con-inner>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner,
+                                                            .e-con>.elementor-widget-spacer>.elementor-widget-container>.elementor-spacer>.elementor-spacer-inner {
+                                                                height: var(--container-widget-height, var(--spacer-size))
+                                                            }
+
+                                                            .e-con-inner>.elementor-widget-spacer.elementor-widget-empty,
+                                                            .e-con>.elementor-widget-spacer.elementor-widget-empty {
+                                                                position: relative;
+                                                                min-height: 22px;
+                                                                min-width: 22px
+                                                            }
+
+                                                            .e-con-inner>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon,
+                                                            .e-con>.elementor-widget-spacer.elementor-widget-empty .elementor-widget-empty-icon {
+                                                                position: absolute;
+                                                                top: 0;
+                                                                bottom: 0;
+                                                                left: 0;
+                                                                right: 0;
+                                                                margin: auto;
+                                                                padding: 0;
+                                                                width: 22px;
+                                                                height: 22px
+                                                            }
+                                                        </style>
+                                                        <div class="elementor-spacer">
+                                                            <div class="elementor-spacer-inner"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-8cb624a elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor"
+                                                    data-id="8cb624a" data-element_type="widget"
+                                                    data-widget_type="text-editor.default">
+                                                    <div class="elementor-widget-container">
+                                                        <p>The only coating to achieve sheer strength, brilliance and
+                                                            depth correction capabilities – Making it the world’s best
+                                                            all in one system.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="elementor-element elementor-element-ff63b12 e-flex e-con-boxed e-con e-parent"
+                                        data-id="ff63b12" data-element_type="container"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="e-con-inner">
+                                            <div class="elementor-element elementor-element-ac3e2ad e-con-full e-flex e-con e-child"
+                                                data-id="ac3e2ad" data-element_type="container">
+                                                <div class="elementor-element elementor-element-171428c ekit-equal-height-disable elementor-invisible elementor-widget elementor-widget-elementskit-icon-box"
+                                                    data-id="171428c" data-element_type="widget"
+                                                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                    data-widget_type="elementskit-icon-box.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="ekit-wid-con"> <!-- link opening -->
+                                                            <a href="#" class="ekit_global_links">
+                                                                <!-- end link opening -->
+
+                                                                <div
+                                                                    class="elementskit-infobox text- text-left icon-lef-right-aligin elementor-animation- media gradient-active  hover_from_left">
+                                                                    <div class="box-body">
+                                                                        <h3 class="elementskit-info-box-title">
+                                                                            35X THICKNESS </h3>
+                                                                        <p>Icon Rocklear is a highly efficient coating,
+                                                                            reaching 2.5 mil (63 microns) in one
+                                                                            application - over 35 times thicker than
+                                                                            Ceramic or Graphene Coatings. It avoids the
+                                                                            need for damaging clear coat removal
+                                                                            required by other coatings.</p>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-74e7faf ekit-equal-height-disable elementor-invisible elementor-widget elementor-widget-elementskit-icon-box"
+                                                    data-id="74e7faf" data-element_type="widget"
+                                                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                    data-widget_type="elementskit-icon-box.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="ekit-wid-con"> <!-- link opening -->
+                                                            <a href="#" class="ekit_global_links">
+                                                                <!-- end link opening -->
+
+                                                                <div
+                                                                    class="elementskit-infobox text- text-left icon-lef-right-aligin elementor-animation- media gradient-active  hover_from_left">
+                                                                    <div class="box-body">
+                                                                        <h3 class="elementskit-info-box-title">
+                                                                            SCRATCH / ABRASION </h3>
+                                                                        <p>In a test, a key scratched a panel
+                                                                            half-coated with Rocklear. The uncoated part
+                                                                            showed a clear scratch, but the scratch was
+                                                                            barely visible on the Rocklear-coated area.
+                                                                            With other coatings, any scratches require
+                                                                            removal, repainting, and recoating.</p>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-d8991cf ekit-equal-height-disable elementor-invisible elementor-widget elementor-widget-elementskit-icon-box"
+                                                    data-id="d8991cf" data-element_type="widget"
+                                                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                    data-widget_type="elementskit-icon-box.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="ekit-wid-con"> <!-- link opening -->
+                                                            <a href="#" class="ekit_global_links">
+                                                                <!-- end link opening -->
+
+                                                                <div
+                                                                    class="elementskit-infobox text- text-left icon-lef-right-aligin elementor-animation- media gradient-active  hover_from_left">
+                                                                    <div class="box-body">
+                                                                        <h3 class="elementskit-info-box-title">
+                                                                            SALT SPRAY </h3>
+                                                                        <p>Rocklear lasts 300% longer in salty and humid
+                                                                            conditions compared to other coatings. It
+                                                                            showed no change even after 1,000 hours in
+                                                                            tests, while the best professional ceramics
+                                                                            lasted only 350 hours.</p>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="elementor-element elementor-element-33c9a4c e-con-full e-flex e-con e-child"
+                                                data-id="33c9a4c" data-element_type="container">
+                                                <div class="elementor-element elementor-element-00ed2f0 ekit-equal-height-disable elementor-invisible elementor-widget elementor-widget-elementskit-icon-box"
+                                                    data-id="00ed2f0" data-element_type="widget"
+                                                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                    data-widget_type="elementskit-icon-box.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="ekit-wid-con"> <!-- link opening -->
+                                                            <a href="#" class="ekit_global_links">
+                                                                <!-- end link opening -->
+
+                                                                <div
+                                                                    class="elementskit-infobox text- text-left icon-lef-right-aligin elementor-animation- media gradient-active  hover_from_left">
+                                                                    <div class="box-body">
+                                                                        <h3 class="elementskit-info-box-title">
+                                                                            20X UV WEATHERING </h3>
+                                                                        <p>Rocklear remains unchanged even after 4,000
+                                                                            hours of intense UV and moisture exposure,
+                                                                            offering up to 20 times more UV protection
+                                                                            than Ceramic Coatings.
+
+                                                                        </p>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-259f486 ekit-equal-height-disable elementor-invisible elementor-widget elementor-widget-elementskit-icon-box"
+                                                    data-id="259f486" data-element_type="widget"
+                                                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                    data-widget_type="elementskit-icon-box.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="ekit-wid-con"> <!-- link opening -->
+                                                            <a href="#" class="ekit_global_links">
+                                                                <!-- end link opening -->
+
+                                                                <div
+                                                                    class="elementskit-infobox text- text-left icon-lef-right-aligin elementor-animation- media gradient-active  hover_from_left">
+                                                                    <div class="box-body">
+                                                                        <h3 class="elementskit-info-box-title">
+                                                                            30%+ BRILLIANCE </h3>
+                                                                        <p>Icon Rocklear stands out with its exceptional
+                                                                            shine and clear appearance. In tests, it
+                                                                            reflected 97% of light, more than any other
+                                                                            coating, even on a five-year-old car paint.
+                                                                            It’s 30% brighter than any Ceramic or
+                                                                            Graphene coating.</p>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="elementor-element elementor-element-736a937 ekit-equal-height-disable elementor-invisible elementor-widget elementor-widget-elementskit-icon-box"
+                                                    data-id="736a937" data-element_type="widget"
+                                                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                    data-widget_type="elementskit-icon-box.default">
+                                                    <div class="elementor-widget-container">
+                                                        <div class="ekit-wid-con"> <!-- link opening -->
+                                                            <a href="#" class="ekit_global_links">
+                                                                <!-- end link opening -->
+
+                                                                <div
+                                                                    class="elementskit-infobox text- text-left icon-lef-right-aligin elementor-animation- media gradient-active  hover_from_left">
+                                                                    <div class="box-body">
+                                                                        <h3 class="elementskit-info-box-title">
+                                                                            RENEWABLE </h3>
+                                                                        <p>Icon Rocklear’s ICE technology enables
+                                                                            repairs and reapplications by our
+                                                                            technicians, even after severe damage. It’s
+                                                                            not just a coating; it’s a durable, lifelong
+                                                                            protection system for your vehicle or boat,
+                                                                            ensuring a long-lasting, new-looking finish.
+                                                                        </p>
+                                                                    </div>
+
+
+                                                                </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-1fe5dda elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                        data-id="1fe5dda" data-element_type="section" id="Form"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-05b9a94"
+                                                data-id="05b9a94" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-976cd4f elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                        data-id="976cd4f" data-element_type="widget"
+                                                        data-widget_type="divider.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="elementor-divider">
+                                                                <span class="elementor-divider-separator">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-c37ec5b elementor-widget elementor-widget-heading"
+                                                        data-id="c37ec5b" data-element_type="widget"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2 class="elementor-heading-title elementor-size-default">
+                                                                #ICONROCKLEAR</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-fc7ec27 animated-fast elementor-invisible elementor-widget elementor-widget-heading"
+                                                        data-id="fc7ec27" data-element_type="widget"
+                                                        data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2 class="elementor-heading-title elementor-size-default">
+                                                                Get a Quote For Your Vehicle</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-f3196f9 elementor-widget-mobile__width-initial elementor-widget elementor-widget-text-editor"
+                                                        data-id="f3196f9" data-element_type="widget"
+                                                        data-widget_type="text-editor.default">
+                                                        <div class="elementor-widget-container">
+                                                            <p>Fill out the form below and we&#8217;ll get back to you
+                                                                with a quote and schedule.</p>
+                                                        </div>
+                                                    </div>
+                                                    <section
+                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-3a91feb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                                                        data-id="3a91feb" data-element_type="section" id="Form">
+
+                                                        <div class="elementor-container elementor-column-gap-default">
+
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-27253b1 elementor-invisible"
+                                                                data-id="27253b1" data-element_type="column"
+                                                                data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-f1b5493 elementor-widget elementor-widget-video"
+                                                                        data-id="f1b5493" data-element_type="widget"
+                                                                        data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;controls&quot;:&quot;yes&quot;}"
+                                                                        data-widget_type="video.default">
+                                                                        <div class="elementor-widget-container">
+                                                                            <style>
+                                                                                /*! elementor - v3.22.0 - 17-06-2024 */
+                                                                                .elementor-widget-video .elementor-widget-container {
+                                                                                    overflow: hidden;
+                                                                                    transform: translateZ(0)
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-wrapper {
+                                                                                    aspect-ratio: var(--video-aspect-ratio)
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-wrapper iframe,
+                                                                                .elementor-widget-video .elementor-wrapper video {
+                                                                                    height: 100%;
+                                                                                    width: 100%;
+                                                                                    display: flex;
+                                                                                    border: none;
+                                                                                    background-color: #000
+                                                                                }
+
+                                                                                @supports not (aspect-ratio:1/1) {
+                                                                                    .elementor-widget-video .elementor-wrapper {
+                                                                                        position: relative;
+                                                                                        overflow: hidden;
+                                                                                        height: 0;
+                                                                                        padding-bottom: calc(100% / var(--video-aspect-ratio))
+                                                                                    }
+
+                                                                                    .elementor-widget-video .elementor-wrapper iframe,
+                                                                                    .elementor-widget-video .elementor-wrapper video {
+                                                                                        position: absolute;
+                                                                                        top: 0;
+                                                                                        right: 0;
+                                                                                        bottom: 0;
+                                                                                        left: 0
+                                                                                    }
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-open-inline .elementor-custom-embed-image-overlay {
+                                                                                    position: absolute;
+                                                                                    top: 0;
+                                                                                    right: 0;
+                                                                                    bottom: 0;
+                                                                                    left: 0;
+                                                                                    background-size: cover;
+                                                                                    background-position: 50%
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-custom-embed-image-overlay {
+                                                                                    cursor: pointer;
+                                                                                    text-align: center
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-custom-embed-image-overlay:hover .elementor-custom-embed-play i {
+                                                                                    opacity: 1
+                                                                                }
+
+                                                                                .elementor-widget-video .elementor-custom-embed-image-overlay img {
+                                                                                    display: block;
+                                                                                    width: 100%;
+                                                                                    aspect-ratio: var(--video-aspect-ratio);
+                                                                                    -o-object-fit: cover;
+                                                                                    object-fit: cover;
+                                                                                    -o-object-position: center center;
+                                                                                    object-position: center center
+                                                                                }
+
+                                                                                @supports not (aspect-ratio:1/1) {
+                                                                                    .elementor-widget-video .elementor-custom-embed-image-overlay {
+                                                                                        position: relative;
+                                                                                        overflow: hidden;
+                                                                                        height: 0;
+                                                                                        padding-bottom: calc(100% / var(--video-aspect-ratio))
+                                                                                    }
+
+                                                                                    .elementor-widget-video .elementor-custom-embed-image-overlay img {
+                                                                                        position: absolute;
+                                                                                        top: 0;
+                                                                                        right: 0;
+                                                                                        bottom: 0;
+                                                                                        left: 0
+                                                                                    }
+                                                                                }
+
+                                                                                .elementor-widget-video .e-hosted-video .elementor-video {
+                                                                                    -o-object-fit: cover;
+                                                                                    object-fit: cover
+                                                                                }
+
+                                                                                .e-con-inner>.elementor-widget-video,
+                                                                                .e-con>.elementor-widget-video {
+                                                                                    width: var(--container-widget-width);
+                                                                                    --flex-grow: var(--container-widget-flex-grow)
+                                                                                }
+                                                                            </style>
+                                                                            <div
+                                                                                class="e-hosted-video elementor-wrapper elementor-open-inline">
+                                                                                <video class="elementor-video"
+                                                                                    src="wp-content/uploads/2024/04/659c71946754a6b0b136b91a_Sequence-08_1-transcode.mp4"
+                                                                                    autoplay="" controls=""
+                                                                                    controlsList="nodownload"></video>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-62c52a3 elementor-invisible"
+                                                                data-id="62c52a3" data-element_type="column"
+                                                                data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
+                                                                <div
+                                                                    class="elementor-widget-wrap elementor-element-populated">
+                                                                    <div class="elementor-element elementor-element-0a0add2 elementor-button-align-stretch elementor-widget elementor-widget-form"
+                                                                        data-id="0a0add2" data-element_type="widget"
+                                                                        data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}"
+                                                                        data-widget_type="form.default">
+                                                                        <div class="elementor-widget-container">
+
+                                                                            <iframe
+                                                                                id="JotFormIFrame-241586322618055"
+                                                                                title=" Add Lead form"
+                                                                                onload="window.parent.scrollTo(0,0)"
+                                                                                allowtransparency="true"
+                                                                                allow="geolocation; microphone; camera; fullscreen"
+                                                                                src="https://form.jotform.com/241586322618055"
+                                                                                frameborder="0"
+                                                                                style="min-width:100%;max-width:100%;height:1095px;border:none;"
+                                                                                scrolling="no"     >
+                                                                            </iframe>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <script src='https://cdn.jotfor.ms/s/umd/latest/for-form-embed-handler.js'></script>
+
+                                                            <script>
+                                                                window.jotformEmbedHandler("iframe[id='JotFormIFrame-241586322618055']", "https://form.jotform.com/")
+                                                            </script>
+                                                        </div>
+                                                    </section>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section
+                                        class="elementor-section elementor-top-section elementor-element elementor-element-7845699 elementor-section-full_width elementor-section-height-default elementor-section-height-default"
+                                        data-id="7845699" data-element_type="section"
+                                        data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+                                        <div class="elementor-container elementor-column-gap-default">
+                                            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7a4cd5b"
+                                                data-id="7a4cd5b" data-element_type="column">
+                                                <div class="elementor-widget-wrap elementor-element-populated">
+                                                    <div class="elementor-element elementor-element-3b5c2a7 animated-fast elementor-invisible elementor-widget elementor-widget-heading"
+                                                        data-id="3b5c2a7" data-element_type="widget"
+                                                        data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                                                        data-widget_type="heading.default">
+                                                        <div class="elementor-widget-container">
+                                                            <h2 class="elementor-heading-title elementor-size-default">
+                                                                To find your nearest installer</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-2f4224d elementor-widget-divider--separator-type-pattern elementor-widget-divider--view-line elementor-widget elementor-widget-divider"
+                                                        data-id="2f4224d" data-element_type="widget"
+                                                        data-widget_type="divider.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="elementor-divider"
+                                                                style="--divider-pattern-url: url(_data_image/svg%2bxml%2c_svg%20xmlns%3d%27http_/www.w3.org/2000/svg%27%20preserveAspectRatio%3d%27none%27%20overflow%3d%27visib/__/svg__.html);">
+                                                                <span class="elementor-divider-separator">
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="elementor-element elementor-element-3c88c65 elementor-widget elementor-widget-shortcode"
+                                                        data-id="3c88c65" data-element_type="widget"
+                                                        data-widget_type="shortcode.default">
+                                                        <div class="elementor-widget-container">
+                                                            <div class="elementor-shortcode">
+
+                                                                <!-- Map -->
+                                                                <div class="section-area">
+                                                                    <iframe
+                                                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.1117088358656!2d-79.53489302407557!3d43.812042242143306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2f8768e07897%3A0x33dd98ca9562b219!2sThe%20Armour%20Lab!5e0!3m2!1sen!2sus!4v1702199588491!5m2!1sen!2sus"
+                                                                        class="align-self-stretch d-flex"
+                                                                        style="width:70%; width:100%; min-height: 350px;"
+                                                                        allowfullscreen=""></iframe>
+                                                                </div>
+
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+
+
+
+                            </div><!-- .entry-content .clear -->
+
+
+
+                        </article><!-- #post-## -->
+
+                    </main><!-- #main -->
+
+
+                </div><!-- #primary -->
+
+
+            </div> <!-- ast-container -->
+        </div><!-- #content -->
+        @include('frontend.partials.footer')
+    </div><!-- #page -->
+
+    <div id="um_upload_single" style="display:none;"></div>
+
+    <div id="um_view_photo" style="display:none;">
+        <a href="javascript:void(0);" data-action="um_remove_modal" class="um-modal-close"
+            aria-label="Close view photo modal">
+            <i class="um-faicon-times"></i>
+        </a>
+
+        <div class="um-modal-body photo">
+            <div class="um-modal-photo"></div>
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+            var prtContent = document.getElementById("primary");
+            var cssLinks = Array.from(document.querySelectorAll('link[rel="stylesheet"]')).map(link => link.href);
+            alert(cssLinks);
+            var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=1200,toolbar=0,scrollbars=0,status=0');
+
+            // Create a style block to include the CSS
+            var styleBlock = '<style>';
+            cssLinks.forEach(function(href) {
+                styleBlock += '@import url(' + href + ');';
+            });
+            styleBlock += '</style>';
+
+            // Write the content and CSS into the print window
+            WinPrint.document.write('<html><head>' + styleBlock + '</head><body>');
+            WinPrint.document.write(prtContent.innerHTML);
+            WinPrint.document.write('</body></html>');
+
+            WinPrint.document.close();
+            WinPrint.focus();
+            WinPrint.print();
+            WinPrint.close();
+        }
+    </script>
+    <!--<script>
+        function myFunction() {
+            var prtContent = document.getElementById("primary");
+            var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=1200,toolbar=0,scrollbars=0,status=0');
+            WinPrint.document.write(prtContent.innerHTML);
+            WinPrint.document.close();
+            WinPrint.focus();
+            WinPrint.print();
+            WinPrint.close();
+        }
+    </script>-->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        (function() {
+            var u = "https://stats1.wpmudev.com/";
+            _paq.push(['setTrackerUrl', u + 'track/']);
+            _paq.push(['setSiteId', '219309']);
+            var d = document,
+                g = d.createElement('script'),
+                s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript';
+            g.async = true;
+            g.defer = true;
+            g.src = '../stats.wpmucdn.com/analytics.js';
+            s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+
+    <div id="ast-scroll-top" tabindex="0" class="ast-scroll-top-icon ast-scroll-to-top-right"
+        data-on-devices="both">
+        <span class="ast-icon icon-arrow"><svg class="ast-arrow-svg" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="26px"
+                height="16.043px" viewBox="57 35.171 26 16.043" enable-background="new 57 35.171 26 16.043"
+                xml:space="preserve">
+                <path d="M57.5,38.193l12.5,12.5l12.5-12.5l-2.5-2.5l-10,10l-10-10L57.5,38.193z" />
+            </svg></span> <span class="screen-reader-text">Scroll to Top</span>
+    </div>
+    <link rel='stylesheet' id='e-animations-css'
+        href='wp-content/plugins/elementor/assets/lib/animations/animations.min4d52.css?ver=3.22.1'
+        media='all' />
+    <link rel='stylesheet' id='elementor-post-322-css'
+        href='wp-content/uploads/elementor/css/post-322ef34.css?ver=1727509462' media='all' />
+    <link rel='stylesheet' id='elementor-post-335-css'
+        href='wp-content/uploads/elementor/css/post-335ef34.css?ver=1727509462' media='all' />
+    <link rel='stylesheet' id='elementor-post-343-css'
+        href='wp-content/uploads/elementor/css/post-343ef34.css?ver=1727509462' media='all' />
+    <link rel='stylesheet' id='elementor-post-346-css'
+        href='wp-content/uploads/elementor/css/post-346ef34.css?ver=1727509462' media='all' />
+    <link rel='stylesheet' id='fontawesome-css'
+        href='wp-content/plugins/wp-google-maps/css/font-awesome.min109c.css?ver=6.6.2' media='all' />
+    <link rel='stylesheet' id='fontawesome-polyfill-css'
+        href='wp-content/plugins/wp-google-maps/css/polyfill/fa-5to4109c.css?ver=6.6.2' media='all' />
+    <link rel='stylesheet' id='wpgmza-common-css'
+        href='wp-content/plugins/wp-google-maps/css/common4784.css?ver=9.0.40+pro-9.0.30' media='all' />
+    <link rel='stylesheet' id='datatables-css'
+        href='wp-content/plugins/wp-google-maps/css/jquery.dataTables.min109c.css?ver=6.6.2' media='all' />
+    <link rel='stylesheet' id='wpgmza-ui-default-css'
+        href='wp-content/plugins/wp-google-maps/css/styles/default4784.css?ver=9.0.40+pro-9.0.30' media='all' />
+    <link rel='stylesheet' id='owl-carousel_style-css'
+        href='wp-content/plugins/wp-google-maps/lib/owl.carousel.mina29e.css?ver=9.0.30' media='all' />
+    <link rel='stylesheet' id='owl-carousel_style__default_theme-css'
+        href='wp-content/plugins/wp-google-maps/lib/owl.theme.default.mina29e.css?ver=9.0.30' media='all' />
+    <link rel='stylesheet' id='owl_carousel_style_theme_select-css'
+        href='wp-content/plugins/wp-google-maps-pro/css/carousel_skya29e.css?ver=9.0.30' media='all' />
+    <link rel='stylesheet' id='featherlight-css'
+        href='wp-content/plugins/wp-google-maps-pro/lib/featherlight.mina29e.css?ver=9.0.30' media='all' />
+    <link rel='stylesheet' id='wpgmaps_datatables_responsive-style-css'
+        href='wp-content/plugins/wp-google-maps-pro/lib/dataTables.responsivea29e.css?ver=9.0.30' media='all' />
+    <link rel='stylesheet' id='wpgmaps-style-pro-css'
+        href='wp-content/plugins/wp-google-maps-pro/css/wpgmza_style_proa29e.css?ver=9.0.30' media='all' />
+    <style id='wpgmaps-style-pro-inline-css'>
+        .wpgmza_map img {
+            max-width: none;
+        }
+
+        .wpgmza_widget {
+            overflow: auto;
+        }
+    </style>
+    <link rel='stylesheet' id='wpgmza_legacy_modern_pro_style-css'
+        href='wp-content/plugins/wp-google-maps-pro/css/styles/legacy-modern109c.css?ver=6.6.2' media='all' />
+    <script id="astra-theme-js-js-extra">
+        var astra = {
+            "break_point": "921",
+            "isRtl": "",
+            "is_scroll_to_id": "1",
+            "is_scroll_to_top": "1",
+            "is_header_footer_builder_active": "1"
+        };
+    </script>
+    <script src="wp-content/themes/astra/assets/js/minified/frontend.min6996.js?ver=4.7.1" id="astra-theme-js-js"></script>
+    <script src="wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script55a0.js?ver=3.2.0"
+        id="elementskit-framework-js-frontend-js"></script>
+    <script id="elementskit-framework-js-frontend-js-after">
+        var elementskit = {
+            resturl: 'https://iconrocklearfl.com/wp-json/elementskit/v1/',
+        }
+    </script>
+    <script src="wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts55a0.js?ver=3.2.0"
+        id="ekit-widget-scripts-js"></script>
+    <script id="eael-general-js-extra">
+        var localize = {
+            "ajaxurl": "https:\/\/iconrocklearfl.com\/wp-admin\/admin-ajax.php",
+            "nonce": "4af3d077e0",
+            "i18n": {
+                "added": "Added ",
+                "compare": "Compare",
+                "loading": "Loading..."
+            },
+            "eael_translate_text": {
+                "required_text": "is a required field",
+                "invalid_text": "Invalid",
+                "billing_text": "Billing",
+                "shipping_text": "Shipping",
+                "fg_mfp_counter_text": "of"
+            },
+            "page_permalink": "https:\/\/iconrocklearfl.com\/",
+            "cart_redirectition": "no",
+            "cart_page_url": "",
+            "el_breakpoints": {
+                "mobile": {
+                    "label": "Mobile Portrait",
+                    "value": 767,
+                    "default_value": 767,
+                    "direction": "max",
+                    "is_enabled": true
+                },
+                "mobile_extra": {
+                    "label": "Mobile Landscape",
+                    "value": 880,
+                    "default_value": 880,
+                    "direction": "max",
+                    "is_enabled": false
+                },
+                "tablet": {
+                    "label": "Tablet Portrait",
+                    "value": 1024,
+                    "default_value": 1024,
+                    "direction": "max",
+                    "is_enabled": true
+                },
+                "tablet_extra": {
+                    "label": "Tablet Landscape",
+                    "value": 1200,
+                    "default_value": 1200,
+                    "direction": "max",
+                    "is_enabled": false
+                },
+                "laptop": {
+                    "label": "Laptop",
+                    "value": 1366,
+                    "default_value": 1366,
+                    "direction": "max",
+                    "is_enabled": false
+                },
+                "widescreen": {
+                    "label": "Widescreen",
+                    "value": 2400,
+                    "default_value": 2400,
+                    "direction": "min",
+                    "is_enabled": false
+                }
+            }
+        };
+    </script>
+    <script
+        src="wp-content/plugins/essential-addons-for-elementor-lite/assets/front-end/js/view/general.minab15.js?ver=5.9.24"
+        id="eael-general-js"></script>
+    <script src="wp-includes/js/underscore.mind584.js?ver=1.13.4" id="underscore-js"></script>
+    <script id="wp-util-js-extra">
+        var _wpUtilSettings = {
+            "ajax": {
+                "url": "\/wp-admin\/admin-ajax.php"
+            }
+        };
+    </script>
+    <script src="wp-includes/js/wp-util.min109c.js?ver=6.6.2" id="wp-util-js"></script>
+    <script src="wp-includes/js/dist/hooks.min2757.js?ver=2810c76e705dd1a53b18" id="wp-hooks-js"></script>
+    <script src="wp-includes/js/dist/i18n.minc33c.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+    <script id="wp-i18n-js-after">
+        wp.i18n.setLocaleData({
+            'text direction\u0004ltr': ['ltr']
+        });
+    </script>
+    <script src="wp-content/plugins/ultimate-member/assets/libs/tipsy/tipsy.mina677.js?ver=1.0.0a" id="um_tipsy-js">
+    </script>
+    <script src="wp-content/plugins/ultimate-member/assets/libs/um-confirm/um-confirm.min5152.js?ver=1.0"
+        id="um_confirm-js"></script>
+    <script src="wp-content/plugins/ultimate-member/assets/libs/pickadate/picker.min822f.js?ver=3.6.2" id="um_datetime-js">
+    </script>
+    <script src="wp-content/plugins/ultimate-member/assets/libs/pickadate/picker.date.min822f.js?ver=3.6.2"
+        id="um_datetime_date-js"></script>
+    <script src="wp-content/plugins/ultimate-member/assets/libs/pickadate/picker.time.min822f.js?ver=3.6.2"
+        id="um_datetime_time-js"></script>
+    <script id="um_common-js-extra">
+        var um_common_variables = {
+            "locale": "en_US"
+        };
+        var um_common_variables = {
+            "locale": "en_US"
+        };
+    </script>
+    <script src="wp-content/plugins/ultimate-member/assets/js/common.mind2b8.js?ver=2.8.6" id="um_common-js"></script>
+    <script src="wp-content/plugins/ultimate-member/assets/libs/cropper/cropper.min51a2.js?ver=1.6.1" id="um_crop-js">
+    </script>
+    <script id="um_frontend_common-js-extra">
+        var um_frontend_common_variables = [];
+    </script>
+    <script src="wp-content/plugins/ultimate-member/assets/js/common-frontend.mind2b8.js?ver=2.8.6"
+        id="um_frontend_common-js"></script>
+    <script src="wp-content/plugins/ultimate-member/assets/js/um-modal.mind2b8.js?ver=2.8.6" id="um_modal-js"></script>
+    <script src="wp-content/plugins/ultimate-member/assets/libs/jquery-form/jquery-form.mind2b8.js?ver=2.8.6"
+        id="um_jquery_form-js"></script>
+    <script src="wp-content/plugins/ultimate-member/assets/libs/fileupload/fileuploadd2b8.js?ver=2.8.6"
+        id="um_fileupload-js"></script>
+    <script src="wp-content/plugins/ultimate-member/assets/js/um-functions.mind2b8.js?ver=2.8.6" id="um_functions-js">
+    </script>
+    <script src="wp-content/plugins/ultimate-member/assets/js/um-responsive.mind2b8.js?ver=2.8.6" id="um_responsive-js">
+    </script>
+    <script src="wp-content/plugins/ultimate-member/assets/js/um-conditional.mind2b8.js?ver=2.8.6" id="um_conditional-js">
+    </script>
+    <script src="wp-content/plugins/ultimate-member/assets/libs/select2/select2.full.min4819.js?ver=4.0.13" id="select2-js">
+    </script>
+    <script src="wp-content/plugins/ultimate-member/assets/libs/select2/i18n/en4819.js?ver=4.0.13"
+        id="um_select2_locale-js"></script>
+    <script src="wp-content/plugins/ultimate-member/assets/libs/raty/um-raty.mind315.js?ver=2.6.0" id="um_raty-js"></script>
+    <script id="um_scripts-js-extra">
+        var um_scripts = {
+            "max_upload_size": "134217728",
+            "nonce": "29f6d52722"
+        };
+    </script>
+    <script src="wp-content/plugins/ultimate-member/assets/js/um-scripts.mind2b8.js?ver=2.8.6" id="um_scripts-js"></script>
+    <script src="wp-content/plugins/ultimate-member/assets/js/um-profile.mind2b8.js?ver=2.8.6" id="um_profile-js"></script>
+    <script src="wp-content/plugins/ultimate-member/assets/js/um-account.mind2b8.js?ver=2.8.6" id="um_account-js"></script>
+    <script src="wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min0599.js?ver=3.22.0" id="e-sticky-js">
+    </script>
+    <script src="../www.google.com/recaptcha/api9751.js?render=explicit&amp;ver=3.22.0" id="elementor-recaptcha-api-js">
+    </script>
+    <script
+        src="http://maps.googleapis.com/maps/api/js?v=quarterly&amp;language=en&amp;key=AIzaSyCPkXRsXVcBq6Lx1F_xdtgS0_OAQEDpN3w&amp;callback=__wpgmzaMapEngineLoadedCallback&amp;libraries=geometry%2Cplaces%2Cvisualization%2Cmarker&amp;ver=6.6.2"
+        id="wpgmza_api_call-js" data-usercentrics="Google Maps"></script>
+    <script id="wpgmza_dummy-js-extra">
+        var wpgmza_category_data = [];
+    </script>
+    <script src="wp-content/plugins/wp-google-maps-pro/dummy109c.js?ver=6.6.2" id="wpgmza_dummy-js"></script>
+    <script src="wp-content/plugins/elementskit-lite/widgets/init/assets/js/datatables.min55a0.js?ver=3.2.0"
+        id="datatables-js"></script>
+    <script src="wp-content/plugins/wp-google-maps/js/dataTables.responsive109c.js?ver=6.6.2" id="datatables-responsive-js">
+    </script>
+    <script src="wp-content/plugins/wp-google-maps/lib/jquery-cookie109c.js?ver=6.6.2" id="javascript-cookie-js"></script>
+    <script src="wp-content/plugins/wp-google-maps/lib/pep109c.js?ver=6.6.2" id="pepjs-js"></script>
+    <script src="wp-content/plugins/wp-google-maps/lib/text109c.js?ver=6.6.2" id="fast-text-encoding-js"></script>
+    <script src="wp-content/plugins/wp-google-maps/lib/pako_deflate.min109c.js?ver=6.6.2" id="pako-js"></script>
+    <script id="wpgmza-js-extra">
+        var WPGMZA_localized_data = {
+            "adminurl": "https:\/\/iconrocklearfl.com\/wp-admin\/",
+            "siteHash": "3ac7dab1ed8ac39cac1ef25a0ff6c8e0",
+            "ajaxurl": "https:\/\/iconrocklearfl.com\/wp-admin\/admin-ajax.php",
+            "pluginDirURL": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps\/",
+            "ajaxnonce": "5d1f5dafa9",
+            "legacyajaxnonce": "c231d57d57",
+            "html": {
+                "googleMapsAPIErrorDialog": "<div>\r\n\r\n\t<h2>Maps API Error<\/h2>\r\n\t\r\n\t<div>\r\n\t\r\n\t\t<p>\r\n\t\t\tOne or more error(s) have occured attempting to initialize the Maps API:\t\t<\/p>\r\n\t\r\n\t\t<ul class=\"wpgmza-google-api-error-list\">\r\n\t\t\t<li class=\"template notice notice-error\">\r\n\t\t\t\t<span class=\"wpgmza-message\"><\/span>\r\n\t\t\t\t<span class=\"wpgmza-documentation-buttons\">\r\n\t\t\t\t\t<a target=\"_blank\">\r\n\t\t\t\t\t\t<i class=\"fa\" aria-hidden=\"true\"><\/i>\r\n\t\t\t\t\t<\/a>\r\n\t\t\t\t<\/span>\r\n\t\t\t<\/li>\r\n\t\t<\/ul>\r\n\t\r\n\t<\/div>\r\n\t\t\t<p class=\"wpgmza-front-end-only\">\r\n\t\t<i class=\"fa fa-eye\" aria-hidden=\"true\"><\/i>\r\n\t\tThis dialog is only visible to administrators\t<\/p>\r\n\t\r\n\t<!--<button data-remodal-action=\"confirm\" class=\"remodal-confirm\">\r\n\t\tDismiss\t<\/button>-->\r\n\r\n<\/div>"
+            },
+            "imageFolderURL": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps\/images\/",
+            "resturl": "https:\/\/iconrocklearfl.com\/wp-json\/wpgmza\/v1",
+            "restnonce": "3314ce7f6a",
+            "restnoncetable": {
+                "\/(polygons|polylines|circles|rectangles|pointlabels)(\\\/\\d+)?\/": "d2aab0dabe",
+                "\/markers(\\\/\\d+)?\/": "0ae8915a48",
+                "\/datatables": "7928c14f42",
+                "\/live-tracker": "4b392efe65",
+                "\/live-tracker\/devices\/([0-9a-f]+)\/": "e344ed3753",
+                "\/live-tracker\/devices\/link\/(.+)\/": "2bc8365db3",
+                "\/live-tracker\/devices\/plot\/(.+)\/": "bf3a4d4fc8",
+                "\/live-tracker\/devices\/visibility\/(.+)\/": "9c1793eea5",
+                "\/ratings\/": "a056e2ef5d",
+                "\/marker-listing\/": "2911c49d90",
+                "\/maps\/": "42f5fa600d",
+                "\/heatmaps(\\\/\\d+)?\/": "1422f2321c",
+                "\/imageoverlays(\\\/\\d+)?\/": "6e1b44fc9a",
+                "\/integration-tools\/": "9d7448518c",
+                "\/performance-tools\/": "3d284fe11e"
+            },
+            "settings": {
+                "engine": "google-maps",
+                "internal_engine": "legacy",
+                "google_maps_api_key": false,
+                "default_marker_icon": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps\/images\/spotlight-poi3.png",
+                "developer_mode": false,
+                "user_interface_style": "default",
+                "wpgmza_gdpr_enabled": 1,
+                "wpgmza_gdpr_default_notice": "<p>\r\n\tI agree for my personal data to be processed by <span name=\"wpgmza_gdpr_company_name\"><\/span>, for the purpose(s) of <span name=\"wpgmza_gdpr_retention_purpose\"><\/span>.\r\n<\/p>\r\n\r\n<p>\t\r\n\tI agree for my personal data, provided via map API calls, to be processed by the API provider, for the purposes of geocoding (converting addresses to coordinates), reverse geocoding and\tgenerating directions.\r\n<\/p>\r\n<p>\r\n\tSome visual components of WP Go Maps use 3rd party libraries which are loaded over the network. At present the libraries are Google Maps, Open Street Map, jQuery DataTables and FontAwesome. When loading resources over a network, the 3rd party server will receive your IP address and User Agent string amongst other details. Please refer to the Privacy Policy of the respective libraries for details on how they use data and the process to exercise your rights under the GDPR regulations.\r\n<\/p>\r\n<p>\r\n\tWP Go Maps uses jQuery DataTables to display sortable, searchable tables, such as that seen in the Advanced Marker Listing and on the Map Edit Page. jQuery DataTables in certain circumstances uses a cookie to save and later recall the \"state\" of a given table - that is, the search term, sort column and order and current page. This data is held in local storage and retained until this is cleared manually. No libraries used by WP Go Maps transmit this information.\r\n<\/p>\r\n<p>\r\n\tPlease <a href=\"https:\/\/developers.google.com\/maps\/terms\">see here<\/a> and <a href=\"https:\/\/maps.google.com\/help\/terms_maps.html\">here<\/a> for Google's terms. Please also see <a href=\"https:\/\/policies.google.com\/privacy?hl=en-GB&amp;gl=uk\">Google's Privacy Policy<\/a>. We do not send the API provider any personally identifying information, or information that could uniquely identify your device.\r\n<\/p>\r\n<p>\r\n\tWhere this notice is displayed in place of a map, agreeing to this notice will store a cookie recording your agreement so you are not prompted again.\r\n<\/p>",
+                "wpgmza_gdpr_company_name": "Icon Rocklear",
+                "wpgmza_gdpr_retention_purpose": "displaying map tiles, geocoding addresses and calculating and display directions.",
+                "wpgmza_gdpr_button_label": "I agree",
+                "wpgmza_marker_xml_url": "https:\/\/iconrocklearfl.com\/wp-content\/uploads\/wp-google-maps\/",
+                "minimum_rating": "1",
+                "maximum_rating": "5",
+                "rating_step": "1",
+                "marker_rating_widget_style": "radios",
+                "marker_rating_gradient_widget_start_color": "#ff0000",
+                "marker_rating_gradient_widget_end_color": "#00ff00",
+                "marker_rating_thumb_widget_average_rating_color": "#4285F4",
+                "marker_rating_tampering_countermeasures": "basic-only",
+                "marker_separator_algorithm": "circle",
+                "wpgmza_maps_engine": "google-maps",
+                "wpgmza_maps_engine_dialog_done": true,
+                "wpgmza_google_maps_api_key": "QUl6YVN5Q1BrWFJzWFZjQnE2THgxRl94ZHRnUzBfT0FRRURwTjN3",
+                "tile_server_url": "https:\/\/{a-c}.tile.openstreetmap.org\/{z}\/{x}\/{y}.png",
+                "action": "wpgmza_save_settings",
+                "wpgmza_settings_map_full_screen_control": false,
+                "wpgmza_settings_map_streetview": false,
+                "wpgmza_settings_map_zoom": false,
+                "wpgmza_settings_map_pan": false,
+                "wpgmza_settings_map_type": false,
+                "wpgmza_settings_map_tilt_controls": false,
+                "wpgmza_settings_map_scroll": false,
+                "wpgmza_settings_map_draggable": false,
+                "wpgmza_settings_map_clickzoom": false,
+                "wpgmza_settings_cat_logic": "0",
+                "wpgmza_settings_filterbycat_type": "1",
+                "use_fontawesome": "4.*",
+                "tile_server_url_override": "",
+                "wpgmza_load_engine_api_condition": "where-required",
+                "wpgmza_always_include_engine_api_on_pages": "",
+                "wpgmza_always_exclude_engine_api_on_pages": "",
+                "enable_google_api_async_param": false,
+                "wpgmza_prevent_other_plugins_and_theme_loading_api": false,
+                "wpgmza_settings_access_level": "manage_options",
+                "wpgmza_settings_retina_width": "",
+                "wpgmza_settings_retina_height": "",
+                "wpgmza_force_greedy_gestures": false,
+                "disable_lightbox_images": false,
+                "gallery_item_source_size": "full",
+                "wpgmza_settings_image_resizing": false,
+                "wpgmza_settings_image_width": "",
+                "wpgmza_settings_image_height": "",
+                "wpgmza_settings_infowindow_width": "",
+                "wpgmza_settings_infowindow_links": true,
+                "wpgmza_settings_infowindow_address": true,
+                "infowindow_hide_category": false,
+                "wpgmza_settings_infowindow_link_text": "Click Here To View",
+                "wpgmza_settings_map_open_marker_by": "1",
+                "wpgmza_settings_disable_infowindows": false,
+                "wpgmza_settings_markerlist_icon": false,
+                "wpgmza_settings_markerlist_link": false,
+                "wpgmza_settings_markerlist_title": false,
+                "wpgmza_settings_markerlist_address": false,
+                "wpgmza_settings_markerlist_category": false,
+                "wpgmza_settings_markerlist_description": false,
+                "wpgmza_do_not_enqueue_datatables": false,
+                "enable_datatables_enter_search": false,
+                "wpgmza_default_items": "1",
+                "wpgmza_settings_carousel_markerlist_theme": "sky",
+                "wpgmza_settings_carousel_markerlist_image": false,
+                "wpgmza_settings_carousel_markerlist_title": false,
+                "wpgmza_settings_carousel_markerlist_icon": false,
+                "wpgmza_settings_carousel_markerlist_address": false,
+                "wpgmza_settings_carousel_markerlist_description": false,
+                "wpgmza_settings_carousel_markerlist_marker_link": false,
+                "wpgmza_settings_carousel_markerlist_directions": false,
+                "wpgmza_settings_carousel_markerlist_resize_image": false,
+                "carousel_lazyload": false,
+                "carousel_autoheight": false,
+                "carousel_pagination": false,
+                "carousel_navigation": false,
+                "wpgmza_do_not_enqueue_owl_carousel": false,
+                "wpgmza_do_not_enqueue_owl_carousel_themes": false,
+                "carousel_items": "5",
+                "carousel_items_tablet": "3",
+                "carousel_items_mobile": "1",
+                "carousel_autoplay": "5000",
+                "wpgmza_store_locator_radii": "",
+                "importer_google_maps_api_key": "AIzaSyBwCNYN95Ji-6G0L3vQhkVV4BzOO1eYTyQ",
+                "open_layers_api_key": "",
+                "open_route_service_key": "",
+                "wpgmza_settings_marker_pull": "0",
+                "wpgmza_custom_css": "",
+                "wpgmza_custom_js": "",
+                "disable_compressed_path_variables": false,
+                "disable_autoptimize_compatibility_fix": false,
+                "enable_dynamic_sql_refac_filter": false,
+                "disable_automatic_backups": false,
+                "disable_google_fonts": false,
+                "enable_google_csp_headers": false,
+                "force_ajax_only_mode": false,
+                "wpgmza_developer_mode": false,
+                "wpgmza_gdpr_require_consent_before_load": false,
+                "wpgmza_gdpr_override_notice": false,
+                "wpgmza_gdpr_notice_override_text": "",
+                "wpgmza_cluster_advanced_enabled": false,
+                "wpgmza_cluster_grid_size": "20",
+                "wpgmza_cluster_max_zoom": "15",
+                "wpgmza_cluster_min_cluster_size": "2",
+                "wpgmza_cluster_font_color": "#000000",
+                "wpgmza_cluster_font_size": "12",
+                "wpgmza_cluster_zoom_click": false,
+                "wpgmza_cluster_level1": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-gold\/images\/m1.png",
+                "wpgmza_cluster_level1_width": "53",
+                "wpgmza_cluster_level1_height": "53",
+                "wpgmza_cluster_level2": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-gold\/images\/m2.png",
+                "wpgmza_cluster_level2_width": "56",
+                "wpgmza_cluster_level2_height": "56",
+                "wpgmza_cluster_level3": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-gold\/images\/m3.png",
+                "wpgmza_cluster_level3_width": "66",
+                "wpgmza_cluster_level3_height": "66",
+                "wpgmza_cluster_level4": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-gold\/images\/m4.png",
+                "wpgmza_cluster_level4_width": "78",
+                "wpgmza_cluster_level4_height": "78",
+                "wpgmza_cluster_level5": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-gold\/images\/m5.png",
+                "wpgmza_cluster_level5_width": "90",
+                "wpgmza_cluster_level5_height": "90",
+                "wpgmza_settings_map_striptags": false,
+                "wpgmza_settings_ugm_autoapprove": true,
+                "wpgmza_settings_ugm_email_new_marker": false,
+                "wpgmza_vgm_form_style_modern": false,
+                "wpgmza_gdpr_require_consent_before_vgm_submit": false,
+                "vgm_enable_google_recaptcha": false,
+                "vgm_google_recaptcha_key": "",
+                "enable_live_tracking": false,
+                "liveTrackingRefreshInterval": "60000",
+                "enable_caching": false,
+                "wpgmza_near_vicinity_control_enabled": false,
+                "wpgmza_near_vicinity_aff_radius": "50",
+                "marker_separator_use_legacy_module": false,
+                "marker_separator_placeholder_icon": "\/\/iconrocklearfl.com\/wp-content\/uploads\/2024\/05\/Untitled-design.png",
+                "retina": true,
+                "marker_separator_animate": false,
+                "marker_separator_animation_duration": "0.5",
+                "marker_separator_stagger_animation": false,
+                "marker_separator_stagger_interval": "0.05",
+                "wpgmza_near_vicinity_shape": false,
+                "wpgmza_near_vicinity_hide_line": false,
+                "wpgmza_near_vicinity_line_col": "#000000",
+                "wpgmza_near_vicinity_line_opacity": "",
+                "wpgmza_near_vicinity_line_thickness": "",
+                "marker_separator_maximum_group_size": "16",
+                "wpgmza_iw_type": "0",
+                "marker_field_query_mode": "",
+                "acf_product_description_type": "full",
+                "googleMarkerMode": "marker",
+                "olMarkerMode": "element",
+                "disable_scroll_on_marker_listing_click": false,
+                "disable_wp_engine_governor": false,
+                "accessLevel": "manage_options",
+                "acfProductDescriptionType": "full",
+                "alwaysExcludeEngineApiOnPages": "",
+                "alwaysIncludeEngineApiOnPages": "",
+                "carouselAutoplay": "5000",
+                "carouselItems": "5",
+                "carouselItemsMobile": "1",
+                "carouselItemsTablet": "3",
+                "carouselMarkerlistResizeImage": false,
+                "carouselTheme": "sky",
+                "categoryFilterDisplay": "dropdown",
+                "categoryFilteringLogic": "or",
+                "clusterAdvancedEnabled": false,
+                "clusterFontColor": "#000000",
+                "clusterFontSize": "12",
+                "clusterGridSize": "20",
+                "clusterLevel1": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-gold\/images\/m1.png",
+                "clusterLevel1Height": "53",
+                "clusterLevel1Width": "53",
+                "clusterLevel2": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-gold\/images\/m2.png",
+                "clusterLevel2Height": "56",
+                "clusterLevel2Width": "56",
+                "clusterLevel3": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-gold\/images\/m3.png",
+                "clusterLevel3Height": "66",
+                "clusterLevel3Width": "66",
+                "clusterLevel4": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-gold\/images\/m4.png",
+                "clusterLevel4Height": "78",
+                "clusterLevel4Width": "78",
+                "clusterLevel5": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-gold\/images\/m5.png",
+                "clusterLevel5Height": "90",
+                "clusterLevel5Width": "90",
+                "clusterMaxZoom": "15",
+                "clusterMinClusterSize": "2",
+                "clusterZoomClick": false,
+                "customCss": "",
+                "customJs": "",
+                "defaultMarkerIcon": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps\/images\/spotlight-poi3.png",
+                "developerMode": false,
+                "disableAutomaticBackups": false,
+                "disableAutoptimizeCompatibilityFix": false,
+                "disableCompressedPathVariables": false,
+                "disableDoubleClickZoom": false,
+                "disableDragPanning": false,
+                "disableFullScreenControl": false,
+                "disableGoogleFonts": false,
+                "disableInfoWindows": false,
+                "disableLightboxImages": false,
+                "disableMouseWheelZoom": false,
+                "disablePanControl": false,
+                "disableScrollOnMarkerListingClick": false,
+                "disableStreetViewControl": false,
+                "disableTypeControl": false,
+                "disableWpEngineGovernor": false,
+                "disableZoomControl": false,
+                "doNotEnqueueDatatables": false,
+                "doNotEnqueueOwlCarousel": false,
+                "doNotEnqueueOwlCarouselThemes": false,
+                "enableCaching": false,
+                "enableCarouselAutoHeight": false,
+                "enableCarouselLazyLoad": false,
+                "enableCarouselNavigation": false,
+                "enableCarouselPagination": false,
+                "enableDatatablesEnterSearch": false,
+                "enableDynamicSqlRefacFilter": false,
+                "enableGoogleApiAsyncParam": false,
+                "enableGoogleCspHeaders": false,
+                "enableLiveTracking": false,
+                "forceAjaxOnlyMode": false,
+                "forceGreedyGestures": false,
+                "galleryItemSourceSize": "full",
+                "gdprButtonLabel": "I agree",
+                "gdprCompanyName": "Icon Rocklear",
+                "gdprDefaultNotice": "<p>\r\n\tI agree for my personal data to be processed by <span name=\"wpgmza_gdpr_company_name\"><\/span>, for the purpose(s) of <span name=\"wpgmza_gdpr_retention_purpose\"><\/span>.\r\n<\/p>\r\n\r\n<p>\t\r\n\tI agree for my personal data, provided via map API calls, to be processed by the API provider, for the purposes of geocoding (converting addresses to coordinates), reverse geocoding and\tgenerating directions.\r\n<\/p>\r\n<p>\r\n\tSome visual components of WP Go Maps use 3rd party libraries which are loaded over the network. At present the libraries are Google Maps, Open Street Map, jQuery DataTables and FontAwesome. When loading resources over a network, the 3rd party server will receive your IP address and User Agent string amongst other details. Please refer to the Privacy Policy of the respective libraries for details on how they use data and the process to exercise your rights under the GDPR regulations.\r\n<\/p>\r\n<p>\r\n\tWP Go Maps uses jQuery DataTables to display sortable, searchable tables, such as that seen in the Advanced Marker Listing and on the Map Edit Page. jQuery DataTables in certain circumstances uses a cookie to save and later recall the \"state\" of a given table - that is, the search term, sort column and order and current page. This data is held in local storage and retained until this is cleared manually. No libraries used by WP Go Maps transmit this information.\r\n<\/p>\r\n<p>\r\n\tPlease <a href=\"https:\/\/developers.google.com\/maps\/terms\">see here<\/a> and <a href=\"https:\/\/maps.google.com\/help\/terms_maps.html\">here<\/a> for Google's terms. Please also see <a href=\"https:\/\/policies.google.com\/privacy?hl=en-GB&amp;gl=uk\">Google's Privacy Policy<\/a>. We do not send the API provider any personally identifying information, or information that could uniquely identify your device.\r\n<\/p>\r\n<p>\r\n\tWhere this notice is displayed in place of a map, agreeing to this notice will store a cookie recording your agreement so you are not prompted again.\r\n<\/p>",
+                "gdprEnabled": 1,
+                "gdprNoticeOverrideText": "",
+                "gdprOverrideNotice": false,
+                "gdprRequireConsentBeforeLoad": false,
+                "gdprRequireConsentBeforeVgmSubmit": false,
+                "gdprRetentionPurpose": "displaying map tiles, geocoding addresses and calculating and display directions.",
+                "googleMapsApiKey": "QUl6YVN5Q1BrWFJzWFZjQnE2THgxRl94ZHRnUzBfT0FRRURwTjN3",
+                "hideCarouselMarkerListingAddress": false,
+                "hideCarouselMarkerListingDescription": false,
+                "hideCarouselMarkerListingDirections": false,
+                "hideCarouselMarkerListingIcon": false,
+                "hideCarouselMarkerListingImage": false,
+                "hideCarouselMarkerListingLink": false,
+                "hideCarouselMarkerListingTitle": false,
+                "hideMarkerListingAddress": false,
+                "hideMarkerListingCategory": false,
+                "hideMarkerListingDescription": false,
+                "hideMarkerListingIcon": false,
+                "hideMarkerListingLink": false,
+                "hideMarkerListingTitle": false,
+                "importerGoogleMapsApiKey": "AIzaSyBwCNYN95Ji-6G0L3vQhkVV4BzOO1eYTyQ",
+                "infoWindowAddress": true,
+                "infoWindowHideCategory": false,
+                "infoWindowImageHeight": "",
+                "infoWindowImageResizing": false,
+                "infoWindowImageWidth": "",
+                "infoWindowLinkText": "Click Here To View",
+                "infoWindowLinks": true,
+                "infoWindowMaxWidth": "",
+                "infoWindowType": "default",
+                "internalEngine": "legacy",
+                "loadEngineApiCondition": "where-required",
+                "mapTiltControls": false,
+                "mapsEngineDialogDone": true,
+                "markerFieldQueryMode": "",
+                "markerListingPageSize": "1",
+                "markerPull": "database",
+                "markerRatingGradientWidgetEndColor": "#00ff00",
+                "markerRatingGradientWidgetStartColor": "#ff0000",
+                "markerRatingTamperingCountermeasures": "basic-only",
+                "markerRatingThumbWidgetAverageRatingColor": "#4285F4",
+                "markerRatingWidgetStyle": "radios",
+                "markerSeparatorAlgorithm": "circle",
+                "markerSeparatorAnimate": false,
+                "markerSeparatorAnimationDuration": "0.5",
+                "markerSeparatorMaximumGroupSize": "16",
+                "markerSeparatorPlaceholderIcon": "\/\/iconrocklearfl.com\/wp-content\/uploads\/2024\/05\/Untitled-design.png",
+                "markerSeparatorStaggerAnimation": false,
+                "markerSeparatorStaggerInterval": "0.05",
+                "markerSeparatorUseLegacyModule": false,
+                "markerXmlUrl": "https:\/\/iconrocklearfl.com\/wp-content\/uploads\/wp-google-maps\/",
+                "maximumRating": "5",
+                "minimumRating": "1",
+                "nearVicinityAffRadius": "50",
+                "nearVicinityControlEnabled": false,
+                "nearVicinityHideLine": false,
+                "nearVicinityLineCol": "#000000",
+                "nearVicinityLineOpacity": "",
+                "nearVicinityLineThickness": "",
+                "nearVicinityShape": false,
+                "openInfoWindowEvent": "click",
+                "openLayersApiKey": "",
+                "openRouteServiceKey": "",
+                "preventOtherPluginsAndThemeLoadingApi": false,
+                "ratingStep": "1",
+                "retinaHeight": "",
+                "retinaWidth": "",
+                "storeLocatorRadii": "",
+                "tileServerUrl": "https:\/\/{a-c}.tile.openstreetmap.org\/{z}\/{x}\/{y}.png",
+                "tileServerUrlOverride": "",
+                "ugmAutoApprove": true,
+                "ugmEmailNewMarker": false,
+                "ugmStripTags": false,
+                "useFontAwesome": "4.*",
+                "userInterfaceStyle": "default",
+                "vgmEnableGoogleRecaptcha": false,
+                "vgmFormStyleModern": false,
+                "vgmGoogleRecaptchaApikey": "",
+                "vgmGoogleRecaptchaKey": "",
+                "vgmGoogleRecaptchaProject": ""
+            },
+            "stylingSettings": {},
+            "currentPage": null,
+            "userCanAdministrator": "0",
+            "serverCanInflate": "1",
+            "localized_strings": {
+                "unsecure_geolocation": "Many browsers are no longer allowing geolocation from unsecured origins. You will need to secure your site with an SSL certificate (HTTPS) or this feature may not work for your visitors",
+                "use_my_location": "Use my location",
+                "google_api_not_loaded": "The map cannot be initialized because the Maps API has not been loaded. Please check your settings.",
+                "no_google_maps_api_key": "You have not entered a <b>Google Maps API Key<\/b>.<br \/><br \/>Please go to the your admin area, then Maps, then Settings, then the Advanced tab to <a href=\"https:\/\/iconrocklearfl.com\/wp-admin\/admin.php?page=wp-google-maps-menu-settings&highlight=wpgmza_google_maps_api_key#advanced-settings\">enter your Google Maps API key<\/a>.<br \/><br \/>Alternatively, <a href=\"https:\/\/iconrocklearfl.com\/wp-admin\/admin.php?page=wp-google-maps-menu-settings&highlight=wpgmza_maps_engine\">choose the Open Layers engine<\/a> to avoid getting an API key.",
+                "documentation": "Documentation",
+                "api_dashboard": "API Dashboard",
+                "verify_project": "Verify Project",
+                "no_shape_circle": "Please create the circle first.",
+                "no_shape_rectangle": "Please create the rectangle first.",
+                "no_shape_polygon": "Please create the polygon first.",
+                "no_shape_polyline": "Please create the polyline first.",
+                "failed_to_get_address": "Failed to get address",
+                "failed_to_create_marker": "Failed to create marker %d - this marker cannot be placed on the map.",
+                "my_location": "My Location",
+                "kilometers_away": "km away",
+                "miles_away": "miles away",
+                "import_completed": "Import completed.",
+                "importing_please_wait": "Importing, this may take a moment...",
+                "no_address_specified": "No address specified",
+                "add_marker": "Add Marker",
+                "save_marker": "Save Marker",
+                "please_wait": "Please Wait...",
+                "zero_results": "No results found in this location. Please try again.",
+                "address_not_found": "This address could not be found. WP Go Maps uses a 3rd party service (eg Google) to convert addresses to geographic coordinates. Unfortunately, the service has no records for this address at present. Please try an alternative format, or manually position the marker using right click.",
+                "geocode_fail": "Geocode failed due to technical reasons",
+                "you_must_check_gdpr_consent": "You must check the GDPR consent box to continue",
+                "no_gps_coordinates": "No GPS coordinates found",
+                "fetching_directions": "Fetching directions...",
+                "unknown_directions_service_status": "Unknown directions service status",
+                "please_fill_out_both_from_and_to_fields": "Please fill out both the \"from\" and \"to\" fields",
+                "no_picture_found": "No picture found",
+                "overwrite_theme_data": "Are you sure you want to overwrite the existing theme data?",
+                "upload_complete": "Upload Complete",
+                "uploading_file": "Uploading file",
+                "bulk_jpeg_media_title": "WP Go Maps - Bulk JPEG Upload",
+                "from_your_location": "from your location",
+                "from_searched_location": "from searched location",
+                "yes": "Yes",
+                "no": "No",
+                "requires_gold_v5": "Requires WP Go Maps - Gold add-on 5.0.0 or above",
+                "confirm_remove_duplicates": "This operation is not reversable. We recommend you take a backup before proceeding. Would you like to continue?",
+                "invalid_theme_data": "Invalid theme data",
+                "duplicate_custom_field_name": "Duplicate custom field names, please ensure you only add unique custom field names.",
+                "disabled_interactions_notice": "Some interactions are disabled.",
+                "interactions_enabled_notice": "Interactions Enabled",
+                "disabled_interactions_button": "Re-Enable Interactions",
+                "use_two_fingers": "Use two fingers to move the map",
+                "use_ctrl_scroll_to_zoom": "Use ctrl + scroll to zoom the map",
+                "geocode_was_not_successful": "Geocode was not successful for the following reason: ",
+                "geocoding_library_notice": "Geocoding this address failed. Please check you have enabled the Geocoding API for your Google Maps API project.",
+                "map_delete_prompt_text": "Are you sure you want to delete this map?",
+                "map_bulk_delete_prompt_text": "Are you sure you want to delete these maps?",
+                "general_delete_prompt_text": "Are you sure you want to delete this data?",
+                "new_map": "New Map",
+                "all": "All",
+                "cloud_api_key_error_1": "Autocomplete disabled. <a href=\"https:\/\/wpgmaps.com\/documentation\/autocomplete-disabled\/\" target=\"_BLANK\">Find out more<\/a>.",
+                "please_select_a_file_to_upload": "Please select a file to upload.",
+                "import_reservedwordsfix": "Import",
+                "delete_reservedwordsfix": "Delete",
+                "back_to_import_data": "Back to Import Data",
+                "are_you_sure_you_wish_to_delete_this_file": "Are you sure you wish to delete this file?",
+                "file_deleted": "File deleted.",
+                "please_enter_a_url_to_import_from": "Please enter a URL to import from.",
+                "loading_import_options": "Loading import options...",
+                "are_you_sure_you_wish_to_delete_this_scheduled_import": "Are you sure you wish to delete this scheduled import?",
+                "scheduled_import_deleted": "Scheduled import deleted.",
+                "please_select_at_least_one_map_to_export": "Please select at least one map to export.",
+                "please_select_at_least_one_type_to_export": "Please select at least one data type to export.",
+                "directions": "Directions",
+                "get_directions": "Get Directions",
+                "more_info": "Click Here To View"
+            },
+            "api_consent_html": "<div class=\"wpgmza-gdpr-compliance\"><p>\r\n\tI agree for my personal data to be processed by <span name=\"wpgmza_gdpr_company_name\">Icon Rocklear<\/span>, for the purpose(s) of <span name=\"wpgmza_gdpr_retention_purpose\">displaying map tiles, geocoding addresses and calculating and display directions.<\/span>.\r\n<\/p>\r\n\r\n<p>\t\r\n\tI agree for my personal data, provided via map API calls, to be processed by the API provider, for the purposes of geocoding (converting addresses to coordinates), reverse geocoding and\tgenerating directions.\r\n<\/p>\r\n<p>\r\n\tSome visual components of WP Go Maps use 3rd party libraries which are loaded over the network. At present the libraries are Google Maps, Open Street Map, jQuery DataTables and FontAwesome. When loading resources over a network, the 3rd party server will receive your IP address and User Agent string amongst other details. Please refer to the Privacy Policy of the respective libraries for details on how they use data and the process to exercise your rights under the GDPR regulations.\r\n<\/p>\r\n<p>\r\n\tWP Go Maps uses jQuery DataTables to display sortable, searchable tables, such as that seen in the Advanced Marker Listing and on the Map Edit Page. jQuery DataTables in certain circumstances uses a cookie to save and later recall the \"state\" of a given table - that is, the search term, sort column and order and current page. This data is held in local storage and retained until this is cleared manually. No libraries used by WP Go Maps transmit this information.\r\n<\/p>\r\n<p>\r\n\tPlease <a href=\"https:\/\/developers.google.com\/maps\/terms\">see here<\/a> and <a href=\"https:\/\/maps.google.com\/help\/terms_maps.html\">here<\/a> for Google's terms. Please also see <a href=\"https:\/\/policies.google.com\/privacy?hl=en-GB&gl=uk\">Google's Privacy Policy<\/a>. We do not send the API provider any personally identifying information, or information that could uniquely identify your device.\r\n<\/p>\r\n<p>\r\n\tWhere this notice is displayed in place of a map, agreeing to this notice will store a cookie recording your agreement so you are not prompted again.\r\n<\/p><p class='wpgmza-centered'><button class='wpgmza-api-consent'>I agree<\/button><\/div><\/p>",
+            "basic_version": "9.0.40",
+            "_isProVersion": "1",
+            "defaultMarkerIcon": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps\/images\/spotlight-poi3.png",
+            "markerXMLPathURL": "\/\/iconrocklearfl.com\/wp-content\/uploads\/wp-google-maps\/",
+            "is_admin": "0",
+            "locale": "en_US",
+            "isServerIIS": "",
+            "labelpointIcon": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps\/images\/label-point.png",
+            "buildCode": "B.9.0.40::P.9.0.30::G.5.2.5::V.3.37::L.G",
+            "goldPluginDirURL": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-gold\/",
+            "import_security_nonce": "c399170e12",
+            "export_security_nonce": "613865068b",
+            "gutenbergData": {
+                "maps": [{
+                    "id": "1",
+                    "map_title": "My first map"
+                }]
+            },
+            "gold_version": "5.2.5",
+            "postID": "15",
+            "mediaRestUrl": "https:\/\/iconrocklearfl.com\/wp-json\/wp\/v2\/media\/",
+            "categoryTreeData": {
+                "id": 0,
+                "name": "All",
+                "icon": [],
+                "priority": 0,
+                "children": [],
+                "marker_count": 0
+            },
+            "defaultPreloaderImage": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-pro\/images\/AjaxLoader.gif",
+            "pro_version": "9.0.30",
+            "heatmapIcon": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-pro\/images\/heatmap-point.png",
+            "pegmanIcon": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/wp-google-maps-pro\/images\/pegman.png"
+        };
+    </script>
+    <script src="wp-content/plugins/wp-google-maps-pro/js/v8/wp-google-maps-pro.min4784.js?ver=9.0.40+pro-9.0.30"
+        id="wpgmza-js"></script>
+    <script src="wp-content/plugins/wp-google-maps-gold/lib/kdTree-min6619.js?ver=5.2.5" id="kdTree-js"></script>
+    <script src="wp-content/plugins/wp-google-maps-gold/lib/cheap-ruler6619.js?ver=5.2.5" id="cheap-ruler-js"></script>
+    <script src="wp-content/plugins/wp-google-maps-gold/js/v8/wp-google-maps-gold.min6619.js?ver=5.2.5" id="wpgmza-gold-js">
+    </script>
+    <script src="wp-content/plugins/wp-google-maps/lib/owl.carousela29e.js?ver=9.0.30" id="owl-carousel-js"></script>
+    <script src="wp-content/plugins/wp-google-maps-pro/lib/featherlight.mina29e.js?ver=9.0.30" id="featherlight-js">
+    </script>
+    <script src="wp-content/plugins/wp-google-maps-pro/lib/polylinea29e.js?ver=9.0.30" id="polyline-js"></script>
+    <script src="wp-content/plugins/wp-google-maps-pro/lib/CanvasLayerOptions109c.js?ver=6.6.2"
+        id="wpgmza_canvas_layer_options-js"></script>
+    <script src="wp-content/plugins/wp-google-maps-pro/lib/CanvasLayer109c.js?ver=6.6.2" id="wpgmza_canvas_layer-js">
+    </script>
+    <script src="wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min0599.js?ver=3.22.0"
+        id="elementor-pro-webpack-runtime-js"></script>
+    <script src="wp-content/plugins/elementor/assets/js/webpack.runtime.min4d52.js?ver=3.22.1"
+        id="elementor-webpack-runtime-js"></script>
+    <script src="wp-content/plugins/elementor/assets/js/frontend-modules.min4d52.js?ver=3.22.1"
+        id="elementor-frontend-modules-js"></script>
+    <script id="elementor-pro-frontend-js-before">
+        var ElementorProFrontendConfig = {
+            "ajaxurl": "https:\/\/iconrocklearfl.com\/wp-admin\/admin-ajax.php",
+            "nonce": "e6e7ccd4d7",
+            "urls": {
+                "assets": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/elementor-pro\/assets\/",
+                "rest": "https:\/\/iconrocklearfl.com\/wp-json\/"
+            },
+            "shareButtonsNetworks": {
+                "facebook": {
+                    "title": "Facebook",
+                    "has_counter": true
+                },
+                "twitter": {
+                    "title": "Twitter"
+                },
+                "linkedin": {
+                    "title": "LinkedIn",
+                    "has_counter": true
+                },
+                "pinterest": {
+                    "title": "Pinterest",
+                    "has_counter": true
+                },
+                "reddit": {
+                    "title": "Reddit",
+                    "has_counter": true
+                },
+                "vk": {
+                    "title": "VK",
+                    "has_counter": true
+                },
+                "odnoklassniki": {
+                    "title": "OK",
+                    "has_counter": true
+                },
+                "tumblr": {
+                    "title": "Tumblr"
+                },
+                "digg": {
+                    "title": "Digg"
+                },
+                "skype": {
+                    "title": "Skype"
+                },
+                "stumbleupon": {
+                    "title": "StumbleUpon",
+                    "has_counter": true
+                },
+                "mix": {
+                    "title": "Mix"
+                },
+                "telegram": {
+                    "title": "Telegram"
+                },
+                "pocket": {
+                    "title": "Pocket",
+                    "has_counter": true
+                },
+                "xing": {
+                    "title": "XING",
+                    "has_counter": true
+                },
+                "whatsapp": {
+                    "title": "WhatsApp"
+                },
+                "email": {
+                    "title": "Email"
+                },
+                "print": {
+                    "title": "Print"
+                },
+                "x-twitter": {
+                    "title": "X"
+                },
+                "threads": {
+                    "title": "Threads"
+                }
+            },
+            "facebook_sdk": {
+                "lang": "en_US",
+                "app_id": ""
+            },
+            "lottie": {
+                "defaultAnimationUrl": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"
+            }
+        };
+    </script>
+    <script src="wp-content/plugins/elementor-pro/assets/js/frontend.min0599.js?ver=3.22.0" id="elementor-pro-frontend-js">
+    </script>
+    <script src="wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2"
+        id="elementor-waypoints-js"></script>
+    <script src="wp-includes/js/jquery/ui/core.minb37e.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+    <script id="elementor-frontend-js-before">
+        var elementorFrontendConfig = {
+            "environmentMode": {
+                "edit": false,
+                "wpPreview": false,
+                "isScriptDebug": false
+            },
+            "i18n": {
+                "shareOnFacebook": "Share on Facebook",
+                "shareOnTwitter": "Share on Twitter",
+                "pinIt": "Pin it",
+                "download": "Download",
+                "downloadImage": "Download image",
+                "fullscreen": "Fullscreen",
+                "zoom": "Zoom",
+                "share": "Share",
+                "playVideo": "Play Video",
+                "previous": "Previous",
+                "next": "Next",
+                "close": "Close",
+                "a11yCarouselWrapperAriaLabel": "Carousel | Horizontal scrolling: Arrow Left & Right",
+                "a11yCarouselPrevSlideMessage": "Previous slide",
+                "a11yCarouselNextSlideMessage": "Next slide",
+                "a11yCarouselFirstSlideMessage": "This is the first slide",
+                "a11yCarouselLastSlideMessage": "This is the last slide",
+                "a11yCarouselPaginationBulletMessage": "Go to slide"
+            },
+            "is_rtl": false,
+            "breakpoints": {
+                "xs": 0,
+                "sm": 480,
+                "md": 768,
+                "lg": 1025,
+                "xl": 1440,
+                "xxl": 1600
+            },
+            "responsive": {
+                "breakpoints": {
+                    "mobile": {
+                        "label": "Mobile Portrait",
+                        "value": 767,
+                        "default_value": 767,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "mobile_extra": {
+                        "label": "Mobile Landscape",
+                        "value": 880,
+                        "default_value": 880,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "tablet": {
+                        "label": "Tablet Portrait",
+                        "value": 1024,
+                        "default_value": 1024,
+                        "direction": "max",
+                        "is_enabled": true
+                    },
+                    "tablet_extra": {
+                        "label": "Tablet Landscape",
+                        "value": 1200,
+                        "default_value": 1200,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "laptop": {
+                        "label": "Laptop",
+                        "value": 1366,
+                        "default_value": 1366,
+                        "direction": "max",
+                        "is_enabled": false
+                    },
+                    "widescreen": {
+                        "label": "Widescreen",
+                        "value": 2400,
+                        "default_value": 2400,
+                        "direction": "min",
+                        "is_enabled": false
+                    }
+                }
+            },
+            "version": "3.22.1",
+            "is_static": false,
+            "experimentalFeatures": {
+                "e_optimized_assets_loading": true,
+                "e_optimized_css_loading": true,
+                "e_font_icon_svg": true,
+                "additional_custom_breakpoints": true,
+                "container": true,
+                "container_grid": true,
+                "e_swiper_latest": true,
+                "e_onboarding": true,
+                "theme_builder_v2": true,
+                "home_screen": true,
+                "ai-layout": true,
+                "landing-pages": true,
+                "display-conditions": true,
+                "form-submissions": true,
+                "taxonomy-filter": true
+            },
+            "urls": {
+                "assets": "https:\/\/iconrocklearfl.com\/wp-content\/plugins\/elementor\/assets\/"
+            },
+            "swiperClass": "swiper",
+            "settings": {
+                "page": [],
+                "editorPreferences": []
+            },
+            "kit": {
+                "active_breakpoints": ["viewport_mobile", "viewport_tablet"],
+                "global_image_lightbox": "yes",
+                "lightbox_enable_counter": "yes",
+                "lightbox_enable_fullscreen": "yes",
+                "lightbox_enable_zoom": "yes",
+                "lightbox_enable_share": "yes",
+                "lightbox_title_src": "title",
+                "lightbox_description_src": "description"
+            },
+            "post": {
+                "id": 15,
+                "title": "Installer%20Finder%20Auto%20Detailing%20Services%20Icon%20Rocklear",
+                "excerpt": "",
+                "featuredImage": "https:\/\/iconrocklearfl.com\/wp-content\/uploads\/2024\/04\/6584b56d64e171ddd2da2c4b_AdobeStock_511317693_Editorial_Use_Only-p-1600-1024x683.jpeg"
+            }
+        };
+    </script>
+    <script src="wp-content/plugins/elementor/assets/js/frontend.min4d52.js?ver=3.22.1" id="elementor-frontend-js"></script>
+    <script src="wp-content/plugins/elementor-pro/assets/js/elements-handlers.min0599.js?ver=3.22.0"
+        id="pro-elements-handlers-js"></script>
+    <script src="wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min55a0.js?ver=3.2.0"
+        id="animate-circle-js"></script>
+    <script id="elementskit-elementor-js-extra">
+        var ekit_config = {
+            "ajaxurl": "https:\/\/iconrocklearfl.com\/wp-admin\/admin-ajax.php",
+            "nonce": "a8d2b29c1e"
+        };
+    </script>
+    <script src="wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor55a0.js?ver=3.2.0"
+        id="elementskit-elementor-js"></script>
+    <script>
+        /(trident|msie)/i.test(navigator.userAgent) && document.getElementById && window.addEventListener && window
+            .addEventListener("hashchange", function() {
+                var t, e = location.hash.substring(1);
+                /^[A-z0-9_-]+$/.test(e) && (t = document.getElementById(e)) && (/^(?:a|select|input|button|textarea)$/i
+                    .test(t.tagName) || (t.tabIndex = -1), t.focus())
+            }, !1);
+    </script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        document.querySelectorAll("ul.nav-menu").forEach(
+            ulist => {
+                if (ulist.querySelectorAll("li").length == 0) {
+                    ulist.style.display = "none";
+
+                }
+            }
+        );
+        /* ]]> */
+    </script>
+    <script type="text/javascript">
+        jQuery(window).on('load', function() {
+            jQuery('input[name="um_request"]').val('');
+        });
+    </script>
+</body>
+
+<!-- Mirrored from iconrocklearfl.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 08 Nov 2024 17:00:42 GMT -->
+
+</html>

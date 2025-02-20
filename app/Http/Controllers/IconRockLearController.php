@@ -9,7 +9,7 @@ class IconRockLearController extends Controller
 {
     public function index()
     {
-        return view('frontend.pages.icon-rocklear.index');
+        return view('icon_rocklear_2');
     }
     public function thankyou()
     {
@@ -24,7 +24,7 @@ class IconRockLearController extends Controller
     {
         $IconRockLearModel = IconRockLearModel::all();
         return view('admin.iconrocklear.index', compact('IconRockLearModel'));
-    }
+    }   
 
     public function store(Request $request)
     {

@@ -58,18 +58,48 @@
                                 <div class="card-body pb-2">
                                     <div class="row gap-3">
 
-                                        <div class="col-12 col-md-12 mt-2">
+                                        <div id="file_uploader" class="col-12 col-md-12 mt-2">
+                                            <label for="">Upload Files</label>
                                             <input name="files[]" class="form-control" type="file" id="file-upload"
-                                                multiple>
-                                                <div class="row" id="preview-container"></div>
-                                                <div id="upload-status"></div>
+                                            multiple>
+                                            <div class="row" id="preview-container"></div>
+                                            
                                         </div>
+                                        <div style="display:none" id="youtube_url" class="col-12 col-md-12 mt-2">
+                                            <div class="row">
+                                                <div class="col-12 col-md-12 mt-2">
+                                                    <label for="">Add Youtube Original URL</label>
+                                                    <input placeholder="https://www.youtube.com/watch?v=xyz"
+                                                        name="youtube_url" class="form-control" type="text"
+                                                        id="youtube-upload-url">
+                                                </div>
+                                                <div class="col-12 col-md-12 mt-2">
+                                                    <label for="">Add Youtube Thumbnail</label>
+                                                    <input name="youtube" class="form-control" type="file"
+                                                    id="youtube-upload">
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <div id="upload-status"></div>
+
+                                        <div class="col-md-6">
+                                            <div class="form-group d-flex">
+                                                <input value="true" type="checkbox" name="is_youtube" class="form-check"
+                                                    id="is_youtube">
+                                                <label for="is_youtube">&nbsp;&nbsp;Youtube URL?</label>
+                                            </div>
+                                        </div>
+
+
+
 
                                         <div class="col-md-6">
                                             <div class="form-group d-flex">
                                                 <input value="true" type="checkbox" name="is_gallery" class="form-check"
                                                     id="is_gallery">
-                                                <label for="is_gallery">Show in Gallery?</label>
+                                                <label for="is_gallery"> &nbsp;&nbsp; Show in Gallery?</label>
                                             </div>
                                         </div>
                                         <?php
@@ -114,19 +144,39 @@
 @section('script')
     <script>
         $(document).ready(function() {
+
+            $("#is_youtube").on('change', function() {
+                if ($(this).prop("checked") == true) {
+                    $("#youtube_url").show()
+                    $("#file_uploader").hide()
+                } else {
+                    $("#youtube_url").hide()
+                    $("#file_uploader").show()
+
+                }
+            })
+
             $('.submitBtn').on('click', function(e) {
                 e.preventDefault();
                 var files = $('#file-upload')[0].files;
                 var isGallery = $('#is_gallery').is(':checked');
                 var category = $('#category').val();
 
+
+
                 // Disable the submit button
                 $('.submitBtn').prop('disabled', true);
 
-                uploadFiles(files, 0, isGallery, category); // Start uploading files one by one
+                if ($("#is_youtube").prop("checked") == true) {
+                    console.log('click prop true');
+                    uploadFiles(files, 0, isGallery, category, true); // Start uploading files one by one
+                } else {
+                    console.log('click prop false');
+                    uploadFiles(files, 0, isGallery, category, false); // Start uploading files one by one
+                }
             });
 
-            function uploadFiles(files, index, isGallery, category) {
+            function uploadFiles(files, index, isGallery, category, youtube) {
                 if (index < files.length) {
                     var file = files[index];
                     var formData = new FormData();
@@ -163,9 +213,40 @@
                             }
                         }
                     });
+                } else if (youtube == true) {
+                    var formData = new FormData();
+                    formData.append('youtube', $("#youtube-upload")[0].files[0]);
+                    formData.append('is_gallery', isGallery);
+                    formData.append('is_youtube', true);
+                    formData.append('youtube_url', $("#youtube-upload-url").val());
+                    formData.append('category', category);
+                    formData.append('_token', '{{ csrf_token() }}'); // Add CSRF token
+
+                    $.ajax({
+                        url: '{{ route('admin.media.store') }}',
+                        type: 'POST',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function(response) {
+                            $('#upload-status').html(
+                                '<div class="alert alert-success">URL Uploaded Successfully.</div>');
+                        },
+                        error: function(xhr, status, error) {
+                            // Update status to error
+                            $('#upload-status').html('<div class="alert alert-danger">No File Selected.</div>');
+                        },
+                        complete: function() {
+                           
+                            // Re-enable the submit button after the last file is processed
+                            $('.submitBtn').prop('disabled', false);
+
+                        }
+                    });
                 } else {
                     // All files are processed
-                    $('#upload-status').append('<div>All files processed.</div>');
+                    $('#upload-status').html('<div class="alert alert-danger">No File Selected.</div>');
+                    $('.submitBtn').prop('disabled', false);
                 }
             }
         });
